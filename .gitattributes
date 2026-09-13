@@ -1,0 +1,8 @@
+# Preserve source formatting and asset bytes as captured in the baseline.
+# Text normalization can be introduced separately if cross-platform editing requires it.
+*.blend binary
+*.glb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary

@@ -1,0 +1,116 @@
+{
+  "created": "2026-09-13",
+  "status": "user_accepted_playable_sample_baseline",
+  "order_basis": "Actual generated-image display order in the conversation; editor reference image is excluded.",
+  "selected_display_order": null,
+  "references": [
+    {
+      "path": "design/references/storyos-editor-reference.png",
+      "source": "/Users/frankqdwang/MLE/StoryOS/docs/design/storyos-three-column-writing-workspace.png",
+      "role": "Existing product typography and restraint only; not a 3D visual target."
+    }
+  ],
+  "concepts": [
+    {
+      "display_order": 1,
+      "concept": "rose-window-scriptorium",
+      "path": "design/concepts/01-rose-window-scriptorium.png",
+      "source": "/Users/frankqdwang/.codex/generated_images/01a08ab2-6189-7803-94cf-0ec7cf527271/exec-de830866-fcfa-45c4-8405-2c6ea9f78753.png",
+      "sha256": "b718e4010cbd5b230935d933c49b15e15f04340ed974cb256a4c251b85087b0e",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 2346770,
+      "tool": "built-in image_gen",
+      "prompt_file": "design/prompts.json",
+      "prompt_key": "rose-window-scriptorium",
+      "selected": false,
+      "status": "historical_not_selected"
+    },
+    {
+      "display_order": 2,
+      "concept": "hearthside-cabinet",
+      "path": "design/concepts/02-hearthside-cabinet.png",
+      "source": "/Users/frankqdwang/.codex/generated_images/01a08ab2-6189-7803-94cf-0ec7cf527271/exec-35eb26b0-ec01-418b-a687-d6f26413d0a8.png",
+      "sha256": "68bc731bf6d7b6ac295735d5aee13d402bc60bb8099a0e216cf35aee1db553f0",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 2375609,
+      "tool": "built-in image_gen",
+      "prompt_file": "design/prompts.json",
+      "prompt_key": "hearthside-cabinet",
+      "selected": false,
+      "status": "historical_not_selected"
+    },
+    {
+      "display_order": 3,
+      "concept": "moonlit-orrery",
+      "path": "design/concepts/03-moonlit-orrery.png",
+      "source": "/Users/frankqdwang/.codex/generated_images/01a08ab2-6189-7803-94cf-0ec7cf527271/exec-5ffaf655-936c-4165-9206-415df54eb628.png",
+      "sha256": "5fec02319133e32d6766757451cfc6dd5e24ccb7c172b871116816f7e813fb52",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 2379511,
+      "tool": "built-in image_gen",
+      "prompt_file": "design/prompts.json",
+      "prompt_key": "moonlit-orrery",
+      "selected": false,
+      "status": "historical_not_selected"
+    }
+  ],
+  "feedback": {
+    "date": "2026-09-13",
+    "functional_core": "accepted",
+    "visual_direction": "accepted_sculpted_fantasy_3D_night_lighting",
+    "reason": "User likes the overall environments in S11/S12 and only the carrying character style in S19. Explicitly dislikes S05/S14/S18 and the painted screen. General craft texture, woodblock graphics and miniature-set realism were overbroad inferences.",
+    "next": "Preserve the user-approved playable sample as v0.1.0-baseline and make subsequent adjustments on an iteration branch.",
+    "record": "design/style-discovery.md"
+  },
+  "current_round_manifest": "design/reference-library/round-02/manifest.json",
+  "accepted_photo_reference": null,
+  "rejection": "User completely rejects this aesthetic. No sunlight; distinctly magical, fantasy, cartoon, non-realistic elements.",
+  "current_round_kind": "external_reference_collection",
+  "pending_generation_prompt_file": "design/round-03/prompts.json",
+  "pending_generation_prompt_file_status": "on_hold_and_requires_rewrite_after_visual_feedback",
+  "current_visual_brief": "design/reference-library/round-02/feedback.md",
+  "positive_visual_references": [
+    {
+      "id": "S11",
+      "path": "design/reference-library/round-02/images/S11.webp",
+      "scope": "overall_environment_style"
+    },
+    {
+      "id": "S12",
+      "path": "design/reference-library/round-02/images/S12.webp",
+      "scope": "overall_environment_style"
+    },
+    {
+      "id": "S19",
+      "path": "design/reference-library/round-02/images/S19.jpg",
+      "scope": "backpack_or_instrument_carrying_character_style_only",
+      "excluded": "painted_screen"
+    }
+  ],
+  "historical_close_reference": {
+    "id": "R12",
+    "role": "earlier_close_reference_superseded_by_more_specific_feedback"
+  },
+  "direction_confirmation": {
+    "user_reply": "可以，我认可",
+    "scope": "overall_visual_direction_and_existing_sample_scope",
+    "implementation_started": true,
+    "record": "PLAN.md"
+  },
+  "implementation": {
+    "url": "http://127.0.0.1:4173/",
+    "entry": "apps/web/src/App.jsx",
+    "blender_source": "assets/source/storyos-library.blend",
+    "asset_manifest": "assets/manifest.json",
+    "overview": "evidence/library-overview-final.png",
+    "qa": "design-qa.md"
+  },
+  "baseline": {
+    "tag": "v0.1.0-baseline",
+    "user_feedback": "我看了你的这个小样，我觉得很好，非常棒。但是还有一些地方需要调整。这个地方我希望保留它作为 baseline。",
+    "scope": "Preserve the current playable sample; details may change in later iterations."
+  }
+}

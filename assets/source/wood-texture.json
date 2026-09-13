@@ -1,0 +1,40 @@
+{
+  "id": "sculpted-wood",
+  "created_at": "2026-09-13",
+  "asset_type": "3D albedo/base color texture",
+  "generator": "Built-in image_gen__imagegen",
+  "generation_mode": "new image",
+  "source_path": "/Users/frankqdwang/.codex/generated_images/01a0997c-9a90-7bf1-aad9-a0365907b32b/exec-080cc7ed-09c7-417a-8d13-acbabd5de771.png",
+  "project_path": "public/assets/textures/sculpted-wood.png",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "byte_size": 2155058,
+  "sha256": "a0b354e66c67c2b77a02f5c60c62f9f80f0fe407ebef7a3ad2bdc5ef3bbc7e48",
+  "visual_references_reviewed": [
+    {
+      "id": "S11",
+      "path": "design/reference-library/round-02/images/S11.webp",
+      "role": "approved environment style reference, visually reviewed; not supplied for image editing"
+    },
+    {
+      "id": "S12",
+      "path": "design/reference-library/round-02/images/S12.webp",
+      "role": "approved environment style reference, visually reviewed; not supplied for image editing"
+    }
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production 3D environment material, seamless square wood albedo/base-color texture, at least 1024 x 1024.\nPrimary request: A full-frame tileable texture of sculpted walnut timber in light-to-medium muted warm gray-brown. Gently simplified long vertical wood grain with quiet broad flowing forms, a few subtle hand-carved grain grooves, very low contrast, matte tactile character appropriate to an art-directed stop-motion fantasy film set. The appearance is artistically simplified yet has convincing material substance, without looking like a photograph scan, a children's painted illustration, or plastic.\nComposition: orthographic straight-on flat material swatch filling every pixel. Grain runs from bottom to top. Seamlessly repeatable at all four edges. No visible plank boundaries or manufactured panel layout. Balanced texture density with very restrained small detail. Neutral medium-light base color suitable for multiplying with runtime material tints.\nLighting: perfectly uniform unlit albedo, no baked illumination, no gradients, no highlights, no cast shadows, no ambient occlusion, no directional relief shading.\nConstraints: exactly one square texture, no room, no objects, no framing, no border, no labels, no lettering, no watermark, no stylized black outlines, no cartoon knots or decorative engravings, no dramatic cracks, no glossy finish, no perspective. This is a reusable surface texture rather than a rendered picture of wood.",
+  "postprocessing": "None; original PNG copied byte-for-byte into project.",
+  "visual_review": "Low-contrast muted gray-brown vertical walnut grain, full-bleed orthographic material, no objects/text/border/directional cast shadows. Delicate fine grain remains visible. Square file dimensions verified from PNG IHDR.",
+  "limitations": "Requested seamless output; runtime tiling and seam continuity have not been visually verified. This is only an albedo map, not a physically authored normal/roughness set.",
+  "suggested_material": {
+    "color_space": "sRGB for base-color/albedo",
+    "metalness": 0,
+    "roughness": 0.86,
+    "color_tint": "Start neutral; warm/darken via material base color under final scene lights.",
+    "uv_orientation": "Align the image vertical grain direction with the long axis of a beam or furniture component.",
+    "repetition": "Use conservative repetitions and offset UVs between adjacent objects; check seams at final texel density.",
+    "normal_usage": "Do not use the color texture directly as a normal map."
+  }
+}
+

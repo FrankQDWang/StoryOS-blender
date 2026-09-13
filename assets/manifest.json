@@ -1,0 +1,62 @@
+{
+  "source_script": "scripts/build_library.py",
+  "source_blender": "5.2.1 LTS",
+  "runtime_versions": {
+    "react": "19.2.0",
+    "vite": "6.4.2",
+    "three": "0.186.0",
+    "@react-three/fiber": "9.7.0",
+    "@react-three/drei": "10.7.8",
+    "@react-three/postprocessing": "3.1.1"
+  },
+  "assets": [
+    {
+      "path": "public/assets/models/library-room.glb",
+      "bytes": 5760240,
+      "sha256": "79c7c76452482b6ede4d4bef2cbb6c30c331012ad0c433400793574d69d47160",
+      "meshes": 15,
+      "materials": 15,
+      "embedded_images": 2,
+      "triangles": 35440
+    },
+    {
+      "path": "public/assets/models/opening-hands.glb",
+      "bytes": 82936,
+      "sha256": "4af818e8f11dc8a1c68861e4c1637575d776d6e6abd844db5aea5706fdb1c2d2",
+      "meshes": 14,
+      "materials": 2,
+      "embedded_images": 0,
+      "triangles": 3224
+    },
+    {
+      "path": "public/assets/models/story-book.glb",
+      "bytes": 185284,
+      "sha256": "d5e9fe71b3c156a73100d3ab02265a39c5dd5df852bfced13a0c167446ee5e2e",
+      "meshes": 30,
+      "materials": 4,
+      "embedded_images": 0,
+      "triangles": 3788
+    },
+    {
+      "path": "public/assets/textures/sculpted-plaster.png",
+      "bytes": 2215079,
+      "sha256": "1edbb15fba5f0513d3a422ad5840f6f18d6197f4ddac7a5408230d1cf7b2e58f"
+    },
+    {
+      "path": "public/assets/textures/sculpted-wood.png",
+      "bytes": 2155058,
+      "sha256": "a0b354e66c67c2b77a02f5c60c62f9f80f0fe407ebef7a3ad2bdc5ef3bbc7e48"
+    },
+    {
+      "path": "assets/source/storyos-library.blend",
+      "bytes": 4917492,
+      "sha256": "336e20c04bfb2411e8f950a53dbbec634410646e85a7bcd5ee15f6b04a26f7d7"
+    }
+  ],
+  "texture_provenance": [
+    "assets/source/wood-texture.json",
+    "assets/source/plaster-texture.json"
+  ],
+  "network_references": "Design research only; not shipped as scene content.",
+  "animation_source": "Deterministic runtime transforms in apps/web/src/Scene.jsx, using Blender CoverPivot/PagePivot and prebuilt hands. No baked skeletal clips."
+}

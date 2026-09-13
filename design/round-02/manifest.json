@@ -1,0 +1,61 @@
+{
+  "round": 2,
+  "date": "2026-09-13",
+  "status": "rejected_visual_direction",
+  "selected_display_order": null,
+  "display_order_basis": "Actual order of the three generated-image outputs in this turn; input photos and older generations are excluded.",
+  "tool": "built-in image_gen",
+  "prompts": "design/round-02/prompts.json",
+  "accepted_reference": {
+    "path": "design/references/batemans-wood-and-light.jpg",
+    "source": "https://www.nationaltrust.org.uk/visit/sussex/batemans/visiting-the-house-at-batemans",
+    "accepted_aspects": [
+      "wood palette",
+      "window light and shadows"
+    ],
+    "usage": "Private art-direction input, not a licensed production asset.",
+    "status": "superseded_by_full_aesthetic_rejection"
+  },
+  "concepts": [
+    {
+      "display_order": 1,
+      "concept": "quiet-enchantment",
+      "path": "design/round-02/01-quiet-enchantment.png",
+      "source": "/Users/frankqdwang/.codex/generated_images/01a08ab2-6189-7803-94cf-0ec7cf527271/exec-06da837e-dfb8-4c98-baf6-d19393d3e13e.png",
+      "sha256": "489b226670c41ea4dbcbf607e31af5fc9894e815ef27b6a3a509c34a5b194566",
+      "width": 1487,
+      "height": 1058,
+      "prompt_key": "quiet-enchantment",
+      "selected": false
+    },
+    {
+      "display_order": 2,
+      "concept": "painted-sunlight",
+      "path": "design/round-02/02-painted-sunlight.png",
+      "source": "/Users/frankqdwang/.codex/generated_images/01a08ab2-6189-7803-94cf-0ec7cf527271/exec-320fee82-c85a-44de-840d-ab84e0c94c33.png",
+      "sha256": "b8e15812e275f5adb341eb8145dfd3f5c667229f21d4178bc6fbc2e9d250cc72",
+      "width": 1487,
+      "height": 1058,
+      "prompt_key": "painted-sunlight",
+      "selected": false
+    },
+    {
+      "display_order": 3,
+      "concept": "soft-fable",
+      "path": "design/round-02/03-soft-fable.png",
+      "source": "/Users/frankqdwang/.codex/generated_images/01a08ab2-6189-7803-94cf-0ec7cf527271/exec-bb379173-b706-405b-96dd-6767e203b93f.png",
+      "sha256": "11565366337bd3cf5f9ec5f998b030d6632a3eb52d9e2c177e6ff460ddd68b7e",
+      "width": 1487,
+      "height": 1058,
+      "prompt_key": "soft-fable",
+      "selected": false
+    }
+  ],
+  "qa_notes": [
+    "Density is lower than round 01; five display stands and a central magical writing table are visible.",
+    "First two images remain visually close to realism; do not claim the planned hand-painted distinction was fully achieved.",
+    "Third simplifies surfaces more, but final amount of cartoon stylization still needs user feedback.",
+    "These are concepts, not runtime screenshots or verified interactions."
+  ],
+  "rejection": "User completely rejects this aesthetic. No sunlight; distinctly magical, fantasy, cartoon, non-realistic elements."
+}

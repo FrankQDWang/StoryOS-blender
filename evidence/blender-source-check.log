@@ -1,0 +1,5 @@
+00:00.524  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/source/storyos-library.blend"
+SOURCE_CHECK {"blender": "5.2.1 LTS", "images": [{"name": "sculpted-plaster.png", "packed": true}, {"name": "sculpted-wood.png", "packed": true}], "collections": ["Book", "Collection", "Hands", "Room"], "book_hinges": ["CoverPivot", "PagePivot0", "PagePivot1", "PagePivot2"]}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

@@ -1,0 +1,11 @@
+{
+  "name": "storyos-library-experiment",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix apps/web run dev --",
+    "build": "npm --prefix apps/web run build",
+    "test": "node --test apps/web/tests/library-model.test.mjs",
+    "assets": "blender --background --python scripts/build_library.py && python3 scripts/asset_manifest.py"
+  }
+}

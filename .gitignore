@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+*.blend[0-9]*
+.cache/
+downloads/
+
+# Local credentials and disposable comparison checkouts
+.env
+.env.*
+!.env.example
+.worktrees/
