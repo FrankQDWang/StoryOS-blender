@@ -8,3 +8,5 @@
 - Keep project assets, source files, downloads, and verification evidence in this directory. Use project-local dependencies or established package managers for shared programs. Ask before an installation needs another location or a material permission change.
 - Ask for genuine product tradeoffs or permission gaps. Resolve routine choices autonomously and do not re-ask settled decisions.
 - Update the Current handoff section of `PLAN.md` after meaningful work and before stopping. Distinguish concepts, implemented behavior, and verified behavior. Record asset provenance and selected-image paths when assets are created.
+
+- For changes after `v0.1.0-baseline`, read `design/iterations/01-lived-in-room.md`: it records the latest user feedback and distinguishes confirmed requirements from layout proposals.
