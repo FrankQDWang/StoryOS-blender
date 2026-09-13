@@ -4,7 +4,7 @@
 
 ## 当前交接
 
-- **版本管理**：用户认可现有样片并要求保存 baseline。采用本目录独立 Git 仓库，首个里程碑标签 `v0.1.0-baseline` 固定保存此次代码、Blender/GLB/纹理、方案与截图。`main` 保存已认可版本，后续改动在 `iteration/next` 等独立分支上进行；版本约定见 `VERSIONING.md`。当前只做版本化，不调整场景或交互；未创建远程仓库、未上传。
+- **版本管理**：用户认可现有样片并要求保存 baseline。采用本目录独立 Git 仓库，首个里程碑标签 `v0.1.0-baseline` 固定保存此次代码、Blender/GLB/纹理、方案与截图。`main` 保存已认可版本，后续改动在 `iteration/next` 等独立分支上进行；版本约定见 `VERSIONING.md`。用户随后明确要求使用自己的 GitHub 且设为 Public；公开远程为 `https://github.com/FrankQDWang/StoryOS-blender`（`origin`）。本轮仅补充远程版本管理，场景与交互保持不变，baseline 标签不移动。
 - **可玩的独立样片已实现并经 Chrome 验证**。预览 `http://127.0.0.1:4173/` 已启动并保留 Chrome 标签；启动与资产导出见 `README.md`。前端在 `apps/web`，未修改或接入真实 StoryOS。
 - 用户已授权开工、Chrome 操控、必要依赖/程序安装，也同步了手动授权 Blender。用户允许自行选择 GUI/CLI/MCP；采用 **Blender Python/CLI 制作与导出 + Chrome 实际交互检查**。Blender 5.2.1 LTS 由 Homebrew 安装在 `/Applications/Blender.app`，无需其他账号/密钥。
 - 视觉基准仍是 **S11/S12 环境、S19 指定背乐器男孩的造型简化程度**；不要阳光、私人低密度。旧生成图、S05/S14/S18 与 S19 屏风不是目标。已制作真实 3D 房间、家具、五个阅读台、书本与预制手部；材质为项目原创生成纹理。不是以参考截图贴平面背景。

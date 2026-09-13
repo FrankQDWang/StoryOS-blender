@@ -52,6 +52,6 @@ npm --prefix .worktrees/baseline/apps/web run dev -- --host 127.0.0.1 --port 417
 
 旧版在 `http://127.0.0.1:4175/`；当前预览使用 `4173`。两端口的浏览器数据各自独立，适合用初始示例对比画面和操作。结束后先停止旧版服务，再用 `git worktree remove .worktrees/baseline` 清理；不使用强制清理忽略其中的改动。
 
-当前仓库仅在本机，没有远程。后续可增加私有远程备份；创建位置与仓库名称确定后再配置上传。正式对外发布前单独处理素材许可与发布范围，不把本地版本管理等同于发布。
+用户明确选择公开 GitHub 仓库：[https://github.com/FrankQDWang/StoryOS-blender](https://github.com/FrankQDWang/StoryOS-blender)，远程名 `origin`，默认分支 `main`。`main`、`iteration/next` 与 `v0.1.0-baseline` 保存在远程；后续里程碑标签需要显式推送。GitHub 仓库公开不等于已经部署可在线访问的网页。
 
 参考：[Git 标签](https://git-scm.com/docs/git-tag)、[Git worktree](https://git-scm.com/docs/git-worktree)、[Git LFS](https://git-lfs.com/)。

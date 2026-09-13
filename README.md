@@ -2,6 +2,8 @@
 
 一个独立的桌面 Chrome 入口体验样片。一本书代表一个作品：可以在房间里点书、自由漫游，也可以直接从最近作品或列表进入。开书后的写作页面为占位工作区，数据仅保存在本浏览器。
 
+公开仓库：[FrankQDWang/StoryOS-blender](https://github.com/FrankQDWang/StoryOS-blender)。
+
 当前预览：<http://127.0.0.1:4173/>。开发服务已启动。
 
 ## 版本管理
