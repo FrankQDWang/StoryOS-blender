@@ -10,3 +10,4 @@
 - Update the Current handoff section of `PLAN.md` after meaningful work and before stopping. Distinguish concepts, implemented behavior, and verified behavior. Record asset provenance and selected-image paths when assets are created.
 
 - For changes after `v0.1.0-baseline`, read `design/iterations/01-lived-in-room.md`: it records the latest user feedback and distinguishes confirmed requirements from layout proposals.
+- Current v0.2 direction: "bedroom" is only a lived-in, relaxing atmosphere analogy; do not add a bed. Ordinary grouped book storage replaces individual lecterns. The new preview remains on `iteration/next` until the user reviews it; keep `main` and `v0.1.0-baseline` unchanged.

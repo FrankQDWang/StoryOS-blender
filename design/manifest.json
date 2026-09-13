@@ -1,6 +1,6 @@
 {
   "created": "2026-09-13",
-  "status": "user_accepted_playable_sample_baseline",
+  "status": "v02_preview_pending_user_review",
   "order_basis": "Actual generated-image display order in the conversation; editor reference image is excluded.",
   "selected_display_order": null,
   "references": [
@@ -112,5 +112,13 @@
     "tag": "v0.1.0-baseline",
     "user_feedback": "我看了你的这个小样，我觉得很好，非常棒。但是还有一些地方需要调整。这个地方我希望保留它作为 baseline。",
     "scope": "Preserve the current playable sample; details may change in later iterations."
+  },
+  "current_iteration": {
+    "version": "v0.2.0-preview.1",
+    "branch": "iteration/next",
+    "baseline": "v0.1.0-baseline",
+    "brief": "design/iterations/01-lived-in-room.md",
+    "screenshot": "evidence/v02/overview.png",
+    "qa": "design-qa.md"
   }
 }

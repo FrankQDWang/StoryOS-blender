@@ -1,0 +1,14 @@
+{
+  "rightCover": {
+    "verticesInside": 0,
+    "minGapMetres": 0.018341786772012703
+  },
+  "leftBlock": {
+    "verticesInside": 0,
+    "minGapMetres": 0.024341791421175013
+  },
+  "rightGoldGap": 0.0033417936265468517,
+  "leftTopSheetGap": 0.0038417908549308877,
+  "timelineSamples": 381,
+  "status": "passed"
+}

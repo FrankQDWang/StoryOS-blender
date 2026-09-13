@@ -8,7 +8,8 @@
 | --- | --- |
 | `v0.1.0-baseline` | 第一个已认可小样的附注标签；不移动、不覆盖、不在原提交上 amend |
 | `main` | 最近一次认可的版本；初始化时指向 baseline，后续可向前演进 |
-| `iteration/next` | 从 baseline 建立的当前迭代分支，等待具体调整要求 |
+| `iteration/next` | 基于 baseline 的 v0.2 生活感布局与接触修正，等待实际画面评审 |
+| `v0.2.0-preview.1` | 当前可运行预览快照，尚未经用户审美认可，不合入 main |
 | 后续标签，如 `v0.2.0` | 每轮体验确认后的完整里程碑；不是每次小改都打标签 |
 
 标签约定由协作流程遵守；本地 Git 本身并未提供禁止强制移动标签的服务端保护。
@@ -55,3 +56,7 @@ npm --prefix .worktrees/baseline/apps/web run dev -- --host 127.0.0.1 --port 417
 用户明确选择公开 GitHub 仓库：[https://github.com/FrankQDWang/StoryOS-blender](https://github.com/FrankQDWang/StoryOS-blender)，远程名 `origin`，默认分支 `main`。`main`、`iteration/next` 与 `v0.1.0-baseline` 保存在远程；后续里程碑标签需要显式推送。GitHub 仓库公开不等于已经部署可在线访问的网页。
 
 参考：[Git 标签](https://git-scm.com/docs/git-tag)、[Git worktree](https://git-scm.com/docs/git-worktree)、[Git LFS](https://git-lfs.com/)。
+
+## v0.2 对照运行
+
+当前 `4173` 为新版本，`4175` 为固定的 `v0.1.0-baseline` worktree。两个 worktree 分别安装本地依赖；不共享 `node_modules/.vite` 缓存，以免两个开发服务反复覆盖依赖预构建。两处预览均是本机服务。

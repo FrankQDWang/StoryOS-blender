@@ -1,0 +1,16 @@
+
+> test
+> node --test apps/web/tests/library-model.test.mjs
+
+✔ creation retains all projects and leaves occupied positions stable at capacity (1.862292ms)
+✔ invalid creation is atomic and whitespace is removed (0.228375ms)
+✔ persisted data repairs duplicate slots and ids without losing valid projects (0.265542ms)
+✔ visiting changes recency without moving a displayed book (0.084917ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 49.362875

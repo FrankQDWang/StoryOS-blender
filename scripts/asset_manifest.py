@@ -28,6 +28,8 @@ manifest = {'source_script':'scripts/build_library.py', 'source_blender':json.lo
             'runtime_versions':{p:lock['packages']['node_modules/'+p]['version'] for p in packages},
             'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/plaster-texture.json'],
             'network_references':'Design research only; not shipped as scene content.',
-            'animation_source':'Deterministic runtime transforms in apps/web/src/Scene.jsx, using Blender CoverPivot/PagePivot and prebuilt hands. No baked skeletal clips.'}
+            'layout_source':'apps/web/src/room-layout.json',
+            'version':json.loads((root/'public/assets/models/scene.json').read_text())['version'],
+            'animation_source':'apps/web/src/BookInteraction.jsx and book-animation.mjs: shared fixed timeline, cover-parented grip, curved sleeves and deforming sheets. Blender CoverPivot/PagePivot and sculpted hands; no baked skeletal clips.'}
 (root/'assets/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'assets':len(assets),'glb_bytes':sum(a['bytes'] for a in assets if a['path'].endswith('.glb'))}))
