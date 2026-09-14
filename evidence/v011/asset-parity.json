@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "Book": {
+      "vertices": 1976,
+      "world_positions_sha256": "9f6455a72291ba9c6ce8e7bc2607475c2c7b2c35606e3986c2a1c3dbc1d682da"
+    },
+    "Hands": {
+      "vertices": 1700,
+      "world_positions_sha256": "369e18f915997d8d36a84130e521413e79cd6411fe329762a308c9ca856c9e54"
+    }
+  },
+  "current": {
+    "Book": {
+      "vertices": 1976,
+      "world_positions_sha256": "9f6455a72291ba9c6ce8e7bc2607475c2c7b2c35606e3986c2a1c3dbc1d682da"
+    },
+    "Hands": {
+      "vertices": 1700,
+      "world_positions_sha256": "369e18f915997d8d36a84130e521413e79cd6411fe329762a308c9ca856c9e54"
+    }
+  },
+  "matches": true,
+  "scope": "All Book/Hands mesh world vertex positions rounded to 0.01 mm; exported binary order is not stable."
+}

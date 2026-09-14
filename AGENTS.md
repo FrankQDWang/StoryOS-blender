@@ -9,5 +9,5 @@
 - Ask for genuine product tradeoffs or permission gaps. Resolve routine choices autonomously and do not re-ask settled decisions.
 - Update the Current handoff section of `PLAN.md` after meaningful work and before stopping. Distinguish concepts, implemented behavior, and verified behavior. Record asset provenance and selected-image paths when assets are created.
 
-- For changes after `v0.1.0-baseline`, read `design/iterations/01-lived-in-room.md`: it records the latest user feedback and distinguishes confirmed requirements from layout proposals.
-- Current v0.2 direction: "bedroom" is only a lived-in, relaxing atmosphere analogy; do not add a bed. Ordinary grouped book storage replaces individual lecterns. The new preview remains on `iteration/next` until the user reviews it; keep `main` and `v0.1.0-baseline` unchanged.
+- For changes after `v0.1.0-baseline`, read `design/iterations/02-baseline-hearth.md`: it records the latest user decision. `01-lived-in-room.md` is historical feedback for a rejected preview.
+- Current direction: restore the first version and improve only its fireplace gaps. Preserve baseline layout, lighting, lecterns and interaction. Keep the preview on `iteration/next` until user review; do not move `main` or `v0.1.0-baseline`. Keep `v0.2.0-preview.1` as history.

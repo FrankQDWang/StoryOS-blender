@@ -1,7 +1,6 @@
 import React,{Component,useCallback,useEffect,useRef,useState} from 'react';
 import {BookOpen,Books,Plus,ArrowUpRight,ArrowLeft,X,MagnifyingGlass,PersonSimpleWalk,SpeakerHigh,SpeakerSlash,Check,Feather,Moon,ArrowCounterClockwise,Eye,Pause} from '@phosphor-icons/react';
 import {LibraryScene} from './Scene';
-import {OPENING_SECONDS,CREATION_SECONDS} from './book-animation.mjs';
 import {STORAGE_KEY,COLORS,initialLibrary,normalizeLibrary,createBook,visitBook,recentBooks} from './library-model.mjs';
 
 class SceneBoundary extends Component {
@@ -37,7 +36,7 @@ export function App(){
  const enter=useCallback(id=>{if(!id)return;clearTimeout(timer.current);openingLock.current=false;setOpening(false);setPanel(null);setMode('overview');setWorkspace(id);setLibrary(s=>visitBook(s,id));document.exitPointerLock?.()},[]);
  const select=useCallback(id=>{if(openingLock.current||creationLock.current)return;setSelected(id);setMode('focus');setPanel(null);document.exitPointerLock?.()},[]);
  const beginOpen=useCallback(id=>{if(openingLock.current)return;openingLock.current=true;setSelected(id);setMode('focus');setPanel(null);document.exitPointerLock?.();
-  if(library.reducedMotion||failed){enter(id);return}setOpening(true);timer.current=setTimeout(()=>enter(id),OPENING_SECONDS*1000);
+  if(library.reducedMotion||failed){enter(id);return}setOpening(true);timer.current=setTimeout(()=>enter(id),2600);
  },[library.reducedMotion,failed,enter]);
  const closePanel=useCallback(()=>setPanel(null),[]);
  const showCreate=useCallback(()=>{if(openingLock.current||creationLock.current)return;document.exitPointerLock?.();setMode('overview');setTitle('');setDescription('');setPanel('create')},[]);
@@ -52,7 +51,7 @@ export function App(){
   const id=crypto.randomUUID();const next=createBook(library,{title,description,color},id);const b=next.books.at(-1);
   setLibrary(next);setPanel(null);setCrafting(b);setSelected(null);setMode('overview');
   const finish=()=>{setCrafting(false);creationLock.current=false;setAppearing(null);setToast(b.slot===null?'新书已创建，展示位已满，可从全部作品打开。':`《${b.title}》已放入藏书室`)};
-  if(library.reducedMotion||failed)finish();else timer.current=setTimeout(finish,CREATION_SECONDS*1000);
+  if(library.reducedMotion||failed)finish();else timer.current=setTimeout(finish,3100);
  };
  const allBooks=()=>{if(openingLock.current||creationLock.current)return;setQuery('');setPanel('books');document.exitPointerLock?.();setMode('overview')};
  return <main className={workspace?'app workspace-app':'app'}>
@@ -64,6 +63,7 @@ export function App(){
   </nav></header>
   {workspace&&working?<section className="workspace"><button className="back-link" onClick={returnRoom}><ArrowLeft size={18}/>返回藏书室</button><div className="workspace-kicker">STORYOS / WRITING ROOM</div><h1>{working.title}</h1><p className="workspace-description">{working.description||'一个新的世界，正在等待你的第一句话。'}</p><div className="workspace-rule"/><div className="placeholder-note"><Feather size={25} weight="thin"/><div><h2>故事，从这里继续。</h2><p>你已进入《{working.title}》的工作区。</p><p>这是入口体验的占位页面，正式编辑器将在后续接入。</p></div></div><button className="light-button" onClick={returnRoom}>回到我的藏书室 <ArrowUpRight size={17}/></button></section>:!workspace&&<>
    {ready&&!opening&&mode!=='roam'&&<div className="room-caption"><span>THE WRITER’S ROOM</span><h1>我的藏书室</h1><p>每一本书，都是你创造的世界。</p></div>}
+   {ready&&!failed&&mode==='overview'&&!opening&&!crafting&&<button className="magic-hint" onClick={showCreate}><Plus size={15}/>写下一个新世界</button>}
    {ready&&!opening&&mode==='focus'&&current&&<section className="focus-card"><button className="icon card-close" aria-label="返回房间全景" onClick={()=>{setMode('overview');setSelected(null)}}><X size={17}/></button><span className="eyebrow">你的作品 / {String((current.slot??0)+1).padStart(2,'0')}</span><h2>{current.title}</h2><p>{current.description||'故事的第一句话，正等你落笔。'}</p><div className="book-meta">{current.words.toLocaleString()} 字 <span>·</span> 本地体验作品</div><button className="primary" onClick={()=>beginOpen(current.id)}>打开这本书 <ArrowUpRight size={18}/></button></section>}
    {mode==='roam'&&<><div className="crosshair"/><div className="roam-help">W A S D 移动 · {lookLocked?'鼠标环顾':'按住鼠标拖拽环顾'} · Esc 退出<button onClick={()=>setMode('overview')}>返回全景</button>{near&&<button onClick={()=>select(near)}>按 E 查看《{library.books.find(b=>b.id===near)?.title}》</button>}</div></>}
    {opening&&<div className="cinema-caption"><span>正在翻开</span><h2>{current?.title}</h2><button onClick={()=>enter(selected)}>跳过动画 <ArrowUpRight size={15}/></button></div>}

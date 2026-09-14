@@ -1,6 +1,6 @@
 {
   "created": "2026-09-13",
-  "status": "v02_preview_pending_user_review",
+  "status": "v011_baseline_restored_hearth_fixed_pending_review",
   "order_basis": "Actual generated-image display order in the conversation; editor reference image is excluded.",
   "selected_display_order": null,
   "references": [
@@ -105,7 +105,7 @@
     "entry": "apps/web/src/App.jsx",
     "blender_source": "assets/source/storyos-library.blend",
     "asset_manifest": "assets/manifest.json",
-    "overview": "evidence/library-overview-final.png",
+    "overview": "evidence/v011/overview.png",
     "qa": "design-qa.md"
   },
   "baseline": {
@@ -114,11 +114,27 @@
     "scope": "Preserve the current playable sample; details may change in later iterations."
   },
   "current_iteration": {
-    "version": "v0.2.0-preview.1",
+    "version": "v0.1.1-preview.1",
     "branch": "iteration/next",
     "baseline": "v0.1.0-baseline",
-    "brief": "design/iterations/01-lived-in-room.md",
-    "screenshot": "evidence/v02/overview.png",
+    "brief": "design/iterations/02-baseline-hearth.md",
+    "screenshot": "evidence/v011/overview.png",
     "qa": "design-qa.md"
+  },
+  "historical_iterations": [
+    {
+      "version": "v0.2.0-preview.1",
+      "branch": "iteration/next",
+      "baseline": "v0.1.0-baseline",
+      "brief": "design/iterations/01-lived-in-room.md",
+      "screenshot": "evidence/v02/overview.png",
+      "qa": "evidence/v02/design-qa.md",
+      "status": "rejected_by_user_2026-09-14"
+    }
+  ],
+  "latest_feedback": {
+    "date": "2026-09-14",
+    "decision": "Restore first version; improve only its fireplace gaps. Second version is not preferred.",
+    "record": "design/iterations/02-baseline-hearth.md"
   }
 }

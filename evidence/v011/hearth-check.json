@@ -1,0 +1,92 @@
+{
+  "baseline": {
+    "pillar_ray_count": 330,
+    "pillar_gap_count": 16,
+    "pillar_gap_locations": [
+      [
+        0.08,
+        0.69
+      ],
+      [
+        0.08,
+        0.7
+      ],
+      [
+        0.08,
+        1.1
+      ],
+      [
+        0.08,
+        1.11
+      ],
+      [
+        0.08,
+        1.12
+      ],
+      [
+        0.08,
+        1.52
+      ],
+      [
+        0.08,
+        1.53
+      ],
+      [
+        0.08,
+        1.54
+      ],
+      [
+        1.72,
+        0.69
+      ],
+      [
+        1.72,
+        0.7
+      ],
+      [
+        1.72,
+        1.1
+      ],
+      [
+        1.72,
+        1.11
+      ],
+      [
+        1.72,
+        1.12
+      ],
+      [
+        1.72,
+        1.52
+      ],
+      [
+        1.72,
+        1.53
+      ],
+      [
+        1.72,
+        1.54
+      ]
+    ],
+    "header_hits": 0,
+    "header_ray_count": 25,
+    "firebox_open": true,
+    "packed_textures": [
+      "sculpted-plaster.png",
+      "sculpted-wood.png"
+    ]
+  },
+  "current": {
+    "pillar_ray_count": 330,
+    "pillar_gap_count": 0,
+    "pillar_gap_locations": [],
+    "header_hits": 25,
+    "header_ray_count": 25,
+    "firebox_open": true,
+    "packed_textures": [
+      "sculpted-plaster.png",
+      "sculpted-wood.png"
+    ]
+  },
+  "scope": "Front-facing rays through saved Stone meshes; not a whole-scene manifold or collision proof."
+}

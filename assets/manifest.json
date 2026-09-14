@@ -1,4 +1,6 @@
 {
+  "version": "0.1.1-preview.1",
+  "baseline": "v0.1.0-baseline",
   "source_script": "scripts/build_library.py",
   "source_blender": "5.2.1 LTS",
   "runtime_versions": {
@@ -12,30 +14,30 @@
   "assets": [
     {
       "path": "public/assets/models/library-room.glb",
-      "bytes": 6180804,
-      "sha256": "3c5a994c50c6f430a979f3ba43f09e8823dadbf6670a85d072f34f22fdb1b58a",
-      "meshes": 17,
-      "materials": 17,
+      "bytes": 5781132,
+      "sha256": "980affcd368811408ab199ab53a8167ada10364ea1115715896221a0b268955b",
+      "meshes": 15,
+      "materials": 15,
       "embedded_images": 2,
-      "triangles": 52584
+      "triangles": 35668
     },
     {
       "path": "public/assets/models/opening-hands.glb",
-      "bytes": 383680,
-      "sha256": "dca24776af26bde8c8e8032567af5e3c84b5248e3a4e0fedc020258c18e056b6",
-      "meshes": 4,
+      "bytes": 82936,
+      "sha256": "00548493eb5ea90d87de75d503d1d664fb183567a8d0473d7b6e52cb2bfc677c",
+      "meshes": 14,
       "materials": 2,
       "embedded_images": 0,
-      "triangles": 20776
+      "triangles": 3224
     },
     {
       "path": "public/assets/models/story-book.glb",
-      "bytes": 174856,
-      "sha256": "6a8dab0082be6baa723d38a083cf35fc8746823af009e2b988afc87ed034ff4c",
-      "meshes": 9,
+      "bytes": 185284,
+      "sha256": "d5e9fe71b3c156a73100d3ab02265a39c5dd5df852bfced13a0c167446ee5e2e",
+      "meshes": 30,
       "materials": 4,
       "embedded_images": 0,
-      "triangles": 3608
+      "triangles": 3788
     },
     {
       "path": "public/assets/textures/sculpted-plaster.png",
@@ -49,8 +51,8 @@
     },
     {
       "path": "assets/source/storyos-library.blend",
-      "bytes": 5452819,
-      "sha256": "9c20b65f124bb9d3216b6fc1c3662258bc94c41eb05dd9f94e333167fc4a4992"
+      "bytes": 4907844,
+      "sha256": "ece6752db43f0149f987afa7243ad7d8da7f2f753ae86df95616da1c62637f43"
     }
   ],
   "texture_provenance": [
@@ -58,7 +60,5 @@
     "assets/source/plaster-texture.json"
   ],
   "network_references": "Design research only; not shipped as scene content.",
-  "layout_source": "apps/web/src/room-layout.json",
-  "version": "0.2.0-preview.1",
-  "animation_source": "apps/web/src/BookInteraction.jsx and book-animation.mjs: shared fixed timeline, cover-parented grip, curved sleeves and deforming sheets. Blender CoverPivot/PagePivot and sculpted hands; no baked skeletal clips."
+  "animation_source": "Deterministic runtime transforms in apps/web/src/Scene.jsx, using Blender CoverPivot/PagePivot and prebuilt hands. No baked skeletal clips."
 }

@@ -6,7 +6,6 @@
     "dev": "npm --prefix apps/web run dev --",
     "build": "npm --prefix apps/web run build",
     "test": "node --test apps/web/tests/library-model.test.mjs",
-    "assets": "blender --background --python scripts/build_library.py && python3 scripts/asset_manifest.py",
-    "test:assets": "node scripts/check_book_contacts.mjs"
+    "assets": "blender --background --factory-startup --python-exit-code 1 --python scripts/build_library.py && python3 scripts/asset_manifest.py"
   }
 }

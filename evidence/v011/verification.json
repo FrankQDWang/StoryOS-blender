@@ -1,0 +1,30 @@
+{
+  "baseline": "546b7504388f961333ff2012bacd33f19c618c1a",
+  "rejected_preview": "b2cd295b2f8771976892f9401b3f6900db99af0c",
+  "frontend_matches_baseline": true,
+  "browser": "Chrome",
+  "url": "http://127.0.0.1:4173/",
+  "flows": [
+    "select first physical book",
+    "complete original opening into 星海余烬",
+    "return to room",
+    "central new-book form",
+    "cancel without creating a project"
+  ],
+  "remaining_projects": 3,
+  "console": "One extension-origin fetch failure; no application-origin error in captured errors.",
+  "screenshots": {
+    "book-and-hearth.png": [
+      65536,
+      4292542531
+    ],
+    "overview.png": [
+      65536,
+      4292542531
+    ],
+    "workspace.png": [
+      65536,
+      4292542531
+    ]
+  }
+}
