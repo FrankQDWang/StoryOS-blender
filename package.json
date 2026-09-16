@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm --prefix apps/web run dev --",
     "build": "npm --prefix apps/web run build",
-    "test": "node --test apps/web/tests/library-model.test.mjs",
+    "test": "node --test apps/web/tests/library-model.test.mjs apps/web/tests/roaming.test.mjs",
     "assets": "blender --background --factory-startup --python-exit-code 1 --python scripts/build_library.py && python3 scripts/asset_manifest.py"
   }
 }

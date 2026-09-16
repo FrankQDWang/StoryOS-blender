@@ -1,0 +1,24 @@
+{
+  "version": "0.1.2-preview.3",
+  "rear_yaws": [
+    0.18,
+    -0.18
+  ],
+  "positions_unchanged": true,
+  "existing_tests": "10 passed",
+  "geometry": "passed",
+  "build": "passed",
+  "camera_clearance": "5/5 approach, focus and opening projections walkable",
+  "chrome": [
+    "left and right rear direct selection",
+    "left focus to roaming, W movement, E selection",
+    "right opening completed to matching workspace and return",
+    "magic table disk create and cancel"
+  ],
+  "particle_picking_fix": "confirmed before and after on same canvas coordinates; decorative Sparkles raycast disabled",
+  "console_errors": [],
+  "delivery": "http://127.0.0.1:4173/",
+  "delivery_books": 3,
+  "new_image_assets": false,
+  "git": "uncommitted iteration/next; no push or ref changes"
+}

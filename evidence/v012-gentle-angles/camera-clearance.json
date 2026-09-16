@@ -1,0 +1,60 @@
+{
+  "version": "0.1.2-preview.4",
+  "endpoints": [
+    {
+      "slot": 1,
+      "yawDegrees": 20,
+      "approachWalkable": true,
+      "focus": {
+        "x": -2.9531770966419337,
+        "z": 3.2183149723269424
+      },
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 2,
+      "yawDegrees": 0,
+      "approachWalkable": true,
+      "focus": {
+        "x": -1.97,
+        "z": -1.25
+      },
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 3,
+      "yawDegrees": 0,
+      "approachWalkable": true,
+      "focus": {
+        "x": 2.07,
+        "z": -1.25
+      },
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 4,
+      "yawDegrees": -10,
+      "approachWalkable": true,
+      "focus": {
+        "x": 2.739308850083443,
+        "z": 0.6598171396065418
+      },
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 5,
+      "yawDegrees": -20,
+      "approachWalkable": true,
+      "focus": {
+        "x": 2.8471463587205252,
+        "z": 3.1425169866595093
+      },
+      "focusWalkable": true,
+      "openingWalkable": true
+    }
+  ]
+}

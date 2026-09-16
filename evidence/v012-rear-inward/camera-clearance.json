@@ -1,0 +1,57 @@
+[
+  {
+    "slot": 1,
+    "yawDegrees": 27.501974166279513,
+    "approachWalkable": true,
+    "focus": {
+      "x": -2.728269820332218,
+      "z": 3.1122013945035656
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 2,
+    "yawDegrees": 10.313240312354818,
+    "approachWalkable": true,
+    "focus": {
+      "x": -1.630651625851528,
+      "z": -1.2896484623738604
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 3,
+    "yawDegrees": -10.313240312354818,
+    "approachWalkable": true,
+    "focus": {
+      "x": 1.7290359951303402,
+      "z": -1.271745505031278
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 4,
+    "yawDegrees": -20.626480624709636,
+    "approachWalkable": true,
+    "focus": {
+      "x": 2.3974737979612257,
+      "z": 0.5758176766518306
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 5,
+    "yawDegrees": -29.79380534680281,
+    "approachWalkable": true,
+    "focus": {
+      "x": 2.549318697080783,
+      "z": 3.013700448279722
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-14",
+  "status": "partial_feedback_received",
+  "current_baseline": "v0.1.1-preview.1 / iteration/next",
+  "existing_anchors": [
+    "S11",
+    "S12"
+  ],
+  "references": [
+    {
+      "id": "T01",
+      "title": "炉边魔法书房 · 全景",
+      "work": "Stylized Wizard Room",
+      "creator": "Horia Mocanu",
+      "publisher": "StylArts",
+      "source_url": "https://www.artstation.com/marketplace/p/1VOmJ/stylized-wizard-room",
+      "image_url": "https://cdnb.artstation.com/p/marketplace/presentation_assets/001/433/699/large/file.jpg?1639745180",
+      "role": "new_candidate",
+      "focus": "炉火与桌面构成聚集区域；另一侧退入暗部；大小家具形成层次",
+      "local_file": "design/reference-library/round-03/images/T01.jpg",
+      "bytes": 236681,
+      "sha256": "ae859c7b0c9ca4f01bcd398ecec449c4ed33c2fd7d656b73fc5d445f719ad2c9",
+      "visually_inspected_in_chrome": true,
+      "user_feedback": "lighting_and_feeling_liked_layout_too_cramped",
+      "rights": "External visual research reference only; not incorporated into runtime assets",
+      "selection_scope": [
+        "lighting",
+        "feeling"
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "炉边魔法书房 · 家具近景",
+      "work": "Stylized Wizard Room",
+      "creator": "Horia Mocanu",
+      "publisher": "StylArts",
+      "source_url": "https://www.artstation.com/marketplace/p/1VOmJ/stylized-wizard-room",
+      "image_url": "https://cdna.artstation.com/p/marketplace/presentation_assets/001/433/694/large/file.jpg?1639745105",
+      "role": "same_work_detail",
+      "focus": "概括的木雕体积、厚实但不方正的桌椅轮廓；不是要求增加卷轴与蜡烛数量",
+      "local_file": "design/reference-library/round-03/images/T02.jpg",
+      "bytes": 285939,
+      "sha256": "b6d2ed400cc0978eb02dfdc57b22e2aec60dad6e0facc320542e36a3b35ba66d",
+      "visually_inspected_in_chrome": true,
+      "user_feedback": "lighting_and_feeling_liked_layout_too_cramped",
+      "rights": "External visual research reference only; not incorporated into runtime assets",
+      "selection_scope": [
+        "lighting",
+        "feeling"
+      ]
+    },
+    {
+      "id": "T03",
+      "title": "星夜阁楼 · 空间层次对照",
+      "work": "Attic Lighting Setups — Stylized Night",
+      "creator": "Luís Borges (lighting and most of layout); Jeremy Vickery (concept); Alex Mateo (asset)",
+      "source_url": "https://luisborges.artstation.com/projects/v2yBzO",
+      "image_url": "https://cdna.artstation.com/p/assets/images/images/032/331/584/large/luis-borges-main-night.jpg?1606145775",
+      "role": "exploratory_candidate",
+      "focus": "倾斜屋顶、前景遮挡、偏侧窗与深处书桌；紫红灯光偏离当前基准，用户喜好未知",
+      "local_file": "design/reference-library/round-03/images/T03.jpg",
+      "bytes": 213078,
+      "sha256": "0954fd087c0c82a8435372577cff3f54ad83913aac7866eb26b38a0e2de34456",
+      "visually_inspected_in_chrome": true,
+      "user_feedback": "spatial_feeling_liked_color_palette_rejected",
+      "rights": "External visual research reference only; not incorporated into runtime assets",
+      "selection_scope": [
+        "spatial_feeling"
+      ]
+    }
+  ],
+  "selection": {
+    "lighting_and_feeling": [
+      "T01",
+      "T02"
+    ],
+    "spatial_feeling": [
+      "T03"
+    ],
+    "whole_design": null,
+    "must_preserve": "clear space for optional free roaming"
+  },
+  "note": "两组新作品，T01/T02 为同一作品的不同视角。没有生成设计概念，没有实施场景变化，没有购买或采用第三方3D资产。",
+  "latest_user_feedback": "喜欢T01 T02的光和感觉，但是这个布局有点挤，我们是要能自由漫游，就是在房间走动的，需要留出空间。第三张不喜欢配色，但是空间感不错。我们继续对齐审美"
+}

@@ -8,7 +8,7 @@
 
 ## 版本管理
 
-当前迭代为 `v0.1.1-preview.1`（`iteration/next`）：恢复第一版，只修复壁炉空隙。第二版 `v0.2.0-preview.1` 保留为历史，已认可小样 `v0.1.0-baseline` 与 `main` 不动。代码、Blender 源文件、GLB、纹理、参考来源和截图一起版本化；后续调整在独立分支进行。恢复/对比方法与边界见 [VERSIONING.md](VERSIONING.md)。
+当前资产版本为 `0.1.2-preview.4`（`iteration/next`，未新增 Git 标签），用户于 2026-09-16 实际体验后认可并要求保存进度：暖炉房间、清楚的漫游空间，以及后排 0°、中段内收 10°、前景内收 20° 的阅读台布局。第二版 `v0.2.0-preview.1` 保留为历史，已认可小样 `v0.1.0-baseline` 与 `main` 不动。恢复/对比方法与边界见 [VERSIONING.md](VERSIONING.md)，最新范围以 [PLAN.md](PLAN.md) 为准。
 
 ## 体验
 
@@ -52,17 +52,18 @@ npm run assets
 | `public/assets/models/story-book.glb` | 通用书本；CoverPivot 和 PagePivot 铰链 |
 | `public/assets/models/opening-hands.glb` | 预制手掌、手指与袖口 |
 | `public/assets/models/scene.json` | 坐标、展示位和制作版本 |
-| `public/assets/textures/` | 两张原创生成的木纹与灰泥图片 |
+| `public/assets/textures/` | 木纹、灰泥与四象限装饰图集，均保留生成来源 |
+| `apps/web/src/room-layout.json` | Blender、书位与导航共用的米制布局 |
 | `assets/manifest.json` | 资源字节数、SHA256、三角形数量、版本和来源索引 |
 
-`Scene.jsx` 管理第一版房间、镜头、手部和翻页动作；没有烘焙骨骼动画。书位与制作信息在 `scene.json` 中记录，脚本和网页保留 baseline 坐标。运行时书封色、标题与项目数据无需修改 Blender。第二版的桌面开书和开发检查页已随回滚移除。
+`Scene.jsx` 管理场景、镜头、手部与翻页；`HearthFire.jsx` 提供立体火焰；`roaming.mjs` 负责身体碰撞和滑动。源布局由 Blender 与网页共同读取，导出副本保存在 `scene.json`。书封色、标题与项目数据无需修改 Blender。手部与书本源网格保持 baseline，无烘焙骨骼动画。
 
 ## 验收与限制
 
-见 `design-qa.md`、`evidence/v011/` 与 `PLAN.md`。Chrome 全景、近景、完整开书、返回、新建表单取消通过；4 项领域测试和构建通过。3 份 GLB 共 6,049,352 bytes（约 5.77 MiB），图片嵌入模型。
+见 `design-qa.md`、`evidence/v012-gentle-angles/` 与 `PLAN.md`。当前版本 10 项领域/漫游测试、模型几何检查、生产构建、Chrome 后排漫游/E 选书、开书返回和前景选书通过；整体氛围阶段的搜索、新建取消/归位/刷新保存及低动态流程记录在 `evidence/v012/`。3 份 GLB 共 12,247,380 bytes（约 11.68 MiB），图片嵌入模型。
 
-第一版布局、光影、阅读台与中央魔法圆台恢复，壁炉改为连续两侧炉身和拱口。保存模型的 330 个两侧抽查位置由原版 16 处漏空降为 0，炉膛仍开放。本轮只处理壁炉，手部造型和动作也恢复第一版，原有接触局限仍在。
+暖炉、冷夜窗、木材/灰泥和贴墙陈设参照 `design/round-04/01-open-hearth.png`；当前实际截图在 `evidence/v012-gentle-angles/07-overview-final.jpg`。保留五台与中央留白，五台正面可达，圆台可完整绕行。壁炉 330 条柱射线零漏空、拱沿 25/25 命中；手部接触局限仍在，按用户要求暂缓。
 
-本机开发态本次约 41–45 FPS，页面显示加载 1.9 秒。包含缓存与当前机器负载，不是跨设备或冷启动性能保证。
+本机原生 DPR 2 多页测试约 39–64 FPS；最终 1512×756、DPR 1 的单页截图显示 120 FPS、加载 1.1 秒。条件不同，不作为跨设备或冷启动性能保证。
 
 未集成真实 StoryOS、账户、云同步和编辑器；未验收移动端、其他浏览器和低端显卡。开发控制台仍有上游 `THREE.Clock` 弃用提醒，构建有较大单个 JS 分块提示，不影响本次已验证流程。环境音只有轻声合成和弦，未做音质验收。

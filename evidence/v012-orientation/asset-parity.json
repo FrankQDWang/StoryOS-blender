@@ -1,0 +1,17 @@
+[
+  {
+    "asset": "library-room.glb",
+    "production_matches_export": true,
+    "unchanged_from_before": false
+  },
+  {
+    "asset": "opening-hands.glb",
+    "production_matches_export": true,
+    "unchanged_from_before": false
+  },
+  {
+    "asset": "story-book.glb",
+    "production_matches_export": true,
+    "unchanged_from_before": true
+  }
+]

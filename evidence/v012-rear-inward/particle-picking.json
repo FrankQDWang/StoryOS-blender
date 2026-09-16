@@ -1,0 +1,29 @@
+{
+  "trigger": "Click rear-left book at canvas CSS (582,372) from overview with normal motion",
+  "before": "Create new work dialog opened instead of selecting the book",
+  "confirmed_event": {
+    "client": [
+      582,
+      372
+    ],
+    "offset": [
+      582,
+      372
+    ],
+    "target": "CANVAS"
+  },
+  "first_hit": {
+    "object_type": "Points",
+    "parent_position": [
+      0,
+      1.1,
+      0.6
+    ],
+    "distance": 4.875204091088334,
+    "distance_to_ray": 0.9678319104482906
+  },
+  "cause": "MagicTable Sparkles inherit the parent click handler; the default Points raycast threshold is much larger than visible particles.",
+  "fix": "Disable raycast only for decorative Sparkles inside MagicTable. Keep table disk and rings interactive.",
+  "after": "The same canvas click selects slot 2, 守月人.",
+  "diagnostic_scope": "Chrome runtime event and intersection inspection through tab-scoped CDP; temporary event probes were removed."
+}

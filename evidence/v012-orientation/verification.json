@@ -1,0 +1,35 @@
+{
+  "version": "0.1.2-preview.2",
+  "layout_changes": {
+    "positions": "unchanged",
+    "yaws": {
+      "left_front": 0.48,
+      "right_middle": -0.36,
+      "right_front": -0.52
+    },
+    "rear_yaws": "unchanged"
+  },
+  "automated": {
+    "existing_tests": "10/10 passed",
+    "geometry": "passed",
+    "build": "passed",
+    "asset_parity": "passed",
+    "camera_endpoint_clearance": "5/5 focus and opening"
+  },
+  "chrome": {
+    "overview_before_after": "passed",
+    "left_front_focus_open_return": "passed",
+    "right_front_create_focus_open_return": "passed",
+    "rear_focus_to_roam_in_place": "passed",
+    "W_approach_and_E_selection": "passed",
+    "console_errors": 0,
+    "pointer_lock": "not obtained; drag fallback used"
+  },
+  "delivery_origin": "http://127.0.0.1:4173/",
+  "delivery_books": 3,
+  "test_origin": "http://localhost:4173/",
+  "test_books": 5,
+  "reused_visual_target": "design/round-04/01-open-hearth.png",
+  "new_image_assets": false,
+  "scope": "Local preview on iteration/next; not committed or published. Hands source geometry and animation unchanged."
+}

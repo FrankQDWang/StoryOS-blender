@@ -1,0 +1,14 @@
+[
+  {
+    "asset": "story-book.glb",
+    "production_matches_export": true
+  },
+  {
+    "asset": "opening-hands.glb",
+    "production_matches_export": true
+  },
+  {
+    "asset": "library-room.glb",
+    "production_matches_export": true
+  }
+]

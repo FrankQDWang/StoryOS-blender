@@ -1,0 +1,67 @@
+[
+  {
+    "slot": 1,
+    "desired": {
+      "x": -2.728269820332218,
+      "z": 3.1122013945035656
+    },
+    "focus": {
+      "x": -2.728269820332218,
+      "z": 3.1122013945035656
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 2,
+    "desired": {
+      "x": -2.2544938978030364,
+      "z": -1.2638630452978399
+    },
+    "focus": {
+      "x": -2.2544938978030364,
+      "z": -1.2638630452978399
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 3,
+    "desired": {
+      "x": 2.3533710055966406,
+      "z": -1.2788068585451997
+    },
+    "focus": {
+      "x": 2.2099544990922717,
+      "z": -1.3327892405659814
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 4,
+    "desired": {
+      "x": 2.3974737979612257,
+      "z": 0.5758176766518306
+    },
+    "focus": {
+      "x": 2.3974737979612257,
+      "z": 0.5758176766518306
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  },
+  {
+    "slot": 5,
+    "desired": {
+      "x": 2.549318697080783,
+      "z": 3.013700448279722
+    },
+    "focus": {
+      "x": 2.549318697080783,
+      "z": 3.013700448279722
+    },
+    "focusWalkable": true,
+    "openingWalkable": true
+  }
+]

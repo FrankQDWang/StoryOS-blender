@@ -1,0 +1,45 @@
+{
+  "version": "0.1.2-preview.4",
+  "date": "2026-09-16",
+  "angle_degrees_by_slot": [
+    20,
+    0,
+    0,
+    -10,
+    -20
+  ],
+  "positions_unchanged": true,
+  "pitch_unchanged": true,
+  "unit_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "geometry_passed": true,
+  "production_build": "passed",
+  "production_glb_parity": true,
+  "chrome": {
+    "url": "http://127.0.0.1:4173/",
+    "overview_screenshot": "07-overview-final.jpg",
+    "viewport": [
+      1512,
+      751
+    ],
+    "example_books": 3,
+    "checks": [
+      "rear book click selects 守月人",
+      "rear focus to roaming remains at the book",
+      "W movement reveals E prompt and E selects 守月人",
+      "full opening enters 守月人 workspace and return succeeds",
+      "front 20-degree book click selects 星海余烬 and focus is aligned"
+    ],
+    "errors": []
+  },
+  "aesthetic_acceptance": "user accepted current preview on 2026-09-16",
+  "limits": [
+    "Original hand contact detail retained",
+    "Native pointer lock not verified; drag fallback retained"
+  ],
+  "source_reference": "design/round-04/01-open-hearth.png",
+  "new_raster_assets": false,
+  "user_feedback": "可以，这个我比较满意。可以提交保存，然后 push 吗？就是保存当前进度。"
+}

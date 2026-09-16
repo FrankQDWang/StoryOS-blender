@@ -1,0 +1,23 @@
+[
+  {
+    "file": "library-room.glb",
+    "bytes": 11979160,
+    "sourceSha256": "64cf9da089b5a591ced09dcd9c133afb2e1532e3bb0b30f41209ec60760150f5",
+    "productionSha256": "64cf9da089b5a591ced09dcd9c133afb2e1532e3bb0b30f41209ec60760150f5",
+    "match": true
+  },
+  {
+    "file": "opening-hands.glb",
+    "bytes": 82936,
+    "sourceSha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd",
+    "productionSha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd",
+    "match": true
+  },
+  {
+    "file": "story-book.glb",
+    "bytes": 185284,
+    "sourceSha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
+    "productionSha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
+    "match": true
+  }
+]

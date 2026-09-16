@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1-preview.1",
+  "version": "0.1.2-preview.4",
   "baseline": "v0.1.0-baseline",
   "source_script": "scripts/build_library.py",
   "source_blender": "5.2.1 LTS",
@@ -14,17 +14,17 @@
   "assets": [
     {
       "path": "public/assets/models/library-room.glb",
-      "bytes": 5781132,
-      "sha256": "980affcd368811408ab199ab53a8167ada10364ea1115715896221a0b268955b",
-      "meshes": 15,
-      "materials": 15,
-      "embedded_images": 2,
-      "triangles": 35668
+      "bytes": 11979160,
+      "sha256": "64cf9da089b5a591ced09dcd9c133afb2e1532e3bb0b30f41209ec60760150f5",
+      "meshes": 22,
+      "materials": 22,
+      "embedded_images": 3,
+      "triangles": 110522
     },
     {
       "path": "public/assets/models/opening-hands.glb",
       "bytes": 82936,
-      "sha256": "00548493eb5ea90d87de75d503d1d664fb183567a8d0473d7b6e52cb2bfc677c",
+      "sha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd",
       "meshes": 14,
       "materials": 2,
       "embedded_images": 0,
@@ -33,11 +33,16 @@
     {
       "path": "public/assets/models/story-book.glb",
       "bytes": 185284,
-      "sha256": "d5e9fe71b3c156a73100d3ab02265a39c5dd5df852bfced13a0c167446ee5e2e",
+      "sha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
       "meshes": 30,
       "materials": 4,
       "embedded_images": 0,
       "triangles": 3788
+    },
+    {
+      "path": "public/assets/textures/hearth-decor-atlas.png",
+      "bytes": 3060990,
+      "sha256": "916bf34a473bc05508fd0329ab64c2c682097331cc788a4bb6b5b60412b1d826"
     },
     {
       "path": "public/assets/textures/sculpted-plaster.png",
@@ -51,14 +56,17 @@
     },
     {
       "path": "assets/source/storyos-library.blend",
-      "bytes": 4907844,
-      "sha256": "ece6752db43f0149f987afa7243ad7d8da7f2f753ae86df95616da1c62637f43"
+      "bytes": 9080203,
+      "sha256": "cbd6324159a27aa8bf1662bf78124e721f2929823738adf96a3d00aafe0cd521"
     }
   ],
   "texture_provenance": [
     "assets/source/wood-texture.json",
-    "assets/source/plaster-texture.json"
+    "assets/source/plaster-texture.json",
+    "assets/source/hearth-decor-atlas.json"
   ],
+  "visual_target": "design/round-04/01-open-hearth.png",
+  "layout_source": "apps/web/src/room-layout.json",
   "network_references": "Design research only; not shipped as scene content.",
   "animation_source": "Deterministic runtime transforms in apps/web/src/Scene.jsx, using Blender CoverPivot/PagePivot and prebuilt hands. No baked skeletal clips."
 }

@@ -1,0 +1,49 @@
+{
+  "version": "0.1.2-preview.1",
+  "visual_target": "design/round-04/01-open-hearth.png",
+  "actual_overview": "evidence/v012/overview.png",
+  "comparison": "evidence/v012/comparison-final.png",
+  "tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "geometry_check": "evidence/v012/geometry-check.json",
+  "build": "passed",
+  "production_glb_parity": true,
+  "console_errors": [],
+  "chrome_flows": [
+    "WASD movement",
+    "table collision",
+    "side passage",
+    "E selection",
+    "drag look including back wall",
+    "Esc overview",
+    "normal book opening to matching workspace",
+    "return",
+    "create cancel",
+    "create animation and slot placement",
+    "reload persistence",
+    "Cmd+K title search",
+    "direct list entry",
+    "reduced-motion direct opening"
+  ],
+  "test_origin": "http://localhost:4173/",
+  "delivery_origin": "http://127.0.0.1:4173/",
+  "delivery_demo_books": 3,
+  "pointer_lock": "not granted in automated session; drag fallback verified",
+  "scope_limits": [
+    "hand animation deferred",
+    "placeholder writing workspace",
+    "no StoryOS integration",
+    "no mobile/other browser/low GPU verification"
+  ],
+  "git": {
+    "branch": "iteration/next",
+    "head": "5dadd711d05769696ebc6720a32439f9ad3c9d85",
+    "new_changes": "uncommitted local preview",
+    "main": "26e1d6b194d35ae242a976e6879ee21ff3b9b278",
+    "baseline_tag": "56b6df9493d380197b11e7800a05cbd289417c06",
+    "rejected_preview_tag": "93b69e98a868e3737fbdfa6cab6735ad79f0f47b"
+  },
+  "dirty_work_accounting": "Pre-existing PLAN selection notes, round03 references and round04 concepts are from this conversation; runtime, source assets, geometry tests, generated atlas and v012 evidence were added by this implementation. No unrelated changes reverted."
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-14",
+  "tool": "built-in image_gen.imagegen",
+  "status": "visual_target_selected",
+  "display_order_rule": "Actual generated image display order in this turn, not a promise-order assumption",
+  "references": [
+    "evidence/v011/overview.png",
+    "design/reference-library/round-03/images/T01.jpg",
+    "design/reference-library/round-03/images/T03.jpg"
+  ],
+  "images": [
+    {
+      "display_order": 1,
+      "request_name": "open",
+      "local_file": "design/round-04/01-open-hearth.png",
+      "original_file": "/Users/frankqdwang/.codex/generated_images/01a09e7e-1af3-7d11-a67d-cce55541e6c2/exec-f4b2b99a-63ec-4617-b281-1db3e9951a60.png",
+      "prompt_file": "design/round-04/prompt-open.txt",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1934113,
+      "sha256": "b6dcb95e6f5f7c78ef85802d7d1aadb700f9b86567690ee293303996c9a8e4c7",
+      "user_selection": "selected_visual_target",
+      "visual_review": "五个阅读台可辨，三本书两空台。地面视觉留白比 T01/T02 多；仍保留显著中轴，未按提示形成二二一分组。壁炉、阅读台和圆台之间的真实净距未验证。"
+    },
+    {
+      "display_order": 2,
+      "request_name": "attic",
+      "local_file": "design/round-04/02-gentle-attic.png",
+      "original_file": "/Users/frankqdwang/.codex/generated_images/01a09e7e-1af3-7d11-a67d-cce55541e6c2/exec-e7f26ada-9a8b-46ae-9d0c-c48abd35d67b.png",
+      "prompt_file": "design/round-04/prompt-attic.txt",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1936717,
+      "sha256": "f0ada8da0f3cb8ef2f6501df75d08546c83c656222b36398ffe20933ab357d5d",
+      "user_selection": "not_selected",
+      "visual_review": "五个阅读台可辨，三本书两空台。斜顶与梁的纵深可见；主要家具仍接近原版一排展开，生成差异以屋顶为主。"
+    },
+    {
+      "display_order": 3,
+      "request_name": "bay",
+      "local_file": "design/round-04/03-window-bay.png",
+      "original_file": "/Users/frankqdwang/.codex/generated_images/01a09e7e-1af3-7d11-a67d-cce55541e6c2/exec-c921fe97-a642-4b04-929c-5d8691fd12aa.png",
+      "prompt_file": "design/round-04/prompt-bay.txt",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1820994,
+      "sha256": "dff07476aab2f270eab0dcd075b30e401ade40dbd102b5e875b6d8ef464c1cef",
+      "user_selection": "not_selected",
+      "visual_review": "五个阅读台可辨，三本书两空台。后窗浅凹层次可见但变化保守，圆台依然接近中轴，真实可绕行宽度未验证。"
+    }
+  ],
+  "selected_image": "design/round-04/01-open-hearth.png",
+  "shared_limitations": [
+    "Concept target selected; no corresponding implementation or roaming verification yet",
+    "Earlier central-axis critique is historical assistant analysis, superseded as a redesign requirement by user approval of the first image",
+    "Five display stands visually present; scale, camera lens and walkable clearances are not physically verified"
+  ],
+  "latest_user_feedback": [
+    "第一张",
+    "太棒了",
+    "就是这个"
+  ],
+  "selection_scope": "The first displayed concept is the confirmed overall visual target. Preserve its lighting, materials, composition and spatial feeling. Earlier assistant critique of central-axis regularity is not a mandate to redesign the approved image. Free-roaming clearance still needs implementation verification."
+}

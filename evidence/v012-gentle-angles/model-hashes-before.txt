@@ -1,0 +1,3 @@
+19471b6e6f975464d1b203ae76a5d43ca5f5e68f203c1744d5786e725e76db13  public/assets/models/library-room.glb
+133ef6b772c76785bdd342a71d60fb78094eaac91497b8a25d0ab7c0539c1a6a  public/assets/models/opening-hands.glb
+34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001  public/assets/models/story-book.glb

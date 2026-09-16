@@ -1,0 +1,80 @@
+{
+  "id": "hearth-decor-atlas",
+  "source_crop": "design/round-04/01-open-hearth.png",
+  "strategy": "faithful regeneration from approved full-scene visual reference into flat 2x2 albedo atlas",
+  "prompt_used": "Use case: stylized-concept\nAsset type: ONE production 2048x2048 square albedo texture atlas for four flat decorative surfaces in an actual Blender 3D room.\nInput image is the approved visual reference ONLY, not an edit target and not the requested output. Extract the subdued material language from its left back wall tapestry, botanical picture, right forest picture, and quiet woven floor rug. Do NOT output a room or interior.\nOutput composition: EXACT 2x2 equal square panels covering the complete image, boundaries at exactly x=50% and y=50%. Each quadrant is a complete FLAT FRONT-ON texture filling its quadrant right up to all four edges. No gutters, padding, layout background, outer border, frames, rounded corners, drop shadows, perspective, folded cloth or objects.\nUPPER LEFT: dark umber woven tapestry surface, restrained aged brass embroidered crescent moon centered in upper third and a simple fine-line compass/eight-point star motif in middle/lower area, very sparse and muted like the reference left back wall.\nUPPER RIGHT: one muted sepia botanical pressed-plant illustration with stem and small leaves on warm aged parchment, no text or labels, delicate hand-drawn organic lines.\nLOWER LEFT: desaturated brown/charcoal painting of distant conifer trees on aged parchment, sparse atmospheric forest composition resembling the approved right wall picture. Flat unframed artwork.\nLOWER RIGHT: dark rust-brown woven rug texture with subtle narrow antique-gold DOUBLE border inset 8% from this quadrant's own four edges, mostly quiet fiber-textured interior. No fringe, no floor underneath.\nLighting: even neutral diffuse albedo only, retain intrinsic pigment variations but remove directional room illumination, shadows and specular highlights; actual 3D engine supplies lighting.\nPreserve the reference palette, aged material, restrained detail and visual role. Four distinct material panels, no added objects, no redesign, no bright colors, purple, blue, letters, digits, writing, logos, UI or watermarks. 2048x2048 PNG square requested.",
+  "input": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-04/01-open-hearth.png",
+  "tool": "image_gen.imagegen",
+  "tool_output_path": "/Users/frankqdwang/.codex/generated_images/01a09e9a-e052-7652-bdbd-8bc55e7461b1/exec-747e48f0-b0ec-4776-8a27-b7202f5399fc.png",
+  "output_paths": [
+    "assets/source/hearth-decor-atlas.png",
+    "public/assets/textures/hearth-decor-atlas.png"
+  ],
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "requested_dimensions": [
+    2048,
+    2048
+  ],
+  "format": "png",
+  "transparency": false,
+  "quadrants": [
+    {
+      "id": "moon-tapestry",
+      "image_region": "upper-left",
+      "uv_bounds_blender": [
+        0,
+        0.5,
+        0.5,
+        1
+      ],
+      "notes": "Dark umber woven field, muted gold crescent/compass; thin embroidered side borders."
+    },
+    {
+      "id": "botanical-print",
+      "image_region": "upper-right",
+      "uv_bounds_blender": [
+        0.5,
+        0.5,
+        1,
+        1
+      ],
+      "notes": "Parchment with olive-sepia plant."
+    },
+    {
+      "id": "forest-print",
+      "image_region": "lower-left",
+      "uv_bounds_blender": [
+        0,
+        0,
+        0.5,
+        0.5
+      ],
+      "notes": "Charcoal sepia conifers and subtle mountain background."
+    },
+    {
+      "id": "rug",
+      "image_region": "lower-right",
+      "uv_bounds_blender": [
+        0.5,
+        0,
+        1,
+        0.5
+      ],
+      "notes": "Rust brown woven interior with narrow double gold border approximately 5% inset."
+    }
+  ],
+  "deviations": [
+    "Tool generated 1254x1254 instead of requested 2048x2048; each quadrant is 627x627.",
+    "Botanical leaves include muted olive pigment.",
+    "Forest includes faint mountain silhouettes.",
+    "Rug double border is approximately 5% inset rather than requested 8%."
+  ],
+  "qa_status": "integrated_verified",
+  "qa_notes": "Visually compared all four panels against approved room and production brief. Exact equal quadrants; full bleed; no gutters, frame geometry, labels, text, cast shadows, directional illumination, or perspective. Original file preserved without editing or upscaling. Resolution shortfall requires parent acceptance in actual scene.",
+  "semantic_handoff": "Create actual thin framed plane geometry for prints, fabric plane and rod geometry for tapestry, and a slightly raised thin rug mesh. Mesh UVs select corresponding quadrant; geometry owns thickness, borders/frames, placement, shadows, and room lighting. Keep a small texture-texel inset on UVs to prevent cross-quadrant sampling.",
+  "sha256": "916bf34a473bc05508fd0329ab64c2c682097331cc788a4bb6b5b60412b1d826",
+  "integration_review": "2026-09-14: inspected on actual 3D wall panels and floor in Chrome; 627px quadrants are sufficient at the room overview and normal approach distance. Original image unchanged; geometry frames the prints, UV inset prevents adjacent-quadrant bleed, HearthRug uses a muted runtime tint. Very close tapestry inspection shows finite raster resolution."
+}

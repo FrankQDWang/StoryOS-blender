@@ -9,5 +9,6 @@
 - Ask for genuine product tradeoffs or permission gaps. Resolve routine choices autonomously and do not re-ask settled decisions.
 - Update the Current handoff section of `PLAN.md` after meaningful work and before stopping. Distinguish concepts, implemented behavior, and verified behavior. Record asset provenance and selected-image paths when assets are created.
 
-- For changes after `v0.1.0-baseline`, read `design/iterations/02-baseline-hearth.md`: it records the latest user decision. `01-lived-in-room.md` is historical feedback for a rejected preview.
-- Current direction: restore the first version and improve only its fireplace gaps. Preserve baseline layout, lighting, lecterns and interaction. Keep the preview on `iteration/next` until user review; do not move `main` or `v0.1.0-baseline`. Keep `v0.2.0-preview.1` as history.
+- Read `design/iterations/03-open-hearth-selected.md` for the latest accepted direction. The user selected `design/round-04/01-open-hearth.png` and authorized implementation on 2026-09-14. `02-baseline-hearth.md` describes the previous completed repair; `01-lived-in-room.md` describes a rejected preview.
+- Implement the selected image on the restored baseline, preserving five independent display slots, optional roaming, Quick Access and existing project/book flows. Keep hands and their animations unchanged. Preserve the selected composition and clear walking space; do not reopen style exploration or increase display slots.
+- Keep the preview on `iteration/next` until user review; do not move `main` or `v0.1.0-baseline`. Keep `v0.2.0-preview.1` as history. Room layout lives in `apps/web/src/room-layout.json` and must drive Blender geometry, book anchors and roaming collision together.

@@ -28,7 +28,8 @@ scene = json.loads((root/'public/assets/models/scene.json').read_text())
 manifest = {'version':scene['version'], 'baseline':scene['baseVersion'],
             'source_script':'scripts/build_library.py', 'source_blender':scene['blender'],
             'runtime_versions':{p:lock['packages']['node_modules/'+p]['version'] for p in packages},
-            'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/plaster-texture.json'],
+            'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/plaster-texture.json','assets/source/hearth-decor-atlas.json'],
+            'visual_target':scene.get('visualTarget'), 'layout_source':scene.get('layoutSource'),
             'network_references':'Design research only; not shipped as scene content.',
             'animation_source':'Deterministic runtime transforms in apps/web/src/Scene.jsx, using Blender CoverPivot/PagePivot and prebuilt hands. No baked skeletal clips.'}
 (root/'assets/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
