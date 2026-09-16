@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "endpoints": [
+    {
+      "slot": 1,
+      "approach": {
+        "x": -3.2737778423417643,
+        "z": 3.0336618828644992
+      },
+      "focus": {
+        "x": -2.9531770966419337,
+        "z": 3.7683149723269427
+      },
+      "opening": {
+        "x": -3.2438942184687525,
+        "z": 2.9695762446589207
+      },
+      "focusCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 2,
+      "approach": {
+        "x": -3.2,
+        "z": -1.2999999999999998
+      },
+      "focus": {
+        "x": -3.1500000000000004,
+        "z": -0.5
+      },
+      "opening": {
+        "x": -3.1500000000000004,
+        "z": -1.3499999999999999
+      },
+      "focusCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 3,
+      "approach": {
+        "x": 3.5,
+        "z": -1.1
+      },
+      "focus": {
+        "x": 3.6614238364646345,
+        "z": -0.9319159780139473
+      },
+      "opening": {
+        "x": 3.55,
+        "z": -1.1500000000000001
+      },
+      "focusCorrection": 0.641664300551169,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 4,
+      "approach": {
+        "x": 3.3589870045663766,
+        "z": 0.9332885283134288
+      },
+      "focus": {
+        "x": 3.3730915501608254,
+        "z": 1.0310772875444556
+      },
+      "opening": {
+        "x": 3.416909801100333,
+        "z": 0.8927305495461649
+      },
+      "focusCorrection": 0.7064051455751849,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 5,
+      "approach": {
+        "x": 3.2737778423417643,
+        "z": 2.9836618828644994
+      },
+      "focus": {
+        "x": 3.047146358720525,
+        "z": 3.752516986659509
+      },
+      "opening": {
+        "x": 3.3378634805473433,
+        "z": 2.9537782589914876
+      },
+      "focusCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    }
+  ]
+}

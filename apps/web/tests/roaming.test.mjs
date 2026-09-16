@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import ROOM_LAYOUT from '../src/room-layout.json' with { type: 'json' };
-import { isWalkable, moveWithCollisions } from '../src/roaming.mjs';
+import { isWalkable, moveWithCollisions, readingApproach } from '../src/roaming.mjs';
 
 const EPSILON = 1e-7;
 const distance = (a, b) => Math.hypot(a.x - b.x, a.z - b.z);
@@ -88,8 +88,8 @@ test('all five reading stands have reachable standing positions within book inte
   const nodes = reachableFloor();
   assert.ok(nodes.length > 1000, 'the usable floor must be a connected open room');
   for (const [index, slot] of ROOM_LAYOUT.slots.entries()) {
-    const approach = rotated({ x: 0, z: 1.1 }, slot.yaw);
-    const target = { x: slot.position[0] + approach.x, z: slot.position[2] + approach.z };
+    const target = readingApproach(slot);
+    assert.ok(target, 'a reading position must exist in the front half of each stand');
     assert.equal(isWalkable(target), true, `lectern ${index}: standing space is blocked`);
     const nearest = nodes.reduce((best, next) => distance(next.point, target) < distance(best.point, target) ? next : best);
     assert.ok(distance(nearest.point, target) < .22, `lectern ${index}: no connected route`);

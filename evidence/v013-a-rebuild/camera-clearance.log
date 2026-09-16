@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "endpoints": [
+    {
+      "slot": 1,
+      "approach": {
+        "x": -3.0738380817424438,
+        "z": 1.5736422878202156
+      },
+      "focus": {
+        "x": -2.419782037199666,
+        "z": 2.0370111372232107
+      },
+      "opening": {
+        "x": -2.7311136438387775,
+        "z": 1.7858684871067687
+      },
+      "focusCorrection": 0,
+      "openingCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 2,
+      "approach": {
+        "x": -2.892461781042463,
+        "z": -2.7335800626343763
+      },
+      "focus": {
+        "x": -2.3073239882839993,
+        "z": -2.185753663593811
+      },
+      "opening": {
+        "x": -2.581701522450376,
+        "z": -2.476815458999492
+      },
+      "focusCorrection": 0,
+      "openingCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 3,
+      "approach": {
+        "x": 2.6722213996841755,
+        "z": -1.1393449706378402
+      },
+      "focus": {
+        "x": 2.118684918970947,
+        "z": -0.5596059219964593
+      },
+      "opening": {
+        "x": 2.4124225918130646,
+        "z": -0.8311168417645174
+      },
+      "focusCorrection": 0,
+      "openingCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 4,
+      "approach": {
+        "x": 2.9399013528288727,
+        "z": 0.15545200589111596
+      },
+      "focus": {
+        "x": 2.2448956096994674,
+        "z": 0.554785221410615
+      },
+      "opening": {
+        "x": 2.6034769359435135,
+        "z": 0.37752994654111843
+      },
+      "focusCorrection": 0,
+      "openingCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    },
+    {
+      "slot": 5,
+      "approach": {
+        "x": 2.092385820837457,
+        "z": 2.7228044493799004
+      },
+      "focus": {
+        "x": 1.3679302564183302,
+        "z": 3.065826511618125
+      },
+      "opening": {
+        "x": 1.7394263215683459,
+        "z": 2.9175339845708885
+      },
+      "focusCorrection": 0,
+      "openingCorrection": 0,
+      "approachWalkable": true,
+      "focusWalkable": true,
+      "openingWalkable": true
+    }
+  ]
+}

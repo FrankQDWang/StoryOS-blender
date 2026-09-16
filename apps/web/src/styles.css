@@ -5,3 +5,20 @@
 .loading .secondary{margin-top:30px;font-size:11px;color:#aaa995}
 /* Keep project titles user-controlled without displacing persistent actions. */
 .continue-card>span:nth-child(2){min-width:0;max-width:220px}.continue-card strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.book-row>span:nth-child(2){min-width:0;flex:1}.book-row strong,.workspace h1{overflow-wrap:anywhere}.focus-card h2,.focus-card p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}.cinema-caption h2{max-width:calc(100vw - 80px);margin-left:auto;margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.book-label{max-width:250px;overflow:hidden;text-overflow:ellipsis}
+
+/* Keep the reference composition and floor visible while retaining direct actions. */
+@media(min-width:701px){
+ .topbar{height:72px;background:none;padding:0 30px}
+ .room-caption{top:83px;left:32px;opacity:.75}
+ .room-caption>span,.room-caption p{display:none}
+ .room-caption h1{font-size:18px;letter-spacing:2px;margin:0}
+ .bottom-bar{min-height:72px;padding:9px 24px 16px;background:none;backdrop-filter:none;border:0;align-items:end}
+ .continue-card{min-width:230px;gap:12px;background:#171a17a8;padding:8px 12px;border:1px solid #bba77c22;border-radius:4px}
+ .continue-icon{width:30px;height:34px}
+ .continue-card small{margin-bottom:4px;font-size:9px}
+ .continue-card strong{font-size:14px}
+ .continue-card>svg{margin-left:5px}
+ .bottom-center{display:none}
+ .bottom-actions .secondary{background:#171a17b8}
+ .magic-hint{display:none}
+}

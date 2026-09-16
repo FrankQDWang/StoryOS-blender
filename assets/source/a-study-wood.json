@@ -1,0 +1,64 @@
+{
+  "asset": "public/assets/textures/a-study-wood.png",
+  "created_date": "2026-09-16",
+  "purpose": "Wood base color derived from the explicitly selected A-hearth-study visual target; source asset only, not an implementation or scene validation.",
+  "generator": {
+    "mode": "built-in",
+    "tool": "image_gen.imagegen",
+    "backend_model": "not exposed by tool"
+  },
+  "source": {
+    "selected_generation": 1,
+    "original_generated_path": "/Users/frankqdwang/.codex/generated_images/01a0a989-283c-7b73-b9ad-8e029ad0fdfa/exec-4dc39597-28bf-43df-8748-052d690de8ee.png",
+    "selected_image_sha256": "3127906ad5933a1180bae6e83852f9a45e8a6512e49501e32e09b7b4732acc13",
+    "copied_without_pixel_edits": true,
+    "reference": {
+      "path": "design/round-05/A-hearth-study/final.png",
+      "role": "user-selected material reference only",
+      "sha256": "ca796318a31084153f3db3cb4a3880937feed53dea92c78f37767b0dcad483b5"
+    },
+    "existing_texture_inspected": "public/assets/textures/sculpted-wood.png",
+    "prompt_file": "assets/source/a-study-wood.prompt.txt",
+    "first_prompt": "Use case: stylized-concept\nAsset type: seamless PBR base-color/albedo texture for a realtime 3D wood material.\nInput image 1: the user-approved A-hearth-study image, a MATERIAL REFERENCE ONLY. Derive only the wood species, narrow grain character, restrained warm brown color and detail density seen on its floor and reading lecterns. Do not reproduce the room, its lighting, geometry, plank layout or perspective.\nPrimary request: convert the approved wood appearance into one square 2048 x 2048 production texture filling the entire image edge to edge. A perfectly flat front-on, orthographic 2D wood surface. Warm medium walnut / aged brown oak, subtle fine elongated grain running straight vertically from top to bottom. The grain should be slender and dense, softly varying, with occasional tiny understated elongated knots, fine natural pores and slight natural warm-brown variation. Match the restrained material fidelity of the approved reference, not a different stylization.\nAlbedo calibration: intrinsic wood pigment only, neutral diffuse uniform illumination, moderate brightness appropriate for an unlit base-color map. Warm brown, not yellow pine, not orange varnish, not grey driftwood. Keep low-to-medium local contrast; all wide-scale brightness comes from pigment, never light.\nTiling: all four edges must be seamlessly periodic with continuous grain across top/bottom and left/right. Uniform detail density over the whole tile, no feature centered as a focal point, no abrupt straight dark band. There are NO BOARD OR PLANK SEAMS, no joints, no bevels and no separate boards: one continuous wood field for metric UV mapping.\nConstraints: no furniture, no room, no objects, no shadows, no highlights, no reflections, no ambient occlusion, no gradients, no vignette, no cast lighting, no fire or blue moonlight baked in, no perspective, no border, no text, no symbols, no watermark. Opaque RGB texture, not a material preview sphere. The output image is only the usable wood albedo texture."
+  },
+  "output": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "color_mode": "RGB",
+    "grain_direction": "Vertical in image, along the V texture axis; no plank seams.",
+    "suggested_color_space": "sRGB"
+  },
+  "validation": {
+    "viewed_with": "view_image",
+    "visible_subject": "Fine elongated warm walnut/aged oak grain with sparse small knots; uniform front-on field, no furniture, text, border, plank seams or visible baked cast shadows/highlights.",
+    "copied_bytes_match_original": true,
+    "exact_seamless": false,
+    "edge_mean_abs_rgb_8bit": {
+      "left_right": 10.10127591706539,
+      "top_bottom": 6.77511961722488,
+      "inner_horizontal_neighbor": 6.715352782950548,
+      "inner_vertical_neighbor": 2.148117111524933
+    },
+    "limitations": [
+      "The built-in generator did not guarantee exact periodic edge continuity. Fine grain can break across ordinary repeat seams, particularly top/bottom. Do not describe this source as strictly seamless.",
+      "A second image-generation edit requested only periodic continuity but did not remove the seam limitation; generation 1 retained for its more restrained detail and color.",
+      "Use mirrored-repeat texture addressing, or keep longitudinal UV coverage within a single tile per board/piece, if this image is integrated without separate seam finishing. Mirroring may make repeated knots noticeable.",
+      "Only the raster texture has been inspected. No in-scene lighting, UV scale, material roughness, geometry or browser validation was performed by this asset task.",
+      "Prompt requested 2048 square; actual tool output is 1254 square and was not upscaled."
+    ]
+  },
+  "nonselected_iteration": {
+    "generation": 2,
+    "original_generated_path": "/Users/frankqdwang/.codex/generated_images/01a0a989-283c-7b73-b9ad-8e029ad0fdfa/exec-c2ad3ee8-7e64-41ec-b0f7-ebab2754d83b.png",
+    "sha256": "1b29d6d08a7cb68c747e84806105a8232ead6a3eaef2d38a71d9c4be3271eaad",
+    "prompt": "Use case: precise-object-edit\nAsset type: seamless PBR wood albedo texture.\nEdit target: input image 1 is the candidate wood texture, preserve its current warm walnut/aged oak palette, fine vertically running wood grain, small knots, flat diffuse appearance, overall detail density and square framing.\nChange ONLY the wrap-around continuity: make it truly tileable in both directions. The wood grain crossing the top edge must continue exactly at the matching x position on the bottom edge. Color and fine features on left and right edges must continue seamlessly at matching y positions. Treat this texture as a torus, not a framed image. Blend the seam naturally into the existing wood pattern without a visible horizontal stripe, edge strips, mirroring, a center cross, or obvious periodic feature. Keep the full image equally sharp and equally detailed.\nConstraints: retain single continuous wood surface, no plank boundaries or seams, no lighting or shading, no specular, no perspective, no objects, no room, no frame, no text. The output is ONLY the revised opaque square albedo texture.",
+    "edge_mean_abs_rgb_8bit": {
+      "left_right": 8.537480063795853,
+      "top_bottom": 7.5103668261563,
+      "inner_horizontal_neighbor": 6.1390544175460375,
+      "inner_vertical_neighbor": 1.6451789778605421
+    },
+    "reason_not_selected": "No exact tiling improvement; top/bottom edge discrepancy worsened while the pigment and detail became less restrained."
+  }
+}

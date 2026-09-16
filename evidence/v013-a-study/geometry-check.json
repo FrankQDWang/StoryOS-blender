@@ -1,0 +1,788 @@
+{
+  "version": "0.1.3-preview.1",
+  "blender": "5.2.1 LTS",
+  "sources": {
+    "baseline": ".worktrees/baseline/assets/source/storyos-library.blend",
+    "current": "assets/source/storyos-library.blend",
+    "layout": "apps/web/src/room-layout.json"
+  },
+  "sha256": {
+    "baseline": "336e20c04bfb2411e8f950a53dbbec634410646e85a7bcd5ee15f6b04a26f7d7",
+    "current": "32e2fce641ff21752e5fda0fa5ba95c3ae8b4f36092cd1fff5ff3039b82e2b2c",
+    "layout": "894ffb1bdd77b21be5055eaa1fc2d4e00a0f2a04b7cf712fd728b55ce5451725"
+  },
+  "unchanged_mesh_tolerance_metres": 1e-05,
+  "occupancy_tolerance_metres": 0.0001,
+  "reusable_meshes": {
+    "Book": {
+      "missing_names": [],
+      "extra_names": [],
+      "mesh_count": 30,
+      "vertex_count": 1976,
+      "meshes": [
+        {
+          "name": "BookBack",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "BookBlock",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "BookSpine",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverCorner",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverCorner.001",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverCorner.002",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverCorner.003",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverInlay",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverInlay.001",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverInlay.002",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverInlay.003",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverSeal",
+          "vertices": 288,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverStar",
+          "vertices": 72,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverStar.001",
+          "vertices": 72,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverStar.002",
+          "vertices": 72,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "CoverStar.003",
+          "vertices": 72,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "FrontCover",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "PageEdges",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "PageEdges.001",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "PageEdges.002",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "PageEdges.003",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "PageEdges.004",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "PageEdges.005",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "SpineBand",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "SpineBand.001",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "SpineBand.002",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "SpineBand.003",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "TurnPage0",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "TurnPage1",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "TurnPage2",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "Hands": {
+      "missing_names": [],
+      "extra_names": [],
+      "mesh_count": 14,
+      "vertex_count": 1700,
+      "meshes": [
+        {
+          "name": "LeftCuff",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "LeftFinger",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "LeftFinger.001",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "LeftFinger.002",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "LeftFinger.003",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "LeftPalm",
+          "vertices": 114,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "LeftThumb",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightCuff",
+          "vertices": 56,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightFinger",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightFinger.001",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightFinger.002",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightFinger.003",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightPalm",
+          "vertices": 114,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        },
+        {
+          "name": "RightThumb",
+          "vertices": 136,
+          "same_vertex_count": true,
+          "max_world_vertex_delta_metres": 0.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "layout_geometry": {
+    "lecterns": [
+      {
+        "slot": 0,
+        "geometry": {
+          "source_mesh": "Room_ReadingWood",
+          "first_vertex": 1036,
+          "material": "ReadingWood",
+          "min": [
+            -4.254508972167969,
+            1.0397617816925049,
+            1.4662516117095947
+          ],
+          "max": [
+            -3.045491933822632,
+            1.3202381134033203,
+            2.533747911453247
+          ],
+          "center": [
+            -3.6500004529953003,
+            1.1799999475479126,
+            1.999999761581421
+          ],
+          "size": [
+            1.209017038345337,
+            0.28047633171081543,
+            1.0674962997436523
+          ]
+        },
+        "layout_position": [
+          -3.65,
+          1.25,
+          2.0
+        ],
+        "horizontal_center_error_metres": 5.119063986988179e-07,
+        "maximum_collision_shape_overrun_metres": 0,
+        "passed": true
+      },
+      {
+        "slot": 1,
+        "geometry": {
+          "source_mesh": "Room_ReadingWood",
+          "first_vertex": 1396,
+          "material": "ReadingWood",
+          "min": [
+            -3.7099997997283936,
+            1.0397617816925049,
+            -2.792205333709717
+          ],
+          "max": [
+            -2.690000295639038,
+            1.3202381134033203,
+            -2.0077948570251465
+          ],
+          "center": [
+            -3.200000047683716,
+            1.1799999475479126,
+            -2.4000000953674316
+          ],
+          "size": [
+            1.0199995040893555,
+            0.28047633171081543,
+            0.7844104766845703
+          ]
+        },
+        "layout_position": [
+          -3.2,
+          1.25,
+          -2.4
+        ],
+        "horizontal_center_error_metres": 1.066240299940009e-07,
+        "maximum_collision_shape_overrun_metres": 0,
+        "passed": true
+      },
+      {
+        "slot": 2,
+        "geometry": {
+          "source_mesh": "Room_ReadingWood",
+          "first_vertex": 1756,
+          "material": "ReadingWood",
+          "min": [
+            2.990000009536743,
+            1.0397617816925049,
+            -2.592205286026001
+          ],
+          "max": [
+            4.010000228881836,
+            1.3202381134033203,
+            -1.8077948093414307
+          ],
+          "center": [
+            3.5000001192092896,
+            1.1799999475479126,
+            -2.200000047683716
+          ],
+          "size": [
+            1.0200002193450928,
+            0.28047633171081543,
+            0.7844104766845703
+          ]
+        },
+        "layout_position": [
+          3.5,
+          1.25,
+          -2.2
+        ],
+        "horizontal_center_error_metres": 1.283923340885026e-07,
+        "maximum_collision_shape_overrun_metres": 0,
+        "passed": true
+      },
+      {
+        "slot": 3,
+        "geometry": {
+          "source_mesh": "Room_ReadingWood",
+          "first_vertex": 2116,
+          "material": "ReadingWood",
+          "min": [
+            2.984149217605591,
+            1.0397617816925049,
+            -0.6201188564300537
+          ],
+          "max": [
+            4.115850448608398,
+            1.3202381134033203,
+            0.32011866569519043
+          ],
+          "center": [
+            3.5499998331069946,
+            1.1799999475479126,
+            -0.15000009536743164
+          ],
+          "size": [
+            1.1317012310028076,
+            0.28047633171081543,
+            0.9402375221252441
+          ]
+        },
+        "layout_position": [
+          3.55,
+          1.25,
+          -0.15
+        ],
+        "horizontal_center_error_metres": 1.9221920351851345e-07,
+        "maximum_collision_shape_overrun_metres": 0,
+        "passed": true
+      },
+      {
+        "slot": 4,
+        "geometry": {
+          "source_mesh": "Room_ReadingWood",
+          "first_vertex": 2476,
+          "material": "ReadingWood",
+          "min": [
+            3.0454916954040527,
+            1.0397617816925049,
+            1.4162518978118896
+          ],
+          "max": [
+            4.2545084953308105,
+            1.3202381134033203,
+            2.483748197555542
+          ],
+          "center": [
+            3.6500000953674316,
+            1.1799999475479126,
+            1.9500000476837158
+          ],
+          "size": [
+            1.2090167999267578,
+            0.28047633171081543,
+            1.0674962997436523
+          ]
+        },
+        "layout_position": [
+          3.65,
+          1.25,
+          1.95
+        ],
+        "horizontal_center_error_metres": 1.0662403009330226e-07,
+        "maximum_collision_shape_overrun_metres": 0,
+        "passed": true
+      }
+    ],
+    "furniture": {
+      "desk": {
+        "components": 34,
+        "vertices": 2414,
+        "actual_bounds": {
+          "min": [
+            0.9000000953674316,
+            -0.0023950934410095215,
+            -4.090000152587891
+          ],
+          "max": [
+            3.5,
+            1.6119999885559082,
+            -3.0799999237060547
+          ],
+          "center": [
+            2.200000047683716,
+            0.8048024475574493,
+            -3.5850000381469727
+          ],
+          "size": [
+            2.5999999046325684,
+            1.6143950819969177,
+            1.010000228881836
+          ]
+        },
+        "collision_shape": {
+          "id": "desk",
+          "center": [
+            2.2,
+            -3.66
+          ],
+          "halfSize": [
+            1.3,
+            0.59
+          ],
+          "yaw": 0
+        },
+        "maximum_collision_shape_overrun_metres": 0,
+        "within_room_bounds": true,
+        "passed": true,
+        "horizontal_center_error_metres": 9.818678015628087e-08
+      },
+      "chair": {
+        "components": 12,
+        "vertices": 1018,
+        "actual_bounds": {
+          "min": [
+            1.6564761400222778,
+            0.009999990463256836,
+            -3.1449999809265137
+          ],
+          "max": [
+            2.44352388381958,
+            1.5649685859680176,
+            -2.3442459106445312
+          ],
+          "center": [
+            2.050000011920929,
+            0.7874842882156372,
+            -2.7446229457855225
+          ],
+          "size": [
+            0.7870477437973022,
+            1.5549685955047607,
+            0.8007540702819824
+          ]
+        },
+        "collision_shape": {
+          "id": "chair",
+          "center": [
+            2.05,
+            -2.8
+          ],
+          "halfSize": [
+            0.41,
+            0.46
+          ],
+          "yaw": 0
+        },
+        "maximum_collision_shape_overrun_metres": 0,
+        "within_room_bounds": true,
+        "passed": true,
+        "horizontal_center_error_metres": 6.743495736621566e-08
+      },
+      "table": {
+        "components": 18,
+        "vertices": 1740,
+        "actual_bounds": {
+          "min": [
+            -1.059999942779541,
+            0.07999998331069946,
+            -0.45999979972839355
+          ],
+          "max": [
+            1.059999942779541,
+            1.0895262956619263,
+            1.6600000858306885
+          ],
+          "center": [
+            0.0,
+            0.5847631394863129,
+            0.6000001430511475
+          ],
+          "size": [
+            2.119999885559082,
+            1.0095263123512268,
+            2.119999885559082
+          ]
+        },
+        "collision_shape": {
+          "center": [
+            0,
+            0.6
+          ],
+          "radius": 1.06,
+          "topHeight": 1.1
+        },
+        "maximum_collision_shape_overrun_metres": 3.045391825384769e-07,
+        "within_room_bounds": true,
+        "passed": true,
+        "horizontal_center_error_metres": 1.4305114748314196e-07
+      }
+    },
+    "floor_geometry": {
+      "source_mesh": "Room_DarkTimber",
+      "first_vertex": 0,
+      "material": "DarkTimber",
+      "min": [
+        -4.900000095367432,
+        -0.3050000071525574,
+        -4.800000190734863
+      ],
+      "max": [
+        4.900000095367432,
+        -0.05500000715255737,
+        7.199999809265137
+      ],
+      "center": [
+        0.0,
+        -0.18000000715255737,
+        1.1999998092651367
+      ],
+      "size": [
+        9.800000190734863,
+        0.25,
+        12.0
+      ]
+    },
+    "navigation_inside_real_floor": true,
+    "passed": true
+  },
+  "hearth": {
+    "baseline": {
+      "ray_x_range": [
+        -3.7,
+        -4.3
+      ],
+      "pillar_ray_count": 330,
+      "pillar_gap_count": 18,
+      "pillar_gap_locations": [
+        [
+          0.08,
+          0.28
+        ],
+        [
+          0.08,
+          0.69
+        ],
+        [
+          0.08,
+          0.7
+        ],
+        [
+          0.08,
+          1.1
+        ],
+        [
+          0.08,
+          1.11
+        ],
+        [
+          0.08,
+          1.12
+        ],
+        [
+          0.08,
+          1.52
+        ],
+        [
+          0.08,
+          1.53
+        ],
+        [
+          0.08,
+          1.54
+        ],
+        [
+          1.72,
+          0.68
+        ],
+        [
+          1.72,
+          0.69
+        ],
+        [
+          1.72,
+          0.7
+        ],
+        [
+          1.72,
+          1.1
+        ],
+        [
+          1.72,
+          1.11
+        ],
+        [
+          1.72,
+          1.12
+        ],
+        [
+          1.72,
+          1.52
+        ],
+        [
+          1.72,
+          1.53
+        ],
+        [
+          1.72,
+          1.54
+        ]
+      ],
+      "header_hits": 0,
+      "header_ray_count": 25,
+      "firebox_open": true,
+      "passed": false
+    },
+    "current": {
+      "ray_x_range": [
+        -3.7,
+        -4.3
+      ],
+      "pillar_ray_count": 330,
+      "pillar_gap_count": 0,
+      "pillar_gap_locations": [],
+      "header_hits": 25,
+      "header_ray_count": 25,
+      "firebox_open": true,
+      "passed": true
+    }
+  },
+  "packed_textures": [
+    "hearth-decor-atlas.png",
+    "sculpted-plaster.png",
+    "sculpted-wood.png"
+  ],
+  "scope": "Saved source world vertices and disconnected static mesh surfaces; furniture occupancy and sampled front masonry rays. Runtime route tests and Chrome verification are separate evidence.",
+  "source_files_unchanged": true,
+  "passed": true
+}

@@ -34,11 +34,13 @@ def mat(n,c,rough=.8,metal=0,tex=None,emit=0):
   # glTF supports image textures; runtime applies the tint recorded here.
   m['runtimeTint']=list(c)
  return m
-wood=mat('Timber',(.37,.21,.105),.92,tex='sculpted-wood.png')
-floor=mat('FloorWood',(.54,.37,.215),.92,tex='sculpted-wood.png')
+wood=mat('Timber',(.37,.21,.105),.92,tex='a-study-wood.png')
+furniture=mat('ReadingWood',(.47,.29,.15),.84,tex='a-study-wood.png')
+floor=mat('FloorWood',(.54,.37,.215),.92,tex='a-study-wood.png')
 plaster=mat('WarmPlaster',(.54,.43,.32),.96,tex='sculpted-plaster.png')
 stone=mat('Stone',(.20,.24,.255),.98,tex='sculpted-plaster.png')
 dark=mat('DarkTimber',(.10,.064,.038),.9)
+table_slate=mat('TableSlate',(.075,.13,.19),.58,.1)
 brass=mat('OldBrass',(.43,.29,.105),.35,.72)
 iron=mat('Iron',(.055,.065,.071),.7,.45)
 rug=mat('WovenRug',(.18,.087,.056),1)
@@ -46,10 +48,11 @@ trim=mat('RugBorder',(.33,.24,.135),1)
 teal=mat('Velvet',(.065,.14,.135),1)
 wax=mat('Wax',(.68,.46,.23),.9)
 flame=mat('Flame', (1,.49,.13),.5,emit=4)
+lamp_glass=mat('LanternGlow',(1,.56,.21),.5,emit=2.2)
 blue=mat('NightGlass',(.025,.11,.19),.7,emit=.9)
 black=mat('Black',(.008,.014,.02),1)
 decor=mat('HearthDecor',(1,1,1),1,tex='hearth-decor-atlas.png')
-rug_art=mat('HearthRug',(.52,.43,.40),1,tex='hearth-decor-atlas.png')
+rug_art=mat('HearthRug',(1,1,1),1,tex='a-study-rug.png')
 ember=mat('HearthEmber',(.42,.065,.008),.95,emit=.7)
 ceramic=mat('GlazedUmber',(.065,.052,.035),.38)
 foliage=mat('DryFoliage',(.11,.13,.047),.98)
@@ -128,7 +131,12 @@ def uv_sphere(n,p,s,m):
 def cyl(n,p,r,depth,m,vertices=24,r2=None):
  if r2 is None:bpy.ops.mesh.primitive_cylinder_add(vertices=vertices,radius=r,depth=depth,location=p)
  else:bpy.ops.mesh.primitive_cone_add(vertices=vertices,radius1=r,radius2=r2,depth=depth,location=p)
- return put(bpy.context.object,n,m)
+ obj=put(bpy.context.object,n,m)
+ if n in ['magic foot','magic stem','magic table edge']:
+  mod=obj.modifiers.new('carved edge softness','BEVEL');mod.width=.018;mod.segments=2
+  bpy.context.view_layer.objects.active=obj;bpy.ops.object.modifier_apply(modifier=mod.name)
+  mod=obj.modifiers.new('weighted face normals','WEIGHTED_NORMAL');bpy.ops.object.modifier_apply(modifier=mod.name)
+ return obj
 
 def line(n,pts,r,m):
  c=bpy.data.curves.new(n,'CURVE');c.dimensions='3D';c.resolution_u=8;c.bevel_depth=r;c.bevel_resolution=2
@@ -164,19 +172,22 @@ def candle(x,y,z,h=.20):
 
 def lantern(x,y,z):
  cyl('lantern base',(x,y,z),.16,.065,iron)
- cyl('lantern crown',(x,y,z+.36),.20,.17,iron,r2=.06)
+ uv_sphere('lantern crown',(x,y,z+.35),(.15,.15,.075),brass)
  for a in range(4):
   ang=a*math.pi/2+math.pi/4;line('lantern cage',[(x+.13*math.cos(ang),y+.13*math.sin(ang),z),(x+.13*math.cos(ang),y+.13*math.sin(ang),z+.31)],.011,iron)
+ uv_sphere('lantern glow',(x,y,z+.18),(.073,.073,.12),lamp_glass)
  candle(x,y,z+.04,.19)
  ring('lantern loop',(x,y,z+.49),.05,.012,iron).rotation_euler[0]=math.pi/2
 
 # Plank floor with controlled rhythm and a few slightly uneven joints.
 cube('floor foundation',(0,-1.2,-.18),(9.8,12,.25),dark)
-for row in range(15):
- x=-4.48+row*.64
- for seg in range(4):
-  y=-5.95+seg*2.9
-  cube('floor plank',(x+random.uniform(-.008,.008),y, -.025+random.uniform(-.004,.004)),(.62,2.875,.12),floor,.018)
+for row in range(25):
+ x=-4.704+row*.392
+ start=-7.2-(row%3)*.8
+ for seg in range(6):
+  lo=max(-7.2,start+seg*2.4);hi=min(4.8,start+(seg+1)*2.4)
+  if hi-lo<.05:continue
+  cube('floor plank',(x,(lo+hi)/2,-.026+random.uniform(-.001,.001)),(.386,hi-lo-.005,.12),floor,.003)
 # Side walls and back wall, back has an architectural window opening.
 cube('left wall',(-4.8,-1.25,2.2),(.35,12,4.6),plaster,.08)
 cube('right wall',(4.8,-1.25,2.2),(.35,12,4.6),plaster,.08)
@@ -193,7 +204,7 @@ cube('back right',(3.06,4.55,2.42),(3.68,.35,2.25),plaster,.065)
 # Ceiling and mildly bent beams.
 cube('ceiling',(0,-1.25,4.58),(9.85,12,.3),plaster,.12)
 for y in [-6.7,-3.8,-.9,2.0,4.35]:
- carved_beam('bent crossbeam',[(-4.55,y,3.55),(-3.8,y,4.08),(-2.1,y,4.28),(0,y,4.32),(2.1,y,4.28),(3.8,y,4.08),(4.55,y,3.55)])
+ carved_beam('bent crossbeam',[(-4.55,y,3.62),(-3.8,y,3.92),(-2.1,y,4.08),(0,y,4.10),(2.1,y,4.08),(3.8,y,3.92),(4.55,y,3.62)])
  for x in [-4.55,4.55]:
   cube('carved upright',(x,y,1.82),(.24,.26,3.60),wood,.032)
   cube('post foot',(x,y,.22),(.37,.34,.4),wood,.04)
@@ -204,9 +215,10 @@ for z in [.23,1.04,3.64]:cube('back rail',(0,4.31,z),(9.2,.2,.13),wood)
 # Window: rounded arch with leaded panes and a deep sill.
 cube('night pane',(0,5.65,2.48),(5.0,.06,4.4),blue,.06)
 # Layered 3D conifers occupy the shallow exterior recess; no flat scene backdrop.
-for depth,m,count in [(5.35,night_far,11),(4.91,night_near,7)]:
+for depth,m,count in [(5.35,night_far,13),(4.91,night_near,11)]:
  for i in range(count):
-  x=-2.05+i*4.1/(count-1);height=.60+((i*7)%9)*.13
+  x=-1.7+i*3.4/(count-1)
+  height=([.60,1.1,1.50,1.15,.85,.62,.9,1.62,1.15,.83,.6][i] if m==night_near else .52+((i*5)%8)*.10)
   # Short irregular tiers break the large triangle silhouette into branches.
   for tier in range(9):
    fraction=tier/9;z=1.03+height*(.10+fraction*.85);radius=height*(.20*(1-fraction)+.015)
@@ -230,15 +242,17 @@ for x in [-.6,0,.6]:cube('window mullion',(x,4.23,2.5),(.045,.08,2.2),wood,.008)
 for z in [1.95,2.7,3.45]:cube('window lead',(0,4.23,z),(2.4,.08,.038),iron,.006)
 # Arch shaped frame inset within the architectural opening.
 line('window arch',[(-1.2,4.10,2.45),(-1.06,4.10,3.22),(0,4.10,3.56),(1.06,4.10,3.22),(1.2,4.10,2.45)],.09,wood)
-# A small writing nook below the window.
+# A small writing nook beside the window; all props follow its layout anchor.
 desk_before=set(ROOM.objects)
-cube('writing desk',(0,3.66,.94),(2.6,.86,.16),wood,.055)
+cube('writing desk',(0,3.66,.94),(2.6,.86,.16),furniture,.055)
 for x in [-1.08,1.08]:
- for y in [3.35,3.97]:cube('desk leg',(x,y,.45),(.15,.14,.90),wood,.025,rot=(0,.07 if x>0 else -.07,0))
-cube('desk apron',(0,3.25,.75),(2.32,.1,.25),wood,.04)
-cube('drawer',(0,3.17,.76),(.75,.06,.18),dark,.025)
-uv_sphere('drawer pull',(0,3.11,.76),(.03,.03,.03),brass)
-lantern(-.94,3.60,1.06)
+ for y in [3.35,3.97]:cube('desk leg',(x,y,.45),(.15,.14,.90),furniture,.025,rot=(0,.07 if x>0 else -.07,0))
+cube('desk apron',(0,3.25,.75),(2.32,.1,.25),furniture,.04)
+for drawer_x in [-.65,.65]:
+ cube('drawer',(drawer_x,3.17,.76),(.87,.06,.18),furniture,.016)
+ uv_sphere('drawer pull',(drawer_x,3.11,.76),(.03,.03,.025),brass)
+lantern(-.68,3.60,1.06)
+vase('desk vase',-1.06,3.72,1.05,.62)
 # Ink and an unlettered paper, no litter across the floor.
 cyl('inkwell',(.81,3.67,1.07),.065,.12,iron)
 line('quill',[(.81,3.67,1.13),(.90,3.73,1.46),(.99,3.77,1.60)],.007,trim)
@@ -247,18 +261,22 @@ cube('writing paper',(.17,3.58,1.035),(.50,.36,.006),paper,.003,rot=(0,0,.08))
 stack_book('desk book lower',(-.34,3.77,1.06),(.45,.31,.075),.08)
 stack_book('desk book upper',(-.36,3.78,1.155),(.39,.29,.065),-.04)
 desk_x,desk_z=fixture('desk')['center']
-for obj in set(ROOM.objects)-desk_before:obj.location+=Vector((desk_x,-desk_z-3.66,0))
+for obj in set(ROOM.objects)-desk_before:
+ obj.location.x*=.94;obj.scale.x*=.94
+ obj.location+=Vector((desk_x,-desk_z-3.66,.20))
+ if obj.name.startswith('desk leg'):obj.location.z-=.10;obj.scale.z*=1.222222
 # Chair, padded but sculptural.
 chair_before=set(ROOM.objects)
 for x in [-.28,.28]:
- for y in [2.35,2.84]:cube('chair leg',(x,y,.25),(.09,.09,.48),wood,.02)
-cube('chair seat',(0,2.60,.51),(.73,.69,.16),teal,.085)
+ for y in [2.35,2.84]:cube('chair leg',(x,y,.34),(.09,.09,.66),furniture,.02)
+cube('chair seat',(0,2.60,.69),(.73,.69,.16),furniture,.045)
 for x in [-.33,.33]:line('chair back post',[(x,2.28,.38),(x,2.20,1.2),(x*.85,2.27,1.45)],.05,wood)
 line('chair back crown',[(-.3,2.25,1.35),(0,2.21,1.5),(.3,2.25,1.35)],.065,wood)
-for x in [-.16,0,.16]:line('chair spindle',[(x,2.26,.6),(x,2.22,1.36)],.022,wood)
+for x in [-.16,0,.16]:line('chair spindle',[(x,2.26,.78),(x,2.22,1.36)],.022,wood)
 chair_x,chair_z=fixture('chair')['center']
 for obj in set(ROOM.objects)-chair_before:obj.location+=Vector((chair_x,-chair_z-2.60,0))
-# Keep the repaired continuous arch and footprint while extending the chimney.
+# Keep the repaired continuous arch and translate the whole hearth together.
+hearth_before=set(ROOM.objects)
 cube('hearth plinth',(-4.14,.9,.14),(1.13,1.85,.25),stone,.035)
 cube('hearth back',(-4.55,.9,1.22),(.16,1.58,2.2),black,.02)
 for y in [.08,1.72]:
@@ -311,6 +329,10 @@ for y in [.28,1.5]:
  line('fire grate foot',[(-3.94,y,.25),(-3.84,y,.49)],.019,iron)
  uv_sphere('grate finial',(-3.84,y,.53),(.028,.028,.028),brass)
 line('fire grate rail',[(-3.85,.27,.4),(-3.85,1.52,.4)],.017,iron)
+for obj in set(ROOM.objects)-hearth_before:
+ obj.location.x+=fixture('hearth')['center'][0]+4.14
+ obj.location.y+=-fixture('hearth')['center'][1]-.9
+ obj.location.z*=1.05;obj.scale.z*=1.05
 # Hearth tools and log basket stay against the wall, out of the walking lanes.
 tx,tz=fixture('hearth-tools')['center'];ty=-tz
 cyl('tool stand',(tx,ty,.09),.18,.08,iron,12)
@@ -327,18 +349,22 @@ for i in range(14):
 for i in range(5):
  o=cyl('stored firewood',(bx+(i%2)*.12-.08,by+(i//2)*.10-.1,.30),.055,.49,dark,8);o.rotation_euler=(.4,(-.25+i*.13),0)
 # The generated cloth is real surface detail, not extra floor furniture.
-cube('rug',(0,-.58,.057),(3.68,3.50,.025),rug,.12)
-atlas_panel('woven rug surface',(0,-.58,.074),(3.58,3.40),3,(0,0,0),rug_art)
-for x in [-1.85,1.85]:
- for i in range(38):
-  y=-2.25+i*.088;line('rug fringe',[(x*.965,y,.075),(x,y+.009,.063)],.009,rug)
+rx,rz=LAYOUT['rug']['center'];rw,rd=LAYOUT['rug']['size']
+cube('rug',(rx,-rz,.057),(rw,rd,.025),rug,.07)
+cloth=atlas_panel('woven rug surface',(rx,-rz,.074),(rw-.10,rd-.10),3,(0,0,0),rug_art)
+for loop,uv in zip(cloth.data.uv_layers.active.data,[(0,0),(1,0),(1,1),(0,1)]):loop.uv=uv
+for side in [-1,1]:
+ for i in range(48):
+  x=rx-rw/2+.05+i*(rw-.10)/47;y=-rz+side*rd/2
+  line('rug fringe',[(x,y-side*.055,.075),(x+.009,y+side*.07,.063)],.008,rug)
 # Central magic writing table, original reusable sculpted piece.
 table_before=set(ROOM.objects)
-cyl('magic foot',(0,-.6,.19),.64,.22,wood,12,r2=.43)
-cyl('magic stem',(0,-.6,.58),.23,.65,wood,10,r2=.32)
-cyl('magic table edge',(0,-.6,.98),.92,.13,wood,48)
-cyl('magic table inset',(0,-.6,1.057),.82,.036,dark,48)
-ring('brass table ring',(0,-.6,1.08),.73,.011,brass)
+cyl('magic foot',(0,-.6,.16),.60,.25,furniture,8,r2=.48)
+cyl('magic stem',(0,-.6,.59),.28,.68,furniture,10,r2=.43)
+table_radius=LAYOUT['table']['radius']
+cyl('magic table edge',(0,-.6,.98),table_radius,.17,furniture,64)
+cyl('magic table inset',(0,-.6,1.057),table_radius-.10,.036,table_slate,64)
+ring('brass table ring',(0,-.6,1.08),table_radius-.18,.011,brass)
 ring('brass table ring',(0,-.6,1.08),.52,.006,brass)
 for a in range(12):
  t=a*math.tau/12
@@ -348,12 +374,23 @@ for obj in set(ROOM.objects)-table_before:obj.location+=Vector((table_x,-table_z
 # Five stable lecterns; positions are also exported to application metadata.
 slots=[(s['position'][0],-s['position'][2],s['yaw']) for s in LAYOUT['slots']]
 for i,(x,y,ang) in enumerate(slots):
- cyl(f'lectern {i} base',(x,y,.15),.37,.15,wood,8,r2=.30)
- cyl(f'lectern {i} stem',(x,y,.66),.11,1.0,wood,8,r2=.16)
+ scale=LAYOUT['slots'][i].get('scale',1)
+ base_scale=LAYOUT['slots'][i].get('baseScale',scale)
+ pitch=LAYOUT['slots'][i].get('pitch',LAYOUT['lectern']['pitch'])
+ cyl(f'lectern {i} base',(x,y,.12),.32*base_scale,.18,furniture,4,r2=.255*base_scale).rotation_euler[2]=ang+math.pi/4
+ cube(f'lectern {i} stem',(x,y,.66),(.19*base_scale,.22*base_scale,1.0),furniture,.012,rot=(0,0,ang))
  for dx in [-.24,.24]:
-  line('lectern support',[local_point((x,y,0),p,(0,0,ang)) for p in [(0,0,.7),(dx,0,1.08),(dx*1.4,0,1.16)]],.045,wood)
- cube(f'lectern {i} top',(x,y,1.18),(1.02,.81,.10),wood,.055,rot=(math.radians(16),0,ang))
- cube('book rest lip',(x+.38*math.sin(ang),y-.38*math.cos(ang),1.13),(1.04,.07,.09),brass,.015,rot=(0,0,ang))
+  line('lectern support',[local_point((x,y,0),p,(0,0,ang)) for p in [(0,0,.7),(dx,0,1.08),(dx*1.4,0,1.16)]],.035,furniture)
+ rotation=(pitch,0,ang)
+ cube(f'lectern {i} top',(x,y,1.18),(1.02*scale,.81*scale,.075),furniture,.018,rot=rotation)
+ for row in range(4):
+  dy=(-.30375+row*.2025)*scale
+  cube('lectern top plank',local_point((x,y,1.18),(0,dy,.039),rotation),(1.00*scale,.2025*scale-.004,.018),furniture,.004,rot=rotation)
+ for dx in [-.43,.43]:
+  cube('lectern brass edge',local_point((x,y,1.18),(dx*scale,-.37*scale,.054),rotation),(.13*scale,.067*scale,.013),brass,.004,rot=rotation)
+  for dy in [-.24,.10,.31]:
+   nail=uv_sphere('lectern pin',local_point((x,y,1.18),(dx*scale,dy*scale,.052),rotation),(.008,.008,.004),brass);nail.rotation_euler=rotation
+ cube('book rest lip',local_point((x,y,1.18),(0,-.39*scale,.048),rotation),(1.04*scale,.052,.072),furniture,.009,rot=rotation)
 # Restrained sconces with pools of warm light.
 for x,y in [(-4.47,-2.1),(4.47,-2.1),(4.47,2.95)]:
  cube('sconce back',(x,y,2.3),(.10,.25,.46),wood,.08)
@@ -366,8 +403,8 @@ line('tapestry rod',[(-3.55,4.22,3.48),(-2.29,4.22,3.48)],.025,dark)
 for x in [-3.42,-2.42]:ring('tapestry ring',(x,4.21,3.44),.046,.010,brass).rotation_euler[0]=math.pi/2
 picture('small botanical',(-1.57,4.23,2.17),(.37,.64),1)
 picture('botanical', (2.55,4.23,2.44),(.55,.96),1)
-picture('forest painting',(4.395,-.10,2.54),(.67,1.29),2,(math.pi/2,0,-math.pi/2))
-vase('corner vase',-3.3,3.93,.05,1.02)
+picture('forest painting',(4.395,.50,2.54),(.67,1.29),2,(math.pi/2,0,-math.pi/2))
+vase('corner vase',fixture('floor-vase')['center'][0],-fixture('floor-vase')['center'][1],.05,1.02)
 cube('wall shelf',(4.34,-1.44,2.76),(.53,.69,.095),wood,.02)
 vase('shelf vase',4.34,-1.44,2.82,.52)
 # Reusable book, articulated cover and page groups; local origin at centre.
@@ -416,7 +453,7 @@ for side in [-1,1]:
  line(name+'Thumb',[(x-side*.065,-.018,.02),(x-side*.118,.035,.025),(x-side*.14,.09,.014)],.026,skin)
 # Use metre-scaled grain/plaster UVs before joining, avoiding cube-atlas seams.
 for obj in ROOM.objects:
- if obj.type!='MESH' or obj.active_material not in [wood,floor,plaster,stone]:continue
+ if obj.type!='MESH' or obj.active_material not in [wood,furniture,floor,plaster,stone]:continue
  mesh=obj.data
  if not mesh.vertices:continue
  extents=[max(v.co[i] for v in mesh.vertices)-min(v.co[i] for v in mesh.vertices) for i in range(3)]
@@ -424,8 +461,10 @@ for obj in ROOM.objects:
  offset=(random.uniform(0,1),random.uniform(0,1))
  for face in mesh.polygons:
   normal_axis=max(range(3),key=lambda i:abs(face.normal[i]));axes=[i for i in range(3) if i!=normal_axis]
-  if obj.active_material in [wood,floor]:
-   long_axis=max(axes,key=lambda i:extents[i]);short_axis=next(i for i in axes if i!=long_axis);scales=(.8,4)
+  if obj.active_material in [wood,furniture,floor]:
+   long_axis=max(axes,key=lambda i:extents[i])
+   if 2 in axes and any(part in obj.name.lower() for part in ['stem','upright','post','leg','chimney']):long_axis=2
+   short_axis=next(i for i in axes if i!=long_axis);scales=(2.2,2.8)
   else:short_axis,long_axis=axes;scales=(2.2,2.2)
   for index in face.loop_indices:
    co=mesh.vertices[mesh.loops[index].vertex_index].co
@@ -450,7 +489,7 @@ for c in [BOOK,HANDS]:
 active=ROOM
 # Blender preview lighting approximates browser lighting; all final verification is in Chrome.
 light('Window moon',(0,3.8,3.1),(.25,.48,1),750,.8)
-light('Desk amber',(-.94,3.45,1.4),(1,.47,.15),100,.4)
+light('Desk amber',(desk_x-.94,-desk_z-.06,1.4),(1,.47,.15),100,.4)
 light('Hearth',(-3.8,.9,.65),(1,.29,.055),170,.45)
 light('Left wall lamp',(-3.9,-2.1,2.5),(1,.52,.22),100,.4)
 light('Right wall lamp',(3.9,-2.1,2.5),(1,.52,.22),90,.4)
@@ -462,7 +501,7 @@ scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.samples=32;sce
 scene.view_settings.view_transform='AgX';scene.render.image_settings.file_format='PNG';scene.render.filepath=str(R/'evidence/blender-room-preview.png')
 bpy.ops.file.pack_all()
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'assets/source/storyos-library.blend'))
-metadata={'version':LAYOUT['version'],'baseVersion':'v0.1.0-baseline','change':'Approved open-hearth scene: richer surfaces, layered night window, sparse wall decor and unified walkable layout.','blender':bpy.app.version_string,'room':{'width':9.6,'depth':12,'height':4.6},'slots':[{'index':i,**slot} for i,slot in enumerate(LAYOUT['slots'])],'layoutSource':'apps/web/src/room-layout.json','layout':LAYOUT,'visualTarget':'design/round-04/01-open-hearth.png','materials':{m.name:list(m.get('runtimeTint',[])) for m in [wood,floor,plaster,stone]},'source':'scripts/build_library.py'}
+metadata={'version':LAYOUT['version'],'baseVersion':'v0.1.0-baseline','change':'Selected A hearth study: side writing nook, lighter reading stands, open center and layered materials/light.','blender':bpy.app.version_string,'room':{'width':9.6,'depth':12,'height':4.6},'slots':[{'index':i,**slot} for i,slot in enumerate(LAYOUT['slots'])],'layoutSource':'apps/web/src/room-layout.json','layout':LAYOUT,'visualTarget':'design/round-05/A-hearth-study/final.png','materials':{m.name:list(m.get('runtimeTint',[])) for m in [wood,furniture,floor,plaster,stone]},'source':'scripts/build_library.py'}
 (R/'public/assets/models/scene.json').write_text(json.dumps(metadata,indent=2))
 print('STORYOS_ASSETS_READY',json.dumps(metadata))
 if '--render' in __import__('sys').argv:bpy.ops.render.render(write_still=True)

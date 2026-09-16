@@ -1,0 +1,29 @@
+Use case: precise-object-edit.
+Asset type: one standalone interior-design concept image, Direction A — private hearth-side study. Edit/redesign the provided current-room reference for comparative design review; this is a visual concept, not a construction drawing. Deliver one wide horizontal image, approximately 2.17:1, close to the entrance viewpoint of image 1. No collage, no labels, no interface.
+
+INPUT ROLES:
+Image 1 (01-current-overview.png) is the PRIMARY edit reference: retain this room's identity, architectural shell, low enclosing timber ceiling, existing wall planes, fireplace on the LEFT, arched cold-night window at the BACK, and entrance-facing camera.
+Image 2 (01-open-hearth.png) is atmosphere/style support ONLY: dimensional sculpted fantasy forms, slightly cartoon-like timber and plaster, restrained warm hearth against blue night, intimate low density. Its furniture positions and heavy pedestals are NOT a layout template. Follow the new spatial arrangement below.
+
+CHANGE — DIRECTION A:
+Organize exactly FIVE independent sloped reading/display stands into TWO DISTINCT UNEQUALLY SPACED GROUPS: a close but individually approachable pair near the left fireplace, and a more loosely staggered trio along the window/right side. Treat these as two asymmetrical patches of furniture with a broad open floor gap between them. Do not arrange all five as an arc or horseshoe around the central table. Their gentle individual rotations respond to local approach space, not a common radial center. All five stands must be fully inside the frame, with every top, support and separate foot visible; no cropping or stands hiding behind other stands.
+Count and contents, left to right:
+1. A full stand on the left side of the hearth zone, with ONE large closed muted green book.
+2. A second full stand beside and slightly deeper than stand 1, near the other side of the hearth zone, with ONE large closed muted burgundy book. The pair is offset, not mirror-symmetric.
+3. A separate full stand toward the window/right side, with ONE large closed muted blue book.
+4. A clearly separate EMPTY sloped stand further along the right side.
+5. A clearly separate EMPTY sloped stand nearer the right foreground, inset enough to show the complete foot.
+There are exactly three displayed books and two visibly bare display surfaces. No extra book stacks elsewhere, no extra lecterns. Keep the fireplace opening visible between/above the left pair.
+
+Keep ONE independent CENTRAL ROUND MAGIC CREATION TABLE on its low-key existing rug, visually distinct from the five rectangular sloped stands. A restrained thin green hovering circular motif identifies it; no book on the circle. Leave broad quiet visible floor around it, including open space behind it.
+MOVE the existing rectangular writing desk and chair away from directly behind the circle to the back-right wall, beside rather than underneath the window center. Show it as a low ordinary horizontal writing desk with a drawer, chair, tiny writing implements and one restrained lamp. It is ancillary and must never resemble a sixth sloped display stand. The entire chair-back silhouette must sit to the right of the magic-table silhouette, with a visible gap. The central table's rim, hovering ring and support must read separately against quiet floor and plaster; no chair, desk edge or vertical lamp touches its ring.
+
+PROPORTION AND MATERIAL CHANGES:
+Keep the fireplace as the heaviest solid mass. Reduce the five stands' slab thickness, post bulk and wide plinths: each has a modest beveled sloped tray, a gently tapering sculpted wood support, and a compact grounded carved foot. Preserve fairy-tale substance and visible three-dimensional carving, never thin wire furniture or industrial metal frames. The books are the primary readable shapes on occupied stands.
+Separate material functions within one timber family: ceiling beams in deep quiet brown; stand tops in moderately lighter honey/chestnut wood with calm fine grain; supports slightly deeper; broad floor planks in matte desaturated medium brown with low-contrast grain. Plaster stays continuous, muted and quiet. Small worn brass book corners or table inlay can remain subdued. No gloss, sharpness tricks, gold proliferation or extra ornament.
+
+LIGHTING:
+The left hearth is the emotional focus: a contained amber fire with legible flames, no blown-out white glare, warming the left pair and nearby floor. The rear window supplies soft low blue-night ambient fill and distant tree silhouettes. Restrained broad reflected light lets both EMPTY right-hand tops and their support edges read without adding visible fixtures. Desk/candle practicals remain small secondary accents. Keep dark corners, shadow beneath furniture and a night ceiling; do not brighten the whole room uniformly. The green magic ring is a quiet third accent, not a radiant spectacle.
+
+INVARIANTS AND EXCLUSIONS:
+Preserve the original room's compact private scale, timber-and-plaster envelope, left fireplace, rear cold-night window, tactile sculptural slightly cartoon fantasy 3D style, low prop density and generous open floor. Change mainly furniture placement, mass, material value hierarchy and lighting balance. No new wall bays, alcoves or built-in display architecture. No full-wall bookshelves, sofas, new rooms, people, hands or characters. No cream minimalism, hotel lobby, public library, lavish realistic mansion or bright daytime. Remove ALL screenshot webpage UI, buttons, cursor, words, lettering, logos and watermarks. Geometric non-letter book emblems and the thin abstract magic circles are permitted. One complete wide room perspective, not a sheet of alternatives.

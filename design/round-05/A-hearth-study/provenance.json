@@ -1,0 +1,94 @@
+{
+  "direction": "A — 炉边展开的私人书房",
+  "status": "generated concept, not adopted; no scene implementation",
+  "recorded_at": "2026-09-16T16:32:18.274738+08:00",
+  "tool": "image_gen.imagegen (built-in)",
+  "passed_argument_names": [
+    "prompt",
+    "referenced_image_paths"
+  ],
+  "model_quality_reasoning": "not exposed by tool; not set or verified",
+  "prompting_guide": {
+    "url": "https://developers.openai.com/api/docs/guides/image-prompting",
+    "section": "GPT Image 2.5 prompting guide",
+    "read_before_prompt": true
+  },
+  "references": [
+    {
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/evidence/interior-review-20260916/01-current-overview.png",
+      "bytes": 96626,
+      "sha256": "40e64d0c57b77e4e0284b2791bea185015f51b58996053052e3afd959b54b62b",
+      "role": "primary scene identity and architectural-shell reference",
+      "viewed_before_generation": true,
+      "attached_to_generation": true,
+      "format": "JPEG",
+      "width": 1512,
+      "height": 695,
+      "note": "Source filename uses .png but detected content is JPEG; original preserved unchanged and passed directly to tool."
+    },
+    {
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-04/01-open-hearth.png",
+      "bytes": 1934113,
+      "sha256": "b6dcb95e6f5f7c78ef85802d7d1aadb700f9b86567690ee293303996c9a8e4c7",
+      "format": "PNG",
+      "width": 1774,
+      "height": 887,
+      "role": "atmosphere and sculptural fantasy style only",
+      "viewed_before_generation": true,
+      "attached_to_generation": true
+    }
+  ],
+  "context_documents": [
+    {
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/PLAN.md",
+      "bytes": 30769,
+      "sha256": "7e8e6c702fb6d89c6a662701937da77e86928f720f6dd14f259a3ae441d53871"
+    },
+    {
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/iterations/04-interior-review.md",
+      "bytes": 3223,
+      "sha256": "c03c6b6ec17dc104d54708c1d185eed70ab2ba8f8dcaf03d37ebdf9b511e7752"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "prompt": {
+        "path": "/Users/frankqdwang/.codex/worktrees/e746/StoryOS-blender/design/round-05/A-hearth-study/prompt-01.txt",
+        "bytes": 5683,
+        "sha256": "2f1f5ecdf7f70a9d6684cd4292aa8de5807b67d931528ae651b571db41afb78c"
+      },
+      "tool_original": {
+        "path": "/Users/frankqdwang/.codex/generated_images/01a0a953-f55a-7f60-a04d-ba35f4c0d3fd/exec-6ec9d865-5fc9-42e3-b2c5-e8f4424d1adc.png",
+        "bytes": 1983402,
+        "sha256": "ca796318a31084153f3db3cb4a3880937feed53dea92c78f37767b0dcad483b5",
+        "format": "PNG",
+        "width": 1849,
+        "height": 851
+      },
+      "selected": true,
+      "result": {
+        "path": "/Users/frankqdwang/.codex/worktrees/e746/StoryOS-blender/design/round-05/A-hearth-study/final.png",
+        "bytes": 1983402,
+        "sha256": "ca796318a31084153f3db3cb4a3880937feed53dea92c78f37767b0dcad483b5",
+        "format": "PNG",
+        "width": 1849,
+        "height": 851
+      }
+    }
+  ],
+  "selected_image": "/Users/frankqdwang/.codex/worktrees/e746/StoryOS-blender/design/round-05/A-hearth-study/final.png",
+  "copy_hash_match": true,
+  "validation_scope": "visual concept inspection and PNG/hash integrity only; no geometry, walkable width, illuminance, interaction or browser verification",
+  "visual_review": {
+    "primary": "pass",
+    "independent": "pass",
+    "stand_count": 5,
+    "occupied_stands": 3,
+    "empty_stands": 2,
+    "central_magic_tables": 1,
+    "direction": "two separated asymmetric groups: 2 hearth-side and 3 window/right-side",
+    "attempts_needed": 1,
+    "report": "QA.md"
+  }
+}

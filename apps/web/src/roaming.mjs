@@ -53,6 +53,19 @@ export function isWalkable(point, layout = ROOM_LAYOUT) {
   return insideBounds(point, layout) && clearOfFurniture(point, obstacles(layout), layout.navigation.bodyRadius);
 }
 
+/** A readable point on the front half of a stand, clear of neighbouring furniture. */
+export function readingApproach(slot, layout = ROOM_LAYOUT) {
+  const inward = slot.position[0] > 0 ? -1 : 1;
+  for (const radius of [1.1, 1.3, 1.5]) {
+    for (const turn of [0, inward * Math.PI / 6, -inward * Math.PI / 6, inward * Math.PI / 3, -inward * Math.PI / 3]) {
+      const angle = slot.yaw + turn;
+      const point = { x: slot.position[0] + Math.sin(angle) * radius, z: slot.position[2] + Math.cos(angle) * radius };
+      if (isWalkable(point, layout)) return point;
+    }
+  }
+  return null;
+}
+
 /** Move a body on the floor by a displacement in metres, preserving its height elsewhere. */
 export function moveWithCollisions(position, displacement, layout = ROOM_LAYOUT) {
   const current = { x: position.x, z: position.z };

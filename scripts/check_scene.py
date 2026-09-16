@@ -142,9 +142,9 @@ def occupancy(name, components, shape, layout):
 
 def check_layout(components, layout):
     # Read the actual shape, not pre-export object names or JSON metadata.
-    tops = [c for c in components if c['material'] == 'Timber'
-            and abs(c['center'][1] - 1.18) < .002 and .20 < c['size'][1] < .40
-            and .95 < c['size'][0] < 1.3 and .7 < c['size'][2] < 1.3]
+    tops = [c for c in components if c['material'] == 'ReadingWood'
+            and abs(c['center'][1] - 1.18) < .002 and .26 < c['size'][1] < .60
+            and .60 < c['size'][0] < 1.3 and .55 < c['size'][2] < 1.3]
     assert len(tops) == 5, f'Expected five separate sloped lectern tops, found {len(tops)}'
     lecterns = []
     for index, slot in enumerate(layout['slots']):
@@ -157,12 +157,12 @@ def check_layout(components, layout):
                          'horizontal_center_error_metres': delta, 'maximum_collision_shape_overrun_metres': overrun,
                          'passed': delta < TOLERANCE and overrun <= OCCUPANCY_TOLERANCE})
 
-    desk_top = one(components, lambda c: c['material'] == 'Timber' and abs(c['center'][1] - .94) < .002
-                   and abs(c['size'][0] - 2.6) < .002 and abs(c['size'][2] - .86) < .002, 'desk top')
-    seat = one(components, lambda c: c['material'] == 'Velvet' and abs(c['center'][1] - .51) < .002
+    desk_top = one(components, lambda c: c['material'] == 'ReadingWood' and abs(c['center'][1] - 1.14) < .002
+                   and abs(c['size'][0] - 2.444) < .002 and abs(c['size'][2] - .86) < .002, 'desk top')
+    seat = one(components, lambda c: c['material'] == 'ReadingWood' and abs(c['center'][1] - .69) < .002
                and abs(c['size'][0] - .73) < .002, 'chair seat')
-    table = one(components, lambda c: c['material'] == 'Timber' and abs(c['size'][0] - 1.84) < .002
-                and abs(c['size'][2] - 1.84) < .002 and abs(c['size'][1] - .13) < .002, 'round table edge')
+    table = one(components, lambda c: c['material'] == 'ReadingWood' and abs(c['size'][0] - 2 * layout['table']['radius']) < .002
+                and abs(c['size'][2] - 2 * layout['table']['radius']) < .002 and abs(c['size'][1] - .17) < .002, 'round table edge')
 
     def neighbourhood(anchor, hx, hz, min_height, max_height):
         x, _, z = anchor['center']
@@ -170,10 +170,15 @@ def check_layout(components, layout):
                 and c['min'][2] >= z - hz and c['max'][2] <= z + hz
                 and c['min'][1] >= min_height and c['max'][1] <= max_height]
 
+    # Desk bounds include its drawer pull; exclude the adjacent chair's rear legs.
+    # The chair is checked separately against its own collision shape below.
     furniture = {
-        'desk': occupancy('desk', neighbourhood(desk_top, 1.38, .85, -.025, 1.9), fixture(layout, 'desk'), layout),
-        'chair': occupancy('chair', neighbourhood(seat, .52, .47, -.001, 1.65), fixture(layout, 'chair'), layout),
-        'table': occupancy('table', neighbourhood(table, .97, .97, .079, layout['table']['topHeight'] + .02), layout['table'], layout),
+        'desk': occupancy('desk', neighbourhood(desk_top, 1.38, .60, -.025, 1.9), fixture(layout, 'desk'), layout),
+        # The chair is entirely wood. The adjacent desk's brass drawer pull
+        # extends into this neighbourhood but belongs to the desk checked above.
+        'chair': occupancy('chair', [c for c in neighbourhood(seat, .52, .47, -.001, 1.65)
+                                    if c['material'] != 'OldBrass'], fixture(layout, 'chair'), layout),
+        'table': occupancy('table', neighbourhood(table, layout['table']['radius'] + .05, layout['table']['radius'] + .05, .034, layout['table']['topHeight'] + .02), layout['table'], layout),
     }
     for name, anchor in [('desk', desk_top), ('chair', seat), ('table', table)]:
         shape = layout['table'] if name == 'table' else fixture(layout, name)
@@ -191,7 +196,7 @@ def check_layout(components, layout):
             'passed': all(item['passed'] for item in lecterns) and all(item['passed'] for item in furniture.values()) and floor_contains_navigation}
 
 
-def hearth():
+def hearth(hearth_shift=0,depth_shift=0,height_scale=1):
     vertices, faces = [], []
     for obj in bpy.data.collections['Room'].objects:
         if obj.type != 'MESH':
@@ -206,12 +211,12 @@ def hearth():
     def hit(y, z):
         # Stop at x=-4.3: the new firebricks behind this plane must not count as
         # a front jamb hit or incorrectly label the open firebox as blocked.
-        return tree.ray_cast(Vector((-3.7, y, z)), Vector((-1, 0, 0)), .6)[0] is not None
+        return tree.ray_cast(Vector((-3.7+hearth_shift, y+depth_shift, z*height_scale)), Vector((-1, 0, 0)), .6)[0] is not None
     probes = [(y, round(.28 + i * .01, 2)) for y in [.08, 1.72] for i in range(165)]
     missing = [[y, z] for y, z in probes if not hit(y, z)]
     header_hits = sum(hit(.3 + i * .05, 1.84) for i in range(25))
     firebox_open = not hit(.9, 1.0)
-    return {'ray_x_range': [-3.7, -4.3], 'pillar_ray_count': len(probes), 'pillar_gap_count': len(missing),
+    return {'ray_x_range': [-3.7+hearth_shift, -4.3+hearth_shift], 'pillar_ray_count': len(probes), 'pillar_gap_count': len(missing),
             'pillar_gap_locations': missing, 'header_hits': header_hits, 'header_ray_count': 25,
             'firebox_open': firebox_open, 'passed': not missing and header_hits == 25 and firebox_open}
 
@@ -229,7 +234,7 @@ result = {
     'occupancy_tolerance_metres': OCCUPANCY_TOLERANCE,
     'reusable_meshes': compare_meshes(baseline_meshes, reusable_meshes()),
     'layout_geometry': check_layout(connected_room_geometry(), layout),
-    'hearth': {'baseline': baseline_hearth, 'current': hearth()},
+    'hearth': {'baseline': baseline_hearth, 'current': hearth(fixture(layout, 'hearth')['center'][0]+4.14,-fixture(layout, 'hearth')['center'][1]-.9,1.05)},
     'packed_textures': sorted(image.name for image in bpy.data.images if image.packed_file),
     'scope': 'Saved source world vertices and disconnected static mesh surfaces; furniture occupancy and sampled front masonry rays. Runtime route tests and Chrome verification are separate evidence.',
 }

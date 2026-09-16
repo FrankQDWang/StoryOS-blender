@@ -1,0 +1,27 @@
+
+> test
+> node --test apps/web/tests/library-model.test.mjs apps/web/tests/roaming.test.mjs
+
+✔ creation retains all projects and leaves occupied positions stable at capacity (2.285959ms)
+✔ invalid creation is atomic and whitespace is removed (0.156709ms)
+✔ persisted data repairs duplicate slots and ids without losing valid projects (0.839834ms)
+✔ visiting changes recency without moving a displayed book (0.129917ms)
+✔ body clearance applies to walls and round table; long displacement cannot cross the table (8.1945ms)
+✔ every fixture and all five rotated lecterns stop movement before the body enters them (3.776792ms)
+✔ rectangle corners use circular body clearance and diagonal movement slides along a rotated face (0.212917ms)
+✔ zero displacement is stable and invalid starting positions are not teleported through furniture (0.103375ms)
+✔ all five reading stands have reachable standing positions within book interaction distance (37.657583ms)
+ℹ lectern 1: verified route 8.10 m; final book distance 1.19 m
+ℹ lectern 2: verified route 12.30 m; final book distance 1.19 m
+ℹ lectern 3: verified route 10.20 m; final book distance 1.19 m
+ℹ lectern 4: verified route 9.30 m; final book distance 1.19 m
+ℹ lectern 5: verified route 6.00 m; final book distance 1.19 m
+✔ the central table has a complete unobstructed walking circuit connected to the entrance (2.406708ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 121.741875

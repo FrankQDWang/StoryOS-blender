@@ -1,0 +1,155 @@
+/Users/frankqdwang/MLE/StoryOS-blender/scripts/build_library.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(n);m.use_nodes=True
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+18:13:57 | INFO: Starting glTF 2.0 export
+18:13:57 | INFO: Extracting primitive: Sphere.004
+18:13:57 | INFO: Primitives created: 1
+18:13:57 | INFO: Extracting primitive: Cube.189
+18:13:57 | INFO: Primitives created: 1
+18:13:57 | INFO: Extracting primitive: quill
+18:13:57 | INFO: Primitives created: 1
+18:13:57 | INFO: Extracting primitive: Cylinder.027
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.001
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Sphere.006
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Sphere.005
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.002
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: desk vase
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: hearthside tapestry
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Sphere.062
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.196
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: fir branches
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: fir branches.117
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Sphere
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.207
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.199
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.225
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.146
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.143
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cylinder.026
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.315
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: woven rug surface
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Finished glTF 2.0 export in 0.427642822265625 s
+
+18:13:58 | INFO: Starting glTF 2.0 export
+18:13:58 | INFO: Extracting primitive: Cube.380
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.381
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.382
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.398
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.399
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.400
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.401
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.394
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.395
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.396
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.397
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Torus.014
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: CoverStar
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: CoverStar.001
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: CoverStar.002
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: CoverStar.003
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.393
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.387
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.388
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.389
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.390
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.391
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.392
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.402
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.403
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.404
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.383
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.384
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.385
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.386
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Finished glTF 2.0 export in 0.057847023010253906 s
+
+18:13:58 | INFO: Starting glTF 2.0 export
+18:13:58 | INFO: Extracting primitive: Cube.405
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: LeftFinger
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: LeftFinger.001
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: LeftFinger.002
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: LeftFinger.003
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Sphere.270
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: LeftThumb
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Cube.406
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: RightFinger
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: RightFinger.001
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: RightFinger.002
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: RightFinger.003
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: Sphere.271
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Extracting primitive: RightThumb
+18:13:58 | INFO: Primitives created: 1
+18:13:58 | INFO: Finished glTF 2.0 export in 0.040554046630859375 s
+/Users/frankqdwang/MLE/StoryOS-blender/scripts/build_library.py:497: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.context.scene.world;world.use_nodes=True;next(n for n in world.node_tree.nodes if n.type=='BACKGROUND').inputs[0].default_value=(.07,.11,.19,1);next(n for n in world.node_tree.nodes if n.type=='BACKGROUND').inputs[1].default_value=.24
+
+Info: Packed 4 file(s)
+Info: Saved as "storyos-library.blend"
+STORYOS_ASSETS_READY {"version": "0.1.3-preview.2", "baseVersion": "v0.1.0-baseline", "change": "Selected A hearth study: side writing nook, lighter reading stands, open center and layered materials/light.", "blender": "5.2.1 LTS", "room": {"width": 9.6, "depth": 12, "height": 4.6}, "slots": [{"index": 0, "position": [-3.93, 1.25, 0.883], "yaw": 0.892, "scale": 0.824, "baseScale": 0.88, "pitch": 0.4126}, {"index": 1, "position": [-3.647, 1.25, -3.534], "yaw": 0.7559, "scale": 0.827, "baseScale": 0.95, "pitch": 0.4354}, {"index": 2, "position": [3.48, 1.25, -1.886], "yaw": -0.8247, "scale": 0.695, "baseScale": 0.88, "pitch": 0.4527}, {"index": 3, "position": [3.926, 1.25, -0.332], "yaw": -1.1117, "scale": 0.744, "baseScale": 0.93, "pitch": 0.6365}, {"index": 4, "position": [3.114, 1.25, 2.315], "yaw": -1.191, "scale": 0.664, "baseScale": 0.82, "pitch": 0.7153}], "layoutSource": "apps/web/src/room-layout.json", "layout": {"version": "0.1.3-preview.2", "units": "metres; x right, y up, negative z toward window", "room": {"minX": -4.33, "maxX": 4.33, "minZ": -4.16, "maxZ": 6.95, "height": 4.6}, "navigation": {"bodyRadius": 0.25, "eyeHeight": 1.7, "speed": 2}, "home": {"position": [0.05224843101489303, 1.662972950514983, 6.56675306227095], "lookAt": [0.05224843101489303, 1.2207809469520896, -3.4332469377290504], "fov": 43.74821936258563}, "slots": [{"position": [-3.93, 1.25, 0.883], "yaw": 0.892, "scale": 0.824, "baseScale": 0.88, "pitch": 0.4126}, {"position": [-3.647, 1.25, -3.534], "yaw": 0.7559, "scale": 0.827, "baseScale": 0.95, "pitch": 0.4354}, {"position": [3.48, 1.25, -1.886], "yaw": -0.8247, "scale": 0.695, "baseScale": 0.88, "pitch": 0.4527}, {"position": [3.926, 1.25, -0.332], "yaw": -1.1117, "scale": 0.744, "baseScale": 0.93, "pitch": 0.6365}, {"position": [3.114, 1.25, 2.315], "yaw": -1.191, "scale": 0.664, "baseScale": 0.82, "pitch": 0.7153}], "lectern": {"halfSize": [0.54, 0.51], "pitch": 0.5}, "table": {"center": [0, 0.6], "radius": 0.92, "topHeight": 1.1}, "rug": {"center": [-0.03, 0.15], "size": [3.65, 3.9]}, "fixtures": [{"id": "hearth", "center": [-4.0, -1.15], "halfSize": [0.565, 0.925], "yaw": 0}, {"id": "desk", "center": [2.37, -3.66], "halfSize": [1.23, 0.59], "yaw": 0}, {"id": "chair", "center": [2.2, -2.8], "halfSize": [0.41, 0.46], "yaw": 0}, {"id": "hearth-tools", "center": [-3.64, 0.1], "halfSize": [0.22, 0.19], "yaw": 0}, {"id": "log-basket", "center": [-4.05, 0.4], "halfSize": [0.31, 0.3], "yaw": 0}, {"id": "floor-vase", "center": [-2.96, -3.93], "halfSize": [0.25, 0.25], "yaw": 0}]}, "visualTarget": "design/round-05/A-hearth-study/final.png", "materials": {"Timber": [0.37, 0.21, 0.105], "ReadingWood": [0.47, 0.29, 0.15], "FloorWood": [0.54, 0.37, 0.215], "WarmPlaster": [0.54, 0.43, 0.32], "Stone": [0.2, 0.24, 0.255]}, "source": "scripts/build_library.py"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

@@ -1,0 +1,28 @@
+{
+  "version": "0.1.3-preview.1",
+  "tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "geometry": true,
+  "camera_clearance": true,
+  "asset_parity": true,
+  "build": "passed",
+  "chrome": {
+    "book_select": "passed",
+    "book_open_return": "passed",
+    "roam_enter_and_key_e": "passed",
+    "continuous_wasd": "not_verified_with_short_key_pulses",
+    "create_cancel": "passed",
+    "project_list": "passed",
+    "fifth_slot_and_reduced_motion": "passed_on_localhost",
+    "errors": []
+  },
+  "aesthetic_review": "rejected_by_user_major_deviation_from_A",
+  "preview": "http://127.0.0.1:4173/",
+  "final_screenshot": "14-overview-final.jpg",
+  "comparison": "comparison-final.jpg",
+  "branch": "iteration/next",
+  "commit_push": "not_requested_this_turn",
+  "visual_review": "failed_previous_pass_withdrawn"
+}

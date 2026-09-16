@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "name": "library-room.glb",
+      "source_sha256": "d0a88a95321d5493d7902dd46b25f63d425f58ce109a3af9d4bb1b2b5e9ac836",
+      "build_sha256": "d0a88a95321d5493d7902dd46b25f63d425f58ce109a3af9d4bb1b2b5e9ac836",
+      "equal": true
+    },
+    {
+      "name": "story-book.glb",
+      "source_sha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
+      "build_sha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
+      "equal": true
+    },
+    {
+      "name": "opening-hands.glb",
+      "source_sha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd",
+      "build_sha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd",
+      "equal": true
+    }
+  ],
+  "story-book.glb_unchanged_from_HEAD": true,
+  "opening-hands.glb_unchanged_from_HEAD": true,
+  "selected_image_copy_equal": true,
+  "passed": true
+}

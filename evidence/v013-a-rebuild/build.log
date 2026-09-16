@@ -1,0 +1,43 @@
+
+> build
+> npm --prefix apps/web run build
+
+
+> web@0.0.0 build
+> vite build && node scripts/prepare-sites-build.mjs
+
+vite v6.4.2 building for production...
+transforming...
+✓ 5143 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/client/index.html                                                            0.41 kB │ gzip:   0.30 kB
+dist/client/assets/cormorant-garamond-vietnamese-400-normal-6K-YXo6g.woff2        6.74 kB
+dist/client/assets/cormorant-garamond-vietnamese-500-normal-BZGLGj12.woff2        6.76 kB
+dist/client/assets/cormorant-garamond-vietnamese-400-normal-4uxlocMh.woff         9.32 kB
+dist/client/assets/cormorant-garamond-vietnamese-500-normal-DqXqCC0q.woff         9.33 kB
+dist/client/assets/cormorant-garamond-cyrillic-400-normal-DD2KOZkl.woff2         12.78 kB
+dist/client/assets/cormorant-garamond-cyrillic-500-normal-CyAY5ZLS.woff2         12.92 kB
+dist/client/assets/cormorant-garamond-cyrillic-ext-400-normal-W3Dto7M0.woff2     13.92 kB
+dist/client/assets/cormorant-garamond-cyrillic-ext-500-normal-Yta7XZ9C.woff2     14.10 kB
+dist/client/assets/cormorant-garamond-cyrillic-400-normal-CVFrM67f.woff          15.70 kB
+dist/client/assets/cormorant-garamond-cyrillic-500-normal-DkJXBcIH.woff          15.76 kB
+dist/client/assets/cormorant-garamond-cyrillic-ext-400-normal-DLdKLAvx.woff      17.43 kB
+dist/client/assets/cormorant-garamond-cyrillic-ext-500-normal-lsPpqi9g.woff      17.55 kB
+dist/client/assets/cormorant-garamond-latin-ext-400-normal-Drx2k2n9.woff2        19.89 kB
+dist/client/assets/cormorant-garamond-latin-ext-500-normal-CH1kM7og.woff2        20.20 kB
+dist/client/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2            22.88 kB
+dist/client/assets/cormorant-garamond-latin-500-normal-BsRWmXhO.woff2            23.31 kB
+dist/client/assets/cormorant-garamond-latin-ext-400-normal-uvC0WHQr.woff         27.93 kB
+dist/client/assets/cormorant-garamond-latin-ext-500-normal-DYeaGGzO.woff         28.28 kB
+dist/client/assets/cormorant-garamond-latin-400-normal-B7YtguxJ.woff             30.98 kB
+dist/client/assets/cormorant-garamond-latin-500-normal-zIXX3Q-H.woff             31.37 kB
+dist/client/assets/index-BC1zBHQb.css                                            17.46 kB │ gzip:   4.56 kB
+dist/client/assets/index-N_RtORG2.js                                          1,593.35 kB │ gzip: 479.59 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.94s
+Prepared Sites build: dist/server/index.js and dist/.openai/hosting.json

@@ -1,42 +1,58 @@
 import React,{Suspense,useEffect,useMemo,useRef,useState} from 'react';
 import {Canvas,useFrame,useThree} from '@react-three/fiber';
-import {useGLTF,Html,Sparkles} from '@react-three/drei';
+import {useGLTF,useTexture,Html,Sparkles} from '@react-three/drei';
 import {EffectComposer,Bloom,Vignette} from '@react-three/postprocessing';
 import * as THREE from 'three';
 import layout from './room-layout.json';
-import {moveWithCollisions,isWalkable} from './roaming.mjs';
+import {moveWithCollisions,isWalkable,readingApproach} from './roaming.mjs';
 import {HearthFire} from './HearthFire';
 
 export const SLOTS=layout.slots.map(slot=>slot.position);
 const YAWS=layout.slots.map(slot=>slot.yaw);
+const BOOK_PITCH=layout.lectern.pitch;
+const PITCHES=layout.slots.map(slot=>slot.pitch??BOOK_PITCH);
 const HOME=new THREE.Vector3(...layout.home.position),HOME_LOOK=new THREE.Vector3(...layout.home.lookAt);
 const TABLE=[layout.table.center[0],layout.table.topHeight,layout.table.center[1]];
-const TINTS={Timber:'#735238',FloorWood:'#887052',WarmPlaster:'#a2937c',Stone:'#70675b'};
-const BUMP_SCALES={Timber:2,FloorWood:1.6,WarmPlaster:9,Stone:3,HearthDecor:.15,HearthRug:.25};
-function prepare(scene,room=false){
+const DESK=layout.fixtures.find(f=>f.id==='desk').center;
+const HEARTH=layout.fixtures.find(f=>f.id==='hearth').center;
+const TINTS={Timber:'#aa8869',ReadingWood:'#d3b497',FloorWood:'#dfba94',WarmPlaster:'#a89579',Stone:'#70675b'};
+const BUMP_SCALES={Timber:.22,ReadingWood:.14,FloorWood:.20,WarmPlaster:.90,Stone:.50,HearthDecor:.015,HearthRug:.04};
+function prepare(scene,room=false,indirect=null){
  const s=scene.clone(true);s.traverse(o=>{if(o.isMesh){
   const materials=(Array.isArray(o.material)?o.material:[o.material]).map(source=>{
    const material=source.clone();
+   if(room&&indirect&&source.aoMap&&!/^(Flame|LanternGlow|HearthEmber|NightGlass|NightSilhouette)/.test(material.name)){
+    material.lightMap=indirect;material.lightMapIntensity=2.2;material.aoMapIntensity=.82;
+   }
    if(room&&TINTS[material.name])material.color.set(TINTS[material.name]);
-   if(room&&material.name==='FloorWood')material.roughness=.62;
-   if(room&&/^(Timber|FloorWood)$/.test(material.name)){
+   if(room&&material.name==='FloorWood')material.roughness=.56;
+   if(room&&material.name==='ReadingWood')material.roughness=.57;
+   if(room&&material.name==='TableSlate'){material.color.set('#3c5368');material.roughness=.58;}
+   if(room&&material.name==='OldBrass'){material.metalness=.42;material.roughness=.40;}
+   if(room&&/^(Timber|ReadingWood|FloorWood)$/.test(material.name)){
     material.onBeforeCompile=shader=>{
      shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',THREE.ShaderChunk.map_fragment.replace('diffuseColor *= sampledDiffuseColor;',
-      'sampledDiffuseColor.rgb=clamp((sampledDiffuseColor.rgb-vec3(.25,.20,.14))*2.1+vec3(.25,.20,.14),vec3(.025),vec3(1.0)); diffuseColor *= sampledDiffuseColor;'));
+      `sampledDiffuseColor.rgb=clamp((sampledDiffuseColor.rgb-vec3(.11,.055,.025))*${material.name==='FloorWood'?'2.4':'1.9'}+vec3(.11,.055,.025),vec3(.003),vec3(1.0)); diffuseColor *= sampledDiffuseColor;`));
+     if(material.name==='FloorWood')shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\n roughnessFactor=.4+.35*roughnessFactor;');
     };
    }
    if(room&&material.name==='WarmPlaster')material.onBeforeCompile=shader=>{
     shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',THREE.ShaderChunk.map_fragment.replace('diffuseColor *= sampledDiffuseColor;',
-     'sampledDiffuseColor.rgb=clamp((sampledDiffuseColor.rgb-vec3(.54,.49,.39))*2.4+vec3(.54,.49,.39),vec3(.04),vec3(1.0)); diffuseColor *= sampledDiffuseColor;'));
+     'sampledDiffuseColor.rgb=clamp((sampledDiffuseColor.rgb-vec3(.54,.49,.39))*1.45+vec3(.54,.49,.39),vec3(.04),vec3(1.0)); diffuseColor *= sampledDiffuseColor;'));
    };
    if(material.map){
     material.map.anisotropy=8;
+    if(room&&/^(Timber|ReadingWood|FloorWood)$/.test(material.name)){material.map.wrapS=material.map.wrapT=THREE.MirroredRepeatWrapping;material.map.needsUpdate=true;}
     if(room&&BUMP_SCALES[material.name]){material.bumpMap=material.map;material.bumpScale=BUMP_SCALES[material.name]}
+    if(room&&material.name==='FloorWood'){
+     material.roughnessMap=material.map.clone();material.roughnessMap.colorSpace=THREE.NoColorSpace;material.roughnessMap.needsUpdate=true;
+     material.roughness=.95;material.bumpScale=.38;
+    }
    }
    if(room&&/^(HearthDecor|HearthRug)$/.test(material.name))material.roughness=1;
-   if(room&&material.name==='HearthRug')material.color.set('#897873');
+   if(room&&material.name==='HearthRug'){material.bumpScale=.06;material.color.set('#ffffff');}
    if(room&&material.name==='NightGlass'){
-    material.color.set('#071324');material.emissive.set('#194775');material.emissiveIntensity=.85;
+    material.color.set('#071324');material.emissive.set('#145389');material.emissiveIntensity=.90;
     material.onBeforeCompile=shader=>{
      shader.vertexShader='varying float vNightAltitude;\n'+shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\n vNightAltitude=(modelMatrix*vec4(position,1.0)).y;');
      shader.fragmentShader='varying float vNightAltitude;\n'+shader.fragmentShader.replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\n totalEmissiveRadiance*=mix(.18,1.0,smoothstep(.6,3.8,vNightAltitude));');
@@ -44,15 +60,28 @@ function prepare(scene,room=false){
    }
    if(room&&material.name==='NightSilhouetteFar'){material.color.set('#10263d');material.emissive.set('#17304b');material.emissiveIntensity=.38;}
    if(room&&material.name==='NightSilhouetteNear'){material.color.set('#0d2032');material.emissive.set('#102941');material.emissiveIntensity=.3;}
+   if(material.lightMap){
+    const surfaceShader=material.onBeforeCompile;
+    material.onBeforeCompile=shader=>{
+     surfaceShader.call(material,shader);
+     shader.fragmentShader=shader.fragmentShader.replace('#include <lights_fragment_end>',`#include <lights_fragment_end>\n reflectedLight.directDiffuse *= ${material.name==='Stone'?'.8':'.25'}; ${material.name==='FloorWood'?'reflectedLight.directSpecular *= .75;':''}`);
+    };
+   }
+   if(room)material.customProgramCacheKey=()=>`a-study-${material.name}-7`;
    return material;
   });
   o.material=Array.isArray(o.material)?materials:materials[0];
-  const luminous=room&&materials.some(m=>/^(Flame|HearthEmber|NightGlass|NightSilhouetteFar|NightSilhouetteNear)/.test(m.name));
+  const luminous=room&&materials.some(m=>/^(Flame|LanternGlow|HearthEmber|NightGlass|NightSilhouetteFar|NightSilhouetteNear)/.test(m.name));
   o.castShadow=!luminous;o.receiveShadow=!luminous;
  }});return s;
 }
 function Room({onReady}){
- const {scene}=useGLTF('/assets/models/library-room.glb');const object=useMemo(()=>prepare(scene,true),[scene]);
+ const {scene}=useGLTF('/assets/models/library-room.glb');
+ const map=useTexture('/assets/textures/room-illumination.png');
+ const object=useMemo(()=>{
+  const indirect=map.clone();indirect.flipY=false;indirect.channel=1;indirect.colorSpace=THREE.NoColorSpace;indirect.needsUpdate=true;
+  return prepare(scene,true,indirect);
+ },[scene,map]);
  useEffect(()=>{onReady()},[onReady]);return <primitive object={object}/>;
 }
 function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing}){
@@ -65,9 +94,9 @@ function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing}){
   age.current+=dt;
   if(cover)cover.rotation.z=THREE.MathUtils.damp(cover.rotation.z,opening?2.65:0,opening?3.5:6,dt);
   pages.forEach((p,i)=>{if(p)p.rotation.z=THREE.MathUtils.damp(p.rotation.z,opening?Math.max(0,2.4-i*.13):0,2-i*.15,dt)});
-  if(group.current){group.current.position.y=SLOTS[index][1]+(appearing&&!reduced?Math.max(0,1.1-age.current*.6):0);group.current.scale.setScalar(appearing&&!reduced?Math.min(1,age.current*1.4):1)}
+  if(group.current){group.current.position.y=SLOTS[index][1]+(appearing&&!reduced?Math.max(0,1.1-age.current*.6):0);group.current.scale.setScalar((layout.slots[index].scale??1)*(appearing&&!reduced?Math.min(1,age.current*1.4):1))}
  });
- return <group ref={group} position={SLOTS[index]} rotation={[.28,YAWS[index],0,'YXZ']} onClick={e=>{e.stopPropagation();onSelect(book.id)}} onPointerOver={e=>{e.stopPropagation();setHover(true);document.body.style.cursor='pointer'}} onPointerOut={()=>{setHover(false);document.body.style.cursor=''}}>
+ return <group ref={group} position={SLOTS[index]} rotation={[PITCHES[index],YAWS[index],0,'YXZ']} onClick={e=>{e.stopPropagation();onSelect(book.id)}} onPointerOver={e=>{e.stopPropagation();setHover(true);document.body.style.cursor='pointer'}} onPointerOut={()=>{setHover(false);document.body.style.cursor=''}}>
   <primitive object={object}/>
   {hover&&!selected&&!opening&&<Html position={[0,.35,0]} center distanceFactor={4} zIndexRange={[8,0]}><div className="book-label">{book.title}<small>点击查看作品</small></div></Html>}
   {(selected||hover)&&<pointLight position={[0,.5,0]} intensity={.8} color="#ffcd8b" distance={1.8}/>}
@@ -76,8 +105,8 @@ function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing}){
 function MagicTable({onCreate,crafting,reduced}){
  const ref=useRef();useFrame(({clock})=>{if(ref.current&&!reduced)ref.current.rotation.y=clock.elapsedTime*.2});
  return <group position={TABLE} onClick={e=>{e.stopPropagation();onCreate()}} onPointerOver={()=>document.body.style.cursor='pointer'} onPointerOut={()=>document.body.style.cursor=''}>
-  <mesh rotation={[-Math.PI/2,0,0]}><circleGeometry args={[.76,48]}/><meshBasicMaterial transparent opacity={0} depthWrite={false}/></mesh>
-  <group ref={ref} position={[0,.08,0]}>
+  <mesh rotation={[-Math.PI/2,0,0]}><circleGeometry args={[layout.table.radius-.12,48]}/><meshBasicMaterial transparent opacity={0} depthWrite={false}/></mesh>
+  <group ref={ref} position={[0,.13,0]}>
    <mesh rotation={[-Math.PI/2,0,0]}><torusGeometry args={[.35,.006,6,80]}/><meshStandardMaterial color="#95c9af" emissive="#65b897" emissiveIntensity={crafting?5:1.3}/></mesh>
    <mesh rotation={[-Math.PI/2,0,.4]}><torusGeometry args={[.20,.005,6,64]}/><meshStandardMaterial color="#bdcfb8" emissive="#8dc6a9" emissiveIntensity={crafting?4:.6}/></mesh>
   </group>
@@ -98,8 +127,8 @@ function CreatingBook({book}) {
   if(ref.current){
    const fly=THREE.MathUtils.smoothstep(t,1.45,3.0),dest=book.slot!==null?new THREE.Vector3(...SLOTS[book.slot]):new THREE.Vector3(TABLE[0],TABLE[1]+1.9,TABLE[2]);
    ref.current.position.copy(start).lerp(dest,fly);ref.current.position.y+=Math.sin(fly*Math.PI)*.7;
-   const scale=THREE.MathUtils.smoothstep(t,0,.4)*(book.slot===null?1-fly:1);ref.current.scale.setScalar(scale);
-   ref.current.rotation.set(.28,book.slot!==null?YAWS[book.slot]*fly:fly,0,'YXZ');
+   const scale=THREE.MathUtils.smoothstep(t,0,.4)*(book.slot===null?1-fly:THREE.MathUtils.lerp(1,layout.slots[book.slot].scale??1,fly));ref.current.scale.setScalar(scale);
+   ref.current.rotation.set(book.slot!==null?THREE.MathUtils.lerp(BOOK_PITCH,PITCHES[book.slot],fly):BOOK_PITCH,book.slot!==null?YAWS[book.slot]*fly:fly,0,'YXZ');
   }
  });
  return <group ref={ref} position={start.toArray()}><primitive object={object}/><pointLight color="#bbdebc" intensity={1.5} distance={3}/></group>;
@@ -108,7 +137,7 @@ function OpeningHands({active,bookIndex}){
  const {scene}=useGLTF('/assets/models/opening-hands.glb');const object=useMemo(()=>prepare(scene),[scene]);const ref=useRef();const progress=useRef(0);
  useFrame((_,dt)=>{progress.current=THREE.MathUtils.damp(progress.current,active?1:0,4,dt);if(ref.current){ref.current.visible=progress.current>.015;ref.current.position.y=-.12+(1-progress.current)*-.3;ref.current.position.z=.48+(1-progress.current)*.6;ref.current.rotation.x=progress.current*-.18}});
  if(bookIndex==null)return null;
- return <group position={SLOTS[bookIndex]} rotation={[0,YAWS[bookIndex],0]}><group ref={ref}><primitive object={object}/></group></group>;
+ return <group position={SLOTS[bookIndex]} scale={layout.slots[bookIndex].scale??1} rotation={[PITCHES[bookIndex]-.28,YAWS[bookIndex],0,'YXZ']}><group ref={ref}><primitive object={object}/></group></group>;
 }
 function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced,onLockChange}){
  const {camera,gl}=useThree();const keys=useRef(new Set());const target=useRef(HOME_LOOK.clone());const wasLocked=useRef(false);const nearestRef=useRef(null);
@@ -161,6 +190,8 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
  useEffect(()=>{if(mode!=='roam'){camera.position.copy(HOME);target.current.copy(HOME_LOOK)}},[resetToken]);
  useFrame((_,delta)=>{
   const dt=Math.min(delta,.05);
+  const desiredFov=mode==='overview'&&!opening?layout.home.fov:53;
+  camera.fov=reduced?desiredFov:THREE.MathUtils.damp(camera.fov,desiredFov,4,dt);camera.updateProjectionMatrix();
   if(mode==='roam'){
    const f=new THREE.Vector3();camera.getWorldDirection(f);f.y=0;f.normalize();const right=new THREE.Vector3().crossVectors(f,camera.up).normalize();const move=new THREE.Vector3();
    if(keys.current.has('KeyW')||keys.current.has('ArrowUp'))move.add(f);if(keys.current.has('KeyS')||keys.current.has('ArrowDown'))move.sub(f);
@@ -174,13 +205,12 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
    const b=books.find(b=>b.id===selected);let pos=HOME.clone(),look=HOME_LOOK.clone();
    if((mode==='focus'||opening)&&b?.slot!=null){
     const p=new THREE.Vector3(...SLOTS[b.slot]);
-    const offset=new THREE.Vector3(.05,opening?.96:1.12,opening?1.05:1.9).applyAxisAngle(camera.up,YAWS[b.slot]);
-    pos=p.clone().add(offset);look=p.clone().add(new THREE.Vector3(0,.12,0));
+    const offset=new THREE.Vector3(.05,opening?1.1:1.12,opening?1.5:1.9).applyAxisAngle(camera.up,YAWS[b.slot]);
+    pos=p.clone().add(offset);look=p.clone().add(new THREE.Vector3(0,opening?.24:.12,0));
     // Keep a standing place below the reading view when switching to roaming.
-    if(!opening&&!isWalkable(pos)){
-     const approach=p.clone().add(new THREE.Vector3(0,0,1.1).applyAxisAngle(camera.up,YAWS[b.slot]));
-     const clear=moveWithCollisions(approach,{x:pos.x-approach.x,z:pos.z-approach.z});
-     pos.x=clear.x;pos.z=clear.z;
+    if(!isWalkable(pos)){
+     const approach=readingApproach(layout.slots[b.slot]);
+     if(approach){const clear=moveWithCollisions(approach,{x:pos.x-approach.x,z:pos.z-approach.z});pos.x=clear.x;pos.z=clear.z;}
     }
    }
    if(reduced){camera.position.copy(pos);target.current.copy(look)}else{camera.position.lerp(pos,1-Math.exp(-dt*(opening?2.8:2.2)));target.current.lerp(look,1-Math.exp(-dt*2.5))}camera.lookAt(target.current);
@@ -193,18 +223,19 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
  const [visible,setVisible]=useState(!document.hidden);
  useEffect(()=>{const changed=()=>setVisible(!document.hidden);document.addEventListener('visibilitychange',changed);return()=>document.removeEventListener('visibilitychange',changed)},[]);
  const selectedBook=books.find(b=>b.id===selected);
- return <Canvas frameloop={visible&&!paused?'always':'demand'} shadows="percentage" dpr={[1,1.5]} camera={{position:HOME.toArray(),fov:53,near:.06,far:60}} gl={{antialias:true,powerPreference:'high-performance'}} onCreated={({gl})=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.08;gl.shadowMap.type=THREE.PCFShadowMap}}>
+ return <Canvas frameloop={visible&&!paused?'always':'demand'} shadows="percentage" dpr={[1,1.5]} camera={{position:HOME.toArray(),fov:layout.home.fov,near:.06,far:60}} gl={{antialias:true,powerPreference:'high-performance'}} onCreated={({gl})=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.08;gl.shadowMap.type=THREE.PCFShadowMap}}>
   <color attach="background" args={['#101922']}/><fog attach="fog" args={['#24201e',14,32]}/>
   <ambientLight intensity={.10} color="#8694aa"/>
   <hemisphereLight args={['#75859d','#49301e',.30]}/>
+  <directionalLight position={[0,4,3]} color="#d6b18c" intensity={.12}/>
   <directionalLight position={[-1,5,-6]} color="#7892b8" intensity={.58}/>
-  <pointLight position={[0,3.15,-3.8]} color="#7694bb" intensity={8} distance={10} decay={2}/>
-  <pointLight position={[-.94,1.5,-3.45]} color="#ffc57e" intensity={5.2} distance={5} castShadow shadow-mapSize={[512,512]} shadow-bias={-.001} shadow-normalBias={.035}/>
+  <pointLight position={[0,3.15,-3.8]} color="#7694bb" intensity={6} distance={10} decay={2}/>
+  <pointLight position={[DESK[0]-.68,1.7,DESK[1]+.06]} color="#ffc57e" intensity={6.2} distance={5} castShadow shadow-intensity={.68} shadow-mapSize={[512,512]} shadow-bias={-.001} shadow-normalBias={.035}/>
   <HearthFire reduced={reduced}/>
   <pointLight position={[-4.05,2.55,2.1]} color="#ffc181" intensity={3.8} distance={8}/>
-  <pointLight position={[-3.90,2.50,-.9]} color="#ffc57f" intensity={5.5} distance={4.2} decay={2}/>
-  <pointLight position={[4.05,2.55,2.1]} color="#ffc68c" intensity={3.8} distance={8}/>
-  <pointLight position={[4.05,2.55,-2.95]} color="#ffd09e" intensity={3.6} distance={7}/>
+  <pointLight position={[HEARTH[0]+.24,2.55,HEARTH[1]]} color="#ffb75e" intensity={3.6} distance={4.2} decay={2}/>
+  <pointLight position={[4.05,2.55,2.1]} color="#ffc68c" intensity={5.2} distance={8}/>
+  <pointLight position={[4.05,2.55,-2.95]} color="#ffd09e" intensity={4.6} distance={7}/>
   <Suspense fallback={null}>
    <Room onReady={onReady}/>
    {books.filter(b=>b.slot!==null&&b.id!==crafting?.id).map(b=><ProjectBook key={b.id} book={b} index={b.slot} onSelect={onSelect} selected={selected===b.id} opening={opening&&selected===b.id} reduced={reduced} appearing={appearing===b.id}/>)}
@@ -215,7 +246,7 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
   {!reduced&&<Sparkles count={35} scale={[8,3.2,8]} position={[0,1.7,0]} size={1.4} speed={.07} color="#d6cdb0" opacity={.20}/>}
   <CameraRig mode={mode} selected={selected} books={books} onMode={setMode} onNear={onNear} opening={opening} resetToken={resetToken} reduced={reduced} onLockChange={onLockChange}/>
   <Performance onMetrics={onMetrics}/>
-  <EffectComposer multisampling={0}><Bloom luminanceThreshold={1.25} intensity={.32} mipmapBlur/><Vignette eskil={false} offset={.23} darkness={.44}/></EffectComposer>
+  <EffectComposer multisampling={4}><Bloom luminanceThreshold={1.4} intensity={.24} mipmapBlur/><Vignette eskil={false} offset={.23} darkness={.34}/></EffectComposer>
  </Canvas>;
 }
 useGLTF.preload('/assets/models/library-room.glb');useGLTF.preload('/assets/models/story-book.glb');useGLTF.preload('/assets/models/opening-hands.glb');

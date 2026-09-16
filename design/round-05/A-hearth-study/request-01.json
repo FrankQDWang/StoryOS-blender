@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt_file": "prompt-01.txt",
+  "referenced_image_paths": [
+    "/Users/frankqdwang/MLE/StoryOS-blender/evidence/interior-review-20260916/01-current-overview.png",
+    "/Users/frankqdwang/MLE/StoryOS-blender/design/round-04/01-open-hearth.png"
+  ],
+  "mode": "built-in",
+  "note": "Only prompt and referenced_image_paths passed; no model, quality or reasoning parameter is exposed."
+}
