@@ -1,0 +1,6 @@
+00:00.485  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/downloads/wrist-step/before.blend"
+00:00.559  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/source/makehuman-hands.blend"
+HAND_MOTION {"measurement": "forearm-to-palm long-axis angle, not a medical joint angle or visual acceptance", "max_other_bone_world_matrix_difference": 5.364418029785156e-07, "left_hand_and_right_wrist_finger_poses_unchanged": true, "lift_peak_before_degrees": 63.68034665107593, "lift_peak_after_degrees": 38.27793056169305}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

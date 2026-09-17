@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4-preview.2",
+  "version": "0.1.4-preview.4",
   "room_version": "0.1.3-preview.3",
   "baseline": "v0.1.0-baseline",
   "source_script": "scripts/build_library.py",
@@ -30,8 +30,8 @@
     },
     {
       "path": "public/assets/models/makehuman-hands.glb",
-      "bytes": 1225908,
-      "sha256": "4f2b469d1c4e5677ddd7a6ba3a7cac353ad97f09df85a8bc50b5534376252704",
+      "bytes": 1226612,
+      "sha256": "ed2a5b88f9dcf646b7ba77b1bbbe031d1eea137c4fee6ffaa10b2129ba6bf8e6",
       "meshes": 4,
       "materials": 3,
       "embedded_images": 1,
@@ -41,7 +41,7 @@
         21
       ],
       "primitives": 6,
-      "triangles": 28064
+      "triangles": 28016
     },
     {
       "path": "public/assets/models/opening-hands.glb",
@@ -129,8 +129,8 @@
     },
     {
       "path": "assets/source/makehuman-hands.blend",
-      "bytes": 1771582,
-      "sha256": "c478ba0c872547d1eb0829917dd50429db762a211c60efac5c8326d65e14854b"
+      "bytes": 1808872,
+      "sha256": "dcc325632ebd9cce4295b241fa067c85a8883ba9e681c2880c61156aa2caa496"
     }
   ],
   "texture_provenance": [

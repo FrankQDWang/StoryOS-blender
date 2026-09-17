@@ -1,0 +1,57 @@
+{
+  "version": "0.1.4-preview.4",
+  "manifest_assets_verified": 15,
+  "source_files_verified": 8,
+  "generator_sha256": "b89711a303c469e173a6f4c2550e812f02216528ddd2235958609f410f0ca14a",
+  "public_matches_production": 13,
+  "hand_asset": {
+    "path": "public/assets/models/makehuman-hands.glb",
+    "bytes": 1226612,
+    "sha256": "ed2a5b88f9dcf646b7ba77b1bbbe031d1eea137c4fee6ffaa10b2129ba6bf8e6",
+    "meshes": 4,
+    "materials": 3,
+    "embedded_images": 1,
+    "skins": 2,
+    "joints": [
+      21,
+      21
+    ],
+    "primitives": 6,
+    "triangles": 28016
+  },
+  "unchanged_from_saved_main": [
+    "apps/web/src/room-layout.json",
+    "public/assets/models/library-room.glb",
+    "public/assets/models/story-book.glb",
+    "apps/web/src/Scene.jsx",
+    "apps/web/src/HearthFire.jsx",
+    "apps/web/src/HearthBed.jsx",
+    "apps/web/src/opening-sequence.json",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/sculpted-wood.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/sculpted-plaster.png"
+  ],
+  "tests": 14,
+  "build": "passed; existing chunk-size warning",
+  "performance": "No controlled before/after performance test this iteration; no runtime IK or new dependencies.",
+  "captures": {
+    "normal": 37,
+    "slow": 47,
+    "actual": 98
+  },
+  "final_browser_errors": {
+    "main": 0,
+    "review": 0
+  },
+  "git": {
+    "HEAD": "e8bd23ed95b17ac629de58155fa05ac885d8ae89",
+    "main": "e8bd23ed95b17ac629de58155fa05ac885d8ae89",
+    "origin/main": "e8bd23ed95b17ac629de58155fa05ac885d8ae89",
+    "branch": "codex/wrist-motion-step",
+    "new_commit_or_push": false
+  }
+}

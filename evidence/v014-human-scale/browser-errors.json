@@ -1,0 +1,33 @@
+{
+  "developmentErrors": [
+    {
+      "level": "error",
+      "message": "Error: Missing Right hand contact bone\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:38:27\n    at Array.map (<anonymous>)\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:32:36\n    at Vi (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4525:18)\n    at Object.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:8305:20)\n    at exports.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-PD3NECQZ.js?v=10f96c67:947:36)\n    at OpeningHands (http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:15:15)\n    at Object.react_stack_bottom_frame (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:7985:20)\n    at It (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:3952:18)\n    at ks (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4999:376)",
+      "timestamp": "2026-09-17T08:29:20.045Z",
+      "url": "http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918"
+    },
+    {
+      "level": "error",
+      "message": "Error: Missing Right hand contact bone\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:38:27\n    at Array.map (<anonymous>)\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:32:36\n    at Vi (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4525:18)\n    at Object.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:8305:20)\n    at exports.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-PD3NECQZ.js?v=10f96c67:947:36)\n    at OpeningHands (http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:15:15)\n    at Object.react_stack_bottom_frame (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:7985:20)\n    at It (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:3952:18)\n    at ks (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4999:376)",
+      "timestamp": "2026-09-17T08:29:20.061Z",
+      "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-2ZQHFPHJ.js?v=10f96c67"
+    },
+    {
+      "level": "error",
+      "message": "Error: Missing Right hand contact bone\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:38:27\n    at Array.map (<anonymous>)\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:32:36\n    at ec (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4509:18)\n    at Object.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:8129:20)\n    at exports.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-PD3NECQZ.js?v=10f96c67:947:36)\n    at OpeningHands (http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:15:15)\n    at Object.react_stack_bottom_frame (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:7985:20)\n    at It (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:3952:18)\n    at ks (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4999:376)",
+      "timestamp": "2026-09-17T08:29:30.584Z",
+      "url": "http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918"
+    },
+    {
+      "level": "error",
+      "message": "Error: Missing Right hand contact bone\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:38:27\n    at Array.map (<anonymous>)\n    at http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:32:36\n    at ec (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4509:18)\n    at Object.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:8129:20)\n    at exports.useMemo (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-PD3NECQZ.js?v=10f96c67:947:36)\n    at OpeningHands (http://127.0.0.1:4173/src/OpeningHands.jsx?t=1789633759918:15:15)\n    at Object.react_stack_bottom_frame (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:7985:20)\n    at It (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:3952:18)\n    at ks (http://127.0.0.1:4173/node_modules/.vite/deps/chunk-7LQAWUGM.js?v=10f96c67:4999:376)",
+      "timestamp": "2026-09-17T08:29:30.611Z",
+      "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-2ZQHFPHJ.js?v=10f96c67"
+    }
+  ],
+  "finalReviewStart": "2026-09-17T08:51:23.188Z",
+  "mainErrors": [],
+  "finalReviewErrors": [],
+  "finalMainErrors": [],
+  "finalCheckedAt": "2026-09-17T08:58:47.726Z"
+}
