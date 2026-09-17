@@ -1,0 +1,86 @@
+{
+  "character_profile": {
+    "characterHeightMetres": 1.7,
+    "handLengthMetres": 0.195,
+    "referenceBookScale": 0.824
+  },
+  "method": "Skin rest-coordinate wrist origin to most distal middle-finger mesh vertex. Palm width is the documented mesh section, not a certified anthropometric landmark measurement. After uses runtime inverse-book-scale compensation. Sleeves remain camera-framed proxies, not a full shoulder/elbow body rig.",
+  "measurements": [
+    {
+      "version": "before",
+      "authoring_hand_length": 0.22225145995616913,
+      "source_rig_bones": 21,
+      "slots": [
+        {
+          "slot": 1,
+          "book_length_m": 0.824,
+          "hand_length_m": 0.18313520300388336,
+          "palm_mesh_section_width_m": 0.08741541719436645
+        },
+        {
+          "slot": 2,
+          "book_length_m": 0.827,
+          "hand_length_m": 0.18380195738375185,
+          "palm_mesh_section_width_m": 0.08773367720842361
+        },
+        {
+          "slot": 3,
+          "book_length_m": 0.72,
+          "hand_length_m": 0.16002105116844176,
+          "palm_mesh_section_width_m": 0.07638240337371825
+        },
+        {
+          "slot": 4,
+          "book_length_m": 0.72,
+          "hand_length_m": 0.16002105116844176,
+          "palm_mesh_section_width_m": 0.07638240337371825
+        },
+        {
+          "slot": 5,
+          "book_length_m": 0.72,
+          "hand_length_m": 0.16002105116844176,
+          "palm_mesh_section_width_m": 0.07638240337371825
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "authoring_hand_length": 0.2366505265235901,
+      "source_rig_bones": 21,
+      "slots": [
+        {
+          "slot": 1,
+          "book_length_m": 0.824,
+          "hand_length_m": 0.1950000338554382,
+          "palm_mesh_section_width_m": 0.09307881557941436
+        },
+        {
+          "slot": 2,
+          "book_length_m": 0.827,
+          "hand_length_m": 0.1950000338554382,
+          "palm_mesh_section_width_m": 0.09307881557941436
+        },
+        {
+          "slot": 3,
+          "book_length_m": 0.72,
+          "hand_length_m": 0.1950000338554382,
+          "palm_mesh_section_width_m": 0.09307881557941436
+        },
+        {
+          "slot": 4,
+          "book_length_m": 0.72,
+          "hand_length_m": 0.1950000338554382,
+          "palm_mesh_section_width_m": 0.09307881557941436
+        },
+        {
+          "slot": 5,
+          "book_length_m": 0.72,
+          "hand_length_m": 0.1950000338554382,
+          "palm_mesh_section_width_m": 0.09307881557941436
+        }
+      ]
+    }
+  ],
+  "anthropometry_reference": "https://www.dinbelg.be/DINBelg%202005%20anthropometry%20table.PDF",
+  "selection": "19.5 cm hand length for this 1.70 m character, not a unique height-to-hand formula."
+}

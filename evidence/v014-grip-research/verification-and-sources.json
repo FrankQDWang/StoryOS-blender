@@ -1,0 +1,164 @@
+{
+  "date": "2026-09-17",
+  "scope": "Research only; no new runtime animation",
+  "runtime_assets": [
+    {
+      "path": "scripts/build_makehuman_hands.py",
+      "unchanged_from_turn_start": true,
+      "sha256": "51bdb1a16a183a6f40cad65aca1fa617d77730ccc4b3dc20ecb52aaa556a3f80"
+    },
+    {
+      "path": "assets/source/makehuman-hands.blend",
+      "unchanged_from_turn_start": true,
+      "sha256": "7ec79ee9c74d63b581788210a3b69b1fe0e798c19e281b25c9cf96edb2b098bc"
+    },
+    {
+      "path": "public/assets/models/makehuman-hands.glb",
+      "unchanged_from_turn_start": true,
+      "sha256": "b744ee38a46053faff17f722227941adb934bf8abf17e5338142e569d6c365d6"
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "author": "Oliver García",
+      "url": "https://www.pexels.com/video/a-person-opening-a-book-9080217/",
+      "path": "downloads/grip-step/oliver-garcia-opening-book.mp4",
+      "usage": "Pexels license; research reference",
+      "sha256": "d7be5640f21eaed28980c2e304eb5d91ecc8e8640d7caaaa3b4363652a3006fd",
+      "bytes": 6704793,
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1080,
+            "height": 1920,
+            "r_frame_rate": "30000/1001"
+          },
+          {
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.026667"
+        }
+      },
+      "reviewed": true
+    },
+    {
+      "id": "R2",
+      "author": "Morthy Jameson",
+      "url": "https://www.pexels.com/video/close-up-video-of-a-person-opening-a-book-9588289/",
+      "path": "downloads/grip-step/morthy-jameson-opening-book.mp4",
+      "usage": "Pexels license; research reference",
+      "sha256": "dc997663662e0a09b4f4a332a59cec43dc02baa122841df6e0f137acb5198ad8",
+      "bytes": 17072557,
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 2560,
+            "height": 1440,
+            "r_frame_rate": "24000/1001"
+          },
+          {
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "17.770000"
+        }
+      },
+      "reviewed": true
+    },
+    {
+      "id": "R3",
+      "author": "DeRepenteBCN",
+      "url": "https://elements.envato.com/mans-hands-open-handmade-a4-notebook-with-real-lea-RV9DCJ6",
+      "path": "downloads/grip-step/derepentebcn-top-opening-preview.mp4",
+      "usage": "Watermarked public preview; ignored downloads only",
+      "sha256": "11e9e80722e6297117f521b988afd265bd473de76736e283e82a57492eb1bf3e",
+      "bytes": 894822,
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 960,
+            "height": 540,
+            "r_frame_rate": "24000/1001"
+          }
+        ],
+        "format": {
+          "duration": "8.383375"
+        }
+      },
+      "reviewed": true
+    },
+    {
+      "id": "R4",
+      "author": "BlackBoxGuild",
+      "url": "https://elements.envato.com/opening-vintage-leather-notebook-point-of-view-X9CSHQJ",
+      "path": "downloads/grip-step/blackboxguild-pov-opening-preview.mp4",
+      "usage": "Watermarked public preview; ignored downloads only",
+      "sha256": "45e7931eca1ed6ec9c07cd93b110d63fceadb9a9ca78e53af5b48c670d0b3fc0",
+      "bytes": 2842490,
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 960,
+            "height": 540,
+            "r_frame_rate": "24/1"
+          }
+        ],
+        "format": {
+          "duration": "16.916667"
+        }
+      },
+      "reviewed": true
+    },
+    {
+      "id": "R5",
+      "author": "Luis Quintero",
+      "url": "https://www.pexels.com/video/a-person-opening-a-book-4203478/",
+      "path": "downloads/grip-step/luis-quintero-opening-book.mp4",
+      "usage": "Pexels license; selected pose reference",
+      "sha256": "157700fadeec647fe0742bbec5fbe8544d71d58cbccfe639b0346a02c9e0f720",
+      "bytes": 6146150,
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "24000/1001"
+          },
+          {
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.986667"
+        }
+      },
+      "reviewed": true
+    }
+  ],
+  "other_image": {
+    "author": "Daily Stoic Store",
+    "url": "https://store.dailystoic.com/cdn/shop/products/Untitleddesign_71_4480x.png?v=1763500486",
+    "path": "downloads/grip-step/book-reference.png",
+    "use": "Initial static review only; not selected or redistributed"
+  },
+  "notes": [
+    "Five independent real videos, not synchronized multi-view capture",
+    "No new ImageGen assets, dependencies or motion dataset downloads",
+    "No purchase, login, registration or git commit/push",
+    "Current preview.3 motion still rejected; no new visual pass"
+  ]
+}

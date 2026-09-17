@@ -24,11 +24,14 @@ function Review(){
  const [samples,setSamples]=useState([]);
  const record=m=>{setMetrics(m);if(params.has('bench'))setSamples(rows=>rows.length<5?[...rows,m]:rows)};
  const view=params.get('view')??'opening';
+ const handView=view==='opening'||view==='hands-side';
+ const stand=layout.slots[slot],sideOffset=[1.25,1.05,1.1],c=Math.cos(stand.yaw),s=Math.sin(stand.yaw);
  const camera=view==='fire'?{position:[-1.6,1.15,1.10],target:[-4,.80,-1.15],fov:48}
-  :view==='fire-side'?{position:[-2.5,1.4,-3.0],target:[-4,.90,-1.15],fov:48}:undefined;
- return <main className="app"><div className="scene"><LibraryScene books={books} selected={view==='opening'?books[slot].id:null}
-  mode={view==='opening'?'focus':'overview'} setMode={noop} onSelect={noop} onCreate={noop} onReady={noop}
-  onNear={noop} onMetrics={record} opening={view==='opening'} crafting={null} appearing={null} reduced={false}
+  :view==='fire-side'?{position:[-2.5,1.4,-3.0],target:[-4,.90,-1.15],fov:48}
+  :view==='hands-side'?{position:[stand.position[0]+sideOffset[0]*c+sideOffset[2]*s,stand.position[1]+sideOffset[1],stand.position[2]-sideOffset[0]*s+sideOffset[2]*c],target:[stand.position[0],stand.position[1]+.45,stand.position[2]],fov:48}:undefined;
+ return <main className="app"><div className="scene"><LibraryScene books={books} selected={handView?books[slot].id:null}
+  mode={handView?'focus':'overview'} setMode={noop} onSelect={noop} onCreate={noop} onReady={noop}
+  onNear={noop} onMetrics={record} opening={handView} crafting={null} appearing={null} reduced={false}
   resetToken={0} paused={!playing&&!params.has('bench')&&!view.startsWith('fire')} onLockChange={noop} inspection={{time,camera}}/></div>
   <div style={{position:'fixed',top:12,left:12,display:'flex',gap:12,padding:12,background:'#151d20dd',color:'#fff',font:'13px sans-serif',zIndex:30}}>
    <label>书位 <select aria-label="书位" value={slot} onChange={e=>setSlot(Number(e.target.value))}>{books.map(b=><option key={b.slot} value={b.slot}>{b.slot+1}</option>)}</select></label>

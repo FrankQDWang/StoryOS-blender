@@ -1,0 +1,31 @@
+Browser tab: 267567084, Title: "StoryOS · 私人藏书室", URL: "http://127.0.0.1:4173/".
+1 AXWebArea StoryOS · 私人藏书室, URL: 127.0.0.1:4173/
+	2 container
+		7 link Description: StoryOS 藏书室, Value: 127.0.0.1:4173/#
+		8 text 私人藏书室 体验样片
+		9 container
+			10 button 开启环境音
+				11 image
+			12 checkbox Description: 减少动态效果, Value: 0
+				13 image
+			14 button 全部作品 3
+				15 image
+				16 text 全部作品
+				17 text 3
+		18 heading 我的藏书室, Value: 1
+			19 text 我的藏书室
+		20 button 继续最近的写作 星海余烬
+			21 image
+			22 text 继续最近的写作
+			23 text 星海余烬
+			24 image
+		25 button 自由漫游, ID: roam-button
+			26 image
+			27 text 自由漫游
+		28 button 新建作品
+			29 image
+			30 text 新建作品
+		31 container 本地渲染统计
+			32 text 67 FPS  · 3.5s
+
+The focused UI element is 1 AXWebArea StoryOS · 私人藏书室, URL: 127.0.0.1:4173/

@@ -1,0 +1,29 @@
+
+> assets:hands
+> blender --background --factory-startup --python-exit-code 1 --python scripts/build_makehuman_hands.py && python3 scripts/asset_manifest.py
+
+00:00.474  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/vendor/makehuman/base-human.blend"
+/Users/frankqdwang/MLE/StoryOS-blender/scripts/build_makehuman_hands.py:18: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name); m.diffuse_color=(*color,1); m.use_nodes=True
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Saved as "makehuman-hands.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+15:36:06 | INFO: Starting glTF 2.0 export
+15:36:07 | INFO: Extracting primitive: base.003
+15:36:07 | INFO: Primitives created: 1
+15:36:07 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+15:36:07 | INFO: Extracting primitive: LeftSleeve
+15:36:07 | INFO: Primitives created: 2
+15:36:07 | INFO: Extracting primitive: base.002
+15:36:07 | INFO: Primitives created: 1
+15:36:07 | INFO: Extracting primitive: RightSleeve
+15:36:07 | INFO: Primitives created: 2
+15:36:07 | INFO: Finished glTF 2.0 export in 0.2703371047973633 s
+
+HANDS [('RightHand', 6893, 21), ('LeftHand', 6893, 21)]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit
+{"assets": 15, "glb_bytes": 25476304}

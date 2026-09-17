@@ -4,9 +4,14 @@ Uses assets/vendor/makehuman/base-human.blend, produced with the pinned MPFB sou
 No changes to the approved room or book assets. Metres, Z up in Blender.
 """
 from pathlib import Path
-import bpy, bmesh, json, math, hashlib
+import bpy, bmesh, json, math, hashlib, sys
 from mathutils import Vector, Matrix, Quaternion
 ROOT=Path(__file__).resolve().parents[1]
+# Mesh dimensions are authored for the first lectern; runtime cancels other book scales.
+ANATOMY=json.loads((ROOT/'apps/web/src/opening-anatomy.json').read_text())
+REFERENCE_BOOK_SCALE=ANATOMY['referenceBookScale']
+HAND_LENGTH=ANATOMY['handLengthMetres']
+ANATOMY_SCALE=HAND_LENGTH/(.22225145995616913*REFERENCE_BOOK_SCALE)
 SEQUENCE=json.loads((ROOT/'apps/web/src/opening-sequence.json').read_text())
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'assets/vendor/makehuman/base-human.blend'))
 source=bpy.data.objects['MakeHumanSource']; source_rig=bpy.data.objects['MakeHumanRig']
@@ -34,7 +39,7 @@ for side,label in [('R','Right'),('L','Left')]:
  radial=source_rig.data.bones['finger2-1.'+side].head_local-source_rig.data.bones['finger5-1.'+side].head_local
  radial=(radial-forward*radial.dot(forward)).normalized()
  x=radial*(-1 if side=='R' else 1); z=x.cross(forward).normalized()
- basis=Matrix((x,forward,z)); transform=Matrix.Scale(1.3,4) @ basis.to_4x4() @ Matrix.Translation(-wrist)
+ basis=Matrix((x,forward,z)); transform=Matrix.Scale(1.3*ANATOMY_SCALE,4) @ basis.to_4x4() @ Matrix.Translation(-wrist)
  arm=source_rig.copy();arm.data=source_rig.data.copy();bpy.context.collection.objects.link(arm);arm.name=label+'Hand'
  arm.data.transform(transform)
  bpy.context.view_layer.objects.active=arm
@@ -73,7 +78,7 @@ for side,label in [('R','Right'),('L','Left')]:
  bpy.ops.object.modifier_apply(modifier=sub.name)
  direction=arm.data.bones['lowerarm02.'+side].head_local.normalized()
  # Sleeve has a quiet tailored taper and two inset cuff rows, ending behind the wrist.
- verts=[];faces=[];rings=[(1.20,.072,.060),(.65,.067,.057),(.40,.060,.050),(.25,.052,.044),(.145,.047,.038),(.107,.044,.035),(.10,.044,.035)]
+ verts=[];faces=[];rings=[(1.20,.087,.080),(.65,.085,.076),(.40,.077,.067),(.30,.073,.061),(.22,.064,.054),(.145,.053,.044),(.107,.046,.038),(.10,.046,.038)]
  axis=-direction;xx=Vector((1,0,0));xx=(xx-axis*xx.dot(axis)).normalized();zz=xx.cross(axis)
  for j,(distance,w,d) in enumerate(rings):
   center=direction*distance
@@ -84,7 +89,7 @@ for side,label in [('R','Right'),('L','Left')]:
   for i in range(24):faces.append((j*24+i,j*24+(i+1)%24,(j+1)*24+(i+1)%24,(j+1)*24+i))
  mesh=bpy.data.meshes.new(label+'Sleeve');mesh.from_pydata(verts,[],faces);mesh.materials.append(cloth);mesh.materials.append(trim)
  sleeve=bpy.data.objects.new(label+'Sleeve',mesh);bpy.context.collection.objects.link(sleeve);sleeve.parent=arm
- for p in mesh.polygons:p.use_smooth=True;p.material_index=int(p.index>=24*4)
+ for p in mesh.polygons:p.use_smooth=True;p.material_index=int(p.index>=24*(len(rings)-3))
  vg=sleeve.vertex_groups.new(name='lowerarm02.'+side);vg.add(list(range(len(verts))),1,'REPLACE')
  mod=sleeve.modifiers.new('Forearm','ARMATURE');mod.object=arm
  hands.append((arm,obj,sleeve))
@@ -125,20 +130,27 @@ def pose(arm,side,t):
  retreat=ease(t,*SEQUENCE['retreat']) if right else ease(t,*SEQUENCE['supportRetreat'])
  grip=ease(t,*SEQUENCE['grip'])*(1-release if right else 1-ease(t,*SEQUENCE['supportRelease']))
  a=angle(min(t,SEQUENCE['coverLift'][1])) if right else 0
- r=Matrix.Rotation(-a,4,'Y') if right else Matrix.Rotation(-.90,4,'Y')
- contact=Vector((.34,-.575,.285)) if right else Vector((-.455,-.61,.17))
+ cover=Matrix.Rotation(-a,4,'Y')
+ # A lateral pinch: palm faces the fore-edge, thumb above the outer cover,
+ # curled finger pads beneath it. The hand's long axis stays toward the book.
+ lift_pose=ease(t,.90,1.70)
+ r=cover @ Matrix.Rotation(1.30+.328*lift_pose,4,'Y') @ Matrix.Rotation(-.58+1.0*lift_pose,4,'Z') @ Matrix.Rotation(.322*lift_pose,4,'X') if right else Matrix.Rotation(-.90,4,'Y')
+ contact=Vector((.48,-.425,.215)) if right else Vector((-.455,-.61,.17))
  hinge=Vector((-.365,0,.17))
- wrist=hinge+r@(contact-hinge) if right else contact
- # Right hand stops following the cover as it passes vertical, then withdraws to its own side.
+ wrist=hinge+cover@(contact-hinge) if right else contact
  if right:
-  wrist += Vector((.26*release+.32*retreat,-.05*release-.44*retreat,-.03*release-.68*retreat))
-  r=Matrix.Rotation(-a*(1-.82*retreat),4,'Y') @ Matrix.Rotation(.09*release,4,'X')
+  wrist += Vector((.22*release+.62*retreat,-.18*release-.70*retreat,-.22*release-.72*retreat))
+  relaxed=Matrix.Rotation(.30,4,'Y') @ Matrix.Rotation(.10,4,'Z')
+  r=r.to_quaternion().slerp(relaxed.to_quaternion(),ease(t,1.86,3.15)).to_matrix().to_4x4()
  else:
   wrist += Vector((-.17*retreat,-.43*retreat,-.30*retreat))
- wrist+=Vector(((1 if right else -1)*.10*(1-reach),-.54*(1-reach),-.28*(1-reach)))
- # The proximal arm keeps reaching out of the bottom of the frame; wrist orientation is independent.
+ wrist+=Vector(((.16 if right else -.10)*(1-reach),-.54*(1-reach),-.28*(1-reach)))
  fore=arm.pose.bones['lowerarm02.'+side];rest=fore.bone
- elbow=Vector(((.24+wrist.x*.45 if right else -.64),-1.03-.54*(1-reach)-.44*retreat,wrist.z*.25-.12))
+ # Keep the right elbow on the character's right as the hand crosses the book.
+ elbow=Vector((.55 if right else -.64,-1.03-.54*(1-reach)-.44*retreat,.08 if right else wrist.z*.25-.12))
+ if right:
+  lift=ease(t,SEQUENCE['coverLift'][0],1.65)*(1-retreat)
+  elbow=elbow.lerp(Vector((.40,-.90,wrist.z-.25)),lift)
  direction=(wrist-elbow).normalized()
  restdir=(rest.tail_local-rest.head_local).normalized()
  rotation=restdir.rotation_difference(direction).to_matrix().to_4x4()
@@ -157,18 +169,38 @@ def pose(arm,side,t):
   for joint in range(1,4):
    b=arm.pose.bones[f'finger{digit}-{joint}.{side}']
    local=b.bone.matrix_local.to_quaternion().inverted()
-   if digit==1:
-    bend=[.10,.10,.06][joint-1]+grip*([.22,.12,.10] if right else [.04,.06,.04])[joint-1]
+   if right:
+    # Individual grip curves avoid four straight parallel fingers and a rigid thumb.
+    idle={1:[.18,.18,.12],2:[.08,.12,.05],3:[.10,.15,.07],4:[.16,.22,.10],5:[.23,.30,.14]}[digit][joint-1]
+    closed={1:[.16,.22,.14],2:[.48,.90,.34],3:[.54,1.00,.40],4:[.63,1.09,.45],5:[.69,1.12,.50]}[digit][joint-1]
+    lifted={1:[.066,.296,.480],2:[1.254,1.228,.126],3:[.358,.914,.868],4:[.60,1.05,.65],5:[.75,1.10,.65]}[digit][joint-1]
+    closed=closed+(lifted-closed)*lift_pose
+    bend=idle+(closed-idle)*grip
+   elif digit==1:
+    bend=[.10,.10,.06][joint-1]+grip*[.04,.06,.04][joint-1]
    else:
     idle={2:[.05,.05,.02],3:[.05,.06,.03],4:[.10,.12,.06],5:[.18,.22,.12]}[digit][joint-1]
     close={2:[.03,.04,.03],3:[.03,.03,.02],4:[.02,.03,.02],5:[.05,.05,.03]}[digit][joint-1]
     bend=idle+grip*close
    b.rotation_mode='QUATERNION';b.rotation_quaternion=Quaternion(local@Vector((-1,0,0)),bend)
    if digit==1 and joint==1:
-    b.rotation_quaternion=Quaternion(local@Vector((0,-1 if right else 1,0)),grip*(.65 if right else .03))@b.rotation_quaternion
+    opposition=(.32+((.22-.47*lift_pose)-.32)*grip) if right else .03*grip
+    b.rotation_quaternion=Quaternion(local@Vector((0,-1 if right else 1,0)),opposition)@b.rotation_quaternion
    if digit>1 and joint==1:
-    spread={2:-.055,3:0,4:.055,5:.16}[digit]*(1 if right else -1)
+    spread=({2:-.035,3:0,4:.035,5:.075}[digit] if right else -{2:-.055,3:0,4:.055,5:.16}[digit])
+    if right and digit in (2,3):spread*=1-lift_pose*grip
     b.rotation_quaternion=Quaternion(local@Vector((0,0,1)),spread)@b.rotation_quaternion
+ if right:
+  # Place the thumb pad on the outer cover before baking. Wrist placement is
+  # derived from the posed finger, so changing palm pitch cannot leave a gap.
+  bpy.context.view_layer.update()
+  target=hinge+cover@(Vector((.365,-.32,.239))-hinge)
+  target+=Vector((.22*release+.62*retreat+.16*(1-reach),-.18*release-.70*retreat-.54*(1-reach),-.22*release-.72*retreat-.28*(1-reach)))
+  delta=target-arm.pose.bones['finger1-3.R'].tail
+  fm=fore.matrix.copy();wm=wb.matrix.copy()
+  fm.translation+=delta;wm.translation+=delta
+  fore.matrix=fm;bpy.context.view_layer.update();wb.matrix=wm
+  bpy.context.view_layer.update()
  for b in arm.pose.bones:
   b.rotation_mode='QUATERNION'
   b.keyframe_insert(data_path='location',frame=round(t*SEQUENCE['fps']))
@@ -189,12 +221,13 @@ for entry in provenance['files']:
 provenance['generator_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 provenance_path.write_text(json.dumps(provenance,ensure_ascii=False,indent=2)+'\n')
 print('HANDS',[(a.name,len(m.data.vertices),len(a.data.bones)) for a,m,s in hands])
-# Neutral-light anatomy evidence, posed side by side with no book to hide the silhouette.
-for (arm,_,_),off in zip(hands,[.13,-.13]):
- arm.data.pose_position='REST';arm.location.x=off
-bpy.ops.object.camera_add(location=(0,.12,1.12));camera=bpy.context.object;camera.rotation_euler=(Vector((0,-.03,0))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=.62;bpy.context.scene.camera=camera
-for name,loc,power,size in [('Key',(-.5,.4,.8),45,.7),('Fill',(.5,-.2,.4),12,.6)]:
- bpy.ops.object.light_add(type='AREA',location=loc);l=bpy.context.object;l.name=name;l.data.energy=power;l.data.shape='DISK';l.data.size=size;l.rotation_euler=(-l.location).to_track_quat('-Z','Y').to_euler()
-scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.samples=32;scene.world.color=(.18,.18,.18)
-scene.render.resolution_x=1100;scene.render.resolution_y=1100;scene.render.resolution_percentage=100
-scene.render.filepath=str(ROOT/'evidence/v014-free-hands/01-source-anatomy.png');bpy.ops.render.render(write_still=True)
+# Optional anatomy capture: ordinary rebuilds must not overwrite historical QA evidence.
+if '--anatomy-output' in sys.argv:
+ for (arm,_,_),off in zip(hands,[.13,-.13]):
+  arm.data.pose_position='REST';arm.location.x=off
+ bpy.ops.object.camera_add(location=(0,.12,1.12));camera=bpy.context.object;camera.rotation_euler=(Vector((0,-.03,0))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=.62;bpy.context.scene.camera=camera
+ for name,loc,power,size in [('Key',(-.5,.4,.8),45,.7),('Fill',(.5,-.2,.4),12,.6)]:
+  bpy.ops.object.light_add(type='AREA',location=loc);l=bpy.context.object;l.name=name;l.data.energy=power;l.data.shape='DISK';l.data.size=size;l.rotation_euler=(-l.location).to_track_quat('-Z','Y').to_euler()
+ scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.samples=32;scene.world.color=(.18,.18,.18)
+ scene.render.resolution_x=1100;scene.render.resolution_y=1100;scene.render.resolution_percentage=100
+ scene.render.filepath=str(ROOT/sys.argv[sys.argv.index('--anatomy-output')+1]);bpy.ops.render.render(write_still=True)

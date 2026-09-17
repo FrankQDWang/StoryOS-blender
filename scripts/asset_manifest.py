@@ -29,7 +29,7 @@ for path in paths:
 lock = json.loads((root / 'apps/web/package-lock.json').read_text())
 packages = ['react','vite','three','@react-three/fiber','@react-three/drei','@react-three/postprocessing']
 scene = json.loads((root/'public/assets/models/scene.json').read_text())
-manifest = {'version':'0.1.4-preview.2', 'room_version':scene['version'], 'baseline':scene['baseVersion'],
+manifest = {'version':'0.1.4-preview.4', 'room_version':scene['version'], 'baseline':scene['baseVersion'],
             'source_script':'scripts/build_library.py', 'hands_script':'scripts/build_makehuman_hands.py', 'hands_provenance':'assets/source/makehuman-hands.json', 'lighting_script':'scripts/bake_room_lighting.py', 'source_blender':scene['blender'],
             'runtime_versions':{p:lock['packages']['node_modules/'+p]['version'] for p in packages},
             'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/a-study-wood.json','assets/source/a-study-rug.json','assets/source/room-lighting.json','assets/source/plaster-texture.json','assets/source/hearth-decor-atlas.json'],

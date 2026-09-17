@@ -1,0 +1,322 @@
+[
+  {
+    "frame": 0,
+    "elapsedMs": 133
+  },
+  {
+    "frame": 1,
+    "elapsedMs": 233
+  },
+  {
+    "frame": 2,
+    "elapsedMs": 301
+  },
+  {
+    "frame": 3,
+    "elapsedMs": 400
+  },
+  {
+    "frame": 4,
+    "elapsedMs": 457
+  },
+  {
+    "frame": 5,
+    "elapsedMs": 534
+  },
+  {
+    "frame": 6,
+    "elapsedMs": 594
+  },
+  {
+    "frame": 7,
+    "elapsedMs": 709
+  },
+  {
+    "frame": 8,
+    "elapsedMs": 917
+  },
+  {
+    "frame": 9,
+    "elapsedMs": 1079
+  },
+  {
+    "frame": 10,
+    "elapsedMs": 1210
+  },
+  {
+    "frame": 11,
+    "elapsedMs": 1335
+  },
+  {
+    "frame": 12,
+    "elapsedMs": 1492
+  },
+  {
+    "frame": 13,
+    "elapsedMs": 1617
+  },
+  {
+    "frame": 14,
+    "elapsedMs": 1719
+  },
+  {
+    "frame": 15,
+    "elapsedMs": 1839
+  },
+  {
+    "frame": 16,
+    "elapsedMs": 1910
+  },
+  {
+    "frame": 17,
+    "elapsedMs": 2013
+  },
+  {
+    "frame": 18,
+    "elapsedMs": 2097
+  },
+  {
+    "frame": 19,
+    "elapsedMs": 2215
+  },
+  {
+    "frame": 20,
+    "elapsedMs": 2338
+  },
+  {
+    "frame": 21,
+    "elapsedMs": 2422
+  },
+  {
+    "frame": 22,
+    "elapsedMs": 2525
+  },
+  {
+    "frame": 23,
+    "elapsedMs": 2596
+  },
+  {
+    "frame": 24,
+    "elapsedMs": 2710
+  },
+  {
+    "frame": 25,
+    "elapsedMs": 2805
+  },
+  {
+    "frame": 26,
+    "elapsedMs": 2891
+  },
+  {
+    "frame": 27,
+    "elapsedMs": 2984
+  },
+  {
+    "frame": 28,
+    "elapsedMs": 3043
+  },
+  {
+    "frame": 29,
+    "elapsedMs": 3108
+  },
+  {
+    "frame": 30,
+    "elapsedMs": 3189
+  },
+  {
+    "frame": 31,
+    "elapsedMs": 3242
+  },
+  {
+    "frame": 32,
+    "elapsedMs": 3312
+  },
+  {
+    "frame": 33,
+    "elapsedMs": 3343
+  },
+  {
+    "frame": 34,
+    "elapsedMs": 3359
+  },
+  {
+    "frame": 35,
+    "elapsedMs": 3387
+  },
+  {
+    "frame": 36,
+    "elapsedMs": 3404
+  },
+  {
+    "frame": 37,
+    "elapsedMs": 3421
+  },
+  {
+    "frame": 38,
+    "elapsedMs": 3438
+  },
+  {
+    "frame": 39,
+    "elapsedMs": 3456
+  },
+  {
+    "frame": 40,
+    "elapsedMs": 3476
+  },
+  {
+    "frame": 41,
+    "elapsedMs": 3494
+  },
+  {
+    "frame": 42,
+    "elapsedMs": 3515
+  },
+  {
+    "frame": 43,
+    "elapsedMs": 3534
+  },
+  {
+    "frame": 44,
+    "elapsedMs": 3552
+  },
+  {
+    "frame": 45,
+    "elapsedMs": 3578
+  },
+  {
+    "frame": 46,
+    "elapsedMs": 3600
+  },
+  {
+    "frame": 47,
+    "elapsedMs": 3616
+  },
+  {
+    "frame": 48,
+    "elapsedMs": 3631
+  },
+  {
+    "frame": 49,
+    "elapsedMs": 3646
+  },
+  {
+    "frame": 50,
+    "elapsedMs": 3664
+  },
+  {
+    "frame": 51,
+    "elapsedMs": 3679
+  },
+  {
+    "frame": 52,
+    "elapsedMs": 3695
+  },
+  {
+    "frame": 53,
+    "elapsedMs": 3714
+  },
+  {
+    "frame": 54,
+    "elapsedMs": 3731
+  },
+  {
+    "frame": 55,
+    "elapsedMs": 3747
+  },
+  {
+    "frame": 56,
+    "elapsedMs": 3763
+  },
+  {
+    "frame": 57,
+    "elapsedMs": 3779
+  },
+  {
+    "frame": 58,
+    "elapsedMs": 3797
+  },
+  {
+    "frame": 59,
+    "elapsedMs": 3823
+  },
+  {
+    "frame": 60,
+    "elapsedMs": 3840
+  },
+  {
+    "frame": 61,
+    "elapsedMs": 3857
+  },
+  {
+    "frame": 62,
+    "elapsedMs": 3875
+  },
+  {
+    "frame": 63,
+    "elapsedMs": 3892
+  },
+  {
+    "frame": 64,
+    "elapsedMs": 3908
+  },
+  {
+    "frame": 65,
+    "elapsedMs": 3925
+  },
+  {
+    "frame": 66,
+    "elapsedMs": 3945
+  },
+  {
+    "frame": 67,
+    "elapsedMs": 3964
+  },
+  {
+    "frame": 68,
+    "elapsedMs": 3979
+  },
+  {
+    "frame": 69,
+    "elapsedMs": 3998
+  },
+  {
+    "frame": 70,
+    "elapsedMs": 4016
+  },
+  {
+    "frame": 71,
+    "elapsedMs": 4034
+  },
+  {
+    "frame": 72,
+    "elapsedMs": 4053
+  },
+  {
+    "frame": 73,
+    "elapsedMs": 4076
+  },
+  {
+    "frame": 74,
+    "elapsedMs": 4119
+  },
+  {
+    "frame": 75,
+    "elapsedMs": 4140
+  },
+  {
+    "frame": 76,
+    "elapsedMs": 4157
+  },
+  {
+    "frame": 77,
+    "elapsedMs": 4175
+  },
+  {
+    "frame": 78,
+    "elapsedMs": 4192
+  },
+  {
+    "frame": 79,
+    "elapsedMs": 4208
+  }
+]

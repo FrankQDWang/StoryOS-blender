@@ -1,0 +1,37 @@
+{
+  "version": "0.1.4-preview.4",
+  "tests": {
+    "passed": 14,
+    "failed": 0,
+    "log": "tests.log"
+  },
+  "build": {
+    "passed": true,
+    "existing_chunk_size_warning": true,
+    "log": "production-build.log"
+  },
+  "manifest_assets_verified": 15,
+  "source_files_verified": 8,
+  "generator_sha256": "b89711a303c469e173a6f4c2550e812f02216528ddd2235958609f410f0ca14a",
+  "public_matches_production": 13,
+  "unchanged_since_user_approval": 64,
+  "preserved_from_previous_main": [
+    "apps/web/src/room-layout.json",
+    "public/assets/models/library-room.glb",
+    "public/assets/models/story-book.glb",
+    "apps/web/src/Scene.jsx",
+    "apps/web/src/HearthFire.jsx",
+    "apps/web/src/HearthBed.jsx",
+    "apps/web/src/opening-sequence.json",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/sculpted-wood.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/sculpted-plaster.png"
+  ],
+  "visual_acceptance": "User approved the previously captured preview.4. No visual changes or model regeneration in this save operation.",
+  "visual_evidence": "evidence/v014-human-scale/",
+  "remote_ci_workflows": 0
+}

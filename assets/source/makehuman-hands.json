@@ -16,9 +16,12 @@
   "adaptations": [
     "Macro shape evaluation; helpers removed",
     "Original anatomy and skin weights retained with one subdivision",
-    "Hand/forearm crop, 1.3 factor to fit the existing oversized book prop",
-    "Proximal arm root and cloth cuffs; distributed forearm pronation",
-    "Authored support/reach/lift/release/retreat; baked skeletal clip",
+    "Preview.4: 0.195 m rest hand length, authored at book scale 0.824 for a 1.70 m character profile",
+    "Runtime cancels per-lectern book scaling around each thumb distal joint so the human does not shrink between books",
+    "Fuller sleeve cross-sections with cuff taper; camera-framed proximal sleeves remain proxies rather than a complete shoulder/elbow rig",
+    "Right side-edge grip with an outer-cover thumb target, varied finger flexion and palm pitch through the lift",
+    "Right forearm enters from its own side; fingers relax and withdraw lower and right after release",
+    "Authored left support and synchronized 3.5 s skeletal clip; cover and page timeline unchanged",
     "1K hand-only color atlas, embedded JPEG"
   ],
   "files": [
@@ -39,24 +42,30 @@
     },
     {
       "path": "assets/source/makehuman-hands.blend",
-      "bytes": 1771582,
-      "sha256": "c478ba0c872547d1eb0829917dd50429db762a211c60efac5c8326d65e14854b"
+      "bytes": 1808872,
+      "sha256": "dcc325632ebd9cce4295b241fa067c85a8883ba9e681c2880c61156aa2caa496"
     },
     {
       "path": "assets/source/makehuman-hands-color.png",
-      "bytes": 653434,
-      "sha256": "465f476f694d34c1c2456b517a05baef80b99a5681331d53379932c10d9c3503"
+      "bytes": 665824,
+      "sha256": "72c7c13b79c890faf25611a4af8ae72a88062a42fc64327739bc890e5a0ad26b"
     },
     {
       "path": "public/assets/models/makehuman-hands.glb",
-      "bytes": 1225908,
-      "sha256": "4f2b469d1c4e5677ddd7a6ba3a7cac353ad97f09df85a8bc50b5534376252704"
+      "bytes": 1226612,
+      "sha256": "ed2a5b88f9dcf646b7ba77b1bbbe031d1eea137c4fee6ffaa10b2129ba6bf8e6"
     },
     {
       "path": "apps/web/src/opening-sequence.json",
       "bytes": 346,
       "sha256": "18d3613934adbda4139b23e9b4f68c9d15830a93546f813bfda75097e642ba4c"
+    },
+    {
+      "path": "apps/web/src/opening-anatomy.json",
+      "bytes": 95,
+      "sha256": "8ea0da1c58ce5df6fcb32e706d89a808ba271bd6e5b64ee6b8001c1bc3724bb9"
     }
   ],
-  "generator_sha256": "ec54ab8b6efbf86c454db898a0bfa01f4638af4257922b05b244f9bc48a10164"
+  "generator_sha256": "b89711a303c469e173a6f4c2550e812f02216528ddd2235958609f410f0ca14a",
+  "anatomy": "apps/web/src/opening-anatomy.json"
 }
