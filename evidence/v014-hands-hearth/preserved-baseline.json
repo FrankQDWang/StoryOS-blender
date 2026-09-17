@@ -1,0 +1,10 @@
+{
+  "all_identical": true,
+  "assets": {
+    "public/assets/models/library-room.glb": "491c0a1bf3f07e994ebd1a755c1d3f5994f0695b2b7a16996711bc0ee784c946",
+    "public/assets/models/story-book.glb": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
+    "assets/source/storyos-library.blend": "dd752d41a88f8b10b861e81bc27f9755adc3d115d58d40c5a3516ae3ea6dd8f6",
+    "apps/web/src/room-layout.json": "bfe7a75a96e251c9167e9967b98f27ec83c60fa3932604b2605751f8f931af9f",
+    "public/assets/textures/room-illumination.png": "ef7004a3aae8063f8040d0724981d17ef26174cfe2520048f57c5e382cd99dd4"
+  }
+}

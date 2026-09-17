@@ -2,6 +2,7 @@ import React,{Component,useCallback,useEffect,useRef,useState} from 'react';
 import {BookOpen,Books,Plus,ArrowUpRight,ArrowLeft,X,MagnifyingGlass,PersonSimpleWalk,SpeakerHigh,SpeakerSlash,Check,Feather,Moon,ArrowCounterClockwise,Eye,Pause} from '@phosphor-icons/react';
 import {LibraryScene} from './Scene';
 import {STORAGE_KEY,COLORS,initialLibrary,normalizeLibrary,createBook,visitBook,recentBooks} from './library-model.mjs';
+import {OPENING_SECONDS} from './opening-motion.mjs';
 
 class SceneBoundary extends Component {
  state={error:false};static getDerivedStateFromError(){return {error:true}};
@@ -36,7 +37,7 @@ export function App(){
  const enter=useCallback(id=>{if(!id)return;clearTimeout(timer.current);openingLock.current=false;setOpening(false);setPanel(null);setMode('overview');setWorkspace(id);setLibrary(s=>visitBook(s,id));document.exitPointerLock?.()},[]);
  const select=useCallback(id=>{if(openingLock.current||creationLock.current)return;setSelected(id);setMode('focus');setPanel(null);document.exitPointerLock?.()},[]);
  const beginOpen=useCallback(id=>{if(openingLock.current)return;openingLock.current=true;setSelected(id);setMode('focus');setPanel(null);document.exitPointerLock?.();
-  if(library.reducedMotion||failed){enter(id);return}setOpening(true);timer.current=setTimeout(()=>enter(id),2600);
+  if(library.reducedMotion||failed){enter(id);return}setOpening(true);timer.current=setTimeout(()=>enter(id),OPENING_SECONDS*1000);
  },[library.reducedMotion,failed,enter]);
  const closePanel=useCallback(()=>setPanel(null),[]);
  const showCreate=useCallback(()=>{if(openingLock.current||creationLock.current)return;document.exitPointerLock?.();setMode('overview');setTitle('');setDescription('');setPanel('create')},[]);

@@ -1,0 +1,62 @@
+{
+  "source": "MakeHuman/MPFB CC0 human mesh and original default rig weights",
+  "source_commit": "817587ceb2ea03ea17a5b47e04396cbb4ddfa2d5",
+  "license": "CC0-1.0 for core human and Mindfront Aksel skin; project-authored sleeve and animation adaptation",
+  "source_details": "assets/vendor/makehuman/README.md",
+  "generator": "scripts/build_makehuman_hands.py",
+  "sequence": "apps/web/src/opening-sequence.json",
+  "runtime": "apps/web/src/OpeningHands.jsx",
+  "bones_per_hand": 21,
+  "duration_seconds": 3.5,
+  "bake_fps": 30,
+  "atlas": [
+    1024,
+    1024
+  ],
+  "adaptations": [
+    "Macro shape evaluation; helpers removed",
+    "Original anatomy and skin weights retained with one subdivision",
+    "Hand/forearm crop, 1.3 factor to fit the existing oversized book prop",
+    "Proximal arm root and cloth cuffs; distributed forearm pronation",
+    "Authored support/reach/lift/release/retreat; baked skeletal clip",
+    "1K hand-only color atlas, embedded JPEG"
+  ],
+  "files": [
+    {
+      "path": "assets/vendor/makehuman/base-human.blend",
+      "bytes": 3164760,
+      "sha256": "fa093256651bb9967272d7e86ca87a9274c2f15abf68c7c2af9588fe95c33315"
+    },
+    {
+      "path": "assets/vendor/makehuman/Aksel_Skin_diffuse.png",
+      "bytes": 4247107,
+      "sha256": "268ee6d1ea9665f8050d040c7b47971884428628021418ae52f68912859f5e60"
+    },
+    {
+      "path": "assets/vendor/makehuman/mindfront_aksel_skin.mhmat",
+      "bytes": 982,
+      "sha256": "ed79cb17edbb5929dd83474a46f045df7d5f31d0b9c1156c87f563bd2bbbfab6"
+    },
+    {
+      "path": "assets/source/makehuman-hands.blend",
+      "bytes": 1771582,
+      "sha256": "c478ba0c872547d1eb0829917dd50429db762a211c60efac5c8326d65e14854b"
+    },
+    {
+      "path": "assets/source/makehuman-hands-color.png",
+      "bytes": 653434,
+      "sha256": "465f476f694d34c1c2456b517a05baef80b99a5681331d53379932c10d9c3503"
+    },
+    {
+      "path": "public/assets/models/makehuman-hands.glb",
+      "bytes": 1225908,
+      "sha256": "4f2b469d1c4e5677ddd7a6ba3a7cac353ad97f09df85a8bc50b5534376252704"
+    },
+    {
+      "path": "apps/web/src/opening-sequence.json",
+      "bytes": 346,
+      "sha256": "18d3613934adbda4139b23e9b4f68c9d15830a93546f813bfda75097e642ba4c"
+    }
+  ],
+  "generator_sha256": "ec54ab8b6efbf86c454db898a0bfa01f4638af4257922b05b244f9bc48a10164"
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-17",
+  "approved_version": "0.1.4-preview.2",
+  "tests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "build": "passed; existing large JS chunk warning retained",
+  "public_asset_parity": [
+    "public/assets/models/library-room.glb",
+    "public/assets/models/makehuman-hands.glb",
+    "public/assets/models/opening-hands.glb",
+    "public/assets/models/scene.json",
+    "public/assets/models/story-book.glb",
+    "public/assets/models/writer-hands.glb",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/sculpted-plaster.png",
+    "public/assets/textures/sculpted-wood.png"
+  ],
+  "manifest_assets_checked": 15,
+  "provenance_files_checked": 7,
+  "approved_files_unchanged": 57,
+  "remote_workflows": 0,
+  "secret_pattern_scan": "no matches",
+  "visual_evidence": "evidence/v014-free-hands; already inspected and subsequently user approved; no visual changes during save"
+}

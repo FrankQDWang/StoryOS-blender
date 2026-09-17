@@ -1,7 +1,8 @@
-import React,{useMemo,useRef} from 'react';
+import React,{useEffect,useMemo,useRef} from 'react';
 import {useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
 import layout from './room-layout.json';
+import {HearthBed} from './HearthBed';
 import {RectAreaLightUniformsLib} from 'three/addons/lights/RectAreaLightUniformsLib.js';
 RectAreaLightUniformsLib.init();
 const HEARTH=layout.fixtures.find(f=>f.id==='hearth').center;
@@ -45,9 +46,11 @@ const vertexShader=`
   vec3 p=position;
   vHeight=p.y;
   float bend=p.y*p.y;
-  p.x+=bend*(.72*sin(p.y*8.0+uSeed-uTime*1.4)+.28*sin(uTime*2.1+uSeed+p.y*4.1));
-  p.z+=bend*(.52*cos(p.y*7.0+uSeed-uTime*1.2)+.22*sin(uTime*1.6+uSeed+p.y*5.3));
-  p.xz*=1.0+.10*sin(uTime*2.4+uSeed+p.y*9.0);
+  float flow=uTime*(2.1+.14*sin(uSeed))+uSeed;
+  p.x+=bend*(.34*sin(p.y*9.0-flow)+.18*sin(flow*1.73+p.y*5.1));
+  p.z+=bend*(.26*cos(p.y*8.0-flow*1.1)+.14*sin(flow*.79+p.y*6.3));
+  p.xz*=.81+.14*sin(flow*1.37-p.y*11.0)+.06*sin(flow*2.31+p.y*7.0);
+  p.y*=.88+.13*sin(flow*.71)+.08*sin(flow*1.29+2.0);
   vLocal=p;
   vec4 viewPosition=modelViewMatrix*vec4(p,1.0);
   vViewNormal=normalize(normalMatrix*normal);vViewPosition=-viewPosition.xyz;
@@ -62,17 +65,23 @@ const fragmentShader=`
  varying vec3 vLocal;
  varying vec3 vViewNormal;
  varying vec3 vViewPosition;
+ float hash(vec3 p){p=fract(p*.3183099+vec3(.17,.31,.47));p*=17.0;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
+ float noise(vec3 p){vec3 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);
+  return mix(mix(mix(hash(i),hash(i+vec3(1,0,0)),f.x),mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),
+   mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z);}
  void main(){
   float h=vHeight;
-  vec3 amber=vec3(1.0,.21,.018);
-  vec3 gold=vec3(1.0,.57,.095);
-  vec3 cream=vec3(1.0,.86,.43);
-  vec3 flame=mix(gold,amber,smoothstep(.22,.95,h));
-  flame=mix(flame,cream,uCore*(1.0-.35*h));
-  float ribbon=.92+.08*sin(h*12.0-vLocal.x*3.0-uTime*2.0+uSeed);
+  vec3 q=vec3(vLocal.x*4.5,h*5.0-uTime*(1.7+.08*uSeed),vLocal.z*4.5+uSeed);
+  float n=.68*noise(q)+.32*noise(q*2.1+3.7);
+  vec3 amber=vec3(1.0,.115,.004);
+  vec3 gold=vec3(1.0,.39,.026);
+  vec3 core=vec3(1.0,.66,.15);
+  vec3 flame=mix(gold,amber,smoothstep(.15,.95,h));
+  flame=mix(flame,core,(.28+uCore*.6)*(1.0-smoothstep(.06,.60,h)));
+  float ribbon=smoothstep(.18+h*.20,.52,n);
   float facing=abs(dot(normalize(vViewNormal),normalize(vViewPosition)));
-  float opacity=(.56+.26*uCore)*ribbon*(1.0-smoothstep(.68,1.0,h))*smoothstep(.0,.60,facing);
-  gl_FragColor=vec4(flame*(1.5+uCore*.7),opacity);
+  float opacity=(.68+.16*uCore)*mix(.32,1.0,ribbon)*(1.0-smoothstep(.62,1.0,h))*smoothstep(.0,.48,facing);
+  gl_FragColor=vec4(flame*(1.10+uCore*.28),opacity);
   #include <tonemapping_fragment>
   #include <colorspace_fragment>
  }`;
@@ -97,17 +106,40 @@ export function HearthFire({reduced}){
   vertexShader,fragmentShader,transparent:true,depthWrite:false,
   blending:THREE.NormalBlending,side:THREE.FrontSide,
  })),[]);
+ useEffect(()=>()=>{geometry.dispose();materials.forEach(m=>m.dispose())},[geometry,materials]);
  useFrame(({clock})=>{
   const t=reduced?0:clock.elapsedTime;
   materials.forEach(material=>{material.uniforms.uTime.value=t});
   if(light.current)light.current.intensity=12*(reduced?1:1+.025*Math.sin(t*2.1)+.015*Math.sin(t*3.7+.4));
  });
  return <group>
+  <group position={[HEARTH[0],0,HEARTH[1]]}><HearthBed/></group>
   <group position={[HEARTH[0],.43,HEARTH[1]]}>
    {tongues.map(({position,scale},i)=><mesh key={i} geometry={geometry} material={materials[i]} position={position} scale={scale}/>) }
+   <HearthSparks reduced={reduced}/>
   </group>
   <pointLight ref={light} position={[-3.86+SHIFT,.84,HEARTH[1]]} color="#ffad55" intensity={12} distance={10} decay={2} castShadow shadow-intensity={.62} shadow-mapSize={[1024,1024]} shadow-radius={3} shadow-bias={-.0008} shadow-normalBias={.025} shadow-camera-near={.08} shadow-camera-far={12}/>
-  <pointLight position={[HEARTH[0]-.18,.97,HEARTH[1]]} color="#ffad56" intensity={3.6} distance={1.8} decay={2}/>
+  <pointLight position={[HEARTH[0]-.10,.70,HEARTH[1]]} color="#ffad56" intensity={1.1} distance={1.8} decay={2}/>
   <rectAreaLight position={[HEARTH[0]+.60,.72,HEARTH[1]]} rotation={[0,-Math.PI/2,0]} width={1.15} height={.70} color="#ffab53" intensity={5}/>
  </group>;
+}
+
+function HearthSparks({reduced}){
+ const points=useRef();
+ const geometry=useMemo(()=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(new Float32Array(12*3),3));g.setAttribute('aHeat',new THREE.Float32BufferAttribute(new Float32Array(12),1));return g},[]);
+ const material=useMemo(()=>new THREE.ShaderMaterial({transparent:true,depthWrite:false,
+  vertexShader:`attribute float aHeat;varying float heat;void main(){heat=aHeat;vec4 p=modelViewMatrix*vec4(position,1.);gl_Position=projectionMatrix*p;gl_PointSize=clamp(15.0/-p.z,1.0,4.0)*heat;}`,
+  fragmentShader:`varying float heat;void main(){float r=length(gl_PointCoord-.5);float a=(1.-smoothstep(.08,.5,r))*heat;gl_FragColor=vec4(1.,.35,.035,a*.8);#include <tonemapping_fragment>\n#include <colorspace_fragment>}`.replace(';#include',';\n#include'),
+ }),[]);
+ useEffect(()=>()=>{geometry.dispose();material.dispose()},[geometry,material]);
+ useFrame(({clock})=>{
+  const p=geometry.attributes.position,h=geometry.attributes.aHeat;
+  for(let i=0;i<12;i++){
+   const t=(clock.elapsedTime*(.14+(i%3)*.025)+i*.173)%1;
+   p.setXYZ(i,.03+Math.sin(t*4+i*2)*.065,t*.70,Math.sin(i*2.31)*.29+Math.sin(t*6+i)*.025);
+   h.setX(i,reduced?0:Math.sin(Math.PI*t)**2*(i%3===0?1:.48));
+  }
+  p.needsUpdate=h.needsUpdate=true;
+ });
+ return <points ref={points} geometry={geometry} material={material} raycast={()=>null} frustumCulled={false}/>;
 }

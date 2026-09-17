@@ -1,0 +1,50 @@
+[
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:46:01.013Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:46:09.626Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:46:59.848Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:47:37.952Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:48:05.390Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:48:18.206Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:48:29.974Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-09-17T04:48:32.088Z",
+    "url": "http://127.0.0.1:4173/node_modules/.vite/deps/chunk-RRWAP4QR.js?v=10f96c67"
+  }
+]

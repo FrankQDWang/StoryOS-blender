@@ -1,0 +1,28 @@
+{
+  "branch": "codex/hands-and-hearth-polish",
+  "visual_verdict": "Assistant satisfied with this free replacement prototype; user review pending",
+  "runtime_asset_sha256": "4f2b469d1c4e5677ddd7a6ba3a7cac353ad97f09df85a8bc50b5534376252704",
+  "runtime_asset_bytes": 1225908,
+  "tests_passed": 12,
+  "production_assets_verified": 13,
+  "source_mesh_license": "CC0-1.0",
+  "skin_license": "CC0-1.0",
+  "main_review_errors": {
+    "main": [],
+    "review": []
+  },
+  "evidence": [
+    "01-source-anatomy.png",
+    "02-normal-sequence.jpg",
+    "03-five-slots.jpg",
+    "04-slow-contact-review.jpg",
+    "05-live-opening.jpg",
+    "06-overview.png"
+  ],
+  "limitations": [
+    "Fourth/fifth slots: inspection page, not user project entry",
+    "No fresh full-room browser walking test",
+    "No controlled performance comparison",
+    "Roaming body and remaining room details not implemented"
+  ]
+}

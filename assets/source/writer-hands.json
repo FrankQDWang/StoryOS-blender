@@ -1,0 +1,11 @@
+{
+  "source": "Project-authored anatomical lofts, voxel union, smoothed surface and weighted armature",
+  "generator": "scripts/build_opening_hands.py",
+  "blender": "5.2.1 LTS",
+  "license": "Original project asset; no third-party model or texture",
+  "runtime": "apps/web/src/OpeningHands.jsx",
+  "timeline": "apps/web/src/opening-motion.mjs",
+  "style": "Soft stylized human hands, slate linen cuffs; approved hearth-study palette",
+  "bones_per_hand": 16,
+  "unit": "metres"
+}

@@ -1,0 +1,20 @@
+- main:
+  - link "StoryOS 藏书室":
+    - /url: "#"
+    - generic: StoryOS
+  - generic: 写作空间
+  - generic: 体验样片
+  - navigation:
+    - button "全部作品 3":
+      - text: 全部作品
+      - generic: "3"
+  - button "返回藏书室":
+    - text: 返回藏书室
+  - generic: STORYOS / WRITING ROOM
+  - heading "守月人" [level=1]
+  - paragraph: 一座小镇，和一个不肯结束的长夜。
+  - heading "故事，从这里继续。" [level=2]
+  - paragraph: 你已进入《守月人》的工作区。
+  - paragraph: 这是入口体验的占位页面，正式编辑器将在后续接入。
+  - button "回到我的藏书室":
+    - text: 回到我的藏书室

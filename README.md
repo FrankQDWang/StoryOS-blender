@@ -8,11 +8,13 @@
 
 ## 版本管理
 
-当前资产版本为 **0.1.3-preview.3**，用户于2026-09-17正式认可为当前保留版本，现已保存并合入本地/远端同步的 `main`，迭代分支已清理。该版本在A书房基础上统一右三台比例和阅读倾角、均衡间距、拉开蓝书台与书桌之间的留白；书桌和椅子保持位置、尺寸。正面及侧面、开书与通路验收通过。历史标签与旧提交保留；保存完成情况见 [PLAN.md](PLAN.md)，版本约定见 [VERSIONING.md](VERSIONING.md)。
+已认可基线为 **0.1.3-preview.3**，于2026-09-17保存到本地/远端同步的 `main`。它在A书房基础上统一右三台比例和阅读倾角、均衡间距、拉开蓝书台与书桌之间的留白；书桌和椅子保持位置、尺寸，正面及侧面已获认可。
+
+当前精修预览 **0.1.4-preview.2** 已于2026-09-17获用户认可，并授权通过PR合入main、同步两端和清理迭代分支；保存正在执行。已用 **MakeHuman/MPFB 的 CC0 真人比例手形、原始骨骼权重和 Mindfront 的 CC0 皮肤**替换被否定的自制手；开书动作由项目重新适配并烘焙。助手完成实际 Chrome 截图和连续动作自检，用户确认改善并要求保存。火焰保持上轮改善，房间仍为已认可基线。素材来源见 [来源记录](assets/vendor/makehuman/README.md)，最新交接见 [PLAN.md](PLAN.md)。
 
 ## 体验
 
-- 点击实体书 → 查看信息 → 打开这本书；约 2.6 秒的固定镜头、手部和翻书转场，可跳过。
+- 点击实体书 → 查看信息 → 打开这本书；约 3.5 秒的固定镜头、手部和翻书转场，可跳过。
 - 点击「继续最近的写作」或「全部作品」直接进入；`⌘/Ctrl + K` 搜索。
 - 点击中央魔法圆台或「新建作品」，输入书名和封面色；约 3.1 秒成书归位。默认 3 本示例、2 个空位；超过 5 本仍保存在完整列表。
 - 「自由漫游」：WASD / 方向键移动，鼠标环顾；若浏览器拒绝指针锁定，提示改为按住鼠标拖拽。`Esc` /「返回全景」退出。靠近作品后可按 `E` 查看。
@@ -43,27 +45,33 @@ Blender 5.2.1 LTS：`/Applications/Blender.app`，Homebrew 管理。
 npm run assets
 ```
 
-此命令由 `scripts/build_library.py` 重新生成场景源文件与模型，再由 `scripts/bake_room_lighting.py` 在实体第二 UV 上烘焙局部遮蔽和直接/间接漫反射，最后由 `scripts/asset_manifest.py` 记录尺寸、哈希和版本。当前烘焙脚本使用本机 Cycles / Metal GPU，4096 像素、128 采样；运行网页不需要烘焙或 Metal。**重建会覆盖生成的 `.blend` 和 GLB；若手工修改 Blender 源文件，请另存一个版本。**
+此命令由 `scripts/build_library.py` 重新生成场景源文件与模型，再由 `scripts/bake_room_lighting.py` 在实体第二 UV 上烘焙局部遮蔽和直接/间接漫反射，再由 `scripts/build_makehuman_hands.py` 从已保存的 CC0 源人体裁切双手、制作袖口并烘焙动作，最后由 `scripts/asset_manifest.py` 记录尺寸、哈希和版本。当前烘焙脚本使用本机 Cycles / Metal GPU，4096 像素、128 采样；运行网页不需要烘焙或 Metal。**重建会覆盖生成的 `.blend` 和 GLB；若手工修改 Blender 源文件，请另存一个版本。**
 
 | 文件 | 用途 |
 | --- | --- |
 | `assets/source/storyos-library.blend` | Room / Book / Hands 集合；纹理已打包，可直接在 Blender 打开 |
 | `public/assets/models/library-room.glb` | 房间和静态家具；按材质合并网格 |
 | `public/assets/models/story-book.glb` | 通用书本；CoverPivot 和 PagePivot 铰链 |
-| `public/assets/models/opening-hands.glb` | 预制手掌、手指与袖口 |
+| `public/assets/models/makehuman-hands.glb` | 当前蒙皮双手、袖口、1K贴图与3.5秒动作 |
+| `assets/source/makehuman-hands.blend` | 独立手部源文件；动画与贴图已打包 |
+| `assets/vendor/makehuman/` | CC0原始资产、许可与固定来源 |
 | `public/assets/models/scene.json` | 坐标、展示位和制作版本 |
 | `public/assets/textures/` | 木纹、织物、灰泥、装饰图集与真实几何光照图；生成来源和烘焙参数均保留 |
 | `apps/web/src/room-layout.json` | Blender、书位与导航共用的米制布局 |
 | `assets/manifest.json` | 资源字节数、SHA256、三角形数量、版本和来源索引 |
 
-`Scene.jsx` 管理场景、镜头、手部与翻页；`HearthFire.jsx` 提供立体火焰；`roaming.mjs` 负责身体碰撞和滑动。源布局由 Blender 与网页共同读取，导出副本保存在 `scene.json`。书封色、标题与项目数据无需修改 Blender。手部与书本源网格保持 baseline，无烘焙骨骼动画。
+`Scene.jsx` 管理场景和镜头；`opening-sequence.json` 为离线手部动画制作及网页封面、书页提供共同时间参数。`OpeningHands.jsx` 播放 `makehuman-hands.glb` 内的动作，`TurningPages.jsx` 生成可弯曲纸张。左手支撑书身，右手抬起封面后松开，前臂与手腕分别处理方向。`HearthFire.jsx` / `HearthBed.jsx` 和房间布局保持；`roaming.mjs` 负责碰撞和滑动。
+
+当前双手共42关节、28,064三角形、一个烘焙片段，GLB为1,225,908 bytes（约1.17 MiB）。可用 `npm run assets:hands` 单独重建，不覆盖房间；普通重建只需本项目已保存资产与Blender，不依赖MPFB全局安装或下载。`writer-hands.*` 和旧 `opening-hands.glb` 保留为实验历史，当前入口不加载。漫游可见身体仍未实现。
+
+开发态 [动作检查页](http://127.0.0.1:4173/review.html?slot=0&time=0.8) 可切换五个书位、暂停时间、正常/四分之一速度重播；静帧状态停止连续渲染。检查页使用真实场景组件，不读写作品数据，也不包含在生产HTML入口中。验收记录见 `design-qa.md`。
 
 ## 验收与限制
 
-见 [design-qa.md](design-qa.md)、[PLAN.md](PLAN.md) 和 `evidence/v013-side-balance/`。本轮10项测试、保存模型几何、五台站位及镜头落点、圆台通路、构建与11份生产资产一致性通过。Chrome蓝书台、第五台完整开书进入对应作品，五书位占用画面通过；本轮未重测全屋浏览器步行或未改的创建/Quick Access流程。
+最新证据在 `evidence/v014-free-hands/`：源手形、五书位×三个姿态、正常速度/四分之一速度连续截图，以及正式入口的开书过程均已目视复查。正式流程验证第一/第三书位完整开书进入、第二书位跳过、低动态直接进入、搜索直达和返回；第四/第五位使用独立检查页，不宣称创建了用户作品或完成其真实项目进入。
 
-最新目标为 `design/round-05/A-hearth-study/final.png`，已认可的preview.2正面亦为本次保留依据。当前1512×751同视口正面/侧面对照为 `evidence/v013-side-balance/comparison-front.jpg` / `comparison-side.jpg`；侧面临时固定镜头已从正式代码移除，参数与补丁留在证据中。整体构图保持，右台的台面轮廓及局部遮挡有小幅变化，不宣称正面逐像素不变。植物、灯具、火舌和材质微细节仍与概念图有差异，手部接触细节沿用原版。
+12项测试、生产构建、13份public资源与产物逐字节一致检查通过；最终两页面捕获控制台错误0条。房间、书本及7份原纹理哈希保持。详细修正过程包括袖口穿插、握书位置、入场袖子露头和开发环境重复挂载导致动画停播，见 [design-qa.md](design-qa.md)。
 
-3份GLB共23,419,356 bytes（约22.3 MiB）；房间150,034三角形。Book/Hands源顶点与baseline一致，运行GLB与已保存HEAD逐字节相同。当前全景截图HUD约54–75 FPS、加载1.9–2.9秒，为本机开发态观察，非性能基准或冷启动承诺。
+本轮没有重测全屋浏览器步行，也没有更改布局、漫游碰撞或创建逻辑。原房间验收证据仍在 `evidence/v013-side-balance/`，视觉基线为 `design/round-05/A-hearth-study/final.png`。窗景/墙面/灯具精修及漫游手脚仍属后续范围。
 
-未集成真实 StoryOS、账户、云同步和编辑器；未验收移动端、其他浏览器和低端显卡。本轮捕获浏览器错误日志为空。上游 `THREE.Clock` 弃用提醒及构建的大JS分块提示仍在。环境音只有轻声合成和弦，未做音质验收。
+当前为本机Chrome样片，未集成真实StoryOS、账户、云同步和编辑器；未验收移动端或低端设备。帧率记录受多个Chrome窗口与截图操作影响，本轮不宣称已证明性能无退化。GitHub保存状态见PLAN，本次不部署网站。构建已有的大JS分块提示仍在。

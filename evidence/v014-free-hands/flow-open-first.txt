@@ -1,0 +1,27 @@
+Browser tab: 267567084, Title: "StoryOS · 私人藏书室", URL: "http://127.0.0.1:4173/".
+1 AXWebArea StoryOS · 私人藏书室, URL: 127.0.0.1:4173/
+	2 container
+		3 link Description: StoryOS 藏书室, Value: 127.0.0.1:4173/#
+		4 text 写作空间 体验样片
+		5 button 全部作品 3
+			6 image
+			7 text 全部作品
+			8 text 3
+		9 button 返回藏书室
+			10 image
+			11 text 返回藏书室
+		12 text STORYOS / WRITING ROOM
+		13 heading 星海余烬, Value: 1
+			14 text 星海余烬
+		15 text 群星熄灭之后，故事才刚刚开始。
+		16 image
+		17 heading 故事，从这里继续。, Value: 2
+			18 text 故事，从这里继续。
+		19 container
+			20 text 你已进入《 星海余烬 》的工作区。
+		21 text 这是入口体验的占位页面，正式编辑器将在后续接入。
+		22 button 回到我的藏书室
+			23 text 回到我的藏书室
+			24 image
+
+The focused UI element is 1 AXWebArea StoryOS · 私人藏书室, URL: 127.0.0.1:4173/
