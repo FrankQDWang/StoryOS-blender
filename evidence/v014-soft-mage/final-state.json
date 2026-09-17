@@ -1,0 +1,14 @@
+{
+  "reviewed_glb_sha256": "6103345935f68b65c2d24c338933032fd6d51030e445cf616bf6c38ccb30509d",
+  "final_glb_sha256": "6103345935f68b65c2d24c338933032fd6d51030e445cf616bf6c38ccb30509d",
+  "metadata_only_rebuild_visual_asset_unchanged": true,
+  "branch": "codex/midnight-mage-hands",
+  "commit_or_push_performed": false,
+  "capture_counts": {
+    "normal": 23,
+    "slow": 118,
+    "live": 98
+  },
+  "main_project_count": 5,
+  "qa": "Local visible improvement; user acceptance pending; sleeve edge remains firm and released fingers somewhat straight."
+}

@@ -1,0 +1,8 @@
+00:00.502  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/downloads/mage-hands/baseline/assets/source/makehuman-hands.blend"
+/Users/frankqdwang/MLE/StoryOS-blender/evidence/v014-midnight-mage/render-model.py:32: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Review studio');scene.world.use_nodes=True
+00:08.187  render           | Saved: '/Users/frankqdwang/MLE/StoryOS-blender/evidence/v014-midnight-mage/before-material-model.png'
+Rendered before-material-model.png
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

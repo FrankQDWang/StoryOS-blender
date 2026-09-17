@@ -1,0 +1,50 @@
+{
+  "version": "0.1.4-preview.6",
+  "manifest_verified": 15,
+  "authored_files_verified": 20,
+  "textures_verified": 4,
+  "preserved_assets": [
+    "public/assets/models/library-room.glb",
+    "public/assets/models/opening-hands.glb",
+    "public/assets/models/story-book.glb",
+    "public/assets/models/writer-hands.glb",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/sculpted-plaster.png",
+    "public/assets/textures/sculpted-wood.png",
+    "assets/source/storyos-library.blend",
+    "assets/source/writer-hands.blend"
+  ],
+  "production_files": [
+    "assets/textures/a-study-wood.png",
+    "assets/textures/room-illumination.png",
+    "assets/textures/a-study-rug.png",
+    "assets/textures/sculpted-wood.png",
+    "assets/textures/room-occlusion.png",
+    "assets/textures/hearth-decor-atlas.png",
+    "assets/textures/sculpted-plaster.png",
+    "assets/models/story-book.glb",
+    "assets/models/opening-hands.glb",
+    "assets/models/makehuman-hands.glb",
+    "assets/models/scene.json",
+    "assets/models/library-room.glb",
+    "assets/models/writer-hands.glb"
+  ],
+  "glb": {
+    "bytes": 3835100,
+    "sha256": "6103345935f68b65c2d24c338933032fd6d51030e445cf616bf6c38ccb30509d",
+    "joints": [
+      45,
+      45
+    ],
+    "clips": 1,
+    "triangles": 73680,
+    "morph_target_counts": {
+      "base.003": 5,
+      "base.002": 5
+    }
+  }
+}

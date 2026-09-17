@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4-preview.4",
+  "version": "0.1.4-preview.6",
   "room_version": "0.1.3-preview.3",
   "baseline": "v0.1.0-baseline",
   "source_script": "scripts/build_library.py",
@@ -30,18 +30,18 @@
     },
     {
       "path": "public/assets/models/makehuman-hands.glb",
-      "bytes": 1226612,
-      "sha256": "ed2a5b88f9dcf646b7ba77b1bbbe031d1eea137c4fee6ffaa10b2129ba6bf8e6",
-      "meshes": 4,
-      "materials": 3,
-      "embedded_images": 1,
+      "bytes": 3835100,
+      "sha256": "6103345935f68b65c2d24c338933032fd6d51030e445cf616bf6c38ccb30509d",
+      "meshes": 12,
+      "materials": 5,
+      "embedded_images": 7,
       "skins": 2,
       "joints": [
-        21,
-        21
+        45,
+        45
       ],
-      "primitives": 6,
-      "triangles": 28016
+      "primitives": 16,
+      "triangles": 73680
     },
     {
       "path": "public/assets/models/opening-hands.glb",
@@ -129,8 +129,8 @@
     },
     {
       "path": "assets/source/makehuman-hands.blend",
-      "bytes": 1808872,
-      "sha256": "dcc325632ebd9cce4295b241fa067c85a8883ba9e681c2880c61156aa2caa496"
+      "bytes": 5455879,
+      "sha256": "f371e4e0155007118667a963787974e401eed71e63e3fd9a5f28eb6648815f77"
     }
   ],
   "texture_provenance": [
@@ -144,5 +144,5 @@
   "visual_target": "design/round-05/A-hearth-study/final.png",
   "layout_source": "apps/web/src/room-layout.json",
   "network_references": "Room reference images are research only. Hand mesh and skin use the documented CC0 MakeHuman sources.",
-  "animation_source": "Shared opening-sequence.json drives the cover/pages and offline hand animation. OpeningHands.jsx plays one baked clip with 42 joints from makehuman-hands.glb. TurningPages.jsx bends sheets. Rejected writer-hands files are retained as experiment history and are not loaded. HearthFire.jsx and HearthBed.jsx add procedural detail over the unchanged room asset."
+  "animation_source": "Shared opening-sequence.json drives the cover/pages and offline hand animation. OpeningHands.jsx plays one baked clip with 42 anatomical joints, 48 cloth joints and 10 skin corrective morphs from makehuman-hands.glb. TurningPages.jsx bends sheets. Rejected writer-hands files are retained as experiment history and are not loaded. HearthFire.jsx and HearthBed.jsx add procedural detail over the unchanged room asset."
 }

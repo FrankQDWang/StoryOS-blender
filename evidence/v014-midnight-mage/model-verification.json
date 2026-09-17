@@ -1,0 +1,59 @@
+{
+  "skeletal_frames_compared": 106,
+  "bones_each_frame": 42,
+  "maximum_bone_matrix_difference": 0,
+  "existing_skeletal_motion_preserved": true,
+  "before_measurements": {
+    "RightSkin": {
+      "hand_length_cm": 19.50000338554382,
+      "wrist_band_width_cm": 5.302523005008696,
+      "wrist_band_depth_cm": 3.739355744421482,
+      "vertices": 6859
+    },
+    "LeftSkin": {
+      "hand_length_cm": 19.50000338554382,
+      "wrist_band_width_cm": 5.302523925900459,
+      "wrist_band_depth_cm": 3.7393558979034425,
+      "vertices": 6859
+    }
+  },
+  "after_measurements": {
+    "RightSkin": {
+      "hand_length_cm": 19.50000338554382,
+      "wrist_band_width_cm": 5.807207298278808,
+      "wrist_band_depth_cm": 4.111402001976967,
+      "vertices": 6859
+    },
+    "LeftSkin": {
+      "hand_length_cm": 19.50000338554382,
+      "wrist_band_width_cm": 5.807207605242729,
+      "wrist_band_depth_cm": 4.111401848495007,
+      "vertices": 6859
+    }
+  },
+  "hand_surface_changes": {
+    "RightSkin": {
+      "maximum_surface_offset_runtime_mm": 2.7559150498052825,
+      "modified_vertices": 5287
+    },
+    "LeftSkin": {
+      "maximum_surface_offset_runtime_mm": 2.755912473746918,
+      "modified_vertices": 5285
+    }
+  },
+  "new_meshes": [
+    "LeftBorderPiping",
+    "LeftCelestialCuff",
+    "LeftHemPiping",
+    "LeftInnerSleeve",
+    "LeftOuterRobe",
+    "LeftSkin",
+    "RightBorderPiping",
+    "RightCelestialCuff",
+    "RightHemPiping",
+    "RightInnerSleeve",
+    "RightOuterRobe",
+    "RightSkin"
+  ],
+  "limits": "Rest mesh measurements, not a complete collision simulation or proof of visual quality."
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "file": "01-gandalf-weta.jpg",
+    "source_page": "https://www.wetanz.com/us/shop/1-6-scale-statues/gandalf-the-grey-pilgrim",
+    "image_url": "https://www.wetanz.com/media/catalog/product/8/6/86-01-02981_lotr_travellinggandalf_002.jpg?optimize=high&fit=bounds&height=1300&width=1000",
+    "credit": "Weta Workshop; Gandalf statue sculpted by Steven Saunders",
+    "sha256": "d0197f87b06ceff3acec097989b9dc56726707783972f1809eed748326800463",
+    "bytes": 129558,
+    "rights": "Copyrighted reference; private design study only, not runtime content or redistributable asset.",
+    "retrieved": "2026-09-17",
+    "visual_status": "Viewed directly on 2026-09-17; findings and limits in research.md"
+  },
+  {
+    "file": "02-dumbledore-warner.jpg",
+    "source_page": "https://www.harrypotter.com/features/things-you-may-not-have-noticed-about-albus-dumbledore",
+    "image_url": "https://contentful.harrypotter.com/usf1vwtuqyxm/1dmmUJzpRcWaUmMOCu8QwO/7e013145694566076d47fd004fd604c2/AlbusDumbledore_WB_F6_DumbledoreSittingInChair_Promo_080615_Port.jpg",
+    "credit": "Warner Bros.; official Harry Potter publicity image",
+    "sha256": "d00687d6521f0ec9e1087c66812cf973f7a69c9a28403a84077c2e3ece0be4cf",
+    "bytes": 1444126,
+    "rights": "Copyrighted reference; private design study only, not runtime content or redistributable asset.",
+    "retrieved": "2026-09-17",
+    "visual_status": "Viewed directly on 2026-09-17; findings and limits in research.md"
+  },
+  {
+    "file": "03-gale-esomodelviewer.jpg",
+    "source_page": "https://esomodelviewer.com/baldurs-gate-3/characters/post/5-gale",
+    "image_url": "https://aiger4.s3.amazonaws.com/esomodelviewer/uploads/common/2024/03/15/gale-baldurs-gate-3-fc390fccb6b8.jpg",
+    "credit": "ESO Model Viewer game model render; original character/game assets Larian Studios",
+    "sha256": "28f0666600be895c51abd34f8bbf66876a804fcfb6f42044f3ea030d5c6a701b",
+    "bytes": 19766,
+    "rights": "Copyrighted reference; private design study only, not runtime content or redistributable asset.",
+    "retrieved": "2026-09-17",
+    "visual_status": "Viewed directly on 2026-09-17; findings and limits in research.md",
+    "limits": "Portrait crop only. No sleeve/wrist/hand evidence."
+  },
+  {
+    "file": "04-gale-portrait-esomodelviewer.jpg",
+    "source_page": "https://esomodelviewer.com/baldurs-gate-3/characters/post/5-gale",
+    "image_url": "https://lh3.googleusercontent.com/pw/AP1GczPbN7bQ3Qyr3uHVf9PTqqA65RgOH2oSVU8DpoZZnZvggcj-mgus6kAfHe4zhZGEfZKHBV0S7XXlpICuEw3y5bnFfPPmvU9Tf496xrGimLBp-7g5xwiBD6P2_ptGrOaT1ABL_aiqsVBysKGQY7mvRFM1=w800",
+    "credit": "ESO Model Viewer posted in-game character costume render; underlying Baldurs Gate 3 game assets Larian Studios",
+    "sha256": "076921b5b1e3e0afb135a1e2a16049c854b8ccfe4e68e35dc077776806695a18",
+    "bytes": 49347,
+    "rights": "Copyrighted reference; private design study only, not runtime content or redistributable asset.",
+    "retrieved": "2026-09-17",
+    "visual_status": "Viewed directly on 2026-09-17; findings and limits in research.md",
+    "limits": "Portrait crop only. No sleeve/wrist/hand evidence."
+  },
+  {
+    "file": "05-dnd-archmagi.jpg",
+    "source_page": "https://www.dndbeyond.com/posts/1344-wizard-201-the-best-magic-items-for-wizards",
+    "image_url": "https://www.dndbeyond.com/attachments/10/70/robe-of-the-magi.jpg",
+    "credit": "D&D Beyond / Wizards of the Coast official published artwork; individual artist not verified",
+    "sha256": "e3bcfe9f9b6ff9f921f1d534cd03a58764418285ecbbbd999188e306269eb745",
+    "bytes": 47487,
+    "rights": "Copyrighted reference; private design study only, not runtime content or redistributable asset.",
+    "retrieved": "2026-09-17",
+    "visual_status": "Viewed directly on 2026-09-17; findings and limits in research.md"
+  },
+  {
+    "file": "06-dnd-wizard.png",
+    "source_page": "https://www.dndbeyond.com/classes/2190886-wizard",
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/43940/901/420/618/638607460388570205.png",
+    "credit": "D&D Beyond / Wizards of the Coast official published artwork; individual artist not verified",
+    "sha256": "d528dbf714079de0595ce58e5e10b42b3d63e7371969a6677ca13076b535037f",
+    "bytes": 509724,
+    "rights": "Copyrighted reference; private design study only, not runtime content or redistributable asset.",
+    "retrieved": "2026-09-17",
+    "visual_status": "Viewed directly on 2026-09-17; findings and limits in research.md"
+  }
+]

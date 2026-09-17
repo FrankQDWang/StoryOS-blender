@@ -10,19 +10,17 @@
   "duration_seconds": 3.5,
   "bake_fps": 30,
   "atlas": [
-    1024,
-    1024
+    2048,
+    2048
   ],
   "adaptations": [
-    "Macro shape evaluation; helpers removed",
-    "Original anatomy and skin weights retained with one subdivision",
-    "Preview.4: 0.195 m rest hand length, authored at book scale 0.824 for a 1.70 m character profile",
-    "Runtime cancels per-lectern book scaling around each thumb distal joint so the human does not shrink between books",
-    "Fuller sleeve cross-sections with cuff taper; camera-framed proximal sleeves remain proxies rather than a complete shoulder/elbow rig",
-    "Right side-edge grip with an outer-cover thumb target, varied finger flexion and palm pitch through the lift",
-    "Right forearm enters from its own side; fingers relax and withdraw lower and right after release",
-    "Authored left support and synchronized 3.5 s skeletal clip; cover and page timeline unchanged",
-    "1K hand-only color atlas, embedded JPEG"
+    "CC0 MakeHuman topology and original weights retained; source UV correspondence rebaked into HandAtlas; one subdivision",
+    "Anatomical dorsal/palmar sculpt and five flexion-driven skin corrective morphs per hand",
+    "0.195 m hand length at reference book scale 0.824; runtime cancels per-lectern book scaling",
+    "Single midnight-blue lined robe with celestial embroidery; rejected teal inner sleeve removed",
+    "2K hand-only color atlas, roughness and subtle normal detail; standard glTF material channels",
+    "Large-folio lower-edge support opening authored for existing 3.5 s cover/page timing; 24 gravity/inertia cloth bones per arm",
+    "Proximal camera sleeve remains a proxy, not a complete shoulder/elbow body"
   ],
   "files": [
     {
@@ -42,18 +40,18 @@
     },
     {
       "path": "assets/source/makehuman-hands.blend",
-      "bytes": 1808872,
-      "sha256": "dcc325632ebd9cce4295b241fa067c85a8883ba9e681c2880c61156aa2caa496"
+      "bytes": 5455879,
+      "sha256": "f371e4e0155007118667a963787974e401eed71e63e3fd9a5f28eb6648815f77"
     },
     {
       "path": "assets/source/makehuman-hands-color.png",
-      "bytes": 665824,
-      "sha256": "72c7c13b79c890faf25611a4af8ae72a88062a42fc64327739bc890e5a0ad26b"
+      "bytes": 2025886,
+      "sha256": "7ffa92da9dde5da6980fa3bdc2cd0ed6a2e358cb6ac3a943658554e33f237930"
     },
     {
       "path": "public/assets/models/makehuman-hands.glb",
-      "bytes": 1226612,
-      "sha256": "ed2a5b88f9dcf646b7ba77b1bbbe031d1eea137c4fee6ffaa10b2129ba6bf8e6"
+      "bytes": 3835100,
+      "sha256": "6103345935f68b65c2d24c338933032fd6d51030e445cf616bf6c38ccb30509d"
     },
     {
       "path": "apps/web/src/opening-sequence.json",
@@ -64,8 +62,243 @@
       "path": "apps/web/src/opening-anatomy.json",
       "bytes": 95,
       "sha256": "8ea0da1c58ce5df6fcb32e706d89a808ba271bd6e5b64ee6b8001c1bc3724bb9"
+    },
+    {
+      "path": "scripts/refine_mage_hands.py",
+      "bytes": 33350,
+      "sha256": "cc41bb6645388f0deee4e2e7b687e285823b9ccfb8c5c33c632cded4ed1d0248"
+    },
+    {
+      "path": "scripts/midnight_robe.py",
+      "bytes": 26762,
+      "sha256": "b7e04562e36e54cc3ccbe0516ab2804843398f5614258418d4a723a0283fa548"
+    },
+    {
+      "path": "assets/source/mage-hand-normal.png",
+      "bytes": 48086,
+      "sha256": "d486c876cb20b8c34e960dcd23e018b8c3855acf977d0413fabff0958193fa5a"
+    },
+    {
+      "path": "assets/source/mage-hand-roughness.png",
+      "bytes": 38917,
+      "sha256": "d5c2ad592ec16c8dd87ef658e303c314bd07d69fa77f37026a9f059b1f8a1a5a"
+    },
+    {
+      "path": "assets/source/midnight-robe-brocade-normal.png",
+      "bytes": 191518,
+      "sha256": "d2f82991f3e0f5ab6efbabebbc66fd7a8de8fa07559f0eacf207f7802c4f7c2a"
+    },
+    {
+      "path": "assets/source/midnight-robe-navy-damask-color.png",
+      "bytes": 97953,
+      "sha256": "f6355274f5750686cc205445a797ccce5b88efc4659d1a0f18a65801de154247"
+    },
+    {
+      "path": "assets/source/midnight-robe-star-and-moon-brocade-color.png",
+      "bytes": 158681,
+      "sha256": "1a696db29ccfbfdf93b243c830b94a859fc047c5f252740e018be2c0b24fafda"
+    },
+    {
+      "path": "assets/source/midnight-robe-woven-normal.png",
+      "bytes": 100803,
+      "sha256": "c8a6104dfec8a316f3d3a4ebdb033cd6634768b844599766916e6aaec00444d2"
+    },
+    {
+      "path": "assets/source/midnight-robe-provenance.json",
+      "bytes": 2913,
+      "sha256": "0b146318cd8e16eaaacfe1ac24fb31404935f2ce88e8fd456b7765a2a07f394a"
+    },
+    {
+      "path": "assets/source/makehuman-hands-color.jpg",
+      "bytes": 1938708,
+      "sha256": "0c5e8140d980dfd4e63876f1a8ab64f9dc31811cfb05fc629c1ee8c69075e915"
+    },
+    {
+      "path": "assets/source/mage-hand-source-fingernails.jpg",
+      "bytes": 18321,
+      "sha256": "0828222964a14c14a46e72445f549a2124de06f072daab71e5a6716324c37362"
+    },
+    {
+      "path": "scripts/mage_opening_motion.py",
+      "bytes": 6050,
+      "sha256": "b15f780bd5ddbc6e542d39d0674ed1b68793782e651409ed3441d5265a535dd0"
     }
   ],
-  "generator_sha256": "b89711a303c469e173a6f4c2550e812f02216528ddd2235958609f410f0ca14a",
-  "anatomy": "apps/web/src/opening-anatomy.json"
+  "generator_sha256": "a8fa2eee51899af948ab9d54a7605b783b15c27e6bf94b223a9d21bb9247a050",
+  "anatomy": "apps/web/src/opening-anatomy.json",
+  "visual_target": "design/round-07-wizard-robes/02-midnight-tower-mage.png",
+  "shape_refinement": [
+    {
+      "side": "R",
+      "vertices": 1721,
+      "modified_vertices": 1288,
+      "maximum_rest_offset_asset_metres": 0.0065214,
+      "wrist_peak_breadth_factor": 1.1,
+      "wrist_peak_depth_factor": 1.09,
+      "topology_uv_weights_bones_preserved": true,
+      "distal_phalanges_not_radially_scaled": true,
+      "sculpt": "Surface-normal selected dorsal/palmar sculpt; separate thenar/hypothenar pads, metacarpal tendons and interosseous hollows, MCP arch, distal radius/ulna, phalanx pads."
+    },
+    {
+      "side": "L",
+      "vertices": 1721,
+      "modified_vertices": 1288,
+      "maximum_rest_offset_asset_metres": 0.0065214,
+      "wrist_peak_breadth_factor": 1.1,
+      "wrist_peak_depth_factor": 1.09,
+      "topology_uv_weights_bones_preserved": true,
+      "distal_phalanges_not_radially_scaled": true,
+      "sculpt": "Surface-normal selected dorsal/palmar sculpt; separate thenar/hypothenar pads, metacarpal tendons and interosseous hollows, MCP arch, distal radius/ulna, phalanx pads."
+    }
+  ],
+  "surface_refinement": {
+    "atlas_size": [
+      2048,
+      2048
+    ],
+    "detail_map_size": [
+      1024,
+      1024
+    ],
+    "roughness_map": "assets/source/mage-hand-roughness.png",
+    "normal_map": "assets/source/mage-hand-normal.png",
+    "normal_source": "Restrained anatomy-guided joint folds and exact source-UV nail bed; no albedo-derived bump or random pore noise.",
+    "skin_scattering": "No offline-only Blender SSS; exported opaque glTF PBR with continuous soft highlights.",
+    "nail_mask_source": {
+      "path": "assets/source/mage-hand-source-fingernails.jpg",
+      "upstream_path": "src/mpfb/data/textures/mpfb_fingernails.jpg",
+      "repository": "https://github.com/makehumancommunity/mpfb2",
+      "commit": "817587ceb2ea03ea17a5b47e04396cbb4ddfa2d5",
+      "sha256": "0828222964a14c14a46e72445f549a2124de06f072daab71e5a6716324c37362",
+      "license": "CC0 1.0, upstream LICENSE.ASSETS.md",
+      "placement": "Barycentric SourceUV to HandAtlas remap; no inferred nail region"
+    },
+    "nail_mask_pixels_over_half": 3669,
+    "new_random_noise": false,
+    "nail_topology_and_source_uv_correspondence_retained": true,
+    "nail_surface_adaptation": "Source nail boundary receives shallow micro-sculpt; runtime UVs are repacked into HandAtlas."
+  },
+  "costume": "assets/source/midnight-robe-provenance.json",
+  "hand_refinement_design": {
+    "version": "midnight-mage-anatomy-v2",
+    "reference": "design/round-07-wizard-robes/02-midnight-tower-mage.png",
+    "control_cage_changes": [
+      "Wrist breadth +10 percent and depth +9 percent at peak, smoothly blended proximally and into palm.",
+      "Separate thenar/hypothenar pads and softly cupped palm, without narrowing the forearm.",
+      "MCP arch, metacarpal extensor routes, intermetacarpal hollows and distal radius/ulna contours selected by surface normals.",
+      "Phalangeal pads and joint/shaft cross-section variation; original bones and longitudinal fingertip reach retained."
+    ],
+    "post_subdivision_changes": [
+      "Fine dorsal tendon and intermetacarpal relief on the subdivided export mesh, before Basis creation.",
+      "Exact CC0 source-UV nail perimeter micro-sculpt, without new geometry islands or guessed nail regions."
+    ],
+    "correctives": {
+      "count_per_hand": 5,
+      "type": "Baked glTF morph target weights; no runtime Blender drivers",
+      "response": "Original proximal/middle finger flexion, smooth threshold 0.12 to 1.20 radians.",
+      "affected_regions": "Dorsal knuckles and thenar volume; distal contact regions protected.",
+      "idle_policy": "Low-flexion poses keep low weights; no independent motion or artificial oscillation."
+    },
+    "surface_changes": [
+      "No albedo-derived normal noise; restrained anatomical folds and exact source-mask nail bed normals.",
+      "Skin roughness approximately 0.49, nail roughness 0.25, subtle source-linked roughness variation.",
+      "Softened source pigment speckle and compressed broad brown-patch variation to 68 percent; subtle joint/nail hue variation retained.",
+      "2K colour atlas, normal and roughness capped at 1K.",
+      "Blender-only subsurface scattering disabled so offline views use the same opaque PBR capability as glTF."
+    ],
+    "preserved": "Source topology, UV correspondence, skin weights, bones, bone lengths and animation authority.",
+    "limits": "Authored anatomical sculpt and flexion response, not scanned skin, photogrammetry or a muscle/soft-tissue simulation."
+  },
+  "skin_correctives": [
+    {
+      "surface_polish": {
+        "maximum_dorsal_relief_asset_metres": 0.0031598,
+        "source_mask_nail_vertices": 407,
+        "reason": "Fine anatomical relief applied after subdivision so source control cage does not erase it."
+      },
+      "morphs": [
+        {
+          "digit": 1,
+          "affected_vertices": 982,
+          "maximum_offset_asset_metres": 0.0027172
+        },
+        {
+          "digit": 2,
+          "affected_vertices": 1009,
+          "maximum_offset_asset_metres": 0.0024845
+        },
+        {
+          "digit": 3,
+          "affected_vertices": 1434,
+          "maximum_offset_asset_metres": 0.0024846
+        },
+        {
+          "digit": 4,
+          "affected_vertices": 1728,
+          "maximum_offset_asset_metres": 0.0024941
+        },
+        {
+          "digit": 5,
+          "affected_vertices": 1339,
+          "maximum_offset_asset_metres": 0.0025105
+        }
+      ],
+      "source": "Authored flexion volume correctives, not a soft-body simulation"
+    },
+    {
+      "surface_polish": {
+        "maximum_dorsal_relief_asset_metres": 0.0031601,
+        "source_mask_nail_vertices": 459,
+        "reason": "Fine anatomical relief applied after subdivision so source control cage does not erase it."
+      },
+      "morphs": [
+        {
+          "digit": 1,
+          "affected_vertices": 982,
+          "maximum_offset_asset_metres": 0.0027172
+        },
+        {
+          "digit": 2,
+          "affected_vertices": 1009,
+          "maximum_offset_asset_metres": 0.0024846
+        },
+        {
+          "digit": 3,
+          "affected_vertices": 1434,
+          "maximum_offset_asset_metres": 0.0024846
+        },
+        {
+          "digit": 4,
+          "affected_vertices": 1728,
+          "maximum_offset_asset_metres": 0.0024941
+        },
+        {
+          "digit": 5,
+          "affected_vertices": 1339,
+          "maximum_offset_asset_metres": 0.0025105
+        }
+      ],
+      "source": "Authored flexion volume correctives, not a soft-body simulation"
+    }
+  ],
+  "cloth_deformation": [
+    {
+      "side": "R",
+      "cloth_bones": 24,
+      "sampled_frames": 106,
+      "minimum_node_motion_span_metres": 0.006020915075860985,
+      "maximum_node_motion_span_metres": 0.05135458634834856,
+      "original_hand_channels_modified": false,
+      "model": "Damped gravity/inertia-driven cloth cage; no runtime physics dependency."
+    },
+    {
+      "side": "L",
+      "cloth_bones": 24,
+      "sampled_frames": 106,
+      "minimum_node_motion_span_metres": 0.0033523026958088894,
+      "maximum_node_motion_span_metres": 0.03062852160201232,
+      "original_hand_channels_modified": false,
+      "model": "Damped gravity/inertia-driven cloth cage; no runtime physics dependency."
+    }
+  ]
 }

@@ -1,0 +1,72 @@
+{
+  "reference": "design/round-07-wizard-robes/02-midnight-tower-mage.png",
+  "reference_sha256": "a341540ff20bc5eb4bce825ca728d5224b7dbf9f8476f3d8edd692cca05d7483",
+  "user_revision": "Remove the green/teal inner sleeve entirely; soften navy cloth and deform it during the existing motion.",
+  "provenance": "Original procedural geometry and textile/embroidery artwork; no reference-image pixels used.",
+  "generator": "scripts/midnight_robe.py",
+  "construction": "Single navy sleeve ending close to the wrist, thin lined open hem, recessed transverse facing and celestial embroidery. No InnerSleeve mesh or teal material.",
+  "deformation": "24 dedicated cloth bones per arm, four skinning influences maximum. Bake gravity and inertia response after the original hand action.",
+  "local_dimensions_metres": {
+    "dorsal_cuff_from_wrist": 0.095,
+    "side_cuff_from_wrist_range": [
+      0.058,
+      0.082
+    ],
+    "palm_cuff_from_wrist": -0.02,
+    "cuff_side_half_width": 0.055,
+    "cuff_lower_drape_depth": 0.133,
+    "localized_broad_fold_relief": [
+      0.0085,
+      0.012
+    ],
+    "outer_thickness": 0.0014,
+    "recessed_facing_from_wrist": 0.112,
+    "proximal_camera_proxy_extent": 1.2
+  },
+  "limits": [
+    "Proximal arm remains a camera proxy.",
+    "Reduced cloth model uses damped gravity/inertia-driven bones, not a general cloth solver or automatic book collision simulation."
+  ],
+  "textures": [
+    {
+      "path": "assets/source/midnight-robe-navy-damask-color.png",
+      "bytes": 97953,
+      "sha256": "f6355274f5750686cc205445a797ccce5b88efc4659d1a0f18a65801de154247"
+    },
+    {
+      "path": "assets/source/midnight-robe-woven-normal.png",
+      "bytes": 100803,
+      "sha256": "c8a6104dfec8a316f3d3a4ebdb033cd6634768b844599766916e6aaec00444d2"
+    },
+    {
+      "path": "assets/source/midnight-robe-star-and-moon-brocade-color.png",
+      "bytes": 158681,
+      "sha256": "1a696db29ccfbfdf93b243c830b94a859fc047c5f252740e018be2c0b24fafda"
+    },
+    {
+      "path": "assets/source/midnight-robe-brocade-normal.png",
+      "bytes": 191518,
+      "sha256": "d2f82991f3e0f5ab6efbabebbc66fd7a8de8fa07559f0eacf207f7802c4f7c2a"
+    }
+  ],
+  "baked_deformation": {
+    "R": {
+      "side": "R",
+      "cloth_bones": 24,
+      "sampled_frames": 106,
+      "minimum_node_motion_span_metres": 0.006020915075860985,
+      "maximum_node_motion_span_metres": 0.05135458634834856,
+      "original_hand_channels_modified": false,
+      "model": "Damped gravity/inertia-driven cloth cage; no runtime physics dependency."
+    },
+    "L": {
+      "side": "L",
+      "cloth_bones": 24,
+      "sampled_frames": 106,
+      "minimum_node_motion_span_metres": 0.0033523026958088894,
+      "maximum_node_motion_span_metres": 0.03062852160201232,
+      "original_hand_channels_modified": false,
+      "model": "Damped gravity/inertia-driven cloth cage; no runtime physics dependency."
+    }
+  }
+}

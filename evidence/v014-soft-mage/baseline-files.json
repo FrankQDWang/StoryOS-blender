@@ -1,0 +1,38 @@
+[
+  {
+    "path": "scripts/build_makehuman_hands.py",
+    "sha256": "619761461f33434ffa7bdd278cfc4009965b357ab692f066b7d5a762edc61410"
+  },
+  {
+    "path": "scripts/midnight_robe.py",
+    "sha256": "68196766a624d6b57e7c447af3eddaaff92233dbef7a63c28e5c7b94a2e98f01"
+  },
+  {
+    "path": "scripts/refine_mage_hands.py",
+    "sha256": "44a9c92ddf7b93f1329463791fa775fa40af63a71e59c58d37d5c8202282c614"
+  },
+  {
+    "path": "assets/source/makehuman-hands.blend",
+    "sha256": "110d4b157857356baea8c43af3f756137a21045322ede046366a8618c47edfcf"
+  },
+  {
+    "path": "assets/source/makehuman-hands.json",
+    "sha256": "5ae2481ce105f0ee76fee41f3bce15657dc0212006ea3681eca8c1c3597034bf"
+  },
+  {
+    "path": "assets/source/makehuman-hands-color.png",
+    "sha256": "7971fefe73e33a25b3cefd58cfe56b052e419c9e85cc2e93d68927cb9b645dc2"
+  },
+  {
+    "path": "assets/source/makehuman-hands-color.jpg",
+    "sha256": "9cfd941e595537bb90d2c63debba88bfb40498628d4dac238882de143fd977f9"
+  },
+  {
+    "path": "assets/manifest.json",
+    "sha256": "43a4ceb0cbe690a8386117eb01950d49a29f80b73daee564f2c9625bb5c68806"
+  },
+  {
+    "path": "public/assets/models/makehuman-hands.glb",
+    "sha256": "fb6325c69948b5a3f9afa3da903361b38c24f87798f25e1cebde4f02117995d8"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "bytes": 2348384,
+  "targets": [
+    [
+      "base.003",
+      5
+    ],
+    [
+      "base.002",
+      5
+    ]
+  ],
+  "weight_channels": [
+    {
+      "node": "LeftSkin",
+      "range": [
+        0.0,
+        0.05655509978532791
+      ]
+    },
+    {
+      "node": "RightSkin",
+      "range": [
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}

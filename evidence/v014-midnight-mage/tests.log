@@ -1,0 +1,31 @@
+
+> test
+> node --test apps/web/tests/library-model.test.mjs apps/web/tests/roaming.test.mjs apps/web/tests/opening-motion.test.mjs
+
+✔ creation retains all projects and leaves occupied positions stable at capacity (2.67525ms)
+✔ invalid creation is atomic and whitespace is removed (0.322625ms)
+✔ persisted data repairs duplicate slots and ids without losing valid projects (0.31825ms)
+✔ visiting changes recency without moving a displayed book (0.093166ms)
+✔ cover opens before pages; sheets stay ordered, never overtake the cover, and settle before entry (3.5755ms)
+✔ shipped hands keep one human size across lecterns without moving the grip anchor or accumulating scale (68.890583ms)
+✔ MakeHuman hands retain complete weighted anatomy and a synchronized baked clip (45.646459ms)
+✔ the raised-cover poses avoid the previous folded right-wrist silhouette (15.940291ms)
+✔ body clearance applies to walls and round table; long displacement cannot cross the table (15.093667ms)
+✔ every fixture and all five rotated lecterns stop movement before the body enters them (3.910709ms)
+✔ rectangle corners use circular body clearance and diagonal movement slides along a rotated face (0.234958ms)
+✔ zero displacement is stable and invalid starting positions are not teleported through furniture (0.198542ms)
+✔ all five reading stands have reachable standing positions within book interaction distance (53.594ms)
+ℹ lectern 1: verified route 8.10 m; final book distance 1.19 m
+ℹ lectern 2: verified route 12.30 m; final book distance 1.19 m
+ℹ lectern 3: verified route 9.90 m; final book distance 1.19 m
+ℹ lectern 4: verified route 8.25 m; final book distance 1.19 m
+ℹ lectern 5: verified route 6.30 m; final book distance 1.19 m
+✔ the central table has a complete unobstructed walking circuit connected to the entrance (1.821625ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 297.701958

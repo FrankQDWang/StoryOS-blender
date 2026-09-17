@@ -1,0 +1,13 @@
+{
+  "left": "Current saved RightSkin and RightSleeve rest mesh, runtime reference scale 0.824. Modifiers removed on in-memory copies to display rest vertices.",
+  "right": "Evaluated MakeHumanSource right arm mesh, same transform and hand scale, same-side arm-weight filter >0.5. No anatomy edits.",
+  "camera": "Orthographic dorsal projection, same physical scale in both columns, proximal sleeve/body crop is camera framing only.",
+  "materials": "Uniform neutral clay for both skins and dark plain cloth to compare geometry, no baked skin color texture.",
+  "image": "orthographic-current-vs-source.png",
+  "limits": [
+    "This is a diagnostic neutral-pose model render, not the runtime camera, animation or accepted design.",
+    "Current hand is pre-subdivided while source body keeps its evaluated topology; both have smooth shading.",
+    "The far proximal proxy continues beyond frame; image crop does not imply a complete fitted anatomical sleeve."
+  ],
+  "inputs_unchanged": true
+}

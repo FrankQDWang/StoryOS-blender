@@ -1,0 +1,214 @@
+{
+  "files": [
+    {
+      "path": "public/assets/textures/a-study-wood.png",
+      "bytes": 2073091,
+      "sha256": "3127906ad5933a1180bae6e83852f9a45e8a6512e49501e32e09b7b4732acc13"
+    },
+    {
+      "path": "public/assets/textures/room-illumination.png",
+      "bytes": 16431071,
+      "sha256": "ef7004a3aae8063f8040d0724981d17ef26174cfe2520048f57c5e382cd99dd4"
+    },
+    {
+      "path": "public/assets/textures/a-study-rug.png",
+      "bytes": 3442060,
+      "sha256": "904cd5578e110e52dd03f99b6d40c0a73c5271659b55dad0398bb1f2e92a8e82"
+    },
+    {
+      "path": "public/assets/textures/sculpted-wood.png",
+      "bytes": 2155058,
+      "sha256": "a0b354e66c67c2b77a02f5c60c62f9f80f0fe407ebef7a3ad2bdc5ef3bbc7e48"
+    },
+    {
+      "path": "public/assets/textures/room-occlusion.png",
+      "bytes": 3772753,
+      "sha256": "4e017fab04ac5350206759e70fcf2fc730184679c2a615a5d08c28a1228cc24f"
+    },
+    {
+      "path": "public/assets/textures/hearth-decor-atlas.png",
+      "bytes": 3060990,
+      "sha256": "916bf34a473bc05508fd0329ab64c2c682097331cc788a4bb6b5b60412b1d826"
+    },
+    {
+      "path": "public/assets/textures/sculpted-plaster.png",
+      "bytes": 2215079,
+      "sha256": "1edbb15fba5f0513d3a422ad5840f6f18d6197f4ddac7a5408230d1cf7b2e58f"
+    },
+    {
+      "path": "public/assets/models/story-book.glb",
+      "bytes": 185284,
+      "sha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001"
+    },
+    {
+      "path": "public/assets/models/opening-hands.glb",
+      "bytes": 82936,
+      "sha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd"
+    },
+    {
+      "path": "public/assets/models/makehuman-hands.glb",
+      "bytes": 1226612,
+      "sha256": "ed2a5b88f9dcf646b7ba77b1bbbe031d1eea137c4fee6ffaa10b2129ba6bf8e6"
+    },
+    {
+      "path": "public/assets/models/scene.json",
+      "bytes": 4829,
+      "sha256": "7f794c12a206707f368f4819e1ee7831e2aa264dea546aa9d993840dfdd86169"
+    },
+    {
+      "path": "public/assets/models/library-room.glb",
+      "bytes": 23151136,
+      "sha256": "491c0a1bf3f07e994ebd1a755c1d3f5994f0695b2b7a16996711bc0ee784c946"
+    },
+    {
+      "path": "public/assets/models/writer-hands.glb",
+      "bytes": 831040,
+      "sha256": "8ca5b9c6fb2997a92e9cd0540a341b7a2d0ff0ed9fd8fb29d6d6b54ce59dca10"
+    },
+    {
+      "path": "apps/web/src/opening-anatomy.mjs",
+      "bytes": 700,
+      "sha256": "c50fdd8b33deb148c8bd2b784ed03fbdb5b52c5764bf71d93de665657e18e319"
+    },
+    {
+      "path": "apps/web/src/SceneReview.jsx",
+      "bytes": 4093,
+      "sha256": "c28ca25f8f33e659cbbdd52b1e9a555c89bc6354fb6329222d36f4764cdbf140"
+    },
+    {
+      "path": "apps/web/src/TurningPages.jsx",
+      "bytes": 1450,
+      "sha256": "639e1f9bf6027e61c8a654acaf730e6d9452808310de94570808cf65707a9c93"
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "bytes": 13482,
+      "sha256": "660bb8b692a7664cb58b01b2b2f5543ffa0129d6d7d71f1550eeda92f80c06f5"
+    },
+    {
+      "path": "apps/web/src/Scene.jsx",
+      "bytes": 20437,
+      "sha256": "bbd4cc6e658f7139970c935483cb8cc8a260e96a57d5803c85048a21f4dc2793"
+    },
+    {
+      "path": "apps/web/src/opening-motion.mjs",
+      "bytes": 1052,
+      "sha256": "bb8ac6a961d0a1ad83e50a51d7c15904e00bc970e9f7ef2d5cdd433d8b91d897"
+    },
+    {
+      "path": "apps/web/src/opening-sequence.json",
+      "bytes": 346,
+      "sha256": "18d3613934adbda4139b23e9b4f68c9d15830a93546f813bfda75097e642ba4c"
+    },
+    {
+      "path": "apps/web/src/opening-anatomy.json",
+      "bytes": 95,
+      "sha256": "8ea0da1c58ce5df6fcb32e706d89a808ba271bd6e5b64ee6b8001c1bc3724bb9"
+    },
+    {
+      "path": "apps/web/src/main.jsx",
+      "bytes": 340,
+      "sha256": "4af51eb029acd344c6135cc32008bdfcf6c3bc496dd43c39dceb3114ed393ac8"
+    },
+    {
+      "path": "apps/web/src/HearthBed.jsx",
+      "bytes": 3591,
+      "sha256": "548354065d6f1a6914284537652b3c6967a5e670705dbd3704862ab731cf7a7f"
+    },
+    {
+      "path": "apps/web/src/library-model.mjs",
+      "bytes": 2698,
+      "sha256": "999e76a5c31ba8d98434a670c25759847e7bdbe03b395e19b6ff7f2f2cc70dbc"
+    },
+    {
+      "path": "apps/web/src/App.jsx",
+      "bytes": 14978,
+      "sha256": "8b12e2baa998d9b2b3184fe24d6eff2110625d2cc7f9c9c943fed69bb72877c8"
+    },
+    {
+      "path": "apps/web/src/roaming.mjs",
+      "bytes": 4787,
+      "sha256": "f48a1ce67459813eaa9cfcc58a44cd3677dae53096e814a0c8fe14b1e61037c4"
+    },
+    {
+      "path": "apps/web/src/room-layout.json",
+      "bytes": 2707,
+      "sha256": "bfe7a75a96e251c9167e9967b98f27ec83c60fa3932604b2605751f8f931af9f"
+    },
+    {
+      "path": "apps/web/src/OpeningHands.jsx",
+      "bytes": 2224,
+      "sha256": "bee97d9fa37c6691d25e2f03f8fc3952595910995626820c7423710cd2056028"
+    },
+    {
+      "path": "apps/web/src/HearthFire.jsx",
+      "bytes": 7219,
+      "sha256": "5ffbafff22f375b1a6be86fff32dac0cbca365215c6522554539685b16b65e11"
+    },
+    {
+      "path": "scripts/build_makehuman_hands.py",
+      "bytes": 15702,
+      "sha256": "b89711a303c469e173a6f4c2550e812f02216528ddd2235958609f410f0ca14a"
+    },
+    {
+      "path": "scripts/check_hearth.py",
+      "bytes": 2175,
+      "sha256": "429fae420883048857ae7718920e260c07ba19f4756ff83c40cd464d5835c043"
+    },
+    {
+      "path": "scripts/bake_room_lighting.py",
+      "bytes": 6839,
+      "sha256": "1a5f705493a72e94d756ecd17187178f376db4b976e6c459451210ec03cc587e"
+    },
+    {
+      "path": "scripts/check_scene.py",
+      "bytes": 13760,
+      "sha256": "e5ceab98fb2138c482f19eec166b11a48cfd6f3d20b4ea0b1bf7501329a2b6ef"
+    },
+    {
+      "path": "scripts/build_library.py",
+      "bytes": 30620,
+      "sha256": "3e7604bd14e6ea3ed5469ebc599197896f2669bafde17989d4e65418de356ee5"
+    },
+    {
+      "path": "scripts/build_opening_hands.py",
+      "bytes": 10100,
+      "sha256": "b073bf2059dd6dc29d36f193b0ef8cad00b6710119ac12486beb9cd16df4dd8b"
+    },
+    {
+      "path": "scripts/prepare_makehuman_base.py",
+      "bytes": 1490,
+      "sha256": "e1f07120f1d2fc02c074db7c05250fcfef1453258e877072af36b9020ce97b7c"
+    },
+    {
+      "path": "scripts/hand_review_sheets.py",
+      "bytes": 1085,
+      "sha256": "ebda5ebd262a782b2e717bf6fd6125ed2219d4c2bbf6a6650c1362a20db936a6"
+    },
+    {
+      "path": "scripts/asset_manifest.py",
+      "bytes": 3567,
+      "sha256": "7d1b8c585fc28e5bb20524d35184ff4378cbd00eb4f6aac7585da0fccee68ab3"
+    },
+    {
+      "path": "assets/source/makehuman-hands.blend",
+      "bytes": 1808872,
+      "sha256": "dcc325632ebd9cce4295b241fa067c85a8883ba9e681c2880c61156aa2caa496"
+    },
+    {
+      "path": "assets/source/makehuman-hands-color.png",
+      "bytes": 665824,
+      "sha256": "72c7c13b79c890faf25611a4af8ae72a88062a42fc64327739bc890e5a0ad26b"
+    },
+    {
+      "path": "assets/source/makehuman-hands.json",
+      "bytes": 3010,
+      "sha256": "2d8c7ad65e9f4b52cfeaa53c54dd717150314dff27954f249d8b6f62b0c8935c"
+    },
+    {
+      "path": "assets/manifest.json",
+      "bytes": 4975,
+      "sha256": "e9f6f291068a93c4bc857a83ef6db92f2c343d20735074829ed598c022a11ba0"
+    }
+  ]
+}
