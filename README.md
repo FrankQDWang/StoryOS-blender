@@ -10,7 +10,7 @@
 
 已认可基线为 **0.1.3-preview.3**，于2026-09-17保存到本地/远端同步的 `main`。它在A书房基础上统一右三台比例和阅读倾角、均衡间距、拉开蓝书台与书桌之间的留白；书桌和椅子保持位置、尺寸，正面及侧面已获认可。
 
-当前精修预览 **0.1.4-preview.2** 已于2026-09-17获用户认可，并授权通过PR合入main、同步两端和清理迭代分支；保存正在执行。已用 **MakeHuman/MPFB 的 CC0 真人比例手形、原始骨骼权重和 Mindfront 的 CC0 皮肤**替换被否定的自制手；开书动作由项目重新适配并烘焙。助手完成实际 Chrome 截图和连续动作自检，用户确认改善并要求保存。火焰保持上轮改善，房间仍为已认可基线。素材来源见 [来源记录](assets/vendor/makehuman/README.md)，最新交接见 [PLAN.md](PLAN.md)。
+当前精修预览 **0.1.4-preview.2** 已于2026-09-17获用户认可，并通过 [PR #1](https://github.com/FrankQDWang/StoryOS-blender/pull/1) 合入同步的main；本地与远端均只保留main分支。已用 **MakeHuman/MPFB 的 CC0 真人比例手形、原始骨骼权重和 Mindfront 的 CC0 皮肤**替换被否定的自制手；开书动作由项目重新适配并烘焙。助手完成实际 Chrome 截图和连续动作自检，用户确认改善并要求保存。火焰保持上轮改善，房间仍为已认可基线。素材来源见 [来源记录](assets/vendor/makehuman/README.md)，最新交接见 [PLAN.md](PLAN.md)。
 
 ## 体验
 

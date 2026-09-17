@@ -7,8 +7,8 @@
 | 对象 | 含义 |
 | --- | --- |
 | `v0.1.0-baseline` | 第一个已认可小样的附注标签；不移动、不覆盖、不在原提交上 amend |
-| `main` | 用户认可的当前版本；2026-09-17已将0.1.3-preview.3保存到本地及远端同步主分支，场景提交0888b06 |
-| 迭代分支 | iteration/next已在合入主分支后删除；未来按具体任务新建codex/前缀分支 |
+| `main` | 用户认可的当前版本；2026-09-17已将0.1.4-preview.2经PR #1合入本地及远端同步主分支，成果提交4b00539、合并提交3ee0af0 |
+| 迭代分支 | iteration/next及codex/hands-and-hearth-polish均已合入并删除；两端仅保留main，未来按具体任务新建codex/前缀分支 |
 | `v0.2.0-preview.1` | 已被用户否定的第二版预览，仅为历史标签；其后通过新提交恢复，当前main不采用该版本画面 |
 | `v0.1.1-preview.1` | 第一版恢复 + 壁炉结构修复，保留为历史 |
 | 后续标签，如 `v0.2.0` | 每轮体验确认后的完整里程碑；不是每次小改都打标签 |
@@ -60,4 +60,4 @@ npm --prefix .worktrees/baseline/apps/web run dev -- --host 127.0.0.1 --port 417
 
 ## 当前对照运行
 
-当前 `4173` 为基于已认可房间 `0.1.3-preview.3` 的免费手部版 `0.1.4-preview.2`，用户已认可并授权保存；`codex/hands-and-hearth-polish` 的PR合入及清理正在执行，完成状态见PLAN。需要对照时，`4175` 使用固定的 `v0.1.0-baseline` worktree。两个 worktree 分别安装本地依赖；不共享 `node_modules/.vite` 缓存，以免两个开发服务反复覆盖依赖预构建。两处预览均是本机服务。
+当前 `4173` 为基于已认可房间 `0.1.3-preview.3` 的免费手部版 `0.1.4-preview.2`，用户已认可并通过PR #1保存到同步的main；本地与远端迭代分支已清理，交接见PLAN。需要对照时，`4175` 使用固定的 `v0.1.0-baseline` worktree。两个 worktree 分别安装本地依赖；不共享 `node_modules/.vite` 缓存，以免两个开发服务反复覆盖依赖预构建。两处预览均是本机服务。

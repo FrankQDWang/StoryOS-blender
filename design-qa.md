@@ -32,7 +32,7 @@
 - 12项测试通过；包括书页不越过封面、两手权重归一、关节覆盖、烘焙时间长度与1.5MB资产预算。生产构建通过，已有大JS分块提示仍在。
 - 13份public文件与生产产物逐字节相同，manifest及来源哈希一致；`production-parity.json` / `preserved-assets.json`。最后主页面及检查页捕获控制台错误各0条；`browser-errors.json`。
 - Chrome自然窗口，设备DPR2，Canvas上限1.5；主页面1512×751，检查页曾使用1512×695与751高度。多窗口及截图过程中HUD有约34–71 FPS变化，最终全景捕获48 FPS。没有做同条件旧版性能对照，不宣称性能无退化或跨设备60 FPS；模型的实际体积和复杂度以上述manifest为准。
-- 上述视觉检查完成时，分支 `codex/hands-and-hearth-polish` 尚未提交/推送；用户随后认可并授权完整保存，最终PR及main状态见PLAN。主预览与动作检查页均留在Chrome。窗景/墙面/灯具细化、漫游可见手脚仍未实施。
+- 用户认可后，成果`4b00539`已由[PR #1](https://github.com/FrankQDWang/StoryOS-blender/pull/1)合入main；迭代分支本地与远端均已删除，最终交接见PLAN。保存时复跑12项测试及构建，核对资产与生产文件一致，证据在`evidence/v014-save/`。主预览与动作检查页均留在Chrome。窗景/墙面/灯具细化、漫游可见手脚仍未实施。
 
 ---
 

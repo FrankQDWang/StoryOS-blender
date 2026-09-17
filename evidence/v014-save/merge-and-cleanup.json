@@ -1,0 +1,36 @@
+{
+  "stage": "after PR merge and branch cleanup; closing documentation commit follows on main",
+  "pull_request": {
+    "headRefOid": "4b0053979a38a2b7ad7fbbf1114197c787be7be9",
+    "mergeCommit": {
+      "oid": "3ee0af0abc12e8214e0ba07650e3dd28afe18684"
+    },
+    "mergedAt": "2026-09-17T07:10:56Z",
+    "number": 1,
+    "state": "MERGED",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-17T07:10:31Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://sourcery.ai",
+        "name": "Sourcery review",
+        "startedAt": "2026-09-17T07:10:31Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "url": "https://github.com/FrankQDWang/StoryOS-blender/pull/1"
+  },
+  "main_at_merge": "3ee0af0abc12e8214e0ba07650e3dd28afe18684",
+  "local_branches": [
+    "main"
+  ],
+  "remote_branches": [
+    "main"
+  ],
+  "working_tree_clean": true,
+  "historical_tags_unchanged": true,
+  "detached_draft_worktrees_unchanged": 4,
+  "approved_files_match_commit": 57
+}
