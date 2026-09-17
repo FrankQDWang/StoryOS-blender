@@ -43,4 +43,4 @@
 
 GLB 1,226,612 bytes、28,016三角形、42关节、4网格、3材质、6 primitives，较上一版仅增加704 bytes。15项manifest资源、8份来源文件及生成器哈希、13份public与生产产物一致性通过。没有新增运行时IK、物理、依赖或付费素材；没有做严格性能前后对照，不能宣布零性能变化。构建原有大分块提示保持。
 
-开发时曾因Three骨骼名称去标点规则导致检查页加载错误，已改用`PropertyBinding.sanitizeNodeName`并由实际GLB测试覆盖。完整历史错误保留在`browser-errors.json`，最终验证时间窗内错误为0。用户已授权保存，Git交付状态见PLAN最新交接；保留历史标签。
+开发时曾因Three骨骼名称去标点规则导致检查页加载错误，已改用`PropertyBinding.sanitizeNodeName`并由实际GLB测试覆盖。完整历史错误保留在`browser-errors.json`，最终验证时间窗内错误为0。用户已授权保存，成果已由[PR #2](https://github.com/FrankQDWang/StoryOS-blender/pull/2)合入main（成果`e6d033a`、合并`fcaa7d1`）。本地与远端同步且只保留main，历史标签与detached worktree草稿保持；Git交付与保存复核见PLAN及`evidence/v014-human-save/`。

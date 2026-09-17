@@ -12,7 +12,7 @@
 
 已保存的精修基线 **0.1.4-preview.2** 于2026-09-17通过 [PR #1](https://github.com/FrankQDWang/StoryOS-blender/pull/1) 合入同步的main。已用 **MakeHuman/MPFB 的 CC0 真人比例手形、原始骨骼权重和 Mindfront 的 CC0 皮肤**替换被否定的自制手；开书动作由项目适配并烘焙。火焰保持上轮改善，房间仍为已认可基线。素材来源见 [来源记录](assets/vendor/makehuman/README.md)，最新交接见 [PLAN.md](PLAN.md)。
 
-当前工作区为 **0.1.4-preview.4**，在 `codex/wrist-motion-step` 逐点改进。按1.70米角色选择19.5cm手长，修复人体跟随书位缩放、加厚袖子，并重做右手侧边夹持、抬起及松手衔接。已完成Chrome主/侧视、五书位、正常/慢放及真实入口视觉检查；用户于2026-09-17认可并授权提交、push、合并和分支清理，保存进行中。详见[本轮记录](design/iterations/10-human-scale-and-side-grip.md)。
+当前版本 **0.1.4-preview.4** 已于2026-09-17获用户认可，通过 [PR #2](https://github.com/FrankQDWang/StoryOS-blender/pull/2) 合入main；本地和远端已同步，迭代分支已清理，两端只保留main。按1.70米角色选择19.5cm手长，修复人体跟随书位缩放、加厚袖子，并重做右手侧边夹持、抬起及松手衔接。已完成Chrome主/侧视、五书位、正常/慢放及真实入口视觉检查，保存前14项测试、构建及资产校验通过。详见[本轮记录](design/iterations/10-human-scale-and-side-grip.md)。
 
 此前preview.3的上方右手动作被用户否定，已补充[五段真人参考与改进方向](design/iterations/09-human-opening-reference-study.md)。preview.4已据此实现侧边夹持并获本轮认可；完整肩肘协作和细微受力仍可继续优化。
 

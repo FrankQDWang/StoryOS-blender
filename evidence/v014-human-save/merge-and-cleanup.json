@@ -1,0 +1,39 @@
+{
+  "version": "0.1.4-preview.4",
+  "pr": {
+    "headRefOid": "e6d033a7fd3b9170b1cd290290afc6454f097f74",
+    "mergeCommit": {
+      "oid": "fcaa7d1b7736044457711b9e3eb1741bf4283391"
+    },
+    "mergedAt": "2026-09-17T09:11:25Z",
+    "number": 2,
+    "state": "MERGED",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-17T09:11:11Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://sourcery.ai",
+        "name": "Sourcery review",
+        "startedAt": "2026-09-17T09:11:11Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "url": "https://github.com/FrankQDWang/StoryOS-blender/pull/2"
+  },
+  "local_main_at_merge": "fcaa7d1b7736044457711b9e3eb1741bf4283391",
+  "remote_main_at_merge": "fcaa7d1b7736044457711b9e3eb1741bf4283391",
+  "clean_root_before_closure_documentation": true,
+  "local_branches": [
+    "main"
+  ],
+  "remote_branches": [
+    "main"
+  ],
+  "ahead_behind": "0\t0",
+  "source_runtime_and_asset_hashes_unchanged": 64,
+  "historical_tags_preserved": 3,
+  "detached_worktrees_and_drafts_preserved": 4,
+  "note": "Merge checkpoint. This record and final handoff documentation are saved by a subsequent main documentation commit, followed by a fresh remote parity and clean-root check. No website deployment."
+}
