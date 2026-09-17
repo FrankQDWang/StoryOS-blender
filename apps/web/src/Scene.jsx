@@ -6,6 +6,9 @@ import * as THREE from 'three';
 import layout from './room-layout.json';
 import {moveWithCollisions,isWalkable,readingApproach} from './roaming.mjs';
 import {HearthFire} from './HearthFire';
+import {OpeningHands} from './OpeningHands';
+import {TurningPages} from './TurningPages';
+import {openingPose} from './opening-motion.mjs';
 
 export const SLOTS=layout.slots.map(slot=>slot.position);
 const YAWS=layout.slots.map(slot=>slot.yaw);
@@ -76,6 +79,8 @@ function prepare(scene,room=false,indirect=null){
  }});return s;
 }
 function Room({onReady}){
+ // Mark the room ready only once the opening actor is also available.
+ useGLTF('/assets/models/makehuman-hands.glb');
  const {scene}=useGLTF('/assets/models/library-room.glb');
  const map=useTexture('/assets/textures/room-illumination.png');
  const object=useMemo(()=>{
@@ -84,7 +89,7 @@ function Room({onReady}){
  },[scene,map]);
  useEffect(()=>{onReady()},[onReady]);return <primitive object={object}/>;
 }
-function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing}){
+function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing,openingClock}){
  const {scene}=useGLTF('/assets/models/story-book.glb');
  const object=useMemo(()=>{const s=prepare(scene);s.traverse(o=>{if(o.isMesh && o.material.name==='BookLeather')o.material.color.set(book.color)});return s},[scene,book.color]);
  const cover=useMemo(()=>object.getObjectByName('CoverPivot'),[object]);
@@ -92,14 +97,15 @@ function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing}){
  const group=useRef();const [hover,setHover]=useState(false);const age=useRef(0);
  useFrame((state,dt)=>{
   age.current+=dt;
-  if(cover)cover.rotation.z=THREE.MathUtils.damp(cover.rotation.z,opening?2.65:0,opening?3.5:6,dt);
-  pages.forEach((p,i)=>{if(p)p.rotation.z=THREE.MathUtils.damp(p.rotation.z,opening?Math.max(0,2.4-i*.13):0,2-i*.15,dt)});
+  if(cover)cover.rotation.z=opening?openingPose(openingClock.current).angle:0;
+  pages.forEach(p=>{if(p){p.visible=!opening;p.rotation.z=0;}});
   if(group.current){group.current.position.y=SLOTS[index][1]+(appearing&&!reduced?Math.max(0,1.1-age.current*.6):0);group.current.scale.setScalar((layout.slots[index].scale??1)*(appearing&&!reduced?Math.min(1,age.current*1.4):1))}
  });
  return <group ref={group} position={SLOTS[index]} rotation={[PITCHES[index],YAWS[index],0,'YXZ']} onClick={e=>{e.stopPropagation();onSelect(book.id)}} onPointerOver={e=>{e.stopPropagation();setHover(true);document.body.style.cursor='pointer'}} onPointerOut={()=>{setHover(false);document.body.style.cursor=''}}>
   <primitive object={object}/>
+  {opening&&<TurningPages clock={openingClock}/>}
   {hover&&!selected&&!opening&&<Html position={[0,.35,0]} center distanceFactor={4} zIndexRange={[8,0]}><div className="book-label">{book.title}<small>点击查看作品</small></div></Html>}
-  {(selected||hover)&&<pointLight position={[0,.5,0]} intensity={.8} color="#ffcd8b" distance={1.8}/>}
+  {(selected||hover)&&!opening&&<pointLight position={[0,.5,0]} intensity={.8} color="#ffcd8b" distance={1.8}/>}
  </group>;
 }
 function MagicTable({onCreate,crafting,reduced}){
@@ -133,13 +139,13 @@ function CreatingBook({book}) {
  });
  return <group ref={ref} position={start.toArray()}><primitive object={object}/><pointLight color="#bbdebc" intensity={1.5} distance={3}/></group>;
 }
-function OpeningHands({active,bookIndex}){
- const {scene}=useGLTF('/assets/models/opening-hands.glb');const object=useMemo(()=>prepare(scene),[scene]);const ref=useRef();const progress=useRef(0);
- useFrame((_,dt)=>{progress.current=THREE.MathUtils.damp(progress.current,active?1:0,4,dt);if(ref.current){ref.current.visible=progress.current>.015;ref.current.position.y=-.12+(1-progress.current)*-.3;ref.current.position.z=.48+(1-progress.current)*.6;ref.current.rotation.x=progress.current*-.18}});
- if(bookIndex==null)return null;
- return <group position={SLOTS[bookIndex]} scale={layout.slots[bookIndex].scale??1} rotation={[PITCHES[bookIndex]-.28,YAWS[bookIndex],0,'YXZ']}><group ref={ref}><primitive object={object}/></group></group>;
+function OpeningClock({active,clock,inspection}){
+ const invalidate=useThree(state=>state.invalidate);
+ useEffect(()=>{if(inspection)invalidate()},[inspection?.time,inspection?.camera,invalidate]);
+ useFrame((_,dt)=>{clock.current=inspection?.time??(active?clock.current+dt:0)},-2);
+ return null;
 }
-function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced,onLockChange}){
+function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced,onLockChange,inspection}){
  const {camera,gl}=useThree();const keys=useRef(new Set());const target=useRef(HOME_LOOK.clone());const wasLocked=useRef(false);const nearestRef=useRef(null);
  useEffect(()=>{const down=e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;keys.current.add(e.code)};const up=e=>keys.current.delete(e.code);const clear=()=>keys.current.clear();window.addEventListener('keydown',down);window.addEventListener('keyup',up);window.addEventListener('blur',clear);return()=>{window.removeEventListener('keydown',down);window.removeEventListener('keyup',up);window.removeEventListener('blur',clear)}},[]);
  useEffect(()=>{
@@ -189,9 +195,10 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
  },[mode,camera]);
  useEffect(()=>{if(mode!=='roam'){camera.position.copy(HOME);target.current.copy(HOME_LOOK)}},[resetToken]);
  useFrame((_,delta)=>{
+  if(inspection?.camera){camera.position.fromArray(inspection.camera.position);camera.lookAt(...inspection.camera.target);camera.fov=inspection.camera.fov??53;camera.updateProjectionMatrix();return;}
   const dt=Math.min(delta,.05);
   const desiredFov=mode==='overview'&&!opening?layout.home.fov:53;
-  camera.fov=reduced?desiredFov:THREE.MathUtils.damp(camera.fov,desiredFov,4,dt);camera.updateProjectionMatrix();
+  camera.fov=reduced||inspection?desiredFov:THREE.MathUtils.damp(camera.fov,desiredFov,4,dt);camera.updateProjectionMatrix();
   if(mode==='roam'){
    const f=new THREE.Vector3();camera.getWorldDirection(f);f.y=0;f.normalize();const right=new THREE.Vector3().crossVectors(f,camera.up).normalize();const move=new THREE.Vector3();
    if(keys.current.has('KeyW')||keys.current.has('ArrowUp'))move.add(f);if(keys.current.has('KeyS')||keys.current.has('ArrowDown'))move.sub(f);
@@ -213,17 +220,35 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
      if(approach){const clear=moveWithCollisions(approach,{x:pos.x-approach.x,z:pos.z-approach.z});pos.x=clear.x;pos.z=clear.z;}
     }
    }
-   if(reduced){camera.position.copy(pos);target.current.copy(look)}else{camera.position.lerp(pos,1-Math.exp(-dt*(opening?2.8:2.2)));target.current.lerp(look,1-Math.exp(-dt*2.5))}camera.lookAt(target.current);
+   if(reduced||inspection){camera.position.copy(pos);target.current.copy(look)}else{camera.position.lerp(pos,1-Math.exp(-dt*(opening?2.8:2.2)));target.current.lerp(look,1-Math.exp(-dt*2.5))}camera.lookAt(target.current);
   }
  });
  return null;
 }
-function Performance({onMetrics}){const {gl}=useThree();const bucket=useRef({t:0,n:0});useFrame((_,dt)=>{if(dt>.2||document.hidden){bucket.current={t:0,n:0};return}bucket.current.t+=dt;bucket.current.n++;if(bucket.current.t>2){onMetrics({fps:Math.round(bucket.current.n/bucket.current.t),calls:gl.info.render.calls,triangles:gl.info.render.triangles});bucket.current={t:0,n:0}}});return null;}
-export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onReady,onNear,onMetrics,opening,crafting,appearing,reduced,resetToken,paused,onLockChange}){
+function Performance({onMetrics}){
+ const {gl}=useThree();const bucket=useRef([]);
+ useFrame((_,dt)=>{
+  if(dt>.2||document.hidden){bucket.current=[];gl.info.reset();return;}
+  bucket.current.push(dt);
+  const elapsed=bucket.current.reduce((a,b)=>a+b,0);
+  if(elapsed>2){
+   const sorted=[...bucket.current].sort((a,b)=>a-b);
+   onMetrics({fps:Math.round(sorted.length/elapsed),frameMs:1000*sorted[Math.floor(sorted.length*.5)],
+    p95Ms:1000*sorted[Math.floor(sorted.length*.95)],calls:gl.info.render.calls,triangles:gl.info.render.triangles});
+   bucket.current=[];
+  }
+  // Sum the whole prior frame, including shadow and composer passes.
+  gl.info.reset();
+ },-3);
+ return null;
+}
+export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onReady,onNear,onMetrics,opening,crafting,appearing,reduced,resetToken,paused,onLockChange,inspection}){
+ const openingClock=useRef(0);
+ useEffect(()=>{openingClock.current=0},[opening]);
  const [visible,setVisible]=useState(!document.hidden);
  useEffect(()=>{const changed=()=>setVisible(!document.hidden);document.addEventListener('visibilitychange',changed);return()=>document.removeEventListener('visibilitychange',changed)},[]);
  const selectedBook=books.find(b=>b.id===selected);
- return <Canvas frameloop={visible&&!paused?'always':'demand'} shadows="percentage" dpr={[1,1.5]} camera={{position:HOME.toArray(),fov:layout.home.fov,near:.06,far:60}} gl={{antialias:true,powerPreference:'high-performance'}} onCreated={({gl})=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.08;gl.shadowMap.type=THREE.PCFShadowMap}}>
+ return <Canvas frameloop={visible&&!paused?'always':'demand'} shadows="percentage" dpr={[1,1.5]} camera={{position:HOME.toArray(),fov:layout.home.fov,near:.06,far:60}} gl={{antialias:true,powerPreference:'high-performance'}} onCreated={({gl})=>{gl.info.autoReset=false;gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.08;gl.shadowMap.type=THREE.PCFShadowMap}}>
   <color attach="background" args={['#101922']}/><fog attach="fog" args={['#24201e',14,32]}/>
   <ambientLight intensity={.10} color="#8694aa"/>
   <hemisphereLight args={['#75859d','#49301e',.30]}/>
@@ -238,15 +263,16 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
   <pointLight position={[4.05,2.55,-2.95]} color="#ffd09e" intensity={4.6} distance={7}/>
   <Suspense fallback={null}>
    <Room onReady={onReady}/>
-   {books.filter(b=>b.slot!==null&&b.id!==crafting?.id).map(b=><ProjectBook key={b.id} book={b} index={b.slot} onSelect={onSelect} selected={selected===b.id} opening={opening&&selected===b.id} reduced={reduced} appearing={appearing===b.id}/>)}
+   {books.filter(b=>b.slot!==null&&b.id!==crafting?.id).map(b=><ProjectBook key={b.id} book={b} index={b.slot} onSelect={onSelect} selected={selected===b.id} opening={opening&&selected===b.id} reduced={reduced} appearing={appearing===b.id} openingClock={openingClock}/>)}
    <MagicTable onCreate={onCreate} crafting={crafting} reduced={reduced}/>
    {crafting&&<CreatingBook key={crafting.id} book={crafting}/>}
-   <OpeningHands active={opening&&!reduced} bookIndex={selectedBook?.slot}/>
+   {opening&&!reduced&&<OpeningHands clock={openingClock} bookIndex={selectedBook?.slot}/>}
   </Suspense>
   {!reduced&&<Sparkles count={35} scale={[8,3.2,8]} position={[0,1.7,0]} size={1.4} speed={.07} color="#d6cdb0" opacity={.20}/>}
-  <CameraRig mode={mode} selected={selected} books={books} onMode={setMode} onNear={onNear} opening={opening} resetToken={resetToken} reduced={reduced} onLockChange={onLockChange}/>
+  <OpeningClock active={opening} clock={openingClock} inspection={inspection}/>
+  <CameraRig mode={mode} selected={selected} books={books} onMode={setMode} onNear={onNear} opening={opening} resetToken={resetToken} reduced={reduced} onLockChange={onLockChange} inspection={inspection}/>
   <Performance onMetrics={onMetrics}/>
   <EffectComposer multisampling={4}><Bloom luminanceThreshold={1.4} intensity={.24} mipmapBlur/><Vignette eskil={false} offset={.23} darkness={.34}/></EffectComposer>
  </Canvas>;
 }
-useGLTF.preload('/assets/models/library-room.glb');useGLTF.preload('/assets/models/story-book.glb');useGLTF.preload('/assets/models/opening-hands.glb');
+useGLTF.preload('/assets/models/library-room.glb');useGLTF.preload('/assets/models/story-book.glb');

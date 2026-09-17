@@ -1,0 +1,82 @@
+[
+  {
+    "file": "live-before-lifecycle-fix/000.png",
+    "elapsed": 0.511
+  },
+  {
+    "file": "live-before-lifecycle-fix/001.png",
+    "elapsed": 0.73
+  },
+  {
+    "file": "live-before-lifecycle-fix/002.png",
+    "elapsed": 0.874
+  },
+  {
+    "file": "live-before-lifecycle-fix/003.png",
+    "elapsed": 1.032
+  },
+  {
+    "file": "live-before-lifecycle-fix/004.png",
+    "elapsed": 1.206
+  },
+  {
+    "file": "live-before-lifecycle-fix/005.png",
+    "elapsed": 1.417
+  },
+  {
+    "file": "live-before-lifecycle-fix/006.png",
+    "elapsed": 1.697
+  },
+  {
+    "file": "live-before-lifecycle-fix/007.png",
+    "elapsed": 1.855
+  },
+  {
+    "file": "live-before-lifecycle-fix/008.png",
+    "elapsed": 1.98
+  },
+  {
+    "file": "live-before-lifecycle-fix/009.png",
+    "elapsed": 2.119
+  },
+  {
+    "file": "live-before-lifecycle-fix/010.png",
+    "elapsed": 2.264
+  },
+  {
+    "file": "live-before-lifecycle-fix/011.png",
+    "elapsed": 2.414
+  },
+  {
+    "file": "live-before-lifecycle-fix/012.png",
+    "elapsed": 2.604
+  },
+  {
+    "file": "live-before-lifecycle-fix/013.png",
+    "elapsed": 2.77
+  },
+  {
+    "file": "live-before-lifecycle-fix/014.png",
+    "elapsed": 2.898
+  },
+  {
+    "file": "live-before-lifecycle-fix/015.png",
+    "elapsed": 3.041
+  },
+  {
+    "file": "live-before-lifecycle-fix/016.png",
+    "elapsed": 3.206
+  },
+  {
+    "file": "live-before-lifecycle-fix/017.png",
+    "elapsed": 3.367
+  },
+  {
+    "file": "live-before-lifecycle-fix/018.png",
+    "elapsed": 3.545
+  },
+  {
+    "file": "live-before-lifecycle-fix/019.png",
+    "elapsed": 3.772
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "manifest_hashes": true,
+  "production_assets_identical": [
+    "public/assets/models/library-room.glb",
+    "public/assets/models/opening-hands.glb",
+    "public/assets/models/story-book.glb",
+    "public/assets/models/writer-hands.glb",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/sculpted-plaster.png",
+    "public/assets/textures/sculpted-wood.png"
+  ],
+  "review_html_shipped": false
+}

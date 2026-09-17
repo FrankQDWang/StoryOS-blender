@@ -1,0 +1,16 @@
+/Users/frankqdwang/MLE/StoryOS-blender/scripts/build_opening_hands.py:21: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+12:30:06 | INFO: Starting glTF 2.0 export
+12:30:06 | INFO: Extracting primitive: LeftPalm
+12:30:06 | INFO: Primitives created: 4
+12:30:06 | INFO: Extracting primitive: RightPalm
+12:30:06 | INFO: Primitives created: 4
+12:30:06 | INFO: Finished glTF 2.0 export in 0.0520319938659668 s
+
+Info: Saved as "writer-hands.blend"
+WRITER_HANDS_READY
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit
