@@ -1,0 +1,43 @@
+{
+  "snapshot_stage": "After PR merge and branch cleanup; before committing the final documentation record.",
+  "implementation_commit": "e4c64343b5c85fdadf8da407dc03ea92480d94a0",
+  "merge_commit": "cf30f17b73f3eb4a390a4910e9fd63acd5fbe9ea",
+  "pr_url": "https://github.com/FrankQDWang/StoryOS-blender/pull/3",
+  "local_branches": [
+    "main"
+  ],
+  "remote_heads": [
+    "cf30f17b73f3eb4a390a4910e9fd63acd5fbe9ea\trefs/heads/main"
+  ],
+  "ahead_behind": "0\t0",
+  "worktree_clean": true,
+  "approved_file_count": 87,
+  "runtime_asset_changes_since_approval": [],
+  "documentation_only_updates": [
+    "design/round-07-wizard-robes/README.md"
+  ],
+  "tags_preserved": true,
+  "detached_worktrees_preserved": [
+    {
+      "path": "/Users/frankqdwang/.codex/worktrees/17bf/StoryOS-blender",
+      "head": "26e1d6b194d35ae242a976e6879ee21ff3b9b278",
+      "status_unchanged": true
+    },
+    {
+      "path": "/Users/frankqdwang/.codex/worktrees/e746/StoryOS-blender",
+      "head": "26e1d6b194d35ae242a976e6879ee21ff3b9b278",
+      "status_unchanged": true
+    },
+    {
+      "path": "/Users/frankqdwang/.codex/worktrees/f9b4/StoryOS-blender",
+      "head": "26e1d6b194d35ae242a976e6879ee21ff3b9b278",
+      "status_unchanged": true
+    },
+    {
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/.worktrees/baseline",
+      "head": "546b7504388f961333ff2012bacd33f19c618c1a",
+      "status_unchanged": true
+    }
+  ],
+  "remote_ci": "No GitHub Actions workflow; Sourcery review SKIPPED because PR has more than 300 files, not counted as a passed review."
+}

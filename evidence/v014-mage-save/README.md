@@ -8,4 +8,10 @@
 - `build.log`：保存前生产构建通过，既有大分块提示保持。
 - `assets.log`：15项manifest、20份来源文件、4张服装纹理和13份public生产产物一致性通过。
 
-六张第三方服装参考原图留在本机原位置并精确忽略，来源、哈希和研究文字入库。现有选图、源模型、原创纹理、各轮验证以及被拒方案的历史证据完整保存。本轮不再调整用户已认可画面。最终PR、merge、分支清理与同步结果在完成后追加，PLAN当前交接为状态入口。
+六张第三方服装参考原图留在本机原位置并精确忽略，来源、哈希和研究文字入库。现有选图、源模型、原创纹理、各轮验证以及被拒方案的历史证据完整保存。本轮不再调整用户已认可画面。
+
+## 保存结果
+
+[PR #3](https://github.com/FrankQDWang/StoryOS-blender/pull/3)已合并；成果提交`e4c64343b5c85fdadf8da407dc03ea92480d94a0`，合并提交`cf30f17b73f3eb4a390a4910e9fd63acd5fbe9ea`。本地与远端`codex/midnight-mage-hands`均已删除，只有main，三方SHA相同、ahead/behind为0/0、根工作区干净。三个历史标签与四个detached worktree的HEAD/草稿状态保持。
+
+`pr-before-merge.json`、`pr-merged.json`是实际GitHub返回；没有仓库Actions工作流，Sourcery因650文件超过API限制而SKIPPED，不称远端审查通过。`merge-and-cleanup.json`是合并、同步、删除分支后且收尾文档提交前的快照；本README与PLAN随后在main保存并再次push，最终状态以Git引用为准，避免文件自引用其所属提交SHA。
