@@ -7,6 +7,10 @@ from pathlib import Path
 import bpy, bmesh, json, math, hashlib, sys
 from mathutils import Vector, Matrix, Quaternion
 ROOT=Path(__file__).resolve().parents[1]
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(ROOT/'scripts'))
+from midnight_robe import build_robe, bake_robe_deformation
+from refine_mage_hands import refine_hand_shape, configure_hand_material, add_hand_correctives, bake_hand_correctives, HAND_REFINEMENT_METADATA
 # Mesh dimensions are authored for the first lectern; runtime cancels other book scales.
 ANATOMY=json.loads((ROOT/'apps/web/src/opening-anatomy.json').read_text())
 REFERENCE_BOOK_SCALE=ANATOMY['referenceBookScale']
@@ -25,14 +29,12 @@ def material(name,color,roughness):
  return m
 skin=material('Human skin',(.50,.285,.18),.69)
 skin.node_tree.nodes.get('Principled BSDF').inputs['Subsurface Weight'].default_value=.07
-cloth=material('Slate woven sleeve',(.035,.060,.064),.88)
-trim=material('Cuff facing',(.052,.082,.086),.82)
 texture=bpy.data.images.load(str(ROOT/'assets/vendor/makehuman/Aksel_Skin_diffuse.png'))
-texture.scale(2048,2048);texture.pack()
+texture.pack()
 tex=skin.node_tree.nodes.new('ShaderNodeTexImage');tex.image=texture
 skin.node_tree.links.new(tex.outputs['Color'],skin.node_tree.nodes.get('Principled BSDF').inputs['Base Color'])
 # Fingernails are part of the original human topology/UV, not added primitive meshes.
-hands=[]
+hands=[];shape_changes=[];corrective_setup=[]
 for side,label in [('R','Right'),('L','Left')]:
  wrist=source_rig.data.bones['wrist.'+side].head_local.copy()
  forward=(source_rig.data.bones['finger3-1.'+side].head_local-wrist).normalized()
@@ -55,7 +57,7 @@ for side,label in [('R','Right'),('L','Left')]:
  obj=source.copy();obj.data=body.copy();bpy.context.collection.objects.link(obj);obj.name=label+'Skin';obj.parent=arm
  obj.modifiers.clear();obj.data.transform(transform)
  bm=bmesh.new();bm.from_mesh(obj.data)
- # Side cut excludes the rest of the body; original hands remain unmodified.
+ # Side cut excludes the rest of the body, retaining the original hand topology.
  bmesh.ops.delete(bm,geom=[v for v in bm.verts if v.co.y < -.13 or v.co.y>.30 or abs(v.co.x)>.20 or abs(v.co.z)>.18],context='VERTS')
  bm.to_mesh(obj.data);bm.free()
  keep={b.name for b in arm.data.bones}
@@ -67,6 +69,7 @@ for side,label in [('R','Right'),('L','Left')]:
   if missing:root_group.add([v.index],missing,'ADD')
  for g in list(obj.vertex_groups):
   if g.name not in keep:obj.vertex_groups.remove(g)
+ shape_changes.append(refine_hand_shape(obj,arm,side))
  obj.data.materials.clear();obj.data.materials.append(skin)
  for f in obj.data.polygons:f.use_smooth=True
  modifier=obj.modifiers.new('Original MakeHuman skinning','ARMATURE');modifier.object=arm
@@ -76,31 +79,17 @@ for side,label in [('R','Right'),('L','Left')]:
  # Apply before export while retaining the source deformation weights.
  obj.modifiers.move(len(obj.modifiers)-1,0)
  bpy.ops.object.modifier_apply(modifier=sub.name)
- direction=arm.data.bones['lowerarm02.'+side].head_local.normalized()
- # Sleeve has a quiet tailored taper and two inset cuff rows, ending behind the wrist.
- verts=[];faces=[];rings=[(1.20,.087,.080),(.65,.085,.076),(.40,.077,.067),(.30,.073,.061),(.22,.064,.054),(.145,.053,.044),(.107,.046,.038),(.10,.046,.038)]
- axis=-direction;xx=Vector((1,0,0));xx=(xx-axis*xx.dot(axis)).normalized();zz=xx.cross(axis)
- for j,(distance,w,d) in enumerate(rings):
-  center=direction*distance
-  for i in range(24):
-   a=i*math.tau/24;ripple=1+.025*math.sin(3*a+j*.6)
-   verts.append(center+xx*math.cos(a)*w*ripple+zz*math.sin(a)*d*ripple)
- for j in range(len(rings)-1):
-  for i in range(24):faces.append((j*24+i,j*24+(i+1)%24,(j+1)*24+(i+1)%24,(j+1)*24+i))
- mesh=bpy.data.meshes.new(label+'Sleeve');mesh.from_pydata(verts,[],faces);mesh.materials.append(cloth);mesh.materials.append(trim)
- sleeve=bpy.data.objects.new(label+'Sleeve',mesh);bpy.context.collection.objects.link(sleeve);sleeve.parent=arm
- for p in mesh.polygons:p.use_smooth=True;p.material_index=int(p.index>=24*(len(rings)-3))
- vg=sleeve.vertex_groups.new(name='lowerarm02.'+side);vg.add(list(range(len(verts))),1,'REPLACE')
- mod=sleeve.modifiers.new('Forearm','ARMATURE');mod.object=arm
- hands.append((arm,obj,sleeve))
+ corrective_setup.append(add_hand_correctives(obj,arm,side))
+ robes=build_robe(arm,side,label,ROOT)
+ hands.append((arm,obj,robes))
 # Remove body and helpers, retaining only both real hand/forearm meshes and rigs.
-keep={o for parts in hands for o in parts}
+keep={o for arm,mesh,robes in hands for o in [arm,mesh,*robes]}
 for obj in list(bpy.data.objects):
  if obj not in keep:bpy.data.objects.remove(obj,do_unlink=True)
-# Repack only the used hand skin into a 1K atlas; the full-body source stays offline.
+# Repack only the used hand skin; the full-body source stays offline.
 uvnode=skin.node_tree.nodes.new('ShaderNodeUVMap');uvnode.uv_map='SourceUV'
 skin.node_tree.links.new(uvnode.outputs['UV'],tex.inputs['Vector'])
-atlas=bpy.data.images.new('MakeHuman hand atlas',width=1024,height=1024,alpha=False)
+atlas=bpy.data.images.new('MakeHuman hand atlas',width=2048,height=2048,alpha=False)
 atlas_node=skin.node_tree.nodes.new('ShaderNodeTexImage');atlas_node.image=atlas
 skin.node_tree.nodes.active=atlas_node
 bpy.ops.object.select_all(action='DESELECT')
@@ -114,108 +103,57 @@ bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_all(action='SELECT')
 bpy.ops.uv.smart_project(angle_limit=1.15,island_margin=.012)
 bpy.ops.object.mode_set(mode='OBJECT')
 bpy.context.scene.render.engine='CYCLES';bpy.context.scene.cycles.samples=1
-bpy.context.scene.render.bake.margin=8
+bpy.context.scene.render.bake.margin=12
 bpy.ops.object.bake(type='DIFFUSE',pass_filter={'COLOR'})
 atlas.filepath_raw=str(ROOT/'assets/source/makehuman-hands-color.png');atlas.file_format='PNG';atlas.save();atlas.pack()
 tex.image=atlas;uvnode.uv_map='HandAtlas';skin.node_tree.nodes.remove(atlas_node);bpy.data.images.remove(texture)
+surface_changes=configure_hand_material(skin,ROOT)
 for arm,mesh,sleeve in hands:mesh.data.uv_layers.remove(mesh.data.uv_layers['SourceUV'])
+# Keep the lossless authored atlas offline; embed a JPEG colour derivative.
+# Normal/roughness maps remain PNG so tangent-space data is not JPEG-compressed.
+runtime_atlas=atlas.copy();runtime_atlas.filepath_raw=str(ROOT/'assets/source/makehuman-hands-color.jpg')
+runtime_atlas.file_format='JPEG';runtime_atlas.save()
+bpy.data.images.remove(runtime_atlas)
+runtime_atlas=bpy.data.images.load(str(ROOT/'assets/source/makehuman-hands-color.jpg'));runtime_atlas.pack()
+tex.image=runtime_atlas
 
-# Bake authored reach, support, lift, release and retreat onto the original bones.
-def ease(t,a,b):
- u=max(0,min(1,(t-a)/(b-a)));return u*u*(3-2*u)
-def angle(t):
- return SEQUENCE['coverLift'][2]*ease(t,*SEQUENCE['coverLift'][:2])+SEQUENCE['coverSettle'][2]*ease(t,*SEQUENCE['coverSettle'][:2])
-def pose(arm,side,t):
- right=side=='R';reach=ease(t,*SEQUENCE['reach']);release=ease(t,*SEQUENCE['release'])
- retreat=ease(t,*SEQUENCE['retreat']) if right else ease(t,*SEQUENCE['supportRetreat'])
- grip=ease(t,*SEQUENCE['grip'])*(1-release if right else 1-ease(t,*SEQUENCE['supportRelease']))
- a=angle(min(t,SEQUENCE['coverLift'][1])) if right else 0
- cover=Matrix.Rotation(-a,4,'Y')
- # A lateral pinch: palm faces the fore-edge, thumb above the outer cover,
- # curled finger pads beneath it. The hand's long axis stays toward the book.
- lift_pose=ease(t,.90,1.70)
- r=cover @ Matrix.Rotation(1.30+.328*lift_pose,4,'Y') @ Matrix.Rotation(-.58+1.0*lift_pose,4,'Z') @ Matrix.Rotation(.322*lift_pose,4,'X') if right else Matrix.Rotation(-.90,4,'Y')
- contact=Vector((.48,-.425,.215)) if right else Vector((-.455,-.61,.17))
- hinge=Vector((-.365,0,.17))
- wrist=hinge+cover@(contact-hinge) if right else contact
- if right:
-  wrist += Vector((.22*release+.62*retreat,-.18*release-.70*retreat,-.22*release-.72*retreat))
-  relaxed=Matrix.Rotation(.30,4,'Y') @ Matrix.Rotation(.10,4,'Z')
-  r=r.to_quaternion().slerp(relaxed.to_quaternion(),ease(t,1.86,3.15)).to_matrix().to_4x4()
- else:
-  wrist += Vector((-.17*retreat,-.43*retreat,-.30*retreat))
- wrist+=Vector(((.16 if right else -.10)*(1-reach),-.54*(1-reach),-.28*(1-reach)))
- fore=arm.pose.bones['lowerarm02.'+side];rest=fore.bone
- # Keep the right elbow on the character's right as the hand crosses the book.
- elbow=Vector((.55 if right else -.64,-1.03-.54*(1-reach)-.44*retreat,.08 if right else wrist.z*.25-.12))
- if right:
-  lift=ease(t,SEQUENCE['coverLift'][0],1.65)*(1-retreat)
-  elbow=elbow.lerp(Vector((.40,-.90,wrist.z-.25)),lift)
- direction=(wrist-elbow).normalized()
- restdir=(rest.tail_local-rest.head_local).normalized()
- rotation=restdir.rotation_difference(direction).to_matrix().to_4x4()
- # Share pronation through the forearm instead of twisting all of it at the wrist seam.
- current=rotation@Vector((0,0,1));desired=r@Vector((0,0,1))
- current=(current-direction*current.dot(direction)).normalized()
- desired=(desired-direction*desired.dot(direction)).normalized()
- twist=math.atan2(direction.dot(current.cross(desired)),current.dot(desired))
- rotation=Matrix.Rotation(twist*.75,4,direction)@rotation
- fore.matrix=Matrix.Translation(wrist-direction*rest.length) @ rotation @ rest.matrix_local.to_3x3().to_4x4()
- bpy.context.view_layer.update()
- wb=arm.pose.bones['wrist.'+side]
- wb.matrix=Matrix.Translation(wrist) @ r @ wb.bone.matrix_local.to_3x3().to_4x4()
- bpy.context.view_layer.update()
- for digit in range(1,6):
-  for joint in range(1,4):
-   b=arm.pose.bones[f'finger{digit}-{joint}.{side}']
-   local=b.bone.matrix_local.to_quaternion().inverted()
-   if right:
-    # Individual grip curves avoid four straight parallel fingers and a rigid thumb.
-    idle={1:[.18,.18,.12],2:[.08,.12,.05],3:[.10,.15,.07],4:[.16,.22,.10],5:[.23,.30,.14]}[digit][joint-1]
-    closed={1:[.16,.22,.14],2:[.48,.90,.34],3:[.54,1.00,.40],4:[.63,1.09,.45],5:[.69,1.12,.50]}[digit][joint-1]
-    lifted={1:[.066,.296,.480],2:[1.254,1.228,.126],3:[.358,.914,.868],4:[.60,1.05,.65],5:[.75,1.10,.65]}[digit][joint-1]
-    closed=closed+(lifted-closed)*lift_pose
-    bend=idle+(closed-idle)*grip
-   elif digit==1:
-    bend=[.10,.10,.06][joint-1]+grip*[.04,.06,.04][joint-1]
-   else:
-    idle={2:[.05,.05,.02],3:[.05,.06,.03],4:[.10,.12,.06],5:[.18,.22,.12]}[digit][joint-1]
-    close={2:[.03,.04,.03],3:[.03,.03,.02],4:[.02,.03,.02],5:[.05,.05,.03]}[digit][joint-1]
-    bend=idle+grip*close
-   b.rotation_mode='QUATERNION';b.rotation_quaternion=Quaternion(local@Vector((-1,0,0)),bend)
-   if digit==1 and joint==1:
-    opposition=(.32+((.22-.47*lift_pose)-.32)*grip) if right else .03*grip
-    b.rotation_quaternion=Quaternion(local@Vector((0,-1 if right else 1,0)),opposition)@b.rotation_quaternion
-   if digit>1 and joint==1:
-    spread=({2:-.035,3:0,4:.035,5:.075}[digit] if right else -{2:-.055,3:0,4:.055,5:.16}[digit])
-    if right and digit in (2,3):spread*=1-lift_pose*grip
-    b.rotation_quaternion=Quaternion(local@Vector((0,0,1)),spread)@b.rotation_quaternion
- if right:
-  # Place the thumb pad on the outer cover before baking. Wrist placement is
-  # derived from the posed finger, so changing palm pitch cannot leave a gap.
-  bpy.context.view_layer.update()
-  target=hinge+cover@(Vector((.365,-.32,.239))-hinge)
-  target+=Vector((.22*release+.62*retreat+.16*(1-reach),-.18*release-.70*retreat-.54*(1-reach),-.22*release-.72*retreat-.28*(1-reach)))
-  delta=target-arm.pose.bones['finger1-3.R'].tail
-  fm=fore.matrix.copy();wm=wb.matrix.copy()
-  fm.translation+=delta;wm.translation+=delta
-  fore.matrix=fm;bpy.context.view_layer.update();wb.matrix=wm
-  bpy.context.view_layer.update()
- for b in arm.pose.bones:
-  b.rotation_mode='QUATERNION'
-  b.keyframe_insert(data_path='location',frame=round(t*SEQUENCE['fps']))
-  b.keyframe_insert(data_path='rotation_quaternion',frame=round(t*SEQUENCE['fps']))
-  b.keyframe_insert(data_path='scale',frame=round(t*SEQUENCE['fps']))
+from mage_opening_motion import pose
 scene=bpy.context.scene;scene.render.fps=SEQUENCE['fps'];scene.frame_start=0;scene.frame_end=round(SEQUENCE['duration']*SEQUENCE['fps'])
 for arm,mesh,sleeve in hands:
- for frame in range(scene.frame_end+1):pose(arm,'R' if arm.name.startswith('Right') else 'L',frame/SEQUENCE['fps'])
+ for frame in range(scene.frame_end+1):
+  side='R' if arm.name.startswith('Right') else 'L'
+  pose(arm,side,frame/SEQUENCE['fps'])
+  bake_hand_correctives(mesh,arm,side,frame)
  arm.animation_data.action.name='OpenBook'+arm.name
+cloth_changes=[bake_robe_deformation(arm,robes,fps=SEQUENCE['fps'],frame_start=0,frame_end=scene.frame_end,root=ROOT) for arm,mesh,robes in hands]
 scene.frame_set(0)
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'assets/source/makehuman-hands.blend'))
-bpy.ops.export_scene.gltf(filepath=str(ROOT/'public/assets/models/makehuman-hands.glb'),export_format='GLB',export_image_format='JPEG',export_jpeg_quality=88,use_selection=True,export_apply=False,export_animations=True,export_animation_mode='ACTIVE_ACTIONS',export_force_sampling=True,export_frame_range=True,export_skins=True,export_all_influences=False,export_cameras=False,export_lights=False)
+bpy.ops.export_scene.gltf(filepath=str(ROOT/'public/assets/models/makehuman-hands.glb'),export_format='GLB',export_image_format='AUTO',export_jpeg_quality=88,use_selection=True,export_apply=False,export_morph_normal=False,export_animations=True,export_animation_mode='ACTIVE_ACTIONS',export_force_sampling=True,export_frame_range=True,export_skins=True,export_all_influences=False,export_cameras=False,export_lights=False)
 provenance_path=ROOT/'assets/source/makehuman-hands.json'
 provenance=json.loads(provenance_path.read_text())
+provenance['atlas']=[2048,2048]
+provenance['visual_target']='design/round-07-wizard-robes/02-midnight-tower-mage.png'
+provenance['shape_refinement']=shape_changes
+provenance['surface_refinement']=surface_changes
+provenance['hand_refinement_design']=HAND_REFINEMENT_METADATA
+provenance['skin_correctives']=corrective_setup
+provenance['cloth_deformation']=cloth_changes
+provenance['costume']='assets/source/midnight-robe-provenance.json'
+provenance['adaptations']=[
+ 'CC0 MakeHuman topology and original weights retained; source UV correspondence rebaked into HandAtlas; one subdivision',
+ 'Anatomical dorsal/palmar sculpt and five flexion-driven skin corrective morphs per hand',
+ '0.195 m hand length at reference book scale 0.824; runtime cancels per-lectern book scaling',
+ 'Single midnight-blue lined robe with celestial embroidery; rejected teal inner sleeve removed',
+ '2K hand-only color atlas, roughness and subtle normal detail; standard glTF material channels',
+ 'Large-folio lower-edge support opening authored for existing 3.5 s cover/page timing; 24 gravity/inertia cloth bones per arm',
+ 'Proximal camera sleeve remains a proxy, not a complete shoulder/elbow body'
+]
+extra=[ROOT/'scripts/mage_opening_motion.py',ROOT/'scripts/refine_mage_hands.py',ROOT/'scripts/midnight_robe.py',ROOT/'assets/source/makehuman-hands-color.jpg',*sorted((ROOT/'assets/source').glob('mage-hand-*.png')),*sorted((ROOT/'assets/source').glob('mage-hand-*.jpg')),*(ROOT/entry['path'] for entry in json.loads((ROOT/'assets/source/midnight-robe-provenance.json').read_text())['textures']),ROOT/'assets/source/midnight-robe-provenance.json']
+provenance['files']=[entry for entry in provenance['files'] if entry['path']!='assets/source/midnight-robe-inner-jacquard-color.png']
+known={entry['path'] for entry in provenance['files']}
+for path in extra:
+ if path.exists() and str(path.relative_to(ROOT)) not in known:provenance['files'].append({'path':str(path.relative_to(ROOT))})
 for entry in provenance['files']:
  data=(ROOT/entry['path']).read_bytes();entry.update(bytes=len(data),sha256=hashlib.sha256(data).hexdigest())
 provenance['generator_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()

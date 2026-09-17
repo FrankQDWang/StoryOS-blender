@@ -40,7 +40,7 @@ test('shipped hands keep one human size across lecterns without moving the grip 
   root.position.fromArray(slot.position);root.rotation.set(slot.pitch,slot.yaw,0,'YXZ');root.scale.setScalar(slot.scale);
   const mixer=new AnimationMixer(object);for(const clip of loaded.animations)mixer.clipAction(clip).play();mixer.setTime(1.3);
   const arms=['Right','Left'].map(side=>{
-   const arm=object.getObjectByName(`${side}Hand`),contact=arm.getObjectByName(PropertyBinding.sanitizeNodeName(`finger1-3.${side[0]}`));
+   const arm=object.getObjectByName(`${side}Hand`),contact=arm.getObjectByName(PropertyBinding.sanitizeNodeName(side==='Right'?'finger3-3.R':'finger1-3.L'));
    assert.ok(arm&&contact);return {arm,contact,point:new Vector3()};
   });
   root.updateMatrixWorld(true);const contacts=arms.map(a=>a.contact.getWorldPosition(new Vector3()));
@@ -68,9 +68,15 @@ test('MakeHuman hands retain complete weighted anatomy and a synchronized baked 
  const animated=new Set(clip.channels.map(c=>c.target.node));
  for(const skin of gltf.skins)for(const joint of skin.joints)assert.ok(animated.has(joint),'joint missing from the baked clip');
  for(const sampler of clip.samplers){const time=gltf.accessors[sampler.input];assert.deepEqual(time.min,[0]);assert.deepEqual(time.max,[OPENING_SECONDS]);}
- assert.ok(bytes.length<1500000,'hand asset exceeds 1.5 MB budget');
+ // Layered lined robes and skin/cloth surface maps have a 4 MB combined
+ // budget; keep a hard bound even though the former plain sleeves were 1.5 MB.
+ assert.ok(bytes.length<4000000,'hands and layered robes exceed 4 MB budget');
+ const skinMaterial=gltf.materials.find(m=>m.name==='Human skin');
+ assert.ok(skinMaterial.normalTexture&&skinMaterial.pbrMetallicRoughness.metallicRoughnessTexture,'skin detail maps lost in export');
+ const normalImage=gltf.images[gltf.textures[skinMaterial.normalTexture.index].source];
+ assert.equal(normalImage.mimeType,'image/png','skin normal must remain lossless');
  const read=(index)=>{
-  const a=gltf.accessors[index],view=gltf.bufferViews[a.bufferView],n={SCALAR:1,VEC4:4}[a.type];
+  const a=gltf.accessors[index],view=gltf.bufferViews[a.bufferView],n={SCALAR:1,VEC3:3,VEC4:4}[a.type];
   const scalarBytes={5121:1,5123:2,5126:4}[a.componentType];
   assert.ok(n&&scalarBytes);
   return Array.from({length:a.count},(_,i)=>Array.from({length:n},(_,j)=>{
@@ -78,10 +84,27 @@ test('MakeHuman hands retain complete weighted anatomy and a synchronized baked 
    return scalarBytes===4?bytes.readFloatLE(at):scalarBytes===2?bytes.readUInt16LE(at):bytes.readUInt8(at);
   }));
  };
+ assert.ok(!gltf.nodes.some(n=>n.name?.includes('InnerSleeve')),'rejected fitted sleeve returned');
+ // Exercise the exported changes, not only the presence of authoring controls.
+ for(const side of ['R','L']){
+  const clothNodes=new Set(gltf.nodes.map((n,i)=>n.name?.startsWith('robe_')&&n.name.endsWith('.'+side)?i:-1).filter(i=>i>=0));
+  const motion=clip.channels.filter(c=>clothNodes.has(c.target.node)&&c.target.path==='translation');
+  assert.ok(motion.some(c=>{
+   const values=read(clip.samplers[c.sampler].output);
+   return [0,1,2].some(axis=>Math.max(...values.map(v=>v[axis]))-Math.min(...values.map(v=>v[axis]))>.005);
+  }),'sleeve exported as a rigid forearm tube');
+  const node=gltf.nodes.findIndex(n=>n.name===(side==='R'?'RightSkin':'LeftSkin'));
+  const channel=clip.channels.find(c=>c.target.node===node&&c.target.path==='weights');
+  assert.ok(channel,'skin flexion correction lost in export');
+  const values=read(clip.samplers[channel.sampler].output).flat();
+  assert.ok(Math.max(...values)-Math.min(...values)>.025,'skin corrective is static');
+  assert.ok(values.every(v=>v>=0&&v<=1),'skin corrective weight outside its safe range');
+ }
  for(const node of gltf.nodes.filter(n=>n.mesh!==undefined)){
   assert.ok(node.skin!==undefined,'unskinned hand piece');
   const rig=gltf.skins[node.skin],names=rig.joints.map(i=>gltf.nodes[i].name);
-  assert.equal(names.length,21);
+  assert.equal(names.filter(n=>!n.startsWith('robe_')).length,21,'human anatomy changed unexpectedly');
+  assert.ok(names.some(n=>n.startsWith('robe_')),'cloth deformation rig missing');
   assert.ok(names.some(n=>n.startsWith('wrist.')));
   assert.ok(names.some(n=>n.startsWith('lowerarm02.')));
   for(let digit=1;digit<=5;digit++)for(let i=1;i<=3;i++)assert.ok(names.some(n=>n.startsWith(`finger${digit}-${i}.`)));

@@ -1,0 +1,14 @@
+00:00.596  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/source/makehuman-hands.blend"
+0.8 0.0 wrist-axis 47.1 index-middle cm 4.72 edgewise diff 3.09
+1.0 7.5 wrist-axis 53.9 index-middle cm 4.7 edgewise diff 2.68
+1.3 41.1 wrist-axis 43.8 index-middle cm 5.46 edgewise diff 2.29
+1.5 66.6 wrist-axis 34.7 index-middle cm 6.71 edgewise diff 5.74
+1.7 84.8 wrist-axis 34.3 index-middle cm 7.31 edgewise diff 6.9
+1.8333333333333333 88.8 wrist-axis 35.2 index-middle cm 7.08 edgewise diff 6.75
+1.9333333333333333 92.6 wrist-axis 36.1 index-middle cm 5.85 edgewise diff 4.91
+2.1 110.0 wrist-axis 39.4 index-middle cm 4.52 edgewise diff 2.57
+2.3 137.2 wrist-axis 45.0 index-middle cm 4.52 edgewise diff 2.36
+2.6 155.8 wrist-axis 59.6 index-middle cm 4.52 edgewise diff 1.9
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

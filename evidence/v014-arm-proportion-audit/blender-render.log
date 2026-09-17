@@ -1,0 +1,10 @@
+00:00.574  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/source/makehuman-hands.blend"
+/Users/frankqdwang/MLE/StoryOS-blender/evidence/v014-arm-proportion-audit/render-orthographic.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True
+/Users/frankqdwang/MLE/StoryOS-blender/evidence/v014-arm-proportion-audit/render-orthographic.py:48: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Audit world');scene.world.use_nodes=True
+00:08.996  render           | Saved: '/Users/frankqdwang/MLE/StoryOS-blender/evidence/v014-arm-proportion-audit/orthographic-current-vs-source.png'
+AUDIT_RENDER_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

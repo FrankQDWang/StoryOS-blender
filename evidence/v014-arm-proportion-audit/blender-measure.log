@@ -1,0 +1,830 @@
+00:02.729  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/source/makehuman-hands.blend"
+00:02.827  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/vendor/makehuman/base-human.blend"
+{
+  "current": {
+    "Right": {
+      "hand_length_cm": 19.50000375509262,
+      "palm_width_cm": 9.307881817221642,
+      "skin_sections": [
+        {
+          "distance_proximal_from_wrist_m": 0,
+          "width_m": 0.052089103387515934,
+          "thickness_m": 0.037178040865500285,
+          "intersection_count": 46,
+          "width_min_m": -0.026359045592471375,
+          "width_max_m": 0.02573005779504456,
+          "thickness_min_m": -0.01788765575103705,
+          "thickness_max_m": 0.019290385114463234
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.01,
+          "width_m": 0.05040626771096868,
+          "thickness_m": 0.03905798509283899,
+          "intersection_count": 44,
+          "width_min_m": -0.025398204869816254,
+          "width_max_m": 0.025008062841152423,
+          "thickness_min_m": -0.018992565456350686,
+          "thickness_max_m": 0.0200654196364883
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.02,
+          "width_m": 0.05077966104317966,
+          "thickness_m": 0.04116782115308722,
+          "intersection_count": 42,
+          "width_min_m": -0.0258486687871482,
+          "width_max_m": 0.02493099225603146,
+          "thickness_min_m": -0.020430712961015937,
+          "thickness_max_m": 0.02073710819207128
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.04,
+          "width_m": 0.05301716876010687,
+          "thickness_m": 0.04624247853645094,
+          "intersection_count": 42,
+          "width_min_m": -0.027042192151839117,
+          "width_max_m": 0.025974976608267752,
+          "thickness_min_m": -0.023130352725550193,
+          "thickness_max_m": 0.023112125810900747
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.06,
+          "width_m": 0.055375517673269314,
+          "thickness_m": 0.051932335133134416,
+          "intersection_count": 44,
+          "width_min_m": -0.027746895361815405,
+          "width_max_m": 0.02762862231145391,
+          "thickness_min_m": -0.025659182108315987,
+          "thickness_max_m": 0.026273153024818433
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.0824,
+          "width_m": 0.05746635320065252,
+          "thickness_m": 0.05409675767212935,
+          "intersection_count": 25,
+          "width_min_m": -0.0287969833752868,
+          "width_max_m": 0.02866936982536572,
+          "thickness_min_m": -0.02832845738072994,
+          "thickness_max_m": 0.02576830029139941
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.1,
+          "width_m": 0.059830584774317686,
+          "thickness_m": 0.05071622552432701,
+          "intersection_count": 17,
+          "width_min_m": -0.029978100148582598,
+          "width_max_m": 0.029852484625735087,
+          "thickness_min_m": -0.023819616989526688,
+          "thickness_max_m": 0.02689660853480032
+        }
+      ],
+      "sleeve_sections": [
+        {
+          "distance_proximal_from_wrist_m": 0.0824,
+          "width_m": 0.07580800358846318,
+          "thickness_m": 0.06262400140985847,
+          "intersection_count": 100,
+          "width_min_m": -0.03872990659328934,
+          "width_max_m": 0.03707809699517384,
+          "thickness_min_m": -0.031695775453179094,
+          "thickness_max_m": 0.03092822595667937
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.09,
+          "width_m": 0.07648294635509956,
+          "thickness_m": 0.06320252479054034,
+          "intersection_count": 24,
+          "width_min_m": -0.038627256521067466,
+          "width_max_m": 0.03785568983403209,
+          "thickness_min_m": -0.03231467818657317,
+          "thickness_max_m": 0.03088784660396716
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.1,
+          "width_m": 0.08016716147722036,
+          "thickness_m": 0.06636042054742575,
+          "intersection_count": 24,
+          "width_min_m": -0.04028623773592699,
+          "width_max_m": 0.03988092374129337,
+          "thickness_min_m": -0.0339560126865325,
+          "thickness_max_m": 0.03240440786089325
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.12,
+          "width_m": 0.08749653804443369,
+          "thickness_m": 0.07265067053958774,
+          "intersection_count": 24,
+          "width_min_m": -0.04358799586589157,
+          "width_max_m": 0.04390854217854212,
+          "thickness_min_m": -0.03722201380633326,
+          "thickness_max_m": 0.035428656733254474
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.15,
+          "width_m": 0.09629654401578591,
+          "thickness_m": 0.08065067324787378,
+          "intersection_count": 24,
+          "width_min_m": -0.04763050348992692,
+          "width_max_m": 0.04866604052585899,
+          "thickness_min_m": -0.041184613943758254,
+          "thickness_max_m": 0.03946605930411553
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.2,
+          "width_m": 0.10968401350874046,
+          "thickness_m": 0.09226800501346588,
+          "intersection_count": 24,
+          "width_min_m": -0.05378849694352539,
+          "width_max_m": 0.055895516565215075,
+          "thickness_min_m": -0.04680241457709027,
+          "thickness_max_m": 0.04546559043637561
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.25,
+          "width_m": 0.12052800302262767,
+          "thickness_m": 0.10086400900036097,
+          "intersection_count": 24,
+          "width_min_m": -0.05879905850451905,
+          "width_max_m": 0.06172894451810862,
+          "thickness_min_m": -0.0506908129849577,
+          "thickness_max_m": 0.050173196015403265
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.3,
+          "width_m": 0.12452799988750485,
+          "thickness_m": 0.10686401184648275,
+          "intersection_count": 24,
+          "width_min_m": -0.06079060034971917,
+          "width_max_m": 0.06373739953778568,
+          "thickness_min_m": -0.05321409366411496,
+          "thickness_max_m": 0.05364991818236779
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.4,
+          "width_m": 0.13140159780232352,
+          "thickness_m": 0.11548480205237865,
+          "intersection_count": 24,
+          "width_min_m": -0.06438975789569668,
+          "width_max_m": 0.06701183990662685,
+          "thickness_min_m": -0.05697160213367845,
+          "thickness_max_m": 0.0585131999187002
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.5,
+          "width_m": 0.13780161366594257,
+          "thickness_m": 0.122684795409441,
+          "intersection_count": 24,
+          "width_min_m": -0.06782748899422586,
+          "width_max_m": 0.06997412467171671,
+          "thickness_min_m": -0.06018712743094446,
+          "thickness_max_m": 0.062497667978496534
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.8,
+          "width_m": 0.14200290291773854,
+          "thickness_m": 0.1290938127785921,
+          "intersection_count": 24,
+          "width_min_m": -0.07058957716071745,
+          "width_max_m": 0.07141332575702108,
+          "thickness_min_m": -0.06304715758416465,
+          "thickness_max_m": 0.06604665519442746
+        }
+      ],
+      "sleeve_axis_extent_m": [
+        0.0823999909334816,
+        0.988800055871252
+      ]
+    },
+    "Left": {
+      "hand_length_cm": 19.50000375509262,
+      "palm_width_cm": 9.307881817221642,
+      "skin_sections": [
+        {
+          "distance_proximal_from_wrist_m": 0,
+          "width_m": 0.05208910338842543,
+          "thickness_m": 0.03717804273633089,
+          "intersection_count": 46,
+          "width_min_m": -0.025730057795954053,
+          "width_max_m": 0.026359045592471375,
+          "thickness_min_m": -0.01788765761913917,
+          "thickness_max_m": 0.01929038511719172
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.01,
+          "width_m": 0.05040627527614561,
+          "thickness_m": 0.03905798509283899,
+          "intersection_count": 44,
+          "width_min_m": -0.025008062839333434,
+          "width_max_m": 0.025398212436812173,
+          "thickness_min_m": -0.018992567318995835,
+          "thickness_max_m": 0.02006541777384315
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.02,
+          "width_m": 0.05077966290491531,
+          "thickness_m": 0.04116781929044207,
+          "intersection_count": 42,
+          "width_min_m": -0.02493099225557671,
+          "width_max_m": 0.0258486706493386,
+          "thickness_min_m": -0.020430711098370788,
+          "thickness_max_m": 0.02073710819207128
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.04,
+          "width_m": 0.05301716689780278,
+          "thickness_m": 0.04624247853645094,
+          "intersection_count": 42,
+          "width_min_m": -0.025974976607358258,
+          "width_max_m": 0.027042190290444523,
+          "thickness_min_m": -0.023130352725550193,
+          "thickness_max_m": 0.023112125810900747
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.06,
+          "width_m": 0.055375515807781994,
+          "thickness_m": 0.05193233350331991,
+          "intersection_count": 44,
+          "width_min_m": -0.0276286204441476,
+          "width_max_m": 0.027746895363634394,
+          "thickness_min_m": -0.02565918234114663,
+          "thickness_max_m": 0.026273151162173283
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.0824,
+          "width_m": 0.05746635319883353,
+          "thickness_m": 0.05409675767212935,
+          "intersection_count": 25,
+          "width_min_m": -0.02866936982536572,
+          "width_max_m": 0.02879698337346781,
+          "thickness_min_m": -0.02832845738072994,
+          "thickness_max_m": 0.02576830029139941
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.1,
+          "width_m": 0.05983058290257759,
+          "thickness_m": 0.05071621248581096,
+          "intersection_count": 17,
+          "width_min_m": -0.02985248275581398,
+          "width_max_m": 0.02997810014676361,
+          "thickness_min_m": -0.02381960395101064,
+          "thickness_max_m": 0.02689660853480032
+        }
+      ],
+      "sleeve_sections": [
+        {
+          "distance_proximal_from_wrist_m": 0.0824,
+          "width_m": 0.07580800591767911,
+          "thickness_m": 0.06262400140985847,
+          "intersection_count": 100,
+          "width_min_m": -0.03872990601212223,
+          "width_max_m": 0.03707809990555688,
+          "thickness_min_m": -0.031695775453179094,
+          "thickness_max_m": 0.03092822595667937
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.09,
+          "width_m": 0.07648294635509956,
+          "thickness_m": 0.06320252479054034,
+          "intersection_count": 24,
+          "width_min_m": -0.03862725722410687,
+          "width_max_m": 0.03785568913099269,
+          "thickness_min_m": -0.03231467818657317,
+          "thickness_max_m": 0.03088784660396716
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.1,
+          "width_m": 0.08016715868325264,
+          "thickness_m": 0.06636042054742575,
+          "intersection_count": 24,
+          "width_min_m": -0.0402862361370353,
+          "width_max_m": 0.039880922546217334,
+          "thickness_min_m": -0.0339560126865325,
+          "thickness_max_m": 0.03240440786089325
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.12,
+          "width_m": 0.08749653618178854,
+          "thickness_m": 0.07265067053958774,
+          "intersection_count": 24,
+          "width_min_m": -0.04358799431975058,
+          "width_max_m": 0.043908541862037964,
+          "thickness_min_m": -0.03722201380633326,
+          "thickness_max_m": 0.035428656733254474
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.15,
+          "width_m": 0.09629654122181819,
+          "thickness_m": 0.08065067324787378,
+          "intersection_count": 24,
+          "width_min_m": -0.04763049271059572,
+          "width_max_m": 0.04866604851122247,
+          "thickness_min_m": -0.041184613943758254,
+          "thickness_max_m": 0.03946605930411553
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.2,
+          "width_m": 0.10968400419369573,
+          "thickness_m": 0.09226800501346588,
+          "intersection_count": 24,
+          "width_min_m": -0.05378848257169011,
+          "width_max_m": 0.05589552162200562,
+          "thickness_min_m": -0.04680241457709027,
+          "thickness_max_m": 0.04546559043637561
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.25,
+          "width_m": 0.1205279955684091,
+          "thickness_m": 0.10086400900036097,
+          "intersection_count": 24,
+          "width_min_m": -0.05879904985340545,
+          "width_max_m": 0.06172894571500365,
+          "thickness_min_m": -0.0506908129849577,
+          "thickness_max_m": 0.050173196015403265
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.3,
+          "width_m": 0.12452800361279515,
+          "thickness_m": 0.10686401184648275,
+          "intersection_count": 24,
+          "width_min_m": -0.0607905992801534,
+          "width_max_m": 0.06373740433264174,
+          "thickness_min_m": -0.05321409366411496,
+          "thickness_max_m": 0.05364991818236779
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.4,
+          "width_m": 0.1314016015312518,
+          "thickness_m": 0.11548480205237865,
+          "intersection_count": 24,
+          "width_min_m": -0.06438975151104387,
+          "width_max_m": 0.06701185002020793,
+          "thickness_min_m": -0.05697160213367845,
+          "thickness_max_m": 0.0585131999187002
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.5,
+          "width_m": 0.1378016099188244,
+          "thickness_m": 0.122684795409441,
+          "intersection_count": 24,
+          "width_min_m": -0.06782747913530329,
+          "width_max_m": 0.0699741307835211,
+          "thickness_min_m": -0.06018712743094446,
+          "thickness_max_m": 0.062497667978496534
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.8,
+          "width_m": 0.14200292066379916,
+          "thickness_m": 0.1290938127785921,
+          "intersection_count": 24,
+          "width_min_m": -0.07058957386470865,
+          "width_max_m": 0.0714133467990905,
+          "thickness_min_m": -0.06304715758416465,
+          "thickness_max_m": 0.06604665519442746
+        }
+      ],
+      "sleeve_axis_extent_m": [
+        0.08239999072975479,
+        0.988800055871252
+      ]
+    }
+  },
+  "ratios": {
+    "Right": {
+      "0.0824": {
+        "sleeve_to_source_bare_width": 1.2746883565135387,
+        "sleeve_to_source_bare_thickness": 1.0584523173387128,
+        "sleeve_width_minus_source_bare_width_m": 0.016336209403561952
+      },
+      "0.1": {
+        "sleeve_to_source_bare_width": 1.2778134577329523,
+        "sleeve_to_source_bare_thickness": 1.0346245642753504,
+        "sleeve_width_minus_source_bare_width_m": 0.017429395653834945
+      },
+      "0.12": {
+        "sleeve_to_source_bare_width": 1.3409058007906212,
+        "sleeve_to_source_bare_thickness": 1.0700544421633031,
+        "sleeve_width_minus_source_bare_width_m": 0.022244722448704124
+      },
+      "0.15": {
+        "sleeve_to_source_bare_width": 1.3747375695719475,
+        "sleeve_to_source_bare_thickness": 1.1081773365140597,
+        "sleeve_width_minus_source_bare_width_m": 0.026249324715763578
+      },
+      "0.2": {
+        "sleeve_to_source_bare_width": 1.4125226186752011,
+        "sleeve_to_source_bare_thickness": 1.1341907795106947,
+        "sleeve_width_minus_source_bare_width_m": 0.03203285800964295
+      },
+      "0.25": {
+        "sleeve_to_source_bare_width": 1.3186162886294723,
+        "sleeve_to_source_bare_thickness": 1.2998410981329753,
+        "sleeve_width_minus_source_bare_width_m": 0.029123093147063628
+      },
+      "0.3": {
+        "sleeve_to_source_bare_width": 1.0458565452025483,
+        "sleeve_to_source_bare_thickness": 1.332414098602772,
+        "sleeve_width_minus_source_bare_width_m": 0.00546004505304154
+      },
+      "sleeve_20cm_to_documented_palm_width": 1.1783992927993645,
+      "cuff_to_wrist_origin_section_width": 1.455352437620032
+    },
+    "Left": {
+      "0.0824": {
+        "sleeve_to_source_bare_width": 1.274688395678591,
+        "sleeve_to_source_bare_thickness": 1.0584523173387128,
+        "sleeve_width_minus_source_bare_width_m": 0.016336211732777883
+      },
+      "0.1": {
+        "sleeve_to_source_bare_width": 1.2778134131988876,
+        "sleeve_to_source_bare_thickness": 1.0346245642753504,
+        "sleeve_width_minus_source_bare_width_m": 0.01742939285986722
+      },
+      "0.12": {
+        "sleeve_to_source_bare_width": 1.3409057722451296,
+        "sleeve_to_source_bare_thickness": 1.0700544421633031,
+        "sleeve_width_minus_source_bare_width_m": 0.022244720586058975
+      },
+      "0.15": {
+        "sleeve_to_source_bare_width": 1.374737529685029,
+        "sleeve_to_source_bare_thickness": 1.1081773365140597,
+        "sleeve_width_minus_source_bare_width_m": 0.026249321921795854
+      },
+      "0.2": {
+        "sleeve_to_source_bare_width": 1.412522498715045,
+        "sleeve_to_source_bare_thickness": 1.1341907795106947,
+        "sleeve_width_minus_source_bare_width_m": 0.032032848694598215
+      },
+      "0.25": {
+        "sleeve_to_source_bare_width": 1.3186162070778513,
+        "sleeve_to_source_bare_thickness": 1.2998410981329753,
+        "sleeve_width_minus_source_bare_width_m": 0.029123085692845052
+      },
+      "0.3": {
+        "sleeve_to_source_bare_width": 1.0458565764896424,
+        "sleeve_to_source_bare_thickness": 1.332414098602772,
+        "sleeve_width_minus_source_bare_width_m": 0.0054600487783318385
+      },
+      "sleeve_20cm_to_documented_palm_width": 1.1783991927224091,
+      "cuff_to_wrist_origin_section_width": 1.455352482310613
+    }
+  },
+  "source_bare_arm": {
+    "Right": {
+      "sections": [
+        {
+          "distance_proximal_from_wrist_m": 0,
+          "width_m": 0.05281029960497108,
+          "thickness_m": 0.03741386577070882,
+          "intersection_count": 22,
+          "width_min_m": -0.026450513241798035,
+          "width_max_m": 0.026359786363173043,
+          "thickness_min_m": -0.017917850184916956,
+          "thickness_max_m": 0.01949601558579186
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.01,
+          "width_m": 0.050974643748304516,
+          "thickness_m": 0.03958276359507852,
+          "intersection_count": 22,
+          "width_min_m": -0.025508141165119014,
+          "width_max_m": 0.025466502583185502,
+          "thickness_min_m": -0.019169870618999694,
+          "thickness_max_m": 0.020412892976078827
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.02,
+          "width_m": 0.05131499956314656,
+          "thickness_m": 0.041753973579028075,
+          "intersection_count": 20,
+          "width_min_m": -0.0259468573894992,
+          "width_max_m": 0.025368142173647357,
+          "thickness_min_m": -0.02066273771960161,
+          "thickness_max_m": 0.021091235859426467
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.04,
+          "width_m": 0.053947964571761986,
+          "thickness_m": 0.04694789706261404,
+          "intersection_count": 20,
+          "width_min_m": -0.02744581236220256,
+          "width_max_m": 0.026502152209559426,
+          "thickness_min_m": -0.02345237194122531,
+          "thickness_max_m": 0.023495525121388736
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.06,
+          "width_m": 0.05594895380818343,
+          "thickness_m": 0.05262119323256933,
+          "intersection_count": 20,
+          "width_min_m": -0.02811306546573178,
+          "width_max_m": 0.027835888342451653,
+          "thickness_min_m": -0.02589181321709166,
+          "thickness_max_m": 0.026729380015477668
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.0824,
+          "width_m": 0.05947179418490123,
+          "thickness_m": 0.05916563305120367,
+          "intersection_count": 20,
+          "width_min_m": -0.029016384407441365,
+          "width_max_m": 0.030455409777459863,
+          "thickness_min_m": -0.028758756581587136,
+          "thickness_max_m": 0.030406876469616533
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.1,
+          "width_m": 0.06273776582338542,
+          "thickness_m": 0.06413961434784268,
+          "intersection_count": 22,
+          "width_min_m": -0.03038540381749044,
+          "width_max_m": 0.032352362005894975,
+          "thickness_min_m": -0.030820225828694644,
+          "thickness_max_m": 0.033319388519148035
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.12,
+          "width_m": 0.06525181559572957,
+          "thickness_m": 0.06789436843298519,
+          "intersection_count": 20,
+          "width_min_m": -0.03201603576235357,
+          "width_max_m": 0.033235779833376,
+          "thickness_min_m": -0.03176571475061591,
+          "thickness_max_m": 0.03612865368236927
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.15,
+          "width_m": 0.07004721930002233,
+          "thickness_m": 0.07277776813372916,
+          "intersection_count": 22,
+          "width_min_m": -0.03512284401131183,
+          "width_max_m": 0.03492437528871051,
+          "thickness_min_m": -0.033331138543899526,
+          "thickness_max_m": 0.03944662958982964
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.2,
+          "width_m": 0.07765115549909751,
+          "thickness_m": 0.08135139756053347,
+          "intersection_count": 20,
+          "width_min_m": -0.04374868422155487,
+          "width_max_m": 0.033902471277542645,
+          "thickness_min_m": -0.03620060439599677,
+          "thickness_max_m": 0.045150793164536705
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.25,
+          "width_m": 0.09140490987556404,
+          "thickness_m": 0.07759718410599328,
+          "intersection_count": 26,
+          "width_min_m": -0.05874820811004611,
+          "width_max_m": 0.03265670176551794,
+          "thickness_min_m": -0.03441414701774333,
+          "thickness_max_m": 0.04318303708824996
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.3,
+          "width_m": 0.11906795483446331,
+          "thickness_m": 0.08020330313117,
+          "intersection_count": 28,
+          "width_min_m": -0.10612775244590011,
+          "width_max_m": 0.012940202388563193,
+          "thickness_min_m": -0.03532018324546933,
+          "thickness_max_m": 0.04488311988570067
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.4,
+          "width_m": 0.1654896746877057,
+          "thickness_m": 0.09841991588318201,
+          "intersection_count": 31,
+          "width_min_m": -0.2294774839283491,
+          "width_max_m": -0.0639878092406434,
+          "thickness_min_m": -0.05356326322073933,
+          "thickness_max_m": 0.04485665266244268
+        },
+        null
+      ],
+      "same_side_arm_weight_filter": "> 0.5 at both edge endpoints",
+      "landmarks_transformed_m": {
+        "lowerarm02": [
+          -0.011486083,
+          -0.130174965,
+          -0.005449136
+        ],
+        "lowerarm01": [
+          -0.02158829,
+          -0.259072512,
+          -0.013045995
+        ],
+        "upperarm02": [
+          -0.1622435,
+          -0.376666218,
+          -0.013230281
+        ],
+        "upperarm01": [
+          -0.216597751,
+          -0.422873408,
+          -0.012222784
+        ],
+        "wrist": [
+          0.0,
+          0.0,
+          -1e-09
+        ]
+      },
+      "wrist_to_lowerarm01_head_euclidean_m": 0.2602975651709523,
+      "evaluated_vertex_count": 13380,
+      "source_modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "show_viewport": true
+        },
+        {
+          "name": "Hide helpers",
+          "type": "MASK",
+          "show_viewport": true
+        }
+      ]
+    },
+    "Left": {
+      "sections": [
+        {
+          "distance_proximal_from_wrist_m": 0,
+          "width_m": 0.05281029960497108,
+          "thickness_m": 0.03741386577070882,
+          "intersection_count": 22,
+          "width_min_m": -0.026359786363173043,
+          "width_max_m": 0.026450513241798035,
+          "thickness_min_m": -0.017917850184916956,
+          "thickness_max_m": 0.01949601558579186
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.01,
+          "width_m": 0.050974643748304516,
+          "thickness_m": 0.03958276359507852,
+          "intersection_count": 22,
+          "width_min_m": -0.025466502583185502,
+          "width_max_m": 0.025508141165119014,
+          "thickness_min_m": -0.019169870618999694,
+          "thickness_max_m": 0.020412892976078827
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.02,
+          "width_m": 0.05131499956314656,
+          "thickness_m": 0.041753973579028075,
+          "intersection_count": 20,
+          "width_min_m": -0.025368142173647357,
+          "width_max_m": 0.0259468573894992,
+          "thickness_min_m": -0.02066273771960161,
+          "thickness_max_m": 0.021091235859426467
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.04,
+          "width_m": 0.053947964571761986,
+          "thickness_m": 0.04694789706261404,
+          "intersection_count": 20,
+          "width_min_m": -0.026502152209559426,
+          "width_max_m": 0.02744581236220256,
+          "thickness_min_m": -0.02345237194122531,
+          "thickness_max_m": 0.023495525121388736
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.06,
+          "width_m": 0.05594895380818343,
+          "thickness_m": 0.05262119323256933,
+          "intersection_count": 20,
+          "width_min_m": -0.027835888342451653,
+          "width_max_m": 0.02811306546573178,
+          "thickness_min_m": -0.02589181321709166,
+          "thickness_max_m": 0.026729380015477668
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.0824,
+          "width_m": 0.05947179418490123,
+          "thickness_m": 0.05916563305120367,
+          "intersection_count": 20,
+          "width_min_m": -0.030455409777459863,
+          "width_max_m": 0.029016384407441365,
+          "thickness_min_m": -0.028758756581587136,
+          "thickness_max_m": 0.030406876469616533
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.1,
+          "width_m": 0.06273776582338542,
+          "thickness_m": 0.06413961434784268,
+          "intersection_count": 22,
+          "width_min_m": -0.032352362005894975,
+          "width_max_m": 0.03038540381749044,
+          "thickness_min_m": -0.030820225828694644,
+          "thickness_max_m": 0.033319388519148035
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.12,
+          "width_m": 0.06525181559572957,
+          "thickness_m": 0.06789436843298519,
+          "intersection_count": 20,
+          "width_min_m": -0.033235779833376,
+          "width_max_m": 0.03201603576235357,
+          "thickness_min_m": -0.03176571475061591,
+          "thickness_max_m": 0.03612865368236927
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.15,
+          "width_m": 0.07004721930002233,
+          "thickness_m": 0.07277776813372916,
+          "intersection_count": 22,
+          "width_min_m": -0.03492437528871051,
+          "width_max_m": 0.03512284401131183,
+          "thickness_min_m": -0.033331138543899526,
+          "thickness_max_m": 0.03944662958982964
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.2,
+          "width_m": 0.07765115549909751,
+          "thickness_m": 0.08135139756053347,
+          "intersection_count": 20,
+          "width_min_m": -0.033902471277542645,
+          "width_max_m": 0.04374868422155487,
+          "thickness_min_m": -0.03620060439599677,
+          "thickness_max_m": 0.045150793164536705
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.25,
+          "width_m": 0.09140490987556404,
+          "thickness_m": 0.07759718410599328,
+          "intersection_count": 26,
+          "width_min_m": -0.03265670176551794,
+          "width_max_m": 0.05874820811004611,
+          "thickness_min_m": -0.03441414701774333,
+          "thickness_max_m": 0.04318303708824996
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.3,
+          "width_m": 0.11906795483446331,
+          "thickness_m": 0.08020330313117,
+          "intersection_count": 28,
+          "width_min_m": -0.012940202388563193,
+          "width_max_m": 0.10612775244590011,
+          "thickness_min_m": -0.03532018324546933,
+          "thickness_max_m": 0.04488311988570067
+        },
+        {
+          "distance_proximal_from_wrist_m": 0.4,
+          "width_m": 0.1654896746877057,
+          "thickness_m": 0.09841991588318201,
+          "intersection_count": 31,
+          "width_min_m": 0.0639878092406434,
+          "width_max_m": 0.2294774839283491,
+          "thickness_min_m": -0.05356326322073933,
+          "thickness_max_m": 0.04485665266244268
+        },
+        null
+      ],
+      "same_side_arm_weight_filter": "> 0.5 at both edge endpoints",
+      "landmarks_transformed_m": {
+        "lowerarm02": [
+          0.011486083,
+          -0.130174965,
+          -0.005449136
+        ],
+        "lowerarm01": [
+          0.02158829,
+          -0.259072512,
+          -0.013045995
+        ],
+        "upperarm02": [
+          0.1622435,
+          -0.376666218,
+          -0.013230281
+        ],
+        "upperarm01": [
+          0.216597751,
+          -0.422873408,
+          -0.012222784
+        ],
+        "wrist": [
+          0.0,
+          0.0,
+          -1e-09
+        ]
+      },
+      "wrist_to_lowerarm01_head_euclidean_m": 0.2602975651709523,
+      "evaluated_vertex_count": 13380,
+      "source_modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "show_viewport": true
+        },
+        {
+          "name": "Hide helpers",
+          "type": "MASK",
+          "show_viewport": true
+        }
+      ]
+    }
+  },
+  "inputs_unchanged": true
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

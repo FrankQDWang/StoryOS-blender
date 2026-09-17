@@ -1,0 +1,26 @@
+{
+  "atlas_size": [
+    2048,
+    2048
+  ],
+  "detail_map_size": [
+    1024,
+    1024
+  ],
+  "roughness_map": "assets/source/mage-hand-roughness.png",
+  "normal_map": "assets/source/mage-hand-normal.png",
+  "normal_source": "Restrained anatomy-guided joint folds and exact source-UV nail bed; no albedo-derived bump or random pore noise.",
+  "skin_scattering": "No offline-only Blender SSS; exported opaque glTF PBR with continuous soft highlights.",
+  "nail_mask_source": {
+    "path": "assets/source/mage-hand-source-fingernails.jpg",
+    "upstream_path": "src/mpfb/data/textures/mpfb_fingernails.jpg",
+    "repository": "https://github.com/makehumancommunity/mpfb2",
+    "commit": "817587ceb2ea03ea17a5b47e04396cbb4ddfa2d5",
+    "sha256": "0828222964a14c14a46e72445f549a2124de06f072daab71e5a6716324c37362",
+    "license": "CC0 1.0, upstream LICENSE.ASSETS.md",
+    "placement": "Barycentric SourceUV to HandAtlas remap; no inferred nail region"
+  },
+  "nail_mask_pixels_over_half": 3665,
+  "new_random_noise": false,
+  "nail_geometry_and_source_uv_retained": true
+}

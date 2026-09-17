@@ -19,7 +19,11 @@ export function OpeningHands({clock,bookIndex}) {
   const arms=['Right','Left'].map(side=>{
    const arm=object.getObjectByName(`${side}Hand`);
    let contact;
-   arm.traverse(node=>{if(node.isBone&&node.name===THREE.PropertyBinding.sanitizeNodeName(`finger1-3.${side[0]}`))contact=node;});
+   // The right hand now supports the large cover on its middle finger pad.
+   // Fit anatomy around that support, so smaller lecterns do not move it
+   // around the formerly used, now relaxed thumb.
+   const anchor=side==='Right'?'finger3-3.R':'finger1-3.L';
+   arm.traverse(node=>{if(node.isBone&&node.name===THREE.PropertyBinding.sanitizeNodeName(anchor))contact=node;});
    if(!contact)throw new Error(`Missing ${side} hand contact bone`);
    return {arm,contact,point:new THREE.Vector3()};
   });

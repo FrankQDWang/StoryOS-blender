@@ -1,0 +1,54 @@
+
+> test
+> node --test apps/web/tests/library-model.test.mjs apps/web/tests/roaming.test.mjs apps/web/tests/opening-motion.test.mjs
+
+✔ creation retains all projects and leaves occupied positions stable at capacity (1.971417ms)
+✔ invalid creation is atomic and whitespace is removed (0.170292ms)
+✔ persisted data repairs duplicate slots and ids without losing valid projects (0.286ms)
+✔ visiting changes recency without moving a displayed book (0.08525ms)
+✔ cover opens before pages; sheets stay ordered, never overtake the cover, and settle before entry (4.763167ms)
+✔ shipped hands keep one human size across lecterns without moving the grip anchor or accumulating scale (96.512583ms)
+✖ MakeHuman hands retain complete weighted anatomy and a synchronized baked clip (4.193583ms)
+✔ the raised-cover poses avoid the previous folded right-wrist silhouette (21.311542ms)
+✔ body clearance applies to walls and round table; long displacement cannot cross the table (15.089292ms)
+✔ every fixture and all five rotated lecterns stop movement before the body enters them (3.51675ms)
+✔ rectangle corners use circular body clearance and diagonal movement slides along a rotated face (0.529167ms)
+✔ zero displacement is stable and invalid starting positions are not teleported through furniture (0.199167ms)
+✔ all five reading stands have reachable standing positions within book interaction distance (51.138833ms)
+ℹ lectern 1: verified route 8.10 m; final book distance 1.19 m
+ℹ lectern 2: verified route 12.30 m; final book distance 1.19 m
+ℹ lectern 3: verified route 9.90 m; final book distance 1.19 m
+ℹ lectern 4: verified route 8.25 m; final book distance 1.19 m
+ℹ lectern 5: verified route 6.30 m; final book distance 1.19 m
+✔ the central table has a complete unobstructed walking circuit connected to the entrance (1.401709ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 13
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 298.588916
+
+✖ failing tests:
+
+test at apps/web/tests/opening-motion.test.mjs:61:1
+✖ MakeHuman hands retain complete weighted anatomy and a synchronized baked clip (4.193583ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  45 !== 21
+
+      at TestContext.<anonymous> (file:///Users/frankqdwang/MLE/StoryOS-blender/apps/web/tests/opening-motion.test.mjs:90:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 45,
+    expected: 21,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

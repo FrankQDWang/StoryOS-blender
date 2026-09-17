@@ -10,3 +10,11 @@ downloads/
 .env.*
 !.env.example
 .worktrees/
+
+# Third-party costume references: local private research only.
+design/reference-library/wizard-costume-20260917/01-gandalf-weta.jpg
+design/reference-library/wizard-costume-20260917/02-dumbledore-warner.jpg
+design/reference-library/wizard-costume-20260917/03-gale-esomodelviewer.jpg
+design/reference-library/wizard-costume-20260917/04-gale-portrait-esomodelviewer.jpg
+design/reference-library/wizard-costume-20260917/05-dnd-archmagi.jpg
+design/reference-library/wizard-costume-20260917/06-dnd-wizard.png
