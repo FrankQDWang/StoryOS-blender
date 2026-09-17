@@ -7,9 +7,9 @@
 | 对象 | 含义 |
 | --- | --- |
 | `v0.1.0-baseline` | 第一个已认可小样的附注标签；不移动、不覆盖、不在原提交上 amend |
-| `main` | 最近一次认可的版本；初始化时指向 baseline，后续可向前演进 |
-| `iteration/next` | 当前保存用户已认可整体效果的 `0.1.3-preview.2` A炉边书房；侧面局部问题保留待办，继续用新提交保存进度 |
-| `v0.2.0-preview.1` | 已被用户否定的第二版预览，保留供追溯，不合入 main |
+| `main` | 用户认可的当前版本；2026-09-17授权将0.1.3-preview.3保存到本地及远端同步主分支 |
+| 迭代分支 | 当前iteration/next在合入主分支后按授权删除；未来按具体任务新建codex/前缀分支 |
+| `v0.2.0-preview.1` | 已被用户否定的第二版预览，仅为历史标签；其后通过新提交恢复，当前main不采用该版本画面 |
 | `v0.1.1-preview.1` | 第一版恢复 + 壁炉结构修复，保留为历史 |
 | 后续标签，如 `v0.2.0` | 每轮体验确认后的完整里程碑；不是每次小改都打标签 |
 
@@ -30,10 +30,10 @@
 
 ## 每轮调整
 
-1. 从已认可版本建立一个有具体目的的分支；本轮先使用 `iteration/next`。
+1. 从已认可的main建立一个有具体目的的codex/分支。
 2. 将代码、制作脚本、需要更新的 `.blend`/GLB/纹理一起提交，保持源资产和运行资产对应；生成脚本会覆盖输出，手工 Blender 修改先另存。
 3. 按变更范围做 Chrome 验收并保留关键画面。已经与调整无关的测试不必反复跑。
-4. 用户认可后按当次授权保存；合入 `main` 与新增里程碑标签需有对应发布决定。最新一次2026-09-16授权为本地提交保存 `0.1.3-preview.2`，未请求本轮push；不移动 `main` 或已有标签。此前 `0.1.2-preview.4` 的提交和push是上一轮已完成授权。
+4. 用户认可后按当次授权保存。2026-09-17已授权将0.1.3-preview.3合入main、推送同步并删除本地/远端迭代分支；已有标签保持，不额外创建新标签。本次保存不代表部署网站。
 
 ## 看差异与打开旧版
 
@@ -54,10 +54,10 @@ npm --prefix .worktrees/baseline/apps/web run dev -- --host 127.0.0.1 --port 417
 
 旧版在 `http://127.0.0.1:4175/`；当前预览使用 `4173`。两端口的浏览器数据各自独立，适合用初始示例对比画面和操作。结束后先停止旧版服务，再用 `git worktree remove .worktrees/baseline` 清理；不使用强制清理忽略其中的改动。
 
-用户明确选择公开 GitHub 仓库：[https://github.com/FrankQDWang/StoryOS-blender](https://github.com/FrankQDWang/StoryOS-blender)，远程名 `origin`，默认分支 `main`。`main`、`iteration/next` 与 `v0.1.0-baseline` 保存在远程；后续里程碑标签需要显式推送。GitHub 仓库公开不等于已经部署可在线访问的网页。
+用户明确选择公开 GitHub 仓库：[https://github.com/FrankQDWang/StoryOS-blender](https://github.com/FrankQDWang/StoryOS-blender)，远程名 `origin`，默认分支 `main`。本次收尾目标是本地及远端仅保留main分支；既有远端标签保留。后续里程碑标签需要显式推送。GitHub 仓库公开不等于已经部署可在线访问的网页。
 
 参考：[Git 标签](https://git-scm.com/docs/git-tag)、[Git worktree](https://git-scm.com/docs/git-worktree)、[Git LFS](https://git-lfs.com/)。
 
 ## 当前对照运行
 
-当前 `4173` 为用户认可整体效果的 `0.1.3-preview.2` A炉边书房；右侧三台侧面及书桌邻近关系尚待局部修正。需要对照时，`4175` 使用固定的 `v0.1.0-baseline` worktree。两个 worktree 分别安装本地依赖；不共享 `node_modules/.vite` 缓存，以免两个开发服务反复覆盖依赖预构建。两处预览均是本机服务。
+当前 `4173` 为用户正式认可的 `0.1.3-preview.3` A炉边书房，已完成右侧三台侧面比例和间距修正。需要对照时，`4175` 使用固定的 `v0.1.0-baseline` worktree。两个 worktree 分别安装本地依赖；不共享 `node_modules/.vite` 缓存，以免两个开发服务反复覆盖依赖预构建。两处预览均是本机服务。

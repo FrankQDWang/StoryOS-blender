@@ -1,0 +1,64 @@
+00:00.447  blend            | Read blend: "/Users/frankqdwang/MLE/StoryOS-blender/assets/source/storyos-library.blend"
+BAKE_START room-occlusion
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_SAVED room-occlusion 20.679879903793335
+BAKE_START room-illumination
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_SAVED room-illumination 52.809762716293335
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+19:08:57 | INFO: Starting glTF 2.0 export
+19:08:57 | INFO: Extracting primitive: Cube.017
+19:08:57 | INFO: Primitives created: 1
+19:08:57 | INFO: Extracting primitive: Cube.003
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.018
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.015
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.004
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.016
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.001
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.022
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.024
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.011
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.013
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.008
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.009
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.010
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.007
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.020
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.012
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.019
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.021
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.025
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.006
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.005
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.014
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Extracting primitive: Cube.023
+19:08:58 | INFO: Primitives created: 1
+19:08:58 | INFO: Finished glTF 2.0 export in 0.7042632102966309 s
+
+BAKE_FINISHED {"source": "scripts/bake_room_lighting.py", "source_blend": "assets/source/storyos-library.blend", "version": "0.1.3-preview.3", "atlas_size": 4096, "samples": 128, "device": "Metal", "duration_seconds": 55.22, "passes": ["local ambient occlusion (0.65 m)", "direct and indirect diffuse illumination without albedo"], "uv": "LightingUV / TEXCOORD_1", "image_paths": ["public/assets/textures/room-occlusion.png", "public/assets/textures/room-illumination.png"], "room_is_full_3d": true}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

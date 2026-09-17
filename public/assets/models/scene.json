@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3-preview.2",
+  "version": "0.1.3-preview.3",
   "baseVersion": "v0.1.0-baseline",
   "change": "Selected A hearth study: side writing nook, lighter reading stands, open center and layered materials/light.",
   "blender": "5.2.1 LTS",
@@ -38,41 +38,41 @@
       "position": [
         3.48,
         1.25,
-        -1.886
+        -1.48
       ],
       "yaw": -0.8247,
-      "scale": 0.695,
-      "baseScale": 0.88,
-      "pitch": 0.4527
+      "scale": 0.72,
+      "baseScale": 0.87,
+      "pitch": 0.55
     },
     {
       "index": 3,
       "position": [
-        3.926,
+        3.565,
         1.25,
-        -0.332
+        0.31
       ],
       "yaw": -1.1117,
-      "scale": 0.744,
-      "baseScale": 0.93,
-      "pitch": 0.6365
+      "scale": 0.72,
+      "baseScale": 0.87,
+      "pitch": 0.55
     },
     {
       "index": 4,
       "position": [
-        3.114,
+        3.295,
         1.25,
-        2.315
+        2.05
       ],
       "yaw": -1.191,
-      "scale": 0.664,
-      "baseScale": 0.82,
-      "pitch": 0.7153
+      "scale": 0.72,
+      "baseScale": 0.87,
+      "pitch": 0.55
     }
   ],
   "layoutSource": "apps/web/src/room-layout.json",
   "layout": {
-    "version": "0.1.3-preview.2",
+    "version": "0.1.3-preview.3",
     "units": "metres; x right, y up, negative z toward window",
     "room": {
       "minX": -4.33,
@@ -126,34 +126,34 @@
         "position": [
           3.48,
           1.25,
-          -1.886
+          -1.48
         ],
         "yaw": -0.8247,
-        "scale": 0.695,
-        "baseScale": 0.88,
-        "pitch": 0.4527
+        "scale": 0.72,
+        "baseScale": 0.87,
+        "pitch": 0.55
       },
       {
         "position": [
-          3.926,
+          3.565,
           1.25,
-          -0.332
+          0.31
         ],
         "yaw": -1.1117,
-        "scale": 0.744,
-        "baseScale": 0.93,
-        "pitch": 0.6365
+        "scale": 0.72,
+        "baseScale": 0.87,
+        "pitch": 0.55
       },
       {
         "position": [
-          3.114,
+          3.295,
           1.25,
-          2.315
+          2.05
         ],
         "yaw": -1.191,
-        "scale": 0.664,
-        "baseScale": 0.82,
-        "pitch": 0.7153
+        "scale": 0.72,
+        "baseScale": 0.87,
+        "pitch": 0.55
       }
     ],
     "lectern": {

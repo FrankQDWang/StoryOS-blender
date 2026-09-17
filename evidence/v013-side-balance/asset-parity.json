@@ -1,0 +1,70 @@
+{
+  "version": "0.1.3-preview.3",
+  "production_assets": [
+    {
+      "path": "public/assets/models/library-room.glb",
+      "sha256": "491c0a1bf3f07e994ebd1a755c1d3f5994f0695b2b7a16996711bc0ee784c946",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/models/opening-hands.glb",
+      "sha256": "bf1c688d4479bdfde228b8730c06dfe0d8512486dde56db3d3781ded9d6c9cfd",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/models/scene.json",
+      "sha256": "7f794c12a206707f368f4819e1ee7831e2aa264dea546aa9d993840dfdd86169",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/models/story-book.glb",
+      "sha256": "34969224cbb1acbb704da5629fb3167a98edf5e30724a4856a662b1e258ca001",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/a-study-rug.png",
+      "sha256": "904cd5578e110e52dd03f99b6d40c0a73c5271659b55dad0398bb1f2e92a8e82",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/a-study-wood.png",
+      "sha256": "3127906ad5933a1180bae6e83852f9a45e8a6512e49501e32e09b7b4732acc13",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/hearth-decor-atlas.png",
+      "sha256": "916bf34a473bc05508fd0329ab64c2c682097331cc788a4bb6b5b60412b1d826",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/room-illumination.png",
+      "sha256": "ef7004a3aae8063f8040d0724981d17ef26174cfe2520048f57c5e382cd99dd4",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/room-occlusion.png",
+      "sha256": "4e017fab04ac5350206759e70fcf2fc730184679c2a615a5d08c28a1228cc24f",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/sculpted-plaster.png",
+      "sha256": "1edbb15fba5f0513d3a422ad5840f6f18d6197f4ddac7a5408230d1cf7b2e58f",
+      "production_matches": true
+    },
+    {
+      "path": "public/assets/textures/sculpted-wood.png",
+      "sha256": "a0b354e66c67c2b77a02f5c60c62f9f80f0fe407ebef7a3ad2bdc5ef3bbc7e48",
+      "production_matches": true
+    }
+  ],
+  "reusable_glb_matches_HEAD": {
+    "story-book.glb": true,
+    "opening-hands.glb": true
+  },
+  "manifest_valid": true,
+  "scene_layout_matches": true,
+  "geometry_report_matches": true,
+  "geometry_passed": true,
+  "runtime_scene_unchanged": true,
+  "passed": true
+}

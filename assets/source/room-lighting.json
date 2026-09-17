@@ -1,11 +1,11 @@
 {
   "source": "scripts/bake_room_lighting.py",
   "source_blend": "assets/source/storyos-library.blend",
-  "version": "0.1.3-preview.2",
+  "version": "0.1.3-preview.3",
   "atlas_size": 4096,
   "samples": 128,
   "device": "Metal",
-  "duration_seconds": 55.32,
+  "duration_seconds": 55.22,
   "passes": [
     "local ambient occlusion (0.65 m)",
     "direct and indirect diffuse illumination without albedo"

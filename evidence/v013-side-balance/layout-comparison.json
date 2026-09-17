@@ -1,0 +1,96 @@
+{
+  "before": {
+    "right_stand_center_distances_m": [
+      1.6167,
+      2.7687
+    ],
+    "right_stands": [
+      {
+        "position": [
+          3.48,
+          1.25,
+          -1.886
+        ],
+        "yaw_degrees": -47.25,
+        "pitch_degrees": 25.94,
+        "top_scale": 0.695,
+        "base_scale": 0.88
+      },
+      {
+        "position": [
+          3.926,
+          1.25,
+          -0.332
+        ],
+        "yaw_degrees": -63.7,
+        "pitch_degrees": 36.47,
+        "top_scale": 0.744,
+        "base_scale": 0.93
+      },
+      {
+        "position": [
+          3.114,
+          1.25,
+          2.315
+        ],
+        "yaw_degrees": -68.24,
+        "pitch_degrees": 40.98,
+        "top_scale": 0.664,
+        "base_scale": 0.82
+      }
+    ]
+  },
+  "after": {
+    "right_stand_center_distances_m": [
+      1.792,
+      1.7608
+    ],
+    "right_stands": [
+      {
+        "position": [
+          3.48,
+          1.25,
+          -1.48
+        ],
+        "yaw_degrees": -47.25,
+        "pitch_degrees": 31.51,
+        "top_scale": 0.72,
+        "base_scale": 0.87
+      },
+      {
+        "position": [
+          3.565,
+          1.25,
+          0.31
+        ],
+        "yaw_degrees": -63.7,
+        "pitch_degrees": 31.51,
+        "top_scale": 0.72,
+        "base_scale": 0.87
+      },
+      {
+        "position": [
+          3.295,
+          1.25,
+          2.05
+        ],
+        "yaw_degrees": -68.24,
+        "pitch_degrees": 31.51,
+        "top_scale": 0.72,
+        "base_scale": 0.87
+      }
+    ]
+  },
+  "preserved": {
+    "units": true,
+    "room": true,
+    "navigation": true,
+    "home": true,
+    "lectern": true,
+    "table": true,
+    "rug": true,
+    "fixtures": true
+  },
+  "left_two_unchanged": true,
+  "units": "metres in scene model; center spacing is not edge clearance"
+}

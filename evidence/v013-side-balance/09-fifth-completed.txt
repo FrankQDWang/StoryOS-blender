@@ -1,0 +1,27 @@
+Browser tab: 267567084, Title: "StoryOS · 私人藏书室", URL: "http://localhost:4173/".
+1 AXWebArea StoryOS · 私人藏书室, URL: localhost:4173/
+	2 container
+		7 link Description: StoryOS 藏书室, Value: localhost:4173/#
+		8 text 写作空间 体验样片
+		9 button 全部作品 5
+			10 image
+			11 text 全部作品
+			12 text 5
+		13 button 返回藏书室
+			14 image
+			15 text 返回藏书室
+		16 text STORYOS / WRITING ROOM
+		17 heading 朝向验证·右前, Value: 1
+			18 text 朝向验证·右前
+		19 text 一个新的世界，正在等待你的第一句话。
+		20 image
+		21 heading 故事，从这里继续。, Value: 2
+			22 text 故事，从这里继续。
+		23 container
+			24 text 你已进入《 朝向验证·右前 》的工作区。
+		25 text 这是入口体验的占位页面，正式编辑器将在后续接入。
+		26 button 回到我的藏书室
+			27 text 回到我的藏书室
+			28 image
+
+The focused UI element is 1 AXWebArea StoryOS · 私人藏书室, URL: localhost:4173/

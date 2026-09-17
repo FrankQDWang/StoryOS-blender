@@ -1,0 +1,34 @@
+diff --git a/apps/web/src/Scene.jsx b/apps/web/src/Scene.jsx
+index 11df8f3..8c44300 100644
+--- a/apps/web/src/Scene.jsx
++++ b/apps/web/src/Scene.jsx
+@@ -11,7 +11,10 @@ export const SLOTS=layout.slots.map(slot=>slot.position);
+ const YAWS=layout.slots.map(slot=>slot.yaw);
+ const BOOK_PITCH=layout.lectern.pitch;
+ const PITCHES=layout.slots.map(slot=>slot.pitch??BOOK_PITCH);
+-const HOME=new THREE.Vector3(...layout.home.position),HOME_LOOK=new THREE.Vector3(...layout.home.lookAt);
++// Temporary repeatable side-view inspection; removed after comparison captures.
++const REVIEW_SIDE=import.meta.env.DEV&&new URLSearchParams(location.search).get('reviewView')==='right-wall';
++const HOME=new THREE.Vector3(...(REVIEW_SIDE?[-.35,1.7,-1.3]:layout.home.position)),HOME_LOOK=new THREE.Vector3(...(REVIEW_SIDE?[3.8,1.1,-.5]:layout.home.lookAt));
++const HOME_FOV=REVIEW_SIDE?53:layout.home.fov;
+ const TABLE=[layout.table.center[0],layout.table.topHeight,layout.table.center[1]];
+ const DESK=layout.fixtures.find(f=>f.id==='desk').center;
+ const HEARTH=layout.fixtures.find(f=>f.id==='hearth').center;
+@@ -190,7 +193,7 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
+  useEffect(()=>{if(mode!=='roam'){camera.position.copy(HOME);target.current.copy(HOME_LOOK)}},[resetToken]);
+  useFrame((_,delta)=>{
+   const dt=Math.min(delta,.05);
+-  const desiredFov=mode==='overview'&&!opening?layout.home.fov:53;
++  const desiredFov=mode==='overview'&&!opening?HOME_FOV:53;
+   camera.fov=reduced?desiredFov:THREE.MathUtils.damp(camera.fov,desiredFov,4,dt);camera.updateProjectionMatrix();
+   if(mode==='roam'){
+    const f=new THREE.Vector3();camera.getWorldDirection(f);f.y=0;f.normalize();const right=new THREE.Vector3().crossVectors(f,camera.up).normalize();const move=new THREE.Vector3();
+@@ -223,7 +226,7 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
+  const [visible,setVisible]=useState(!document.hidden);
+  useEffect(()=>{const changed=()=>setVisible(!document.hidden);document.addEventListener('visibilitychange',changed);return()=>document.removeEventListener('visibilitychange',changed)},[]);
+  const selectedBook=books.find(b=>b.id===selected);
+- return <Canvas frameloop={visible&&!paused?'always':'demand'} shadows="percentage" dpr={[1,1.5]} camera={{position:HOME.toArray(),fov:layout.home.fov,near:.06,far:60}} gl={{antialias:true,powerPreference:'high-performance'}} onCreated={({gl})=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.08;gl.shadowMap.type=THREE.PCFShadowMap}}>
++ return <Canvas frameloop={visible&&!paused?'always':'demand'} shadows="percentage" dpr={[1,1.5]} camera={{position:HOME.toArray(),fov:HOME_FOV,near:.06,far:60}} gl={{antialias:true,powerPreference:'high-performance'}} onCreated={({gl})=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.08;gl.shadowMap.type=THREE.PCFShadowMap}}>
+   <color attach="background" args={['#101922']}/><fog attach="fog" args={['#24201e',14,32]}/>
+   <ambientLight intensity={.10} color="#8694aa"/>
+   <hemisphereLight args={['#75859d','#49301e',.30]}/>
