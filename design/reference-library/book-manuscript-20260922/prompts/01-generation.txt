@@ -1,0 +1,28 @@
+Use case: stylized-concept.
+Create ONE landscape 1536 × 1024 concept board showing ONE design of the same enormous personal manuscript in TWO coordinated states. This is not a pair of alternatives. Two side-by-side scene views, no captions, no option numbers, no border decorations, no UI.
+
+ACTUAL ATTACHED REFERENCES, in order:
+1. G, Claire Hummel's Riven journal page: use only the warm natural paper, irregular human handwriting, small corrections and intimate long-used private-record feeling. Do not copy the English prose, characters, plot, or ruled horizontal lines.
+2. The approved StoryOS room overview: authoritative room layout, dark timber, muted plaster, left hearth, cool blue night window, existing furniture and artistic realtime-3D visual language.
+3. The actual giant book opening close-up: authoritative large folio proportions and thickness, wooden lectern geometry, support and exact position directly to the LEFT of the hearth. Its crude gold frame, metal corners and circular cross emblem are old surface decoration to replace, not invariants.
+
+SUBJECT AND COMPOSITION:
+A manuscript that a mature mage who lives in this very room has quietly used for years. The book is a genuinely massive reading-stand folio, roughly 75–80 cm long, with substantial page block and structurally believable leather-covered boards, never a pocket notebook enlarged for the picture.
+LEFT VIEW: closed book resting fully on the existing first wooden lectern left of the hearth, viewed obliquely from the reader side. Show the whole closed book and enough surrounding lectern, wall and hearth to establish its true size and existing room position.
+RIGHT VIEW: closer reader-side view of the SAME book opened on that SAME lectern in the SAME location and light. Show both handwritten pages, gutter, page block, and enough leather board/lectern edges to recognize the identical object. A slightly wider opened silhouette is natural; do not introduce another book or stand into the room.
+Match cover color, edge wear, board thickness, binding, proportions and paper tone between the states. Hands may be omitted; do not invent or redesign a character.
+
+COVER:
+Soft-looking, naturally worn warm umber leather over firm boards, subtle grain, quiet polished handling marks, slightly rubbed edges. Refined and personal, neither black slab nor glossy commercial deluxe edition. Let most of the leather breathe. A modest, slightly irregular handwritten Chinese title, incorporated naturally into the leather surface near the upper portion, without a label plaque or decorative frame. Exact four characters: “星海余烬”. Keep this title small but fully legible and correctly spelled. No author, publisher, decorative slogan, large central emblem or additional readable cover text. No forced old green/gold recipe, no metal corner guards or thick gold border.
+
+OPEN PAGES:
+Warm ivory paper, clean enough to read, subtle translucency and restrained handling patina rather than dirt. Predominantly writing: uneven but practiced dark-brown ink strokes, organic line lengths and spacing, a few crossed-out strokes and sparse marginal additions. A small amount of incomplete observational sketching and hard-to-decipher personal notation may appear in spare areas, integrated as unfinished working notes, not a decorative infographic. Do not fill a page with a diagram.
+The only clearly readable sentence, if used, must be EXACTLY “群星熄灭之后，故事才刚刚开始。”; all remaining writing stays small and impressionistic, with no invented legible story, no English copied from Riven, no repeated slogan and no large malformed Chinese. No ruled notebook paper. The quiet mystery comes from a private thought process and signs of use, not from a recognizable magic logo.
+
+PRESERVE THE ROOM:
+This is a book surface concept placed back into the supplied existing room, not an opportunity to remodel the environment. Keep the same plaster, timber architecture, lectern, hearth form, fire position, distant cool night window, props and warm/cool lighting balance. Do not add shelves, windows, extra lamps, props or furniture. Retain the stylized realtime-3D room quality rather than replacing it with a photographic luxury interior. No new dramatic lighting, overbright fire or smoky effects.
+
+AVOID:
+Giant cosmological wheels, concentric occult charts, elaborate star maps, pentagrams, dense canonical mysticism diagrams; ornate gold geometry; gems; childish fantasy illustrations or cartoon sun/moon; colorful tabs, flowers or scrapbook clutter; glowing writing, beams or floating particles; horror damage or grime; modern book-jacket typography and product packaging. Remove all HUD, browser chrome and on-screen text from the source screenshots.
+Deliver just the finished single two-state concept image.
+

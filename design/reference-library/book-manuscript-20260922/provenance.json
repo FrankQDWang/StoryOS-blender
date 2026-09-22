@@ -1,0 +1,97 @@
+{
+  "status": "user-approved aesthetic reference",
+  "approvedOn": "2026-09-22",
+  "savedOn": "2026-09-22T08:59:15.267429+00:00",
+  "image": {
+    "source": "design/round-09-private-manuscript/private-manuscript-v2.png",
+    "file": "reference.png",
+    "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "tool": "built-in image_gen.imagegen",
+  "generationCalls": 2,
+  "process": "Initial concept with three actual reference images, followed by a targeted edit using v1 plus the same three references.",
+  "originalOutputV1": {
+    "source": "/Users/frankqdwang/.codex/generated_images/01a0c7f9-ff55-7a90-9a40-9ec22fe2acd4/exec-4cd6eb9c-3799-4ae1-aeed-4a9c071fb691.png",
+    "workspaceFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-09-private-manuscript/private-manuscript-v1.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "04a1b101c2b4c702d1443b7f53cfdf318445cbce9d2aca9c20628394f03961f6",
+    "tool": "built-in image_gen",
+    "requestFile": "requests/01-request.json"
+  },
+  "originalOutputV2": {
+    "source": "/Users/frankqdwang/.codex/generated_images/01a0c7f9-ff55-7a90-9a40-9ec22fe2acd4/exec-91aaf077-8445-4050-8697-3de10555ffab.png",
+    "workspaceFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-09-private-manuscript/private-manuscript-v2.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+    "tool": "built-in image_gen",
+    "requestFile": "requests/02-request.json",
+    "role": "targeted revision of v1; candidate for supervisor review, not user-selected"
+  },
+  "prompts": [
+    {
+      "source": "design/round-09-private-manuscript/requests/01-prompt.txt",
+      "file": "prompts/01-generation.txt",
+      "sha256": "be700168ee7dbb074bb1d80f3e2e58b0a3e212ae43d4d78fb85be14e055c6a24"
+    },
+    {
+      "source": "design/round-09-private-manuscript/requests/02-prompt.txt",
+      "file": "prompts/02-refinement.txt",
+      "sha256": "af69f00b748fa9532605a50cce1dfaf2798edc1a5ed54b2145ec3b0a35d4dbf8"
+    }
+  ],
+  "inputs": [
+    {
+      "source": "/Users/frankqdwang/MLE/StoryOS-blender/design/reference-library/book-mystery-20260922/followup-02/riven-journal.png",
+      "snapshot": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-09-private-manuscript/inputs/reference-G-riven-journal.png",
+      "sha256": "1ae5d02af12cd6ff7dcea61a593367de8f7c8b831221d089037b99ac998b117d",
+      "dimensions": [
+        1200,
+        1000
+      ],
+      "role": "Private handwriting and warm paper mood only; not source text",
+      "actuallyViewedBeforeGeneration": true
+    },
+    {
+      "source": "/Users/frankqdwang/MLE/StoryOS-blender/evidence/improvement-audit-20260922/01-overview.png",
+      "snapshot": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-09-private-manuscript/inputs/reference-room-overview.png",
+      "sha256": "809a74e0bd5494de9e5aceddd21a72c76d8556aebdc40f79073f1bf47b6e37d4",
+      "dimensions": [
+        1512,
+        751
+      ],
+      "role": "Approved room composition and existing lighting",
+      "actuallyViewedBeforeGeneration": true
+    },
+    {
+      "source": "/Users/frankqdwang/MLE/StoryOS-blender/evidence/improvement-audit-20260922/06-opening.png",
+      "snapshot": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-09-private-manuscript/inputs/reference-giant-book-opening.png",
+      "sha256": "46269f4a856958c8faac26f257ee6ece88be3dd380a584e2b179534fe376529d",
+      "dimensions": [
+        1512,
+        751
+      ],
+      "role": "Giant book scale, proportions, lectern, support and location",
+      "actuallyViewedBeforeGeneration": true
+    }
+  ],
+  "externalReference": {
+    "label": "G",
+    "creator": "Claire Hummel",
+    "work": "Hand-lettered journal pages for Riven (2024)",
+    "sourceUrl": "https://www.tumblr.com/shoomlah/758109023934480384/and-just-because-its-fun-a-bunch-of-my-art-my",
+    "role": "Paper and personal handwriting mood, not copied narrative text",
+    "originalResearchImageIncludedInThisBundle": false
+  },
+  "userFeedback": "可以可以，我非常满意，这个非常非常 nice。多本书整体风格保持一致，材质等可有细微差异。",
+  "scope": "Book cover/page style reference. Not a runtime texture, reconstructed room target, or verified performance result."
+}

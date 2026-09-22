@@ -1,0 +1,12 @@
+Use case: precise-object-edit.
+Edit the FIRST attached image, the existing 1536 × 1024 two-view concept board. Keep this SAME design and composition. This is a narrow correction pass, not another concept or new style.
+
+The other three attached images are respectively G's private handwritten journal mood, the approved room overview, and the existing giant book on its lectern. Preserve the current board's two views, same enormous book, warm umber binding, page-block thickness, camera framing, room architecture, furniture placement, hearth, cool night window, lighting balance and quiet handwritten identity. No added badges, logos, symbols, props, extra books, people, magic effects or explanatory labels.
+
+Correct ONLY these visible defects:
+1. Remove ALL evenly spaced straight horizontal ruling from BOTH open pages. This is unruled natural manuscript paper. Keep the small irregular handwritten entries, organic spacing, existing corrections and sparse incomplete sketches. Do not erase handwriting or replace the writing with rows of graphic symbols. Preserve warm ivory tone, subtle show-through and generous organic margins. Absolutely no printed notebook lines or grid remains.
+2. The closed cover currently has too much high-contrast orange abrasion and prominent cracking. Calm its surface into supple, softly handled umber leather: finer quiet grain, broad subtle handling patina, only light rubbed wear at edges. Keep the existing binding construction, shape, thickness, color family and the exact small title “星海余烬”. Do not make it pristine, glossy, black, photoreal product packaging, or add ornament.
+3. The existing readable line “群星熄灭之后，故事才刚刚开始。” is correct; preserve EVERY character and punctuation exactly, but make its ink weight and size closer to the surrounding handwritten manuscript so it feels written on the same day with the same pen rather than a bold separate advertisement. It must remain readable, naturally uneven and modest.
+
+No other changes. Retain the same single 1536 × 1024 landscape board with the closed book on the left and the identical opened book on the right. No captions, UI or watermark.
+
