@@ -1,0 +1,7 @@
+{
+  "reason": "Initial controlled-network cold medians exceeded 10% amid broad cross-version variability. Retain all initial observations and add two alternating paired rounds, plus Resource Timing metadata, to determine the stable median. No code/assets changed between samples; no sample discarded.",
+  "initialSamples": 36,
+  "targetSamples": 48,
+  "sameObservationLogic": true,
+  "newResourceTimingFields": "Collected after firstPaint; do not affect its completion condition."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "assistant-concept-visual-pass; user approval pending",
+  "inspected": [
+    "references/current-room.png",
+    "references/current-window.png",
+    "01-room-draft.png",
+    "02-room-proposal.png",
+    "03-window-detail.png"
+  ],
+  "draftIssue": "missing portion of lower horizontal mullion; regenerated targeted correction",
+  "finalVerdict": "Moon sits in upper-right pane at about 8-10% window width, cool gray-white and restrained; distant hills and conifer layers read distinctly; side branches frame opening; lower mullion restored; warm hearth/dim room direction retained. Suitable as window-only design reference.",
+  "scope": "Generated scene is not pixel-identical to production. Room geometry/materials/lighting must continue to come from saved production, never inferred from incidental generative changes. Close-up is enlarged from a small window region and is not a texture-resolution target.",
+  "runtimeVisualPass": false,
+  "performancePass": false,
+  "userApproval": true
+}

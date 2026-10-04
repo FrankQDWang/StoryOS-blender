@@ -1,0 +1,58 @@
+{
+  "id": "moonlit-window-v2-distant-sky",
+  "source_reference": "design/round-12-moonlit-window/03-window-detail.png",
+  "strategy": "image-to-image clean background recreation",
+  "tool": "built-in image_gen",
+  "generated_source_dimensions": [
+    1254,
+    1254
+  ],
+  "output_dimensions": [
+    1024,
+    1024
+  ],
+  "format": "webp",
+  "transparency": false,
+  "prompt_file": "assets/source/moonlit-window-v2/prompt.txt",
+  "composition_observed": {
+    "moon_center": [
+      0.665,
+      0.212
+    ],
+    "moon_diameter": 0.088,
+    "moon_bounds": [
+      0.621,
+      0.168,
+      0.709,
+      0.256
+    ],
+    "highest_ridge_y": 0.631,
+    "ridge_y_range": [
+      0.631,
+      0.688
+    ]
+  },
+  "deviations": [
+    "Moon diameter about 8.8% versus requested 8%; assess final projected window size.",
+    "Highest ridge about 63% versus requested 68%; runtime UV placement should be matched to approved window.",
+    "Output has distant hazy ridge layers and faint treeline-scale ridge texture, no standalone foreground or middle trees."
+  ],
+  "qa_status": "needs_parent_review",
+  "assets": [
+    {
+      "path": "assets/source/moonlit-window-v2/sky-source.png",
+      "bytes": 1363319,
+      "sha256": "0b6de1136078684acf427024ce2a99a8ef675696138e8cacbbf1cf170bcd04ee"
+    },
+    {
+      "path": "assets/source/moonlit-window-v2/sky.webp",
+      "bytes": 24734,
+      "sha256": "3972ce2860af9015d2c992069cb5e916d5767ec6f12962a8feb37210794c8286"
+    },
+    {
+      "path": "assets/source/moonlit-window-v2/prompt.txt",
+      "bytes": 1549,
+      "sha256": "f443b744f5b3e8cb8f53f279cab5cc3b46e235f783f3945a0938e838a028e8ee"
+    }
+  ]
+}

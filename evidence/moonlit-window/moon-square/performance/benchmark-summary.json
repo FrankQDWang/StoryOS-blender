@@ -1,0 +1,270 @@
+{
+  "comparisons": [
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "cold",
+      "metric": "firstPaint",
+      "samples": 5,
+      "baseline": 1457.7000000476837,
+      "candidate": 1418.2000000476837,
+      "increasePercent": -2.7097482334299205,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "cold",
+      "metric": "firstPaint",
+      "samples": 5,
+      "baseline": 1576.2999999523163,
+      "candidate": 1418.2000000476837,
+      "increasePercent": -10.029816653518697,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "cold",
+      "metric": "firstHand",
+      "samples": 5,
+      "baseline": 86.79999995231628,
+      "candidate": 84.10000002384186,
+      "increasePercent": -3.110598997647096,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "cold",
+      "metric": "firstHand",
+      "samples": 5,
+      "baseline": 93.29999995231628,
+      "candidate": 84.10000002384186,
+      "increasePercent": -9.860664451421608,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "cold",
+      "metric": "workspace",
+      "samples": 5,
+      "baseline": 3502.2000000476837,
+      "candidate": 3502.100000023842,
+      "increasePercent": -0.0028553487476545847,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "cold",
+      "metric": "workspace",
+      "samples": 5,
+      "baseline": 3502.2000000476837,
+      "candidate": 3502.100000023842,
+      "increasePercent": -0.0028553487476545847,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": 5,
+      "baseline": 1290.1999999284744,
+      "candidate": 1424.2999999523163,
+      "increasePercent": 10.393737407477598,
+      "pass": false
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": 5,
+      "baseline": 1282.3000000715256,
+      "candidate": 1424.2999999523163,
+      "increasePercent": 11.073851662861278,
+      "pass": false
+    },
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 5,
+      "baseline": 80.19999992847443,
+      "candidate": 97.19999992847443,
+      "increasePercent": 21.197007500201103,
+      "pass": false
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 5,
+      "baseline": 82.69999992847443,
+      "candidate": 97.19999992847443,
+      "increasePercent": 17.533252735841298,
+      "pass": false
+    },
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "warm",
+      "metric": "workspace",
+      "samples": 5,
+      "baseline": 3501.7000000476837,
+      "candidate": 3502.100000023842,
+      "increasePercent": 0.011423022422052398,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "warm",
+      "metric": "workspace",
+      "samples": 5,
+      "baseline": 3501.899999976158,
+      "candidate": 3502.100000023842,
+      "increasePercent": 0.005711186718215799,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "cold",
+      "metric": "firstPaint",
+      "samples": 3,
+      "baseline": 24658.299999952316,
+      "candidate": 23216,
+      "increasePercent": -5.849146129113136,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "20mbps-50ms",
+      "cache": "cold",
+      "metric": "firstPaint",
+      "samples": 3,
+      "baseline": 27291,
+      "candidate": 23216,
+      "increasePercent": -14.93166245282328,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "cold",
+      "metric": "firstHand",
+      "samples": 3,
+      "baseline": 80.69999992847443,
+      "candidate": 81,
+      "increasePercent": 0.3717473008568284,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "20mbps-50ms",
+      "cache": "cold",
+      "metric": "firstHand",
+      "samples": 3,
+      "baseline": 86,
+      "candidate": 81,
+      "increasePercent": -5.813953488372093,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "cold",
+      "metric": "workspace",
+      "samples": 3,
+      "baseline": 3501.399999976158,
+      "candidate": 3501.2000000476837,
+      "increasePercent": -0.0057119988711828995,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "20mbps-50ms",
+      "cache": "cold",
+      "metric": "workspace",
+      "samples": 3,
+      "baseline": 3502,
+      "candidate": 3501.2000000476837,
+      "increasePercent": -0.02284408773033375,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": 3,
+      "baseline": 1233.7999999523163,
+      "candidate": 1316.7999999523163,
+      "increasePercent": 6.727184308899958,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": 3,
+      "baseline": 1391.3999999761581,
+      "candidate": 1316.7999999523163,
+      "increasePercent": -5.361506398240634,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 3,
+      "baseline": 71.10000002384186,
+      "candidate": 79.10000002384186,
+      "increasePercent": 11.251758083428086,
+      "pass": false
+    },
+    {
+      "against": "current",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 3,
+      "baseline": 79.20000004768372,
+      "candidate": 79.10000002384186,
+      "increasePercent": -0.12626265628996602,
+      "pass": true
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "workspace",
+      "samples": 3,
+      "baseline": 3501.8000000715256,
+      "candidate": 3502.100000023842,
+      "increasePercent": 0.008567021312178014,
+      "pass": true
+    },
+    {
+      "against": "current",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "workspace",
+      "samples": 3,
+      "baseline": 3502,
+      "candidate": 3502.100000023842,
+      "increasePercent": 0.0028555118172901572,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": false
+}

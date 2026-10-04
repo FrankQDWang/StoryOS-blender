@@ -6,7 +6,8 @@ paths = [*sorted((root / 'public/assets/models').glob('*.glb')),
          *sorted(path for path in (root / 'public/assets/textures').iterdir() if path.suffix in ('.png', '.webp')),
          root / 'assets/source/storyos-library.blend',
          root / 'assets/source/writer-hands.blend',
-         root / 'assets/source/makehuman-hands.blend']
+         root / 'assets/source/makehuman-hands.blend',
+         root / 'assets/source/moonlit-window/window-vista.blend']
 assets = []
 for path in paths:
     data = path.read_bytes()
@@ -29,10 +30,11 @@ for path in paths:
 lock = json.loads((root / 'apps/web/package-lock.json').read_text())
 packages = ['react','vite','three','@react-three/fiber','@react-three/drei','@react-three/postprocessing']
 scene = json.loads((root/'public/assets/models/scene.json').read_text())
-manifest = {'version':'0.1.5-preview.5', 'room_version':scene['version'], 'baseline':scene['baseVersion'],
+manifest = {'version':'0.1.6-preview.2', 'room_version':scene['version'], 'baseline':scene['baseVersion'],
+            'window_script':'scripts/build_window_vista.py', 'window_provenance':'assets/source/moonlit-window-v2/provenance.json',
             'source_script':'scripts/build_library.py', 'hands_script':'scripts/build_makehuman_hands.py', 'hands_provenance':'assets/source/makehuman-hands.json', 'lighting_script':'scripts/bake_room_lighting.py', 'source_blender':scene['blender'],
             'runtime_versions':{p:lock['packages']['node_modules/'+p]['version'] for p in packages},
-            'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/a-study-wood.json','assets/source/a-study-rug.json','assets/source/room-lighting.json','assets/source/plaster-texture.json','assets/source/hearth-decor-atlas.json','assets/source/manuscript/provenance.json','assets/source/manuscript-soft/provenance.json','assets/source/manuscript-filled/provenance.json'],
+            'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/a-study-wood.json','assets/source/a-study-rug.json','assets/source/room-lighting.json','assets/source/plaster-texture.json','assets/source/hearth-decor-atlas.json','assets/source/manuscript/provenance.json','assets/source/manuscript-soft/provenance.json','assets/source/manuscript-filled/provenance.json','assets/source/moonlit-window/provenance.json','assets/source/moonlit-window-v2/provenance.json','assets/source/moonlit-window-v2/pine-spray-provenance.json'],
             'book_appearance':'SoftBook.mjs builds a thin continuous leather wrap, curved paper block, joined endpaper and three sewn leaves. soft-book-shape.mjs bends cover/spine and integrates fixed-length leaf paths; OpeningHands.jsx retargets existing contact to the flexible cover. BookAppearance.jsx keeps cover-only titles and fills the manuscript center in the original style, with no added Chinese page overlay. Cover lift keeps its prior stiffness with corrected downward sag between spine and grip; the multi-page paths are unchanged. Historical story-book.glb remains archived in assets and is no longer fetched by the runtime.',
             'visual_target':scene.get('visualTarget'), 'layout_source':scene.get('layoutSource'),
             'network_references':'Room reference images are research only. Hand mesh and skin use the documented CC0 MakeHuman sources.',

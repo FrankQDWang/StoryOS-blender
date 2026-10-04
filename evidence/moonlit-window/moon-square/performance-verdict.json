@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "samples": 48,
+  "retainedFailedComparisons": [
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": 5,
+      "baseline": 1290.1999999284744,
+      "candidate": 1424.2999999523163,
+      "increasePercent": 10.393737407477598,
+      "pass": false
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": 5,
+      "baseline": 1282.3000000715256,
+      "candidate": 1424.2999999523163,
+      "increasePercent": 11.073851662861278,
+      "pass": false
+    },
+    {
+      "against": "baseline",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 5,
+      "baseline": 80.19999992847443,
+      "candidate": 97.19999992847443,
+      "increasePercent": 21.197007500201103,
+      "pass": false
+    },
+    {
+      "against": "current",
+      "network": "local",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 5,
+      "baseline": 82.69999992847443,
+      "candidate": 97.19999992847443,
+      "increasePercent": 17.533252735841298,
+      "pass": false
+    },
+    {
+      "against": "baseline",
+      "network": "20mbps-50ms",
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": 3,
+      "baseline": 71.10000002384186,
+      "candidate": 79.10000002384186,
+      "increasePercent": 11.251758083428086,
+      "pass": false
+    }
+  ],
+  "backgroundLoadObserved": "syspolicyd 99.6%, ApplicationsStorageExtension 57.1%, StorageManagementService 46.3%, plus active WebContent and Python workers",
+  "interpretation": "Timing variability and concurrent host load observed; causality not proven. Do not claim the <=10% gate passed.",
+  "preloadTrial": "Separate 18 local samples retained; trial reverted because benefit was not established."
+}

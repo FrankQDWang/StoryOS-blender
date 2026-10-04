@@ -1,0 +1,25 @@
+{
+  "generator": "scripts/build_window_vista.py",
+  "seed": 10429,
+  "source": "assets/source/moonlit-window/window-vista.blend",
+  "model": "public/assets/models/window-vista.glb",
+  "bytes": 1036972,
+  "sha256": "3f9bd4aff4c2282faa937b45e6da28c10961ac30f1620f82383d8ad8dedb0f2f",
+  "style_reference": "design/round-12-moonlit-window/02-room-proposal.png",
+  "coordinates": "Blender XYZ -> glTF XZ-Y; exterior is beyond room window",
+  "materials": [
+    "VistaNear",
+    "VistaBark",
+    "VistaMiddle",
+    "VistaFar",
+    "VistaRidge",
+    "VistaSky",
+    "VistaMoon",
+    "VistaWindowJoin",
+    "VistaGlass",
+    "VistaNeedles",
+    "VistaMiddleNeedles",
+    "VistaFarNeedles"
+  ],
+  "original_room_rebuilt": false
+}

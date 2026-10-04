@@ -1,0 +1,5882 @@
+{
+  "chrome": "154.0.8037.93",
+  "os": "darwin",
+  "arch": "arm64",
+  "viewport": [
+    1512,
+    751
+  ],
+  "dpr": 1,
+  "fixture": {
+    "version": 1,
+    "books": [
+      {
+        "id": "preview-book-0",
+        "slot": 0,
+        "title": "星海余烬",
+        "description": "",
+        "materialId": "warm-umber",
+        "color": "#325852",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-1",
+        "slot": 1,
+        "title": "守月人",
+        "description": "",
+        "materialId": "muted-pine",
+        "color": "#b09b80",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-2",
+        "slot": 2,
+        "title": "寄往风中的信",
+        "description": "",
+        "materialId": "slate-blue",
+        "color": "#384d6b",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-3",
+        "slot": 3,
+        "title": "无题手稿·甲",
+        "description": "",
+        "materialId": "smoky-plum",
+        "color": "#a18490",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-4",
+        "slot": 4,
+        "title": "无题手稿·乙",
+        "description": "",
+        "materialId": "warm-ochre",
+        "color": "#c8a16a",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      }
+    ],
+    "lastBookId": "preview-book-0",
+    "reducedMotion": false,
+    "sound": false
+  },
+  "rows": [
+    {
+      "network": "local",
+      "round": 0,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1232.2000000476837,
+      "firstHand": 82.79999995231628,
+      "workspace": 3501.5,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1085.8999999761581,
+      "firstHand": 68.30000007152557,
+      "workspace": 3501,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 1164.3999999761581,
+      "firstHand": 76,
+      "workspace": 3501.2999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1152.6999999284744,
+      "firstHand": 72.40000009536743,
+      "workspace": 3502,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1786,
+      "firstHand": 74.39999997615814,
+      "workspace": 3501.6999999284744,
+      "resources": [
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1107.2999999523163,
+      "firstHand": 74,
+      "workspace": 3501.3000000715256,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1148.2000000476837,
+      "firstHand": 82,
+      "workspace": 3501.9000000953674,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1411.6000000238419,
+      "firstHand": 71.19999992847443,
+      "workspace": 3502,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 1157.3000000715256,
+      "firstHand": 76.89999997615814,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1187,
+      "firstHand": 74.5,
+      "workspace": 3502.100000023842,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1102.9000000953674,
+      "firstHand": 73.5,
+      "workspace": 3501.6999999284744,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1173.6000000238419,
+      "firstHand": 73.5,
+      "workspace": 3501.7999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1070.0999999046326,
+      "firstHand": 68.90000009536743,
+      "workspace": 3501.4000000953674,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1152.8999999761581,
+      "firstHand": 70.90000009536743,
+      "workspace": 3500.9000000953674,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 1089.2999999523163,
+      "firstHand": 70.79999995231628,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1144.6999999284744,
+      "firstHand": 69.29999995231628,
+      "workspace": 3501.5,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1168.8000000715256,
+      "firstHand": 74.10000002384186,
+      "workspace": 3501.3000000715256,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1187.8000000715256,
+      "firstHand": 72.89999997615814,
+      "workspace": 3501.2999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 19670.899999976158,
+      "firstHand": 69.39999997615814,
+      "workspace": 3502.5,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1215.1999999284744,
+      "firstHand": 72.5,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 20437.600000023842,
+      "firstHand": 79.89999997615814,
+      "workspace": 3501.7999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1317.8999999761581,
+      "firstHand": 73.70000004768372,
+      "workspace": 3501.600000023842,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 20624.600000023842,
+      "firstHand": 71.70000004768372,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1229.2999999523163,
+      "firstHand": 74.19999992847443,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 26354.899999976158,
+      "firstHand": 99.39999997615814,
+      "workspace": 3501.399999976158,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1430.1000000238419,
+      "firstHand": 77.39999997615814,
+      "workspace": 3501.7000000476837,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 20620.100000023842,
+      "firstHand": 80,
+      "workspace": 3502.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1172.2999999523163,
+      "firstHand": 75.19999992847443,
+      "workspace": 3501.0999999046326,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 21256.100000023842,
+      "firstHand": 71.70000004768372,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1217.6999999284744,
+      "firstHand": 73.70000004768372,
+      "workspace": 3501.2000000476837,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 22632.100000023842,
+      "firstHand": 78.40000009536743,
+      "workspace": 3502,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1434.7999999523163,
+      "firstHand": 101.29999995231628,
+      "workspace": 3503.1999999284744,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 25697.899999976158,
+      "firstHand": 78.10000002384186,
+      "workspace": 3502.2999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1230.9000000953674,
+      "firstHand": 77.5,
+      "workspace": 3500.7000000476837,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 24886.599999904633,
+      "firstHand": 76.89999997615814,
+      "workspace": 3501.2999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1284.1000000238419,
+      "firstHand": 72.29999995231628,
+      "workspace": 3500.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 21414,
+      "firstHand": 128.30000007152557,
+      "workspace": 3502.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360,
+          "startTime": 55.10000002384186,
+          "duration": 813.7000000476837,
+          "responseEnd": 868.8000000715256
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688,
+          "startTime": 55.200000047683716,
+          "duration": 219.60000002384186,
+          "responseEnd": 274.8000000715256
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "startTime": 910.2000000476837,
+          "duration": 4149.100000023842,
+          "responseEnd": 5059.300000071526
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "startTime": 910.3999999761581,
+          "duration": 1841.8000000715256,
+          "responseEnd": 2752.2000000476837
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "startTime": 916.2000000476837,
+          "duration": 12543.699999928474,
+          "responseEnd": 13459.899999976158
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "startTime": 916.8999999761581,
+          "duration": 111.70000004768372,
+          "responseEnd": 1028.6000000238419
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "startTime": 916.8999999761581,
+          "duration": 194.90000009536743,
+          "responseEnd": 1111.8000000715256
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "startTime": 916.8999999761581,
+          "duration": 507.60000002384186,
+          "responseEnd": 1424.5
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "startTime": 924.5,
+          "duration": 207.70000004768372,
+          "responseEnd": 1132.2000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "startTime": 1323.3000000715256,
+          "duration": 216.69999992847443,
+          "responseEnd": 1540
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "startTime": 1323.3999999761581,
+          "duration": 452.10000002384186,
+          "responseEnd": 1775.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "startTime": 1323.3999999761581,
+          "duration": 501.40000009536743,
+          "responseEnd": 1824.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "startTime": 1324,
+          "duration": 503.8000000715256,
+          "responseEnd": 1827.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "startTime": 1324,
+          "duration": 553.1000000238419,
+          "responseEnd": 1877.1000000238419
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "startTime": 1324,
+          "duration": 676.3999999761581,
+          "responseEnd": 2000.3999999761581
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "startTime": 1324.2000000476837,
+          "duration": 749.1000000238419,
+          "responseEnd": 2073.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "startTime": 1324.3000000715256,
+          "duration": 783,
+          "responseEnd": 2107.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "startTime": 1324.3000000715256,
+          "duration": 829.0999999046326,
+          "responseEnd": 2153.399999976158
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "startTime": 1324.3000000715256,
+          "duration": 866.5,
+          "responseEnd": 2190.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "startTime": 1324.3999999761581,
+          "duration": 881.5,
+          "responseEnd": 2205.899999976158
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "startTime": 1324.3999999761581,
+          "duration": 958,
+          "responseEnd": 2282.399999976158
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "startTime": 1324.3999999761581,
+          "duration": 960.4000000953674,
+          "responseEnd": 2284.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "startTime": 1324.5,
+          "duration": 1017.3999999761581,
+          "responseEnd": 2341.899999976158
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "startTime": 1325.1000000238419,
+          "duration": 362.7999999523163,
+          "responseEnd": 1687.8999999761581
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "startTime": 1325.2000000476837,
+          "duration": 281.39999997615814,
+          "responseEnd": 1606.6000000238419
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "startTime": 1829.3999999761581,
+          "duration": 562.9000000953674,
+          "responseEnd": 2392.3000000715256
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9,
+          "startTime": 2396.899999976158,
+          "duration": 52.5,
+          "responseEnd": 2449.399999976158
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "startTime": 13690.800000071526,
+          "duration": 6921.5,
+          "responseEnd": 20612.300000071526
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1431.8999999761581,
+      "firstHand": 73.29999995231628,
+      "workspace": 3501.2999999523163,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360,
+          "startTime": 69.5,
+          "duration": 0,
+          "responseEnd": 69.5
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688,
+          "startTime": 69.5,
+          "duration": 0,
+          "responseEnd": 69.5
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100,
+          "startTime": 76.79999995231628,
+          "duration": 21,
+          "responseEnd": 97.79999995231628
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972,
+          "startTime": 77,
+          "duration": 10,
+          "responseEnd": 87
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744,
+          "startTime": 77.19999992847443,
+          "duration": 0,
+          "responseEnd": 77.19999992847443
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734,
+          "startTime": 77.39999997615814,
+          "duration": 0,
+          "responseEnd": 77.39999997615814
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890,
+          "startTime": 77.5,
+          "duration": 0,
+          "responseEnd": 77.5
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136,
+          "startTime": 77.5,
+          "duration": 67.89999997615814,
+          "responseEnd": 145.39999997615814
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876,
+          "startTime": 77.89999997615814,
+          "duration": 0,
+          "responseEnd": 77.89999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364,
+          "startTime": 78,
+          "duration": 0,
+          "responseEnd": 78
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232,
+          "startTime": 78.09999990463257,
+          "duration": 0,
+          "responseEnd": 78.09999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532,
+          "startTime": 78.09999990463257,
+          "duration": 0,
+          "responseEnd": 78.09999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232,
+          "startTime": 78.09999990463257,
+          "duration": 0,
+          "responseEnd": 78.09999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396,
+          "startTime": 78.09999990463257,
+          "duration": 0,
+          "responseEnd": 78.09999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868,
+          "startTime": 78.19999992847443,
+          "duration": 0,
+          "responseEnd": 78.19999992847443
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388,
+          "startTime": 78.19999992847443,
+          "duration": 0,
+          "responseEnd": 78.19999992847443
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408,
+          "startTime": 78.29999995231628,
+          "duration": 0,
+          "responseEnd": 78.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452,
+          "startTime": 78.29999995231628,
+          "duration": 0,
+          "responseEnd": 78.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464,
+          "startTime": 78.29999995231628,
+          "duration": 0,
+          "responseEnd": 78.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208,
+          "startTime": 78.29999995231628,
+          "duration": 0,
+          "responseEnd": 78.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312,
+          "startTime": 78.39999997615814,
+          "duration": 0,
+          "responseEnd": 78.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676,
+          "startTime": 78.39999997615814,
+          "duration": 0,
+          "responseEnd": 78.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368,
+          "startTime": 78.39999997615814,
+          "duration": 0,
+          "responseEnd": 78.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264,
+          "startTime": 78.39999997615814,
+          "duration": 0,
+          "responseEnd": 78.39999997615814
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071,
+          "startTime": 300.2999999523163,
+          "duration": 0,
+          "responseEnd": 300.2999999523163
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648,
+          "startTime": 302.5,
+          "duration": 0,
+          "responseEnd": 302.5
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338,
+          "startTime": 302.5,
+          "duration": 0,
+          "responseEnd": 302.5
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 25047.099999904633,
+      "firstHand": 82.60000002384186,
+      "workspace": 3501.2000000476837,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890,
+          "startTime": 58.39999997615814,
+          "duration": 817.2999999523163,
+          "responseEnd": 875.6999999284744
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688,
+          "startTime": 58.5,
+          "duration": 215.39999997615814,
+          "responseEnd": 273.89999997615814
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "startTime": 911.0999999046326,
+          "duration": 3923,
+          "responseEnd": 4834.099999904633
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "startTime": 911.3999999761581,
+          "duration": 14124.899999976158,
+          "responseEnd": 15036.299999952316
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "startTime": 916.8999999761581,
+          "duration": 80.60000002384186,
+          "responseEnd": 997.5
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9,
+          "startTime": 917.5999999046326,
+          "duration": 52.40000009536743,
+          "responseEnd": 970
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "startTime": 1297.2999999523163,
+          "duration": 117.70000004768372,
+          "responseEnd": 1415
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "startTime": 1297.3999999761581,
+          "duration": 247.29999995231628,
+          "responseEnd": 1544.6999999284744
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "startTime": 1297.5,
+          "duration": 422,
+          "responseEnd": 1719.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "startTime": 1298.0999999046326,
+          "duration": 417.10000002384186,
+          "responseEnd": 1715.1999999284744
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "startTime": 1298.0999999046326,
+          "duration": 467,
+          "responseEnd": 1765.0999999046326
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "startTime": 1298.0999999046326,
+          "duration": 594,
+          "responseEnd": 1892.0999999046326
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "startTime": 1298.2999999523163,
+          "duration": 668.2000000476837,
+          "responseEnd": 1966.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "startTime": 1298.2999999523163,
+          "duration": 671.2000000476837,
+          "responseEnd": 1969.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "startTime": 1298.2999999523163,
+          "duration": 672.3999999761581,
+          "responseEnd": 1970.6999999284744
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "startTime": 1298.2999999523163,
+          "duration": 676,
+          "responseEnd": 1974.2999999523163
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "startTime": 1298.3999999761581,
+          "duration": 773.7999999523163,
+          "responseEnd": 2072.1999999284744
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "startTime": 1298.5,
+          "duration": 768.3999999761581,
+          "responseEnd": 2066.899999976158
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "startTime": 1298.5,
+          "duration": 803.0999999046326,
+          "responseEnd": 2101.5999999046326
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "startTime": 1298.5999999046326,
+          "duration": 809,
+          "responseEnd": 2107.5999999046326
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "startTime": 1299.0999999046326,
+          "duration": 367.8000000715256,
+          "responseEnd": 1666.8999999761581
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "startTime": 1299.0999999046326,
+          "duration": 440.8000000715256,
+          "responseEnd": 1739.8999999761581
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "startTime": 1741.3999999761581,
+          "duration": 418.89999997615814,
+          "responseEnd": 2160.2999999523163
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "startTime": 15209.5,
+          "duration": 9057.699999928474,
+          "responseEnd": 24267.199999928474
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1180.6999999284744,
+      "firstHand": 69,
+      "workspace": 3501.6999999284744,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890,
+          "startTime": 82.29999995231628,
+          "duration": 0,
+          "responseEnd": 82.29999995231628
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688,
+          "startTime": 82.29999995231628,
+          "duration": 0,
+          "responseEnd": 82.29999995231628
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100,
+          "startTime": 95.60000002384186,
+          "duration": 28.59999990463257,
+          "responseEnd": 124.19999992847443
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136,
+          "startTime": 95.69999992847443,
+          "duration": 95.60000002384186,
+          "responseEnd": 191.29999995231628
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876,
+          "startTime": 96.10000002384186,
+          "duration": 0,
+          "responseEnd": 96.10000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364,
+          "startTime": 96.19999992847443,
+          "duration": 0,
+          "responseEnd": 96.19999992847443
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232,
+          "startTime": 96.29999995231628,
+          "duration": 0,
+          "responseEnd": 96.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532,
+          "startTime": 96.29999995231628,
+          "duration": 0,
+          "responseEnd": 96.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232,
+          "startTime": 96.29999995231628,
+          "duration": 0,
+          "responseEnd": 96.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396,
+          "startTime": 96.29999995231628,
+          "duration": 0,
+          "responseEnd": 96.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868,
+          "startTime": 96.39999997615814,
+          "duration": 0,
+          "responseEnd": 96.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388,
+          "startTime": 96.39999997615814,
+          "duration": 0,
+          "responseEnd": 96.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408,
+          "startTime": 96.5,
+          "duration": 0,
+          "responseEnd": 96.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452,
+          "startTime": 96.60000002384186,
+          "duration": 0,
+          "responseEnd": 96.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464,
+          "startTime": 96.60000002384186,
+          "duration": 0,
+          "responseEnd": 96.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208,
+          "startTime": 96.60000002384186,
+          "duration": 0,
+          "responseEnd": 96.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312,
+          "startTime": 96.60000002384186,
+          "duration": 0,
+          "responseEnd": 96.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676,
+          "startTime": 96.60000002384186,
+          "duration": 0,
+          "responseEnd": 96.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368,
+          "startTime": 96.60000002384186,
+          "duration": 0,
+          "responseEnd": 96.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264,
+          "startTime": 96.69999992847443,
+          "duration": 0,
+          "responseEnd": 96.69999992847443
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071,
+          "startTime": 425.2999999523163,
+          "duration": 0,
+          "responseEnd": 425.2999999523163
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648,
+          "startTime": 426.39999997615814,
+          "duration": 0,
+          "responseEnd": 426.39999997615814
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338,
+          "startTime": 426.39999997615814,
+          "duration": 0,
+          "responseEnd": 426.39999997615814
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 21850.399999976158,
+      "firstHand": 98.69999992847443,
+      "workspace": 3501.1999999284744,
+      "resources": [
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464,
+          "startTime": 57.39999997615814,
+          "duration": 67.29999995231628,
+          "responseEnd": 124.69999992847443
+        },
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176,
+          "startTime": 57.39999997615814,
+          "duration": 702,
+          "responseEnd": 759.3999999761581
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "startTime": 801.3999999761581,
+          "duration": 3220,
+          "responseEnd": 4021.399999976158
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "startTime": 801.5999999046326,
+          "duration": 11353,
+          "responseEnd": 12154.599999904633
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284,
+          "startTime": 801.6999999284744,
+          "duration": 289.39999997615814,
+          "responseEnd": 1091.0999999046326
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "startTime": 807.6999999284744,
+          "duration": 89.70000004768372,
+          "responseEnd": 897.3999999761581
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9,
+          "startTime": 813.3999999761581,
+          "duration": 53.39999997615814,
+          "responseEnd": 866.7999999523163
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "startTime": 12298.199999928474,
+          "duration": 8642.700000047684,
+          "responseEnd": 20940.899999976158
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1176.5,
+      "firstHand": 102,
+      "workspace": 3501.6999999284744,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176,
+          "startTime": 72.5,
+          "duration": 0,
+          "responseEnd": 72.5
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464,
+          "startTime": 72.5,
+          "duration": 0,
+          "responseEnd": 72.5
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100,
+          "startTime": 79.60000002384186,
+          "duration": 25.199999928474426,
+          "responseEnd": 104.79999995231628
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136,
+          "startTime": 79.79999995231628,
+          "duration": 129.5,
+          "responseEnd": 209.29999995231628
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284,
+          "startTime": 79.89999997615814,
+          "duration": 2.700000047683716,
+          "responseEnd": 82.60000002384186
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876,
+          "startTime": 80.19999992847443,
+          "duration": 0,
+          "responseEnd": 80.19999992847443
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071,
+          "startTime": 353.60000002384186,
+          "duration": 54.89999997615814,
+          "responseEnd": 408.5
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 22481.099999904633,
+      "firstHand": 73.5,
+      "workspace": 3501.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176,
+          "startTime": 57.699999928474426,
+          "duration": 703.7000000476837,
+          "responseEnd": 761.3999999761581
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464,
+          "startTime": 57.799999952316284,
+          "duration": 68.89999997615814,
+          "responseEnd": 126.69999992847443
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "startTime": 772.1999999284744,
+          "duration": 3237.899999976158,
+          "responseEnd": 4010.0999999046326
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "startTime": 772.2999999523163,
+          "duration": 11783.5,
+          "responseEnd": 12555.799999952316
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284,
+          "startTime": 772.3999999761581,
+          "duration": 287.1999999284744,
+          "responseEnd": 1059.5999999046326
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "startTime": 774.5,
+          "duration": 90.19999992847443,
+          "responseEnd": 864.6999999284744
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "startTime": 12693.899999976158,
+          "duration": 8908.5,
+          "responseEnd": 21602.399999976158
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1225.2000000476837,
+      "firstHand": 68.79999995231628,
+      "workspace": 3501.399999976158,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176,
+          "startTime": 76.10000002384186,
+          "duration": 0,
+          "responseEnd": 76.10000002384186
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464,
+          "startTime": 76.20000004768372,
+          "duration": 0,
+          "responseEnd": 76.20000004768372
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100,
+          "startTime": 85,
+          "duration": 27.899999976158142,
+          "responseEnd": 112.89999997615814
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136,
+          "startTime": 85.29999995231628,
+          "duration": 71.40000009536743,
+          "responseEnd": 156.70000004768372
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284,
+          "startTime": 85.5,
+          "duration": 4.399999976158142,
+          "responseEnd": 89.89999997615814
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876,
+          "startTime": 85.79999995231628,
+          "duration": 0,
+          "responseEnd": 85.79999995231628
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071,
+          "startTime": 302.10000002384186,
+          "duration": 48.60000002384186,
+          "responseEnd": 350.7000000476837
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "current",
+      "cache": "cold",
+      "firstPaint": 20778.200000047684,
+      "firstHand": 83.69999992847443,
+      "workspace": 3501.600000023842,
+      "resources": [
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688,
+          "startTime": 55.89999997615814,
+          "duration": 216.30000007152557,
+          "responseEnd": 272.2000000476837
+        },
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 1614190,
+          "encodedBodySize": 1613890,
+          "startTime": 55.89999997615814,
+          "duration": 796,
+          "responseEnd": 851.8999999761581
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "startTime": 863.5,
+          "duration": 3610.2000000476837,
+          "responseEnd": 4473.700000047684
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "startTime": 863.7000000476837,
+          "duration": 11637.899999976158,
+          "responseEnd": 12501.600000023842
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "startTime": 865.7000000476837,
+          "duration": 80.60000002384186,
+          "responseEnd": 946.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "startTime": 1237.5,
+          "duration": 114.80000007152557,
+          "responseEnd": 1352.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "startTime": 1237.5,
+          "duration": 246.80000007152557,
+          "responseEnd": 1484.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "startTime": 1237.5,
+          "duration": 331.2000000476837,
+          "responseEnd": 1568.7000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "startTime": 1237.7000000476837,
+          "duration": 376.5,
+          "responseEnd": 1614.2000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "startTime": 1237.7000000476837,
+          "duration": 386.89999997615814,
+          "responseEnd": 1624.6000000238419
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "startTime": 1237.8000000715256,
+          "duration": 484.09999990463257,
+          "responseEnd": 1721.8999999761581
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "startTime": 1237.8000000715256,
+          "duration": 570.0999999046326,
+          "responseEnd": 1807.8999999761581
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "startTime": 1237.8000000715256,
+          "duration": 591.5,
+          "responseEnd": 1829.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "startTime": 1237.8000000715256,
+          "duration": 594.5,
+          "responseEnd": 1832.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "startTime": 1237.8000000715256,
+          "duration": 601.2999999523163,
+          "responseEnd": 1839.1000000238419
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "startTime": 1238,
+          "duration": 656.8000000715256,
+          "responseEnd": 1894.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "startTime": 1238,
+          "duration": 684.3000000715256,
+          "responseEnd": 1922.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "startTime": 1238,
+          "duration": 719.8999999761581,
+          "responseEnd": 1957.8999999761581
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "startTime": 1238,
+          "duration": 730.7000000476837,
+          "responseEnd": 1968.7000000476837
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "startTime": 1238.2000000476837,
+          "duration": 281.7999999523163,
+          "responseEnd": 1520
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "startTime": 1238.2000000476837,
+          "duration": 354.60000002384186,
+          "responseEnd": 1592.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "startTime": 1595,
+          "duration": 400.5,
+          "responseEnd": 1995.5
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "startTime": 12676.600000023842,
+          "duration": 7365.700000047684,
+          "responseEnd": 20042.300000071526
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "current",
+      "cache": "warm",
+      "firstPaint": 1216.7999999523163,
+      "firstHand": 70.39999997615814,
+      "workspace": 3500.899999976158,
+      "resources": [
+        {
+          "name": "/assets/index-jocDmNYF.js",
+          "transferSize": 0,
+          "encodedBodySize": 1613890,
+          "startTime": 66.29999995231628,
+          "duration": 0,
+          "responseEnd": 66.29999995231628
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688,
+          "startTime": 66.39999997615814,
+          "duration": 0,
+          "responseEnd": 66.39999997615814
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100,
+          "startTime": 73.89999997615814,
+          "duration": 29.299999952316284,
+          "responseEnd": 103.19999992847443
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136,
+          "startTime": 74.09999990463257,
+          "duration": 88.10000002384186,
+          "responseEnd": 162.19999992847443
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876,
+          "startTime": 74.29999995231628,
+          "duration": 0,
+          "responseEnd": 74.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364,
+          "startTime": 74.5,
+          "duration": 0,
+          "responseEnd": 74.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232,
+          "startTime": 74.59999990463257,
+          "duration": 0,
+          "responseEnd": 74.59999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532,
+          "startTime": 74.59999990463257,
+          "duration": 0,
+          "responseEnd": 74.59999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232,
+          "startTime": 74.59999990463257,
+          "duration": 0,
+          "responseEnd": 74.59999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396,
+          "startTime": 74.59999990463257,
+          "duration": 0,
+          "responseEnd": 74.59999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868,
+          "startTime": 74.59999990463257,
+          "duration": 0,
+          "responseEnd": 74.59999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388,
+          "startTime": 74.59999990463257,
+          "duration": 0,
+          "responseEnd": 74.59999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408,
+          "startTime": 74.69999992847443,
+          "duration": 0,
+          "responseEnd": 74.69999992847443
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452,
+          "startTime": 74.79999995231628,
+          "duration": 0,
+          "responseEnd": 74.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464,
+          "startTime": 74.79999995231628,
+          "duration": 0,
+          "responseEnd": 74.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208,
+          "startTime": 74.79999995231628,
+          "duration": 0,
+          "responseEnd": 74.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312,
+          "startTime": 74.79999995231628,
+          "duration": 0,
+          "responseEnd": 74.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676,
+          "startTime": 74.89999997615814,
+          "duration": 0,
+          "responseEnd": 74.89999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368,
+          "startTime": 74.89999997615814,
+          "duration": 0,
+          "responseEnd": 74.89999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264,
+          "startTime": 74.89999997615814,
+          "duration": 0,
+          "responseEnd": 74.89999997615814
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071,
+          "startTime": 375,
+          "duration": 11.699999928474426,
+          "responseEnd": 386.6999999284744
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338,
+          "startTime": 389.89999997615814,
+          "duration": 6.799999952316284,
+          "responseEnd": 396.6999999284744
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648,
+          "startTime": 389.89999997615814,
+          "duration": 7.799999952316284,
+          "responseEnd": 397.6999999284744
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 21984.399999976158,
+      "firstHand": 82.69999992847443,
+      "workspace": 3501.5,
+      "resources": [
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 201988,
+          "encodedBodySize": 201688,
+          "startTime": 58.300000071525574,
+          "duration": 215.5,
+          "responseEnd": 273.8000000715256
+        },
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 1616660,
+          "encodedBodySize": 1616360,
+          "startTime": 58.300000071525574,
+          "duration": 799.7999999523163,
+          "responseEnd": 858.1000000238419
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "startTime": 869.8000000715256,
+          "duration": 4587.5,
+          "responseEnd": 5457.300000071526
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "startTime": 870,
+          "duration": 1861.3000000715256,
+          "responseEnd": 2731.3000000715256
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "startTime": 870.2000000476837,
+          "duration": 13073.5,
+          "responseEnd": 13943.700000047684
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "startTime": 870.3999999761581,
+          "duration": 110.20000004768372,
+          "responseEnd": 980.6000000238419
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "startTime": 870.3999999761581,
+          "duration": 524.3000000715256,
+          "responseEnd": 1394.7000000476837
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "startTime": 870.5,
+          "duration": 194.60000002384186,
+          "responseEnd": 1065.1000000238419
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "startTime": 872.5,
+          "duration": 211.80000007152557,
+          "responseEnd": 1084.3000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "startTime": 1245.1000000238419,
+          "duration": 263.89999997615814,
+          "responseEnd": 1509
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "startTime": 1245.1000000238419,
+          "duration": 504.7000000476837,
+          "responseEnd": 1749.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "startTime": 1245.1000000238419,
+          "duration": 512.1000000238419,
+          "responseEnd": 1757.2000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "startTime": 1245.3000000715256,
+          "duration": 509.1999999284744,
+          "responseEnd": 1754.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "startTime": 1245.3999999761581,
+          "duration": 628.3000000715256,
+          "responseEnd": 1873.7000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "startTime": 1245.3999999761581,
+          "duration": 683.8000000715256,
+          "responseEnd": 1929.2000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "startTime": 1245.3999999761581,
+          "duration": 757.2000000476837,
+          "responseEnd": 2002.6000000238419
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "startTime": 1245.3999999761581,
+          "duration": 855.5,
+          "responseEnd": 2100.899999976158
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "startTime": 1245.5,
+          "duration": 843.3000000715256,
+          "responseEnd": 2088.8000000715256
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "startTime": 1245.5,
+          "duration": 872.2000000476837,
+          "responseEnd": 2117.7000000476837
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "startTime": 1245.5,
+          "duration": 963,
+          "responseEnd": 2208.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "startTime": 1245.5,
+          "duration": 990.8999999761581,
+          "responseEnd": 2236.399999976158
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "startTime": 1245.6000000238419,
+          "duration": 968.5,
+          "responseEnd": 2214.100000023842
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "startTime": 1245.7000000476837,
+          "duration": 1096.8999999761581,
+          "responseEnd": 2342.600000023842
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "startTime": 1245.8999999761581,
+          "duration": 358.60000002384186,
+          "responseEnd": 1604.5
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "startTime": 1246,
+          "duration": 285.39999997615814,
+          "responseEnd": 1531.3999999761581
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "startTime": 1759.6000000238419,
+          "duration": 577.1000000238419,
+          "responseEnd": 2336.7000000476837
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "startTime": 14089.300000071526,
+          "duration": 7024.899999976158,
+          "responseEnd": 21114.200000047684
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1151.1000000238419,
+      "firstHand": 70.5,
+      "workspace": 3501.5,
+      "resources": [
+        {
+          "name": "/assets/index-BGw5KOJR.js",
+          "transferSize": 0,
+          "encodedBodySize": 1616360,
+          "startTime": 67,
+          "duration": 0,
+          "responseEnd": 67
+        },
+        {
+          "name": "/assets/index-BgQI2Pe0.css",
+          "transferSize": 0,
+          "encodedBodySize": 201688,
+          "startTime": 67,
+          "duration": 0,
+          "responseEnd": 67
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100,
+          "startTime": 75.20000004768372,
+          "duration": 23.699999928474426,
+          "responseEnd": 98.89999997615814
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 0,
+          "encodedBodySize": 1036972,
+          "startTime": 75.39999997615814,
+          "duration": 15.800000071525574,
+          "responseEnd": 91.20000004768372
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 246744,
+          "startTime": 75.60000002384186,
+          "duration": 0,
+          "responseEnd": 75.60000002384186
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 24734,
+          "startTime": 75.70000004768372,
+          "duration": 0,
+          "responseEnd": 75.70000004768372
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 0,
+          "encodedBodySize": 63890,
+          "startTime": 75.70000004768372,
+          "duration": 0,
+          "responseEnd": 75.70000004768372
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136,
+          "startTime": 76,
+          "duration": 80.60000002384186,
+          "responseEnd": 156.60000002384186
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876,
+          "startTime": 76.29999995231628,
+          "duration": 0,
+          "responseEnd": 76.29999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25364,
+          "startTime": 76.39999997615814,
+          "duration": 0,
+          "responseEnd": 76.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 89232,
+          "startTime": 76.60000002384186,
+          "duration": 0,
+          "responseEnd": 76.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 84532,
+          "startTime": 76.60000002384186,
+          "duration": 0,
+          "responseEnd": 76.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 82232,
+          "startTime": 76.60000002384186,
+          "duration": 0,
+          "responseEnd": 76.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 77396,
+          "startTime": 76.60000002384186,
+          "duration": 0,
+          "responseEnd": 76.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 69868,
+          "startTime": 76.60000002384186,
+          "duration": 0,
+          "responseEnd": 76.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 13388,
+          "startTime": 76.60000002384186,
+          "duration": 0,
+          "responseEnd": 76.60000002384186
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 42408,
+          "startTime": 76.79999995231628,
+          "duration": 0,
+          "responseEnd": 76.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40452,
+          "startTime": 76.79999995231628,
+          "duration": 0,
+          "responseEnd": 76.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 40464,
+          "startTime": 76.79999995231628,
+          "duration": 0,
+          "responseEnd": 76.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 31208,
+          "startTime": 76.79999995231628,
+          "duration": 0,
+          "responseEnd": 76.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 55312,
+          "startTime": 76.79999995231628,
+          "duration": 0,
+          "responseEnd": 76.79999995231628
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 18676,
+          "startTime": 76.89999997615814,
+          "duration": 0,
+          "responseEnd": 76.89999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 35368,
+          "startTime": 76.89999997615814,
+          "duration": 0,
+          "responseEnd": 76.89999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 25264,
+          "startTime": 76.89999997615814,
+          "duration": 0,
+          "responseEnd": 76.89999997615814
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071,
+          "startTime": 339.60000002384186,
+          "duration": 37.89999997615814,
+          "responseEnd": 377.5
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 0,
+          "encodedBodySize": 102338,
+          "startTime": 381.2000000476837,
+          "duration": 3.6999999284744263,
+          "responseEnd": 384.89999997615814
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 141648,
+          "startTime": 381.2000000476837,
+          "duration": 3.799999952316284,
+          "responseEnd": 385
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

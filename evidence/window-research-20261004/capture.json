@@ -1,0 +1,10 @@
+{
+  "browser": "154.0.8037.93",
+  "url": "http://127.0.0.1:4173/",
+  "viewport": [
+    1512,
+    751
+  ],
+  "mode": "isolated headless Chrome; current five-book developer preview; no selection or hover",
+  "snapshot": "- main:\n  - link \"StoryOS 藏书室\":\n    - /url: \"#\"\n    - img\n    - text: StoryOS\n  - text: 私人藏书室 五书预览\n  - navigation:\n    - button \"开启环境音\":\n      - img\n    - button \"减少动态效果\":\n      - img\n    - button \"全部作品 5\":\n      - img\n      - text: 全部作品 5\n  - heading \"我的藏书室\" [level=1]\n  - button \"继续最近的写作 星海余烬\":\n    - img\n    - text: 继续最近的写作\n    - strong: 星海余烬\n    - img\n  - button \"自由漫游\":\n    - img\n    - text: 自由漫游\n  - button \"新建作品\":\n    - img\n    - text: 新建作品\n  - status \"本地渲染统计\": 60 FPS · 1.4s"
+}

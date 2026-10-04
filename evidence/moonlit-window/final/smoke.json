@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "slot": 0,
+      "title": "星海余烬"
+    },
+    {
+      "slot": 1,
+      "title": "守月人"
+    },
+    {
+      "slot": 2,
+      "title": "寄往风中的信"
+    },
+    {
+      "slot": 3,
+      "title": "无题手稿·甲"
+    },
+    {
+      "slot": 4,
+      "title": "无题手稿·乙"
+    },
+    "Quick Access search and enter",
+    "reduced motion open and return",
+    "create cancel"
+  ],
+  "errors": []
+}

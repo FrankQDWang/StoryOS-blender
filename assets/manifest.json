@@ -1,7 +1,9 @@
 {
-  "version": "0.1.5-preview.5",
+  "version": "0.1.6-preview.2",
   "room_version": "0.1.3-preview.3",
   "baseline": "v0.1.0-baseline",
+  "window_script": "scripts/build_window_vista.py",
+  "window_provenance": "assets/source/moonlit-window-v2/provenance.json",
   "source_script": "scripts/build_library.py",
   "hands_script": "scripts/build_makehuman_hands.py",
   "hands_provenance": "assets/source/makehuman-hands.json",
@@ -66,6 +68,18 @@
       "joints": [],
       "primitives": 30,
       "triangles": 3788
+    },
+    {
+      "path": "public/assets/models/window-vista.glb",
+      "bytes": 1036972,
+      "sha256": "3f9bd4aff4c2282faa937b45e6da28c10961ac30f1620f82383d8ad8dedb0f2f",
+      "meshes": 9,
+      "materials": 9,
+      "embedded_images": 0,
+      "skins": 0,
+      "joints": [],
+      "primitives": 9,
+      "triangles": 51485
     },
     {
       "path": "public/assets/models/writer-hands.glb",
@@ -138,6 +152,26 @@
       "sha256": "a0b354e66c67c2b77a02f5c60c62f9f80f0fe407ebef7a3ad2bdc5ef3bbc7e48"
     },
     {
+      "path": "public/assets/textures/window-bark-v2.webp",
+      "bytes": 246744,
+      "sha256": "5b5d88123501f923f9a1a4118f601eb1b829bc53ab4061e8d2eec1a181e3ba2b"
+    },
+    {
+      "path": "public/assets/textures/window-needles-v2.webp",
+      "bytes": 63890,
+      "sha256": "4ae8f74f10a562717587287df739833e30d51399df72da8148e6f442cb8113b9"
+    },
+    {
+      "path": "public/assets/textures/window-sky-v2.webp",
+      "bytes": 24734,
+      "sha256": "3972ce2860af9015d2c992069cb5e916d5767ec6f12962a8feb37210794c8286"
+    },
+    {
+      "path": "public/assets/textures/window-vista.webp",
+      "bytes": 810346,
+      "sha256": "fc26dcf2a7a8b334350e67705bee2d92ba6dcdf1c8157cf8e81dc06927eaa846"
+    },
+    {
       "path": "assets/source/storyos-library.blend",
       "bytes": 13063570,
       "sha256": "dd752d41a88f8b10b861e81bc27f9755adc3d115d58d40c5a3516ae3ea6dd8f6"
@@ -151,6 +185,11 @@
       "path": "assets/source/makehuman-hands.blend",
       "bytes": 5455879,
       "sha256": "f371e4e0155007118667a963787974e401eed71e63e3fd9a5f28eb6648815f77"
+    },
+    {
+      "path": "assets/source/moonlit-window/window-vista.blend",
+      "bytes": 1065797,
+      "sha256": "d7a0925ebb0c4a447f266781a21b09aa857ea622401610307813bc094978b447"
     }
   ],
   "texture_provenance": [
@@ -162,7 +201,10 @@
     "assets/source/hearth-decor-atlas.json",
     "assets/source/manuscript/provenance.json",
     "assets/source/manuscript-soft/provenance.json",
-    "assets/source/manuscript-filled/provenance.json"
+    "assets/source/manuscript-filled/provenance.json",
+    "assets/source/moonlit-window/provenance.json",
+    "assets/source/moonlit-window-v2/provenance.json",
+    "assets/source/moonlit-window-v2/pine-spray-provenance.json"
   ],
   "book_appearance": "SoftBook.mjs builds a thin continuous leather wrap, curved paper block, joined endpaper and three sewn leaves. soft-book-shape.mjs bends cover/spine and integrates fixed-length leaf paths; OpeningHands.jsx retargets existing contact to the flexible cover. BookAppearance.jsx keeps cover-only titles and fills the manuscript center in the original style, with no added Chinese page overlay. Cover lift keeps its prior stiffness with corrected downward sag between spine and grip; the multi-page paths are unchanged. Historical story-book.glb remains archived in assets and is no longer fetched by the runtime.",
   "visual_target": "design/round-05/A-hearth-study/final.png",

@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:4186/review.html",
+  "chrome": "154.0.8037.93",
+  "errors": [],
+  "images": [
+    {
+      "src": "references/current-room.png",
+      "loaded": true,
+      "width": 1512,
+      "height": 751
+    },
+    {
+      "src": "02-room-proposal.png",
+      "loaded": true,
+      "width": 1779,
+      "height": 884
+    },
+    {
+      "src": "02-room-proposal.png",
+      "loaded": true,
+      "width": 1779,
+      "height": 884
+    }
+  ],
+  "detail": "Chrome capture of the final proposal displayed at 2x inside a viewport crop; identical proposal, no separate image generation"
+}

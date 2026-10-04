@@ -1,0 +1,12 @@
+import {chromium}from'../book-check/node_modules/playwright/index.mjs';
+import fs from'node:fs/promises';
+const b=await chromium.connectOverCDP('http://127.0.0.1:9486'),c=await b.newContext({viewport:{width:1512,height:751},deviceScaleFactor:1}),p=await c.newPage();await p.goto('http://127.0.0.1:4173');await p.locator('.room-caption').waitFor();await p.waitForTimeout(1800);
+await p.evaluate(async()=>{const u=performance.getEntriesByType('resource').map(r=>r.name).find(n=>n.includes('/@react-three_fiber.js?'));const m=await import(u);window.__windowDraws=0;window.__vista=m._roots.get(document.querySelector('canvas')).store.getState().scene.getObjectByName('MoonlitWindow');window.__vista.traverse(o=>{if(o.isMesh)o.onBeforeRender=()=>window.__windowDraws++})});
+const sample=async()=>{await p.evaluate(()=>window.__windowDraws=0);await p.waitForTimeout(300);return p.evaluate(()=>window.__windowDraws)};
+const overview=await sample();await p.mouse.click(100,380);await p.locator('.focus-card').waitFor();await p.waitForTimeout(1700);const focus=await sample();
+await p.evaluate(()=>window.__vista.traverse(o=>{if(o.isMesh){o.__savedSphere=o.boundingSphere;delete o.boundingSphere}}));
+const focusWithoutAperture=await sample();
+await p.evaluate(()=>window.__vista.traverse(o=>{if(o.isMesh){o.boundingSphere=o.__savedSphere;delete o.__savedSphere}}));
+const focusRestored=await sample();
+await p.getByRole('button',{name:'打开这本书',exact:true}).click();const opening=await sample();await p.locator('.workspace h1').waitFor();await p.getByRole('button',{name:'返回藏书室',exact:true}).click();await p.locator('.room-caption').waitFor();await p.waitForTimeout(1600);await p.screenshot({path:'evidence/moonlit-window/revision-v2/culling-return.png'});
+const result={overview,focus,focusWithoutAperture,focusRestored,opening};await fs.writeFile('evidence/moonlit-window/revision-v2/culling-check.json',JSON.stringify(result));console.log(result);await c.close();process.exit(0);

@@ -1,0 +1,26 @@
+{
+  "apps/web/src/WindowVista.jsx": {
+    "bytes": 3605,
+    "sha256": "96e31a5a443008c23a698b59763c3800e190fb9950a93f334a4cc74c33f469ef"
+  },
+  "apps/web/dist/client/assets/index-DYW-mICF.js": {
+    "bytes": 1616421,
+    "sha256": "87f20f8ced87c82c46739c6237fe07344bdbc5004b84d50128a4363a9ab40612"
+  },
+  "public/assets/models/window-vista.glb": {
+    "bytes": 1036972,
+    "sha256": "3f9bd4aff4c2282faa937b45e6da28c10961ac30f1620f82383d8ad8dedb0f2f"
+  },
+  "public/assets/textures/window-bark-v2.webp": {
+    "bytes": 246744,
+    "sha256": "5b5d88123501f923f9a1a4118f601eb1b829bc53ab4061e8d2eec1a181e3ba2b"
+  },
+  "public/assets/textures/window-needles-v2.webp": {
+    "bytes": 63890,
+    "sha256": "4ae8f74f10a562717587287df739833e30d51399df72da8148e6f442cb8113b9"
+  },
+  "public/assets/textures/window-sky-v2.webp": {
+    "bytes": 24734,
+    "sha256": "3972ce2860af9015d2c992069cb5e916d5767ec6f12962a8feb37210794c8286"
+  }
+}

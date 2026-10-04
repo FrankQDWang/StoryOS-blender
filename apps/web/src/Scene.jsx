@@ -7,6 +7,7 @@ import layout from './room-layout.json';
 import {moveWithCollisions,isWalkable,readingApproach} from './roaming.mjs';
 import {HearthFire} from './HearthFire';
 import {OpeningHands} from './OpeningHands';
+import {WindowVista} from './WindowVista';
 import {useBookAppearance} from './BookAppearance';
 import {createSoftBook,updateSoftBook,disposeSoftBook} from './SoftBook.mjs';
 
@@ -22,6 +23,7 @@ const TINTS={Timber:'#aa8869',ReadingWood:'#d3b497',FloorWood:'#dfba94',WarmPlas
 const BUMP_SCALES={Timber:.22,ReadingWood:.14,FloorWood:.20,WarmPlaster:.90,Stone:.50,HearthDecor:.015,HearthRug:.04};
 function prepare(scene,room=false,indirect=null){
  const s=scene.clone(true);s.traverse(o=>{if(o.isMesh){
+  if(room&&/^(NightGlass|NightSilhouetteFar|NightSilhouetteNear)$/.test(o.material.name)){o.visible=false;return;}
   const materials=(Array.isArray(o.material)?o.material:[o.material]).map(source=>{
    const material=source.clone();
    if(room&&indirect&&source.aoMap&&!/^(Flame|LanternGlow|HearthEmber|NightGlass|NightSilhouette)/.test(material.name)){
@@ -260,6 +262,7 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
   <pointLight position={[4.05,2.55,-2.95]} color="#ffd09e" intensity={4.6} distance={7}/>
   <Suspense fallback={null}>
    <Room onReady={onReady}/>
+   <WindowVista/>
    {books.filter(b=>b.slot!==null&&b.id!==crafting?.id).map(b=><ProjectBook key={b.id} book={b} index={b.slot} onSelect={onSelect} selected={selected===b.id} opening={opening&&selected===b.id} reduced={reduced} appearing={appearing===b.id} openingClock={openingClock}/>)}
    <MagicTable onCreate={onCreate} crafting={crafting} reduced={reduced}/>
    {crafting&&<CreatingBook key={crafting.id} book={crafting}/>}

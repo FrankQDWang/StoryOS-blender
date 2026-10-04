@@ -1,0 +1,70 @@
+{
+  "url": "http://127.0.0.1:4185/",
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "viewport": [
+    1512,
+    751
+  ],
+  "dpr": 1,
+  "fixture": {
+    "version": 1,
+    "books": [
+      {
+        "id": "preview-book-0",
+        "slot": 0,
+        "title": "星海余烬",
+        "description": "",
+        "materialId": "warm-umber",
+        "color": "#325852",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-1",
+        "slot": 1,
+        "title": "守月人",
+        "description": "",
+        "materialId": "muted-pine",
+        "color": "#b09b80",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-2",
+        "slot": 2,
+        "title": "寄往风中的信",
+        "description": "",
+        "materialId": "slate-blue",
+        "color": "#384d6b",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-3",
+        "slot": 3,
+        "title": "无题手稿·甲",
+        "description": "",
+        "materialId": "smoky-plum",
+        "color": "#a18490",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      },
+      {
+        "id": "preview-book-4",
+        "slot": 4,
+        "title": "无题手稿·乙",
+        "description": "",
+        "materialId": "warm-ochre",
+        "color": "#c8a16a",
+        "words": 0,
+        "updatedAt": "2026-10-04T00:00:00Z"
+      }
+    ],
+    "lastBookId": "preview-book-0",
+    "reducedMotion": false,
+    "sound": false
+  },
+  "errors": [],
+  "state": "production; overview; unselected/unhovered; actual unchanged lighting"
+}

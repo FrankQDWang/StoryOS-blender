@@ -1,0 +1,28 @@
+import {chromium} from '../book-check/node_modules/playwright/index.mjs';
+import fs from 'node:fs/promises';
+import {fiveBookPreview} from '../../apps/web/src/five-book-preview.mjs';
+import {initialLibrary} from '../../apps/web/src/library-model.mjs';
+const out=process.env.WINDOW_OUT??'evidence/moonlit-window/final';await fs.mkdir(out,{recursive:true});
+const browser=await chromium.connectOverCDP('http://127.0.0.1:9486');
+const context=await browser.newContext({viewport:{width:1512,height:751},deviceScaleFactor:1,recordVideo:{dir:out,size:{width:1512,height:751}}});
+await context.addInitScript(f=>localStorage.setItem('storyos.library.demo.v1',JSON.stringify(f)),fiveBookPreview(initialLibrary()));
+const p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(String(e)));
+const shot=async n=>p.screenshot({path:`${out}/${n}.png`});
+const ready=async url=>{await p.goto(url);await p.locator('.room-caption').waitFor();await p.waitForTimeout(2200);await p.mouse.move(1500,740)};
+await ready('http://127.0.0.1:4180');await shot('before');
+await ready('http://127.0.0.1:4182');await shot('overview');
+await p.screenshot({path:`${out}/window-native.png`,clip:{x:638,y:165,width:224,height:205}});
+await p.getByRole('button',{name:'自由漫游',exact:true}).click();
+const hold=async(key,ms)=>{await p.keyboard.down(key);await p.waitForTimeout(ms);await p.keyboard.up(key)};
+await hold('a',650);await hold('w',4150);await hold('d',650);
+await p.evaluate(()=>document.dispatchEvent(new MouseEvent('mousemove',{movementX:0,movementY:-165,bubbles:true})));
+await p.waitForTimeout(350);await shot('near-center');
+await hold('a',550);await shot('near-left');await hold('d',1100);await shot('near-right');await hold('a',550);
+const start=Date.now();let index=0,frames=[];
+const motions=[['s',1500],['w',1500],['a',1800],['d',3600],['s',1600]];
+for(const[key,ms]of motions){await p.keyboard.down(key);const end=Date.now()+ms;while(Date.now()<end){const t=Date.now()-start;const name=`motion-${String(index++).padStart(3,'0')}`;await shot(name);frames.push({name,timeMs:t});await p.waitForTimeout(150)}await p.keyboard.up(key)}
+await fs.writeFile(`${out}/motion-frames.json`,JSON.stringify(frames,null,2));
+await p.keyboard.press('Escape');await p.waitForTimeout(1600);await shot('after-roam');
+console.log(await p.locator('body').ariaSnapshot());
+await fs.writeFile(`${out}/errors.json`,JSON.stringify(errors));
+await context.close();console.log('saved',out,frames.length);process.exit(0);

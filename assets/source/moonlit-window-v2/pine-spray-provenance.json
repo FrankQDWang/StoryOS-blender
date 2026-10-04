@@ -1,0 +1,68 @@
+{
+  "produce": [
+    {
+      "id": "moonlit-window-v2-pine-spray",
+      "source_crop": "design/round-12-moonlit-window/03-window-detail.png upper left pine bough",
+      "output_path": "assets/source/moonlit-window-v2/pine-spray.png",
+      "alternative_output": "assets/source/moonlit-window-v2/pine-spray.webp",
+      "strategy": "reference guided transparent conifer cutout using built-in image_gen",
+      "prompt_used": "assets/source/moonlit-window-v2/pine-spray-prompt.txt",
+      "dimensions": [
+        512,
+        256
+      ],
+      "format": "RGBA PNG / WebP",
+      "transparency": true,
+      "alpha_stats": {
+        "fully_transparent_pixels": 81281,
+        "partial_alpha_pixels": 48312,
+        "total_pixels": 131072
+      },
+      "deviations": [
+        "Source spray is denser and more feathery than sparse individual pine needles; preserve sparse arrangements in 3D.",
+        "Fine detail retained at 512px, runtime alpha cutoff should preserve gaps without noisy fringes."
+      ],
+      "qa_status": "needs_parent_review"
+    }
+  ],
+  "direct": [],
+  "semantic": [
+    {
+      "id": "spray-placement",
+      "implementation": "Parent scene should compose a few intersecting 2:1 aspect foliage planes around existing solid 3D branch geometry, main axis left root to right tip; preserve physical depth, use alpha-tested cutout material and keep centre sky open.",
+      "notes": "No trunk or full tree baked into texture; use PNG alpha without black backdrop.",
+      "qa_status": "needs_parent_review"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/source/moonlit-window-v2/pine-spray-source.png",
+      "bytes": 1367158,
+      "sha256": "ad3f4c1e38924c54212335c106e8044b9ce93814846eca15278dee525c1a8a79"
+    },
+    {
+      "path": "assets/source/moonlit-window-v2/pine-spray.png",
+      "bytes": 147977,
+      "sha256": "2dcff0d8b5421d9b89858e2c46e301bc254ff8e7525f1934ff4bac2d9f5877af"
+    },
+    {
+      "path": "assets/source/moonlit-window-v2/pine-spray.webp",
+      "bytes": 63890,
+      "sha256": "4ae8f74f10a562717587287df739833e30d51399df72da8148e6f442cb8113b9"
+    },
+    {
+      "path": "assets/source/moonlit-window-v2/pine-spray-prompt.txt",
+      "bytes": 1296,
+      "sha256": "97f658b88bda34015e0c656b423209922e6db744fa24c6affc713ac4014bd263"
+    }
+  ],
+  "execution_order": [
+    "Use pine-spray.png or WebP on foliage planes",
+    "Tune alpha cutoff and density",
+    "Compare Chrome overview and near-window to approved mock"
+  ],
+  "blockers": [],
+  "assumptions": [
+    "Parent owns all scene geometry and runtime integration"
+  ]
+}

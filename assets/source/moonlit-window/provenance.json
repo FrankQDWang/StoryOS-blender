@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-10-04T15:12:12Z",
+  "clientDate": "2026-10-04",
+  "generator": "built-in image_gen.imagegen",
+  "mode": "reference-guided generation",
+  "originalPath": "/Users/frankqdwang/.codex/generated_images/01a10777-e49c-72b3-8a41-6de98dfae5c4/exec-e73b5147-dcb5-4286-b241-084410a339a3.png",
+  "reference": {
+    "path": "design/round-12-moonlit-window/02-room-proposal.png",
+    "sha256": "a7b598fe15f0c319105b52b6c0ce138dd37d46ffb2c9a256fe716dab22aa4dea",
+    "role": "approved style and night-blue palette"
+  },
+  "transparentBackground": false,
+  "derivative": "sharp extraction, resizing and exact atlas packing only; see derive.mjs; no painted/generated code content",
+  "regions": {
+    "sky": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "moon": {
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "bark": {
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 768
+    }
+  },
+  "files": {
+    "source.png": {
+      "sha256": "978cd36b8b5ff252f70bb32f85152b8b564602ed9c058f5dbe482f808a272f41",
+      "bytes": 1723339,
+      "width": 1254,
+      "height": 1254,
+      "channels": 3
+    },
+    "atlas.png": {
+      "sha256": "7e74d4c274a4e786fd97c92e8b716340260777c10be3378673fb0202045e9dda",
+      "bytes": 1383907,
+      "width": 1024,
+      "height": 1024,
+      "channels": 3
+    },
+    "atlas.webp": {
+      "sha256": "fc26dcf2a7a8b334350e67705bee2d92ba6dcdf1c8157cf8e81dc06927eaa846",
+      "bytes": 810346,
+      "width": 1024,
+      "height": 1024,
+      "channels": 3
+    },
+    "prompt.txt": {
+      "sha256": "0802fc7ebdd763a7a47e108299adeab64f6db9593e9f0099edb739a1666d6126",
+      "bytes": 1610
+    },
+    "derive.mjs": {
+      "sha256": "2374d43fc00697a0b45ebbb1d9b85d787ceb539ad53738f7741da11b3b3dec8d",
+      "bytes": 1225
+    }
+  }
+}

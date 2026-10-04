@@ -1,5 +1,9 @@
 # Prototype Instructions
 
+For window scenery, the user approved `../../design/round-12-moonlit-window/02-room-proposal.png` on 2026-10-04. Follow `../../design/iterations/29-moonlit-window-plan.md` for the moonlit forest, unchanged room lighting, visual acceptance views and cumulative loading budget. The concept approval checkpoint is complete; current implementation status lives in PLAN.md.
+
+The first moonlit-window runtime was rejected on 2026-10-04 for not matching that mockup. Compare the approved image and the final Chrome render in one equal-scale image before claiming visual fidelity; checking that moon/trees exist or that performance passes is insufficient. See iteration 31 for the correction and its evidence.
+
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
 Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
