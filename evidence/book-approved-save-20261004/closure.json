@@ -1,0 +1,33 @@
+{
+  "observedAt": "2026-10-04T09:49:05.179934+00:00",
+  "publicationCheckpoint": "34deb9d24bbc2c8b6a0cd7c68da684084f2f2b5a",
+  "approvedRuntimeCommit": "30931814ac35523a80aa89dfdb4322871148a085",
+  "localBranches": [
+    "main"
+  ],
+  "remoteBranches": [
+    "main"
+  ],
+  "aheadBehind": [
+    0,
+    0
+  ],
+  "openPullRequests": [],
+  "worktrees": [
+    "/Users/frankqdwang/MLE/StoryOS-blender"
+  ],
+  "rootCleanBeforeClosureDocument": true,
+  "tagsUnchanged": [
+    "refs/tags/v0.1.0-baseline 56b6df9493d380197b11e7800a05cbd289417c06",
+    "refs/tags/v0.1.1-preview.1 249acba3a91c89708a2d46d616abdb284b81a1be",
+    "refs/tags/v0.2.0-preview.1 93b69e98a868e3737fbdfa6cab6735ad79f0f47b"
+  ],
+  "runtimeAndAssetsUnchanged": true,
+  "archiveVerified": true,
+  "removedLocalBranches": [
+    "codex/book-materials-lifecycle",
+    "codex/initial-loading-optimization"
+  ],
+  "removedWorktree": "/Users/frankqdwang/MLE/StoryOS-blender/.worktrees/baseline",
+  "note": "Observed after the first successful push and cleanup. This closure record is subsequently committed and pushed on main; no runtime edits follow the accepted snapshot."
+}
