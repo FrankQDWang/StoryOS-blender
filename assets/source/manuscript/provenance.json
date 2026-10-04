@@ -1,0 +1,34 @@
+{
+  "tool": "built-in ImageGen",
+  "date": "2026-10-04",
+  "referenceRole": "Approved material/style reference; not a baked room photograph",
+  "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-04db59dc-37f6-43b3-969b-8fcd6cbb741c.png",
+  "processing": "Split two square atlas panels, resize to 768, neutralize leather for shared tinting, WebP quality 86; command: node tools/book-check/prepare-textures.mjs",
+  "files": [
+    {
+      "path": "assets/source/manuscript/atlas.png",
+      "bytes": 3196245,
+      "sha256": "7518529f216e2714d260ed3e803d7eccc6c09625d4ffb39bf8db5632eb08e224"
+    },
+    {
+      "path": "assets/source/manuscript-texture-prompt.txt",
+      "bytes": 1597,
+      "sha256": "5ffbb3f73b3aa3ee7ce4557dccff54b139a94593dc59a2a7e0143659f808873f"
+    },
+    {
+      "path": "design/round-10-five-book-materials/warm-umber.png",
+      "bytes": 2129643,
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+    },
+    {
+      "path": "public/assets/textures/manuscript-leather.webp",
+      "bytes": 223238,
+      "sha256": "86396e681d50db916f07406a6b2255e8bb9f1fbc36053fb1f488e983eacd55b8"
+    },
+    {
+      "path": "public/assets/textures/manuscript-page.webp",
+      "bytes": 92424,
+      "sha256": "1ad1c1e21d1a7fdd4dc6732d0b109bf372cbfd534de95c804577f0d7f77d5be6"
+    }
+  ]
+}

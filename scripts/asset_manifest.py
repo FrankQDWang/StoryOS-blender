@@ -3,7 +3,7 @@ from pathlib import Path
 import json, struct, hashlib
 root = Path(__file__).resolve().parents[1]
 paths = [*sorted((root / 'public/assets/models').glob('*.glb')),
-         *sorted((root / 'public/assets/textures').glob('*.png')),
+         *sorted(path for path in (root / 'public/assets/textures').iterdir() if path.suffix in ('.png', '.webp')),
          root / 'assets/source/storyos-library.blend',
          root / 'assets/source/writer-hands.blend',
          root / 'assets/source/makehuman-hands.blend']
@@ -29,10 +29,11 @@ for path in paths:
 lock = json.loads((root / 'apps/web/package-lock.json').read_text())
 packages = ['react','vite','three','@react-three/fiber','@react-three/drei','@react-three/postprocessing']
 scene = json.loads((root/'public/assets/models/scene.json').read_text())
-manifest = {'version':'0.1.4-preview.6', 'room_version':scene['version'], 'baseline':scene['baseVersion'],
+manifest = {'version':'0.1.5-preview.2', 'room_version':scene['version'], 'baseline':scene['baseVersion'],
             'source_script':'scripts/build_library.py', 'hands_script':'scripts/build_makehuman_hands.py', 'hands_provenance':'assets/source/makehuman-hands.json', 'lighting_script':'scripts/bake_room_lighting.py', 'source_blender':scene['blender'],
             'runtime_versions':{p:lock['packages']['node_modules/'+p]['version'] for p in packages},
-            'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/a-study-wood.json','assets/source/a-study-rug.json','assets/source/room-lighting.json','assets/source/plaster-texture.json','assets/source/hearth-decor-atlas.json'],
+            'assets':assets, 'texture_provenance':['assets/source/wood-texture.json','assets/source/a-study-wood.json','assets/source/a-study-rug.json','assets/source/room-lighting.json','assets/source/plaster-texture.json','assets/source/hearth-decor-atlas.json','assets/source/manuscript/provenance.json','assets/source/manuscript-soft/provenance.json'],
+            'book_appearance':'BookAppearance.jsx applies five-material identities, hides historical metal ornaments, draws titles only on the outer leather and descriptions on paper. Runtime soft-cover-geometry.mjs rounds the existing cover envelope and adds a shallow leather cushion; the shared GLB, cover pivot, page animation and opening choreography remain unchanged. New fine leather and the existing manuscript paper use two shared ImageGen-derived WebP textures.',
             'visual_target':scene.get('visualTarget'), 'layout_source':scene.get('layoutSource'),
             'network_references':'Room reference images are research only. Hand mesh and skin use the documented CC0 MakeHuman sources.',
             'animation_source':'Shared opening-sequence.json drives the cover/pages and offline hand animation. OpeningHands.jsx plays one baked clip with 42 anatomical joints, 48 cloth joints and 10 skin corrective morphs from makehuman-hands.glb. TurningPages.jsx bends sheets. Rejected writer-hands files are retained as experiment history and are not loaded. HearthFire.jsx and HearthBed.jsx add procedural detail over the unchanged room asset.'}

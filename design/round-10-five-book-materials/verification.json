@@ -1,0 +1,217 @@
+{
+  "status": "executor and independent suite review complete; awaiting supervisor/user judgment",
+  "allJsonValid": true,
+  "fiveUniqueFinalIds": true,
+  "allFinalPngDimensions": [
+    1536,
+    1024
+  ],
+  "newImagegenCalls": 4,
+  "approvedImageByteReuses": 1,
+  "targetedCorrections": 0,
+  "allOriginalOutputHashesMatch": true,
+  "allActualRequestsPassApprovedReference": true,
+  "scopeVerification": "scope-verification.json",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1561,
+      "sha256": "cb108d61843361219136b7e6ea4741edd4cacd0072af1d47dd830ba1a6f4751f"
+    },
+    {
+      "file": "inputs/22-five-book-material-concepts.md",
+      "bytes": 5222,
+      "sha256": "e777f071e89c614deeb2378c74c8f91b1c6a5f26971bd5bcdd758819d8eb41c5"
+    },
+    {
+      "file": "inputs/PLAN-current-handoff-snapshot.md",
+      "bytes": 4109,
+      "sha256": "4e5e01fd1874cc178e483282a668c64f75347121e6a2f0e1fd22738265115375"
+    },
+    {
+      "file": "inputs/reference-source.json",
+      "bytes": 565,
+      "sha256": "f8a3d91a7fc88b69eeaed3b250c15bfe61ca194b8314bb41bce589fbbc7c7099"
+    },
+    {
+      "file": "inputs/reference.png",
+      "bytes": 2129643,
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 9502,
+      "sha256": "85767c139de57f9f8b41a9daf9c05faac0272955c6fa43b2933d9586966d3d7e"
+    },
+    {
+      "file": "muted-pine/muted-pine-v1.png",
+      "bytes": 2105045,
+      "sha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b"
+    },
+    {
+      "file": "muted-pine/prompt.txt",
+      "bytes": 2993,
+      "sha256": "309eb96b9f30555fc790b516c8faa83f3b68abdc18b0df8554c0903623d2ee86"
+    },
+    {
+      "file": "muted-pine/provenance.json",
+      "bytes": 1937,
+      "sha256": "68efdc8f2c390a9b16b3734dcb44c8aada6187fc1780932d7fb54307757279ea"
+    },
+    {
+      "file": "muted-pine/qa.md",
+      "bytes": 2357,
+      "sha256": "63b2667655de5956daced461d8ac3f5755dc5329ef057d8acc2be93f53aad290"
+    },
+    {
+      "file": "muted-pine/request.json",
+      "bytes": 3176,
+      "sha256": "2fe6433b028df8b1833746b4a492017fd1089c4a1f7b98b99486a3e906583302"
+    },
+    {
+      "file": "muted-pine/tool-output-path.txt",
+      "bytes": 126,
+      "sha256": "85d176c94791e25be28ef467cf45676ffdf8e4ec6f81224a4566f9510559da04"
+    },
+    {
+      "file": "muted-pine.png",
+      "bytes": 2105045,
+      "sha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b"
+    },
+    {
+      "file": "provenance.json",
+      "bytes": 1436,
+      "sha256": "fc69ba081a02899382be9ccf98afd2e2502a8ba4c10ae2ce7288efa88e06ec12"
+    },
+    {
+      "file": "qa.md",
+      "bytes": 3496,
+      "sha256": "b8c6095f2ce30c9170d0bc1e44524040b71eccd8e9ca950dcddb67a7f5f0ac2d"
+    },
+    {
+      "file": "scope-before.json",
+      "bytes": 391,
+      "sha256": "52762baacf36df3a7a83dc0e8e2e827b238d518c8a7e236ac4591c147838a583"
+    },
+    {
+      "file": "scope-verification.json",
+      "bytes": 546,
+      "sha256": "f22648fa2b173d9ca5535a5f63bb902e30e6d641093d597bdbc0bd151e2fae25"
+    },
+    {
+      "file": "slate-blue/output-v1.json",
+      "bytes": 700,
+      "sha256": "545f499947a3fb7ecbae03dccda32ae7959214b3b918429be1c9723544dfe10e"
+    },
+    {
+      "file": "slate-blue/prompt-v1.txt",
+      "bytes": 3151,
+      "sha256": "988c845a677c48c1d6f2a99ea48347d3c4561a4c223b640ca38356e9edf83665"
+    },
+    {
+      "file": "slate-blue/provenance.json",
+      "bytes": 1639,
+      "sha256": "023c6772a07c080573f51dda1776e3beaf204be1a3b4e2ae8767f5f2b14c5e44"
+    },
+    {
+      "file": "slate-blue/qa.md",
+      "bytes": 2358,
+      "sha256": "072d0c2f62d37c0ec39f58b64be7edbbf6dacefdadc0a6642ec4360123bdd0ea"
+    },
+    {
+      "file": "slate-blue/request-v1.json",
+      "bytes": 3335,
+      "sha256": "0f9d378f297da6227037dba0d70ec2c47f531db9087cefacf1e43738185ba6c0"
+    },
+    {
+      "file": "slate-blue/slate-blue-v1.png",
+      "bytes": 2108275,
+      "sha256": "17fdcff4013999a3e8fdfe54d5cef2661a277e9541f6c2164eabbd25232e991a"
+    },
+    {
+      "file": "slate-blue.png",
+      "bytes": 2108275,
+      "sha256": "17fdcff4013999a3e8fdfe54d5cef2661a277e9541f6c2164eabbd25232e991a"
+    },
+    {
+      "file": "smoky-plum/output-v1.json",
+      "bytes": 1084,
+      "sha256": "65652cb248cf39afd6cf40a9d8166773a0bb1ece7ad3076809d35ef0ceb38831"
+    },
+    {
+      "file": "smoky-plum/prompt-v1.txt",
+      "bytes": 2784,
+      "sha256": "117deff8254030fe369be770ae535c83726b3d7d604265ec6be88e5a7ff683f0"
+    },
+    {
+      "file": "smoky-plum/provenance.json",
+      "bytes": 2987,
+      "sha256": "4974dd17d369221c54f21ba8d09f38c5f6402169fe9657192fad51d85e25641f"
+    },
+    {
+      "file": "smoky-plum/qa.md",
+      "bytes": 1662,
+      "sha256": "7f440a21d95a32a641e802457808dd272e1fba6a1b7e766fa8e563156a3185b5"
+    },
+    {
+      "file": "smoky-plum/request-v1.json",
+      "bytes": 2965,
+      "sha256": "143e3a85bcc98ac91b40d23acb2ddd7099ae47c3d2f9f45bccde15926cdb7aab"
+    },
+    {
+      "file": "smoky-plum/smoky-plum-v1.png",
+      "bytes": 2076912,
+      "sha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d"
+    },
+    {
+      "file": "smoky-plum.png",
+      "bytes": 2076912,
+      "sha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d"
+    },
+    {
+      "file": "warm-ochre/output-v1.json",
+      "bytes": 577,
+      "sha256": "d617c098ca5b400e233850a85eff4a521c91798e95aed57404b03275f3c5e8c1"
+    },
+    {
+      "file": "warm-ochre/prompt-v1.txt",
+      "bytes": 3506,
+      "sha256": "4177fe71663f0e26ff46f77889b6c365c9e1d9024995a3e88ac4e2c4c349729b"
+    },
+    {
+      "file": "warm-ochre/provenance.json",
+      "bytes": 2081,
+      "sha256": "4152bc1e199746b046e223754fcf90cdcd8310a5205b3d066cf28759be6ab6c7"
+    },
+    {
+      "file": "warm-ochre/qa.md",
+      "bytes": 1113,
+      "sha256": "85cb966e4bc6c4cfc04e6113ff85f6b99ef664097c385676c5121f8a16cfe575"
+    },
+    {
+      "file": "warm-ochre/request-v1.json",
+      "bytes": 3695,
+      "sha256": "64c2ca21a683d6e94c6e7d31247c87ca9b880ecfa57834ec3c43f990651bd14b"
+    },
+    {
+      "file": "warm-ochre/tool-result-v1.json",
+      "bytes": 677,
+      "sha256": "fd57a08548c17d158f48d27681db35c3a41aa82bbbf0cd5443507a8837f772e1"
+    },
+    {
+      "file": "warm-ochre/warm-ochre-v1.png",
+      "bytes": 2173823,
+      "sha256": "1195f14f3d2879cdb450e7f1fe4deb8b7995bb9c6259304b13616dba3194555a"
+    },
+    {
+      "file": "warm-ochre.png",
+      "bytes": 2173823,
+      "sha256": "1195f14f3d2879cdb450e7f1fe4deb8b7995bb9c6259304b13616dba3194555a"
+    },
+    {
+      "file": "warm-umber.png",
+      "bytes": 2129643,
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+    }
+  ]
+}

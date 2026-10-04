@@ -1,0 +1,52 @@
+{
+  "status": "awaiting user confirmation of complete five-book set",
+  "reviewPage": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-10-five-book-materials/review.html",
+  "order": "main conversation final display order",
+  "images": [
+    {
+      "displayNumber": 1,
+      "id": "warm-umber",
+      "title": "星海余烬",
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-10-five-book-materials/warm-umber.png",
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "placeholder": false,
+      "reusedApprovedOriginal": true
+    },
+    {
+      "displayNumber": 2,
+      "id": "muted-pine",
+      "title": "守月人",
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-10-five-book-materials/muted-pine.png",
+      "sha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b",
+      "placeholder": false,
+      "reusedApprovedOriginal": false
+    },
+    {
+      "displayNumber": 3,
+      "id": "slate-blue",
+      "title": "寄往风中的信",
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-10-five-book-materials/slate-blue.png",
+      "sha256": "17fdcff4013999a3e8fdfe54d5cef2661a277e9541f6c2164eabbd25232e991a",
+      "placeholder": false,
+      "reusedApprovedOriginal": false
+    },
+    {
+      "displayNumber": 4,
+      "id": "smoky-plum",
+      "title": "无题手稿·甲",
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-10-five-book-materials/smoky-plum.png",
+      "sha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d",
+      "placeholder": true,
+      "reusedApprovedOriginal": false
+    },
+    {
+      "displayNumber": 5,
+      "id": "warm-ochre",
+      "title": "无题手稿·乙",
+      "path": "/Users/frankqdwang/MLE/StoryOS-blender/design/round-10-five-book-materials/warm-ochre.png",
+      "sha256": "1195f14f3d2879cdb450e7f1fe4deb8b7995bb9c6259304b13616dba3194555a",
+      "placeholder": true,
+      "reusedApprovedOriginal": false
+    }
+  ]
+}

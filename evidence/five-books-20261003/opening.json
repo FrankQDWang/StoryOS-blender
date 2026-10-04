@@ -1,0 +1,48 @@
+{
+  "frames": [
+    {
+      "path": "evidence/five-books-20261003/continuous/00.png",
+      "at": 1
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/01.png",
+      "at": 432
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/02.png",
+      "at": 823
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/03.png",
+      "at": 1233
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/04.png",
+      "at": 1623
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/05.png",
+      "at": 2033
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/06.png",
+      "at": 2432
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/07.png",
+      "at": 2831
+    },
+    {
+      "path": "evidence/five-books-20261003/continuous/08.png",
+      "at": 3228
+    }
+  ],
+  "errors": [],
+  "steps": [
+    "actual book selection",
+    "complete opening enters matching workspace",
+    "return to room",
+    "roaming entry/exit",
+    "reduced-motion entry"
+  ]
+}

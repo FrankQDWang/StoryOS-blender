@@ -1,0 +1,14 @@
+{
+  "title": "无题手稿·乙",
+  "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a0c7f9-ff55-7a90-9a40-9ec22fe2acd4/exec-8fd05bb0-0a7c-4aa4-88f1-086e17bcac31.png",
+  "workspaceOutput": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-ochre/warm-ochre-v1.png",
+  "sha256": "1195f14f3d2879cdb450e7f1fe4deb8b7995bb9c6259304b13616dba3194555a",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "tool": "built-in image_gen.imagegen",
+  "request": "request-v1.json",
+  "generationCount": 1,
+  "targetedCorrections": 0
+}

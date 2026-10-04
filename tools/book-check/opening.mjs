@@ -1,0 +1,33 @@
+import {chromium} from 'playwright';
+import sharp from 'sharp';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const browser=await chromium.connectOverCDP('http://127.0.0.1:9484');
+const context=await browser.newContext({viewport:{width:1512,height:751},deviceScaleFactor:1});
+const {fixture}=JSON.parse(await fs.readFile('evidence/five-books-20261003/benchmark-raw.json'));
+await context.addInitScript(fixture=>localStorage.setItem('storyos.library.demo.v1',JSON.stringify(fixture)),fixture);
+const page=await context.newPage(),errors=[],frames=[];
+page.on('pageerror',e=>errors.push(String(e)));
+await page.goto('http://127.0.0.1:4182');await page.locator('.room-caption').waitFor();await page.waitForTimeout(500);
+await page.mouse.click(101,376);await page.locator('.focus-card').waitFor();await page.waitForTimeout(1200);
+await page.screenshot({path:'evidence/five-books-20261003/actual-focus.png'});
+await page.getByRole('button',{name:'打开这本书',exact:true}).click();
+const start=Date.now();
+await fs.mkdir('evidence/five-books-20261003/continuous',{recursive:true});
+while(Date.now()-start<3350){
+ const path=`evidence/five-books-20261003/continuous/${String(frames.length).padStart(2,'0')}.png`;
+ const at=Date.now()-start;await page.screenshot({path});frames.push({path,at});await page.waitForTimeout(110);
+}
+await page.locator('.workspace h1').waitFor();assert.equal(await page.locator('.workspace h1').innerText(),'星海余烬');
+await page.getByRole('button',{name:'返回藏书室',exact:true}).click();await page.waitForTimeout(1000);
+await page.getByRole('button',{name:'自由漫游',exact:true}).click();await page.locator('.roam-help').waitFor();
+await page.keyboard.press('Escape');await page.locator('.room-caption').waitFor();
+await page.getByRole('button',{name:'减少动态效果',exact:true}).click();
+await page.mouse.click(101,376);await page.locator('.focus-card').waitFor();await page.getByRole('button',{name:'打开这本书',exact:true}).click();
+await page.locator('.workspace h1').waitFor();assert.equal(await page.locator('.workspace h1').innerText(),'星海余烬');
+assert.deepEqual(errors,[]);
+const chosen=frames.filter((_,i)=>i%2===0),tiles=[];
+for(const [i,frame] of chosen.entries())tiles.push({input:await sharp(frame.path).resize(504,250).toBuffer(),left:i%3*504,top:Math.floor(i/3)*250});
+await sharp({create:{width:1512,height:Math.ceil(chosen.length/3)*250,channels:3,background:'#141b22'}}).composite(tiles).png().toFile('evidence/five-books-20261003/opening-contact-sheet.png');
+await fs.writeFile('evidence/five-books-20261003/opening.json',JSON.stringify({frames,errors,steps:['actual book selection','complete opening enters matching workspace','return to room','roaming entry/exit','reduced-motion entry']},null,2)+'\n');
+await context.close();console.log(`${frames.length} continuous opening frames, entry/return/roaming/reduced-motion passed`);process.exit(0);

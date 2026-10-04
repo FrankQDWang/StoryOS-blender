@@ -1,0 +1,39 @@
+{
+  "scope": "New Chrome process and empty project-local profile for every sample; local network, identical five-book fixture and production builds",
+  "rows": [
+    {
+      "round": 0,
+      "version": "baseline",
+      "firstPaint": 1093.7999999523163
+    },
+    {
+      "round": 0,
+      "version": "candidate",
+      "firstPaint": 1121.8000000715256
+    },
+    {
+      "round": 1,
+      "version": "candidate",
+      "firstPaint": 1148.2000000476837
+    },
+    {
+      "round": 1,
+      "version": "baseline",
+      "firstPaint": 1074
+    },
+    {
+      "round": 2,
+      "version": "baseline",
+      "firstPaint": 1150.1999999284744
+    },
+    {
+      "round": 2,
+      "version": "candidate",
+      "firstPaint": 1244.6000000238419
+    }
+  ],
+  "baseline": 1093.7999999523163,
+  "candidate": 1148.2000000476837,
+  "increasePercent": 4.973486935247662,
+  "pass": true
+}

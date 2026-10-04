@@ -1,0 +1,5 @@
+{"url":"http://127.0.0.1:4173/review.html?slot=0&time=0","name":"first-cover","errors":["Failed to load resource: the server responded with a status of 404 (Not Found)"]}
+{"url":"http://127.0.0.1:4173/review.html?slot=0&time=3.2","name":"first-open","errors":[]}
+{"url":"http://127.0.0.1:4173/review.html?slot=0&time=0","name":"refined-cover","errors":[]}
+{"url":"http://127.0.0.1:4173/","name":"empty-room","errors":[]}
+{"url":"http://127.0.0.1:4173/review.html?slot=0&time=3.2","name":"refined-open","errors":[]}

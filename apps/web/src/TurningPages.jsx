@@ -2,8 +2,9 @@ import React,{useEffect,useMemo,useRef} from 'react';
 import {useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
 import {pagePose} from './opening-motion.mjs';
+import {pageMaterial} from './BookAppearance';
 
-function Page({index,clock}) {
+function Page({index,clock,appearance}) {
  const mesh=useRef();
  const geometry=useMemo(()=>{
   const g=new THREE.PlaneGeometry(.70,.925,28,12);
@@ -27,7 +28,7 @@ function Page({index,clock}) {
   positions.needsUpdate=true;geometry.computeVertexNormals();
  });
  return <mesh ref={mesh} geometry={geometry} castShadow receiveShadow frustumCulled={false} raycast={()=>null}>
-  <meshStandardMaterial color={['#d8c4a0','#d2bd97','#decca9'][index]} emissive="#b8a17e" emissiveIntensity={.13} roughness={.91} side={THREE.DoubleSide}/>
+  <meshStandardMaterial {...pageMaterial(appearance)}/>
  </mesh>;
 }
-export function TurningPages({clock}) {return <group>{[0,1,2].map(i=><Page key={i} index={i} clock={clock}/>)}</group>}
+export function TurningPages({clock,appearance}) {return <group>{[0,1,2].map(i=><Page key={i} index={i} clock={clock} appearance={appearance}/>)}</group>}

@@ -1,0 +1,34 @@
+{
+  "root": "http://127.0.0.1:4182",
+  "chrome": "154.0.8037.93",
+  "steps": [
+    "fresh empty library",
+    "five UI creations in approved order",
+    "sixth book kept in list",
+    "deletion leaves others unchanged",
+    "replacement and reload preserve identity",
+    "overflow searchable via Quick Access",
+    "delete cancellation keeps book",
+    "delete all and refresh stays empty",
+    "new cycle begins with warm umber"
+  ],
+  "errors": [],
+  "finalLibrary": {
+    "version": 1,
+    "books": [
+      {
+        "id": "42bc72f9-9d20-4649-9b5e-8d5f9a29bdd1",
+        "title": "重生手稿",
+        "description": "",
+        "materialId": "warm-umber",
+        "color": "#ac8058",
+        "slot": 0,
+        "words": 0,
+        "updatedAt": "2026-10-03T16:30:57.554Z"
+      }
+    ],
+    "lastBookId": "42bc72f9-9d20-4649-9b5e-8d5f9a29bdd1",
+    "reducedMotion": false,
+    "sound": false
+  }
+}

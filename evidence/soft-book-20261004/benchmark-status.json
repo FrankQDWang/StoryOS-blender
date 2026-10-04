@@ -1,0 +1,59 @@
+{
+  "status": "not-passed",
+  "initialCandidateSamplesPerGroup": 3,
+  "initialCandidateSummary": [
+    {
+      "cache": "cold",
+      "metric": "firstPaint",
+      "baselineMedian": 1230.6000000238419,
+      "candidateMedian": 1367.5,
+      "increasePercent": 11.124654637860054
+    },
+    {
+      "cache": "cold",
+      "metric": "firstHand",
+      "baselineMedian": 98.39999997615814,
+      "candidateMedian": 97.89999997615814,
+      "increasePercent": -0.5081300814239298
+    },
+    {
+      "cache": "cold",
+      "metric": "workspace",
+      "baselineMedian": 3511.899999976158,
+      "candidateMedian": 3509.7999999523163,
+      "increasePercent": -0.05979669192904824
+    },
+    {
+      "cache": "warm",
+      "metric": "firstPaint",
+      "baselineMedian": 1112.7000000476837,
+      "candidateMedian": 1202,
+      "increasePercent": 8.025523496763665
+    },
+    {
+      "cache": "warm",
+      "metric": "firstHand",
+      "baselineMedian": 105.10000002384186,
+      "candidateMedian": 103.20000004768372,
+      "increasePercent": -1.8078020701495001
+    },
+    {
+      "cache": "warm",
+      "metric": "workspace",
+      "baselineMedian": 3510.399999976158,
+      "candidateMedian": 3506.7999999523163,
+      "increasePercent": -0.10255241635900303
+    }
+  ],
+  "finalCandidate": "No complete comparable set. Baseline later slowed to 5.8–6.9 seconds, candidate 7.3–7.7 seconds; CDP interaction timeouts occurred. Concurrent host compilation was observed, causality not isolated. Do not inherit preview.1 performance acceptance.",
+  "abortedFirstPaintObservationsMs": [
+    8123.9,
+    8171,
+    6228.3,
+    7044.3,
+    6605.6,
+    6872.3,
+    7681.6
+  ],
+  "finalCodeChange": "Avoid drawing unused paper canvases for books without descriptions. Title resolution remains 768x1024; 512x640 experiment reverted."
+}

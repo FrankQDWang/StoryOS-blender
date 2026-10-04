@@ -1,0 +1,14 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs/promises';
+const browser=await chromium.connectOverCDP('http://127.0.0.1:9484');
+const context=browser.contexts()[0],page=context.pages()[0]??await context.newPage();
+await page.setViewportSize({width:1512,height:751});
+const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+page.on('console',msg=>{if(msg.type()==='error')errors.push(msg.text())});
+const [url,name]=process.argv.slice(2);
+if(url)await page.goto(url);
+await page.waitForTimeout(2500);
+if(name)await page.screenshot({path:`evidence/five-books-20261003/${name}.png`});
+console.log(JSON.stringify({url:page.url(),errors,body:await page.locator('body').ariaSnapshot()}));
+await fs.appendFile('evidence/five-books-20261003/captures.jsonl',JSON.stringify({url:page.url(),name,errors})+'\n');
+process.exit(0);

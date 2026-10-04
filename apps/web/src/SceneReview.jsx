@@ -4,11 +4,12 @@ import {createRoot} from 'react-dom/client';
 import {LibraryScene} from './Scene';
 import layout from './room-layout.json';
 import {OPENING_SECONDS} from './opening-motion.mjs';
+import {BOOK_MATERIALS} from './book-materials.mjs';
 import './styles.css';
 
 const params=new URLSearchParams(location.search);
 const noop=()=>{};
-const books=layout.slots.map((_,slot)=>({id:`review-${slot}`,slot,title:`检查书位 ${slot+1}`,color:['#32695b','#674051','#304767','#6d4b2b','#536650'][slot]}));
+const books=layout.slots.map((_,slot)=>({id:`review-${slot}`,slot,title:['星海余烬','守月人','寄往风中的信','无题手稿·甲','无题手稿·乙'][slot],description:slot===0?'群星熄灭之后，故事才刚刚开始。':'',materialId:BOOK_MATERIALS[slot].id,color:BOOK_MATERIALS[slot].color}));
 function Review(){
  const [slot,setSlot]=useState(Number(params.get('slot')??0));
  const [time,setTime]=useState(Number(params.get('time')??.8));

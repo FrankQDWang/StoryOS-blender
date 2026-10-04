@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "book_id": "smoky-plum",
+  "cover_title": "无题手稿·甲",
+  "status": "concept_ready_for_parent_review_not_user_approved",
+  "created_at_utc": "2026-09-22T09:12:31.683797+00:00",
+  "tool": "image_gen.imagegen",
+  "independent_generation_calls": 1,
+  "revision_calls": 0,
+  "input_actually_viewed_before_call": true,
+  "output_actually_viewed_after_call": true,
+  "source_contract": "/Users/frankqdwang/MLE/StoryOS-blender/design/iterations/22-five-book-material-concepts.md",
+  "input": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png",
+    "bytes": 2129643,
+    "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "actual_request": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/request-v1.json",
+    "bytes": 2965,
+    "sha256": "143e3a85bcc98ac91b40d23acb2ddd7099ae47c3d2f9f45bccde15926cdb7aab"
+  },
+  "actual_prompt": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/prompt-v1.txt",
+    "bytes": 2784,
+    "sha256": "117deff8254030fe369be770ae535c83726b3d7d604265ec6be88e5a7ff683f0"
+  },
+  "tool_result_metadata": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/output-v1.json",
+    "bytes": 1084,
+    "sha256": "65652cb248cf39afd6cf40a9d8166773a0bb1ece7ad3076809d35ef0ceb38831"
+  },
+  "original_tool_output_png": {
+    "path": "/Users/frankqdwang/.codex/generated_images/01a0c860-1f38-74c1-a382-6fb7f29f82e4/exec-cc0b8a74-522b-4cd7-a621-0c9ff16ee6f1.png",
+    "bytes": 2076912,
+    "sha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "copied_final_png": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/smoky-plum-v1.png",
+    "bytes": 2076912,
+    "sha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "original_png_retained": true,
+  "image_uri_note": "Tool returned inline image data plus output_hint. The original PNG and its byte-identical local copy are retained; base64 is not duplicated in JSON.",
+  "scope": {
+    "only_explicit_workspace_writes_under": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum",
+    "tool_managed_original_output_directory": "/Users/frankqdwang/.codex/generated_images/01a0c860-1f38-74c1-a382-6fb7f29f82e4",
+    "runtime_modified": false,
+    "three_d_modified": false,
+    "dependencies_modified": false,
+    "plan_modified": false,
+    "chrome_used": false,
+    "commit_or_push": false,
+    "placeholder_title_does_not_create_work_data": true
+  }
+}

@@ -1,7 +1,8 @@
 import React,{Component,useCallback,useEffect,useRef,useState} from 'react';
-import {BookOpen,Books,Plus,ArrowUpRight,ArrowLeft,X,MagnifyingGlass,PersonSimpleWalk,SpeakerHigh,SpeakerSlash,Check,Feather,Moon,ArrowCounterClockwise,Eye,Pause} from '@phosphor-icons/react';
+import {BookOpen,Books,Plus,ArrowUpRight,ArrowLeft,X,MagnifyingGlass,PersonSimpleWalk,SpeakerHigh,SpeakerSlash,Check,Feather,Moon,ArrowCounterClockwise,Eye,Pause,Trash} from '@phosphor-icons/react';
 import {LibraryScene} from './Scene';
-import {STORAGE_KEY,COLORS,initialLibrary,normalizeLibrary,createBook,visitBook,recentBooks} from './library-model.mjs';
+import {STORAGE_KEY,initialLibrary,normalizeLibrary,createBook,deleteBook,visitBook,recentBooks} from './library-model.mjs';
+import {nextBookMaterial} from './book-materials.mjs';
 import {OPENING_SECONDS} from './opening-motion.mjs';
 
 class SceneBoundary extends Component {
@@ -26,8 +27,9 @@ function Modal({title,children,onClose,wide=false}){
 export function App(){
  const [library,setLibrary]=useState(load),[mode,setMode]=useState('overview'),[lookLocked,setLookLocked]=useState(false),[selected,setSelected]=useState(null),[workspace,setWorkspace]=useState(null);
  const [panel,setPanel]=useState(null),[query,setQuery]=useState(''),[ready,setReady]=useState(false),[failed,setFailed]=useState(false),[opening,setOpening]=useState(false),[crafting,setCrafting]=useState(false),[appearing,setAppearing]=useState(null),[near,setNear]=useState(null),[resetToken,setResetToken]=useState(0),[toast,setToast]=useState(''),[metrics,setMetrics]=useState(null),[storageError,setStorageError]=useState(false);
- const [title,setTitle]=useState(''),[description,setDescription]=useState(''),[color,setColor]=useState(COLORS[3]);
+ const [title,setTitle]=useState(''),[description,setDescription]=useState(''),[deleting,setDeleting]=useState(null);
  const timer=useRef(null),creationLock=useRef(false),openingLock=useRef(false),started=useRef(performance.now()),loadTime=useRef(null);
+ const nextMaterial=nextBookMaterial(library.books),deletingBook=library.books.find(b=>b.id===deleting);
  const current=library.books.find(b=>b.id===selected),working=library.books.find(b=>b.id===workspace),recent=recentBooks(library),resume=library.books.find(b=>b.id===library.lastBookId)||recent[0];
  useAmbient(library.sound);
  useEffect(()=>{try{localStorage.setItem(STORAGE_KEY,JSON.stringify(library));setStorageError(false)}catch{setStorageError(true)}},[library]);
@@ -49,10 +51,17 @@ export function App(){
   if(e.key==='Escape'&&!openingLock.current){setSelected(null);setMode('overview')}
  };window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key)},[panel,mode,near,select]);
  const submit=e=>{e.preventDefault();if(creationLock.current||!title.trim())return;creationLock.current=true;
-  const id=crypto.randomUUID();const next=createBook(library,{title,description,color},id);const b=next.books.at(-1);
+  const id=crypto.randomUUID();const next=createBook(library,{title,description},id);const b=next.books.at(-1);
   setLibrary(next);setPanel(null);setCrafting(b);setSelected(null);setMode('overview');
   const finish=()=>{setCrafting(false);creationLock.current=false;setAppearing(null);setToast(b.slot===null?'新书已创建，展示位已满，可从全部作品打开。':`《${b.title}》已放入藏书室`)};
   if(library.reducedMotion||failed)finish();else timer.current=setTimeout(finish,3100);
+ };
+ const confirmDelete=()=>{
+  setLibrary(state=>deleteBook(state,deleting));
+  if(workspace===deleting)returnRoom();
+  if(selected===deleting){setSelected(null);setMode('overview')}
+  if(near===deleting)setNear(null);
+  setToast(`《${deletingBook.title}》已删除`);setDeleting(null);setPanel('books');
  };
  const allBooks=()=>{if(openingLock.current||creationLock.current)return;setQuery('');setPanel('books');document.exitPointerLock?.();setMode('overview')};
  return <main className={workspace?'app workspace-app':'app'}>
@@ -73,8 +82,9 @@ export function App(){
   </>}
   {storageError&&<div className="storage-warning" role="alert">浏览器未允许本地保存，本次修改刷新后可能丢失。</div>}
   {toast&&<div className="toast" role="status"><Check size={17}/>{toast}</div>}
-  {panel==='books'&&<Modal title="全部作品" onClose={closePanel} wide><span className="eyebrow">YOUR WORLDS</span><h2>全部作品 <em>{library.books.length}</em></h2><p className="modal-subtitle">随时回到你正在书写的世界。</p><label className="search"><MagnifyingGlass size={20}/><input autoFocus value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索书名" aria-label="搜索书名"/><kbd>⌘ K</kbd></label><div className="book-list">{recent.filter(b=>b.title.toLowerCase().includes(query.toLowerCase())).map(b=><button className="book-row" key={b.id} onClick={()=>enter(b.id)}><span className="row-icon" style={{color:b.color}}><BookOpen size={29} weight="duotone"/></span><span><strong>{b.title}</strong><small>{b.words.toLocaleString()} 字 · {b.slot===null?'在作品列表中':`展示位 ${b.slot+1}`}</small></span><ArrowUpRight size={18}/></button>)}{!recent.some(b=>b.title.toLowerCase().includes(query.toLowerCase()))&&<p className="empty">没有找到这本书。换个书名试试。</p>}</div><button className="new-row" onClick={showCreate}><Plus size={18}/>创建新作品</button><p className="local-note">体验数据仅保存在当前浏览器</p></Modal>}
-  {panel==='create'&&<Modal title="创建新作品" onClose={closePanel}><span className="eyebrow">A WORLD OF YOUR OWN</span><h2>让一个世界诞生</h2><p className="modal-subtitle">先为它取个名字，故事可以慢慢写。</p><form onSubmit={submit}><label className="field">书名<input autoFocus required maxLength={60} value={title} onChange={e=>setTitle(e.target.value)} placeholder="这个世界，叫什么名字？"/></label><label className="field">一句话介绍 <small>选填</small><textarea maxLength={180} value={description} onChange={e=>setDescription(e.target.value)} placeholder="记下此刻的灵感…" rows={2}/></label><fieldset className="colors"><legend>封面颜色</legend>{COLORS.map((c,i)=><button key={c} type="button" className={c===color?'chosen':''} style={{background:c}} aria-label={`封面颜色 ${['松绿','陶棕','靛蓝','烟紫','麦金'][i]}`} aria-pressed={c===color} onClick={()=>setColor(c)}>{c===color&&<Check size={16}/>}</button>)}</fieldset>{library.books.filter(b=>b.slot!==null).length>=5&&<p className="capacity-note">五个展示位已满，新作品会保存在「全部作品」中。</p>}<button type="submit" disabled={!title.trim()} className="primary submit">创造这本书 <Feather size={18}/></button></form></Modal>}
+  {panel==='books'&&<Modal title="全部作品" onClose={closePanel} wide><span className="eyebrow">YOUR WORLDS</span><h2>全部作品 <em>{library.books.length}</em></h2><p className="modal-subtitle">随时回到你正在书写的世界。</p><label className="search"><MagnifyingGlass size={20}/><input autoFocus value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索书名" aria-label="搜索书名"/><kbd>⌘ K</kbd></label><div className="book-list">{recent.filter(b=>b.title.toLowerCase().includes(query.toLowerCase())).map(b=><div className="book-list-item" key={b.id}><button className="book-row" onClick={()=>enter(b.id)}><span className="row-icon" style={{color:b.color}}><BookOpen size={29} weight="duotone"/></span><span><strong>{b.title}</strong><small>{b.words.toLocaleString()} 字 · {b.slot===null?'在作品列表中':`展示位 ${b.slot+1}`}</small></span><ArrowUpRight size={18}/></button><button className="icon delete-book" aria-label={`删除《${b.title}》`} onClick={()=>{setDeleting(b.id);setPanel('delete')}}><Trash size={17}/></button></div>)}{!recent.some(b=>b.title.toLowerCase().includes(query.toLowerCase()))&&<p className="empty">{library.books.length?'没有找到这本书。换个书名试试。':'书架还是空的，创建你的第一本书吧。'}</p>}</div><button className="new-row" onClick={showCreate}><Plus size={18}/>创建新作品</button><p className="local-note">体验数据仅保存在当前浏览器</p></Modal>}
+  {panel==='create'&&<Modal title="创建新作品" onClose={closePanel}><span className="eyebrow">A WORLD OF YOUR OWN</span><h2>让一个世界诞生</h2><p className="modal-subtitle">先为它取个名字，故事可以慢慢写。</p><form onSubmit={submit}><label className="field">书名<input autoFocus required maxLength={60} value={title} onChange={e=>setTitle(e.target.value)} placeholder="这个世界，叫什么名字？"/></label><label className="field">一句话介绍 <small>选填</small><textarea maxLength={180} value={description} onChange={e=>setDescription(e.target.value)} placeholder="记下此刻的灵感…" rows={2}/></label><div className="assigned-material"><span className="material-swatch" style={{background:nextMaterial.color}}/><span>这本书的装帧<strong>{nextMaterial.name} · 私人手稿</strong></span></div>{library.books.filter(b=>b.slot!==null).length>=5&&<p className="capacity-note">五个展示位已满，新作品会保存在「全部作品」中。</p>}<button type="submit" disabled={!title.trim()} className="primary submit">创造这本书 <Feather size={18}/></button></form></Modal>}
+  {panel==='delete'&&deletingBook&&<Modal title="删除作品" onClose={()=>{setDeleting(null);setPanel('books')}}><span className="eyebrow">YOUR WORLDS</span><h2>删除《{deletingBook.title}》？</h2><p className="modal-subtitle">作品将从藏书室和全部作品中移除，删除后无法恢复。</p><div className="delete-actions"><button className="secondary" onClick={()=>{setDeleting(null);setPanel('books')}}>保留作品</button><button className="danger" onClick={confirmDelete}>删除这本书</button></div></Modal>}
   {import.meta.env.DEV&&<output className="perf" title="本地渲染统计">{metrics?`${metrics.fps} FPS`:'加载中'}{loadTime.current?` · ${loadTime.current.toFixed(1)}s`:''}</output>}
  </main>;
 }

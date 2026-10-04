@@ -22,3 +22,12 @@
  .bottom-actions .secondary{background:#171a17b8}
  .magic-hint{display:none}
 }
+
+/* Each list action is a separate keyboard target; opening stays the primary action. */
+.book-list-item{display:flex;align-items:center;gap:6px;border-bottom:1px solid #d1cbaa12}
+.book-list-item .book-row{flex:1;min-width:0;border-bottom:0}
+.delete-book{flex-shrink:0}.delete-book:hover{color:#e2a99b;background:#9b514226}
+.assigned-material{display:flex;align-items:center;gap:13px;margin:24px 0;color:#9eaa9d;font-size:11px}
+.material-swatch{width:32px;height:40px;border-radius:3px 6px 6px 3px;border:1px solid #ead6b244;box-shadow:inset 4px 0 #0002}
+.assigned-material strong{display:block;color:#d9d2bd;font-size:13px;font-weight:400;margin-top:7px}
+.delete-actions{display:flex;justify-content:flex-end;gap:12px}.danger{background:#8a483c;border:1px solid #b96f5944;border-radius:4px;font-size:12px;min-height:44px;padding:0 18px}.danger:hover{background:#a35446}

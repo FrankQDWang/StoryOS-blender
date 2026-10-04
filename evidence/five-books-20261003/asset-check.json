@@ -1,0 +1,23 @@
+{
+  "version": "0.1.5-preview.1",
+  "checked": [
+    "public/assets/models/library-room.glb",
+    "public/assets/models/makehuman-hands.glb",
+    "public/assets/models/opening-hands.glb",
+    "public/assets/models/story-book.glb",
+    "public/assets/models/writer-hands.glb",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/manuscript-leather.webp",
+    "public/assets/textures/manuscript-page.webp",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/sculpted-plaster.png",
+    "public/assets/textures/sculpted-wood.png",
+    "assets/source/storyos-library.blend",
+    "assets/source/writer-hands.blend",
+    "assets/source/makehuman-hands.blend"
+  ],
+  "pass": true
+}

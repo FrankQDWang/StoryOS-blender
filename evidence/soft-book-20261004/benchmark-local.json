@@ -1,0 +1,38 @@
+[
+  {
+    "version": "baseline",
+    "round": 0,
+    "cache": "cold",
+    "firstPaint": 5975,
+    "firstHand": 538.3999999761581,
+    "workspace": 3502,
+    "hidden": false
+  },
+  {
+    "version": "baseline",
+    "round": 0,
+    "cache": "warm-prime",
+    "firstPaint": 5767.5,
+    "firstHand": 537.2999999523163,
+    "workspace": 3501.399999976158,
+    "hidden": false
+  },
+  {
+    "version": "baseline",
+    "round": 0,
+    "cache": "warm",
+    "firstPaint": 5989,
+    "firstHand": 549,
+    "workspace": 3503,
+    "hidden": false
+  },
+  {
+    "version": "candidate",
+    "round": 0,
+    "cache": "cold",
+    "firstPaint": 7310.400000095367,
+    "firstHand": 747.7999999523163,
+    "workspace": 3537.399999976158,
+    "hidden": false
+  }
+]

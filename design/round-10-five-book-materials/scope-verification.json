@@ -1,0 +1,13 @@
+{
+  "headUnchanged": true,
+  "trackedDiffUnchanged": true,
+  "head": "0886044a22e8c016d9d726c4c487da90279d603d",
+  "statusAfter": " M PLAN.md\n?? design/reference-library/book-mystery-20260922/\n?? design/round-08-book-identity/\n?? design/round-09-private-manuscript/\n?? design/round-10-five-book-materials/\n",
+  "runtimeFilesChanged": false,
+  "PLANChangedThisRound": false,
+  "priorRoundFoldersChanged": false,
+  "dependenciesInstalled": false,
+  "chromeUsed": false,
+  "worktree335eOrPort4173Touched": false,
+  "committedOrPushed": false
+}

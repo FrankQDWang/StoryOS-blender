@@ -1,0 +1,1565 @@
+{
+  "chrome": "154.0.8037.93",
+  "os": "darwin",
+  "arch": "arm64",
+  "viewport": [
+    1512,
+    751
+  ],
+  "dpr": 1,
+  "fixture": {
+    "version": 1,
+    "books": [
+      {
+        "id": "bench-0",
+        "slot": 0,
+        "materialId": "warm-umber",
+        "color": "#ac8058",
+        "title": "星海余烬",
+        "description": "群星熄灭之后，故事才刚刚开始。",
+        "words": 0,
+        "updatedAt": "2026-10-03T00:00:00Z"
+      },
+      {
+        "id": "bench-1",
+        "slot": 1,
+        "materialId": "muted-pine",
+        "color": "#82927e",
+        "title": "守月人",
+        "description": "",
+        "words": 0,
+        "updatedAt": "2026-10-03T00:00:00Z"
+      },
+      {
+        "id": "bench-2",
+        "slot": 2,
+        "materialId": "slate-blue",
+        "color": "#7e96b0",
+        "title": "寄往风中的信",
+        "description": "",
+        "words": 0,
+        "updatedAt": "2026-10-03T00:00:00Z"
+      },
+      {
+        "id": "bench-3",
+        "slot": 3,
+        "materialId": "smoky-plum",
+        "color": "#a18490",
+        "title": "无题手稿·甲",
+        "description": "",
+        "words": 0,
+        "updatedAt": "2026-10-03T00:00:00Z"
+      },
+      {
+        "id": "bench-4",
+        "slot": 4,
+        "materialId": "warm-ochre",
+        "color": "#c8a16a",
+        "title": "无题手稿·乙",
+        "description": "",
+        "words": 0,
+        "updatedAt": "2026-10-03T00:00:00Z"
+      }
+    ],
+    "lastBookId": "bench-0",
+    "reducedMotion": false,
+    "sound": false
+  },
+  "rows": [
+    {
+      "network": "local",
+      "round": 0,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1111.7999999523163,
+      "firstHand": 69.5,
+      "workspace": 3503.100000023842,
+      "returnReady": 788.2000000476837,
+      "reopenHand": 66.89999997615814,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1033.3999999761581,
+      "firstHand": 72.80000007152557,
+      "workspace": 3502.2000000476837,
+      "returnReady": 738.2000000476837,
+      "reopenHand": 69.59999990463257,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1928.3000000715256,
+      "firstHand": 74.20000004768372,
+      "workspace": 3502.2000000476837,
+      "returnReady": 825.7000000476837,
+      "reopenHand": 75.69999992847443,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 1610136,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 18539,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 309,
+          "encodedBodySize": 9
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 92724,
+          "encodedBodySize": 92424
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 223538,
+          "encodedBodySize": 223238
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 0,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1076.1000000238419,
+      "firstHand": 69.30000007152557,
+      "workspace": 3502.5,
+      "returnReady": 819.6999999284744,
+      "reopenHand": 64.29999995231628,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1031,
+      "firstHand": 69.10000002384186,
+      "workspace": 3501.2000000476837,
+      "returnReady": 759.2999999523163,
+      "reopenHand": 66,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 1610136,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 18539,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 223538,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 92724,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1078.6999999284744,
+      "firstHand": 68.79999995231628,
+      "workspace": 3501.5999999046326,
+      "returnReady": 779.7000000476837,
+      "reopenHand": 67.39999997615814,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 989.1000000238419,
+      "firstHand": 68.5,
+      "workspace": 3501.2999999523163,
+      "returnReady": 730.6000000238419,
+      "reopenHand": 65.39999997615814,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 1,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1026.2999999523163,
+      "firstHand": 69.5,
+      "workspace": 3502,
+      "returnReady": 706.0999999046326,
+      "reopenHand": 65,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 971.7999999523163,
+      "firstHand": 70.89999997615814,
+      "workspace": 3502.1999999284744,
+      "returnReady": 712.2999999523163,
+      "reopenHand": 66.80000007152557,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1021.6000000238419,
+      "firstHand": 69.70000004768372,
+      "workspace": 3502.2000000476837,
+      "returnReady": 766.7999999523163,
+      "reopenHand": 67.80000007152557,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1050.5,
+      "firstHand": 66.30000007152557,
+      "workspace": 3501.8000000715256,
+      "returnReady": 760.5,
+      "reopenHand": 69.30000007152557,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 1610136,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 18539,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 92724,
+          "encodedBodySize": 92424
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 223538,
+          "encodedBodySize": 223238
+        }
+      ]
+    },
+    {
+      "network": "local",
+      "round": 2,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1061.1000000238419,
+      "firstHand": 65.79999995231628,
+      "workspace": 3502.2999999523163,
+      "returnReady": 795.2000000476837,
+      "reopenHand": 64.30000007152557,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 19435.899999976158,
+      "firstHand": 65.60000002384186,
+      "workspace": 3503.7000000476837,
+      "returnReady": 697,
+      "reopenHand": 70.90000009536743,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1049.2999999523163,
+      "firstHand": 68.20000004768372,
+      "workspace": 3502.399999976158,
+      "returnReady": 738.6000000238419,
+      "reopenHand": 68.10000002384186,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 19557.300000071526,
+      "firstHand": 69.80000007152557,
+      "workspace": 3502.2000000476837,
+      "returnReady": 784.3000000715256,
+      "reopenHand": 65.59999990463257,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 1610136,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 18539,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 223538,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 92724,
+          "encodedBodySize": 92424
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 0,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1114,
+      "firstHand": 68.79999995231628,
+      "workspace": 3502.5999999046326,
+      "returnReady": 747.2000000476837,
+      "reopenHand": 68.19999992847443,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 19530.399999976158,
+      "firstHand": 71.89999997615814,
+      "workspace": 3501.899999976158,
+      "returnReady": 779.7000000476837,
+      "reopenHand": 72.20000004768372,
+      "resources": [
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 18539,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 1610136,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 223538,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 92724,
+          "encodedBodySize": 92424
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1156.8999999761581,
+      "firstHand": 98.30000007152557,
+      "workspace": 3501.3000000715256,
+      "returnReady": 766.8999999761581,
+      "reopenHand": 66.39999997615814,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 19385.899999976158,
+      "firstHand": 71.30000007152557,
+      "workspace": 3501.2000000476837,
+      "returnReady": 721.5,
+      "reopenHand": 71.79999995231628,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 1,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1065.9000000953674,
+      "firstHand": 67.30000007152557,
+      "workspace": 3502.399999976158,
+      "returnReady": 714.1000000238419,
+      "reopenHand": 66,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 19273.5,
+      "firstHand": 70.5,
+      "workspace": 3501.2999999523163,
+      "returnReady": 722,
+      "reopenHand": 67.5,
+      "resources": [
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 17764,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 1602476,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1059.7999999523163,
+      "firstHand": 68.5,
+      "workspace": 3502.5,
+      "returnReady": 712.1999999284744,
+      "reopenHand": 65.10000002384186,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 19474.899999976158,
+      "firstHand": 68.89999997615814,
+      "workspace": 3502.399999976158,
+      "returnReady": 724.7000000476837,
+      "reopenHand": 65,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 1610136,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 18539,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 185584,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 92724,
+          "encodedBodySize": 92424
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 223538,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 2,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1126,
+      "firstHand": 74.20000004768372,
+      "workspace": 3501.899999976158,
+      "returnReady": 755.1999999284744,
+      "reopenHand": 62.40000009536743,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1081.9000000953674,
+      "firstHand": 73.69999992847443,
+      "workspace": 3502.600000023842,
+      "returnReady": 720.2999999523163,
+      "reopenHand": 67.60000002384186,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 3,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1048.7000000476837,
+      "firstHand": 67.60000002384186,
+      "workspace": 3501.6999999284744,
+      "returnReady": 697.7999999523163,
+      "reopenHand": 73.20000004768372,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1045.1000000238419,
+      "firstHand": 67.10000002384186,
+      "workspace": 3501.600000023842,
+      "returnReady": 690.7999999523163,
+      "reopenHand": 66.5,
+      "resources": [
+        {
+          "name": "/assets/index-DCHljinA.js",
+          "transferSize": 0,
+          "encodedBodySize": 1602176
+        },
+        {
+          "name": "/assets/index-BC1zBHQb.css",
+          "transferSize": 0,
+          "encodedBodySize": 17464
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        }
+      ]
+    },
+    {
+      "network": "20mbps-50ms",
+      "round": 4,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1100,
+      "firstHand": 69.40000009536743,
+      "workspace": 3502,
+      "returnReady": 738.9000000953674,
+      "reopenHand": 64.09999990463257,
+      "resources": [
+        {
+          "name": "/assets/index-wauIoC9o.js",
+          "transferSize": 0,
+          "encodedBodySize": 1609836
+        },
+        {
+          "name": "/assets/index-KFX1Y7ms.css",
+          "transferSize": 0,
+          "encodedBodySize": 18239
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 0,
+          "encodedBodySize": 3835100
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 0,
+          "encodedBodySize": 23151136
+        },
+        {
+          "name": "/assets/models/story-book.glb",
+          "transferSize": 0,
+          "encodedBodySize": 185284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 0,
+          "encodedBodySize": 22876
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 0,
+          "encodedBodySize": 16431071
+        },
+        {
+          "name": "/assets/textures/manuscript-leather.webp",
+          "transferSize": 0,
+          "encodedBodySize": 223238
+        },
+        {
+          "name": "/assets/textures/manuscript-page.webp",
+          "transferSize": 0,
+          "encodedBodySize": 92424
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

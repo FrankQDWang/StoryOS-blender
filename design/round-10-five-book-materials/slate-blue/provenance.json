@@ -1,0 +1,22 @@
+{
+  "stable_id": "slate-blue",
+  "title": "寄往风中的信",
+  "generator": "built-in image_gen.imagegen",
+  "calls": 1,
+  "original_output_path": "/Users/frankqdwang/.codex/generated_images/01a0c85f-8bc8-7b33-8843-7df5109959fb/exec-a4a4a63f-387e-4738-9415-c4c85d5a9214.png",
+  "output_path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/slate-blue-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "output_sha256": "17fdcff4013999a3e8fdfe54d5cef2661a277e9541f6c2164eabbd25232e991a",
+  "output_bytes": 2108275,
+  "reference_path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png",
+  "reference_sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+  "prompt_path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/prompt-v1.txt",
+  "request_path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/request-v1.json",
+  "output_is_unmodified_copy": true,
+  "prompt_sha256": "988c845a677c48c1d6f2a99ea48347d3c4561a4c223b640ca38356e9edf83665",
+  "request_sha256": "0f9d378f297da6227037dba0d70ec2c47f531db9087cefacf1e43738185ba6c0",
+  "tool_output_metadata_path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/output-v1.json",
+  "qa_path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/qa.md",
+  "qa_status": "assistant_visual_pass_pending_parent_and_user_review"
+}

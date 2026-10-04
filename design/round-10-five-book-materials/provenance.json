@@ -1,0 +1,31 @@
+{
+  "contractSnapshot": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/22-five-book-material-concepts.md",
+    "bytes": 5222,
+    "sha256": "e777f071e89c614deeb2378c74c8f91b1c6a5f26971bd5bcdd758819d8eb41c5"
+  },
+  "approvedReference": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png",
+    "bytes": 2129643,
+    "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+  },
+  "sourceMainCommitReportedByContract": "eedd745",
+  "sourceMainCheckoutUntouched": true,
+  "titleDecision": {
+    "source": "Supervisor relayed explicit user reply",
+    "verbatim": "先用占位书名，之后可替换",
+    "titles": [
+      "无题手稿·甲",
+      "无题手稿·乙"
+    ],
+    "noFurtherWaitRequired": true,
+    "doesNotCreateRuntimeBooks": true
+  },
+  "execution": "Four independent built-in imagegen calls, three bounded sibling agents and one root call, each actual request references the approved PNG; no Promise.all generation batch or code recoloring.",
+  "manifest": "manifest.json",
+  "allVersionsPreserved": true,
+  "finalArtifactsAreByteCopiesOfOriginals": true,
+  "scope": "Only design/round-10-five-book-materials/ workspace writes; tool originals remain in tool-managed generated_images paths.",
+  "runtimeModified": false,
+  "noPerformanceClaim": true
+}

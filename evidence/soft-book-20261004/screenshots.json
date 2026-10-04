@@ -1,0 +1,26 @@
+[
+  {
+    "file": "contact.jpg",
+    "bytes": 90888,
+    "sha256": "bfe22933327acfc07d73f4e176dc1d0fa800c4b115e92a89a4740f7eb59dd665",
+    "source": "native Chrome review.html"
+  },
+  {
+    "file": "cover-blue.jpg",
+    "bytes": 76658,
+    "sha256": "0b750c24d0d6d6ec2de71e86646f70378c19ec22a6f28b1a0eaaac7271ca15ad",
+    "source": "native Chrome review.html"
+  },
+  {
+    "file": "cover.jpg",
+    "bytes": 83548,
+    "sha256": "6c70329d4eba3b50e1be404df790de6530170e3d81a454bd52789a061e68d7c4",
+    "source": "native Chrome review.html"
+  },
+  {
+    "file": "open.jpg",
+    "bytes": 93368,
+    "sha256": "e16207a995f133a1cd98856377581420b1482a58039a6523c97ef9536b29e170",
+    "source": "native Chrome review.html"
+  }
+]

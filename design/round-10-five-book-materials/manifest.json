@@ -1,0 +1,174 @@
+{
+  "date": "2026-09-22",
+  "status": "all five ready for supervisor and user review; no implementation",
+  "bookOrderMeaning": "Stable brief order; not competing options or imagegen response arrival order",
+  "finalImageCount": 5,
+  "newImagegenCalls": 4,
+  "reusedImageCount": 1,
+  "targetedCorrectionCalls": 0,
+  "books": [
+    {
+      "id": "warm-umber",
+      "title": "星海余烬",
+      "synopsis": "群星熄灭之后，故事才刚刚开始。",
+      "placeholder": false,
+      "materialIntent": "暖棕旧皮；已认可基准逐字节复用",
+      "finalFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-umber.png",
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "bytes": 2129643,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reusedApprovedOriginal": true,
+      "newImagegenCalls": 0,
+      "targetedCorrectionCalls": 0,
+      "actualRootVisualReview": true,
+      "independentSuiteReview": true,
+      "userApproved": true,
+      "source": "/Users/frankqdwang/MLE/StoryOS-blender/design/reference-library/book-manuscript-20260922/reference.png",
+      "sourceSha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "reuseMethod": "Unmodified byte copy, no ImageGen call"
+    },
+    {
+      "id": "muted-pine",
+      "title": "守月人",
+      "synopsis": "一座小镇，和一个不肯结束的长夜。",
+      "placeholder": false,
+      "materialIntent": "低饱和灰松绿细皮、哑光细密颗粒",
+      "finalFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine.png",
+      "sha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b",
+      "bytes": 2105045,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reusedApprovedOriginal": false,
+      "newImagegenCalls": 1,
+      "targetedCorrectionCalls": 0,
+      "actualRootVisualReview": true,
+      "independentSuiteReview": true,
+      "userApproved": false,
+      "request": {
+        "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/request.json",
+        "bytes": 3176,
+        "sha256": "2fe6433b028df8b1833746b4a492017fd1089c4a1f7b98b99486a3e906583302"
+      },
+      "actualPromptSha256": "5ef34af6cab00c67a41129349b3b3cf3d91cfefbabaa9468d83fd436e2310e0a",
+      "promptFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/prompt.txt",
+      "actualReferencePaths": [
+        "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png"
+      ],
+      "referenceSha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "originalToolOutput": "/Users/frankqdwang/.codex/generated_images/01a0c80a-d1fe-7cf0-843a-6c142c708436/exec-a2a2c7b8-0954-4ed0-a0b1-4ce4d32fcbf4.png",
+      "originalToolOutputSha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b",
+      "perBookProvenance": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/provenance.json",
+      "perBookQA": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/qa.md"
+    },
+    {
+      "id": "slate-blue",
+      "title": "寄往风中的信",
+      "synopsis": "写给那些尚未抵达的远方。",
+      "placeholder": false,
+      "materialIntent": "低饱和蓝灰蜡皮、浅柔反光、暖象牙纸",
+      "finalFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue.png",
+      "sha256": "17fdcff4013999a3e8fdfe54d5cef2661a277e9541f6c2164eabbd25232e991a",
+      "bytes": 2108275,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reusedApprovedOriginal": false,
+      "newImagegenCalls": 1,
+      "targetedCorrectionCalls": 0,
+      "actualRootVisualReview": true,
+      "independentSuiteReview": true,
+      "userApproved": false,
+      "request": {
+        "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/request-v1.json",
+        "bytes": 3335,
+        "sha256": "0f9d378f297da6227037dba0d70ec2c47f531db9087cefacf1e43738185ba6c0"
+      },
+      "actualPromptSha256": "2f271279999e00a38ec58b87c07df276e5e315044835314d1a161edc685e64ca",
+      "promptFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/prompt-v1.txt",
+      "actualReferencePaths": [
+        "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png"
+      ],
+      "referenceSha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "originalToolOutput": "/Users/frankqdwang/.codex/generated_images/01a0c85f-8bc8-7b33-8843-7df5109959fb/exec-a4a4a63f-387e-4738-9415-c4c85d5a9214.png",
+      "originalToolOutputSha256": "17fdcff4013999a3e8fdfe54d5cef2661a277e9541f6c2164eabbd25232e991a",
+      "perBookProvenance": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/provenance.json",
+      "perBookQA": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/slate-blue/qa.md"
+    },
+    {
+      "id": "smoky-plum",
+      "title": "无题手稿·甲",
+      "synopsis": null,
+      "placeholder": true,
+      "materialIntent": "烟紫褐细粒旧皮、褐底低饱和、浅麦纸",
+      "finalFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum.png",
+      "sha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d",
+      "bytes": 2076912,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reusedApprovedOriginal": false,
+      "newImagegenCalls": 1,
+      "targetedCorrectionCalls": 0,
+      "actualRootVisualReview": true,
+      "independentSuiteReview": true,
+      "userApproved": false,
+      "request": {
+        "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/request-v1.json",
+        "bytes": 2965,
+        "sha256": "143e3a85bcc98ac91b40d23acb2ddd7099ae47c3d2f9f45bccde15926cdb7aab"
+      },
+      "actualPromptSha256": "1be06a1de9273c74b1b703fc749a049f3a224498622ca88f062f48472a769894",
+      "promptFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/prompt-v1.txt",
+      "actualReferencePaths": [
+        "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png"
+      ],
+      "referenceSha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "originalToolOutput": "/Users/frankqdwang/.codex/generated_images/01a0c860-1f38-74c1-a382-6fb7f29f82e4/exec-cc0b8a74-522b-4cd7-a621-0c9ff16ee6f1.png",
+      "originalToolOutputSha256": "8ef17072d035acfe1b3dce69456c35fc4dffaee1dc4eae941818779fcb3a215d",
+      "perBookProvenance": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/provenance.json",
+      "perBookQA": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/smoky-plum/qa.md"
+    },
+    {
+      "id": "warm-ochre",
+      "title": "无题手稿·乙",
+      "synopsis": null,
+      "placeholder": true,
+      "materialIntent": "较浅低饱和麦褐粗粒哑光皮、暖奶油纸、淡褐墨",
+      "finalFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-ochre.png",
+      "sha256": "1195f14f3d2879cdb450e7f1fe4deb8b7995bb9c6259304b13616dba3194555a",
+      "bytes": 2173823,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reusedApprovedOriginal": false,
+      "newImagegenCalls": 1,
+      "targetedCorrectionCalls": 0,
+      "actualRootVisualReview": true,
+      "independentSuiteReview": true,
+      "userApproved": false,
+      "request": {
+        "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-ochre/request-v1.json",
+        "bytes": 3695,
+        "sha256": "64c2ca21a683d6e94c6e7d31247c87ca9b880ecfa57834ec3c43f990651bd14b"
+      },
+      "actualPromptSha256": "70d88d6378939bb0c10fc74b8bed658b048cc0e535a00735084eeb5bda1ab51e",
+      "promptFile": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-ochre/prompt-v1.txt",
+      "actualReferencePaths": [
+        "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png"
+      ],
+      "referenceSha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429",
+      "originalToolOutput": "/Users/frankqdwang/.codex/generated_images/01a0c7f9-ff55-7a90-9a40-9ec22fe2acd4/exec-8fd05bb0-0a7c-4aa4-88f1-086e17bcac31.png",
+      "originalToolOutputSha256": "1195f14f3d2879cdb450e7f1fe4deb8b7995bb9c6259304b13616dba3194555a",
+      "perBookProvenance": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-ochre/provenance.json",
+      "perBookQA": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/warm-ochre/qa.md"
+    }
+  ]
+}

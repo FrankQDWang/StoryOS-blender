@@ -1,0 +1,41 @@
+{
+  "id": "muted-pine",
+  "title": "守月人",
+  "synopsis": "一座小镇，和一个不肯结束的长夜。",
+  "status": "concept_only_pending_parent_and_user_review",
+  "tool": "image_gen.imagegen (built-in)",
+  "mode": "independent reference image edit",
+  "calls": 1,
+  "input": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/inputs/reference.png",
+    "bytes": 2129643,
+    "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+  },
+  "request": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/request.json",
+    "bytes": 3176,
+    "sha256": "2fe6433b028df8b1833746b4a492017fd1089c4a1f7b98b99486a3e906583302"
+  },
+  "prompt": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/prompt.txt",
+    "bytes": 2993,
+    "sha256": "309eb96b9f30555fc790b516c8faa83f3b68abdc18b0df8554c0903623d2ee86"
+  },
+  "tool_original": {
+    "path": "/Users/frankqdwang/.codex/generated_images/01a0c80a-d1fe-7cf0-843a-6c142c708436/exec-a2a2c7b8-0954-4ed0-a0b1-4ce4d32fcbf4.png",
+    "bytes": 2105045,
+    "sha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b"
+  },
+  "output": {
+    "path": "/Users/frankqdwang/.codex/worktrees/4c6f/StoryOS-blender/design/round-10-five-book-materials/muted-pine/muted-pine-v1.png",
+    "bytes": 2105045,
+    "sha256": "cc1dc0d5b3392343ccc41d71d5d3607883b03b18cee4a70bb09de97f19329f0b",
+    "width": 1536,
+    "height": 1024
+  },
+  "byte_identical_copy": true,
+  "image_transformations": [],
+  "generated_images_default_directory": "/Users/frankqdwang/.codex/generated_images/01a0c80a-d1fe-7cf0-843a-6c142c708436",
+  "model_id": "not_exposed_by_tool",
+  "scope": "Only own muted-pine output directory written; no runtime, geometry, PLAN, dependency or browser changes."
+}

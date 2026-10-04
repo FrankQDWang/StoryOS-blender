@@ -1,0 +1,18 @@
+Use case: precise-object-edit.
+Create one 1536 × 1024 material-family concept by editing the attached APPROVED two-view book image. Keep exactly its composition: the left view is a closed giant manuscript on the lectern, the right view is the very SAME manuscript open on that same lectern. This is the fifth member of one coherent set, not a new art direction.
+
+LOCK everything except the BOOK'S SURFACE, TITLE and subtle PAPER/INK treatment: same camera perspective and framing, identical large book proportions and construction, leather board thickness, rounded spine and bands, page-block size, supporting lectern, two-panel dividing line, room architecture and all existing background contents, warm hearth/cool night window lighting and artistic realtime-3D quality. Do not add or remove furniture, change focus/depth-of-field, relight the scene or invent props. Do not make the book smaller or turn it into a contemporary notebook.
+
+MATERIAL FOR THIS BOOK — warm-ochre:
+Low-saturation wheat-brown leather, modestly lighter than the approved warm umber, warm but neither bright yellow nor metallic gold. A softly pebbled, slightly coarser natural leather grain than the reference, with a dry matte response. Retain the reference's mature handled character and comparable total wear, but let the grain feel gently tactile instead of identical scratch marks recolored. Slight polishing only from handling along the spine, with restrained edge wear. Apply this SAME wheat-brown material coherently to the entire closed cover/spine and the exposed leather binding edges around the open pages in the right view. No new binding structure, border, clasps, badges, ornaments or metal.
+
+EXACT SMALL HANDWRITTEN COVER TITLE:
+“无题手稿·乙”
+Render these exact characters and the centered dot. Do NOT write quotation marks, “临时”, author, publisher, caption or subtitle. Keep the title modest, dark-brown and naturally hand-inscribed in the same upper-cover location and general visual scale as the approved title. It can occupy a little more width to fit the longer title, never commercial headline typography. Remove the original “星海余烬” title entirely.
+
+OPEN PAGES:
+Slightly lighter warm cream paper with subtle natural translucent fibers and light handling patina, no dirt escalation. Slightly paler brown ink than the reference, still readable as natural handwritten strokes rather than an embossed print. Preserve the intimate uneven private-journal rhythm, small crossings-out, marginal notes and sparse incomplete observational sketches. Unruled paper: absolutely no horizontal notebook lines or grids.
+This is an untitled placeholder manuscript: remove the original clear sentence “群星熄灭之后，故事才刚刚开始。” and blend that area naturally into the quiet pattern of small, intentionally unreadable personal handwriting. Do not invent a new readable story, tagline, English prose or date. Do not repeat the cover title as a page slogan. The center need not be filled.
+
+Keep the accepted understated mystery and room atmosphere. No new large emblem, complex cosmological chart, star wheel, dense occult diagram, gems, glowing letters, new light effects, cartoon imagery, colored bookmarks, envelope or flowers. No increasingly torn, grungy, blackened or frightening material. No artificial full-image color filter: only the book material and slight paper/ink differences are changing. Return the single finished image, without explanation text or UI.
+

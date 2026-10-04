@@ -9,6 +9,7 @@ import {HearthFire} from './HearthFire';
 import {OpeningHands} from './OpeningHands';
 import {TurningPages} from './TurningPages';
 import {openingPose} from './opening-motion.mjs';
+import {useBookAppearance,applyBookAppearance,disposeBook} from './BookAppearance';
 
 export const SLOTS=layout.slots.map(slot=>slot.position);
 const YAWS=layout.slots.map(slot=>slot.yaw);
@@ -91,7 +92,9 @@ function Room({onReady}){
 }
 function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing,openingClock}){
  const {scene}=useGLTF('/assets/models/story-book.glb');
- const object=useMemo(()=>{const s=prepare(scene);s.traverse(o=>{if(o.isMesh && o.material.name==='BookLeather')o.material.color.set(book.color)});return s},[scene,book.color]);
+ const appearance=useBookAppearance(book);
+ const object=useMemo(()=>applyBookAppearance(prepare(scene),appearance),[scene,appearance]);
+ useEffect(()=>()=>disposeBook(object),[object]);
  const cover=useMemo(()=>object.getObjectByName('CoverPivot'),[object]);
  const pages=useMemo(()=>[0,1,2].map(i=>object.getObjectByName(`PagePivot${i}`)),[object]);
  const group=useRef();const [hover,setHover]=useState(false);const age=useRef(0);
@@ -103,7 +106,7 @@ function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing,ope
  });
  return <group ref={group} position={SLOTS[index]} rotation={[PITCHES[index],YAWS[index],0,'YXZ']} onClick={e=>{e.stopPropagation();onSelect(book.id)}} onPointerOver={e=>{e.stopPropagation();setHover(true);document.body.style.cursor='pointer'}} onPointerOut={()=>{setHover(false);document.body.style.cursor=''}}>
   <primitive object={object}/>
-  {opening&&<TurningPages clock={openingClock}/>}
+  {opening&&<TurningPages clock={openingClock} appearance={appearance}/>}
   {hover&&!selected&&!opening&&<Html position={[0,.35,0]} center distanceFactor={4} zIndexRange={[8,0]}><div className="book-label">{book.title}<small>点击查看作品</small></div></Html>}
   {(selected||hover)&&!opening&&<pointLight position={[0,.5,0]} intensity={.8} color="#ffcd8b" distance={1.8}/>}
  </group>;
@@ -123,7 +126,9 @@ function MagicTable({onCreate,crafting,reduced}){
 }
 function CreatingBook({book}) {
  const {scene}=useGLTF('/assets/models/story-book.glb');
- const object=useMemo(()=>{const s=prepare(scene);s.traverse(o=>{if(o.isMesh&&o.material.name==='BookLeather')o.material.color.set(book.color)});return s},[scene,book.color]);
+ const appearance=useBookAppearance(book);
+ const object=useMemo(()=>applyBookAppearance(prepare(scene),appearance),[scene,appearance]);
+ useEffect(()=>()=>disposeBook(object),[object]);
  const pieces=useMemo(()=>object.children.map((o,i)=>({o,base:o.position.clone(),offset:new THREE.Vector3(Math.sin(i*2.4)*.35,.35+(i%4)*.16,Math.cos(i*2.4)*.3)})),[object]);
  const ref=useRef(),elapsed=useRef(0);const start=useMemo(()=>new THREE.Vector3(TABLE[0],TABLE[1]+.65,TABLE[2]),[]);
  useFrame((_,dt)=>{

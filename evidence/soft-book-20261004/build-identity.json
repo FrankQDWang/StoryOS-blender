@@ -1,0 +1,38 @@
+{
+  "baseline": "eedd745",
+  "candidateVersion": "0.1.5-preview.2",
+  "files": {
+    "apps/web/src/BookAppearance.jsx": {
+      "bytes": 6220,
+      "sha256": "208336331f8c3a9245d726012f2bda7aeaebb35fe64e748f855d324346cd0f07"
+    },
+    "apps/web/src/soft-cover-geometry.mjs": {
+      "bytes": 2011,
+      "sha256": "d8f6365f46ac70aa598ed0505b97fef9a81682c9c5f6cb73afc7ec9f1819416f"
+    },
+    "apps/web/src/book-materials.mjs": {
+      "bytes": 1227,
+      "sha256": "4e9dee47d6a6c32ddf023345e54a5fba96df6c201d44b8a30b6d7ff80f1ae5ba"
+    },
+    "public/assets/textures/manuscript-soft-leather.webp": {
+      "bytes": 141648,
+      "sha256": "9d36bdb38e6a739e105e56f7be968070f11340c9f1af8017185de09aeae81133"
+    },
+    "public/assets/textures/manuscript-page.webp": {
+      "bytes": 92424,
+      "sha256": "1ad1c1e21d1a7fdd4dc6732d0b109bf372cbfd534de95c804577f0d7f77d5be6"
+    },
+    "apps/web/dist/client/assets/index-BAQfxx9p.js": {
+      "bytes": 1610560,
+      "sha256": "406c1832c24af9d44fb142352561e23e90dd070011d489c29d192efbce1b0357"
+    }
+  },
+  "unchangedComparedWithBaseline": [
+    "public/assets/models/story-book.glb",
+    "public/assets/models/makehuman-hands.glb",
+    "apps/web/src/room-layout.json",
+    "apps/web/src/OpeningHands.jsx",
+    "apps/web/src/opening-sequence.json"
+  ],
+  "verifiedManifestAssets": 18
+}

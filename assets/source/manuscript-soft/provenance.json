@@ -1,0 +1,29 @@
+{
+  "tool": "built-in ImageGen",
+  "date": "2026-10-04",
+  "referenceRole": "Approved book material, correcting preview.1 stiffness",
+  "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-1965fcf6-1cfc-452f-a70b-63bfedd84e20.png",
+  "processing": "768 square, neutralized grayscale at 0.9 contrast +110 for runtime tint; WebP quality 86",
+  "files": [
+    {
+      "path": "assets/source/manuscript-soft/leather.png",
+      "bytes": 3184122,
+      "sha256": "739fbee2b52cce2e922205898bbe41acca2075e80c34bb734cc06a4428168dfb"
+    },
+    {
+      "path": "public/assets/textures/manuscript-soft-leather.webp",
+      "bytes": 141648,
+      "sha256": "9d36bdb38e6a739e105e56f7be968070f11340c9f1af8017185de09aeae81133"
+    },
+    {
+      "path": "assets/source/manuscript-soft/prompt.txt",
+      "bytes": 1227,
+      "sha256": "d97f7063b45687eee7ea979e66226308f666cd099cecfd5d6d4c65f5061f21ad"
+    },
+    {
+      "path": "design/round-10-five-book-materials/warm-umber.png",
+      "bytes": 2129643,
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+    }
+  ]
+}
