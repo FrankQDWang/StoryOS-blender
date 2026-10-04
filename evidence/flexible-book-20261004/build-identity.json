@@ -1,0 +1,66 @@
+{
+  "version": "0.1.5-preview.3",
+  "materialCheckpoint": "2e48105",
+  "performanceBaseline": "eedd745",
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "files": {
+    "apps/web/src/SoftBook.mjs": {
+      "bytes": 4914,
+      "sha256": "e8c0992f4b1d012884ff2feadd25c58642e3ff3a7e87addcd6c1111a1ca336ae"
+    },
+    "apps/web/src/soft-book-shape.mjs": {
+      "bytes": 5344,
+      "sha256": "c1c17e745f74b971c47553b33fb06198bc59fde1eb649d330eb6410d0e7e757d"
+    },
+    "apps/web/src/BookAppearance.jsx": {
+      "bytes": 2378,
+      "sha256": "6eda3cf811b840e8576785b92dcef2ac60805eba35ec7299de48cadd9c2f8237"
+    },
+    "apps/web/src/Scene.jsx": {
+      "bytes": 19983,
+      "sha256": "3e4287c8c92bf3efb37e34034d72fa0e185096732429a3f1cf908bac00046e5a"
+    },
+    "apps/web/src/SceneReview.jsx": {
+      "bytes": 4417,
+      "sha256": "ebcd4157d3d0a9047d73bb6680c8195d59bfe0e0e38bccbf42bae4857f0c56bc"
+    },
+    "apps/web/src/OpeningHands.jsx": {
+      "bytes": 2718,
+      "sha256": "b70b041fec479e954f27f1c5e674ae3c71f3d191a272e0ceab2cb6087668cd63"
+    },
+    "apps/web/src/opening-motion.mjs": {
+      "bytes": 1024,
+      "sha256": "530d2d68b4902389b066b858bbbd16c4839975d6cea26c7c3dd27407b672e284"
+    },
+    "apps/web/src/opening-sequence.json": {
+      "bytes": 346,
+      "sha256": "5cbed3fed78eb7e8e71c80da396a52a27fb5eb27df4c6fdb55236175599bce25"
+    },
+    "apps/web/dist/client/assets/index-C74ugZEM.js": {
+      "bytes": 1612362,
+      "sha256": "a27d7ccf07d036322ef61e8d2262e9ab13ece114259b5a169f9dc56bb060079a"
+    }
+  },
+  "verifiedManifestAssets": 18,
+  "publicAssetsUnchangedFromMaterialCheckpoint": [
+    "public/assets/models/library-room.glb",
+    "public/assets/models/makehuman-hands.glb",
+    "public/assets/models/opening-hands.glb",
+    "public/assets/models/story-book.glb",
+    "public/assets/models/writer-hands.glb",
+    "public/assets/textures/a-study-rug.png",
+    "public/assets/textures/a-study-wood.png",
+    "public/assets/textures/hearth-decor-atlas.png",
+    "public/assets/textures/manuscript-leather.webp",
+    "public/assets/textures/manuscript-page.webp",
+    "public/assets/textures/manuscript-soft-leather.webp",
+    "public/assets/textures/room-illumination.png",
+    "public/assets/textures/room-occlusion.png",
+    "public/assets/textures/sculpted-plaster.png",
+    "public/assets/textures/sculpted-wood.png"
+  ],
+  "productionNote": "SceneReview is a development-only entry and gained a scene-ready marker for accurate captures after the production build; production inputs are unchanged apart from trailing whitespace.",
+  "handBakeProvenanceFilesVerified": 20,
+  "bakedHandSequenceSnapshot": "assets/source/makehuman-hands-baked-sequence.json"
+}

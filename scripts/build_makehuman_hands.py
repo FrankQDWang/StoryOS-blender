@@ -132,6 +132,14 @@ bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'assets/source/makehuman-hands.ble
 bpy.ops.export_scene.gltf(filepath=str(ROOT/'public/assets/models/makehuman-hands.glb'),export_format='GLB',export_image_format='AUTO',export_jpeg_quality=88,use_selection=True,export_apply=False,export_morph_normal=False,export_animations=True,export_animation_mode='ACTIVE_ACTIONS',export_force_sampling=True,export_frame_range=True,export_skins=True,export_all_influences=False,export_cameras=False,export_lights=False)
 provenance_path=ROOT/'assets/source/makehuman-hands.json'
 provenance=json.loads(provenance_path.read_text())
+# A new bake records its live authoring sequence; the previous artifact may point
+# to an archived sequence preserved during a runtime-only book iteration.
+provenance['sequence']='apps/web/src/opening-sequence.json'
+provenance.pop('baked_generator_revision',None)
+provenance.pop('runtime_sequence_note',None)
+provenance['files']=[entry for entry in provenance['files'] if entry['path']!='assets/source/makehuman-hands-baked-sequence.json']
+if not any(entry['path']==provenance['sequence'] for entry in provenance['files']):
+ provenance['files'].append({'path':provenance['sequence']})
 provenance['atlas']=[2048,2048]
 provenance['visual_target']='design/round-07-wizard-robes/02-midnight-tower-mage.png'
 provenance['shape_refinement']=shape_changes

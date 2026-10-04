@@ -1,0 +1,24 @@
+{
+  "headless": true,
+  "viewport": [
+    1512,
+    751
+  ],
+  "bookSlots": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "closedTime": 0,
+  "openTime": 3.45,
+  "normalFrames": 36,
+  "slowFrames": 94,
+  "contactSlots": [
+    0,
+    2,
+    4
+  ],
+  "notes": "Images captured by flexible-acceptance.mjs. UI smoke rerun alone after waiting for current canvas rendering on return. Chronological frames, not uniform frame rate video."
+}

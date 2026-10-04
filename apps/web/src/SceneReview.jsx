@@ -1,5 +1,5 @@
 // Separate Vite-only inspection entry. Not included in the production HTML build.
-import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect,useCallback} from 'react';
 import {createRoot} from 'react-dom/client';
 import {LibraryScene} from './Scene';
 import layout from './room-layout.json';
@@ -11,6 +11,7 @@ const params=new URLSearchParams(location.search);
 const noop=()=>{};
 const books=layout.slots.map((_,slot)=>({id:`review-${slot}`,slot,title:['星海余烬','守月人','寄往风中的信','无题手稿·甲','无题手稿·乙'][slot],description:slot===0?'群星熄灭之后，故事才刚刚开始。':'',materialId:BOOK_MATERIALS[slot].id,color:BOOK_MATERIALS[slot].color}));
 function Review(){
+ const [ready,setReady]=useState(false),onReady=useCallback(()=>setReady(true),[]);
  const [slot,setSlot]=useState(Number(params.get('slot')??0));
  const [time,setTime]=useState(Number(params.get('time')??.8));
  const [playing,setPlaying]=useState(false),[speed,setSpeed]=useState(1);
@@ -30,8 +31,8 @@ function Review(){
  const camera=view==='fire'?{position:[-1.6,1.15,1.10],target:[-4,.80,-1.15],fov:48}
   :view==='fire-side'?{position:[-2.5,1.4,-3.0],target:[-4,.90,-1.15],fov:48}
   :view==='hands-side'?{position:[stand.position[0]+sideOffset[0]*c+sideOffset[2]*s,stand.position[1]+sideOffset[1],stand.position[2]-sideOffset[0]*s+sideOffset[2]*c],target:[stand.position[0],stand.position[1]+.45,stand.position[2]],fov:48}:undefined;
- return <main className="app"><div className="scene"><LibraryScene books={books} selected={handView?books[slot].id:null}
-  mode={handView?'focus':'overview'} setMode={noop} onSelect={noop} onCreate={noop} onReady={noop}
+ return <main className="app" data-scene-ready={ready}><div className="scene"><LibraryScene books={books} selected={handView?books[slot].id:null}
+  mode={handView?'focus':'overview'} setMode={noop} onSelect={noop} onCreate={noop} onReady={onReady}
   onNear={noop} onMetrics={record} opening={handView} crafting={null} appearing={null} reduced={false}
   resetToken={0} paused={!playing&&!params.has('bench')&&!view.startsWith('fire')} onLockChange={noop} inspection={{time,camera}}/></div>
   <div style={{position:'fixed',top:12,left:12,display:'flex',gap:12,padding:12,background:'#151d20dd',color:'#fff',font:'13px sans-serif',zIndex:30}}>

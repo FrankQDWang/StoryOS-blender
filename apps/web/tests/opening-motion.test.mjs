@@ -157,3 +157,19 @@ test('the raised-cover poses avoid the previous folded right-wrist silhouette',(
   assert.ok(degrees<=45,`right wrist bends ${degrees.toFixed(1)} degrees at ${time.toFixed(2)}s`);
  }
 });
+
+test('flexible sheets retain their length and the settled leaves stay above the leather',async()=>{
+ const {coverPoint,leafPoint,BOOK}=await import('../src/soft-book-shape.mjs');
+ const length=fn=>{let previous=fn(0),sum=0;for(let i=1;i<=64;i++){const point=fn(i/64);sum+=Math.hypot(point[0]-previous[0],point[1]-previous[1],point[2]-previous[2]);previous=point}return sum};
+ for(let frame=0;frame<=210;frame+=3){
+  const t=frame/60;
+  assert.ok(Math.abs(length(u=>coverPoint(u,.5,t))-BOOK.coverWidth)<.001,'leather stretched');
+  for(let i=0;i<3;i++)assert.ok(Math.abs(length(u=>leafPoint(u,.5,t,i))-BOOK.pageWidth)<.002,'paper shrank or stretched while settling');
+ }
+ for(let i=0;i<3;i++)for(let sample=8;sample<=64;sample++){
+  const page=leafPoint(sample/64,.5,OPENING_SECONDS,i);let nearest,distance=Infinity;
+  for(let s=0;s<=128;s++){const cover=coverPoint(s/128,.5,OPENING_SECONDS),d=(page[0]-cover[0])**2+(page[1]-cover[1])**2;if(d<distance){distance=d;nearest=cover}}
+  const clearance=(page[0]-nearest[0])*Math.sin(nearest[3])-(page[1]-nearest[1])*Math.cos(nearest[3]);
+  assert.ok(clearance>BOOK.leather/2,'settled page cuts through leather');
+ }
+});

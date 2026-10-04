@@ -4,7 +4,7 @@
   "license": "CC0-1.0 for core human and Mindfront Aksel skin; project-authored sleeve and animation adaptation",
   "source_details": "assets/vendor/makehuman/README.md",
   "generator": "scripts/build_makehuman_hands.py",
-  "sequence": "apps/web/src/opening-sequence.json",
+  "sequence": "assets/source/makehuman-hands-baked-sequence.json",
   "runtime": "apps/web/src/OpeningHands.jsx",
   "bones_per_hand": 21,
   "duration_seconds": 3.5,
@@ -54,7 +54,7 @@
       "sha256": "6103345935f68b65c2d24c338933032fd6d51030e445cf616bf6c38ccb30509d"
     },
     {
-      "path": "apps/web/src/opening-sequence.json",
+      "path": "assets/source/makehuman-hands-baked-sequence.json",
       "bytes": 346,
       "sha256": "18d3613934adbda4139b23e9b4f68c9d15830a93546f813bfda75097e642ba4c"
     },
@@ -300,5 +300,7 @@
       "original_hand_channels_modified": false,
       "model": "Damped gravity/inertia-driven cloth cage; no runtime physics dependency."
     }
-  ]
+  ],
+  "baked_generator_revision": "2e48105",
+  "runtime_sequence_note": "The unchanged baked hand clip uses the archived original sequence. Preview.3 changes only cover settling after release and page timing in apps/web/src/opening-sequence.json; reach, grip, supported cover lift, release/retreat and duration retain the baked values. OpeningHands.jsx applies flexible-cover contact offsets at runtime."
 }

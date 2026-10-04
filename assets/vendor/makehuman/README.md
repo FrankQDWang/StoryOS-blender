@@ -23,3 +23,7 @@ npm run assets:hands
 ```
 
 To regenerate the offline base, clone the official MPFB source into the ignored project download directory, check out the exact revision above, and run `scripts/prepare_makehuman_base.py` in Blender with `BLENDER_USER_RESOURCES` set to this project's `downloads/blender-user`. The script redirects MPFB's user directory within that one process; it does not install an add-on globally or save user preferences.
+
+## Flexible-book runtime adaptation (0.1.5-preview.3)
+
+The shipped GLB and source blend remain unchanged. Its exact original sequence is archived at `assets/source/makehuman-hands-baked-sequence.json`, retaining the original SHA; `makehuman-hands.json` points to this bake input and records the generator revision. The runtime book changes post-release cover settling/page timing and translates the existing arms to maintain flexible-cover contact. A future actual bake automatically records the current live sequence and its generator hash again.

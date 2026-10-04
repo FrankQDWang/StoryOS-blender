@@ -1,0 +1,15 @@
+{
+  "duration": 3.5,
+  "fps": 30,
+  "reach": [0.10, 0.72],
+  "grip": [0.48, 0.78],
+  "coverLift": [0.82, 1.83, 1.55],
+  "coverSettle": [1.83, 2.55, 1.17],
+  "release": [1.76, 2.10],
+  "retreat": [2.10, 3.30],
+  "supportRelease": [1.90, 2.25],
+  "supportRetreat": [2.00, 3.15],
+  "pageStart": 2.18,
+  "pageStagger": 0.25,
+  "pageDuration": 0.50
+}

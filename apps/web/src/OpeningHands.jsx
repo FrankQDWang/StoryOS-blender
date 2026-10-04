@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import {OPENING_SECONDS} from './opening-motion.mjs';
 import {fitHandsToBook} from './opening-anatomy.mjs';
 import layout from './room-layout.json';
+import {softHandOffset} from './soft-book-shape.mjs';
 
 export function OpeningHands({clock,bookIndex}) {
  const invalidate=useThree(state=>state.invalidate);
@@ -25,7 +26,7 @@ export function OpeningHands({clock,bookIndex}) {
    const anchor=side==='Right'?'finger3-3.R':'finger1-3.L';
    arm.traverse(node=>{if(node.isBone&&node.name===THREE.PropertyBinding.sanitizeNodeName(anchor))contact=node;});
    if(!contact)throw new Error(`Missing ${side} hand contact bone`);
-   return {arm,contact,point:new THREE.Vector3()};
+   return {side,arm,contact,point:new THREE.Vector3(),offset:[0,0,0]};
   });
   return {object,mixer,actions,arms};
  },[scene,animations]);
@@ -38,7 +39,10 @@ export function OpeningHands({clock,bookIndex}) {
  useFrame(()=>{
   for(const action of rig.actions)action.paused=false;
   rig.mixer.setTime(Math.max(0,Math.min(OPENING_SECONDS,clock.current)));
-  if(bookIndex!=null)fitHandsToBook(rig.arms,layout.slots[bookIndex].scale??1);
+  if(bookIndex!=null){
+   fitHandsToBook(rig.arms,layout.slots[bookIndex].scale??1);
+   for(const {side,arm,offset} of rig.arms){softHandOffset(side,clock.current,offset);arm.position.x+=offset[0];arm.position.y+=offset[1];arm.position.z+=offset[2];}
+  }
   rig.object.visible=clock.current>0&&clock.current<OPENING_SECONDS;
  });
  if(bookIndex==null)return null;

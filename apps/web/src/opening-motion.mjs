@@ -13,5 +13,5 @@ export function openingPose(time) {
 export function pagePose(time,index) {
  const order=2-index;
  const progress=smoothRange(time,sequence.pageStart+order*sequence.pageStagger,sequence.pageStart+order*sequence.pageStagger+sequence.pageDuration);
- return {angle:progress*(2.60+index*.025),curl:Math.sin(progress*Math.PI)*.20,lift:Math.sin(progress*Math.PI)*.014};
+ return {progress,angle:progress*(2.87+index*.014),curl:Math.sin(progress*Math.PI)*.65};
 }
