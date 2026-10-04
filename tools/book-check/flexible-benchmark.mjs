@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import {BOOK_MATERIALS} from '../../apps/web/src/book-materials.mjs';
 
-const out='evidence/flexible-book-20261004/performance';await fs.mkdir(out,{recursive:true});
+const out=process.env.BOOK_EVIDENCE?`${process.env.BOOK_EVIDENCE}/performance`:'evidence/flexible-book-20261004/performance';await fs.mkdir(out,{recursive:true});
 const context=await chromium.launchPersistentContext('.cache/flexible-book/benchmark-chrome',{
  channel:'chrome',headless:true,viewport:{width:1512,height:751},deviceScaleFactor:1,
  args:['--no-first-run','--disable-background-networking'],

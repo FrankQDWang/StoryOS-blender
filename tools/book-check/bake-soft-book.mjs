@@ -1,0 +1,91 @@
+// Reduced elastic-strip solve: binding, finger support, gravity and contact.
+// Across the binding the sheet is inextensible; bending is solved across its width.
+import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
+import {BOOK,MOTION,supportForSlot,gripPose} from '../../apps/web/src/book-support.mjs';
+const {cols:C,frames:F,layers:L}=MOTION,N=C+1,dt=1/240,iterations=160;
+const output=new Int16Array(MOTION.configurations.length*MOTION.profiles*F*L*N*2),report=[];
+function sheet(layer){
+ const width=layer?BOOK.pageWidth:BOOK.coverWidth,p=new Float64Array(N*2),old=new Float64Array(N*2),links=[];
+ for(let i=0;i<N;i++){p[i*2]=BOOK.coverRoot+i/C*width;p[i*2+1]=BOOK.coverHeight-layer*.0016;}
+ old.set(p);
+ for(let i=0;i<C;i++)links.push([i,i+1,width/C,1]);
+
+ return {layer,width,p,old,links,weights:new Float64Array(N).fill(1)};
+}
+function collideSheet(p,j,other,gap){
+ let best=Infinity,bx,by,nx,ny;
+ for(let i=0;i<C;i++){
+  const a=i*2,x=other[a],y=other[a+1],dx=other[a+2]-x,dy=other[a+3]-y,l2=dx*dx+dy*dy;
+  const t=Math.max(0,Math.min(1,((p[j]-x)*dx+(p[j+1]-y)*dy)/l2)),qx=x+t*dx,qy=y+t*dy,d=(p[j]-qx)**2+(p[j+1]-qy)**2;
+  if(d<best){const length=Math.sqrt(l2);best=d;bx=qx;by=qy;nx=-dy/length;ny=dx/length;}
+ }
+ const signed=(p[j]-bx)*nx+(p[j+1]-by)*ny;
+ if(best<.025**2&&signed>-gap){p[j]-=nx*(signed+gap);p[j+1]-=ny*(signed+gap);}
+}
+for(const [config,slot] of MOTION.configurations.entries())for(let profile=0;profile<MOTION.profiles;profile++){
+ const support=supportForSlot(slot),sheets=Array.from({length:L},(_,i)=>sheet(i));
+ const save=frame=>{for(let layer=0;layer<L;layer++)for(let i=0;i<N;i++){
+  const base=(((config*MOTION.profiles+profile)*F+frame)*L+layer)*N*2+i*2,p=sheets[layer].p;
+  output[base]=Math.round(p[i*2]*16000);output[base+1]=Math.round(p[i*2+1]*16000);
+ }};
+ save(0);
+ for(let step=1;step<=840;step++){
+  const time=step*dt,grip=gripPose(time);
+  for(const s of sheets){
+   const {p,old,weights,layer,width}=s,active=time>=.72&&time<=1.90+layer*.012;
+   weights.fill(1);weights[0]=0;if(layer)weights[1]=0;const pins=[];
+   if(active)for(let i=Math.round(.79*C);i<=Math.round(.875*C);i++){
+    const dx=i/C*width-.595;
+    pins.push([i,grip[0]+dx*Math.cos(grip[3])+Math.sin(grip[3])*layer*.0016,grip[1]+dx*Math.sin(grip[3])-Math.cos(grip[3])*layer*.0016]);weights[i]=0;
+   }
+   for(let i=0;i<N;i++){
+    const j=i*2;
+    if(!weights[i]){old[j]=p[j];old[j+1]=p[j+1];continue;}
+    const x=p[j],y=p[j+1];p[j]+=(x-old[j])*.96;p[j+1]+=(y-old[j+1])*.96-9.81*Math.cos(support.pitch)/support.scale*dt*dt;old[j]=x;old[j+1]=y;
+   }
+   for(let it=0;it<iterations;it++){
+    let angle=0;if(layer){const cover=sheets[0].p;angle=Math.atan2(cover[3]-cover[1],cover[2]-cover[0]);}
+    const gap=layer?.0028+(layer-1)*.0011:0;
+    p[0]=BOOK.coverRoot+Math.sin(angle)*gap;p[1]=BOOK.coverHeight-Math.cos(angle)*gap;
+    if(layer){p[2]=p[0]+width/C*Math.cos(angle);p[3]=p[1]+width/C*Math.sin(angle);}
+    for(const [i,x,y] of pins){p[i*2]=x;p[i*2+1]=y;}
+    // Angle bending resists a fold; distance-only bending loses its gradient at a crease.
+    for(let i=1;i<C;i++){
+     const a=(i-1)*2,b=i*2,c=(i+1)*2,ex=p[b]-p[a],ey=p[b+1]-p[a+1],fx=p[c]-p[b],fy=p[c+1]-p[b+1];
+     const e2=ex*ex+ey*ey,f2=fx*fx+fy*fy;
+     const ax=-ey/e2,ay=ex/e2,cx=-fy/f2,cy=fx/f2,bx=-ax-cx,by=-ay-cy;
+     const wa=weights[i-1],wb=weights[i],wc=weights[i+1],den=wa*(ax*ax+ay*ay)+wb*(bx*bx+by*by)+wc*(cx*cx+cy*cy);
+     if(!den)continue;
+     const lambda=-Math.atan2(ex*fy-ey*fx,ex*fx+ey*fy)*(layer?.07:.17)/den;
+     p[a]+=wa*lambda*ax;p[a+1]+=wa*lambda*ay;p[b]+=wb*lambda*bx;p[b+1]+=wb*lambda*by;p[c]+=wc*lambda*cx;p[c+1]+=wc*lambda*cy;
+    }
+    for(const [a,b,rest,k] of s.links){
+     const ai=a*2,bi=b*2,wa=weights[a],wb=weights[b],sum=wa+wb;if(!sum)continue;
+     const dx=p[bi]-p[ai],dy=p[bi+1]-p[ai+1],len=Math.hypot(dx,dy)||1,f=(len-rest)/len*k/sum;
+     p[ai]+=dx*f*wa;p[ai+1]+=dy*f*wa;p[bi]-=dx*f*wb;p[bi+1]-=dy*f*wb;
+    }
+    for(let i=1;i<N;i++){
+     const j=i*2;if(!weights[i])continue;
+     if(p[j]>=BOOK.pageRoot&&p[j]<=BOOK.pageRoot+BOOK.pageWidth)p[j+1]=Math.max(p[j+1],BOOK.blockTop+(layer?.001:.008));
+     if(p[j]>=support.edge&&p[j]<=.51)p[j+1]=Math.max(p[j+1],(profile?support.lip:support.top)+(layer?.001:BOOK.leather/2));
+     if(layer)collideSheet(p,j,sheets[layer-1].p,layer===1?BOOK.leather/2+.0008:.0011);
+    }
+   }
+  }
+  if(step%4===0)save(step/4);
+ }
+ report.push({slot,profile,support,sheets:sheets.map(s=>({layer:s.layer,tip:Array.from(s.p.slice(-2)),length:Array.from({length:C},(_,i)=>Math.hypot(s.p[(i+1)*2]-s.p[i*2],s.p[(i+1)*2+1]-s.p[i*2+1])).reduce((a,b)=>a+b,0)}))});
+ console.log(JSON.stringify(report.at(-1)));
+}
+const path='public/assets/animation/soft-book-motion.bin',data=Buffer.from(output.buffer);
+await fs.writeFile(path,data);
+const sha256=crypto.createHash('sha256').update(data).digest('hex');
+await fs.writeFile('apps/web/src/book-motion-asset.mjs',`// Generated by tools/book-check/bake-soft-book.mjs.
+export const BOOK_MOTION_ASSET='/assets/animation/soft-book-motion.bin?v=${sha256.slice(0,12)}';
+`);
+const inputs=['tools/book-check/bake-soft-book.mjs','apps/web/src/book-support.mjs','apps/web/src/room-layout.json'];
+const files=await Promise.all([...inputs,path].map(async path=>{const bytes=await fs.readFile(path);return {path,bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')}}));
+const record={solver:'reduced elastic strips, projected gravity, fixed binding, finger support and unilateral contact with book/plank/neighboring sheets',dt,iterations,...MOTION,quantization:16000,bytes:output.byteLength,sha256,configurations:report,files};
+await fs.writeFile('assets/source/soft-book-motion.json',JSON.stringify(record,null,2)+'\n');
+await fs.writeFile('evidence/book-mechanics-20261004/bake.json',JSON.stringify(record,null,2)+'\n');

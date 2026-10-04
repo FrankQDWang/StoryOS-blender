@@ -6,7 +6,9 @@ import * as THREE from 'three';
 import {OPENING_SECONDS} from './opening-motion.mjs';
 import {fitHandsToBook} from './opening-anatomy.mjs';
 import layout from './room-layout.json';
-import {softHandOffset} from './soft-book-shape.mjs';
+import {handSupportTransform} from './soft-book-shape.mjs';
+import {handClipTime} from './book-support.mjs';
+import {smoothRange} from './opening-motion.mjs';
 
 export function OpeningHands({clock,bookIndex}) {
  const invalidate=useThree(state=>state.invalidate);
@@ -38,10 +40,19 @@ export function OpeningHands({clock,bookIndex}) {
  },[rig,invalidate]);
  useFrame(()=>{
   for(const action of rig.actions)action.paused=false;
-  rig.mixer.setTime(Math.max(0,Math.min(OPENING_SECONDS,clock.current)));
+  rig.mixer.setTime(Math.max(0,Math.min(OPENING_SECONDS,handClipTime(clock.current))));
   if(bookIndex!=null){
+   for(const {arm} of rig.arms)arm.rotation.set(0,0,0);
    fitHandsToBook(rig.arms,layout.slots[bookIndex].scale??1);
-   for(const {side,arm,offset} of rig.arms){softHandOffset(side,clock.current,offset);arm.position.x+=offset[0];arm.position.y+=offset[1];arm.position.z+=offset[2];}
+   for(const {side,arm} of rig.arms){
+    const time=clock.current;
+    if(side==='Left'){arm.position.y-=.068*smoothRange(time,.1,.72)*(1-smoothRange(time,2,3.15));continue;}
+    const {angle,old,target,weight}=handSupportTransform(time),c=Math.cos(angle),s=Math.sin(angle);
+    const x=arm.position.x-old[0],y=arm.position.y-old[1];
+    arm.position.x=old[0]+x*c-y*s+(target[0]-old[0])*weight;
+    arm.position.y=old[1]+x*s+y*c+(target[1]-old[1])*weight;
+    arm.position.z+=(target[2]-old[2])*weight;arm.rotation.z=angle;
+   }
   }
   rig.object.visible=clock.current>0&&clock.current<OPENING_SECONDS;
  });

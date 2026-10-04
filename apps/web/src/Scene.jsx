@@ -8,7 +8,7 @@ import {moveWithCollisions,isWalkable,readingApproach} from './roaming.mjs';
 import {HearthFire} from './HearthFire';
 import {OpeningHands} from './OpeningHands';
 import {useBookAppearance} from './BookAppearance';
-import {createSoftBook,updateSoftBook,disposeSoftBook} from './SoftBook.mjs';
+import {createSoftBook,prepareSoftBook,updateSoftBook,disposeSoftBook} from './SoftBook.mjs';
 
 export const SLOTS=layout.slots.map(slot=>slot.position);
 const YAWS=layout.slots.map(slot=>slot.yaw);
@@ -91,8 +91,9 @@ function Room({onReady}){
 }
 function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing,openingClock}){
  const appearance=useBookAppearance(book);
- const object=useMemo(()=>createSoftBook(appearance),[appearance]);
+ const object=useMemo(()=>createSoftBook(appearance,book.slot??0),[appearance,book.slot]);
  useEffect(()=>()=>disposeSoftBook(object),[object]);
+ useEffect(()=>{if(selected)prepareSoftBook(object)},[object,selected]);
  const group=useRef();const [hover,setHover]=useState(false);const age=useRef(0);
  useFrame((state,dt)=>{
   age.current+=dt;
@@ -120,7 +121,7 @@ function MagicTable({onCreate,crafting,reduced}){
 }
 function CreatingBook({book}) {
  const appearance=useBookAppearance(book);
- const object=useMemo(()=>createSoftBook(appearance),[appearance]);
+ const object=useMemo(()=>createSoftBook(appearance,book.slot??0),[appearance,book.slot]);
  useEffect(()=>()=>disposeSoftBook(object),[object]);
  const pieces=useMemo(()=>object.children.map((o,i)=>({o,base:o.position.clone(),offset:new THREE.Vector3(Math.sin(i*2.4)*.35,.35+(i%4)*.16,Math.cos(i*2.4)*.3)})),[object]);
  const ref=useRef(),elapsed=useRef(0);const start=useMemo(()=>new THREE.Vector3(TABLE[0],TABLE[1]+.65,TABLE[2]),[]);

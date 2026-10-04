@@ -1,0 +1,12 @@
+{
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "viewport": [
+    1512,
+    751
+  ],
+  "replayAt": 2.603,
+  "finalTime": 3.5,
+  "errors": [],
+  "source": "Chrome video capture at normal playback speed; not assembled from still screenshots"
+}

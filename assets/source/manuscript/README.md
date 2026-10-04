@@ -1,5 +1,7 @@
 # 五款私人手稿的共用材质
 
+**历史素材记录。** 自0.1.5-preview.4起，运行内页使用`apps/web/src/blank-paper.mjs`的无文字纸纹，不再加载此目录派生的假手写纸张纹理，也不叠加简介。当前规则见`design/iterations/27-book-mechanics-and-blank-pages.md`；下文描述生成当时的用途。
+
 用户已认可的视觉参考是 `design/round-10-five-book-materials/` 五款同族书本。此目录的 `atlas.png` 是 2026-10-04 用内置 ImageGen、以认可暖棕图为风格参照生成的一张生产材质图集，不是新的书房方案。
 
 - [实际提示词](../manuscript-texture-prompt.txt)
