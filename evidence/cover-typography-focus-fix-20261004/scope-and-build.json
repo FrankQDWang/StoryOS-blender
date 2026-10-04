@@ -1,0 +1,24 @@
+{
+  "baseline": "907b14f4eb125b4dfd79c22f507cfb74a4a46e28",
+  "unchangedCoreFiles": [
+    "soft-book-shape.mjs",
+    "OpeningHands.jsx",
+    "book-materials.mjs",
+    "room-layout.json",
+    "library-model.mjs"
+  ],
+  "fontFilesVerified": 202,
+  "fontStorageBytes": 6977652,
+  "sourceHashes": {
+    "apps/web/src/Scene.jsx": "dd674f4d6878401af4c93629532ff6395c88863952b668bf6c2ecb1c77a66644",
+    "apps/web/src/BookAppearance.jsx": "b8775c3e06bd91898c8ec88e95bc3e374cbb71bdef0c8a1578ab1ad65a0f20b0",
+    "apps/web/src/cover-title.mjs": "86fc5d839db552f5f334b161ebdbfc4f30fa2671f1176c5d67ae2b6efe1cb4f4",
+    "apps/web/src/cover-fonts.css": "c9fd795aa0984d830694096dd6f209722b98966b4abc348b56719f8a07b96092"
+  },
+  "buildHashes": {
+    "index-BgQI2Pe0.css": "c8403fe44ecdfbd4fc4310e732ec27f71616ccec9e2a8902072d1d2bba2a8ec7",
+    "index-DaPEvMhl.js": "f4d845b5942236caae0aeef1f535ff675def2b57bd8e5e7ac34744406d62462d"
+  },
+  "roomLightingChange": "Removed only book-local hover/selection pointLight; physical room sources and renderer unchanged",
+  "coverColor": "Original colors preserved; optional brown lightening question remains unanswered"
+}

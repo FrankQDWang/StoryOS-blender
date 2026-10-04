@@ -4,6 +4,9 @@ import {LibraryScene} from './Scene';
 import {STORAGE_KEY,initialLibrary,normalizeLibrary,createBook,deleteBook,visitBook,recentBooks} from './library-model.mjs';
 import {nextBookMaterial} from './book-materials.mjs';
 import {OPENING_SECONDS} from './opening-motion.mjs';
+import {fiveBookPreview} from './five-book-preview.mjs';
+
+const fiveBookReview=import.meta.env.DEV&&new URLSearchParams(location.search).get('preview')!=='off';
 
 class SceneBoundary extends Component {
  state={error:false};static getDerivedStateFromError(){return {error:true}};
@@ -25,14 +28,15 @@ function Modal({title,children,onClose,wide=false}){
  return <div className="modal-shade" onMouseDown={e=>{if(e.target===e.currentTarget)onClose()}}><section ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-label={title} className={`modal ${wide?'wide':''}`}><button className="icon close" onClick={onClose} aria-label="关闭"><X size={20}/></button>{children}</section></div>;
 }
 export function App(){
- const [library,setLibrary]=useState(load),[mode,setMode]=useState('overview'),[lookLocked,setLookLocked]=useState(false),[selected,setSelected]=useState(null),[workspace,setWorkspace]=useState(null);
+ const [library,setLibrary]=useState(fiveBookReview?()=>fiveBookPreview(load()):load),[mode,setMode]=useState('overview'),[lookLocked,setLookLocked]=useState(false),[selected,setSelected]=useState(null),[workspace,setWorkspace]=useState(null);
  const [panel,setPanel]=useState(null),[query,setQuery]=useState(''),[ready,setReady]=useState(false),[failed,setFailed]=useState(false),[opening,setOpening]=useState(false),[crafting,setCrafting]=useState(false),[appearing,setAppearing]=useState(null),[near,setNear]=useState(null),[resetToken,setResetToken]=useState(0),[toast,setToast]=useState(''),[metrics,setMetrics]=useState(null),[storageError,setStorageError]=useState(false);
  const [title,setTitle]=useState(''),[description,setDescription]=useState(''),[deleting,setDeleting]=useState(null);
  const timer=useRef(null),creationLock=useRef(false),openingLock=useRef(false),started=useRef(performance.now()),loadTime=useRef(null);
  const nextMaterial=nextBookMaterial(library.books),deletingBook=library.books.find(b=>b.id===deleting);
  const current=library.books.find(b=>b.id===selected),working=library.books.find(b=>b.id===workspace),recent=recentBooks(library),resume=library.books.find(b=>b.id===library.lastBookId)||recent[0];
  useAmbient(library.sound);
- useEffect(()=>{try{localStorage.setItem(STORAGE_KEY,JSON.stringify(library));setStorageError(false)}catch{setStorageError(true)}},[library]);
+ useEffect(()=>{if(fiveBookReview)setLibrary(fiveBookPreview)},[]);
+ useEffect(()=>{if(fiveBookReview)return;try{localStorage.setItem(STORAGE_KEY,JSON.stringify(library));setStorageError(false)}catch{setStorageError(true)}},[library]);
  useEffect(()=>()=>clearTimeout(timer.current),[]);
  useEffect(()=>{if(!toast)return;const t=setTimeout(()=>setToast(''),4500);return()=>clearTimeout(t)},[toast]);
  const sceneReady=useCallback(()=>{setReady(true);if(loadTime.current===null)loadTime.current=(performance.now()-started.current)/1000},[]);
@@ -67,7 +71,7 @@ export function App(){
  return <main className={workspace?'app workspace-app':'app'}>
   {!workspace&&<div className="scene"><SceneBoundary onFail={()=>{setFailed(true);setReady(true)}}><LibraryScene books={library.books} selected={selected} mode={mode} setMode={setMode} onSelect={select} onCreate={showCreate} onReady={sceneReady} onNear={setNear} onMetrics={setMetrics} opening={opening} crafting={crafting} appearing={appearing} reduced={library.reducedMotion} resetToken={resetToken} paused={Boolean(panel)} onLockChange={setLookLocked}/></SceneBoundary></div>}
   {!workspace&&!ready&&!failed&&<div className="loading"><BookOpen size={34} weight="thin"/><p>点亮你的藏书室</p><span>正在准备空间与书本…</span><button className="secondary" onClick={allBooks}>先从作品列表进入</button></div>}
-  <header className="topbar"><a className="brand" href="#" onClick={e=>{e.preventDefault();workspace?returnRoom():(setMode('overview'),setSelected(null),setResetToken(x=>x+1))}} aria-label="StoryOS 藏书室"><BookOpen size={27} weight="thin"/><span>StoryOS</span><i/></a><div className="top-location"><span>{workspace?'写作空间':'私人藏书室'}</span><span className="demo-tag">体验样片</span></div><nav>
+  <header className="topbar"><a className="brand" href="#" onClick={e=>{e.preventDefault();workspace?returnRoom():(setMode('overview'),setSelected(null),setResetToken(x=>x+1))}} aria-label="StoryOS 藏书室"><BookOpen size={27} weight="thin"/><span>StoryOS</span><i/></a><div className="top-location"><span>{workspace?'写作空间':'私人藏书室'}</span><span className="demo-tag">{fiveBookReview?'五书预览':'体验样片'}</span></div><nav>
    {!workspace&&<><button className="icon quiet-option" title={library.sound?'关闭环境音':'开启环境音'} aria-label={library.sound?'关闭环境音':'开启环境音'} onClick={()=>setLibrary(s=>({...s,sound:!s.sound}))}>{library.sound?<SpeakerHigh size={20}/>:<SpeakerSlash size={20}/>}</button><button className={`icon quiet-option ${library.reducedMotion?'active':''}`} title="减少动态效果" aria-label="减少动态效果" aria-pressed={library.reducedMotion} onClick={()=>setLibrary(s=>({...s,reducedMotion:!s.reducedMotion}))}><Pause size={19}/></button></>}
    <button className="top-books" onClick={allBooks}><Books size={18}/>全部作品<span>{library.books.length}</span></button>
   </nav></header>

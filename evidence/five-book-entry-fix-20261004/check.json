@@ -1,0 +1,21 @@
+{
+  "before": {
+    "count": "3",
+    "badge": "体验样片"
+  },
+  "after": {
+    "url": "http://127.0.0.1:4173/",
+    "count": "5",
+    "badge": "五书预览",
+    "colors": [
+      "325852",
+      "b09b80",
+      "384d6b",
+      "a18490",
+      "c8a16a"
+    ]
+  },
+  "refreshCount": 5,
+  "storagePreserved": true,
+  "errors": []
+}

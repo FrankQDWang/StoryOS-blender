@@ -12,6 +12,7 @@ const page=context.pages()[0],cdp=await context.newCDPSession(page),errors=[];
 process.on('uncaughtException',async error=>{await page.screenshot({path:`${out}/benchmark-error.png`});console.error(error,errors,await page.locator('body').innerText());await context.close();process.exit(1)});
 page.on('pageerror',e=>errors.push(String(e)));
 const fixture={version:1,books:BOOK_MATERIALS.map((m,slot)=>({id:`bench-${slot}`,slot,materialId:m.id,color:m.color,title:['星海余烬','守月人','寄往风中的信','无题手稿·甲','无题手稿·乙'][slot],description:slot===0?'群星熄灭之后，故事才刚刚开始。':'',words:0,updatedAt:'2026-10-03T00:00:00Z'})),lastBookId:'bench-0',reducedMotion:false,sound:false};
+if(process.env.BOOK_CHECK_ORIGINAL_COLORS==='1')for(const [slot,color] of ['#325852','#78503b','#384d6b'].entries())fixture.books[slot].color=color;
 await context.addInitScript(fixture=>{
  try{localStorage.setItem('storyos.library.demo.v1',JSON.stringify(fixture))}catch{}
  const sample=window.__bookBench={scenePaints:[],handDraw:null,clickStart:null,workspaceAt:null};
@@ -49,10 +50,12 @@ await context.addInitScript(fixture=>{
 },fixture);
 await cdp.send('Network.enable');
 const supplement=process.env.BOOK_CHECK_SUPPLEMENT==='1';
-const rows=supplement?JSON.parse(await fs.readFile(`${out}/benchmark-raw.json`)).rows:[];
-for(const network of (supplement?['20mbps-50ms']:['local','20mbps-50ms'])){
+const extendNetwork=process.env.BOOK_CHECK_EXTEND_NETWORK;
+const rows=supplement||extendNetwork?JSON.parse(await fs.readFile(`${out}/benchmark-raw.json`)).rows:[];
+for(const network of (extendNetwork?[extendNetwork]:supplement?['20mbps-50ms']:['local','20mbps-50ms'])){
  await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:network==='local'?0:50,downloadThroughput:network==='local'?-1:20_000_000/8,uploadThroughput:network==='local'?-1:10_000_000/8});
- for(let round=supplement?3:0;round<(supplement?5:3);round++)for(const version of (round%2?['candidate','baseline']:['baseline','candidate'])){
+ const rounds=network==='local'?Number(process.env.BOOK_CHECK_LOCAL_ROUNDS??3):3;
+ for(let round=supplement||extendNetwork?3:0;round<(supplement||extendNetwork?5:rounds);round++)for(const version of (round%2?['candidate','baseline']:['baseline','candidate'])){
   const root=version==='baseline'?'http://127.0.0.1:4180':'http://127.0.0.1:4182';
   await page.goto('about:blank');
   if(!supplement)await cdp.send('Network.clearBrowserCache');

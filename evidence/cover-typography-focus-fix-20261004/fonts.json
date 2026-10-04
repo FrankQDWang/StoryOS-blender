@@ -1,0 +1,42 @@
+{
+  "dark-cn": {
+    "fonts": [
+      {
+        "familyName": "Ma Shan Zheng",
+        "postScriptName": "MaShanZheng-Regular",
+        "isCustomFont": true,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "dark-en": {
+    "fonts": [
+      {
+        "familyName": "Klee One",
+        "postScriptName": "KleeOne-Regular",
+        "isCustomFont": true,
+        "glyphCount": 14
+      }
+    ]
+  },
+  "light-cn": {
+    "fonts": [
+      {
+        "familyName": "Noto Serif SC ExtraLight SemiBold",
+        "postScriptName": "NotoSerifSCExtraLight-SemiBold",
+        "isCustomFont": true,
+        "glyphCount": 3
+      }
+    ]
+  },
+  "light-en": {
+    "fonts": [
+      {
+        "familyName": "EB Garamond Medium",
+        "postScriptName": "EBGaramond-Medium",
+        "isCustomFont": true,
+        "glyphCount": 14
+      }
+    ]
+  }
+}

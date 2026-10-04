@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:4174/review.html",
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "images": 7,
+  "choices": 14,
+  "errors": []
+}

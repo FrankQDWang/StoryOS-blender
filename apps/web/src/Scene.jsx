@@ -102,7 +102,6 @@ function ProjectBook({book,index,onSelect,selected,opening,reduced,appearing,ope
  return <group ref={group} position={SLOTS[index]} rotation={[PITCHES[index],YAWS[index],0,'YXZ']} onClick={e=>{e.stopPropagation();onSelect(book.id)}} onPointerOver={e=>{e.stopPropagation();setHover(true);document.body.style.cursor='pointer'}} onPointerOut={()=>{setHover(false);document.body.style.cursor=''}}>
   <primitive object={object}/>
   {hover&&!selected&&!opening&&<Html position={[0,.35,0]} center distanceFactor={4} zIndexRange={[8,0]}><div className="book-label">{book.title}<small>点击查看作品</small></div></Html>}
-  {(selected||hover)&&!opening&&<pointLight position={[0,.5,0]} intensity={.8} color="#ffcd8b" distance={1.8}/>}
  </group>;
 }
 function MagicTable({onCreate,crafting,reduced}){

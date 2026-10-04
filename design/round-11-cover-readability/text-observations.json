@@ -1,0 +1,60 @@
+[
+  {
+    "file": "design/round-11-cover-readability/outputs/handmade-paper-label.png",
+    "ocr": [
+      "0.30 星海余烬",
+      "0.30 ①",
+      "0.30 A Catalogue of",
+      "0.50 Forgotten Stars",
+      "0.50 and the Roads",
+      "1.00 Between Them"
+    ]
+  },
+  {
+    "file": "design/round-11-cover-readability/outputs/large-title-whitespace.png",
+    "ocr": [
+      "0.30 星海",
+      "0.30 余於",
+      "0.50 A Catalogue of",
+      "0.50 Forgotten Stars",
+      "0.50 and the Roads",
+      "0.30 Between 'Lhem"
+    ]
+  },
+  {
+    "file": "design/round-11-cover-readability/outputs/matte-antique-gold.png",
+    "ocr": [
+      "0.30 星海余惊",
+      "0.30 非",
+      "0.30 A Catalogve of",
+      "0.50 Forgotten Stars",
+      "0.50 and the Roads",
+      "0.30 Between Them"
+    ]
+  },
+  {
+    "file": "design/round-11-cover-readability/outputs/muted-lighter-leather.png",
+    "ocr": [
+      "0.30 屋海余限",
+      "0.30 000",
+      "0.30 A Catalogue oi",
+      "0.30 Forgotten. stars",
+      "0.50 and the Roads",
+      "0.50 Between Them",
+      "0.30 000"
+    ]
+  },
+  {
+    "file": "design/round-11-cover-readability/outputs/warm-gray-handwriting.png",
+    "ocr": [
+      "0.30 水缘",
+      "0.30 星海会限",
+      "0.50 Q",
+      "0.50 A Catalogue of",
+      "0.50 Forgotten Stars",
+      "0.50 and the Roads",
+      "0.50 Between Them",
+      "0.30 0"
+    ]
+  }
+]

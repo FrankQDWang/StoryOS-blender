@@ -1,0 +1,580 @@
+{
+  "chrome": "154.0.8037.93",
+  "viewport": [
+    1512,
+    751
+  ],
+  "headless": true,
+  "state": "Actual home, unselected/unhovered; detail uses only projection crop, no lighting changes",
+  "baseline": "907b14f4eb125b4dfd79c22f507cfb74a4a46e28",
+  "results": [
+    {
+      "label": "dark-cn",
+      "title": "星海余烬",
+      "color": "#325852",
+      "lines": [
+        "星海余烬"
+      ],
+      "size": 100,
+      "lineHeight": 128,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Chalkboard SE\", \"Segoe Print\", \"Kaiti SC\", \"STKaiti\", \"KaiTi\", cursive",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.68,
+        "height": 0.4,
+        "size": 100,
+        "leading": 1.28
+      },
+      "widths": [
+        400
+      ],
+      "fonts": [
+        [
+          "Kaiti SC",
+          true
+        ],
+        [
+          "STKaiti",
+          true
+        ],
+        [
+          "Songti SC",
+          true
+        ],
+        [
+          "Baskerville",
+          true
+        ],
+        [
+          "Chalkboard SE",
+          true
+        ]
+      ]
+    },
+    {
+      "label": "dark-en",
+      "title": "A Catalogue of Forgotten Stars and the Roads Between Them",
+      "color": "#325852",
+      "lines": [
+        "A Catalogue of",
+        "Forgotten Stars",
+        "and the Roads",
+        "Between Them"
+      ],
+      "size": 74,
+      "lineHeight": 94.72,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Chalkboard SE\", \"Segoe Print\", \"Kaiti SC\", \"STKaiti\", \"KaiTi\", cursive",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.68,
+        "height": 0.4,
+        "size": 100,
+        "leading": 1.28
+      },
+      "widths": [
+        491.0164794921875,
+        517.6728515625,
+        483.82086181640625,
+        484.8020935058594
+      ],
+      "fonts": [
+        [
+          "Kaiti SC",
+          true
+        ],
+        [
+          "STKaiti",
+          true
+        ],
+        [
+          "Songti SC",
+          true
+        ],
+        [
+          "Baskerville",
+          true
+        ],
+        [
+          "Chalkboard SE",
+          true
+        ]
+      ]
+    },
+    {
+      "label": "light-cn",
+      "title": "星海余烬",
+      "color": "#c8a16a",
+      "lines": [
+        "星海余烬"
+      ],
+      "size": 88,
+      "lineHeight": 107.36,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "style": {
+        "dark": false,
+        "ink": "#29231e",
+        "font": "\"Baskerville\", \"Palatino Linotype\", \"Songti SC\", \"STSong\", \"SimSun\", serif",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "widths": [
+        352
+      ],
+      "fonts": [
+        [
+          "Kaiti SC",
+          true
+        ],
+        [
+          "STKaiti",
+          true
+        ],
+        [
+          "Songti SC",
+          true
+        ],
+        [
+          "Baskerville",
+          true
+        ],
+        [
+          "Chalkboard SE",
+          true
+        ]
+      ]
+    },
+    {
+      "label": "light-en",
+      "title": "A Catalogue of Forgotten Stars and the Roads Between Them",
+      "color": "#c8a16a",
+      "lines": [
+        "A Catalogue of",
+        "Forgotten Stars",
+        "and the Roads",
+        "Between Them"
+      ],
+      "size": 82,
+      "lineHeight": 100.03999999999999,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "style": {
+        "dark": false,
+        "ink": "#29231e",
+        "font": "\"Baskerville\", \"Palatino Linotype\", \"Songti SC\", \"STSong\", \"SimSun\", serif",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "widths": [
+        496.3642578125,
+        499.767578125,
+        474.5830078125,
+        503.9716796875
+      ],
+      "fonts": [
+        [
+          "Kaiti SC",
+          true
+        ],
+        [
+          "STKaiti",
+          true
+        ],
+        [
+          "Songti SC",
+          true
+        ],
+        [
+          "Baskerville",
+          true
+        ],
+        [
+          "Chalkboard SE",
+          true
+        ]
+      ]
+    },
+    {
+      "label": "long-cn",
+      "title": "当最后一颗星辰熄灭之后我们仍在漫长旅途中寻找那些被世界遗忘的名字以及尚未寄出的信件与归途尽头等待我们的温柔灯火和永恒记忆",
+      "color": "#325852",
+      "lines": [
+        "当最后一颗星辰熄灭",
+        "之后我们仍在漫长旅途",
+        "中寻找那些被世界遗忘",
+        "的名字以及尚未寄出的",
+        "信件与归途尽头等待我们",
+        "的温柔灯火和永恒记忆"
+      ],
+      "size": 46,
+      "lineHeight": 58.88,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Chalkboard SE\", \"Segoe Print\", \"Kaiti SC\", \"STKaiti\", \"KaiTi\", cursive",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.68,
+        "height": 0.4,
+        "size": 100,
+        "leading": 1.28
+      },
+      "widths": [
+        414,
+        460,
+        460,
+        460,
+        506,
+        460
+      ],
+      "fonts": [
+        [
+          "Kaiti SC",
+          true
+        ],
+        [
+          "STKaiti",
+          true
+        ],
+        [
+          "Songti SC",
+          true
+        ],
+        [
+          "Baskerville",
+          true
+        ],
+        [
+          "Chalkboard SE",
+          true
+        ]
+      ]
+    },
+    {
+      "label": "mixed",
+      "title": "星海余烬 The Last Light — Volume II",
+      "color": "#ac8058",
+      "lines": [
+        "星海余烬",
+        "The Last",
+        "Light —",
+        "Volume II"
+      ],
+      "size": 86,
+      "lineHeight": 104.92,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "style": {
+        "dark": false,
+        "ink": "#29231e",
+        "font": "\"Baskerville\", \"Palatino Linotype\", \"Songti SC\", \"STSong\", \"SimSun\", serif",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "widths": [
+        344,
+        311.666015625,
+        292.013671875,
+        349.87890625
+      ],
+      "fonts": [
+        [
+          "Kaiti SC",
+          true
+        ],
+        [
+          "STKaiti",
+          true
+        ],
+        [
+          "Songti SC",
+          true
+        ],
+        [
+          "Baskerville",
+          true
+        ],
+        [
+          "Chalkboard SE",
+          true
+        ]
+      ]
+    }
+  ],
+  "edgeCases": [
+    {
+      "title": "月",
+      "color": "#325852",
+      "lines": [
+        "月"
+      ],
+      "size": 100,
+      "lineHeight": 128,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "widths": [
+        100
+      ]
+    },
+    {
+      "title": "Moon",
+      "color": "#325852",
+      "lines": [
+        "Moon"
+      ],
+      "size": 100,
+      "lineHeight": 128,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "widths": [
+        240.4419708251953
+      ]
+    },
+    {
+      "title": "星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星",
+      "color": "#325852",
+      "lines": [
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星"
+      ],
+      "size": 52,
+      "lineHeight": 66.56,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "widths": [
+        520,
+        520,
+        520,
+        520,
+        520,
+        520
+      ]
+    },
+    {
+      "title": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+      "color": "#325852",
+      "lines": [
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW"
+      ],
+      "size": 24,
+      "lineHeight": 30.72,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "widths": [
+        474.1656494140625,
+        474.1656494140625,
+        474.1656494140625
+      ]
+    },
+    {
+      "title": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+      "color": "#325852",
+      "lines": [
+        "a a a a a a a",
+        "a a a a a a a",
+        "a a a a a a a a",
+        "a a a a a a a a"
+      ],
+      "size": 74,
+      "lineHeight": 94.72,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "widths": [
+        447.3524169921875,
+        447.3524169921875,
+        515.3015747070312,
+        515.3015747070312
+      ]
+    },
+    {
+      "title": "星海余烬 The Last Light — Volume II",
+      "color": "#325852",
+      "lines": [
+        "星海余烬 The",
+        "Last Light",
+        "— Volume II"
+      ],
+      "size": 86,
+      "lineHeight": 110.08,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 522.24,
+      "widths": [
+        517.9005126953125,
+        389.9932861328125,
+        468.9612731933594
+      ]
+    },
+    {
+      "title": "月",
+      "color": "#c8a16a",
+      "lines": [
+        "月"
+      ],
+      "size": 88,
+      "lineHeight": 107.36,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        88
+      ]
+    },
+    {
+      "title": "Moon",
+      "color": "#c8a16a",
+      "lines": [
+        "Moon"
+      ],
+      "size": 88,
+      "lineHeight": 107.36,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        216.34765625
+      ]
+    },
+    {
+      "title": "星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星",
+      "color": "#c8a16a",
+      "lines": [
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星"
+      ],
+      "size": 50,
+      "lineHeight": 61,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "title": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+      "color": "#c8a16a",
+      "lines": [
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW"
+      ],
+      "size": 24,
+      "lineHeight": 29.28,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        454.921875,
+        454.921875,
+        454.921875
+      ]
+    },
+    {
+      "title": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+      "color": "#c8a16a",
+      "lines": [
+        "a a a a a a a",
+        "a a a a a a a",
+        "a a a a a a a a",
+        "a a a a a a a a"
+      ],
+      "size": 86,
+      "lineHeight": 104.92,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        411.1875,
+        411.1875,
+        473,
+        473
+      ]
+    },
+    {
+      "title": "星海余烬 The Last Light — Volume II",
+      "color": "#c8a16a",
+      "lines": [
+        "星海余烬",
+        "The Last",
+        "Light —",
+        "Volume II"
+      ],
+      "size": 86,
+      "lineHeight": 104.92,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        344,
+        311.666015625,
+        292.013671875,
+        349.87890625
+      ]
+    }
+  ],
+  "errors": [],
+  "notFound": []
+}

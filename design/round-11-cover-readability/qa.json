@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "inspectedNativeImages": 7,
+  "nativeOutputCount": 7,
+  "runtimeUnchanged": true,
+  "referencesActuallyAttached": true,
+  "lightingReview": "All calls used the actual home-route overview and its original-pixel book clip; no requested new light or exposure boost. The generated sheets retain a dim study. They are generated interpretations, not pixel-identical captures or proof of renderer-level lighting equivalence.",
+  "observations": [
+    "Seven directions can be compared with Chinese short-title and English long-title examples.",
+    "Paper-label, lighter-leather and larger-type directions have clear structural differences.",
+    "Matte gold, debossing and subtle luminous ink are visually closer under the deliberately dim lighting; the debossed depth and luminous quality are restrained.",
+    "Small overview lettering is less reliable than the enlarged examples. The gold overview contains a small extra line; it is not part of the title design or any runtime asset.",
+    "OCR was used only as a supplemental observation: oblique text gives low confidence and recognition errors, so its output is not treated as a pass/fail oracle.",
+    "Book and room geometry vary slightly in generated illustrations. The approved runtime mesh, mechanics, material and lighting were not modified."
+  ],
+  "selection": "pending user choice",
+  "performance": "Not measured: no runtime code or assets changed. Existing <=10% gate remains for any future implementation.",
+  "gallery": "http://127.0.0.1:4174/review.html"
+}

@@ -1,0 +1,42 @@
+{
+  "dark-cn": {
+    "fonts": [
+      {
+        "familyName": "Kaiti SC",
+        "postScriptName": "STKaitiSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "dark-en": {
+    "fonts": [
+      {
+        "familyName": "Chalkboard SE",
+        "postScriptName": "ChalkboardSE-Regular",
+        "isCustomFont": false,
+        "glyphCount": 14
+      }
+    ]
+  },
+  "light-cn": {
+    "fonts": [
+      {
+        "familyName": "Songti SC",
+        "postScriptName": "STSongti-SC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "light-en": {
+    "fonts": [
+      {
+        "familyName": "Baskerville",
+        "postScriptName": "Baskerville",
+        "isCustomFont": false,
+        "glyphCount": 14
+      }
+    ]
+  }
+}

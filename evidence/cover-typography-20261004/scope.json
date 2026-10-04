@@ -1,0 +1,20 @@
+{
+  "baseline": "907b14f4eb125b4dfd79c22f507cfb74a4a46e28",
+  "selected": {
+    "dark": 1,
+    "light": 3
+  },
+  "runtimeFiles": [
+    "apps/web/src/BookAppearance.jsx",
+    "apps/web/src/SoftBook.mjs",
+    "apps/web/src/cover-title.mjs"
+  ],
+  "fixedGeometryRatio": 0.735,
+  "fixedCanvas": [
+    768,
+    1024
+  ],
+  "newFontDownloads": 0,
+  "extraLights": 0,
+  "scope": "Only dynamic cover typography and pigment compositing. No geometry, mechanics, lights, interior, material-family or lifecycle changes."
+}

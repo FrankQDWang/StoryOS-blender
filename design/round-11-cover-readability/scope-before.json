@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-04",
+  "stage": "seven concepts; no runtime implementation",
+  "head": "907b14f4eb125b4dfd79c22f507cfb74a4a46e28",
+  "runtimePaths": [
+    "apps/web/src",
+    "public",
+    "assets",
+    "scripts"
+  ],
+  "references": [
+    {
+      "path": "design/round-11-cover-readability/references/home-unselected.png",
+      "sha256": "f4b961f6aa7c3da54fdee26ec822f48ca10f42cfc42121d7879b1a934ceafad1"
+    },
+    {
+      "path": "design/round-11-cover-readability/references/book-overview-clip.png",
+      "sha256": "552f3dcf24c3bfd98890de21316cca3e08d5813d1ce5f440544e554c16c3bb5e"
+    }
+  ],
+  "lighting": "Actual home route screenshot, original renderer, overview without hover/selection lights",
+  "fixture": "Original three-book colors in isolated headless Chrome; not user browser storage",
+  "titles": [
+    "星海余烬",
+    "A Catalogue of Forgotten Stars and the Roads Between Them"
+  ]
+}

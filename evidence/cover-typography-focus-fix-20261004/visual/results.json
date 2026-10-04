@@ -1,0 +1,450 @@
+{
+  "chrome": "154.0.8037.93",
+  "viewport": [
+    1512,
+    751
+  ],
+  "headless": true,
+  "state": "Actual home, unselected/unhovered; detail uses only projection crop, no lighting changes",
+  "baseline": "907b14f4eb125b4dfd79c22f507cfb74a4a46e28",
+  "results": [
+    {
+      "label": "dark-cn",
+      "title": "星海余烬",
+      "color": "#325852",
+      "lines": [
+        "星海余烬"
+      ],
+      "size": 112,
+      "lineHeight": 143.36,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Cover Hand Latin\", \"Cover Brush\"",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.7,
+        "height": 0.4,
+        "size": 112,
+        "leading": 1.28
+      },
+      "widths": [
+        470.39996337890625
+      ],
+      "fontReady": true
+    },
+    {
+      "label": "dark-en",
+      "title": "A Catalogue of Forgotten Stars and the Roads Between Them",
+      "color": "#325852",
+      "lines": [
+        "A Catalogue of",
+        "Forgotten Stars",
+        "and the Roads",
+        "Between Them"
+      ],
+      "size": 72,
+      "lineHeight": 92.16,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Cover Hand Latin\", \"Cover Brush\"",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.7,
+        "height": 0.4,
+        "size": 112,
+        "leading": 1.28
+      },
+      "widths": [
+        509.2559814453125,
+        530.4239501953125,
+        488.59197998046875,
+        491.8319091796875
+      ],
+      "fontReady": true
+    },
+    {
+      "label": "light-cn",
+      "title": "星海余烬",
+      "color": "#78503b",
+      "lines": [
+        "星海余烬"
+      ],
+      "size": 88,
+      "lineHeight": 107.36,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "style": {
+        "dark": false,
+        "ink": "#16120f",
+        "font": "\"Cover Serif Latin\", \"Cover Serif CN\"",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "widths": [
+        352
+      ],
+      "fontReady": true
+    },
+    {
+      "label": "light-en",
+      "title": "A Catalogue of Forgotten Stars and the Roads Between Them",
+      "color": "#78503b",
+      "lines": [
+        "A Catalogue of",
+        "Forgotten Stars",
+        "and the Roads",
+        "Between Them"
+      ],
+      "size": 82,
+      "lineHeight": 100.03999999999999,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "style": {
+        "dark": false,
+        "ink": "#16120f",
+        "font": "\"Cover Serif Latin\", \"Cover Serif CN\"",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "widths": [
+        489.2939147949219,
+        496.01788330078125,
+        463.7099304199219,
+        489.37591552734375
+      ],
+      "fontReady": true
+    },
+    {
+      "label": "long-cn",
+      "title": "当最后一颗星辰熄灭之后我们仍在漫长旅途中寻找那些被世界遗忘的名字以及尚未寄出的信件与归途尽头等待我们的温柔灯火和永恒记忆",
+      "color": "#325852",
+      "lines": [
+        "当最后一颗星辰熄灭",
+        "之后我们仍在漫长旅途",
+        "中寻找那些被世界遗忘",
+        "的名字以及尚未寄出的",
+        "信件与归途尽头等待我们",
+        "的温柔灯火和永恒记忆"
+      ],
+      "size": 46,
+      "lineHeight": 58.88,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Cover Hand Latin\", \"Cover Brush\"",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.7,
+        "height": 0.4,
+        "size": 112,
+        "leading": 1.28
+      },
+      "widths": [
+        434.69989013671875,
+        482.9998779296875,
+        482.9998779296875,
+        482.9998779296875,
+        531.2998657226562,
+        482.9998779296875
+      ],
+      "fontReady": true
+    },
+    {
+      "label": "mixed",
+      "title": "星海余烬 The Last Light — Volume II",
+      "color": "#ac8058",
+      "lines": [
+        "星海余烬 The",
+        "Last Light",
+        "— Volume II"
+      ],
+      "size": 86,
+      "lineHeight": 104.92,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "style": {
+        "dark": false,
+        "ink": "#16120f",
+        "font": "\"Cover Serif Latin\", \"Cover Serif CN\"",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "widths": [
+        500.7779846191406,
+        348.1279602050781,
+        439.6319274902344
+      ],
+      "fontReady": true
+    }
+  ],
+  "edgeCases": [
+    {
+      "title": "月",
+      "color": "#325852",
+      "lines": [
+        "月"
+      ],
+      "size": 112,
+      "lineHeight": 143.36,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "widths": [
+        117.59999084472656
+      ]
+    },
+    {
+      "title": "Moon",
+      "color": "#325852",
+      "lines": [
+        "Moon"
+      ],
+      "size": 112,
+      "lineHeight": 143.36,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "widths": [
+        287.5039978027344
+      ]
+    },
+    {
+      "title": "星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星",
+      "color": "#325852",
+      "lines": [
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星"
+      ],
+      "size": 50,
+      "lineHeight": 64,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "widths": [
+        525,
+        525,
+        525,
+        525,
+        525,
+        525
+      ]
+    },
+    {
+      "title": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+      "color": "#325852",
+      "lines": [
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW"
+      ],
+      "size": 24,
+      "lineHeight": 30.72,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "widths": [
+        422.39990234375,
+        422.39990234375,
+        422.39990234375
+      ]
+    },
+    {
+      "title": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+      "color": "#325852",
+      "lines": [
+        "a a a a a a a a",
+        "a a a a a a a a",
+        "a a a a a a a",
+        "a a a a a a a"
+      ],
+      "size": 76,
+      "lineHeight": 97.28,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "widths": [
+        535.7999267578125,
+        535.7999267578125,
+        465.49993896484375,
+        465.49993896484375
+      ]
+    },
+    {
+      "title": "星海余烬 The Last Light — Volume II",
+      "color": "#325852",
+      "lines": [
+        "星海余烬 The",
+        "Last Light",
+        "— Volume II"
+      ],
+      "size": 88,
+      "lineHeight": 112.64,
+      "x": 391.68,
+      "y": 276.48,
+      "maxWidth": 537.5999999999999,
+      "widths": [
+        533.10400390625,
+        411.8399353027344,
+        498.2559509277344
+      ]
+    },
+    {
+      "title": "月",
+      "color": "#c8a16a",
+      "lines": [
+        "月"
+      ],
+      "size": 88,
+      "lineHeight": 107.36,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        88
+      ]
+    },
+    {
+      "title": "Moon",
+      "color": "#c8a16a",
+      "lines": [
+        "Moon"
+      ],
+      "size": 88,
+      "lineHeight": 107.36,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        213.31198120117188
+      ]
+    },
+    {
+      "title": "星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星星",
+      "color": "#c8a16a",
+      "lines": [
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星",
+        "星星星星星星星星星星"
+      ],
+      "size": 50,
+      "lineHeight": 61,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "title": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+      "color": "#c8a16a",
+      "lines": [
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW",
+        "WWWWWWWWWWWWWWWWWWWW"
+      ],
+      "size": 24,
+      "lineHeight": 29.28,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        457.43988037109375,
+        457.43988037109375,
+        457.43988037109375
+      ]
+    },
+    {
+      "title": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+      "color": "#c8a16a",
+      "lines": [
+        "a a a a a a a",
+        "a a a a a a a",
+        "a a a a a a a a",
+        "a a a a a a a a"
+      ],
+      "size": 86,
+      "lineHeight": 104.92,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        358.533935546875,
+        358.533935546875,
+        412.36993408203125,
+        412.36993408203125
+      ]
+    },
+    {
+      "title": "星海余烬 The Last Light — Volume II",
+      "color": "#c8a16a",
+      "lines": [
+        "星海余烬 The",
+        "Last Light",
+        "— Volume II"
+      ],
+      "size": 86,
+      "lineHeight": 104.92,
+      "x": 145.92000000000002,
+      "y": 163.84,
+      "maxWidth": 506.88,
+      "widths": [
+        500.7779846191406,
+        348.1279602050781,
+        439.6319274902344
+      ]
+    }
+  ],
+  "errors": [],
+  "notFound": []
+}

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {BOOK,coverPoint,backPoint,blockPoint,leafPoint,gutterPoint,spinePoint} from './soft-book-shape.mjs';
+import {applyCoverTitleMaterial} from './cover-title.mjs';
 
 // Each closed ribbon has two surfaces and a sewn/thin edge, with shared UVs.
 function ribbon(cols,rows){
@@ -54,7 +55,7 @@ export function createSoftBook(appearance){
  const object=new THREE.Group();object.name='FlexibleBoundBook';
  const {style,leather}=appearance;
  const skin=new THREE.MeshStandardMaterial({map:leather,color:appearance.color,bumpMap:leather,bumpScale:style.grain,roughness:style.roughness});
- const title=skin.clone();title.map=appearance.title;
+ const title=skin.clone();title.map=appearance.title;applyCoverTitleMaterial(title);
  const paper=new THREE.MeshStandardMaterial({map:appearance.back,color:style.paper,roughness:.94});
  const content=paper.clone();content.map=appearance.page;
  const edges=new THREE.MeshStandardMaterial({map:paperEdges(),color:style.paper,roughness:1});

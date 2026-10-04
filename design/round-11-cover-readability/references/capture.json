@@ -1,0 +1,47 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "viewport": [
+    1512,
+    751
+  ],
+  "state": "Actual home route, overview, no selected/hovered book; unchanged runtime renderer and lights",
+  "fixtureSource": "eedd745 initialLibrary, three original books/colors; isolated context, not a read of user browser storage",
+  "fixture": {
+    "version": 1,
+    "books": [
+      {
+        "id": "embers",
+        "title": "星海余烬",
+        "description": "群星熄灭之后，故事才刚刚开始。",
+        "color": "#325852",
+        "slot": 0,
+        "words": 12840,
+        "updatedAt": "2026-09-12T20:30:00.000Z"
+      },
+      {
+        "id": "moonkeeper",
+        "title": "守月人",
+        "description": "一座小镇，和一个不肯结束的长夜。",
+        "color": "#78503b",
+        "slot": 1,
+        "words": 3680,
+        "updatedAt": "2026-09-11T18:10:00.000Z"
+      },
+      {
+        "id": "letters",
+        "title": "寄往风中的信",
+        "description": "写给那些尚未抵达的远方。",
+        "color": "#384d6b",
+        "slot": 2,
+        "words": 920,
+        "updatedAt": "2026-09-10T09:00:00.000Z"
+      }
+    ],
+    "lastBookId": "embers",
+    "reducedMotion": false,
+    "sound": false
+  },
+  "errors": []
+}

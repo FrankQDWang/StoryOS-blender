@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "slot": 0,
+      "color": "#325852",
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Cover Hand Latin\", \"Cover Brush\"",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.7,
+        "height": 0.4,
+        "size": 112,
+        "leading": 1.28
+      },
+      "extraHoverLights": [],
+      "extraFocusLights": []
+    },
+    {
+      "slot": 1,
+      "color": "#78503b",
+      "style": {
+        "dark": false,
+        "ink": "#16120f",
+        "font": "\"Cover Serif Latin\", \"Cover Serif CN\"",
+        "weight": 500,
+        "align": "left",
+        "x": 0.19,
+        "top": 0.16,
+        "width": 0.66,
+        "height": 0.4,
+        "size": 88,
+        "leading": 1.22
+      },
+      "extraHoverLights": [],
+      "extraFocusLights": []
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

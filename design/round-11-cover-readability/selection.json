@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-04",
+  "status": "user selected typography references",
+  "selected": [
+    {
+      "useOn": "light",
+      "displayOrder": 3,
+      "name": "低饱和浅皮深墨",
+      "image": "design/round-11-cover-readability/outputs/muted-lighter-leather.png",
+      "sha256": "91e21d6317681e178d87498ae04ddd35d3a31edf0a3fad8c157f5b9ac6ef3f43",
+      "userAttachedImage": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-0441aeec-79ad-4119-98a7-826e1e4e7e26.png"
+    },
+    {
+      "useOn": "dark",
+      "displayOrder": 1,
+      "name": "暖灰手写",
+      "image": "design/round-11-cover-readability/outputs/warm-gray-handwriting.png",
+      "sha256": "be4dd886819dbf10844ac39fc75f68b2294e788f681d33cb3e0c2c8879d767d0",
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-aef5f906-df6b-4ccd-99ed-34309555cc57.png"
+    }
+  ],
+  "adopt": [
+    "font character",
+    "title size hierarchy",
+    "title position and block layout",
+    "line spacing and wrapping style",
+    "title ink contrast for light/dark covers"
+  ],
+  "geometryAuthority": "Existing approved runtime book geometry and its actual aspect ratio, not the generated illustrations. Cover width/depth 0.735/1 from BOOK in soft-book-shape.mjs.",
+  "preserve": [
+    "actual width/height ratio and dimensions",
+    "book thickness and geometry",
+    "accepted cover stiffness and mechanics",
+    "sequential multi-page motion",
+    "manuscript interior",
+    "existing cover materials and book colors",
+    "approved dim home-page environment and lights"
+  ],
+  "dynamicTitles": "Render actual user-entered Chinese/English/mixed title with layout adapted to available physical cover area and title length. Reference text is illustrative only.",
+  "runtimeImplementation": "Implemented dynamic cover typography on 2026-10-04; see PLAN.md and evidence/cover-typography-20261004 for verification status.",
+  "selectionAuthority": "Latest explicit user correction: 深色的是第一张，浅色的是第三张。 Numbers refer to the original seven-image display order."
+}

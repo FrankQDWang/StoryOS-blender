@@ -1,0 +1,16 @@
+{
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "captures": [
+    {
+      "file": "evidence/cover-typography-20261004/smoke/created.jpg"
+    }
+  ],
+  "steps": [
+    "fresh empty library, create first soft book",
+    "actual book opens and returns",
+    "reduced-motion entry and return",
+    "delete removes geometry; refresh remains empty"
+  ],
+  "errors": []
+}

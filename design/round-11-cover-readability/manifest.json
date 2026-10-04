@@ -1,0 +1,138 @@
+{
+  "tool": "built-in ImageGen",
+  "displayOrderRule": "Order of the seven generated image results actually displayed in this conversation; generated serially",
+  "referenceCapture": "references/capture.json",
+  "requestedDimensions": [
+    1536,
+    1536
+  ],
+  "nativeOutputsPreserved": true,
+  "entries": [
+    {
+      "displayOrder": 1,
+      "slug": "warm-gray-handwriting",
+      "name": "暖灰手写",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-aef5f906-df6b-4ccd-99ed-34309555cc57.png",
+      "output": "design/round-11-cover-readability/outputs/warm-gray-handwriting.png",
+      "sha256": "be4dd886819dbf10844ac39fc75f68b2294e788f681d33cb3e0c2c8879d767d0",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/warm-gray-handwriting.txt",
+      "relativeImage": "outputs/warm-gray-handwriting.png"
+    },
+    {
+      "displayOrder": 2,
+      "slug": "matte-antique-gold",
+      "name": "哑旧金题字",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-2be5342f-ed0a-4dbb-aae7-c1b6a2b1ea7a.png",
+      "output": "design/round-11-cover-readability/outputs/matte-antique-gold.png",
+      "sha256": "d4ae2658a89320fdeb08543c8218d7e3c962bf828091393ad8f70a07d16e9b01",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/matte-antique-gold.txt",
+      "relativeImage": "outputs/matte-antique-gold.png"
+    },
+    {
+      "displayOrder": 3,
+      "slug": "muted-lighter-leather",
+      "name": "低饱和浅皮深墨",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-0441aeec-79ad-4119-98a7-826e1e4e7e26.png",
+      "output": "design/round-11-cover-readability/outputs/muted-lighter-leather.png",
+      "sha256": "91e21d6317681e178d87498ae04ddd35d3a31edf0a3fad8c157f5b9ac6ef3f43",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/muted-lighter-leather.txt",
+      "relativeImage": "outputs/muted-lighter-leather.png"
+    },
+    {
+      "displayOrder": 4,
+      "slug": "handmade-paper-label",
+      "name": "手工纸签",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-6bbac277-2a4e-4b77-a6a2-b9f3efd6029d.png",
+      "output": "design/round-11-cover-readability/outputs/handmade-paper-label.png",
+      "sha256": "1a75287b24a08eee5a1dd2f3761b9a95910cd967d4986f3120a47411162e2017",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/handmade-paper-label.txt",
+      "relativeImage": "outputs/handmade-paper-label.png"
+    },
+    {
+      "displayOrder": 5,
+      "slug": "large-title-whitespace",
+      "name": "大字留白",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-5da3c2a2-f465-4a4b-95af-0ebab362306c.png",
+      "output": "design/round-11-cover-readability/outputs/large-title-whitespace.png",
+      "sha256": "f55d225eab991a4c6e50879c5f0bd9c4b4a181131cc9583e4c5820463ffe400a",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/large-title-whitespace.txt",
+      "relativeImage": "outputs/large-title-whitespace.png"
+    },
+    {
+      "displayOrder": 6,
+      "slug": "debossed-filled-lettering",
+      "name": "压凹填色",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-15cad4ad-c4bb-4753-b1bf-84c4553dec68.png",
+      "output": "design/round-11-cover-readability/outputs/debossed-filled-lettering.png",
+      "sha256": "fac6966dc2f8ddcdfce028eb8fabfe0818d92a3ebcd710c3e85a0d93a985a367",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/debossed-filled-lettering.txt",
+      "relativeImage": "outputs/debossed-filled-lettering.png"
+    },
+    {
+      "displayOrder": 7,
+      "slug": "subtle-luminous-ink",
+      "name": "微光书写",
+      "references": [
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/home-unselected.png",
+        "/Users/frankqdwang/MLE/StoryOS-blender/design/round-11-cover-readability/references/book-overview-clip.png"
+      ],
+      "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-fe89f5b6-ca08-4cd8-841d-39fb8a07e999.png",
+      "output": "design/round-11-cover-readability/outputs/subtle-luminous-ink.png",
+      "sha256": "655d1b6b38ed59ea805277d57d175ba8cfb991a1902dad6b2496f6ff033ed24d",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "promptFile": "prompts/subtle-luminous-ink.txt",
+      "relativeImage": "outputs/subtle-luminous-ink.png"
+    }
+  ]
+}

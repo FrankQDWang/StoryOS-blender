@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "slot": 0,
+      "color": "#325852",
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Chalkboard SE\", \"Segoe Print\", \"Kaiti SC\", \"STKaiti\", \"KaiTi\", cursive",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.68,
+        "height": 0.4,
+        "size": 100,
+        "leading": 1.28
+      },
+      "extraHoverLights": [
+        {
+          "id": 460,
+          "intensity": 0.8,
+          "position": [
+            0,
+            0.5,
+            0
+          ]
+        }
+      ],
+      "extraFocusLights": [
+        {
+          "id": 463,
+          "intensity": 0.8,
+          "position": [
+            0,
+            0.5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 1,
+      "color": "#78503b",
+      "style": {
+        "dark": true,
+        "ink": "#b9b2a2",
+        "font": "\"Chalkboard SE\", \"Segoe Print\", \"Kaiti SC\", \"STKaiti\", \"KaiTi\", cursive",
+        "weight": 400,
+        "align": "center",
+        "x": 0.51,
+        "top": 0.27,
+        "width": 0.68,
+        "height": 0.4,
+        "size": 100,
+        "leading": 1.28
+      },
+      "extraHoverLights": [
+        {
+          "id": 466,
+          "intensity": 0.8,
+          "position": [
+            0,
+            0.5,
+            0
+          ]
+        }
+      ],
+      "extraFocusLights": [
+        {
+          "id": 469,
+          "intensity": 0.8,
+          "position": [
+            0,
+            0.5,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "pass": false
+}

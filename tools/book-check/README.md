@@ -14,3 +14,8 @@
 首屏时间要求当前 Canvas 已执行实体材质绘制，再等待帧与 GPU 完成；返回同样等待新的 Canvas。手部时间取点击后的首个 `USE_SKINNING` 且具有实体光照材质的实际绘制调用（不把阴影 pass 算成手部显示）。这是渲染提交时点，连续 Chrome 画面另行检查。使用同样的仪器同时测基线/候选，不修改产品运行代码。
 
 证据统一保存到 `evidence/five-books-20261003/`（用户确认于10月3日，实施跨至10月4日）。本轮冻结基线位于忽略目录 `.cache/five-books/baseline/`，其代码基线为 `eedd745`；产物文件 SHA 见证据中的 `build-identity.json`。
+
+## 2026-10-04 封面文字
+
+- `cover-typography.mjs`：独立无头Chrome实拍首页深/浅、中/英文、长标题与混排。近景只裁取原首页相机投影，保持光照。校验正常英文按词换行与60字完整性，证据默认在`evidence/cover-typography-20261004/visual/`。
+- 本轮生产对照基线`907b14f`冻结于`.cache/cover-typography/baseline/client`，使用同一`serve.mjs`在4180/4182提供基线/候选。`flexible-benchmark.mjs`的`BOOK_CHECK_LOCAL_ROUNDS=5`可事先固定本地样本数；`BOOK_CHECK_EXTEND_NETWORK=local`只对已经保存的3组本地样本补第4、5组，保留其余网络样本。最终每次完整构建独立测量，不能把不同候选混成一组。

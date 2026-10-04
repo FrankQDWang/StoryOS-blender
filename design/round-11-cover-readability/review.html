@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>七个封面方向 · 暗光对照</title>
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #e9e1d5;
+      background: #191714;
+      font-synthesis: none;
+      --muted: #b5a99b;
+      --line: #403a32;
+      --accent: #d3b88c;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    button, a { outline-offset: 5px; }
+    :focus-visible { outline: 2px solid var(--accent); }
+    main { max-width: 1840px; margin: auto; padding: 48px 32px 32px; }
+    .page-header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+    .eyebrow { margin: 0 0 12px; color: var(--accent); font-size: 11px; letter-spacing: .18em; }
+    h1 { margin: 0; font-family: "Songti SC", "STSong", Georgia, serif; font-size: clamp(25px, 3vw, 38px); font-weight: 500; letter-spacing: .07em; }
+    .intro { margin: 15px 0 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+    .swap { flex-shrink: 0; padding: 9px 14px; border: 1px solid var(--line); border-radius: 5px; color: #cbbca8; background: transparent; cursor: pointer; font-size: 12px; }
+    .swap:hover { background: #2a251f; border-color: #89745a; }
+    .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    .panel { min-width: 0; }
+    fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+    legend { padding: 0; margin-bottom: 12px; color: var(--muted); font-size: 12px; letter-spacing: .06em; }
+    .choices { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+    .choice { display: flex; align-items: flex-start; flex-direction: column; gap: 5px; min-width: 0; min-height: 88px; padding: 11px 10px; color: #d3c8b9; background: #211e19; border: 1px solid var(--line); border-radius: 5px; text-align: left; cursor: pointer; }
+    .choice:hover { border-color: #8c7960; background: #2c261f; }
+    .choice[aria-pressed="true"] { background: #352b20; border-color: var(--accent); color: #f0e1ca; }
+    .choice-number { font-size: 10px; color: #a99a87; font-variant-numeric: tabular-nums; }
+    .choice-title { font-size: 12px; line-height: 1.4; }
+    .choice-material { margin-top: auto; font-size: 10px; color: var(--muted); line-height: 1.4; }
+    figure { margin: 16px 0 0; }
+    .image-link { display: block; background: #12110f; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+    .image-link img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
+    .image-error { margin: 0; min-height: 190px; padding: 60px 24px; color: var(--muted); line-height: 1.8; font-size: 13px; text-align: center; }
+    figcaption { padding: 17px 2px 0; }
+    .caption-top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    h2 { margin: 0; font-size: 17px; font-weight: 500; line-height: 1.5; }
+    .original-link { flex-shrink: 0; color: var(--accent); font-size: 12px; text-underline-offset: 4px; }
+    .material-note { min-height: 3.4em; margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    footer { margin-top: 30px; padding-top: 17px; border-top: 1px solid var(--line); color: #a39685; font-size: 12px; line-height: 1.8; }
+    footer p { margin: 0; }
+    noscript p { padding: 18px; border: 1px solid var(--line); line-height: 1.8; }
+    @media (max-width: 900px) {
+      main { padding: 32px 20px 24px; }
+      .comparison { gap: 18px; }
+      .choices { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .choice { min-height: 78px; }
+    }
+    @media (max-width: 680px) {
+      main { padding: 28px 16px 24px; }
+      .page-header { align-items: start; gap: 14px; margin-bottom: 26px; }
+      .swap { padding: 8px 10px; }
+      h1 { font-size: 24px; letter-spacing: .025em; }
+      .intro { font-size: 12px; }
+      .comparison { grid-template-columns: 1fr; gap: 32px; }
+      .choices { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+      .choice { min-height: 94px; padding: 9px 6px; }
+      .choice-title { font-size: 11px; }
+      .choice-material { font-size: 9px; }
+      .material-note { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">STORYOS · 书本概念</p>
+        <h1>七个封面方向 · 暗光对照</h1>
+        <p class="intro">七张独立概念图；两侧可自由切换，比较字体、大小、布局和材质。</p>
+      </div>
+      <button class="swap" type="button" id="swap" aria-label="交换左右两张对照图">交换左右 ⇄</button>
+    </header>
+    <div class="comparison" id="comparison"></div>
+    <noscript><p>请启用 JavaScript 来切换对照图。也可直接打开此目录中的七张原始 PNG。</p></noscript>
+    <footer>
+      <p>每张上方是房间氛围，下方是同一方向的中文短标题与英文长标题。点击图片可查看原图。</p>
+      <p>内置 ImageGen 生成，以完整首页暗光取景为参照；尚未修改运行应用。 <a href="references/home-unselected.png" target="_blank">查看首页参照</a></p>
+    </footer>
+  </main>
+  <template id="panel-template">
+    <section class="panel">
+      <fieldset>
+        <legend></legend>
+        <div class="choices"></div>
+      </fieldset>
+      <figure>
+        <a class="image-link" target="_blank" rel="noopener">
+          <img width="1536" height="1024" decoding="async" alt="">
+          <p class="image-error" hidden>图片尚未就位，请在原图保存完成后刷新此页。</p>
+        </a>
+        <figcaption aria-live="polite" aria-atomic="true">
+          <div class="caption-top">
+            <h2></h2>
+            <a class="original-link" target="_blank" rel="noopener">查看原图 ↗</a>
+          </div>
+          <p class="material-note"></p>
+        </figcaption>
+      </figure>
+    </section>
+  </template>
+  <script>
+    const books = [
+  {
+    "id": "warm-gray-handwriting",
+    "title": "暖灰手写",
+    "material": "中文 / 英文",
+    "note": "稍厚的手写字迹与宽松标题布局。",
+    "image": "outputs/warm-gray-handwriting.png"
+  },
+  {
+    "id": "matte-antique-gold",
+    "title": "哑旧金题字",
+    "material": "中文 / 英文",
+    "note": "克制的旧金色与书籍字体。",
+    "image": "outputs/matte-antique-gold.png"
+  },
+  {
+    "id": "muted-lighter-leather",
+    "title": "低饱和浅皮深墨",
+    "material": "中文 / 英文",
+    "note": "低饱和浅一级的皮面与深色字迹。",
+    "image": "outputs/muted-lighter-leather.png"
+  },
+  {
+    "id": "handmade-paper-label",
+    "title": "手工纸签",
+    "material": "中文 / 英文",
+    "note": "旧纸色题签承载可变长度标题。",
+    "image": "outputs/handmade-paper-label.png"
+  },
+  {
+    "id": "large-title-whitespace",
+    "title": "大字留白",
+    "material": "中文 / 英文",
+    "note": "更大的标题和更多留白。",
+    "image": "outputs/large-title-whitespace.png"
+  },
+  {
+    "id": "debossed-filled-lettering",
+    "title": "压凹填色",
+    "material": "中文 / 英文",
+    "note": "浅压凹字迹配合暖灰填色。",
+    "image": "outputs/debossed-filled-lettering.png"
+  },
+  {
+    "id": "subtle-luminous-ink",
+    "title": "微光书写",
+    "material": "中文 / 英文",
+    "note": "字迹轻微自明，保持暗色皮面与房间。",
+    "image": "outputs/subtle-luminous-ink.png"
+  }
+];
+    const selections = [0, 1];
+    const panels = [];
+    const comparison = document.getElementById('comparison');
+    const template = document.getElementById('panel-template');
+
+    function selectBook(side, index) {
+      selections[side] = index;
+      const panel = panels[side];
+      const book = books[index];
+      const image = panel.querySelector('img');
+      image.hidden = false;
+      panel.querySelector('.image-error').hidden = true;
+      image.alt = `第 ${index + 1} 个方向《${book.title}》，${book.material}标题与暗光书房概念`;
+      image.src = book.image;
+      panel.querySelector('.image-link').href = book.image;
+      panel.querySelector('.image-link').setAttribute('aria-label', `查看《${book.title}》完整原图（新窗口）`);
+      panel.querySelector('.original-link').href = book.image;
+      panel.querySelector('h2').textContent = `${String(index + 1).padStart(2, '0')} · ${book.title}`;
+      panel.querySelector('.material-note').textContent = book.note;
+      panel.querySelectorAll('.choice').forEach((button, buttonIndex) => {
+        button.setAttribute('aria-pressed', String(buttonIndex === index));
+      });
+    }
+
+    ['左侧对照', '右侧对照'].forEach((label, side) => {
+      const panel = template.content.firstElementChild.cloneNode(true);
+      panel.querySelector('legend').textContent = label;
+      books.forEach((book, index) => {
+        const button = document.createElement('button');
+        button.className = 'choice';
+        button.type = 'button';
+        button.dataset.book = book.id;
+        button.setAttribute('aria-label', `${label}：第 ${index + 1} 个方向，${book.title}，${book.material}`);
+        [['choice-number', String(index + 1).padStart(2, '0')], ['choice-title', book.title], ['choice-material', book.material]].forEach(([className, text]) => {
+          const span = document.createElement('span');
+          span.className = className;
+          span.textContent = text;
+          button.append(span);
+        });
+        button.addEventListener('click', () => selectBook(side, index));
+        panel.querySelector('.choices').append(button);
+      });
+      panel.querySelector('img').addEventListener('error', event => {
+        event.target.hidden = true;
+        panel.querySelector('.image-error').hidden = false;
+      });
+      panels.push(panel);
+      comparison.append(panel);
+      selectBook(side, selections[side]);
+    });
+
+    document.getElementById('swap').addEventListener('click', () => {
+      const [left, right] = selections;
+      selectBook(0, right);
+      selectBook(1, left);
+    });
+  </script>
+</body>
+</html>
