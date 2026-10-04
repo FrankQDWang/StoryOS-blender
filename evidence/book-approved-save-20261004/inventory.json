@@ -1,0 +1,745 @@
+{
+  "approvedCommit": "30931814ac35523a80aa89dfdb4322871148a085",
+  "archive": "archives/local-research-before-book-approval-20261004.tar.gz",
+  "archiveBytes": 55358763,
+  "archiveSha256": "defc35db1cab1d41a53173ecccafdda12450406d2c07e6719ca44de91d567137",
+  "archivedFiles": [
+    {
+      "path": "design/iterations/15-performance-tradeoff-discussion.md",
+      "bytes": 6990,
+      "sha256": "c392d011a988f4c9f66793829cf02e7e6ebb70a189e31e02c886ad9784bbec38"
+    },
+    {
+      "path": "design/iterations/16-initial-loading-optimization-plan.md",
+      "bytes": 10164,
+      "sha256": "861020bad8360c9fb45d59503e354712c3507c2f9bc48864fa3a32caf9d9024b"
+    },
+    {
+      "path": "design/iterations/18-improvement-opportunities-10-percent.md",
+      "bytes": 8825,
+      "sha256": "d1ea3a4827b078d0a8a5a36b0d570964fe6233e5c588f9a62eaef4889f9c6a77"
+    },
+    {
+      "path": "design/iterations/19-book-identity-aesthetic-brief.md",
+      "bytes": 5944,
+      "sha256": "adcec8dc4e52d77806d7a64ae9c6551afc3f30ba4807805824191958808ab1c7"
+    },
+    {
+      "path": "design/iterations/20-private-manuscript-concept-brief.md",
+      "bytes": 4667,
+      "sha256": "844b6d9087ef75f31fdd10ed109c813074298c2ebd1405ce8930a2a1bf4db647"
+    },
+    {
+      "path": "design/iterations/21-book-material-family.md",
+      "bytes": 3003,
+      "sha256": "62dbf795c59f049390d3c6d5a12301b168ed263513cc20a7d35e67b363f27ccb"
+    },
+    {
+      "path": "design/iterations/22-five-book-material-concepts.md",
+      "bytes": 5222,
+      "sha256": "e777f071e89c614deeb2378c74c8f91b1c6a5f26971bd5bcdd758819d8eb41c5"
+    },
+    {
+      "path": "design/iterations/23-gaussian-splatting-feasibility.md",
+      "bytes": 2595,
+      "sha256": "9bdeaa4b30c9d598e33e2f825c802984b4bcbaf601b0431052a87d8ada56d78b"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/beedle-notebook.json",
+      "bytes": 461,
+      "sha256": "1fc98502db5a82dbeede26a3dddb76e78db760e5259e923b30d24d7ada4e0b9a"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/beedle-notebook.png",
+      "bytes": 715156,
+      "sha256": "ec03823f5effd2dbb779371faa093abef40265d368d2048703cab012d82c2408"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/copy-verification.json",
+      "bytes": 2582,
+      "sha256": "e7e9b430a7aea497b6eaa0bd2c1be96a08193ef750966d44312dc6803bce9e67"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/film-and-stylized-research.md",
+      "bytes": 9215,
+      "sha256": "2bd7b724476cdbd46d2271c514318c2cbe24b2faaf6e6b1aa20db9eaeaaecca0"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-copy-verification.json",
+      "bytes": 5313,
+      "sha256": "e5d2705ee49d967a9e503f9f5c394179d502d43d72690d6619cb606b0be4ac2b"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/closed-cover-screening.md",
+      "bytes": 3027,
+      "sha256": "c218fead64d67c0613e7da88a49aceb84d985e4f73118146292952ecbf26cab5"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-barrovian-images.json",
+      "bytes": 1218,
+      "sha256": "3e9851eceab9475006b866855812d620719f6ab55f850c9926b717e2fc37c5d9"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-barrovian-page.png",
+      "bytes": 113457,
+      "sha256": "cdbba55520d9b4b87f60e26e7bc02b120ac8a3d123a4b182ea0c9dd8e2ac0cc1"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-mnm-images.json",
+      "bytes": 7412,
+      "sha256": "f58e44b18e6062e2f96c86572deb370d43f214c7133d64f6241fc2e853562ae3"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-mnm-page.png",
+      "bytes": 1299360,
+      "sha256": "db215f4644a910c2a0cca7cacf21476aeb71d548db6b31250084002b8e69cc94"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-screening.json",
+      "bytes": 2591,
+      "sha256": "b454c58f139d2ac1fb1dd7a8a3c264fd6209cb4d6305a62e23a708d3c17aba26"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-tronson-images.json",
+      "bytes": 143,
+      "sha256": "60a68091ce6373984a68574e44913babbc150f1bc1ae794897aed313e9bb62df"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/maker-tronson-page.png",
+      "bytes": 36365,
+      "sha256": "02a8518676735a8236be957ab048237b698392c9b126150ff317d0ae0683f5ed"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/stylized-evildeer.png",
+      "bytes": 557802,
+      "sha256": "3796c82c0a5a1ede75304a36dbe27db47fdd38f65d224d3fc7f61801978d5a3b"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/stylized-marcos.png",
+      "bytes": 550488,
+      "sha256": "92b9b0dffb29e1d09c3d1a041f9ac2214f43ade97135b61c34db618fd70cf14f"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/stylized-sources.json",
+      "bytes": 2847,
+      "sha256": "754e540410dbc416d67dc732a32b0323018abead1371cc00d293cab31ae9eb84"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/stylized-thomas-love-page.png",
+      "bytes": 674266,
+      "sha256": "d2d75be1f9d9544ddea40fe4dc4dbbe7f54b26edb3699f5728869208bed1b2d9"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/executor-screening/verification.json",
+      "bytes": 2092,
+      "sha256": "4e185858a7ddb0b41b96feb121faffdc2c5cde731e51d1dd554d4993eb3be93e"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/fludd-wheel.json",
+      "bytes": 507,
+      "sha256": "bbbef0e67a713b458cbed5b5a895de9593c767505c35c397a15d0e7170ff69f3"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/fludd-wheel.png",
+      "bytes": 795107,
+      "sha256": "8bbe39252eaf4a561da964bc5d552af41282842a6e7ffc2520ab95cadae14767"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/love-grimoire.json",
+      "bytes": 586,
+      "sha256": "d791788ddf82ee378579aa6b4195b63cd350b62df31193558d8efe60d034e406"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/love-grimoire.png",
+      "bytes": 2298167,
+      "sha256": "5cb14ad2c10ff8cf3b507de1defc605ce7d9e1a9a7390a7104a75ac8be8ccada"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/reference-display.json",
+      "bytes": 1099,
+      "sha256": "576ae697dbb333fd015cf61de8aa8811e93153a1bc7314fa842ba2c141869867"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/research.md",
+      "bytes": 3719,
+      "sha256": "cc2383145c3cad13c1865fa8f1824cf9742124d20dc55b41850467b004419b73"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/riven-author-page.json",
+      "bytes": 66603,
+      "sha256": "6f289ec464591b9e2ab83f71a65ef54ff778d02c14fdc5030266984c088c02cf"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/riven-author-page.png",
+      "bytes": 436884,
+      "sha256": "3529e85ef89bb15781de97b685495500660c91c1db2176941bff235a9784dc6e"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/riven-journal.json",
+      "bytes": 689,
+      "sha256": "fda596122951e3a6cc5db9836bf9aa871e17450840391e2f0280e96aa9b279bb"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/riven-journal.png",
+      "bytes": 1434014,
+      "sha256": "1ae5d02af12cd6ff7dcea61a593367de8f7c8b831221d089037b99ac998b117d"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-02/user-feedback.md",
+      "bytes": 1181,
+      "sha256": "9dfa45395309e2798b94f53c316adb29580070728848df9992b4741a6211c844"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/copy-verification.json",
+      "bytes": 2405,
+      "sha256": "3861843ad3d33e9be9c98bd59d026ed67b6fe55f2a71eb87e834737c284dd88c"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/direction.md",
+      "bytes": 1896,
+      "sha256": "c2cd1e31bf6c24811642e63c17579b4ae0893e317df1eae0e9e078a58892b399"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/executor-screening/claire-sketchbook-page.png",
+      "bytes": 3323143,
+      "sha256": "a5a942134e7cf94867110a5de6719d6dd9091adf3dbf9ac6790b6fd00c6f2a39"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/executor-screening/claire-sources.json",
+      "bytes": 749,
+      "sha256": "4383edccd361773c57dadc4d10e2ed4ee871b2ab4d36f69c844305d332cd986e"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/executor-screening/cyan-myst-cover.png",
+      "bytes": 403936,
+      "sha256": "7b8fe411557d2400a37060a087ea44837f0dfb567344d442620d4486fcb1729c"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/executor-screening/cyan-sources.json",
+      "bytes": 1689,
+      "sha256": "d3325d0640032d44c00e9b78b4033ec754a3b1ac6935ca903fcd3f382de13012"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/executor-screening/research.md",
+      "bytes": 2340,
+      "sha256": "538f849490b2019d2e32188dfb112fb4df46be9aa82fb6d40999cdcc117c29e9"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/executor-screening/verification.json",
+      "bytes": 900,
+      "sha256": "f59967d539071f11a47161c2070d4314e1f6f1e209757caa8eba88ebc7b64df8"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/followup-03/supervisor-review.md",
+      "bytes": 774,
+      "sha256": "6afb4ecb57c85fce9af17cbfaca303782dc049dd786fc442a5fdc09890f4e914"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/met-astronomicum-wheel.json",
+      "bytes": 532,
+      "sha256": "167be8d03bf59303b323215cabe5cc1fd0cf06290a8c243c00696b3641765957"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/met-astronomicum-wheel.png",
+      "bytes": 1429108,
+      "sha256": "24225ebd75ba94b04c1b23ffc934c53e3ed7eb294f8fabba73a5e682b810e094"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/met-astronomicum.json",
+      "bytes": 532,
+      "sha256": "ccfc699992500e9c79902c9dea0fc165bd78323edfee5428b9ec876063ebf3c2"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/met-astronomicum.png",
+      "bytes": 1287275,
+      "sha256": "a06a4c3ef541d11c8530da1e8835ab638b2ab65adcaafa65e1bd339b5c8eb523"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/met-binding-page.png",
+      "bytes": 2103561,
+      "sha256": "ad5f7b8e19af9ffa41493c362c38509226382b1b3da634dd6d52800effb296d9"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-beedle-detail.png",
+      "bytes": 2046224,
+      "sha256": "e2466f3131f80aa55b48a905ac652d214812340460b3136c5f26e907a915f243"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-beedle-page.png",
+      "bytes": 214705,
+      "sha256": "f0b2b0d7aae4a18222038eac60562dec50920ff245ccb6b3748c0ead0338c127"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-beedle-reference.png",
+      "bytes": 403053,
+      "sha256": "2cd43d8d5e994e68b9478332268931feb8a77caccf36f47b626a03afe7183f3f"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-darkest-art-detail.png",
+      "bytes": 1401366,
+      "sha256": "36577b005823646e4a46c580ce4cd436d02bdb011c4c3b93e5fbf27f77c3eae2"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-darkest-art-page.png",
+      "bytes": 354222,
+      "sha256": "21e957830e30f08138c20d74c72964e9de285acca3a04793d8e88147d42b4125"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-darkest-art-reference.png",
+      "bytes": 538720,
+      "sha256": "d1a743a7530938651ee2113cfe7187e7f609698d32cfe89787de7d86c5c44e49"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-notebook-links.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-potions-detail.png",
+      "bytes": 2741454,
+      "sha256": "8a7ff36dcf1b342906d82ea7cecb9fe82554f9344707a659f736a3f81bf58b25"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-potions-page.png",
+      "bytes": 866548,
+      "sha256": "8a78b84ded2c84291b2c25082fb0404fcb5ec3d0a270ad421d2b4bb1528017d4"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/minalima-potions-reference.png",
+      "bytes": 476015,
+      "sha256": "9ad4840471541d80c43b2f16792a9e80e4bee3418510d714a7ee33f4852585cf"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/reference-display.json",
+      "bytes": 2905,
+      "sha256": "ff7fab375d8b59258ad8628530d978e7003316381cb7346f310e9ae801a2735e"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/research-provenance.json",
+      "bytes": 4846,
+      "sha256": "a47db33e1bff6555f983cd405628ec1299286cd8cc15397be320106995f2a73d"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/research.md",
+      "bytes": 4698,
+      "sha256": "bbdc998c28b3d870438217ac06d65b9135c75a97e90c216333394f377933fafa"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/screenshots/elijah-stylized-book.png",
+      "bytes": 536391,
+      "sha256": "b140b4ada2fe6b9516ba95bb02ed3a3740fb0df4c099f5c871068191fbb758ed"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/screenshots/ina-tomecek-adventurer-static-preview.png",
+      "bytes": 730602,
+      "sha256": "6ba98565deaf95b2cdaf8052daaf0590c7ead2476d4584f5fb0f1e7cf8d28db0"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/screenshots/ina-tomecek-adventurer.png",
+      "bytes": 598357,
+      "sha256": "b23d828bab1c55c3eb15fc6ad95bf459dd0b4f057a357e341c21fd7624769f6a"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/sources-minalima.json",
+      "bytes": 24632,
+      "sha256": "a1931b58b5e5dea5405413e960afbbcdac0c3f9a31303e653d3a8439b6ac83ba"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/sources-stylized.json",
+      "bytes": 6383,
+      "sha256": "d9be0dc62075b9654011ca17a916c37a73fca95debdbea963bf8c5e48d78c7fd"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/yale-voynich.json",
+      "bytes": 486,
+      "sha256": "756135f5484a1e05bfa7d7e703ebe7543185e7212643325cc312ee87bcad8e16"
+    },
+    {
+      "path": "design/reference-library/book-mystery-20260922/yale-voynich.png",
+      "bytes": 462070,
+      "sha256": "d5376dee1afe723fe50ad61440ea0610cbe33e8d78a46dd2920ef26bde205503"
+    },
+    {
+      "path": "design/round-08-book-identity/README.md",
+      "bytes": 2658,
+      "sha256": "2b31aacc028ba954c97cf229b479c2f05aec8cd3c72d38d77a3e5b5f81cd175f"
+    },
+    {
+      "path": "design/round-08-book-identity/display-order.json",
+      "bytes": 866,
+      "sha256": "3c0b160f2f8e8cedfa492979b78748da45ec5da0cc8ca9598367e752280b603a"
+    },
+    {
+      "path": "design/round-08-book-identity/fading-stellar-tide.output.json",
+      "bytes": 569,
+      "sha256": "83182bbe22a5ad68924f86289c5cadd91f3edcdbcbe4441885156863fa4815e3"
+    },
+    {
+      "path": "design/round-08-book-identity/fading-stellar-tide.png",
+      "bytes": 2036207,
+      "sha256": "7f9639a004433ab8228c29e436c73d8309e1df6131d0474492784122171a15ad"
+    },
+    {
+      "path": "design/round-08-book-identity/input-provenance.json",
+      "bytes": 3276,
+      "sha256": "76903f59c4668d6f0c8a953f70d8437aa2283e89a4a421a31e0e07ba3fc2383c"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/01-overview.png",
+      "bytes": 1209471,
+      "sha256": "809a74e0bd5494de9e5aceddd21a72c76d8556aebdc40f79073f1bf47b6e37d4"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/05-a-hearth-study-selected.md",
+      "bytes": 3197,
+      "sha256": "ed8deb917ef9edeefa9bcf876800d3c2f581ece24491193790b95f01cb1b87bd"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/06-opening.png",
+      "bytes": 1256476,
+      "sha256": "46269f4a856958c8faac26f257ee6ece88be3dd380a584e2b179534fe376529d"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/18-improvement-opportunities-10-percent.md",
+      "bytes": 8825,
+      "sha256": "d1ea3a4827b078d0a8a5a36b0d570964fe6233e5c588f9a62eaef4889f9c6a77"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/19-book-identity-aesthetic-brief.md",
+      "bytes": 5377,
+      "sha256": "f0ecdaffea69dee1865e79c4574174839525588a5c8d2dde0ac3506abee3862e"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/PLAN.main.snapshot.md",
+      "bytes": 90459,
+      "sha256": "e9729b6f2e64b9a13d05e3ac3bb4c1600a10bbd7bc923d0b52517fcb869c67c6"
+    },
+    {
+      "path": "design/round-08-book-identity/inputs/approved-hearth-study.png",
+      "bytes": 1983402,
+      "sha256": "ca796318a31084153f3db3cb4a3880937feed53dea92c78f37767b0dcad483b5"
+    },
+    {
+      "path": "design/round-08-book-identity/provenance.json",
+      "bytes": 26447,
+      "sha256": "7593137983c33d9629688f6f8dac74964b5ac3b206f7c417d6330dfcc67cf8e6"
+    },
+    {
+      "path": "design/round-08-book-identity/qa.md",
+      "bytes": 5134,
+      "sha256": "568c49458b51b32ab7d53387ee26dbfce1556ca13307f564b9b0aba119034143"
+    },
+    {
+      "path": "design/round-08-book-identity/quiet-gilt-title.output.json",
+      "bytes": 560,
+      "sha256": "5ec41434f5744232416aa0a8f012e9116e332bd80c996f70f3d495106c75e59d"
+    },
+    {
+      "path": "design/round-08-book-identity/quiet-gilt-title.png",
+      "bytes": 2182708,
+      "sha256": "63d24b168a7c8f37d69c0c0cdff2783cdd7fe3284c0d54a3056a2f9a455d8e2e"
+    },
+    {
+      "path": "design/round-08-book-identity/requests/fading-stellar-tide.request.json",
+      "bytes": 6373,
+      "sha256": "49ec514bee2e8be73567339b3574607acef7d78411ff7a8b6edb2fde97d4d758"
+    },
+    {
+      "path": "design/round-08-book-identity/requests/quiet-gilt-title.request.json",
+      "bytes": 4958,
+      "sha256": "66a02c80970e170ad830ed8718948a336d7bf459118ddb1e420a4d5137ff6a5a"
+    },
+    {
+      "path": "design/round-08-book-identity/requests/stellar-seal.request.json",
+      "bytes": 5856,
+      "sha256": "8857b4b4db86d0094bcb99457cb9601affee3bd6f267d12b21bf74b1d36c31b1"
+    },
+    {
+      "path": "design/round-08-book-identity/stellar-seal.output.json",
+      "bytes": 548,
+      "sha256": "746a895a42d2c403bbd9bf5377ef5515a329d2ae39f61c8ad108edeaa8610fd7"
+    },
+    {
+      "path": "design/round-08-book-identity/stellar-seal.png",
+      "bytes": 2029777,
+      "sha256": "bb8e2af8a19cd5178168ea736167cecbe6b45a07f6b527941a1067c55387c6a8"
+    },
+    {
+      "path": "design/round-08-book-identity/supervisor-qa.md",
+      "bytes": 1830,
+      "sha256": "5297704111d1e47f07d2f3a97b4e971d1a79a3a0dd25d06f519b2a38b1332a43"
+    },
+    {
+      "path": "design/round-08-book-identity/user-feedback.md",
+      "bytes": 866,
+      "sha256": "d5bb53ca5d5937a210841d092907f0cd64bf41e2fe946b0c8674cb7dbb76854e"
+    },
+    {
+      "path": "design/round-08-book-identity/verification.json",
+      "bytes": 1662,
+      "sha256": "c36910f1aeab4f68536a60cb67dff4bbda8f4a6c678fe838439db9d3b5d82a0b"
+    },
+    {
+      "path": "design/round-09-private-manuscript/README.md",
+      "bytes": 1023,
+      "sha256": "b512f4c28c29795f111bc9aa5f68d77545261cee7acb228fda6c01359859f973"
+    },
+    {
+      "path": "design/round-09-private-manuscript/display-order.json",
+      "bytes": 736,
+      "sha256": "9592f4d931d21020174bf8f2fe9f4f86d8a775401222c829be7795ff8622b290"
+    },
+    {
+      "path": "design/round-09-private-manuscript/inputs/20-private-manuscript-concept-brief.md",
+      "bytes": 4667,
+      "sha256": "844b6d9087ef75f31fdd10ed109c813074298c2ebd1405ce8930a2a1bf4db647"
+    },
+    {
+      "path": "design/round-09-private-manuscript/inputs/PLAN-main-snapshot.md",
+      "bytes": 98686,
+      "sha256": "730599edfaace92ddc4b78cd67e155b2862d5441f9b2d55f656b266b75341d01"
+    },
+    {
+      "path": "design/round-09-private-manuscript/inputs/manifest.json",
+      "bytes": 1562,
+      "sha256": "af18dab73c59c42b6f23f2c5277c782863d482657e74cf1a7e9b5ab31ade9f07"
+    },
+    {
+      "path": "design/round-09-private-manuscript/inputs/reference-G-riven-journal.png",
+      "bytes": 1434014,
+      "sha256": "1ae5d02af12cd6ff7dcea61a593367de8f7c8b831221d089037b99ac998b117d"
+    },
+    {
+      "path": "design/round-09-private-manuscript/inputs/reference-giant-book-opening.png",
+      "bytes": 1256476,
+      "sha256": "46269f4a856958c8faac26f257ee6ece88be3dd380a584e2b179534fe376529d"
+    },
+    {
+      "path": "design/round-09-private-manuscript/inputs/reference-room-overview.png",
+      "bytes": 1209471,
+      "sha256": "809a74e0bd5494de9e5aceddd21a72c76d8556aebdc40f79073f1bf47b6e37d4"
+    },
+    {
+      "path": "design/round-09-private-manuscript/output-v1.json",
+      "bytes": 483,
+      "sha256": "2489db947ba571d0fb6061f4f286f7c5cd7f6694cad5ead04cd0f2b131ebc5d4"
+    },
+    {
+      "path": "design/round-09-private-manuscript/output-v2.json",
+      "bytes": 572,
+      "sha256": "4e45ccf6df264295c6573f9463f82cafdc8f5c66210a8efb9468cb4707865337"
+    },
+    {
+      "path": "design/round-09-private-manuscript/private-manuscript-v1.png",
+      "bytes": 2251871,
+      "sha256": "04a1b101c2b4c702d1443b7f53cfdf318445cbce9d2aca9c20628394f03961f6"
+    },
+    {
+      "path": "design/round-09-private-manuscript/private-manuscript-v2.png",
+      "bytes": 2129643,
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+    },
+    {
+      "path": "design/round-09-private-manuscript/provenance.json",
+      "bytes": 9675,
+      "sha256": "8a97c429f7729784e35d6b7bc6a28465b9aeccd760ffdbff41d23bc5932917ba"
+    },
+    {
+      "path": "design/round-09-private-manuscript/qa.md",
+      "bytes": 3713,
+      "sha256": "7f760f6ec0cb09840e2c6f7fe2ea10470c2e97ff2958c523db771bd936ef855c"
+    },
+    {
+      "path": "design/round-09-private-manuscript/requests/01-prompt.txt",
+      "bytes": 4816,
+      "sha256": "be700168ee7dbb074bb1d80f3e2e58b0a3e212ae43d4d78fb85be14e055c6a24"
+    },
+    {
+      "path": "design/round-09-private-manuscript/requests/01-request.json",
+      "bytes": 5303,
+      "sha256": "6429bac65d83c8652dd10a35d5d09359ec02dffe34f72cfd82ca07bd2da1b5fd"
+    },
+    {
+      "path": "design/round-09-private-manuscript/requests/01-tool-result.json",
+      "bytes": 682,
+      "sha256": "642a79bbdf2921bc092fa89cead3ef35b5045086799fe2d3bb00297b4d4f1f73"
+    },
+    {
+      "path": "design/round-09-private-manuscript/requests/02-prompt.txt",
+      "bytes": 2189,
+      "sha256": "af69f00b748fa9532605a50cce1dfaf2798edc1a5ed54b2145ec3b0a35d4dbf8"
+    },
+    {
+      "path": "design/round-09-private-manuscript/requests/02-request.json",
+      "bytes": 2785,
+      "sha256": "0b66f49499c47b2269d421b22737a8985b396b31e9af376f93d0b5085ead0f17"
+    },
+    {
+      "path": "design/round-09-private-manuscript/requests/02-tool-result.json",
+      "bytes": 682,
+      "sha256": "92b9f2eb8f16b51ba1c8c5676d677eec1a0db4b9c0320dfc5e17e13229c9eb9c"
+    },
+    {
+      "path": "design/round-09-private-manuscript/scope-before.json",
+      "bytes": 306,
+      "sha256": "793b68fead65e24237d84a56df5a1eacf4f8bab66910843a9b7edec83090683e"
+    },
+    {
+      "path": "design/round-09-private-manuscript/scope-verification.json",
+      "bytes": 566,
+      "sha256": "66568bce3be981841d05640be7e44064bed34d98690222246013959a82160376"
+    },
+    {
+      "path": "design/round-09-private-manuscript/supervisor-qa.md",
+      "bytes": 1621,
+      "sha256": "be87febf4a8a0cd5e0ac5d1f0455565e47f8f5a3836f30659ff36a78e10b0c29"
+    },
+    {
+      "path": "design/round-09-private-manuscript/user-approval.md",
+      "bytes": 891,
+      "sha256": "06edc11ae3bc7a20135bb36272d60ddc3aaffcab231f998714a94b7a48624eee"
+    },
+    {
+      "path": "design/round-09-private-manuscript/verification.json",
+      "bytes": 3561,
+      "sha256": "189d3cfc5b3f4e7160c0a38651f9d0e3b5c7593eb178952f0da5cb56600f236a"
+    },
+    {
+      "path": "evidence/book-identity-supervision/dispatch-prompt.md",
+      "bytes": 3902,
+      "sha256": "131720ff695a0ec9fa7ad4317fbe6d763878ccc7180ba4fdd1b9c949c7d205db"
+    },
+    {
+      "path": "evidence/book-identity-supervision/final-copy-check.json",
+      "bytes": 4393,
+      "sha256": "8c10402d8db2dfb42697f0bf3cce6bf3be1bcaf03e0180cd35727e3b2ffd7c28"
+    },
+    {
+      "path": "evidence/book-identity-supervision/round09-actual-imagegen-calls.json",
+      "bytes": 10018,
+      "sha256": "1fc81351eacfd08b9e606b54789af95504817860285fa919f047d6bcfceac604"
+    },
+    {
+      "path": "evidence/book-identity-supervision/round09-copy-verification.json",
+      "bytes": 7993,
+      "sha256": "6d318b952bb9415e0a0c97193ff2ae89c4675f0268876adafeb4ff4d4a22bdc3"
+    },
+    {
+      "path": "evidence/book-identity-supervision/round09-input-review.json",
+      "bytes": 1893,
+      "sha256": "d1d4c2e800335bf97c8fa2b0a816777d6828493535f988b364ed60c7d6bd3136"
+    },
+    {
+      "path": "evidence/book-identity-supervision/round10-actual-imagegen-calls.json",
+      "bytes": 18257,
+      "sha256": "7ec32edb11b0b12366d040c951355debb78e0856ab83cb67a7170d1ca9bfc070"
+    },
+    {
+      "path": "evidence/book-identity-supervision/round10-copy-verification.json",
+      "bytes": 6787,
+      "sha256": "b9c6487a7f1bfc687accdae47c089447ab913de21c86773e92e08b2d4378cdd3"
+    },
+    {
+      "path": "evidence/book-identity-supervision/round10-review-page.png",
+      "bytes": 1067003,
+      "sha256": "1efb8e5c0a05801222de8066d97b82bf753f1d6530b248e35f1609fc1742a4df"
+    },
+    {
+      "path": "evidence/book-identity-supervision/state.json",
+      "bytes": 7328,
+      "sha256": "2aba67b253650921bbcbec9267dfbaeb2dc9957d122b9fe274772395d5b03efa"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/01-overview.png",
+      "bytes": 1209471,
+      "sha256": "809a74e0bd5494de9e5aceddd21a72c76d8556aebdc40f79073f1bf47b6e37d4"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/02-quick-access.png",
+      "bytes": 238666,
+      "sha256": "fb342ff2eef579fedc0e4e6b416610a9b4e7a0dffa44ac26b23f6e48c3861ad3"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/03-workspace.png",
+      "bytes": 41299,
+      "sha256": "ba6ea33052126fb4a9f860a4ba56937ddba9f0b990b7177462eac9eeb82be885"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/04-return.png",
+      "bytes": 1208623,
+      "sha256": "b66399de48568dfa249dd020902614ae84e45d0f34161ec469739612b4816213"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/05-book-focus.png",
+      "bytes": 1170442,
+      "sha256": "b5d42e485f40082fac86f652797b122c7ba034c617cf20f23e6207f823a90338"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/06-opening.png",
+      "bytes": 1256476,
+      "sha256": "46269f4a856958c8faac26f257ee6ece88be3dd380a584e2b179534fe376529d"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/07-opening-complete.png",
+      "bytes": 46326,
+      "sha256": "2125d5d298e25d8629eaaf2517978a169759280087f4bdb736a4da63165a5728"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/08-create.png",
+      "bytes": 244705,
+      "sha256": "fb8eb4e08f90804f5b05f5c15fc4aec0855fb8b4984245a6c9e9cc50650dd86d"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/09-roam.png",
+      "bytes": 1223503,
+      "sha256": "ed3ec5b242f63c5e74815137a29ba76d33a8a693f02fd700b9d4233e805dda8b"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/10-search-keyboard.png",
+      "bytes": 233460,
+      "sha256": "8bdf339fd00544ce9b4627786bb99dcaa573f7f88ac9b345b5bd7646f806dbbb"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/actions.jsonl",
+      "bytes": 12780,
+      "sha256": "3d3859800eb3671ddeeb7372a25a605a4164cf7658fadc26f6f733651103649f"
+    },
+    {
+      "path": "evidence/improvement-audit-20260922/keyboard-observations.json",
+      "bytes": 1610,
+      "sha256": "8d4088c7e1e715ed8b6df598cff42559e637f2d65df06cc586d93b6d7550b102"
+    },
+    {
+      "path": "evidence/loading-optimization-supervision/check-20260918-061939.json",
+      "bytes": 1285,
+      "sha256": "6b26ee0e0e5582099513bbeecf6054bdc2c057d5edddfa51bd02daf8c51bf3ba"
+    },
+    {
+      "path": "evidence/loading-optimization-supervision/check-20260918-063709.json",
+      "bytes": 3203,
+      "sha256": "c36638550aa492ad34aec2e9c66305983c1f5e34db2a43bbce0ff2430364b1de"
+    },
+    {
+      "path": "evidence/loading-optimization-supervision/dispatch.json",
+      "bytes": 1360,
+      "sha256": "1dd7de55163424700e5e8918a994ec9ae98e757dd719163102850302f358d41a"
+    },
+    {
+      "path": "evidence/loading-optimization-supervision/final-review.json",
+      "bytes": 5350,
+      "sha256": "a57ade1f9c16b72c9f9afc458cbd82ae24836466a9c1164c11d989689474fa1d"
+    }
+  ],
+  "localBranchesBefore": [
+    "refs/heads/codex/book-materials-lifecycle 30931814ac35523a80aa89dfdb4322871148a085",
+    "refs/heads/codex/initial-loading-optimization 0886044a22e8c016d9d726c4c487da90279d603d",
+    "refs/heads/main eedd74593e883aba070e4fa97dfc1e0079f433cb"
+  ],
+  "tagsBefore": [
+    "refs/tags/v0.1.0-baseline 56b6df9493d380197b11e7800a05cbd289417c06",
+    "refs/tags/v0.1.1-preview.1 249acba3a91c89708a2d46d616abdb284b81a1be",
+    "refs/tags/v0.2.0-preview.1 93b69e98a868e3737fbdfa6cab6735ad79f0f47b"
+  ],
+  "worktreesBefore": "worktree /Users/frankqdwang/MLE/StoryOS-blender\nHEAD 30931814ac35523a80aa89dfdb4322871148a085\nbranch refs/heads/codex/book-materials-lifecycle\n\nworktree /Users/frankqdwang/MLE/StoryOS-blender/.worktrees/baseline\nHEAD 546b7504388f961333ff2012bacd33f19c618c1a\ndetached\n\n",
+  "openPullRequestsBefore": []
+}

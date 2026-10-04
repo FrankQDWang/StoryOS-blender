@@ -1,0 +1,34 @@
+
+> test
+> node --test apps/web/tests/library-model.test.mjs apps/web/tests/roaming.test.mjs apps/web/tests/opening-motion.test.mjs
+
+✔ new library is empty and five creations allocate the approved family in order (1.537834ms)
+✔ deletion leaves other books stable, refills the first hole and persists an empty shelf (0.336875ms)
+✔ invalid creation is atomic and whitespace is removed (0.468958ms)
+✔ existing libraries retain works, custom colors and slots while gaining persistent material identities (0.137292ms)
+✔ visiting and recent sorting do not change a displayed book identity or position (0.151292ms)
+✔ cover opens before pages; sheets stay ordered, never overtake the cover, and settle before entry (1.437875ms)
+✔ shipped hands keep one human size across lecterns without moving the grip anchor or accumulating scale (34.371958ms)
+✔ MakeHuman hands retain complete weighted anatomy and a synchronized baked clip (25.936167ms)
+✔ the raised-cover poses avoid the previous folded right-wrist silhouette (7.286125ms)
+✔ the cover span sags below its binding-to-finger support line during the lift (1.470208ms)
+✔ flexible sheets retain their length and the settled leaves stay above the leather (11.56025ms)
+✔ body clearance applies to walls and round table; long displacement cannot cross the table (4.365417ms)
+✔ every fixture and all five rotated lecterns stop movement before the body enters them (1.840959ms)
+✔ rectangle corners use circular body clearance and diagonal movement slides along a rotated face (0.13375ms)
+✔ zero displacement is stable and invalid starting positions are not teleported through furniture (0.0735ms)
+✔ all five reading stands have reachable standing positions within book interaction distance (18.394875ms)
+ℹ lectern 1: verified route 8.10 m; final book distance 1.19 m
+ℹ lectern 2: verified route 12.30 m; final book distance 1.19 m
+ℹ lectern 3: verified route 9.90 m; final book distance 1.19 m
+ℹ lectern 4: verified route 8.25 m; final book distance 1.19 m
+ℹ lectern 5: verified route 6.30 m; final book distance 1.19 m
+✔ the central table has a complete unobstructed walking circuit connected to the entrance (0.668916ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 143.782542

@@ -1,0 +1,10 @@
+{
+  "approvedRuntimeCommit": "30931814ac35523a80aa89dfdb4322871148a085",
+  "runtimeAndSourceAssetsUnchanged": true,
+  "tests": 17,
+  "build": "pass",
+  "manifestAssets": 19,
+  "publicBuildMatches": true,
+  "visualAndPerformanceEvidence": "evidence/book-local-correction-20261004/",
+  "baselineWorktreeRemoved": true
+}
