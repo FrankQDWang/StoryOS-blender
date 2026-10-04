@@ -50,12 +50,13 @@ function paperEdges(){
  edgeTexture=new THREE.CanvasTexture(canvas);edgeTexture.colorSpace=THREE.SRGBColorSpace;edgeTexture.anisotropy=8;return edgeTexture;
 }
 const closedGeometries=new Map();
-export function createSoftBook(appearance,slot=0){
+export function createSoftBook(appearance){
  const object=new THREE.Group();object.name='FlexibleBoundBook';
  const {style,leather}=appearance;
  const skin=new THREE.MeshStandardMaterial({map:leather,color:appearance.color,bumpMap:leather,bumpScale:style.grain,roughness:style.roughness});
  const title=skin.clone();title.map=appearance.title;
- const paper=new THREE.MeshStandardMaterial({map:appearance.paper,color:style.paper,roughness:.94});
+ const paper=new THREE.MeshStandardMaterial({map:appearance.back,color:style.paper,roughness:.94});
+ const content=paper.clone();content.map=appearance.page;
  const edges=new THREE.MeshStandardMaterial({map:paperEdges(),color:style.paper,roughness:1});
  const parts=[];
  function add(name,surface,thickness,materials,cols=32,rows=10,dynamic=true){
@@ -65,25 +66,19 @@ export function createSoftBook(appearance,slot=0){
   object.add(mesh);parts.push({mesh,surface,thickness,dynamic,owned:false});return mesh;
  }
  add('FlexibleBack',backPoint,BOOK.leather,[skin,skin,skin],32,10,false);
- add('LeatherSpine',spinePoint,BOOK.leather,[skin,skin,skin],14,10,false);
- add('BoundPaperBlock',(u,v,t,d,out)=>blockPoint(u,v,t,d-BOOK.blockThickness/2,out),BOOK.blockThickness,[paper,paper,edges],32,10,false);
- add('FlexibleCover',(u,v,t,d,out)=>coverPoint(u,v,t,d,out,slot),BOOK.leather,[title,skin,skin]);
- add('ContinuousEndpaper',(u,v,t,d,out)=>gutterPoint(u,v,t,d,out,slot),.0008,[paper,paper,paper],12,10);
- for(let i=0;i<3;i++)add(`BoundLeaf${i}`,(u,v,t,d,out)=>leafPoint(u,v,t,i,d,out,slot),.00065,[paper,paper,paper],32,12);
- object.userData.softBook={parts,materials:[skin,title,paper,edges],time:0};
+ add('LeatherSpine',spinePoint,BOOK.leather,[skin,skin,skin],14,10);
+ add('BoundPaperBlock',(u,v,t,d,out)=>blockPoint(u,v,t,d-BOOK.blockThickness/2,out),BOOK.blockThickness,[content,paper,edges]);
+ add('FlexibleCover',coverPoint,BOOK.leather,[title,skin,skin]);
+ add('ContinuousEndpaper',gutterPoint,.0008,[paper,paper,paper],12,10);
+ for(let i=0;i<3;i++)add(`BoundLeaf${i}`,(u,v,t,d,out)=>leafPoint(u,v,t,i,d,out),.00065,[paper,paper,paper],32,12);
+ object.userData.softBook={parts,materials:[skin,title,paper,content,edges],time:0};
  return object;
-}
-export function prepareSoftBook(object){
- for(const part of object.userData.softBook.parts){
-  if(!part.dynamic)continue;
-  if(!part.owned){part.mesh.geometry=part.mesh.geometry.clone();part.mesh.geometry.attributes.position.setUsage(THREE.DynamicDrawUsage);part.owned=true}
- }
 }
 export function updateSoftBook(object,time){
  const data=object.userData.softBook;if(data.time===time)return;
- prepareSoftBook(object);
  for(const part of data.parts){
   if(!part.dynamic)continue;
+  if(!part.owned){part.mesh.geometry=part.mesh.geometry.clone();part.mesh.geometry.attributes.position.setUsage(THREE.DynamicDrawUsage);part.owned=true}
   bendRibbon(part.mesh.geometry,part.surface,time,part.thickness);
  }
  data.time=time;

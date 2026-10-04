@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import sharp from 'sharp';
-const out=process.env.BOOK_EVIDENCE?`${process.env.BOOK_EVIDENCE}/final`:'evidence/flexible-book-20261004/final';
+const out='evidence/flexible-book-20261004/final';
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try{
  const page=await browser.newPage({viewport:{width:1512,height:751},deviceScaleFactor:1});
@@ -11,7 +11,7 @@ try{
   await page.locator('[data-scene-ready="true"]').waitFor();await page.waitForTimeout(300);
   await page.screenshot({path:`${out}/${label}.jpg`,quality:92});
  }
- await fs.writeFile(`${out}/handoff-captures.json`,JSON.stringify({headless:true,errors,firstClosed:'Captured after scene-ready and final motion asset revision.'},null,2));
+ await fs.writeFile(`${out}/handoff-captures.json`,JSON.stringify({headless:true,errors,firstClosed:'Recaptured after actual scene-ready; original capture was too early.'},null,2));
 }finally{await browser.close()}
 const tiles=[];
 for(let i=0;i<5;i++)for(const [row,label] of ['closed','open'].entries())tiles.push({input:await sharp(`${out}/book-${i+1}-${label}.jpg`).resize(605,300).toBuffer(),left:i%3*605,top:(Math.floor(i/3)*2+row)*300});

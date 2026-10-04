@@ -27,7 +27,3 @@ To regenerate the offline base, clone the official MPFB source into the ignored 
 ## Flexible-book runtime adaptation (0.1.5-preview.3)
 
 The shipped GLB and source blend remain unchanged. Its exact original sequence is archived at `assets/source/makehuman-hands-baked-sequence.json`, retaining the original SHA; `makehuman-hands.json` points to this bake input and records the generator revision. The runtime book changes post-release cover settling/page timing and translates the existing arms to maintain flexible-cover contact. A future actual bake automatically records the current live sequence and its generator hash again.
-
-## Support-driven opening (0.1.5-preview.4)
-
-The GLB and all bake inputs remain unchanged. `OpeningHands.jsx` retimes the existing clip with `handClipTime` and transforms the arms onto the finger-support trajectory in `book-support.mjs`. That same trajectory constrains the offline flexible-book solve, with release after the support passes the binding. This is runtime adaptation of the preserved authored performance, not a new motion-capture source or a regenerated hand asset. Book motion provenance is in `assets/source/soft-book-motion.json`.

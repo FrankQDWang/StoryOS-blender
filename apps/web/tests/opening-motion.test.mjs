@@ -158,28 +158,13 @@ test('the raised-cover poses avoid the previous folded right-wrist silhouette',(
  }
 });
 
-// Load the same baked trajectories that the renderer samples.
-import {setBookMotion} from '../src/soft-book-motion.mjs';
-const motion=readFileSync(new URL('../../../public/assets/animation/soft-book-motion.bin',import.meta.url));
-setBookMotion(motion.buffer.slice(motion.byteOffset,motion.byteOffset+motion.byteLength));
-
-test('unsupported leather falls below the lectern after the hand releases it',async()=>{
- const {coverPoint}=await import('../src/soft-book-shape.mjs');
- for(let slot=0;slot<5;slot++){
-  const edge=-.51;
-  const tip=coverPoint(1,.5,OPENING_SECONDS,0,undefined,slot);
-  assert.ok(tip[0]<edge,'cover should extend past the support');
-  assert.ok(tip[1]<0,'unsupported leather stays suspended above the lectern after release');
- }
-});
-
 test('flexible sheets retain their length and the settled leaves stay above the leather',async()=>{
  const {coverPoint,leafPoint,BOOK}=await import('../src/soft-book-shape.mjs');
  const length=fn=>{let previous=fn(0),sum=0;for(let i=1;i<=64;i++){const point=fn(i/64);sum+=Math.hypot(point[0]-previous[0],point[1]-previous[1],point[2]-previous[2]);previous=point}return sum};
  for(let frame=0;frame<=210;frame+=3){
   const t=frame/60;
   assert.ok(Math.abs(length(u=>coverPoint(u,.5,t))-BOOK.coverWidth)<.001,'leather stretched');
-  for(let i=0;i<3;i++)assert.ok(Math.abs(length(u=>leafPoint(u,.5,t,i))-BOOK.pageWidth)<BOOK.pageWidth*.005,'paper shrank or stretched while settling');
+  for(let i=0;i<3;i++)assert.ok(Math.abs(length(u=>leafPoint(u,.5,t,i))-BOOK.pageWidth)<.002,'paper shrank or stretched while settling');
  }
  for(let i=0;i<3;i++)for(let sample=8;sample<=64;sample++){
   const page=leafPoint(sample/64,.5,OPENING_SECONDS,i);let nearest,distance=Infinity;

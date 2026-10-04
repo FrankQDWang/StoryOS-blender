@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import sharp from 'sharp';
 const stage=process.argv[2]??'candidate';
-const out=process.env.BOOK_EVIDENCE?`${process.env.BOOK_EVIDENCE}/${stage}`:`evidence/flexible-book-20261004/${stage}`;await fs.mkdir(out,{recursive:true});
+const out=`evidence/flexible-book-20261004/${stage}`;await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true,args:['--no-first-run','--disable-background-networking']});
 try{
  const page=await browser.newPage({viewport:{width:1512,height:751},deviceScaleFactor:1});
