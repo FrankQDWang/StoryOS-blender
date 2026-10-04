@@ -1,0 +1,10 @@
+{
+  "implementationCommit": "6e654b050f0f5d234e5be647d8fe927b7f12b78e",
+  "branches": "* main\n  remotes/origin/HEAD -> origin/main\n  remotes/origin/main",
+  "worktrees": "/Users/frankqdwang/MLE/StoryOS-blender 6e654b0 [main]",
+  "tags": "56b6df9493d380197b11e7800a05cbd289417c06 refs/tags/v0.1.0-baseline\n249acba3a91c89708a2d46d616abdb284b81a1be refs/tags/v0.1.1-preview.1\n93b69e98a868e3737fbdfa6cab6735ad79f0f47b refs/tags/v0.2.0-preview.1",
+  "tests": "17 passed",
+  "savedFileHashes": 532,
+  "performance": "Latest run did not pass; preserved without reclassification.",
+  "diffCheck": "Pass excluding exact archived rejected-v1 generator with one pre-existing trailing-space line."
+}
