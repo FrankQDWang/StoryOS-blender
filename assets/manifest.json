@@ -1,5 +1,5 @@
 {
-  "version": "0.1.5-preview.3",
+  "version": "0.1.5-preview.5",
   "room_version": "0.1.3-preview.3",
   "baseline": "v0.1.0-baseline",
   "source_script": "scripts/build_library.py",
@@ -103,6 +103,11 @@
       "sha256": "86396e681d50db916f07406a6b2255e8bb9f1fbc36053fb1f488e983eacd55b8"
     },
     {
+      "path": "public/assets/textures/manuscript-page-filled.webp",
+      "bytes": 102338,
+      "sha256": "ca33252d1b76de958d1fcf407d5938b8884e2a4d5aa12d19ab05d6fdeadfbf76"
+    },
+    {
       "path": "public/assets/textures/manuscript-page.webp",
       "bytes": 92424,
       "sha256": "1ad1c1e21d1a7fdd4dc6732d0b109bf372cbfd534de95c804577f0d7f77d5be6"
@@ -156,9 +161,10 @@
     "assets/source/plaster-texture.json",
     "assets/source/hearth-decor-atlas.json",
     "assets/source/manuscript/provenance.json",
-    "assets/source/manuscript-soft/provenance.json"
+    "assets/source/manuscript-soft/provenance.json",
+    "assets/source/manuscript-filled/provenance.json"
   ],
-  "book_appearance": "SoftBook.mjs builds a thin continuous leather wrap, curved paper block, joined endpaper and three sewn leaves. soft-book-shape.mjs bends cover/spine and integrates fixed-length leaf paths; OpeningHands.jsx retargets existing contact to the flexible cover. BookAppearance.jsx retains approved textures and cover-only titles. Historical story-book.glb remains archived in assets and is no longer fetched by the runtime.",
+  "book_appearance": "SoftBook.mjs builds a thin continuous leather wrap, curved paper block, joined endpaper and three sewn leaves. soft-book-shape.mjs bends cover/spine and integrates fixed-length leaf paths; OpeningHands.jsx retargets existing contact to the flexible cover. BookAppearance.jsx keeps cover-only titles and fills the manuscript center in the original style, with no added Chinese page overlay. Cover lift keeps its prior stiffness with corrected downward sag between spine and grip; the multi-page paths are unchanged. Historical story-book.glb remains archived in assets and is no longer fetched by the runtime.",
   "visual_target": "design/round-05/A-hearth-study/final.png",
   "layout_source": "apps/web/src/room-layout.json",
   "network_references": "Room reference images are research only. Hand mesh and skin use the documented CC0 MakeHuman sources.",

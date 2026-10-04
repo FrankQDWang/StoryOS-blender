@@ -1,0 +1,22 @@
+{
+  "assets": 19,
+  "publicBuildMatch": true,
+  "unchangedFromRollback": [
+    "apps/web/src/opening-motion.mjs",
+    "apps/web/src/opening-sequence.json",
+    "apps/web/src/OpeningHands.jsx",
+    "apps/web/src/SoftBook.mjs",
+    "apps/web/src/book-materials.mjs",
+    "public/assets/models/makehuman-hands.glb",
+    "public/assets/textures/manuscript-soft-leather.webp"
+  ],
+  "unitTests": 17,
+  "build": "pass",
+  "baseCommit": "091a9fccd5f076f05c4de61a1e91c87e52b1ab4e",
+  "runtimeSha256": {
+    "apps/web/src/BookAppearance.jsx": "e08f5d6adb3c917edb9cc234758252f80ce9ec9788f2b108d0f69f91d9d31f75",
+    "apps/web/src/soft-book-shape.mjs": "4cd33bd78d4de9beda4b5a908f2b5a9d4125a0938c9e84f5452031b936b4fa99",
+    "public/assets/textures/manuscript-page-filled.webp": "ca33252d1b76de958d1fcf407d5938b8884e2a4d5aa12d19ab05d6fdeadfbf76"
+  },
+  "textureUploadFix": "Remove redundant needsUpdate; TextureLoader and CanvasTexture already mark initial upload. GPU upload calls 91 to 86 in profile."
+}

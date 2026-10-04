@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import sharp from 'sharp';
-const out='evidence/flexible-book-20261004/final';
+const out=process.env.BOOK_CHECK_OUT??'evidence/flexible-book-20261004/final';
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try{
  const page=await browser.newPage({viewport:{width:1512,height:751},deviceScaleFactor:1});

@@ -1,0 +1,42 @@
+{
+  "leafSamples": 62667,
+  "maximumLeafDifference": 0,
+  "maximumClosedAndReleasedCoverDifference": 0,
+  "sag": [
+    {
+      "time": 1,
+      "beforeMm": 5.073397625603382,
+      "afterMm": -13.754674681077383
+    },
+    {
+      "time": 1.25,
+      "beforeMm": 31.42669458007541,
+      "afterMm": -30.407701477231903
+    },
+    {
+      "time": 1.5,
+      "beforeMm": 19.85972241262257,
+      "afterMm": -12.4462694672145
+    },
+    {
+      "time": 1.7,
+      "beforeMm": -1.4208862062378702,
+      "afterMm": -1.6000907022823418
+    },
+    {
+      "time": 1.83,
+      "beforeMm": -6.515924202564694,
+      "afterMm": -0.9661397671793526
+    },
+    {
+      "time": 1.94,
+      "beforeMm": -12.016302460559569,
+      "afterMm": -1.7786352062195143
+    },
+    {
+      "time": 2.1,
+      "beforeMm": -21.468301506016974,
+      "afterMm": -21.468301506016974
+    }
+  ]
+}

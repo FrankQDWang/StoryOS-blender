@@ -1,0 +1,35 @@
+{
+  "tool": "built-in ImageGen",
+  "date": "2026-10-04",
+  "originalOutput": "/Users/frankqdwang/.codex/generated_images/01a10277-6227-7be3-8a41-42c814b07908/exec-0514a2af-4159-43ad-aa75-a268c8deb0f2.png",
+  "referenceRole": "Edit the existing paper texture to fill its blank center with matching manuscript marks; approved warm-umber book supplied only for style. Exclude added Chinese titles/descriptions.",
+  "processing": "Native PNG retained byte-for-byte; resize to 768 square and encode WebP quality 86. No other edits.",
+  "visualReview": "Existing sepia cursive style and small pen sketches retained; center filled, no added typeset Chinese. Generated edit is not pixel-identical outside the center.",
+  "files": [
+    {
+      "path": "assets/source/manuscript-filled/page.png",
+      "bytes": 2449944,
+      "sha256": "5076c123dc9feeba4fee4044e430ac875b602c965da2a1f9b59c00abe024d983"
+    },
+    {
+      "path": "assets/source/manuscript-filled/prompt.txt",
+      "bytes": 1297,
+      "sha256": "4721eb82e433daa962763e8079c7639b267d969631849d9888cb64b5e45ea0a1"
+    },
+    {
+      "path": "public/assets/textures/manuscript-page-filled.webp",
+      "bytes": 102338,
+      "sha256": "ca33252d1b76de958d1fcf407d5938b8884e2a4d5aa12d19ab05d6fdeadfbf76"
+    },
+    {
+      "path": "public/assets/textures/manuscript-page.webp",
+      "bytes": 92424,
+      "sha256": "1ad1c1e21d1a7fdd4dc6732d0b109bf372cbfd534de95c804577f0d7f77d5be6"
+    },
+    {
+      "path": "design/round-10-five-book-materials/warm-umber.png",
+      "bytes": 2129643,
+      "sha256": "c94b3e1cce6eb7c3f31a0875a39fa6ee717383eebfee478cc2d6d4d374e0f429"
+    }
+  ]
+}

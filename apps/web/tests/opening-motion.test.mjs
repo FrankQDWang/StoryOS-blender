@@ -158,6 +158,16 @@ test('the raised-cover poses avoid the previous folded right-wrist silhouette',(
  }
 });
 
+test('the cover span sags below its binding-to-finger support line during the lift',async()=>{
+ const {coverPoint,BOOK}=await import('../src/soft-book-shape.mjs');
+ const grip=(.265-BOOK.coverRoot)/BOOK.coverWidth;
+ for(let frame=60;frame<=126;frame++){
+  const time=frame/60,root=coverPoint(0,.96497,time),finger=coverPoint(grip,.96497,time);
+  const middle=coverPoint(grip/2,.96497,time),supportLine=(root[1]+finger[1])/2;
+  assert.ok(middle[1]<=supportLine+.00005,`cover arches ${(1000*(middle[1]-supportLine)).toFixed(2)} mm upward at ${time.toFixed(2)}s`);
+ }
+});
+
 test('flexible sheets retain their length and the settled leaves stay above the leather',async()=>{
  const {coverPoint,leafPoint,BOOK}=await import('../src/soft-book-shape.mjs');
  const length=fn=>{let previous=fn(0),sum=0;for(let i=1;i<=64;i++){const point=fn(i/64);sum+=Math.hypot(point[0]-previous[0],point[1]-previous[1],point[2]-previous[2]);previous=point}return sum};

@@ -1,0 +1,83 @@
+{
+  "chrome": "154.0.8037.93",
+  "headless": true,
+  "captures": [
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-1-closed.jpg",
+      "slot": 0,
+      "time": 0
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-1-open.jpg",
+      "slot": 0,
+      "time": 3.45
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-1-contact.jpg",
+      "slot": 0,
+      "time": 1.7
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-2-closed.jpg",
+      "slot": 1,
+      "time": 0
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-2-open.jpg",
+      "slot": 1,
+      "time": 3.45
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-3-closed.jpg",
+      "slot": 2,
+      "time": 0
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-3-open.jpg",
+      "slot": 2,
+      "time": 3.45
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-3-contact.jpg",
+      "slot": 2,
+      "time": 1.7
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-4-closed.jpg",
+      "slot": 3,
+      "time": 0
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-4-open.jpg",
+      "slot": 3,
+      "time": 3.45
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-5-closed.jpg",
+      "slot": 4,
+      "time": 0
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-5-open.jpg",
+      "slot": 4,
+      "time": 3.45
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/book-5-contact.jpg",
+      "slot": 4,
+      "time": 1.7
+    },
+    {
+      "file": "evidence/book-local-correction-20261004/final/created.jpg"
+    }
+  ],
+  "steps": [
+    "normal playback: 34 actual frames",
+    "quarter-speed playback: 93 actual frames",
+    "fresh empty library, create first soft book",
+    "actual book opens and returns",
+    "reduced-motion entry and return",
+    "delete removes geometry; refresh remains empty"
+  ],
+  "errors": []
+}

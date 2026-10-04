@@ -20,7 +20,7 @@ function textLines(ctx,text,x,y,maxWidth,lineHeight) {
 }
 
 export function useBookAppearance(book) {
-  const [leather,paper]=useTexture(['/assets/textures/manuscript-soft-leather.webp','/assets/textures/manuscript-page.webp']);
+  const [leather,paper]=useTexture(['/assets/textures/manuscript-soft-leather.webp','/assets/textures/manuscript-page-filled.webp']);
   const style=bookMaterial(book);
   const appearance=useMemo(()=>{
     leather.colorSpace=THREE.SRGBColorSpace;leather.anisotropy=8;paper.colorSpace=THREE.SRGBColorSpace;paper.anisotropy=8;
@@ -31,21 +31,10 @@ export function useBookAppearance(book) {
     ink.font=`${size}px "Kaiti SC", "STKaiti", "KaiTi", serif`;
     ink.translate(384,0);ink.rotate(-.015);
     textLines(ink,book.title,0,230,640,size*1.3);
-    let page=paper;
-    if(book.description){
-      const canvas=document.createElement('canvas');canvas.width=768;canvas.height=768;
-      const content=canvas.getContext('2d');content.drawImage(paper.image,0,0,768,768);
-      content.fillStyle=style.ink;content.textAlign='center';
-      const descriptionSize=book.description.length>90?16:22;
-      content.font=`${descriptionSize}px "Kaiti SC", "STKaiti", "KaiTi", serif`;
-      textLines(content,book.description,384,345,590,descriptionSize*1.3);
-      page=canvasTexture(canvas);
-    }
-    return {style,color:book.color??style.color,leather,back:paper,title:canvasTexture(title),page};
-  },[leather,paper,style,book.title,book.description,book.color]);
+    return {style,color:book.color??style.color,leather,back:paper,title:canvasTexture(title),page:paper};
+  },[leather,paper,style,book.title,book.color]);
   useEffect(()=>{
-    appearance.title.needsUpdate=true;appearance.page.needsUpdate=true;
-    return()=>{appearance.title.dispose();if(appearance.page!==paper)appearance.page.dispose()};
+    return()=>appearance.title.dispose();
   },[appearance]);
   return appearance;
 }

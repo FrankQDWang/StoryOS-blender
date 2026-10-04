@@ -12,7 +12,12 @@ function arc(u,width,angle,bend,out){
 }
 export function coverPoint(u,v,time,offset=0,out=[0,0,0,0]){
  const a=openingPose(time).angle,settled=smoothRange(time,1.85,2.75);
- const bend=.05*Math.exp(-a*3)-.58*Math.sin(a)*(1-settled)+.42*settled;
+ // Project gravity onto the lifted cover: sag downward between binding and
+ // fingers, with little transverse load when vertical. Keep the existing
+ // stiffness coefficient and return to the original release/resting shape.
+ const held=1-smoothRange(time,1.90,2.10);
+ const load=-.58*Math.sin(a)+held*.58*Math.sin(a)*(1+Math.cos(a));
+ const bend=.05*Math.exp(-a*3)+load*(1-settled)+.42*settled;
  arc(u,BOOK.coverWidth,a,bend,out);
  const ripple=.006*Math.sin(Math.PI*u)*Math.sin(v*Math.PI*2)*Math.sin(a);
  out[0]+=BOOK.coverRoot-Math.sin(out[3])*offset;

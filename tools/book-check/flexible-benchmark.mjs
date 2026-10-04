@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import {BOOK_MATERIALS} from '../../apps/web/src/book-materials.mjs';
 
-const out='evidence/flexible-book-20261004/performance';await fs.mkdir(out,{recursive:true});
+const out=process.env.BOOK_CHECK_OUT??'evidence/flexible-book-20261004/performance';await fs.mkdir(out,{recursive:true});
 const context=await chromium.launchPersistentContext('.cache/flexible-book/benchmark-chrome',{
  channel:'chrome',headless:true,viewport:{width:1512,height:751},deviceScaleFactor:1,
  args:['--no-first-run','--disable-background-networking'],
@@ -48,7 +48,7 @@ await context.addInitScript(fixture=>{
  },true);
 },fixture);
 await cdp.send('Network.enable');
-const supplement=false;
+const supplement=process.env.BOOK_CHECK_SUPPLEMENT==='1';
 const rows=supplement?JSON.parse(await fs.readFile(`${out}/benchmark-raw.json`)).rows:[];
 for(const network of (supplement?['20mbps-50ms']:['local','20mbps-50ms'])){
  await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:network==='local'?0:50,downloadThroughput:network==='local'?-1:20_000_000/8,uploadThroughput:network==='local'?-1:10_000_000/8});
