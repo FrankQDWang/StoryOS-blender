@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-05",
+  "url": "http://127.0.0.1:4173/",
+  "browser": "User Chrome 153, existing five-book overview tab",
+  "method": "CDP Performance.getMetrics deltas, no navigation or app code changes. ProcessTime delta / Timestamp delta reports one-core-equivalent CPU, not whole-machine utilization. Existing All Works panel pauses Canvas for the control condition.",
+  "viewport": {"width":1512,"height":695,"devicePixelRatio":2,"canvasWidth":2268,"canvasHeight":1042,"visibility":"visible","focused":true},
+  "samples": [
+    {"condition":"overview idle 1","seconds":21.914349,"processCPUPercent":28.652158,"mainThreadBusyPercent":24.021138,"scriptPercent":22.053806,"jsHeapMiB":103.442429},
+    {"condition":"overview idle 2","seconds":35.277164,"processCPUPercent":30.174523,"mainThreadBusyPercent":25.784315,"scriptPercent":23.898976,"jsHeapMiB":96.491528},
+    {"condition":"All Works panel, scene paused","seconds":25.373570,"processCPUPercent":0.908532,"mainThreadBusyPercent":0.502846,"scriptPercent":0.097850,"jsHeapMiB":88.581451}
+  ],
+  "animationFrameSample":{"seconds":1.8154,"frames":119,"callbacksPerSecond":65.550292,"note":"Browser RAF cadence, not independent GPU-completed-frame measurement. Existing app HUD also showed 62–65 FPS."},
+  "findings":[
+    "Sustained visible-idle CPU reproduced twice; pausing scene through existing panel reduced renderer process CPU by approximately 97%.",
+    "Scene.jsx Canvas runs always while visible and no panel is open. Hearth, particles and table animation continue in idle overview.",
+    "Two point-light shadow maps and multisampling/Bloom/Vignette execute within the continuous render pipeline. Individual cost was not isolated.",
+    "SoftBook.mjs updateSoftBook skips geometry recalculation for unchanged time; idle closed-book geometry recalculation hypothesis is not supported.",
+    "Visibility listener already switches hidden page to demand. This diagnosis concerns a visible idle page, not proof of hidden-tab continuous rendering.",
+    "Other busy host processes were observed; their resource usage is not attributed to this page. GPU-specific utilization and memory leakage were not measured."
+  ],
+  "limitations":"Profiler.enable was unavailable through the browser capability; five-second awaited evaluation exceeded its three-second command timeout, then a 1.8-second read-only RAF sample succeeded. No CPU call-stack profile or individual-pass ablation was obtained.",
+  "recommendation":"Next optimization: cache unchanged point-light shadow maps with correct dynamic invalidation; measure before/after. Consider lower idle animation cadence separately while preserving full interaction/opening cadence and approved appearance.",
+  "cleanup":"Closed All Works panel and verified original overview; disabled CDP Performance collection. No runtime source, asset, preference, or library-data changes."
+}
