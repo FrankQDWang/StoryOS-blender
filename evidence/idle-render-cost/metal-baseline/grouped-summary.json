@@ -1,0 +1,1342 @@
+{
+  "method": "Consecutive nonempty command-buffer pattern 16+16+4 encoders = one WebGL render plus browser compositor; active interval union for target GPU pid only. Pattern inference; verify group cadence against page RAF before treating as frame time.",
+  "groups": 266,
+  "patternCounts": {
+    "4": 267,
+    "16": 532
+  },
+  "durationSeconds": 5.103267791,
+  "gpuActiveUnionMsMedian": 21.262561499999997,
+  "rows": [
+    {
+      "start": 522639833,
+      "gpuActiveUnionMs": 25.201377,
+      "spanMs": 26.315208
+    },
+    {
+      "start": 547378958,
+      "gpuActiveUnionMs": 24.813999,
+      "spanMs": 38.566417
+    },
+    {
+      "start": 570325333,
+      "gpuActiveUnionMs": 22.208873,
+      "spanMs": 25.133208
+    },
+    {
+      "start": 591266041,
+      "gpuActiveUnionMs": 22.966704,
+      "spanMs": 36.806209
+    },
+    {
+      "start": 609979041,
+      "gpuActiveUnionMs": 16.218543,
+      "spanMs": 17.716791
+    },
+    {
+      "start": 630725000,
+      "gpuActiveUnionMs": 24.858747,
+      "spanMs": 34.971541
+    },
+    {
+      "start": 646550500,
+      "gpuActiveUnionMs": 15.499122,
+      "spanMs": 33.40225
+    },
+    {
+      "start": 669331208,
+      "gpuActiveUnionMs": 18.247335,
+      "spanMs": 24.21075
+    },
+    {
+      "start": 683952708,
+      "gpuActiveUnionMs": 16.372542,
+      "spanMs": 23.59825
+    },
+    {
+      "start": 697324916,
+      "gpuActiveUnionMs": 17.662994,
+      "spanMs": 22.907708
+    },
+    {
+      "start": 711063375,
+      "gpuActiveUnionMs": 23.901997,
+      "spanMs": 29.404375
+    },
+    {
+      "start": 723673791,
+      "gpuActiveUnionMs": 27.662498,
+      "spanMs": 33.145958
+    },
+    {
+      "start": 744559791,
+      "gpuActiveUnionMs": 21.964374,
+      "spanMs": 40.228875
+    },
+    {
+      "start": 768049708,
+      "gpuActiveUnionMs": 20.941958,
+      "spanMs": 21.968292
+    },
+    {
+      "start": 787224166,
+      "gpuActiveUnionMs": 26.196284,
+      "spanMs": 39.423958
+    },
+    {
+      "start": 808024291,
+      "gpuActiveUnionMs": 16.480834,
+      "spanMs": 34.280916
+    },
+    {
+      "start": 830229541,
+      "gpuActiveUnionMs": 22.807913,
+      "spanMs": 32.251541
+    },
+    {
+      "start": 846391541,
+      "gpuActiveUnionMs": 17.415751,
+      "spanMs": 34.572584
+    },
+    {
+      "start": 868354458,
+      "gpuActiveUnionMs": 25.989461,
+      "spanMs": 34.814917
+    },
+    {
+      "start": 883991375,
+      "gpuActiveUnionMs": 18.34041,
+      "spanMs": 33.690208
+    },
+    {
+      "start": 905692750,
+      "gpuActiveUnionMs": 21.311701,
+      "spanMs": 24.319583
+    },
+    {
+      "start": 920805375,
+      "gpuActiveUnionMs": 25.499585,
+      "spanMs": 39.764625
+    },
+    {
+      "start": 943041708,
+      "gpuActiveUnionMs": 16.672714,
+      "spanMs": 16.917458
+    },
+    {
+      "start": 967148500,
+      "gpuActiveUnionMs": 26.470496,
+      "spanMs": 33.027458
+    },
+    {
+      "start": 979017333,
+      "gpuActiveUnionMs": 17.267959,
+      "spanMs": 20.937417
+    },
+    {
+      "start": 1002898666,
+      "gpuActiveUnionMs": 18.679211,
+      "spanMs": 29.363416
+    },
+    {
+      "start": 1021346750,
+      "gpuActiveUnionMs": 30.02846,
+      "spanMs": 41.380458
+    },
+    {
+      "start": 1036674208,
+      "gpuActiveUnionMs": 21.663497,
+      "spanMs": 39.07375
+    },
+    {
+      "start": 1066713958,
+      "gpuActiveUnionMs": 19.907252,
+      "spanMs": 38.797209
+    },
+    {
+      "start": 1085929541,
+      "gpuActiveUnionMs": 17.940167,
+      "spanMs": 32.214625
+    },
+    {
+      "start": 1107932666,
+      "gpuActiveUnionMs": 23.909122,
+      "spanMs": 33.062833
+    },
+    {
+      "start": 1121765958,
+      "gpuActiveUnionMs": 22.894539,
+      "spanMs": 24.292208
+    },
+    {
+      "start": 1143518041,
+      "gpuActiveUnionMs": 19.588675,
+      "spanMs": 34.124875
+    },
+    {
+      "start": 1166297125,
+      "gpuActiveUnionMs": 22.421834,
+      "spanMs": 22.825583
+    },
+    {
+      "start": 1183571541,
+      "gpuActiveUnionMs": 22.406415,
+      "spanMs": 39.930292
+    },
+    {
+      "start": 1204950458,
+      "gpuActiveUnionMs": 16.848544,
+      "spanMs": 35.929042
+    },
+    {
+      "start": 1227405833,
+      "gpuActiveUnionMs": 23.366425,
+      "spanMs": 34.201583
+    },
+    {
+      "start": 1243132250,
+      "gpuActiveUnionMs": 18.331582,
+      "spanMs": 36.023208
+    },
+    {
+      "start": 1266486791,
+      "gpuActiveUnionMs": 24.734537,
+      "spanMs": 34.501583
+    },
+    {
+      "start": 1282486500,
+      "gpuActiveUnionMs": 22.924583,
+      "spanMs": 37.909125
+    },
+    {
+      "start": 1304268083,
+      "gpuActiveUnionMs": 19.345414,
+      "spanMs": 22.553958
+    },
+    {
+      "start": 1322491875,
+      "gpuActiveUnionMs": 25.887087,
+      "spanMs": 36.379833
+    },
+    {
+      "start": 1339100125,
+      "gpuActiveUnionMs": 18.317749,
+      "spanMs": 19.523417
+    },
+    {
+      "start": 1361043791,
+      "gpuActiveUnionMs": 25.223503,
+      "spanMs": 35.471291
+    },
+    {
+      "start": 1376687333,
+      "gpuActiveUnionMs": 15.001,
+      "spanMs": 17.553875
+    },
+    {
+      "start": 1400327125,
+      "gpuActiveUnionMs": 21.119537,
+      "spanMs": 31.410583
+    },
+    {
+      "start": 1414073791,
+      "gpuActiveUnionMs": 16.231248,
+      "spanMs": 30.128125
+    },
+    {
+      "start": 1434607333,
+      "gpuActiveUnionMs": 23.884955,
+      "spanMs": 32.316416
+    },
+    {
+      "start": 1450056583,
+      "gpuActiveUnionMs": 18.977713,
+      "spanMs": 29.717375
+    },
+    {
+      "start": 1470663416,
+      "gpuActiveUnionMs": 24.527791,
+      "spanMs": 35.268041
+    },
+    {
+      "start": 1486597583,
+      "gpuActiveUnionMs": 23.772913,
+      "spanMs": 37.855791
+    },
+    {
+      "start": 1509057833,
+      "gpuActiveUnionMs": 16.922996,
+      "spanMs": 17.906791
+    },
+    {
+      "start": 1530101000,
+      "gpuActiveUnionMs": 24.310127,
+      "spanMs": 33.6545
+    },
+    {
+      "start": 1546038541,
+      "gpuActiveUnionMs": 20.150714,
+      "spanMs": 20.873333
+    },
+    {
+      "start": 1567121708,
+      "gpuActiveUnionMs": 24.733878,
+      "spanMs": 36.011416
+    },
+    {
+      "start": 1585093333,
+      "gpuActiveUnionMs": 21.484164,
+      "spanMs": 36.154208
+    },
+    {
+      "start": 1606273958,
+      "gpuActiveUnionMs": 21.373415,
+      "spanMs": 34.569584
+    },
+    {
+      "start": 1628203541,
+      "gpuActiveUnionMs": 23.061122,
+      "spanMs": 34.56825
+    },
+    {
+      "start": 1644765916,
+      "gpuActiveUnionMs": 26.357748,
+      "spanMs": 39.929167
+    },
+    {
+      "start": 1666265750,
+      "gpuActiveUnionMs": 24.803039,
+      "spanMs": 40.083042
+    },
+    {
+      "start": 1687616708,
+      "gpuActiveUnionMs": 24.466961,
+      "spanMs": 25.477833
+    },
+    {
+      "start": 1708519875,
+      "gpuActiveUnionMs": 26.013589,
+      "spanMs": 40.862584
+    },
+    {
+      "start": 1732336166,
+      "gpuActiveUnionMs": 17.967632,
+      "spanMs": 18.927708
+    },
+    {
+      "start": 1756141791,
+      "gpuActiveUnionMs": 19.157951,
+      "spanMs": 25.440959
+    },
+    {
+      "start": 1770731958,
+      "gpuActiveUnionMs": 22.115581,
+      "spanMs": 24.985541
+    },
+    {
+      "start": 1785579375,
+      "gpuActiveUnionMs": 21.746546,
+      "spanMs": 38.129875
+    },
+    {
+      "start": 1808234416,
+      "gpuActiveUnionMs": 18.823834,
+      "spanMs": 36.109625
+    },
+    {
+      "start": 1827953500,
+      "gpuActiveUnionMs": 24.399292,
+      "spanMs": 34.810166
+    },
+    {
+      "start": 1846801958,
+      "gpuActiveUnionMs": 18.737338,
+      "spanMs": 33.118
+    },
+    {
+      "start": 1868841958,
+      "gpuActiveUnionMs": 23.387623,
+      "spanMs": 33.596917
+    },
+    {
+      "start": 1884426833,
+      "gpuActiveUnionMs": 19.838171,
+      "spanMs": 33.042583
+    },
+    {
+      "start": 1905177416,
+      "gpuActiveUnionMs": 21.22979,
+      "spanMs": 24.666625
+    },
+    {
+      "start": 1921273250,
+      "gpuActiveUnionMs": 25.419418,
+      "spanMs": 33.949958
+    },
+    {
+      "start": 1944396458,
+      "gpuActiveUnionMs": 20.052957,
+      "spanMs": 20.518958
+    },
+    {
+      "start": 1965383625,
+      "gpuActiveUnionMs": 25.327787,
+      "spanMs": 37.329
+    },
+    {
+      "start": 1984510833,
+      "gpuActiveUnionMs": 21.249041,
+      "spanMs": 41.701917
+    },
+    {
+      "start": 2005803708,
+      "gpuActiveUnionMs": 18.441042,
+      "spanMs": 34.903958
+    },
+    {
+      "start": 2028342875,
+      "gpuActiveUnionMs": 21.588833,
+      "spanMs": 34.52225
+    },
+    {
+      "start": 2044314666,
+      "gpuActiveUnionMs": 26.210212,
+      "spanMs": 36.348542
+    },
+    {
+      "start": 2066031375,
+      "gpuActiveUnionMs": 17.678372,
+      "spanMs": 34.625334
+    },
+    {
+      "start": 2089100291,
+      "gpuActiveUnionMs": 15.31646,
+      "spanMs": 15.595042
+    },
+    {
+      "start": 2103340250,
+      "gpuActiveUnionMs": 24.611628,
+      "spanMs": 33.500042
+    },
+    {
+      "start": 2116877041,
+      "gpuActiveUnionMs": 23.77221,
+      "spanMs": 41.448458
+    },
+    {
+      "start": 2139978625,
+      "gpuActiveUnionMs": 16.917417,
+      "spanMs": 31.570291
+    },
+    {
+      "start": 2162217833,
+      "gpuActiveUnionMs": 21.45837,
+      "spanMs": 25.101292
+    },
+    {
+      "start": 2174794291,
+      "gpuActiveUnionMs": 23.446792,
+      "spanMs": 35.134667
+    },
+    {
+      "start": 2198450791,
+      "gpuActiveUnionMs": 16.67838,
+      "spanMs": 32.901375
+    },
+    {
+      "start": 2218589750,
+      "gpuActiveUnionMs": 22.910498,
+      "spanMs": 28.792
+    },
+    {
+      "start": 2234556125,
+      "gpuActiveUnionMs": 19.871919,
+      "spanMs": 32.974959
+    },
+    {
+      "start": 2252440041,
+      "gpuActiveUnionMs": 23.61838,
+      "spanMs": 31.809958
+    },
+    {
+      "start": 2270530791,
+      "gpuActiveUnionMs": 19.115957,
+      "spanMs": 32.80875
+    },
+    {
+      "start": 2290405041,
+      "gpuActiveUnionMs": 21.076539,
+      "spanMs": 22.531833
+    },
+    {
+      "start": 2306074291,
+      "gpuActiveUnionMs": 18.167037,
+      "spanMs": 31.020333
+    },
+    {
+      "start": 2326729958,
+      "gpuActiveUnionMs": 21.521168,
+      "spanMs": 22.350375
+    },
+    {
+      "start": 2340275750,
+      "gpuActiveUnionMs": 18.952628,
+      "spanMs": 33.804667
+    },
+    {
+      "start": 2361353375,
+      "gpuActiveUnionMs": 21.934836,
+      "spanMs": 34.916917
+    },
+    {
+      "start": 2377920375,
+      "gpuActiveUnionMs": 17.486085,
+      "spanMs": 26.305708
+    },
+    {
+      "start": 2399679500,
+      "gpuActiveUnionMs": 22.383497,
+      "spanMs": 31.766958
+    },
+    {
+      "start": 2412771625,
+      "gpuActiveUnionMs": 20.809502,
+      "spanMs": 29.509292
+    },
+    {
+      "start": 2434476083,
+      "gpuActiveUnionMs": 18.288169,
+      "spanMs": 34.737125
+    },
+    {
+      "start": 2452943708,
+      "gpuActiveUnionMs": 18.490252,
+      "spanMs": 25.498125
+    },
+    {
+      "start": 2472356625,
+      "gpuActiveUnionMs": 20.480043,
+      "spanMs": 41.57275
+    },
+    {
+      "start": 2495843875,
+      "gpuActiveUnionMs": 19.413836,
+      "spanMs": 22.831292
+    },
+    {
+      "start": 2518397166,
+      "gpuActiveUnionMs": 17.863837,
+      "spanMs": 26.581375
+    },
+    {
+      "start": 2533810750,
+      "gpuActiveUnionMs": 21.67412,
+      "spanMs": 23.497708
+    },
+    {
+      "start": 2547721916,
+      "gpuActiveUnionMs": 18.860171,
+      "spanMs": 34.763333
+    },
+    {
+      "start": 2569092166,
+      "gpuActiveUnionMs": 21.374918,
+      "spanMs": 34.845458
+    },
+    {
+      "start": 2585144208,
+      "gpuActiveUnionMs": 24.249332,
+      "spanMs": 31.037291
+    },
+    {
+      "start": 2606658708,
+      "gpuActiveUnionMs": 17.881746,
+      "spanMs": 32.653125
+    },
+    {
+      "start": 2627126875,
+      "gpuActiveUnionMs": 24.705497,
+      "spanMs": 34.16975
+    },
+    {
+      "start": 2643896541,
+      "gpuActiveUnionMs": 15.353123,
+      "spanMs": 29.860292
+    },
+    {
+      "start": 2664617583,
+      "gpuActiveUnionMs": 24.540039,
+      "spanMs": 25.159416
+    },
+    {
+      "start": 2676306625,
+      "gpuActiveUnionMs": 19.287207,
+      "spanMs": 30.426834
+    },
+    {
+      "start": 2699757416,
+      "gpuActiveUnionMs": 19.905666,
+      "spanMs": 20.277584
+    },
+    {
+      "start": 2714123041,
+      "gpuActiveUnionMs": 24.99654,
+      "spanMs": 39.523917
+    },
+    {
+      "start": 2733435125,
+      "gpuActiveUnionMs": 17.525874,
+      "spanMs": 37.072666
+    },
+    {
+      "start": 2757185958,
+      "gpuActiveUnionMs": 20.576208,
+      "spanMs": 27.154083
+    },
+    {
+      "start": 2774425083,
+      "gpuActiveUnionMs": 25.09846,
+      "spanMs": 34.3105
+    },
+    {
+      "start": 2789229083,
+      "gpuActiveUnionMs": 23.627878,
+      "spanMs": 34.98525
+    },
+    {
+      "start": 2813711083,
+      "gpuActiveUnionMs": 24.668459,
+      "spanMs": 38.442541
+    },
+    {
+      "start": 2832302291,
+      "gpuActiveUnionMs": 18.272083,
+      "spanMs": 22.064417
+    },
+    {
+      "start": 2854767916,
+      "gpuActiveUnionMs": 25.500998,
+      "spanMs": 32.300416
+    },
+    {
+      "start": 2869126458,
+      "gpuActiveUnionMs": 19.480785,
+      "spanMs": 24.360083
+    },
+    {
+      "start": 2889908250,
+      "gpuActiveUnionMs": 23.244583,
+      "spanMs": 32.621417
+    },
+    {
+      "start": 2906997083,
+      "gpuActiveUnionMs": 17.642294,
+      "spanMs": 24.928125
+    },
+    {
+      "start": 2925548041,
+      "gpuActiveUnionMs": 22.541462,
+      "spanMs": 34.122708
+    },
+    {
+      "start": 2944720666,
+      "gpuActiveUnionMs": 16.624205,
+      "spanMs": 31.62275
+    },
+    {
+      "start": 2963414208,
+      "gpuActiveUnionMs": 17.240917,
+      "spanMs": 23.367792
+    },
+    {
+      "start": 2979419833,
+      "gpuActiveUnionMs": 17.583419,
+      "spanMs": 23.991708
+    },
+    {
+      "start": 2992653833,
+      "gpuActiveUnionMs": 25.833831,
+      "spanMs": 33.45375
+    },
+    {
+      "start": 3006730083,
+      "gpuActiveUnionMs": 16.962415,
+      "spanMs": 31.887458
+    },
+    {
+      "start": 3029137000,
+      "gpuActiveUnionMs": 19.734958,
+      "spanMs": 23.385417
+    },
+    {
+      "start": 3042119166,
+      "gpuActiveUnionMs": 17.535793,
+      "spanMs": 32.177917
+    },
+    {
+      "start": 3063786708,
+      "gpuActiveUnionMs": 23.566209,
+      "spanMs": 24.172166
+    },
+    {
+      "start": 3076530166,
+      "gpuActiveUnionMs": 20.110543,
+      "spanMs": 35.238458
+    },
+    {
+      "start": 3099308625,
+      "gpuActiveUnionMs": 16.59171,
+      "spanMs": 36.026917
+    },
+    {
+      "start": 3116127041,
+      "gpuActiveUnionMs": 19.278207,
+      "spanMs": 33.514167
+    },
+    {
+      "start": 3138334791,
+      "gpuActiveUnionMs": 22.462582,
+      "spanMs": 34.056917
+    },
+    {
+      "start": 3152381416,
+      "gpuActiveUnionMs": 28.179003,
+      "spanMs": 36.113959
+    },
+    {
+      "start": 3175512583,
+      "gpuActiveUnionMs": 26.087415,
+      "spanMs": 41.015333
+    },
+    {
+      "start": 3199121625,
+      "gpuActiveUnionMs": 20.449002,
+      "spanMs": 22.934125
+    },
+    {
+      "start": 3220900208,
+      "gpuActiveUnionMs": 24.51321,
+      "spanMs": 36.007208
+    },
+    {
+      "start": 3236476250,
+      "gpuActiveUnionMs": 16.176583,
+      "spanMs": 22.607375
+    },
+    {
+      "start": 3259710208,
+      "gpuActiveUnionMs": 26.216375,
+      "spanMs": 32.510959
+    },
+    {
+      "start": 3273237583,
+      "gpuActiveUnionMs": 16.181498,
+      "spanMs": 25.400375
+    },
+    {
+      "start": 3295723166,
+      "gpuActiveUnionMs": 22.168713,
+      "spanMs": 33.698334
+    },
+    {
+      "start": 3312728000,
+      "gpuActiveUnionMs": 23.18191,
+      "spanMs": 40.515125
+    },
+    {
+      "start": 3333691583,
+      "gpuActiveUnionMs": 17.760704,
+      "spanMs": 31.590041
+    },
+    {
+      "start": 3356257041,
+      "gpuActiveUnionMs": 18.824289,
+      "spanMs": 26.305875
+    },
+    {
+      "start": 3369767958,
+      "gpuActiveUnionMs": 25.518958,
+      "spanMs": 34.481458
+    },
+    {
+      "start": 3385047166,
+      "gpuActiveUnionMs": 27.04408,
+      "spanMs": 38.065708
+    },
+    {
+      "start": 3407160375,
+      "gpuActiveUnionMs": 15.809247,
+      "spanMs": 16.080083
+    },
+    {
+      "start": 3430165666,
+      "gpuActiveUnionMs": 22.293168,
+      "spanMs": 31.846583
+    },
+    {
+      "start": 3442941666,
+      "gpuActiveUnionMs": 16.885833,
+      "spanMs": 17.278
+    },
+    {
+      "start": 3464412625,
+      "gpuActiveUnionMs": 23.819463,
+      "spanMs": 32.112667
+    },
+    {
+      "start": 3478880041,
+      "gpuActiveUnionMs": 21.179999,
+      "spanMs": 37.764792
+    },
+    {
+      "start": 3499674666,
+      "gpuActiveUnionMs": 19.652332,
+      "spanMs": 32.405375
+    },
+    {
+      "start": 3519538875,
+      "gpuActiveUnionMs": 14.591417,
+      "spanMs": 26.136041
+    },
+    {
+      "start": 3535205666,
+      "gpuActiveUnionMs": 25.142712,
+      "spanMs": 31.328292
+    },
+    {
+      "start": 3548204958,
+      "gpuActiveUnionMs": 25.074749,
+      "spanMs": 41.188167
+    },
+    {
+      "start": 3569896583,
+      "gpuActiveUnionMs": 17.896163,
+      "spanMs": 26.093416
+    },
+    {
+      "start": 3591776458,
+      "gpuActiveUnionMs": 21.524964,
+      "spanMs": 32.342334
+    },
+    {
+      "start": 3608343791,
+      "gpuActiveUnionMs": 19.547004,
+      "spanMs": 20.5875
+    },
+    {
+      "start": 3628251916,
+      "gpuActiveUnionMs": 23.275416,
+      "spanMs": 35.200375
+    },
+    {
+      "start": 3646746083,
+      "gpuActiveUnionMs": 17.15129,
+      "spanMs": 19.314625
+    },
+    {
+      "start": 3666300500,
+      "gpuActiveUnionMs": 24.179459,
+      "spanMs": 33.701083
+    },
+    {
+      "start": 3682750375,
+      "gpuActiveUnionMs": 20.228875,
+      "spanMs": 38.487709
+    },
+    {
+      "start": 3703543041,
+      "gpuActiveUnionMs": 18.684034,
+      "spanMs": 31.650666
+    },
+    {
+      "start": 3724141041,
+      "gpuActiveUnionMs": 23.279538,
+      "spanMs": 32.183958
+    },
+    {
+      "start": 3738577208,
+      "gpuActiveUnionMs": 17.790994,
+      "spanMs": 28.518542
+    },
+    {
+      "start": 3759356416,
+      "gpuActiveUnionMs": 21.749375,
+      "spanMs": 28.605416
+    },
+    {
+      "start": 3773546458,
+      "gpuActiveUnionMs": 26.117457,
+      "spanMs": 27.248
+    },
+    {
+      "start": 3791161833,
+      "gpuActiveUnionMs": 23.782248,
+      "spanMs": 39.122125
+    },
+    {
+      "start": 3813123041,
+      "gpuActiveUnionMs": 20.500376,
+      "spanMs": 22.125583
+    },
+    {
+      "start": 3834468708,
+      "gpuActiveUnionMs": 19.792621,
+      "spanMs": 32.335542
+    },
+    {
+      "start": 3854629000,
+      "gpuActiveUnionMs": 17.564125,
+      "spanMs": 29.696291
+    },
+    {
+      "start": 3870162333,
+      "gpuActiveUnionMs": 24.579208,
+      "spanMs": 34.8205
+    },
+    {
+      "start": 3887440625,
+      "gpuActiveUnionMs": 18.852541,
+      "spanMs": 36.413125
+    },
+    {
+      "start": 3908026500,
+      "gpuActiveUnionMs": 19.45946,
+      "spanMs": 33.771584
+    },
+    {
+      "start": 3929000458,
+      "gpuActiveUnionMs": 25.167121,
+      "spanMs": 35.700916
+    },
+    {
+      "start": 3946856083,
+      "gpuActiveUnionMs": 23.610375,
+      "spanMs": 25.7075
+    },
+    {
+      "start": 3967642250,
+      "gpuActiveUnionMs": 18.515918,
+      "spanMs": 36.863625
+    },
+    {
+      "start": 3992345500,
+      "gpuActiveUnionMs": 23.436874,
+      "spanMs": 24.158
+    },
+    {
+      "start": 4008205750,
+      "gpuActiveUnionMs": 17.433585,
+      "spanMs": 29.748292
+    },
+    {
+      "start": 4029527125,
+      "gpuActiveUnionMs": 20.571167,
+      "spanMs": 22.887416
+    },
+    {
+      "start": 4044193750,
+      "gpuActiveUnionMs": 26.269624,
+      "spanMs": 40.783708
+    },
+    {
+      "start": 4064478041,
+      "gpuActiveUnionMs": 18.347544,
+      "spanMs": 39.492125
+    },
+    {
+      "start": 4089408458,
+      "gpuActiveUnionMs": 23.881414,
+      "spanMs": 32.596167
+    },
+    {
+      "start": 4107335333,
+      "gpuActiveUnionMs": 18.943083,
+      "spanMs": 32.090875
+    },
+    {
+      "start": 4128171875,
+      "gpuActiveUnionMs": 25.601207,
+      "spanMs": 34.614209
+    },
+    {
+      "start": 4145204125,
+      "gpuActiveUnionMs": 16.769709,
+      "spanMs": 30.81825
+    },
+    {
+      "start": 4166467416,
+      "gpuActiveUnionMs": 25.454332,
+      "spanMs": 27.010667
+    },
+    {
+      "start": 4179266666,
+      "gpuActiveUnionMs": 21.061835,
+      "spanMs": 35.399292
+    },
+    {
+      "start": 4204774541,
+      "gpuActiveUnionMs": 19.833963,
+      "spanMs": 21.851417
+    },
+    {
+      "start": 4221059791,
+      "gpuActiveUnionMs": 24.173499,
+      "spanMs": 36.056959
+    },
+    {
+      "start": 4238756250,
+      "gpuActiveUnionMs": 16.217084,
+      "spanMs": 33.193208
+    },
+    {
+      "start": 4259535000,
+      "gpuActiveUnionMs": 23.595837,
+      "spanMs": 33.521167
+    },
+    {
+      "start": 4276228208,
+      "gpuActiveUnionMs": 22.07646,
+      "spanMs": 39.216917
+    },
+    {
+      "start": 4298468416,
+      "gpuActiveUnionMs": 18.307963,
+      "spanMs": 32.118791
+    },
+    {
+      "start": 4319263583,
+      "gpuActiveUnionMs": 22.423956,
+      "spanMs": 30.528042
+    },
+    {
+      "start": 4333570666,
+      "gpuActiveUnionMs": 18.781415,
+      "spanMs": 21.895
+    },
+    {
+      "start": 4352244375,
+      "gpuActiveUnionMs": 23.651039,
+      "spanMs": 34.099
+    },
+    {
+      "start": 4368055083,
+      "gpuActiveUnionMs": 18.093632,
+      "spanMs": 22.301792
+    },
+    {
+      "start": 4389747875,
+      "gpuActiveUnionMs": 23.552954,
+      "spanMs": 30.967667
+    },
+    {
+      "start": 4403862541,
+      "gpuActiveUnionMs": 13.959874,
+      "spanMs": 16.847875
+    },
+    {
+      "start": 4423436958,
+      "gpuActiveUnionMs": 21.959665,
+      "spanMs": 29.353333
+    },
+    {
+      "start": 4438153208,
+      "gpuActiveUnionMs": 16.978127,
+      "spanMs": 30.999
+    },
+    {
+      "start": 4456866375,
+      "gpuActiveUnionMs": 23.163044,
+      "spanMs": 30.957333
+    },
+    {
+      "start": 4473596375,
+      "gpuActiveUnionMs": 19.271213,
+      "spanMs": 33.892458
+    },
+    {
+      "start": 4493317833,
+      "gpuActiveUnionMs": 23.792956,
+      "spanMs": 34.532625
+    },
+    {
+      "start": 4510062125,
+      "gpuActiveUnionMs": 21.324372,
+      "spanMs": 38.942
+    },
+    {
+      "start": 4532833625,
+      "gpuActiveUnionMs": 18.950326,
+      "spanMs": 22.605958
+    },
+    {
+      "start": 4551062083,
+      "gpuActiveUnionMs": 21.338459,
+      "spanMs": 30.963667
+    },
+    {
+      "start": 4567705875,
+      "gpuActiveUnionMs": 22.488375,
+      "spanMs": 23.71175
+    },
+    {
+      "start": 4585709041,
+      "gpuActiveUnionMs": 17.326039,
+      "spanMs": 27.958416
+    },
+    {
+      "start": 4604312250,
+      "gpuActiveUnionMs": 22.348916,
+      "spanMs": 33.229833
+    },
+    {
+      "start": 4617852958,
+      "gpuActiveUnionMs": 22.345501,
+      "spanMs": 33.511625
+    },
+    {
+      "start": 4639461291,
+      "gpuActiveUnionMs": 16.579965,
+      "spanMs": 32.806417
+    },
+    {
+      "start": 4660914041,
+      "gpuActiveUnionMs": 26.170833,
+      "spanMs": 33.642959
+    },
+    {
+      "start": 4675102458,
+      "gpuActiveUnionMs": 19.969291,
+      "spanMs": 35.871084
+    },
+    {
+      "start": 4697924958,
+      "gpuActiveUnionMs": 21.54816,
+      "spanMs": 23.040625
+    },
+    {
+      "start": 4714540041,
+      "gpuActiveUnionMs": 24.496502,
+      "spanMs": 37.291042
+    },
+    {
+      "start": 4735982791,
+      "gpuActiveUnionMs": 18.245954,
+      "spanMs": 23.660625
+    },
+    {
+      "start": 4756567875,
+      "gpuActiveUnionMs": 19.190587,
+      "spanMs": 27.008916
+    },
+    {
+      "start": 4771608416,
+      "gpuActiveUnionMs": 21.276082,
+      "spanMs": 24.808
+    },
+    {
+      "start": 4786265041,
+      "gpuActiveUnionMs": 23.044339,
+      "spanMs": 38.566417
+    },
+    {
+      "start": 4808737250,
+      "gpuActiveUnionMs": 16.186876,
+      "spanMs": 33.92525
+    },
+    {
+      "start": 4830581291,
+      "gpuActiveUnionMs": 22.228083,
+      "spanMs": 31.651125
+    },
+    {
+      "start": 4845315541,
+      "gpuActiveUnionMs": 19.669794,
+      "spanMs": 33.82725
+    },
+    {
+      "start": 4865922666,
+      "gpuActiveUnionMs": 25.248374,
+      "spanMs": 33.078958
+    },
+    {
+      "start": 4882693458,
+      "gpuActiveUnionMs": 27.032419,
+      "spanMs": 39.848375
+    },
+    {
+      "start": 4903508916,
+      "gpuActiveUnionMs": 17.34404,
+      "spanMs": 22.957333
+    },
+    {
+      "start": 4926424416,
+      "gpuActiveUnionMs": 24.351002,
+      "spanMs": 31.921667
+    },
+    {
+      "start": 4940844625,
+      "gpuActiveUnionMs": 16.936875,
+      "spanMs": 18.244292
+    },
+    {
+      "start": 4960833083,
+      "gpuActiveUnionMs": 16.467041,
+      "spanMs": 25.233167
+    },
+    {
+      "start": 4976643583,
+      "gpuActiveUnionMs": 16.073919,
+      "spanMs": 24.815333
+    },
+    {
+      "start": 4988724541,
+      "gpuActiveUnionMs": 26.176753,
+      "spanMs": 34.818792
+    },
+    {
+      "start": 5004495375,
+      "gpuActiveUnionMs": 14.777829,
+      "spanMs": 31.207041
+    },
+    {
+      "start": 5027641416,
+      "gpuActiveUnionMs": 25.429246,
+      "spanMs": 32.042125
+    },
+    {
+      "start": 5040401166,
+      "gpuActiveUnionMs": 18.300246,
+      "spanMs": 32.724916
+    },
+    {
+      "start": 5062552291,
+      "gpuActiveUnionMs": 23.517919,
+      "spanMs": 26.986708
+    },
+    {
+      "start": 5075714000,
+      "gpuActiveUnionMs": 20.466955,
+      "spanMs": 39.625625
+    },
+    {
+      "start": 5099849250,
+      "gpuActiveUnionMs": 19.915958,
+      "spanMs": 20.676875
+    },
+    {
+      "start": 5120261458,
+      "gpuActiveUnionMs": 16.528293,
+      "spanMs": 25.962667
+    },
+    {
+      "start": 5136098083,
+      "gpuActiveUnionMs": 22.004953,
+      "spanMs": 23.770458
+    },
+    {
+      "start": 5149097250,
+      "gpuActiveUnionMs": 23.809248,
+      "spanMs": 37.50325
+    },
+    {
+      "start": 5171407791,
+      "gpuActiveUnionMs": 20.8865,
+      "spanMs": 38.164625
+    },
+    {
+      "start": 5191013416,
+      "gpuActiveUnionMs": 25.737789,
+      "spanMs": 37.4215
+    },
+    {
+      "start": 5212325416,
+      "gpuActiveUnionMs": 17.583458,
+      "spanMs": 29.474209
+    },
+    {
+      "start": 5233041333,
+      "gpuActiveUnionMs": 25.035462,
+      "spanMs": 34.058917
+    },
+    {
+      "start": 5248204416,
+      "gpuActiveUnionMs": 17.941502,
+      "spanMs": 33.741166
+    },
+    {
+      "start": 5269992708,
+      "gpuActiveUnionMs": 24.673624,
+      "spanMs": 26.324834
+    },
+    {
+      "start": 5284829416,
+      "gpuActiveUnionMs": 23.861501,
+      "spanMs": 33.890208
+    },
+    {
+      "start": 5306816916,
+      "gpuActiveUnionMs": 22.756831,
+      "spanMs": 24.38975
+    },
+    {
+      "start": 5330767416,
+      "gpuActiveUnionMs": 19.724295,
+      "spanMs": 34.769125
+    },
+    {
+      "start": 5353085833,
+      "gpuActiveUnionMs": 14.526376,
+      "spanMs": 27.449625
+    },
+    {
+      "start": 5369627708,
+      "gpuActiveUnionMs": 19.200291,
+      "spanMs": 25.324375
+    },
+    {
+      "start": 5383771541,
+      "gpuActiveUnionMs": 18.978462,
+      "spanMs": 33.096209
+    },
+    {
+      "start": 5398464291,
+      "gpuActiveUnionMs": 21.161501,
+      "spanMs": 34.65375
+    },
+    {
+      "start": 5420187583,
+      "gpuActiveUnionMs": 16.930708,
+      "spanMs": 26.314416
+    },
+    {
+      "start": 5439254750,
+      "gpuActiveUnionMs": 21.235246,
+      "spanMs": 25.730875
+    },
+    {
+      "start": 5449567833,
+      "gpuActiveUnionMs": 26.356839,
+      "spanMs": 50.267458
+    },
+    {
+      "start": 5473629583,
+      "gpuActiveUnionMs": 32.187626,
+      "spanMs": 55.494
+    },
+    {
+      "start": 5504302166,
+      "gpuActiveUnionMs": 35.562671,
+      "spanMs": 101.348792
+    },
+    {
+      "start": 5556754666,
+      "gpuActiveUnionMs": 23.706289,
+      "spanMs": 42.5405
+    },
+    {
+      "start": 5610093333,
+      "gpuActiveUnionMs": 2.757917,
+      "spanMs": 36.042666
+    }
+  ]
+}

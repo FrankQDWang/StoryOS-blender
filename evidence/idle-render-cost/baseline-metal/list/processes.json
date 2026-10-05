@@ -1,0 +1,39 @@
+{
+  "processInfo": [
+    {
+      "type": "browser",
+      "id": 42577,
+      "cpuTime": 2.149058
+    },
+    {
+      "type": "renderer",
+      "id": 42589,
+      "cpuTime": 0.053729
+    },
+    {
+      "type": "renderer",
+      "id": 42590,
+      "cpuTime": 55.24669
+    },
+    {
+      "type": "renderer",
+      "id": 42588,
+      "cpuTime": 0.283274
+    },
+    {
+      "type": "GPU",
+      "id": 42584,
+      "cpuTime": 44.549544
+    },
+    {
+      "type": "network.mojom.NetworkService",
+      "id": 42585,
+      "cpuTime": 0.435038
+    },
+    {
+      "type": "storage.mojom.StorageService",
+      "id": 42586,
+      "cpuTime": 0.044959
+    }
+  ]
+}

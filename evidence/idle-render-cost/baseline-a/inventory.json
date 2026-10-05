@@ -1,0 +1,483 @@
+{
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+  "gpuTimer": true,
+  "lights": [
+    {
+      "type": "AmbientLight",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "castShadow": false,
+      "intensity": 0.1
+    },
+    {
+      "type": "HemisphereLight",
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "castShadow": false,
+      "intensity": 0.3
+    },
+    {
+      "type": "DirectionalLight",
+      "position": [
+        0,
+        4,
+        3
+      ],
+      "castShadow": false,
+      "intensity": 0.12
+    },
+    {
+      "type": "DirectionalLight",
+      "position": [
+        -1,
+        5,
+        -6
+      ],
+      "castShadow": false,
+      "intensity": 0.58
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        0,
+        3.15,
+        -3.8
+      ],
+      "castShadow": false,
+      "distance": 10,
+      "intensity": 6
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        1.69,
+        1.7,
+        -3.6
+      ],
+      "castShadow": true,
+      "distance": 5,
+      "intensity": 6.2
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        -3.72,
+        0.84,
+        -1.15
+      ],
+      "castShadow": true,
+      "distance": 10,
+      "intensity": 11.847462778701388
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        -4.1,
+        0.7,
+        -1.15
+      ],
+      "castShadow": false,
+      "distance": 1.8,
+      "intensity": 1.1
+    },
+    {
+      "type": "RectAreaLight",
+      "position": [
+        -3.4,
+        0.72,
+        -1.15
+      ],
+      "castShadow": false,
+      "intensity": 5
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        -4.05,
+        2.55,
+        2.1
+      ],
+      "castShadow": false,
+      "distance": 8,
+      "intensity": 3.8
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        -3.76,
+        2.55,
+        -1.15
+      ],
+      "castShadow": false,
+      "distance": 4.2,
+      "intensity": 3.6
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        4.05,
+        2.55,
+        2.1
+      ],
+      "castShadow": false,
+      "distance": 8,
+      "intensity": 5.2
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        4.05,
+        2.55,
+        -2.95
+      ],
+      "castShadow": false,
+      "distance": 7,
+      "intensity": 4.6
+    },
+    {
+      "type": "PointLight",
+      "position": [
+        0,
+        0.45,
+        0
+      ],
+      "castShadow": false,
+      "distance": 3,
+      "intensity": 0.45
+    }
+  ],
+  "casters": [
+    {
+      "name": "",
+      "type": "Mesh",
+      "visible": true,
+      "material": ""
+    },
+    {
+      "name": "",
+      "type": "Mesh",
+      "visible": true,
+      "material": ""
+    },
+    {
+      "name": "",
+      "type": "Mesh",
+      "visible": true,
+      "material": ""
+    },
+    {
+      "name": "Room_Black",
+      "type": "Mesh",
+      "visible": true,
+      "material": "Black"
+    },
+    {
+      "name": "Room_DarkTimber",
+      "type": "Mesh",
+      "visible": true,
+      "material": "DarkTimber"
+    },
+    {
+      "name": "Room_DryFoliage",
+      "type": "Mesh",
+      "visible": true,
+      "material": "DryFoliage"
+    },
+    {
+      "name": "Room_FloorWood",
+      "type": "Mesh",
+      "visible": true,
+      "material": "FloorWood"
+    },
+    {
+      "name": "Room_GlazedUmber",
+      "type": "Mesh",
+      "visible": true,
+      "material": "GlazedUmber"
+    },
+    {
+      "name": "Room_HearthDecor",
+      "type": "Mesh",
+      "visible": true,
+      "material": "HearthDecor"
+    },
+    {
+      "name": "Room_HearthRug",
+      "type": "Mesh",
+      "visible": true,
+      "material": "HearthRug"
+    },
+    {
+      "name": "Room_Iron",
+      "type": "Mesh",
+      "visible": true,
+      "material": "Iron"
+    },
+    {
+      "name": "Room_OldBrass",
+      "type": "Mesh",
+      "visible": true,
+      "material": "OldBrass"
+    },
+    {
+      "name": "Room_Paper",
+      "type": "Mesh",
+      "visible": true,
+      "material": "Paper"
+    },
+    {
+      "name": "Room_ReadingWood",
+      "type": "Mesh",
+      "visible": true,
+      "material": "ReadingWood"
+    },
+    {
+      "name": "Room_RugBorder",
+      "type": "Mesh",
+      "visible": true,
+      "material": "RugBorder"
+    },
+    {
+      "name": "Room_Stone",
+      "type": "Mesh",
+      "visible": true,
+      "material": "Stone"
+    },
+    {
+      "name": "Room_TableSlate",
+      "type": "Mesh",
+      "visible": true,
+      "material": "TableSlate"
+    },
+    {
+      "name": "Room_Timber",
+      "type": "Mesh",
+      "visible": true,
+      "material": "Timber"
+    },
+    {
+      "name": "Room_WarmPlaster",
+      "type": "Mesh",
+      "visible": true,
+      "material": "WarmPlaster"
+    },
+    {
+      "name": "Room_Wax",
+      "type": "Mesh",
+      "visible": true,
+      "material": "Wax"
+    },
+    {
+      "name": "Room_WovenRug",
+      "type": "Mesh",
+      "visible": true,
+      "material": "WovenRug"
+    },
+    {
+      "name": "FlexibleBack",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "LeatherSpine",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundPaperBlock",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleCover",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "ContinuousEndpaper",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf0",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf1",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf2",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleBack",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "LeatherSpine",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundPaperBlock",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleCover",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "ContinuousEndpaper",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf0",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf1",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf2",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleBack",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "LeatherSpine",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundPaperBlock",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleCover",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "ContinuousEndpaper",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf0",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf1",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf2",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleBack",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "LeatherSpine",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundPaperBlock",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleCover",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "ContinuousEndpaper",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf0",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf1",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf2",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleBack",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "LeatherSpine",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundPaperBlock",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "FlexibleCover",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "ContinuousEndpaper",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf0",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf1",
+      "type": "Mesh",
+      "visible": true
+    },
+    {
+      "name": "BoundLeaf2",
+      "type": "Mesh",
+      "visible": true
+    }
+  ]
+}

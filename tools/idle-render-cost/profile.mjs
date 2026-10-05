@@ -1,0 +1,10 @@
+import {chromium} from '../book-check/node_modules/playwright/index.mjs';
+import fs from 'node:fs/promises';
+import {fiveBookPreview} from '../../apps/web/src/five-book-preview.mjs';
+import {initialLibrary} from '../../apps/web/src/library-model.mjs';
+const [out,url]=process.argv.slice(2);await fs.mkdir(out,{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true}),context=await browser.newContext({viewport:{width:1512,height:695},deviceScaleFactor:2});
+await context.addInitScript(f=>localStorage.setItem('storyos.library.demo.v1',JSON.stringify(f)),fiveBookPreview(initialLibrary()));
+const page=await context.newPage(),cdp=await context.newCDPSession(page);await page.goto(url);await page.locator('.room-caption').waitFor();await page.waitForTimeout(3000);
+await cdp.send('Profiler.enable');await cdp.send('Profiler.setSamplingInterval',{interval:500});await cdp.send('Profiler.start');await page.waitForTimeout(8000);const {profile}=await cdp.send('Profiler.stop');await fs.writeFile(`${out}/cpu-profile.json`,JSON.stringify(profile));await browser.close();
+const nodes=new Map(profile.nodes.map(n=>[n.id,n]));const hits=new Map();profile.samples.forEach((id,i)=>hits.set(id,(hits.get(id)||0)+profile.timeDeltas[i]));const rows=[...hits].map(([id,us])=>({us,...nodes.get(id).callFrame})).sort((a,b)=>b.us-a.us);await fs.writeFile(`${out}/cpu-hotspots.json`,JSON.stringify(rows,null,2));console.log(rows.slice(0,15));

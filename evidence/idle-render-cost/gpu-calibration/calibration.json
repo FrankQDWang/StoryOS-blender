@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "label": "empty",
+      "ms": 0,
+      "wall": 0.10000002384185791,
+      "disjoint": false
+    },
+    {
+      "label": "frame",
+      "ms": 19.140958,
+      "wall": 7.799999952316284,
+      "disjoint": false
+    },
+    {
+      "label": "clear",
+      "ms": 2.181083,
+      "wall": 0.10000002384185791,
+      "disjoint": false
+    },
+    {
+      "label": "empty",
+      "ms": 0,
+      "wall": 0,
+      "disjoint": false
+    },
+    {
+      "label": "frame",
+      "ms": 29.989166,
+      "wall": 6.100000023841858,
+      "disjoint": false
+    },
+    {
+      "label": "clear",
+      "ms": 0.580833,
+      "wall": 0.10000002384185791,
+      "disjoint": false
+    },
+    {
+      "label": "empty",
+      "ms": 0,
+      "wall": 0,
+      "disjoint": false
+    },
+    {
+      "label": "frame",
+      "ms": 18.850291,
+      "wall": 7.700000047683716,
+      "disjoint": false
+    },
+    {
+      "label": "clear",
+      "ms": 0.492541,
+      "wall": 0.10000002384185791,
+      "disjoint": false
+    },
+    {
+      "label": "empty",
+      "ms": 0,
+      "wall": 0,
+      "disjoint": false
+    },
+    {
+      "label": "frame",
+      "ms": 31.498583,
+      "wall": 8.899999976158142,
+      "disjoint": false
+    },
+    {
+      "label": "clear",
+      "ms": 0.671416,
+      "wall": 0,
+      "disjoint": false
+    },
+    {
+      "label": "empty",
+      "ms": 0,
+      "wall": 0,
+      "disjoint": false
+    },
+    {
+      "label": "frame",
+      "ms": 21.025833,
+      "wall": 7.199999928474426,
+      "disjoint": false
+    },
+    {
+      "label": "clear",
+      "ms": 0.5525,
+      "wall": 0.10000002384185791,
+      "disjoint": false
+    }
+  ],
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+}
