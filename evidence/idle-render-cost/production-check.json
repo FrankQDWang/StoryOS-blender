@@ -1,0 +1,9 @@
+{
+  "runtimeSourceChanges": [
+    "apps/web/src/Scene.jsx"
+  ],
+  "normalBuildJsFiles": 1,
+  "testMarkerFiles": [],
+  "expectedOnlySceneChanged": true,
+  "testModeAbsentFromNormalBuild": true
+}

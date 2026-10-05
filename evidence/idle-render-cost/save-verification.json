@@ -1,0 +1,8 @@
+{
+  "branch": "codex/idle-render-cost",
+  "runtimeBaseline": "213b492",
+  "retainedImplementation": "4f46cd0",
+  "main": "213b492e80a8368a1a7b9f418c6c60e84b748d90",
+  "runtimeDifferenceFromRetained": [],
+  "qualityAssetsAndDependenciesChanged": []
+}

@@ -1,0 +1,261 @@
+{
+  "cpuMethod": "three interleaved foreground Chrome production runs, median; list uses no-RAF measurement",
+  "gpuMethod": "separate Chrome headless native Metal target-process active-time union / actual scene renders, includes compositing; one window per scenario/version",
+  "rows": [
+    {
+      "scenario": "idle",
+      "baseline": {
+        "cpuMedian": 42.66459164985605,
+        "cpuSamples": [
+          42.50457244004842,
+          42.66459164985605,
+          43.43689602850385
+        ],
+        "cpuMsPerFrameMedian": 4.913614461307397,
+        "fpsMedian": 87.75954551900762,
+        "p95FrameMsMedian": 17.299999999999272,
+        "gpuMsPerFrame": 11.867713185714285,
+        "gpuMeasuredFrames": 210,
+        "gpuSampleFPS": 59.89731888191672,
+        "drawCallsMedian": 1830,
+        "passCPU": {
+          "frames": 211,
+          "mainCalls": 183,
+          "shadowCalls": 1630,
+          "postCalls": 17,
+          "mainCPU": 0.7744075766106917,
+          "shadowCPU": 1.4336492941842824,
+          "postCPU": 0.06872038197178411
+        }
+      },
+      "candidate": {
+        "cpuMedian": 27.141972589983798,
+        "cpuSamples": [
+          28.912067909489732,
+          27.141972589983798,
+          23.062016133648108
+        ],
+        "cpuMsPerFrameMedian": 2.8474159443941485,
+        "fpsMedian": 95.32141815606383,
+        "p95FrameMsMedian": 16.800000000000182,
+        "gpuMsPerFrame": 10.6860566,
+        "gpuMeasuredFrames": 210,
+        "gpuSampleFPS": 59.94861547245218,
+        "drawCallsMedian": 200,
+        "passCPU": {
+          "frames": 211,
+          "mainCalls": 183,
+          "shadowCalls": 0,
+          "postCalls": 17,
+          "mainCPU": 1.9559241719720488,
+          "shadowCPU": 0.008530805461214618,
+          "postCPU": 0.1952606705127734
+        }
+      }
+    },
+    {
+      "scenario": "roam",
+      "baseline": {
+        "cpuMedian": 42.932225497025264,
+        "cpuSamples": [
+          42.932225497025264,
+          43.348374922128855,
+          41.618544846466484
+        ],
+        "cpuMsPerFrameMedian": 4.636680353678726,
+        "fpsMedian": 91.17420306372141,
+        "p95FrameMsMedian": 16.900000000001455,
+        "gpuMsPerFrame": 11.297066220657278,
+        "gpuMeasuredFrames": 213,
+        "gpuSampleFPS": 59.98310335116868,
+        "drawCallsMedian": 1830,
+        "passCPU": {
+          "frames": 213,
+          "mainCalls": 173.7699530516432,
+          "shadowCalls": 1630,
+          "postCalls": 17,
+          "mainCPU": 0.8868544655786433,
+          "shadowCPU": 1.4812206567173274,
+          "postCPU": 0.07840375273440366
+        }
+      },
+      "candidate": {
+        "cpuMedian": 26.572530977862634,
+        "cpuSamples": [
+          26.572530977862634,
+          27.010685518395128,
+          24.73743746954711
+        ],
+        "cpuMsPerFrameMedian": 2.7054950521418584,
+        "fpsMedian": 99.61557746949691,
+        "p95FrameMsMedian": 16.700000000000728,
+        "gpuMsPerFrame": 10.649625953051643,
+        "gpuMeasuredFrames": 213,
+        "gpuSampleFPS": 59.86509274873525,
+        "drawCallsMedian": 200.0,
+        "passCPU": {
+          "frames": 214,
+          "mainCalls": 173.89719626168224,
+          "shadowCalls": 0,
+          "postCalls": 17,
+          "mainCPU": 1.9294392555673545,
+          "shadowCPU": 0.006542057634514069,
+          "postCPU": 0.18878504995987794
+        }
+      }
+    },
+    {
+      "scenario": "opening",
+      "baseline": {
+        "cpuMedian": 49.847805592600935,
+        "cpuSamples": [
+          50.049261988751134,
+          49.847805592600935,
+          49.17721061829784
+        ],
+        "cpuMsPerFrameMedian": 5.286101828025401,
+        "fpsMedian": 94.68085106382979,
+        "p95FrameMsMedian": 16.700000000000728,
+        "gpuMsPerFrame": 11.192379477124183,
+        "gpuMeasuredFrames": 153,
+        "gpuSampleFPS": 57.823129251700685,
+        "drawCallsMedian": 2021.0,
+        "passCPU": {
+          "frames": 154,
+          "mainCalls": 181.7922077922078,
+          "shadowCalls": 1819.5064935064936,
+          "postCalls": 17,
+          "mainCPU": 1.0097402581920871,
+          "shadowCPU": 1.9779220765287227,
+          "postCPU": 0.059090907697553756
+        }
+      },
+      "candidate": {
+        "cpuMedian": 51.24319412463491,
+        "cpuSamples": [
+          51.0642133669728,
+          51.24319412463491,
+          53.47902076881945
+        ],
+        "cpuMsPerFrameMedian": 5.855745491159495,
+        "fpsMedian": 91.32743362831857,
+        "p95FrameMsMedian": 17.099999999998545,
+        "gpuMsPerFrame": 11.420356753246754,
+        "gpuMeasuredFrames": 154,
+        "gpuSampleFPS": 58.17907064601436,
+        "drawCallsMedian": 2021.0,
+        "passCPU": {
+          "frames": 154,
+          "mainCalls": 181.7922077922078,
+          "shadowCalls": 1798.3376623376623,
+          "postCalls": 17,
+          "mainCPU": 1.0532467589749919,
+          "shadowCPU": 1.861038960419692,
+          "postCPU": 0.06103896011005749
+        }
+      }
+    },
+    {
+      "scenario": "creating",
+      "baseline": {
+        "cpuMedian": 26.45310568183086,
+        "cpuSamples": [
+          26.45310568183086,
+          26.265823886403858,
+          31.08348333044481
+        ],
+        "cpuMsPerFrameMedian": 3.2430820472270563,
+        "fpsMedian": 81.5677966101695,
+        "p95FrameMsMedian": 17.200000000004366,
+        "gpuMsPerFrame": 11.58911822857143,
+        "gpuMeasuredFrames": 140,
+        "gpuSampleFPS": 53.578262533486416,
+        "drawCallsMedian": 1830.0,
+        "passCPU": {
+          "frames": 142,
+          "mainCalls": 163.18309859154928,
+          "shadowCalls": 1422.619718309859,
+          "postCalls": 17,
+          "mainCPU": 2.604225349258369,
+          "shadowCPU": 1.145774652420635,
+          "postCPU": 0.07957746361342954
+        }
+      },
+      "candidate": {
+        "cpuMedian": 28.008411134237374,
+        "cpuSamples": [
+          28.008411134237374,
+          27.68839283069709,
+          28.49014585049986
+        ],
+        "cpuMsPerFrameMedian": 3.47852293814668,
+        "fpsMedian": 81.90299836194012,
+        "p95FrameMsMedian": 17.5,
+        "gpuMsPerFrame": 11.731528904411764,
+        "gpuMeasuredFrames": 136,
+        "gpuSampleFPS": 51.829268292682926,
+        "drawCallsMedian": 1830,
+        "passCPU": {
+          "frames": 143,
+          "mainCalls": 163.32167832167832,
+          "shadowCalls": 1414.6853146853148,
+          "postCalls": 17,
+          "mainCPU": 2.579720280387185,
+          "shadowCPU": 1.3307692296021467,
+          "postCPU": 0.08881118831100997
+        }
+      }
+    },
+    {
+      "scenario": "list",
+      "baseline": {
+        "cpuMedian": 0.03675588083404938,
+        "cpuSamples": [
+          0.01844522724041876,
+          1.2635322359048788,
+          0.03675588083404938
+        ],
+        "cpuMsPerFrameMedian": null,
+        "fpsMedian": 0,
+        "p95FrameMsMedian": null,
+        "gpuMsPerFrame": null,
+        "gpuMeasuredFrames": 0,
+        "gpuSampleFPS": 0.0,
+        "drawCallsMedian": 0,
+        "passCPU": {
+          "frames": 0,
+          "mainCalls": null,
+          "shadowCalls": null,
+          "postCalls": null,
+          "mainCPU": null,
+          "shadowCPU": null,
+          "postCPU": null
+        }
+      },
+      "candidate": {
+        "cpuMedian": 0.020308184555234705,
+        "cpuSamples": [
+          0.016813460930910754,
+          0.020308184555234705,
+          0.02239215954517166
+        ],
+        "cpuMsPerFrameMedian": null,
+        "fpsMedian": 0,
+        "p95FrameMsMedian": null,
+        "gpuMsPerFrame": null,
+        "gpuMeasuredFrames": 0,
+        "gpuSampleFPS": 0.0,
+        "drawCallsMedian": 0,
+        "passCPU": {
+          "frames": 0,
+          "mainCalls": null,
+          "shadowCalls": null,
+          "postCalls": null,
+          "mainCPU": null,
+          "shadowCPU": null,
+          "postCPU": null
+        }
+      }
+    }
+  ]
+}

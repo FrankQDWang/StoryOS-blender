@@ -1,0 +1,43 @@
+{
+  "finalIdleReplication": {
+    "noisePercentagePoints": 5.850051775841624,
+    "comparisons": [
+      {
+        "baseline": 42.50457244004842,
+        "final": 28.912067909489732,
+        "dropPercentagePoints": 13.592504530558688,
+        "pass": true
+      },
+      {
+        "baseline": 42.66459164985605,
+        "final": 27.141972589983798,
+        "dropPercentagePoints": 15.522619059872252,
+        "pass": true
+      },
+      {
+        "baseline": 43.43689602850385,
+        "final": 23.062016133648108,
+        "dropPercentagePoints": 20.374879894855745,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "visualIndependent11": "all pixels identical",
+  "visualPersistent9": "all pixels identical",
+  "realChromeFlows": "pass",
+  "loadingWorstIncreasePercent": 1.5325670498084198,
+  "existingTests": {
+    "pass": 17,
+    "fail": 0
+  },
+  "normalProductionBuild": "pass; no test markers",
+  "onlyRetainedRuntimeOptimization": "shadow cache (4f46cd0)",
+  "stages": {
+    "0": "complete",
+    "1": "retained",
+    "2": "reverted",
+    "3": "reverted",
+    "4": "skipped"
+  }
+}

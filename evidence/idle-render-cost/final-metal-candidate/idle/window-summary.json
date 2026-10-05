@@ -1,0 +1,12 @@
+{
+  "scene": "idle",
+  "pid": 38418,
+  "method": "Target Chrome GPU Active intervals union (Vertex/Fragment/Compute, overlap counted once), clipped to recorded wall-clock scenario window, divided by actual WebGL scene renders in that window; includes Chrome compositing. Not command-buffer frame labels, not WebGL timer queries.",
+  "seconds": 3.503,
+  "renderedFrames": 210,
+  "fps": 59.94861547245218,
+  "gpuActiveMs": 2244.071886,
+  "gpuActiveMsPerRenderedFrame": 10.6860566,
+  "gpuBusyPercent": 64.06142980302599,
+  "matchedIntervals": 9876
+}

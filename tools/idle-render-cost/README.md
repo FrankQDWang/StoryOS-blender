@@ -3,7 +3,7 @@
 仅测试构建通过 Vite 插件注入 Probe，应用的正常 `npm run build` 不含此入口、固定时钟或 GPU 查询。
 
 ```sh
-node tools/idle-render-cost/build.mjs baseline
+SOURCE_REF=81a79fc node tools/idle-render-cost/build.mjs baseline
 node tools/idle-render-cost/serve.mjs baseline 4191
 node tools/idle-render-cost/capture.mjs evidence/idle-render-cost/baseline-a http://127.0.0.1:4191
 node tools/idle-render-cost/capture.mjs evidence/idle-render-cost/baseline-b http://127.0.0.1:4191
@@ -27,3 +27,12 @@ python3 tools/idle-render-cost/metal-window.py evidence/idle-render-cost/baselin
 **本机WebGL timer query已被实测判定无效**，Probe原始GPU字段仅保留诊断，不可用其总和验收。Metal原始trace放`.cache/idle-render-cost/native-traces/`，每场景有trace-path.json、导出XML、场景墙钟窗口与实际场景render时间戳。用目标Chrome GPU进程的Active区间并集/该窗口实际render次数衡量每帧GPU活跃时间（包含浏览器合成）。Instruments“Frame #”实际按command buffer编号，不能直接当网页帧。CPU按原来未启用GPU查询的采样独立测量；分段CPU和绘制次数使用count-passes.mjs。
 
 smoke.mjs仅走用户要求的主流程并保存图像，不是新业务测试套件。idle-pair.mjs交错采集上一保留状态和候选，各三轮；load.mjs交错测冷/暖首屏和首次手部，各三轮。所有生产页面使用独立Chromecontext。
+
+
+## 最终复测与保存
+
+原始运行源码基线为213b492，81a79fc是附测量脚本的同源码检查点。使用SOURCE_REF固定应用src；本轮public/assets和依赖均未改。未来若改变了资产或依赖，须在该提交的完整checkout中重建，不能混用新资产。
+
+最终矩阵命令：`HEADED=1 node tools/idle-render-cost/matrix.mjs <out> <baseline-url> <candidate-url>`。正常活跃场景取前三轮；列表暂停使用`HEADED=1 node tools/idle-render-cost/paused.mjs <out> <baseline-url> <candidate-url>`，不能用额外RAF循环测暂停页CPU。`flow-passes.mjs <out> <url>`独立采集五流程的绘制/调用耗时。
+
+Metal导出XML可以gzip压缩，metal-window.py同时支持.xml与.xml.gz。权威最终整表与方法见evidence/idle-render-cost/REPORT.md、final-comparison.json；早期校准目录不作为最终性能结论。实际FPS自然波动，CPU/帧必须同步核对，不通过限帧获得较低CPU。

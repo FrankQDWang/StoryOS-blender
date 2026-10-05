@@ -1,0 +1,9 @@
+{
+  "frames": 213,
+  "mainCalls": 173.7699530516432,
+  "shadowCalls": 1630,
+  "postCalls": 17,
+  "mainCPU": 0.8868544655786433,
+  "shadowCPU": 1.4812206567173274,
+  "postCPU": 0.07840375273440366
+}
