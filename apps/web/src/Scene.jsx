@@ -1,4 +1,4 @@
-import React,{Suspense,useEffect,useMemo,useRef,useState} from 'react';
+import React,{Suspense,useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react';
 import {Canvas,useFrame,useThree} from '@react-three/fiber';
 import {useGLTF,useTexture,Html,Sparkles} from '@react-three/drei';
 import {EffectComposer,Bloom,Vignette} from '@react-three/postprocessing';
@@ -224,6 +224,21 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
  });
  return null;
 }
+// Both shadow-casting lights have fixed transforms/ranges. Fire intensity is
+// evaluated in the main pass, so it does not invalidate their depth maps.
+function ShadowUpdates({books,opening,crafting,appearing,reduced}){
+ const gl=useThree(state=>state.gl);
+ useLayoutEffect(()=>{
+  gl.shadowMap.autoUpdate=false;
+  gl.shadowMap.needsUpdate=true;
+  return()=>{gl.shadowMap.autoUpdate=true;gl.shadowMap.needsUpdate=true};
+ },[gl]);
+ useLayoutEffect(()=>{gl.shadowMap.needsUpdate=true},[gl,books,opening,crafting,appearing,reduced]);
+ useFrame(()=>{
+  if(opening||crafting||appearing)gl.shadowMap.needsUpdate=true;
+ },.5);
+ return null;
+}
 function Performance({onMetrics}){
  const {gl}=useThree();const bucket=useRef([]);
  useFrame((_,dt)=>{
@@ -262,6 +277,7 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
   <pointLight position={[4.05,2.55,-2.95]} color="#ffd09e" intensity={4.6} distance={7}/>
   <Suspense fallback={null}>
    <Room onReady={onReady}/>
+   <ShadowUpdates books={books} opening={opening} crafting={crafting} appearing={appearing} reduced={reduced}/>
    <WindowVista/>
    {books.filter(b=>b.slot!==null&&b.id!==crafting?.id).map(b=><ProjectBook key={b.id} book={b} index={b.slot} onSelect={onSelect} selected={selected===b.id} opening={opening&&selected===b.id} reduced={reduced} appearing={appearing===b.id} openingClock={openingClock}/>)}
    <MagicTable onCreate={onCreate} crafting={crafting} reduced={reduced}/>

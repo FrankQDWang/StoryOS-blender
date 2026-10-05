@@ -65,3 +65,7 @@ baseline-smoke/result.json：漫游移动、Escape返回、第一书实际开书
 | list | 暂停，窗口GPU活跃0 | 0.00 | 暂停，无场景帧 | 0 |
 
 分段CPU来自单独插桩采样，包含查询插桩的CPU开销；首页另用不发GPU查询的count-passes验证为1.264/1.070/0.086ms。GPU原生窗口与正常CPU窗口分开，不能混算FPS。静态房间已按材质合并，Room_*投影网格18个，其余投影网格主要为书本及3根木柴。
+
+## 阶段1校准补充
+
+发现Probe在GPU查询关闭时仍执行getParameter空轮询，已修正无pending立即返回；因此上面的早期CPU与CPU分段作为校准记录保留。正式保留使用clean-baseline/clean-shadow的前台三轮（STAGE-1.md），同时核对CPU/帧以排除headless少画帧的假收益。固定截图与原生Metal数据不据此改写；最终报告另用同一清洁测量条件复测五场景。

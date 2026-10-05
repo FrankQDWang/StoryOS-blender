@@ -1,0 +1,4 @@
+import fs from 'node:fs/promises';
+const folder=process.argv[2],{rows}=JSON.parse(await fs.readFile(`${folder}/raw.json`));const median=xs=>[...xs].sort((a,b)=>a-b)[Math.floor(xs.length/2)];const result=[];
+for(const cache of ['cold','warm'])for(const metric of ['firstPaint','firstHand']){const a=rows.filter(r=>r.version==='baseline'&&r.cache===cache),b=rows.filter(r=>r.version==='candidate'&&r.cache===cache);const baseline=median(a.map(r=>r[metric])),candidate=median(b.map(r=>r[metric]));result.push({cache,metric,samples:[a.length,b.length],baseline,candidate,increasePercent:100*(candidate/baseline-1),pass:a.length===3&&b.length===3&&candidate<=baseline*1.1})}
+const summary={rows:result,pass:result.every(r=>r.pass)};await fs.writeFile(`${folder}/summary.json`,JSON.stringify(summary,null,2));console.log(summary);

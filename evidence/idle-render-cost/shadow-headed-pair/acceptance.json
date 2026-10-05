@@ -1,0 +1,44 @@
+{
+  "metric": "page renderer CPU percent, one core",
+  "noisePercentagePoints": 5.216721833694514,
+  "noiseRule": "max(stage0 idle range 3.619pp, paired baseline range, paired candidate range); all three drops must exceed it",
+  "comparisons": [
+    {
+      "round": 0,
+      "baselineCPU": 36.859618695306814,
+      "candidateCPU": 24.310762791051562,
+      "baselineFPS": 73.70548488870804,
+      "candidateFPS": 80.82385605211171,
+      "baselineCPUmsPerFrame": 5.000932936125876,
+      "candidateCPUmsPerFrame": 3.0078697031452,
+      "dropPercentagePoints": 12.548855904255252,
+      "dropPercent": 34.044996525840475,
+      "pass": true
+    },
+    {
+      "round": 1,
+      "baselineCPU": 41.34558849210725,
+      "candidateCPU": 22.94187527986667,
+      "baselineFPS": 82.44616985511887,
+      "candidateFPS": 80.2889068049013,
+      "baselineCPUmsPerFrame": 5.014858611960154,
+      "candidateCPUmsPerFrame": 2.8574153258325548,
+      "dropPercentagePoints": 18.403713212240575,
+      "dropPercent": 44.51191501544062,
+      "pass": true
+    },
+    {
+      "round": 2,
+      "baselineCPU": 42.07634052900133,
+      "candidateCPU": 27.49472018916536,
+      "baselineFPS": 89.15473046864581,
+      "candidateFPS": 96.78172419543105,
+      "baselineCPUmsPerFrame": 4.7194736956553145,
+      "candidateCPUmsPerFrame": 2.8409000167888467,
+      "dropPercentagePoints": 14.581620339835968,
+      "dropPercent": 34.65515336293448,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

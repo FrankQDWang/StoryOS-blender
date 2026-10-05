@@ -14,7 +14,7 @@ page.on('pageerror',e=>errors.push(String(e)));await cdp.send('Performance.enabl
 const metrics=async()=>Object.fromEntries((await cdp.send('Performance.getMetrics')).metrics.map(x=>[x.name,x.value]));
 const home=async()=>{await page.goto(url);await page.locator('.room-caption').waitFor();await page.waitForTimeout(2500)};
 const sample=async(name,seconds,instrument=false,action)=>{
- await page.evaluate(enabled=>{const p=window.__renderProbe;p.frames=[];p.passes=[];p.gpu=[];p.enabled=enabled;p.disjoint=false;window.__rafFrames=[];window.__rafRun=true;let last=performance.now();function tick(t){window.__rafFrames.push(t-last);last=t;if(window.__rafRun)requestAnimationFrame(tick)}requestAnimationFrame(tick)},instrument);
+ await page.evaluate(enabled=>{const p=window.__renderProbe;p.frames=[];p.passes=[];p.gpu=[];p.enabled=enabled;p.disjoint=false;window.__rafFrames=[];window.__rafRun=true;const generation=window.__rafGeneration=(window.__rafGeneration??0)+1;let last=performance.now();function tick(t){if(window.__rafGeneration!==generation)return;window.__rafFrames.push(t-last);last=t;if(window.__rafRun)requestAnimationFrame(tick)}requestAnimationFrame(tick)},instrument);
  const before=await metrics();if(action)await action();await page.waitForTimeout(seconds*1000);const after=await metrics();
  const detail=await page.evaluate(()=>{window.__rafRun=false;const p=window.__renderProbe;p.enabled=false;return {frames:p.frames,passes:p.passes,gpu:p.gpu,disjoint:p.disjoint,raf:window.__rafFrames,renderer:p.renderer,gpuTimer:p.ext}});
  const elapsed=after.Timestamp-before.Timestamp;

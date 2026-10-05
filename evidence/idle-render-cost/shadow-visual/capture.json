@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "name": "overview",
+      "frames": 180
+    },
+    {
+      "name": "window",
+      "view": "window",
+      "frames": 180
+    },
+    {
+      "name": "book",
+      "view": "book",
+      "frames": 180
+    },
+    {
+      "name": "shadow",
+      "view": "shadow",
+      "frames": 180
+    },
+    {
+      "name": "opening-early",
+      "opening": true,
+      "time": 0.7,
+      "frames": 42
+    },
+    {
+      "name": "hands",
+      "opening": true,
+      "time": 1.7,
+      "frames": 102
+    },
+    {
+      "name": "opening-late",
+      "opening": true,
+      "time": 2.8,
+      "frames": 168
+    },
+    {
+      "name": "forming",
+      "crafting": true,
+      "frames": 45
+    },
+    {
+      "name": "flying",
+      "crafting": true,
+      "frames": 130
+    },
+    {
+      "name": "created",
+      "frames": 210
+    },
+    {
+      "name": "deleted",
+      "deleted": true,
+      "frames": 180
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.93",
+  "viewport": [
+    1512,
+    695
+  ],
+  "dpr": 2
+}

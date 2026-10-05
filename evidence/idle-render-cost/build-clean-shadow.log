@@ -1,0 +1,38 @@
+vite v6.4.2 building for production...
+transforming...
+✓ 5161 modules transformed.
+rendering chunks...
+computing gzip size...
+.cache/idle-render-cost/clean-shadow/tools/idle-render-cost/deterministic.html                             0.35 kB │ gzip:   0.23 kB
+.cache/idle-render-cost/clean-shadow/apps/web/index.html                                                   0.56 kB │ gzip:   0.34 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-vietnamese-400-normal-6K-YXo6g.woff2        6.74 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-vietnamese-500-normal-BZGLGj12.woff2        6.76 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-vietnamese-400-normal-4uxlocMh.woff         9.32 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-vietnamese-500-normal-DqXqCC0q.woff         9.33 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-400-normal-DD2KOZkl.woff2         12.78 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-500-normal-CyAY5ZLS.woff2         12.92 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-ext-400-normal-W3Dto7M0.woff2     13.92 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-ext-500-normal-Yta7XZ9C.woff2     14.10 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-400-normal-CVFrM67f.woff          15.70 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-500-normal-DkJXBcIH.woff          15.76 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-ext-400-normal-DLdKLAvx.woff      17.43 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-cyrillic-ext-500-normal-lsPpqi9g.woff      17.55 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-ext-400-normal-Drx2k2n9.woff2        19.89 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-ext-500-normal-CH1kM7og.woff2        20.20 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2            22.88 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-500-normal-BsRWmXhO.woff2            23.31 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-ext-400-normal-uvC0WHQr.woff         27.93 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-ext-500-normal-DYeaGGzO.woff         28.28 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-400-normal-B7YtguxJ.woff             30.98 kB
+.cache/idle-render-cost/clean-shadow/assets/cormorant-garamond-latin-500-normal-zIXX3Q-H.woff             31.37 kB
+.cache/idle-render-cost/clean-shadow/assets/app-BUO-ea5L.css                                               3.96 kB │ gzip:   0.74 kB
+.cache/idle-render-cost/clean-shadow/assets/styles-CX5vAin_.css                                          197.73 kB │ gzip:  65.87 kB
+.cache/idle-render-cost/clean-shadow/assets/deterministic-C0DfsTxy.js                                      1.45 kB │ gzip:   0.94 kB
+.cache/idle-render-cost/clean-shadow/assets/app-BGtryV4H.js                                               53.00 kB │ gzip:  15.34 kB
+.cache/idle-render-cost/clean-shadow/assets/styles-CY4L_C28.js                                         1,566.14 kB │ gzip: 473.02 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.06s

@@ -1,0 +1,2212 @@
+{
+  "rows": [
+    {
+      "round": 0,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1878.7999999523163,
+      "firstHand": 96.60000002384186,
+      "resources": [
+        {
+          "name": "/assets/app-JnHpOxBy.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 6.700000047683716
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 7.299999952316284
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 7.399999976158142
+        },
+        {
+          "name": "/assets/styles-C8iBVsbE.js",
+          "transferSize": 1566018,
+          "encodedBodySize": 1565718,
+          "duration": 13.700000047683716
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 20.200000047683716
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 3.9000000953674316
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 87.70000004768372
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.799999952316284
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 300,
+          "encodedBodySize": 0,
+          "duration": 1.100000023841858
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 52.39999997615814
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 3.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 4.200000047683716
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 3.700000047683716
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 3.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 11.300000071525574
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 2
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 1.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 2.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 5.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 4.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 4.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 4.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 4.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 3.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 3.299999952316284
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1162,
+      "firstHand": 75,
+      "resources": [
+        {
+          "name": "/assets/app-JnHpOxBy.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4.5
+        },
+        {
+          "name": "/assets/styles-C8iBVsbE.js",
+          "transferSize": 1566018,
+          "encodedBodySize": 1565718,
+          "duration": 7.100000023841858
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 14.699999928474426
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 9
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 1.6999999284744263
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 1.6999999284744263
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 59.300000071525574
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 3
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 24.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 1.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 2
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 1.6999999284744263
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 1.3000000715255737
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 1.7000000476837158
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 7
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 1.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 1.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 1.4000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 2.0999999046325684
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 2.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 2.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 2.4000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 2.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.299999952316284
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1229.7000000476837,
+      "firstHand": 78.60000002384186,
+      "resources": [
+        {
+          "name": "/assets/app-BGtryV4H.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 2.100000023841858
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4.5
+        },
+        {
+          "name": "/assets/styles-CY4L_C28.js",
+          "transferSize": 1566442,
+          "encodedBodySize": 1566142,
+          "duration": 7.799999952316284
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 17.90000009536743
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 6.5
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 65.10000002384186
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 3.5
+        },
+        {
+          "name": "/favicon.ico",
+          "transferSize": 300,
+          "encodedBodySize": 0,
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 26.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 3.100000023841858
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 2.9000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 8.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 3.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 5.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 7
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 5.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 4.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 3.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 4
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 4.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 1.8000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 1.8000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.600000023841858
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1192.5,
+      "firstHand": 72.80000007152557,
+      "resources": [
+        {
+          "name": "/assets/app-BGtryV4H.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 3.1999999284744263
+        },
+        {
+          "name": "/assets/styles-CY4L_C28.js",
+          "transferSize": 1566442,
+          "encodedBodySize": 1566142,
+          "duration": 5.399999976158142
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 2.5999999046325684
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 14.899999976158142
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 8.099999904632568
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 1.7000000476837158
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 1.899999976158142
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 61.09999990463257
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 3.700000047683716
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 23.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 3.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 3.3000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 2.899999976158142
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 2.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 8.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 1.6999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 1.7000000476837158
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 1.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 3.8000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 3.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 3
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.5
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1173.7999999523163,
+      "firstHand": 77.10000002384186,
+      "resources": [
+        {
+          "name": "/assets/app-BGtryV4H.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 3.899999976158142
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 3.5
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4.5
+        },
+        {
+          "name": "/assets/styles-CY4L_C28.js",
+          "transferSize": 1566442,
+          "encodedBodySize": 1566142,
+          "duration": 6.5
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 17.299999952316284
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 10.200000047683716
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 61.89999997615814
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 4.399999976158142
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 3.6999999284744263
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 22.09999990463257
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 2.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 2.700000047683716
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 8.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 4.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 4.300000071525574
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 4.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 4.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 3.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 3.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 3.6999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 3.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 1.1999999284744263
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1209.1999999284744,
+      "firstHand": 72.5,
+      "resources": [
+        {
+          "name": "/assets/app-BGtryV4H.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/styles-CY4L_C28.js",
+          "transferSize": 1566442,
+          "encodedBodySize": 1566142,
+          "duration": 7.699999928474426
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 3.6999999284744263
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4.899999976158142
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 15.900000095367432
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 9.899999976158142
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.1999999284744263
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 2.100000023841858
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 2.100000023841858
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 64.69999992847443
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 4.800000071525574
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 37.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 1.399999976158142
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 1.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 8.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 1.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 1.8000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 2.4000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 4.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 4.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 3.4000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 2.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.5
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1171.7999999523163,
+      "firstHand": 102,
+      "resources": [
+        {
+          "name": "/assets/app-JnHpOxBy.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 2
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 2.8000000715255737
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/styles-C8iBVsbE.js",
+          "transferSize": 1566018,
+          "encodedBodySize": 1565718,
+          "duration": 7.900000095367432
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 16.399999976158142
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 9.099999904632568
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 62.39999997615814
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 2.799999952316284
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 3.6999999284744263
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 4.399999976158142
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 23.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 2.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 3.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 3
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 7.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 2
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 1.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 2.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 3.4000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 3.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 1.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 1.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.100000023841858
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1174.5,
+      "firstHand": 74.59999990463257,
+      "resources": [
+        {
+          "name": "/assets/app-JnHpOxBy.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 4.100000023841858
+        },
+        {
+          "name": "/assets/styles-C8iBVsbE.js",
+          "transferSize": 1566018,
+          "encodedBodySize": 1565718,
+          "duration": 6.899999976158142
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 4.300000071525574
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4.800000071525574
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 19.100000023841858
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 9.299999952316284
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 3.3000000715255737
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 6.200000047683716
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 5.600000023841858
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 61.699999928474426
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 5.299999952316284
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 24.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 1.7999999523162842
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 2.0999999046325684
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 1.7999999523162842
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 1.899999976158142
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 2
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 7
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 1.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 1.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 1.2999999523162842
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 3.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 2.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 3.5999999046325684
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "version": "baseline",
+      "cache": "cold",
+      "firstPaint": 1175.2000000476837,
+      "firstHand": 100.60000002384186,
+      "resources": [
+        {
+          "name": "/assets/app-JnHpOxBy.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 3.200000047683716
+        },
+        {
+          "name": "/assets/styles-C8iBVsbE.js",
+          "transferSize": 1566018,
+          "encodedBodySize": 1565718,
+          "duration": 6.200000047683716
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4.399999976158142
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 15.399999976158142
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 7
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 46.5
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 2.700000047683716
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.4000000953674316
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 2.299999952316284
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 30.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 2.3000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 2.4000000953674316
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 1.899999976158142
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 2.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 8.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 4.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 4
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 4.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 4.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 5.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 5.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 4.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 3.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 1.899999976158142
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "version": "baseline",
+      "cache": "warm",
+      "firstPaint": 1218.2000000476837,
+      "firstHand": 113,
+      "resources": [
+        {
+          "name": "/assets/app-JnHpOxBy.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 3
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 2.5999999046325684
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/styles-C8iBVsbE.js",
+          "transferSize": 1566018,
+          "encodedBodySize": 1565718,
+          "duration": 6.199999928474426
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 16.800000071525574
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 10.5
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 6.100000023841858
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 3.5999999046325684
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 4.5
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 64.5
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 5.399999976158142
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 26.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 4.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 4.700000047683716
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 4.599999904632568
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 4
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 6.700000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 3
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 3.100000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 3
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 1.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 1.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 1.7999999523162842
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 1.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 3.6999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 3
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.399999976158142
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "version": "candidate",
+      "cache": "cold",
+      "firstPaint": 1163.7999999523163,
+      "firstHand": 72,
+      "resources": [
+        {
+          "name": "/assets/app-BGtryV4H.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 2
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/styles-CY4L_C28.js",
+          "transferSize": 1566442,
+          "encodedBodySize": 1566142,
+          "duration": 5.5
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 17
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 8.5
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 61.800000071525574
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 3.600000023841858
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 21.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 1.2999999523162842
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 1.8000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 1.5
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 1.899999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 6.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 2.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 2.3000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 2.3000000715255737
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 2.200000047683716
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 3
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 2.6999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 1.7999999523162842
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "version": "candidate",
+      "cache": "warm",
+      "firstPaint": 1141.9000000953674,
+      "firstHand": 78.20000004768372,
+      "resources": [
+        {
+          "name": "/assets/app-BUO-ea5L.css",
+          "transferSize": 4257,
+          "encodedBodySize": 3957,
+          "duration": 3
+        },
+        {
+          "name": "/assets/styles-CX5vAin_.css",
+          "transferSize": 198032,
+          "encodedBodySize": 197732,
+          "duration": 4
+        },
+        {
+          "name": "/assets/app-BGtryV4H.js",
+          "transferSize": 53296,
+          "encodedBodySize": 52996,
+          "duration": 2.299999952316284
+        },
+        {
+          "name": "/assets/styles-CY4L_C28.js",
+          "transferSize": 1566442,
+          "encodedBodySize": 1566142,
+          "duration": 6.600000023841858
+        },
+        {
+          "name": "/assets/models/makehuman-hands.glb",
+          "transferSize": 3835400,
+          "encodedBodySize": 3835100,
+          "duration": 13.399999976158142
+        },
+        {
+          "name": "/assets/models/window-vista.glb",
+          "transferSize": 1037272,
+          "encodedBodySize": 1036972,
+          "duration": 7.400000095367432
+        },
+        {
+          "name": "/assets/textures/window-bark-v2.webp",
+          "transferSize": 247044,
+          "encodedBodySize": 246744,
+          "duration": 3.5
+        },
+        {
+          "name": "/assets/textures/window-sky-v2.webp",
+          "transferSize": 25034,
+          "encodedBodySize": 24734,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/textures/window-needles-v2.webp",
+          "transferSize": 64190,
+          "encodedBodySize": 63890,
+          "duration": 2.299999952316284
+        },
+        {
+          "name": "/assets/models/library-room.glb",
+          "transferSize": 23151436,
+          "encodedBodySize": 23151136,
+          "duration": 61.60000002384186
+        },
+        {
+          "name": "/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "transferSize": 23176,
+          "encodedBodySize": 22876,
+          "duration": 2.799999952316284
+        },
+        {
+          "name": "/assets/textures/room-illumination.png",
+          "transferSize": 16431371,
+          "encodedBodySize": 16431071,
+          "duration": 28.300000071525574
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-38.woff2",
+          "transferSize": 25664,
+          "encodedBodySize": 25364,
+          "duration": 2.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-85.woff2",
+          "transferSize": 84832,
+          "encodedBodySize": 84532,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-88.woff2",
+          "transferSize": 77696,
+          "encodedBodySize": 77396,
+          "duration": 2.8000000715255737
+        },
+        {
+          "name": "/assets/textures/manuscript-soft-leather.webp",
+          "transferSize": 141948,
+          "encodedBodySize": 141648,
+          "duration": 3.399999976158142
+        },
+        {
+          "name": "/assets/textures/manuscript-page-filled.webp",
+          "transferSize": 102638,
+          "encodedBodySize": 102338,
+          "duration": 3.1999999284744263
+        },
+        {
+          "name": "/assets/fonts/cover/kleeone-123.woff2",
+          "transferSize": 35668,
+          "encodedBodySize": 35368,
+          "duration": 9
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-90.woff2",
+          "transferSize": 40764,
+          "encodedBodySize": 40464,
+          "duration": 2.600000023841858
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-95.woff2",
+          "transferSize": 31508,
+          "encodedBodySize": 31208,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-96.woff2",
+          "transferSize": 55612,
+          "encodedBodySize": 55312,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/ebgaramond-6.woff2",
+          "transferSize": 25564,
+          "encodedBodySize": 25264,
+          "duration": 2.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-80.woff2",
+          "transferSize": 89532,
+          "encodedBodySize": 89232,
+          "duration": 3.299999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-86.woff2",
+          "transferSize": 82532,
+          "encodedBodySize": 82232,
+          "duration": 4
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-90.woff2",
+          "transferSize": 13688,
+          "encodedBodySize": 13388,
+          "duration": 4
+        },
+        {
+          "name": "/assets/fonts/cover/mashanzheng-89.woff2",
+          "transferSize": 70168,
+          "encodedBodySize": 69868,
+          "duration": 3.799999952316284
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-100.woff2",
+          "transferSize": 18976,
+          "encodedBodySize": 18676,
+          "duration": 2.399999976158142
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-89.woff2",
+          "transferSize": 40752,
+          "encodedBodySize": 40452,
+          "duration": 2.5
+        },
+        {
+          "name": "/assets/fonts/cover/notoserifsc-84.woff2",
+          "transferSize": 42708,
+          "encodedBodySize": 42408,
+          "duration": 2.899999976158142
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "name": "home",
+      "frames": 180
+    },
+    {
+      "name": "open",
+      "opening": true,
+      "time": 0.7,
+      "frames": 42
+    },
+    {
+      "name": "hands",
+      "opening": true,
+      "time": 1.7,
+      "frames": 60
+    },
+    {
+      "name": "late",
+      "opening": true,
+      "time": 2.8,
+      "frames": 66
+    },
+    {
+      "name": "return",
+      "frames": 90
+    },
+    {
+      "name": "delete",
+      "deleted": true,
+      "frames": 15
+    },
+    {
+      "name": "form",
+      "crafting": true,
+      "frames": 45
+    },
+    {
+      "name": "fly",
+      "crafting": true,
+      "frames": 85
+    },
+    {
+      "name": "placed",
+      "frames": 90
+    }
+  ],
+  "errors": []
+}
