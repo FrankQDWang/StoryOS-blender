@@ -9,7 +9,7 @@ const page=await context.newPage(),cdp=await context.newCDPSession(page),rows=[]
 const get=async()=>Object.fromEntries((await cdp.send('Performance.getMetrics')).metrics.map(m=>[m.name,m.value]));
 for(let round=0;round<3;round++)for(const version of round%2?['candidate','baseline']:['baseline','candidate']){
  await page.goto(version==='baseline'?baseline:candidate);await page.bringToFront();await page.locator('.room-caption').waitFor();await page.waitForTimeout(3000);
- for(const instrument of [false,true]){
+ for(const instrument of (process.env.CPU_ONLY==='1'?[false]:[false,true])){
   await page.evaluate(enabled=>{const p=window.__renderProbe;p.enabled=enabled;p.frames=[];p.passes=[];p.gpu=[];p.disjoint=false;window.__rafFrames=[];window.__rafRun=true;const generation=window.__rafGeneration=(window.__rafGeneration??0)+1;let last=performance.now();function tick(t){if(window.__rafGeneration!==generation)return;window.__rafFrames.push(t-last);last=t;if(window.__rafRun)requestAnimationFrame(tick)}requestAnimationFrame(tick)},instrument);
   const a=await get();await page.waitForTimeout(instrument?5000:15000);const b=await get();
   const detail=await page.evaluate(()=>{const p=window.__renderProbe;p.enabled=false;window.__rafRun=false;return {frames:p.frames,passes:p.passes,gpu:p.gpu,disjoint:p.disjoint,gpuTimer:p.ext,renderer:p.renderer,raf:window.__rafFrames}});

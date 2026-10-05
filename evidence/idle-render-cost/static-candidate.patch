@@ -1,0 +1,107 @@
+diff --git a/apps/web/src/Scene.jsx b/apps/web/src/Scene.jsx
+index e698c44..2bcc64c 100644
+--- a/apps/web/src/Scene.jsx
++++ b/apps/web/src/Scene.jsx
+@@ -12,6 +12,7 @@ import {useBookAppearance} from './BookAppearance';
+ import {createSoftBook,updateSoftBook,disposeSoftBook} from './SoftBook.mjs';
+ 
+ export const SLOTS=layout.slots.map(slot=>slot.position);
++const SLOT_VECTORS=SLOTS.map(position=>new THREE.Vector3(...position));
+ const YAWS=layout.slots.map(slot=>slot.yaw);
+ const BOOK_PITCH=layout.lectern.pitch;
+ const PITCHES=layout.slots.map(slot=>slot.pitch??BOOK_PITCH);
+@@ -87,7 +88,10 @@ function Room({onReady}){
+  const map=useTexture('/assets/textures/room-illumination.png');
+  const object=useMemo(()=>{
+   const indirect=map.clone();indirect.flipY=false;indirect.channel=1;indirect.colorSpace=THREE.NoColorSpace;indirect.needsUpdate=true;
+-  return prepare(scene,true,indirect);
++  const root=prepare(scene,true,indirect);
++  root.updateMatrixWorld(true);
++  root.traverse(node=>{node.matrixAutoUpdate=false;node.matrixWorldAutoUpdate=false});
++  return root;
+  },[scene,map]);
+  useEffect(()=>{onReady()},[onReady]);return <primitive object={object}/>;
+ }
+@@ -125,12 +129,13 @@ function CreatingBook({book}) {
+  useEffect(()=>()=>disposeSoftBook(object),[object]);
+  const pieces=useMemo(()=>object.children.map((o,i)=>({o,base:o.position.clone(),offset:new THREE.Vector3(Math.sin(i*2.4)*.35,.35+(i%4)*.16,Math.cos(i*2.4)*.3)})),[object]);
+  const ref=useRef(),elapsed=useRef(0);const start=useMemo(()=>new THREE.Vector3(TABLE[0],TABLE[1]+.65,TABLE[2]),[]);
++ const dest=useMemo(()=>book.slot!==null?new THREE.Vector3(...SLOTS[book.slot]):new THREE.Vector3(TABLE[0],TABLE[1]+1.9,TABLE[2]),[book.slot]);
+  useFrame((_,dt)=>{
+   elapsed.current+=dt;const t=elapsed.current;
+   const assemble=1-THREE.MathUtils.smoothstep(t,0,1.2);
+   pieces.forEach(({o,base,offset})=>o.position.copy(base).addScaledVector(offset,assemble));
+   if(ref.current){
+-   const fly=THREE.MathUtils.smoothstep(t,1.45,3.0),dest=book.slot!==null?new THREE.Vector3(...SLOTS[book.slot]):new THREE.Vector3(TABLE[0],TABLE[1]+1.9,TABLE[2]);
++   const fly=THREE.MathUtils.smoothstep(t,1.45,3.0);
+    ref.current.position.copy(start).lerp(dest,fly);ref.current.position.y+=Math.sin(fly*Math.PI)*.7;
+    const scale=THREE.MathUtils.smoothstep(t,0,.4)*(book.slot===null?1-fly:THREE.MathUtils.lerp(1,layout.slots[book.slot].scale??1,fly));ref.current.scale.setScalar(scale);
+    ref.current.rotation.set(book.slot!==null?THREE.MathUtils.lerp(BOOK_PITCH,PITCHES[book.slot],fly):BOOK_PITCH,book.slot!==null?YAWS[book.slot]*fly:fly,0,'YXZ');
+@@ -146,6 +151,21 @@ function OpeningClock({active,clock,inspection}){
+ }
+ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced,onLockChange,inspection}){
+  const {camera,gl}=useThree();const keys=useRef(new Set());const target=useRef(HOME_LOOK.clone());const wasLocked=useRef(false);const nearestRef=useRef(null);
++ const movement=useMemo(()=>({f:new THREE.Vector3(),right:new THREE.Vector3(),move:new THREE.Vector3()}),[]);
++ const destination=useMemo(()=>{
++   const b=books.find(b=>b.id===selected);let pos=HOME.clone(),look=HOME_LOOK.clone();
++   if((mode==='focus'||opening)&&b?.slot!=null){
++    const p=new THREE.Vector3(...SLOTS[b.slot]);
++    const offset=new THREE.Vector3(.05,opening?1.1:1.12,opening?1.5:1.9).applyAxisAngle(camera.up,YAWS[b.slot]);
++    pos=p.clone().add(offset);look=p.clone().add(new THREE.Vector3(0,opening?.24:.12,0));
++    // Keep a standing place below the reading view when switching to roaming.
++    if(!isWalkable(pos)){
++     const approach=readingApproach(layout.slots[b.slot]);
++     if(approach){const clear=moveWithCollisions(approach,{x:pos.x-approach.x,z:pos.z-approach.z});pos.x=clear.x;pos.z=clear.z;}
++    }
++   }
++  return {pos,look};
++ },[mode,opening,selected,books,camera]);
+  useEffect(()=>{const down=e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;keys.current.add(e.code)};const up=e=>keys.current.delete(e.code);const clear=()=>keys.current.clear();window.addEventListener('keydown',down);window.addEventListener('keyup',up);window.addEventListener('blur',clear);return()=>{window.removeEventListener('keydown',down);window.removeEventListener('keyup',up);window.removeEventListener('blur',clear)}},[]);
+  useEffect(()=>{
+   const button=document.getElementById('roam-button');
+@@ -197,28 +217,19 @@ function CameraRig({mode,selected,books,onMode,onNear,opening,resetToken,reduced
+   if(inspection?.camera){camera.position.fromArray(inspection.camera.position);camera.lookAt(...inspection.camera.target);camera.fov=inspection.camera.fov??53;camera.updateProjectionMatrix();return;}
+   const dt=Math.min(delta,.05);
+   const desiredFov=mode==='overview'&&!opening?layout.home.fov:53;
+-  camera.fov=reduced||inspection?desiredFov:THREE.MathUtils.damp(camera.fov,desiredFov,4,dt);camera.updateProjectionMatrix();
++  const nextFov=reduced||inspection?desiredFov:THREE.MathUtils.damp(camera.fov,desiredFov,4,dt);
++  if(camera.fov!==nextFov){camera.fov=nextFov;camera.updateProjectionMatrix();}
+   if(mode==='roam'){
+-   const f=new THREE.Vector3();camera.getWorldDirection(f);f.y=0;f.normalize();const right=new THREE.Vector3().crossVectors(f,camera.up).normalize();const move=new THREE.Vector3();
++   const {f,right,move}=movement;camera.getWorldDirection(f);f.y=0;f.normalize();right.crossVectors(f,camera.up).normalize();move.set(0,0,0);
+    if(keys.current.has('KeyW')||keys.current.has('ArrowUp'))move.add(f);if(keys.current.has('KeyS')||keys.current.has('ArrowDown'))move.sub(f);
+    if(keys.current.has('KeyD')||keys.current.has('ArrowRight'))move.add(right);if(keys.current.has('KeyA')||keys.current.has('ArrowLeft'))move.sub(right);
+    move.normalize().multiplyScalar(dt*layout.navigation.speed);
+    const next=moveWithCollisions({x:camera.position.x,z:camera.position.z},{x:move.x,z:move.z});
+    camera.position.set(next.x,layout.navigation.eyeHeight,next.z);
+-   let closest=null,d=1.9;for(const b of books){if(b.slot===null)continue;const p=new THREE.Vector3(...SLOTS[b.slot]);const dist=p.distanceTo(camera.position);if(dist<d){d=dist;closest=b.id}}
++   let closest=null,d=1.9;for(const b of books){if(b.slot===null)continue;const dist=SLOT_VECTORS[b.slot].distanceTo(camera.position);if(dist<d){d=dist;closest=b.id}}
+    if(closest!==nearestRef.current){nearestRef.current=closest;onNear(closest)}
+   }else{
+-   const b=books.find(b=>b.id===selected);let pos=HOME.clone(),look=HOME_LOOK.clone();
+-   if((mode==='focus'||opening)&&b?.slot!=null){
+-    const p=new THREE.Vector3(...SLOTS[b.slot]);
+-    const offset=new THREE.Vector3(.05,opening?1.1:1.12,opening?1.5:1.9).applyAxisAngle(camera.up,YAWS[b.slot]);
+-    pos=p.clone().add(offset);look=p.clone().add(new THREE.Vector3(0,opening?.24:.12,0));
+-    // Keep a standing place below the reading view when switching to roaming.
+-    if(!isWalkable(pos)){
+-     const approach=readingApproach(layout.slots[b.slot]);
+-     if(approach){const clear=moveWithCollisions(approach,{x:pos.x-approach.x,z:pos.z-approach.z});pos.x=clear.x;pos.z=clear.z;}
+-    }
+-   }
++   const {pos,look}=destination;
+    if(reduced||inspection){camera.position.copy(pos);target.current.copy(look)}else{camera.position.lerp(pos,1-Math.exp(-dt*(opening?2.8:2.2)));target.current.lerp(look,1-Math.exp(-dt*2.5))}camera.lookAt(target.current);
+   }
+  });
+diff --git a/apps/web/src/WindowVista.jsx b/apps/web/src/WindowVista.jsx
+index 55707d5..1f80b76 100644
+--- a/apps/web/src/WindowVista.jsx
++++ b/apps/web/src/WindowVista.jsx
+@@ -41,6 +41,7 @@ export function WindowVista(){
+    o.boundingSphere=aperture.clone().applyMatrix4(o.matrixWorld.clone().invert());
+    o.raycast=noPick;o.castShadow=false;o.receiveShadow=false;
+   });
++  root.traverse(node=>{node.matrixAutoUpdate=false;node.matrixWorldAutoUpdate=false});
+   return root;
+  },[scene,atlas,sky,needles]);
+  return <primitive object={object}/>;
