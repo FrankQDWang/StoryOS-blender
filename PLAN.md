@@ -4,6 +4,8 @@
 
 ## 当前交接
 
+- **2026-10-05：阴影缓存已合并并推送main，清理完成。** 已核对本地/远端93a3c03一致，本次本地分支已删除，远端无同名分支；独立cap-30fps任务保持。此次收尾文档继续同步main，运行产物不变。新增动态投影物或修改投影光源时必须扩展ShadowUpdates失效条件；当前窗口缩放不改变固定点光源阴影图，源码复核未发现现有遗漏。详见evidence/idle-render-cost/save-main.md。
+
 - **2026-10-05：用户认可当前结果并授权本地合并、push main、同步与本轮分支清理。** 将已验收的 `29e2694`（阴影缓存实现 `4f46cd0`，含完整测量及鼠标锁定验收纠正）快进保存到main；此授权覆盖本轮此前“不合并、不push”的限制。运行源码保持已验收状态，4395生产预览继续运行。仅清理codex/idle-render-cost；codex/cap-30fps独立任务及工作区、历史标签保持。同步结果见evidence/idle-render-cost/save-main.md。
 
 - **2026-10-05：纠正漫游验收结论并恢复4395直接鼠标环顾。** 用户指出拖拽不能替代直接移动鼠标，前次“控制一致”结论撤回。本次同页记录：浏览器自动化tab.click发出requestPointerLock后收到WrongDocumentError；原生Chrome鼠标点击连续两次成功锁定document.body，实际buttons=0的鼠标移动带动镜头，Esc退出及再次进入通过。诊断包装已移除，页面留在成功锁定的“鼠标环顾”模式。未修改运行代码；记录见evidence/idle-render-cost/pointer-lock/。原流程冒烟仅验证漫游位移，未验证锁定，不能作为直接环顾验收证据。
