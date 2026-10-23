@@ -7,6 +7,7 @@ import layout from './room-layout.json';
 import {moveWithCollisions,isWalkable,readingApproach} from './roaming.mjs';
 import {HearthFire} from './HearthFire';
 import {OpeningHands} from './OpeningHands';
+import {PrepareOpening} from './PrepareOpening';
 import {WindowVista} from './WindowVista';
 import {useBookAppearance} from './BookAppearance';
 import {createSoftBook,updateSoftBook,disposeSoftBook} from './SoftBook.mjs';
@@ -119,7 +120,7 @@ function MagicTable({onCreate,crafting,reduced}){
   <pointLight position={[0,.45,0]} color="#76b7a1" intensity={crafting?5:.45} distance={3}/>
  </group>;
 }
-function CreatingBook({book}) {
+function CreatingBook({book,light}) {
  const appearance=useBookAppearance(book);
  const object=useMemo(()=>createSoftBook(appearance),[appearance]);
  useEffect(()=>()=>disposeSoftBook(object),[object]);
@@ -134,9 +135,10 @@ function CreatingBook({book}) {
    ref.current.position.copy(start).lerp(dest,fly);ref.current.position.y+=Math.sin(fly*Math.PI)*.7;
    const scale=THREE.MathUtils.smoothstep(t,0,.4)*(book.slot===null?1-fly:THREE.MathUtils.lerp(1,layout.slots[book.slot].scale??1,fly));ref.current.scale.setScalar(scale);
    ref.current.rotation.set(book.slot!==null?THREE.MathUtils.lerp(BOOK_PITCH,PITCHES[book.slot],fly):BOOK_PITCH,book.slot!==null?YAWS[book.slot]*fly:fly,0,'YXZ');
+   light.current.position.copy(ref.current.position);
   }
  });
- return <group ref={ref} position={start.toArray()}><primitive object={object}/><pointLight color="#bbdebc" intensity={1.5} distance={3}/></group>;
+ return <group ref={ref} position={start.toArray()}><primitive object={object}/></group>;
 }
 function OpeningClock({active,clock,inspection}){
  const invalidate=useThree(state=>state.invalidate);
@@ -257,7 +259,7 @@ function Performance({onMetrics}){
  return null;
 }
 export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onReady,onNear,onMetrics,opening,crafting,appearing,reduced,resetToken,paused,onLockChange,inspection}){
- const openingClock=useRef(0);
+ const openingClock=useRef(0),craftingLight=useRef();
  useEffect(()=>{openingClock.current=0},[opening]);
  const [visible,setVisible]=useState(!document.hidden);
  useEffect(()=>{const changed=()=>setVisible(!document.hidden);document.addEventListener('visibilitychange',changed);return()=>document.removeEventListener('visibilitychange',changed)},[]);
@@ -277,11 +279,14 @@ export function LibraryScene({books,selected,mode,setMode,onSelect,onCreate,onRe
   <pointLight position={[4.05,2.55,-2.95]} color="#ffd09e" intensity={4.6} distance={7}/>
   <Suspense fallback={null}>
    <Room onReady={onReady}/>
+   <PrepareOpening/>
    <ShadowUpdates books={books} opening={opening} crafting={crafting} appearing={appearing} reduced={reduced}/>
    <WindowVista/>
    {books.filter(b=>b.slot!==null&&b.id!==crafting?.id).map(b=><ProjectBook key={b.id} book={b} index={b.slot} onSelect={onSelect} selected={selected===b.id} opening={opening&&selected===b.id} reduced={reduced} appearing={appearing===b.id} openingClock={openingClock}/>)}
    <MagicTable onCreate={onCreate} crafting={crafting} reduced={reduced}/>
-   {crafting&&<CreatingBook key={crafting.id} book={crafting}/>}
+   {/* Keep the light count stable so creating a book does not recompile room shaders. */}
+   <pointLight ref={craftingLight} color="#bbdebc" intensity={crafting?1.5:0} distance={3}/>
+   {crafting&&<CreatingBook key={crafting.id} book={crafting} light={craftingLight}/>}
    {opening&&!reduced&&<OpeningHands clock={openingClock} bookIndex={selectedBook?.slot}/>}
   </Suspense>
   {!reduced&&<Sparkles count={35} scale={[8,3.2,8]} position={[0,1.7,0]} size={1.4} speed={.07} color="#d6cdb0" opacity={.20}/>}
