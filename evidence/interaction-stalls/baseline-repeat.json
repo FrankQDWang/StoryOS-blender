@@ -1,0 +1,17 @@
+{
+  "threshold": {
+    "max": 2,
+    "mean": 0.01
+  },
+  "pass": true,
+  "rows": [
+    {
+      "name": "opening-late.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    }
+  ]
+}

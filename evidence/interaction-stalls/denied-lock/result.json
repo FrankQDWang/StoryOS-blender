@@ -1,0 +1,7 @@
+{
+  "checks": [],
+  "errors": [
+    "TimeoutError: page.waitForFunction: Timeout 5000ms exceeded."
+  ],
+  "pass": false
+}

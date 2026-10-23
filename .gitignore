@@ -21,3 +21,11 @@ design/reference-library/wizard-costume-20260917/06-dnd-wizard.png
 
 # Recoverable local archive of pre-existing research; keep outside publication.
 /archives/local-research-before-book-approval-20261004.tar.gz
+
+# Full performance evidence is retained locally in the verified archive.
+/archives/interaction-evidence-20261023.tar.gz
+/evidence/interaction-stalls/**
+/evidence/delivery-prep/**
+
+/archives/baseline-smoke-20261023.tar.gz
+/evidence/baseline-save-20261023/**/*.png

@@ -1,0 +1,24 @@
+{
+  "baseline": "f4979f7",
+  "branch": "codex/interaction-stalls",
+  "runtimeFiles": {
+    "apps/web/src/Scene.jsx": "baaa2d75d7cfa499dca1225291965ce7f12737d4b7e3babad8046b747c9213a1",
+    "apps/web/src/PrepareOpening.jsx": "16d2c6ec5bb98c831e7a1a5a23ff0b911b6467dd3f7076428a756145e96c62e4",
+    "tools/idle-render-cost/stalls.mjs": "9e0472ccc39778d8a6e55409f70df4cccdf74ac4a08ef50cc04531586695cccb",
+    "tools/idle-render-cost/smoke.mjs": "2e4cdf2f9ac536761d9c9a3724f92cf2a2fa239135b4f8591705d421b105579b",
+    "tools/idle-render-cost/capture.mjs": "727ed7f1dfd523003107648ea404503aff4e7fead4f27c602526f5eb127b8606"
+  },
+  "changedAssets": [],
+  "viewport": [
+    1512,
+    695
+  ],
+  "deviceScaleFactor": 2,
+  "renderer": "ANGLE Metal Apple M4",
+  "baselineURL": "http://127.0.0.1:4401",
+  "candidateURL": "http://127.0.0.1:4406",
+  "sharedLoadingURLs": [
+    "http://127.0.0.1:4408/baseline.html",
+    "http://127.0.0.1:4408/candidate.html"
+  ]
+}

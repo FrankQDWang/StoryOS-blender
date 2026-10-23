@@ -1,0 +1,12 @@
+{
+  "matchesOctober13VerifiedApplication": true,
+  "sourceFiles": 24,
+  "runtimeCommit": "6850a1a",
+  "coreTests": 17,
+  "sitesTests": 4,
+  "build": "pass",
+  "journeySteps": 13,
+  "journeyErrors": [],
+  "visualAndPerformanceEvidence": "retained October 13 same application source; not rerun October 23",
+  "nativeDesktopAcceptance": "not performed; user requested no desktop takeover"
+}

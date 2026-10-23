@@ -1,0 +1,5 @@
+{
+  "matchesApplicationBaseline": true,
+  "files": 24,
+  "note": "Delivery preparation introduced no additional root application source changes."
+}

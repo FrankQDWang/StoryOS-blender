@@ -1,0 +1,48 @@
+{
+  "root": "http://127.0.0.1:4420",
+  "chrome": "155.0.8059.85",
+  "steps": [
+    "fresh empty library",
+    "five UI creations in approved order",
+    "sixth book kept in list",
+    "deletion leaves others unchanged",
+    "replacement and reload preserve identity",
+    "overflow searchable via Quick Access",
+    "delete cancellation keeps book",
+    "delete all and refresh stays empty",
+    "new cycle begins with warm umber",
+    "normal opening, return, repeated opening and skip",
+    "reduced motion persists; keyboard Quick Access; dismiss list; delete active workspace",
+    "cancel creation leaves storage unchanged",
+    "reload during creation preserves committed book and slot"
+  ],
+  "errors": [],
+  "finalLibrary": {
+    "version": 1,
+    "books": [
+      {
+        "id": "f07656f0-2795-48c5-ab29-22ff7a824fa3",
+        "title": "重生手稿",
+        "description": "",
+        "materialId": "warm-umber",
+        "color": "#ac8058",
+        "slot": 0,
+        "words": 0,
+        "updatedAt": "2026-10-23T07:40:59.531Z"
+      },
+      {
+        "id": "afc6494c-8eff-45cb-a5e5-476d34e53894",
+        "title": "创建中刷新",
+        "description": "",
+        "materialId": "muted-pine",
+        "color": "#82927e",
+        "slot": 1,
+        "words": 0,
+        "updatedAt": "2026-10-23T07:41:02.012Z"
+      }
+    ],
+    "lastBookId": "afc6494c-8eff-45cb-a5e5-476d34e53894",
+    "reducedMotion": false,
+    "sound": false
+  }
+}
