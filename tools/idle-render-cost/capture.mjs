@@ -7,7 +7,7 @@ const context=await browser.newContext({viewport:{width:1512,height:695},deviceS
 await context.addInitScript(()=>{let seed=123456789;Math.random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296}});
 const cases=[{name:'overview',frames:180},{name:'window',view:'window',frames:180},{name:'book',view:'book',frames:180},{name:'shadow',view:'shadow',frames:180},{name:'opening-early',opening:true,time:.7,frames:42},{name:'hands',opening:true,time:1.7,frames:102},{name:'opening-late',opening:true,time:2.8,frames:168},{name:'forming',crafting:true,frames:45},{name:'flying',crafting:true,frames:130},{name:'created',frames:210},{name:'deleted',deleted:true,frames:180}];
 const errors=[];
-for(const spec of cases){
+for(const spec of cases.filter(c=>!process.env.CASES||process.env.CASES.split(',').includes(c.name))){
  const page=await context.newPage();page.on('pageerror',e=>errors.push(String(e)));
  await page.goto(url+'/tools/idle-render-cost/deterministic.html');
  await page.waitForFunction(()=>window.__caseReady&&window.__renderProbe);
@@ -15,6 +15,16 @@ for(const spec of cases){
  await page.waitForFunction(()=>window.__caseReady&&window.__renderProbe);
  await page.evaluate(()=>document.fonts.ready);
  await page.waitForTimeout(500);
+ // Replay the same particle attributes: object UUID allocation must not change visual test inputs.
+ const particleFixture=process.env.PARTICLES_FROM?JSON.parse(await fs.readFile(`${process.env.PARTICLES_FROM}/${spec.name}-particles.json`)):null;
+ const particles=await page.evaluate(fixture=>{
+  const nodes=[];window.__renderProbe.state.scene.traverse(o=>{if(o.isPoints&&o.geometry.attributes.noise)nodes.push(o)});
+  return nodes.map((o,i)=>{
+   if(fixture)for(const [key,values] of Object.entries(fixture[i])){o.geometry.attributes[key].array.set(values);o.geometry.attributes[key].needsUpdate=true}
+   return Object.fromEntries(Object.entries(o.geometry.attributes).map(([key,a])=>[key,Array.from(a.array)]));
+  });
+ },particleFixture);
+ await fs.writeFile(`${out}/${spec.name}-particles.json`,JSON.stringify(particles));
  await page.evaluate(n=>window.__renderProbe.step(n),spec.frames);
  await page.screenshot({path:`${out}/${spec.name}.png`});
  if(spec.name==='overview')await fs.writeFile(`${out}/inventory.json`,JSON.stringify(await page.evaluate(()=>({renderer:window.__renderProbe.renderer,gpuTimer:window.__renderProbe.ext,...window.__renderProbe.inventory()})),null,2));

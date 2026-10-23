@@ -6,6 +6,7 @@
     "dev": "npm --prefix apps/web run dev --",
     "build": "npm --prefix apps/web run build",
     "test": "node --test apps/web/tests/library-model.test.mjs apps/web/tests/roaming.test.mjs apps/web/tests/opening-motion.test.mjs",
+    "check": "npm test && npm run build && npm --prefix apps/web run test:sites",
     "assets": "blender --background --factory-startup --python-exit-code 1 --python scripts/build_library.py && blender --background --factory-startup --python-exit-code 1 --python scripts/bake_room_lighting.py && npm run assets:hands",
     "assets:hands": "blender --background --factory-startup --python-exit-code 1 --python scripts/build_makehuman_hands.py && python3 scripts/asset_manifest.py"
   }
