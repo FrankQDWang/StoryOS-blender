@@ -4,9 +4,11 @@
 
 公开仓库：[FrankQDWang/StoryOS-blender](https://github.com/FrankQDWang/StoryOS-blender)。
 
-当前预览：<http://127.0.0.1:4173/>。开发服务已启动。
+当前生产基线预览：<http://127.0.0.1:4420/preview.html>。后台服务运行状态与交接以 [PLAN.md](PLAN.md) 为准。
 
 ## 版本管理
+
+2026-10-23通过 [PR #4](https://github.com/FrankQDWang/StoryOS-blender/pull/4) 保存创建／开书卡顿优化、后台冒烟、CI与交接整理，保持原帧率及现有画面。基线标签 `baseline-2026-10-23`；两个30FPS实验已归档，不进入运行代码。恢复方法见 [archives/README.md](archives/README.md)。以下为此前认可检查点历史。
 
 2026-10-04，用户认可当前书本改动，已保存并同步到本地/远端唯一的`main`。认可运行快照为`3093181`，后续仅保存交接记录；历史标签与可恢复研究归档保留。
 

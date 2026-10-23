@@ -1,0 +1,20 @@
+{
+  "pr": "https://github.com/FrankQDWang/StoryOS-blender/pull/4",
+  "head": "b7f64e954cea078fc2e25cbc1b2c2539b73447d8",
+  "mergeCommit": "eb2773cc70acf15a24659ce42427af7a3ad39f6d",
+  "successfulRuns": [
+    39920979129,
+    39921049124
+  ],
+  "localBranches": [
+    "main"
+  ],
+  "remoteBranches": [
+    "main"
+  ],
+  "worktrees": 1,
+  "baselineTag": "baseline-2026-10-23",
+  "sourceUnchangedSinceVerification": true,
+  "archives": "archives/README.md",
+  "nativeDesktopAcceptance": false
+}

@@ -4,20 +4,14 @@
 
 ## 当前交接
 
-- **2026-10-23：用户授权执行基线收敛方案**：保存实验快照、归档原始证据、复核主候选、推送并经CI合并到main、打基线标签、清理实验分支与worktree。覆盖此前“候选不push／合并、原cap工作区保持”的停点；这次保存授权不改写原生桌面验收未完成的事实。保存记录见 `evidence/baseline-save-20261023/REPORT.md`。
-- **实验保全**：两实验Git提交完整保存于 `archives/cap-experiments-20261023.bundle`，已verify；451份原始证据逐文件SHA核对后完整归档，本地保留。恢复命令见 `archives/README.md`；30FPS不进入main运行源码。
-
-### 10月13日实施与验证记录
-
-- **工作方式**：用户上班期间只使用后台／无界面 Chrome，不打开或抢占桌面。原生鼠标锁定验收未完成，后台锁定测试不能替代它。
-- **当前候选**：根工作区 `codex/interaction-stalls`，基于已同步 main `f4979f7`。创建灯常驻且闲置强度为 0；已有手部资源分批上传、异步编译、独立场景离屏准备。模型、灯光效果、动画、交互保持。尚未提交、合并或推送，等待用户体验。
-- **已验证**：创建最大帧间隔三轮 283/233/233 → 17/17/17ms；开书 83/100/117 → 33/17/33ms。11 张固定画面对照像素差均为 0，助手实看通过。17 项既有测试、正式构建、后台主要交互通过。拒绝锁定的负向样本正确失败。
-- **加载证据**：分开服务的两批失败样本仍保留；同服务、公共资源字节一致的三组配对通过，冷首屏中位 1471 → 1242ms，暖首屏 1252 → 1184ms。详细口径与限制见 [优化报告](evidence/interaction-stalls/REPORT.md)，不把旧／失败样本改写为通过。
-- **可体验入口**：`http://127.0.0.1:4405/preview.html`，正式生产候选；首次仅在该 origin 没有作品时植入五书演示。保留服务，不自动打开用户浏览器。
-- **本轮继续交付**：用户批准在 15:00 前依次做连续交互、独立 30FPS 复测、轻量 CI、交接瘦身。[进度](evidence/delivery-prep/PROGRESS.md) 是本轮工作入口。
-- **连续交互已完成**：正常生产候选的 13 步后台 journey 通过，覆盖空库、新建超五本、删除补位、开书返回／跳过、减少动态、Quick Access、取消、创建中刷新、清空重建；页面错误 0。证据 [journeys/smoke.json](evidence/delivery-prep/journeys/smoke.json)。
-- **30FPS 复测完成，不采用到当前候选**：独立 `.worktrees/cap-30fps-recheck`／`codex/cap-30fps-recheck`；基于本次卡顿修复。首页CPU三组中位20.00%→14.36%，但每帧3.33→4.79ms；独立Metal一对每帧12.42→13.07ms，开书／创建最大约55–60ms。旧严格门槛失败，停止扩展；11张固定图像素差0、正常生产包13步journey通过。详见[复测报告](evidence/delivery-prep/cap/REPORT.md)。原 `codex/cap-30fps`（`37b95db`）保持不动。
-- **CI 与文档已完成**：`.github/workflows/check.yml` 在push／PR运行 `npm run check`。全新依赖安装后，17项测试、正式构建、4项Sites包装检查全部通过；YAML可解析，GitHub尚未实际运行。PLAN从151,534字节收敛为约8KB；历史逐字节保留，所有本页链接已核对。详见[本轮交付](evidence/delivery-prep/PROGRESS.md)。
+- **2026-10-23基线已合并**：用户授权保存、推送、合并与清理；[PR #4](https://github.com/FrankQDWang/StoryOS-blender/pull/4)经两次GitHub CI成功后合并，运行合并提交 `eb2773c`。只保留本地／远端main和根worktree；三个工作分支、两个实验worktree已清理。基线标签 `baseline-2026-10-23` 标记本次最终交接状态。
+- **保留实现**：创建光源常驻且闲置强度0；开书前分批准备已有手部GPU资源。保持原帧率、模型、动画、画质、五位与交互。30FPS未达到原标准，不进入main。
+- **本次新验证**：17项核心测试、正式构建、4项Sites包装检查、正常生产包13步连续操作、后台锁定／无按键环顾／WASD／Esc／重入通过。PR的push和pull_request检查均成功，见[保存报告](evidence/baseline-save-20261023/REPORT.md)。
+- **保留证据**：应用源码SHA与10月13日验证版本一致。该轮创建最大帧间隔283/233/233→17/17/17ms，开书83/100/117→33/17/33ms，11张固定图像素差0；这些是历史性能／视觉测量，本次没有重复测量。[详细报告](evidence/interaction-stalls/REPORT.md)保留加载失败样本及最终同服务配对通过的口径。
+- **30FPS实验可恢复**：旧37b95db与复测ef94dd3的源码／历史提交保存在随Git同步的 `archives/cap-experiments-20261023.bundle`，已verify。CPU每帧与GPU每帧未下降，动作仍有55–60ms间隔；结论见[复测报告](evidence/delivery-prep/cap/REPORT.md)。
+- **证据归档**：451份旧原始证据及本次完整连续截图均逐文件SHA校验，归档仅本地保留；Git保存报告、汇总和关键帧。恢复方式见[archives/README](archives/README.md)，清理缓存时保留archives目录。历史PLAN完整归档保持。
+- **后台工作方式**：继续使用无界面Chrome，不抢占桌面。原生桌面鼠标锁定验收未进行，保存授权不改写这一事实。生产预览为 `http://127.0.0.1:4420/preview.html`，只在该origin无本地作品时初始化五书演示，不自动打开浏览器。
+- **下一步**：从此main基线开小范围功能分支；继续保持当前画面与交互，按实际产品需求推进，不默认恢复30FPS或开启视觉改版。兄弟StoryOS仍只读。
 
 ## 已接受范围
 
