@@ -40,11 +40,12 @@ npm run dev -- --host 127.0.0.1 --port 4173 --strictPort
 ```
 
 ```sh
-npm test
-npm run build
+npm run check
 ```
 
 Node/npm 的现有安装用于前端；依赖精确版本在 `apps/web/package-lock.json`。服务只绑定本机，未发布到外网。
+
+`npm run check` 顺序执行既有 17 项核心测试、生产构建和 4 项 Sites 包装检查；GitHub Actions 在 push／PR 使用相同命令。无需 Blender 或浏览器。真实交互另用 `tools/book-check/smoke.mjs` 在后台 Chrome 检查，见其目录 README；当前证据与候选状态见 PLAN。
 
 ## Blender 源资产
 

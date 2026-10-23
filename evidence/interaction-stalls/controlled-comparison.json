@@ -1,0 +1,97 @@
+{
+  "threshold": {
+    "max": 2,
+    "mean": 0.01
+  },
+  "pass": false,
+  "rows": [
+    {
+      "name": "book.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "created.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "deleted.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "flying.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "forming.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "hands.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "opening-early.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "opening-late.png",
+      "max": 13,
+      "mean": 0.00001697055054369203,
+      "changedFraction": 0.000007137147424917209,
+      "over2": 26,
+      "pass": false
+    },
+    {
+      "name": "overview.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "shadow.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    },
+    {
+      "name": "window.png",
+      "max": 0,
+      "mean": 0,
+      "changedFraction": 0,
+      "over2": 0,
+      "pass": true
+    }
+  ]
+}

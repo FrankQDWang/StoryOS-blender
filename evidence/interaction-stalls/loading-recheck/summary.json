@@ -1,0 +1,53 @@
+{
+  "rows": [
+    {
+      "cache": "cold",
+      "metric": "firstPaint",
+      "samples": [
+        3,
+        3
+      ],
+      "baseline": 1195.8000001907349,
+      "candidate": 1745,
+      "increasePercent": 45.92741258752848,
+      "pass": false
+    },
+    {
+      "cache": "cold",
+      "metric": "firstHand",
+      "samples": [
+        3,
+        3
+      ],
+      "baseline": 75.60000014305115,
+      "candidate": 45.09999990463257,
+      "increasePercent": -40.34391558294463,
+      "pass": true
+    },
+    {
+      "cache": "warm",
+      "metric": "firstPaint",
+      "samples": [
+        3,
+        3
+      ],
+      "baseline": 1201.7999999523163,
+      "candidate": 1256,
+      "increasePercent": 4.509901818092388,
+      "pass": true
+    },
+    {
+      "cache": "warm",
+      "metric": "firstHand",
+      "samples": [
+        3,
+        3
+      ],
+      "baseline": 84.90000009536743,
+      "candidate": 39,
+      "increasePercent": -54.06360429188264,
+      "pass": true
+    }
+  ],
+  "pass": false
+}

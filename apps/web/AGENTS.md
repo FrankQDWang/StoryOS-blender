@@ -4,7 +4,7 @@ For window scenery, the user approved `../../design/round-12-moonlit-window/02-r
 
 The first moonlit-window runtime was rejected on 2026-10-04 for not matching that mockup. Compare the approved image and the final Chrome render in one equal-scale image before claiming visual fidelity; checking that moon/trees exist or that performance passes is insufficient. See iteration 31 for the correction and its evidence.
 
-Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
+Run the local server yourself. Since 2026-10-13, the user requires background/headless Chrome verification without taking over the desktop. Provide the preview URL for the user to open; native mouse-lock acceptance remains separate.
 
 Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
 

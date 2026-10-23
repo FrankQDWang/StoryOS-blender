@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "flow": "pointer lock, button-free look, movement, Escape",
+      "attempt": 0,
+      "before": {
+        "position": [
+          0.05224843101489303,
+          1.7,
+          6.56675306227095
+        ],
+        "rotation": [
+          -0.02209340872038577,
+          0,
+          0,
+          0.9997559108558018
+        ]
+      },
+      "after": {
+        "position": [
+          -0.5390993763073015,
+          1.7,
+          6.136681893164836
+        ],
+        "rotation": [
+          0.21606326138691465,
+          0.44023709032538566,
+          -0.11002472056838283,
+          0.8645244543935916
+        ],
+        "events": [
+          {
+            "buttons": 0,
+            "x": -591,
+            "y": -307,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Drag fallback must not pass as mouse look"
+  ],
+  "pass": false
+}

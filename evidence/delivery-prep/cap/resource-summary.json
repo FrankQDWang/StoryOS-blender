@@ -1,0 +1,67 @@
+{
+  "recommendation": "retain default cadence; do not adopt 30fps",
+  "strictPass": false,
+  "cpuPairs": 3,
+  "gpuPairs": 1,
+  "gpuMethod": "Metal target Chrome GPU Active union, includes compositing; CPU measured separately",
+  "idle": {
+    "baseline": {
+      "cpuPercent": [
+        24.11811143376749,
+        19.55442193870219,
+        19.998681808194632
+      ],
+      "cpuMsPerFrame": [
+        4.012257617728531,
+        3.253265927977839,
+        3.3284404432132972
+      ],
+      "fps": [
+        60.11107394300751,
+        60.10705048897372,
+        60.084241101480494
+      ],
+      "gpu": {
+        "scene": "idle",
+        "pid": 94360,
+        "method": "Target Chrome GPU Active intervals union (Vertex/Fragment/Compute, overlap counted once), clipped to recorded wall-clock scenario window, divided by actual WebGL scene renders in that window; includes Chrome compositing. Not command-buffer frame labels, not WebGL timer queries.",
+        "seconds": 3.502,
+        "renderedFrames": 210,
+        "fps": 59.96573386636208,
+        "gpuActiveMs": 2609.17012,
+        "gpuActiveMsPerRenderedFrame": 12.42461961904762,
+        "gpuBusyPercent": 74.50514334665905,
+        "matchedIntervals": 9840
+      }
+    },
+    "candidate": {
+      "cpuPercent": [
+        14.35904380638552,
+        15.06808125902109,
+        13.695416062485426
+      ],
+      "cpuMsPerFrame": [
+        4.789083333333334,
+        5.025244444444443,
+        4.568172222222222
+      ],
+      "fps": [
+        29.982864792605792,
+        29.98477273215893,
+        29.980078237556437
+      ],
+      "gpu": {
+        "scene": "idle",
+        "pid": 99288,
+        "method": "Target Chrome GPU Active intervals union (Vertex/Fragment/Compute, overlap counted once), clipped to recorded wall-clock scenario window, divided by actual WebGL scene renders in that window; includes Chrome compositing. Not command-buffer frame labels, not WebGL timer queries.",
+        "seconds": 3.502,
+        "renderedFrames": 105,
+        "fps": 29.98286693318104,
+        "gpuActiveMs": 1372.237127,
+        "gpuActiveMsPerRenderedFrame": 13.06892501904762,
+        "gpuBusyPercent": 39.184383980582524,
+        "matchedIntervals": 5003
+      }
+    }
+  }
+}

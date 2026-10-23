@@ -1,0 +1,17 @@
+{
+  "node": "v24.16.0",
+  "install": "npm ci --prefix apps/web",
+  "check": "npm run check",
+  "freshInstall": true,
+  "isolatedDirectory": ".cache/ci-smoke",
+  "coreTests": 17,
+  "corePassed": 17,
+  "build": "pass",
+  "sitesTests": 4,
+  "sitesPassed": 4,
+  "githubWorkflowRun": false,
+  "note": "Local Node24 command verification; GitHub Linux job has not run; root preview build preserved.",
+  "planArchiveBytesPreserved": true,
+  "planLocalLinksExist": true,
+  "workflowYamlParsed": true
+}

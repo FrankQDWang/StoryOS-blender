@@ -11,3 +11,24 @@ tar -xzf archives/local-research-before-book-approval-20261004.tar.gz
 ```
 
 清理缓存时保留本目录。历史Git标签保留。
+
+## 2026-10-23 基线收敛
+
+`cap-experiments-20261023.bundle` 随Git保存，包含旧30FPS和本次复测的独立提交。它是以main历史为前提的增量bundle；正常克隆本仓库后可恢复：
+
+```sh
+git bundle verify archives/cap-experiments-20261023.bundle
+git fetch archives/cap-experiments-20261023.bundle refs/heads/codex/cap-30fps:refs/heads/codex/recovered-cap-30fps refs/heads/codex/cap-30fps-recheck:refs/heads/codex/recovered-cap-recheck
+```
+
+`interaction-evidence-20261023.tar.gz` 仅本地保留，包含10月13日两批证据的451份完整原文件，包括失败样本。所有成员与归档本身的SHA256见 `evidence/baseline-save-20261023/archive-manifest.json`。原始证据同时留在原位置，忽略文件阻止重复提交大体积采样；Git只保留报告、汇总和关键截图。
+
+恢复原始证据到项目根目录：
+
+```sh
+tar -xzf archives/interaction-evidence-20261023.tar.gz
+```
+
+实验的node_modules软链接及可重建构建缓存不属于恢复内容；源码、工具、实验结果与历史提交已保存。清理缓存时保留archives目录。
+
+本次10月23日的新连续截图完整保存在本地 `baseline-smoke-20261023.tar.gz`，清单同样记录在archive-manifest.json。Git只保留全景、开书与创建后的关键帧；恢复使用 `tar -xzf archives/baseline-smoke-20261023.tar.gz`。

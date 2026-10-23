@@ -1,0 +1,23 @@
+[
+  {
+    "round": 0,
+    "flow": "opening",
+    "maxFrame": 83.30000000000018,
+    "maxRender": 74.09999990463257,
+    "longtasks": [
+      {
+        "start": 6256.400000095367,
+        "duration": 83
+      }
+    ],
+    "errors": []
+  },
+  {
+    "round": 0,
+    "flow": "creating",
+    "maxFrame": 16.80000000000109,
+    "maxRender": 24.100000143051147,
+    "longtasks": [],
+    "errors": []
+  }
+]

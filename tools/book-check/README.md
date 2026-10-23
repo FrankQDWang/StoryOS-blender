@@ -4,7 +4,7 @@
 
 - `prepare-textures.mjs`：从已保存的 ImageGen 图集导出共享纹理并记录来源/哈希。
 - `serve.mjs <directory> <port>`：同口径静态生产服务，用于冻结基线与候选对照。
-- `smoke.mjs [url]`：独立浏览器 context，通过实际创建/删除界面检查顺序、空位、完整列表、取消和刷新。默认连接本轮专用 Chrome CDP 9484，默认 URL 4173。
+- `smoke.mjs [url] [output]`：启动独立无界面 Chrome，不连接用户浏览器。默认 URL 4405、输出 `evidence/delivery-prep/journeys`；通过实际界面覆盖空库、创建超五本、删除补位、开书返回／跳过、减少动态、Quick Access、取消和创建中刷新。失败保留截图／结果，结束关闭测试浏览器。
 - `visual.mjs`：在 Vite 的 review.html 中拍摄五款封面/内页、接触正侧面、全景。
 - `benchmark.mjs`：项目内专用 Chrome profile，固定五本书，生产基线 4180 / 候选 4182；本机和20 Mbps / 50 ms网络，各3组冷/暖缓存配对样本。保存每个样本和中位数对照。
 - `benchmark.mjs --warm-check`：为受控网络暖缓存的短时波动补两组配对，保留原样本并合并统计。

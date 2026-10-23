@@ -1,0 +1,70 @@
+{
+  "baseline": "f4979f7",
+  "candidateSamples": 6,
+  "interactionTimingPass": true,
+  "visualPass": true,
+  "visualCount": 11,
+  "headlessSmokePass": true,
+  "deniedPointerLockFails": true,
+  "nativeDesktop": "not completed; stopped at user request",
+  "sharedServerLoading": {
+    "rows": [
+      {
+        "cache": "cold",
+        "metric": "firstPaint",
+        "samples": [
+          3,
+          3
+        ],
+        "baseline": 1471.2999999523163,
+        "candidate": 1241.5999999046326,
+        "increasePercent": -15.612043774561823,
+        "pass": true
+      },
+      {
+        "cache": "cold",
+        "metric": "firstHand",
+        "samples": [
+          3,
+          3
+        ],
+        "baseline": 79.90000009536743,
+        "candidate": 39.200000047683716,
+        "increasePercent": -50.938673340556704,
+        "pass": true
+      },
+      {
+        "cache": "warm",
+        "metric": "firstPaint",
+        "samples": [
+          3,
+          3
+        ],
+        "baseline": 1251.7000000476837,
+        "candidate": 1183.7000000476837,
+        "increasePercent": -5.432611647951546,
+        "pass": true
+      },
+      {
+        "cache": "warm",
+        "metric": "firstHand",
+        "samples": [
+          3,
+          3
+        ],
+        "baseline": 78.59999990463257,
+        "candidate": 37.700000047683716,
+        "increasePercent": -52.03562329080648,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "earlierLoadingFailures": [
+    "final-loading-complete/summary.json",
+    "loading-recheck/summary.json"
+  ],
+  "existingTests": 17,
+  "productionBuild": "passed",
+  "assetsChanged": false
+}

@@ -1,0 +1,97 @@
+{
+  "threshold": {
+    "max": 2,
+    "mean": 0.01
+  },
+  "pass": false,
+  "rows": [
+    {
+      "name": "book.png",
+      "max": 182,
+      "mean": 0.03403903861038154,
+      "changedFraction": 0.0036288429573801276,
+      "over2": 30093,
+      "pass": false
+    },
+    {
+      "name": "created.png",
+      "max": 205,
+      "mean": 0.04701246938956771,
+      "changedFraction": 0.004407981551266923,
+      "over2": 33543,
+      "pass": false
+    },
+    {
+      "name": "deleted.png",
+      "max": 198,
+      "mean": 0.04821674406506541,
+      "changedFraction": 0.005247627294989406,
+      "over2": 33404,
+      "pass": false
+    },
+    {
+      "name": "flying.png",
+      "max": 238,
+      "mean": 0.4747435385025313,
+      "changedFraction": 0.032542299493738346,
+      "over2": 285906,
+      "pass": false
+    },
+    {
+      "name": "forming.png",
+      "max": 240,
+      "mean": 0.37594805108294316,
+      "changedFraction": 0.028048672173372414,
+      "over2": 227206,
+      "pass": false
+    },
+    {
+      "name": "hands.png",
+      "max": 177,
+      "mean": 0.007967832083539518,
+      "changedFraction": 0.0007847690101886745,
+      "over2": 6734,
+      "pass": false
+    },
+    {
+      "name": "opening-early.png",
+      "max": 180,
+      "mean": 0.008244594800350197,
+      "changedFraction": 0.0009645458236585334,
+      "over2": 6733,
+      "pass": false
+    },
+    {
+      "name": "opening-late.png",
+      "max": 167,
+      "mean": 0.007841028764290155,
+      "changedFraction": 0.0007771560529354295,
+      "over2": 6523,
+      "pass": false
+    },
+    {
+      "name": "overview.png",
+      "max": 206,
+      "mean": 0.04624411581845635,
+      "changedFraction": 0.0048090099349092155,
+      "over2": 32747,
+      "pass": false
+    },
+    {
+      "name": "shadow.png",
+      "max": 153,
+      "mean": 0.013116332330960628,
+      "changedFraction": 0.0017650958598200805,
+      "over2": 12917,
+      "pass": false
+    },
+    {
+      "name": "window.png",
+      "max": 225,
+      "mean": 0.07900996662987071,
+      "changedFraction": 0.007712718713917754,
+      "over2": 65204,
+      "pass": false
+    }
+  ]
+}

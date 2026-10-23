@@ -1,0 +1,65 @@
+[
+  {
+    "round": 0,
+    "flow": "opening",
+    "maxFrame": 649.8999999999996,
+    "maxRender": 658.5,
+    "longtasks": [
+      {
+        "start": 6177.100000143051,
+        "duration": 663
+      }
+    ],
+    "errors": []
+  },
+  {
+    "round": 0,
+    "flow": "creating",
+    "maxFrame": 16.80000000000109,
+    "maxRender": 23.399999856948853,
+    "longtasks": [],
+    "errors": []
+  },
+  {
+    "round": 1,
+    "flow": "opening",
+    "maxFrame": 183.30000000000018,
+    "maxRender": 167.79999995231628,
+    "longtasks": [
+      {
+        "start": 6020.200000047684,
+        "duration": 177
+      }
+    ],
+    "errors": []
+  },
+  {
+    "round": 1,
+    "flow": "creating",
+    "maxFrame": 16.80000000000109,
+    "maxRender": 24.799999952316284,
+    "longtasks": [],
+    "errors": []
+  },
+  {
+    "round": 2,
+    "flow": "opening",
+    "maxFrame": 83.30000000000018,
+    "maxRender": 87.70000004768372,
+    "longtasks": [
+      {
+        "start": 5924.699999809265,
+        "duration": 92
+      }
+    ],
+    "errors": []
+  },
+  {
+    "round": 2,
+    "flow": "creating",
+    "maxFrame": 16.80000000000109,
+    "maxRender": 25.799999952316284,
+    "longtasks": [],
+    "errors": []
+  }
+]

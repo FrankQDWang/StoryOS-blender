@@ -1,0 +1,182 @@
+{
+  "checks": [
+    {
+      "flow": "pointer lock, button-free look, movement, Escape",
+      "attempt": 0,
+      "before": {
+        "position": [
+          0.05224843101489303,
+          1.7,
+          6.56675306227095
+        ],
+        "rotation": [
+          -0.02209340872038577,
+          0,
+          0,
+          0.9997559108558018
+        ]
+      },
+      "after": {
+        "position": [
+          -0.514513800374995,
+          1.7,
+          6.154562313542538
+        ],
+        "rotation": [
+          0.21606326138691465,
+          0.44023709032538566,
+          -0.11002472056838283,
+          0.8645244543935916
+        ],
+        "events": [
+          {
+            "buttons": 0,
+            "x": -591,
+            "y": -307,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "flow": "pointer lock, button-free look, movement, Escape",
+      "attempt": 1,
+      "before": {
+        "position": [
+          0.035324310212153986,
+          1.7,
+          6.554444609733201
+        ],
+        "rotation": [
+          -0.02217578548869692,
+          -0.0008470396107104203,
+          -0.000018788395762790944,
+          0.9997537280294849
+        ]
+      },
+      "after": {
+        "position": [
+          -0.5305771047145018,
+          1.7,
+          6.1414119849703095
+        ],
+        "rotation": [
+          0.21608512954852743,
+          0.4395135157348599,
+          -0.10980540421960937,
+          0.8649149434936058
+        ],
+        "events": [
+          {
+            "buttons": 0,
+            "x": -591,
+            "y": -307,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          },
+          {
+            "buttons": 0,
+            "x": 15,
+            "y": 5,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    "open and return",
+    "delete fifth slot",
+    "create, fly and place in freed fifth slot",
+    "Quick Access search, enter and return"
+  ],
+  "errors": [],
+  "pass": true
+}

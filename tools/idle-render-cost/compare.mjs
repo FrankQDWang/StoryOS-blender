@@ -12,3 +12,4 @@ for(const name of (await fs.readdir(a)).filter(n=>n.endsWith('.png')&&!n.include
  if(!row.pass)await sharp(diff,{raw:x.info}).png().toFile(`${b}/${name.replace('.png','-diff.png')}`);
 }
 await fs.writeFile(out,JSON.stringify({threshold:{max:2,mean:.01},pass:rows.every(r=>r.pass),rows},null,2));console.log(rows);
+if(rows.some(row=>!row.pass))process.exitCode=1;
